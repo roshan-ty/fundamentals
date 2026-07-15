@@ -44,7 +44,7 @@ jobs:
         run: |
           git config --local user.email "bot@bullsandbears.com"
           git config --local user.name "Bulls & Bears Bot"
-          git add frontend/data/
+          git add data/
           # Only commit if there are changes
           if git diff --cached --quiet; then
             echo "No data changes to commit."

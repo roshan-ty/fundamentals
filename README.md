@@ -20,15 +20,14 @@ Built with a serverless static architecture — runs 24/7 on GitHub Pages with a
 │  │  ├── yield_score.py     → Yield vs MA50 → 0-10   │   │
 │  │  ├── cftc_sentiment.py  → Percentile Rank → 0-10 │   │
 │  │  ├── pair_math.py       → 200+ Pairs + Setups    │   │
-│  │  └── json_exporter.py   → frontend/data/*.json   │   │
+│  │  └── json_exporter.py   → data/*.json             │   │
 │  └──────────────────────────────────────────────────┘   │
 │                         ↓                                │
 │              Commits JSON to repository                  │
 └─────────────────────────────────────────────────────────┘
                          ↓
 ┌─────────────────────────────────────────────────────────┐
-│   GitHub Pages (Static Hosting)                          │
-│   frontend/                                              │
+│   GitHub Pages (Static Hosting — Root Level)             │
 │   ├── index.html   → Bootstrap 5 SPA Shell              │
 │   ├── styles.css   → Light/Dark theme (pitch-black)     │
 │   ├── charts.js    → Chart.js configurations            │
@@ -106,12 +105,12 @@ cp backend/.env.example backend/.env
 ```bash
 python backend/main.py
 ```
-This will fetch all data, compute scores, and export JSON files to `frontend/data/`.
+This will fetch all data, compute scores, and export JSON files to `data/`.
 
 ### 4. Serve the Frontend
-Open `frontend/index.html` in a browser, or use a local server:
+Open `index.html` in a browser, or use a local server:
 ```bash
-cd frontend && python -m http.server 8000
+python -m http.server 8000
 # Open http://localhost:8000
 ```
 
@@ -125,11 +124,11 @@ python -m pytest backend/tests/ -v
 ### Data Pipeline (`data_pipeline.yml`)
 - Trigger: Every 4 hours (`0 */4 * * *`) + Friday 21:00 UTC (`0 21 * * 5`)
 - Runs `python backend/main.py` with API keys from GitHub Secrets
-- Commits updated `frontend/data/*.json` back to the repository
+- Commits updated `data/*.json` back to the repository
 
 ### Pages Deployment (`deploy_pages.yml`)
-- Trigger: Push to `main` branch (frontend changes)
-- Deploys `frontend/` to GitHub Pages
+- Trigger: Push to `main` branch (changes to root-level files)
+- Deploys the entire repository root to GitHub Pages (serves `index.html` directly)
 
 ### Required Secrets
 Add these to your GitHub repository → Settings → Secrets and variables → Actions:
@@ -147,6 +146,12 @@ Add these to your GitHub repository → Settings → Secrets and variables → A
 
 ```
 fundamentals-app/
+├── index.html                     # SPA shell (served from root by GitHub Pages)
+├── styles.css                     # Bootstrap 5 + dark mode theme
+├── app.js                         # Tab controller & data fetcher
+├── charts.js                      # Chart.js configuration helpers
+├── data/                          # Auto-generated JSON databases
+├── assets/                        # Static assets (logos, etc.)
 ├── backend/
 │   ├── main.py                    # Orchestrator
 │   ├── requirements.txt           # Python dependencies
@@ -169,12 +174,6 @@ fundamentals-app/
 │   │   └── json_exporter.py       # JSON database writer
 │   └── tests/
 │       └── test_scoring.py        # Unit tests
-├── frontend/
-│   ├── index.html                 # SPA shell
-│   ├── styles.css                 # Bootstrap 5 + dark mode
-│   ├── app.js                     # Tab controller
-│   ├── charts.js                  # Chart.js helpers
-│   └── data/                      # Generated JSON databases
 ├── .github/workflows/
 │   ├── data_pipeline.yml          # Scheduled data pipeline
 │   └── deploy_pages.yml           # GitHub Pages deployment

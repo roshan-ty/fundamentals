@@ -1,5 +1,5 @@
 """
-JSON Exporter — Serializes all data models to JSON files in the frontend/data/ directory.
+JSON Exporter — Serializes all data models to JSON files in the data/ directory.
 """
 
 import json
@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 # Output directory relative to project root
 FRONTEND_DATA_DIR = os.path.join(
     os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),
-    "frontend", "data",
+    "data",
 )
 
 
