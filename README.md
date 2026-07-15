@@ -134,12 +134,14 @@ python -m pytest backend/tests/ -v
 ### Required Secrets
 Add these to your GitHub repository → Settings → Secrets and variables → Actions:
 
-| Secret | Value |
+| Secret | Description |
 |---|---|
-| `FRED_API_KEY` | `84f5b0449fb776b02e6fa1ffef335f2d` |
-| `ALPHAVANTAGE_API_KEY` | `JDY5W26J2GNQFQT8` |
-| `EODHD_API_KEY` | `6a4fb85e8a9681.40916052` |
-| `NEWSDATA_API_KEY` | `pub_97538defa13e4ef5abe74fd582de68df` |
+| `FRED_API_KEY` | FRED API key from `api.stlouisfed.org` |
+| `ALPHAVANTAGE_API_KEY` | AlphaVantage API key |
+| `EODHD_API_KEY` | EODHD API key for economic calendar |
+| `NEWSDATA_API_KEY` | Newsdata.io API key for news feed |
+
+> **Note:** Copy the actual key values from your `backend/.env` file (local) or your password manager. Do not commit real keys to the repository.
 
 ## Project Structure
 
@@ -187,4 +189,4 @@ Use promo code **ROSHAN** for a special discount.
 
 ## License
 
-Private — All rights reserved. Bulls & Bears fundamentals."# fundamentals" 
+Private — All rights reserved. Bulls & Bears fundamentals.
