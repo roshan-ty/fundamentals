@@ -201,13 +201,18 @@ def _filter_and_process(df: pd.DataFrame) -> list[CftcPosition]:
 def fetch_cftc_data() -> CftcData:
     """
     Main entry point: download current year's CFTC data, parse, and return.
-    Falls back to previous year if current year fails.
+    Falls back to previous year if current year fails, and tries the
+    comprehensive 'deahist2025.zip' as a final fallback for 52-week history.
     """
     cftc_data = CftcData()
     cftc_data.last_updated = datetime.now(timezone.utc).isoformat()
 
     current_year = date.today().year
+    # Try current year first, then previous, then explicit comprehensive fallback
     years_to_try = [current_year, current_year - 1]
+    # Always add 2025 as comprehensive fallback (has full 52+ weeks of data)
+    if 2025 not in years_to_try:
+        years_to_try.append(2025)
 
     for year in years_to_try:
         zip_content = _download_zip(year)
@@ -216,14 +221,28 @@ def fetch_cftc_data() -> CftcData:
 
         df = _parse_cftc_csv(zip_content)
         if df.empty:
+            logger.warning("CFTC: Parsed empty DataFrame from %d archive.", year)
             continue
 
         positions = _filter_and_process(df)
-        if positions:
-            cftc_data.positions = positions
-            return cftc_data
 
-    logger.error("CFTC: Failed to fetch data for any year.")
+        # Accept data only if we have at least 5 of the 11 target markets
+        if len(positions) >= 5:
+            cftc_data.positions = positions
+            logger.info(
+                "CFTC: Using %d markets from %d data (found %d total).",
+                len(positions), year, len(positions),
+            )
+            return cftc_data
+        elif positions:
+            logger.warning(
+                "CFTC: Only %d/%d markets found in %d — trying earlier archive.",
+                len(positions), len(TARGET_MARKETS), year,
+            )
+        else:
+            logger.warning("CFTC: No target markets found in %d archive.", year)
+
+    logger.error("CFTC: Failed to fetch sufficient data for any year.")
     return cftc_data
 
 

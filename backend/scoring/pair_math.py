@@ -205,7 +205,7 @@ def compute_trade_setups(pairs_data: PairsData) -> TradeSetupsData:
 
     for pair in pairs_data.pairs:
         if pair.combined_bias >= 8.0 or pair.combined_bias <= 2.0:
-            direction = "LONG" if pair.combined_bias >= 6.0 else "SHORT"
+            direction = "LONG" if pair.combined_bias >= 8.0 else "SHORT"
             setups_data.setups.append(
                 TradeSetup(
                     asset_name=pair.name,

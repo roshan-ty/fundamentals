@@ -22,13 +22,16 @@ const state = {
   currentFilter: '',
   isLoading: true,
   expandedRows: new Set(),
+  loadErrors: [],
 };
 
 // ── Data Loading ──────────────────────────────────────────────────────────
 
 async function loadAllData() {
   state.isLoading = true;
+  state.loadErrors = [];
   showLoading(true);
+  hideError();
 
   const dataFiles = [
     { key: 'fredData',      path: 'data/fred_historical.json' },
@@ -51,12 +54,18 @@ async function loadAllData() {
     })
   );
 
-  // Log any failures
+  // Log any failures and show error banner
   results.forEach((result, i) => {
     if (result.status === 'rejected') {
-      console.warn(`Failed to load ${dataFiles[i].path}:`, result.reason);
+      const errMsg = `Failed to load ${dataFiles[i].path}: ${result.reason}`;
+      console.warn(errMsg);
+      state.loadErrors.push(errMsg);
     }
   });
+
+  if (state.loadErrors.length > 0) {
+    showError(state.loadErrors[0]);
+  }
 
   state.isLoading = false;
   showLoading(false);
@@ -68,11 +77,26 @@ async function loadAllData() {
   renderCftcTab();
   renderSetupsTab();
   renderNewsTab();
+  renderAITab();
 }
 
 function showLoading(show) {
   const spinner = document.getElementById('loading-spinner');
   if (spinner) spinner.style.display = show ? 'flex' : 'none';
+}
+
+function showError(message) {
+  const banner = document.getElementById('error-banner');
+  const details = document.getElementById('error-details');
+  if (banner && details) {
+    banner.classList.remove('d-none');
+    details.textContent = message;
+  }
+}
+
+function hideError() {
+  const banner = document.getElementById('error-banner');
+  if (banner) banner.classList.add('d-none');
 }
 
 // ═══════════════════════════════════════════════════════════════════════════
@@ -109,12 +133,15 @@ function openTab(tabName) {
 
 function toggleDarkMode() {
   const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  const icon = document.getElementById('mode-icon');
   if (isDark) {
     document.documentElement.removeAttribute('data-theme');
     localStorage.setItem('theme', 'light');
+    if (icon) icon.textContent = '🌙';
   } else {
     document.documentElement.setAttribute('data-theme', 'dark');
     localStorage.setItem('theme', 'dark');
+    if (icon) icon.textContent = '☀️';
   }
   // Update chart themes
   const nonNullCharts = state.charts.filter(c => c !== null && c !== undefined);
@@ -123,8 +150,12 @@ function toggleDarkMode() {
 
 function initTheme() {
   const saved = localStorage.getItem('theme');
+  const icon = document.getElementById('mode-icon');
   if (saved === 'dark') {
     document.documentElement.setAttribute('data-theme', 'dark');
+    if (icon) icon.textContent = '☀️';
+  } else {
+    if (icon) icon.textContent = '🌙';
   }
 }
 
@@ -258,7 +289,14 @@ function renderHomeTab() {
     </div>
   `;
 
-  // Draw gauge chart
+  // Draw gauge chart — destroy existing if present
+  state.charts = state.charts.filter(c => {
+    if (c && c.canvas && c.canvas.id === 'usd-gauge') {
+      c.destroy();
+      return false;
+    }
+    return true;
+  });
   const avgScore = usd.average_score || usdScore.average_score || 5.0;
   const gaugeChart = createGaugeChart('usd-gauge', avgScore);
   if (gaugeChart) state.charts.push(gaugeChart);
@@ -334,8 +372,8 @@ function renderBiasTab() {
           <thead>
             <tr>
               <th>Name</th>
-              <th class="text-center">Base</th>
-              <th class="text-center">Quote</th>
+              <th class="text-center">Base Score</th>
+              <th class="text-center">Quote Score</th>
               <th class="text-center">Combined Bias</th>
               <th class="text-center">Direction</th>
               <th></th>
@@ -354,6 +392,15 @@ function renderBiasTab() {
   }
 
   container.innerHTML = html;
+  
+  // Re-apply filter if one was active
+  if (state.currentFilter) {
+    const filterInput = document.getElementById('bias-filter');
+    if (filterInput) {
+      filterInput.value = state.currentFilter;
+      filterBiasTable();
+    }
+  }
 }
 
 function renderBiasRow(pair) {
@@ -381,20 +428,20 @@ function renderBiasRow(pair) {
         <div class="p-3" style="background-color: var(--bg-secondary);">
           <div class="row g-2 mb-2">
             <div class="col-3 col-md-2 text-center">
-              <div style="font-size: 0.7rem; color: var(--text-muted);">Macro</div>
+              <div style="font-size: 0.7rem; color: var(--text-muted);">Base Score</div>
               <div class="fw-700">${pair.base_score.toFixed(1)}</div>
             </div>
             <div class="col-3 col-md-2 text-center">
-              <div style="font-size: 0.7rem; color: var(--text-muted);">Surprise</div>
+              <div style="font-size: 0.7rem; color: var(--text-muted);">Quote Score</div>
               <div class="fw-700">${pair.quote_score.toFixed(1)}</div>
             </div>
             <div class="col-3 col-md-2 text-center">
-              <div style="font-size: 0.7rem; color: var(--text-muted);">Yield</div>
-              <div class="fw-700">—</div>
+              <div style="font-size: 0.7rem; color: var(--text-muted);">Combined Bias</div>
+              <div class="fw-700">${pair.combined_bias.toFixed(1)}</div>
             </div>
             <div class="col-3 col-md-2 text-center">
-              <div style="font-size: 0.7rem; color: var(--text-muted);">CFTC</div>
-              <div class="fw-700">—</div>
+              <div style="font-size: 0.7rem; color: var(--text-muted);">Direction</div>
+              <div class="fw-700">${pair.direction}</div>
             </div>
           </div>
           <p class="mb-0" style="font-size: 0.8rem;">${pair.conclusion}</p>
@@ -412,15 +459,8 @@ window.togglePairDetail = function(name, btn) {
     state.expandedRows.add(name);
   }
   
-  // Re-render the bias tab
+  // Re-render the bias tab preserving filter state
   renderBiasTab();
-  
-  // Re-apply filter
-  const filterInput = document.getElementById('bias-filter');
-  if (filterInput) {
-    state.currentFilter = filterInput.value;
-    filterBiasTable();
-  }
 };
 
 window.filterBiasTable = function() {
@@ -507,13 +547,21 @@ function renderFredTab() {
       </div>
     </div>
   `;
-
-  // Charts are rendered on tab activation via renderFredCharts()
 }
 
 function renderFredCharts() {
   const fred = state.fredData;
   if (!fred || !fred.series) return;
+
+  // Destroy existing FRED charts first
+  const fredCanvasIds = ['fred-gdpc1', 'fred-cpilfesl', 'fred-pcepilfe', 'fred-unrate', 'fedfunds-chart'];
+  state.charts = state.charts.filter(c => {
+    if (c && c.canvas && fredCanvasIds.includes(c.canvas.id)) {
+      c.destroy();
+      return false;
+    }
+    return true;
+  });
 
   const charts = [
     createFredChart('fred-gdpc1', 'GDPC1', fred, 'Real GDP (Billions $)'),
@@ -595,6 +643,15 @@ function renderCftcTab() {
 function renderCftcCharts() {
   const cftc = state.cftcData;
   if (!cftc?.positions?.length) return;
+
+  // Destroy existing CFTC chart
+  state.charts = state.charts.filter(c => {
+    if (c && c.canvas && c.canvas.id === 'cftc-chart') {
+      c.destroy();
+      return false;
+    }
+    return true;
+  });
 
   const chart = createCftcChart('cftc-chart', cftc);
   if (chart) state.charts.push(chart);
@@ -700,6 +757,144 @@ function renderNewsTab() {
     });
     html += `</div>`;
   }
+
+  container.innerHTML = html;
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
+// ── TAB 7: AI Analysis ───────────────────────────────────────────────────
+// ═══════════════════════════════════════════════════════════════════════════
+
+function renderAITab() {
+  const container = document.getElementById('tab-ai');
+  if (!container) return;
+
+  const scores = state.scoresData || {};
+  const pairs = state.pairsData?.pairs || [];
+  const cftc = state.cftcData?.positions || [];
+  const usd = state.usdBiasData || {};
+
+  // Build macro synthesis
+  const usdScore = scores['USD'] || {};
+  const usdAvg = usd.average_score || usdScore.average_score || 5.0;
+  
+  // Count bullish vs bearish pairs
+  let bullishCount = 0, bearishCount = 0, neutralCount = 0;
+  pairs.forEach(p => {
+    if (p.combined_bias >= 6) bullishCount++;
+    else if (p.combined_bias <= 4) bearishCount++;
+    else neutralCount++;
+  });
+
+  // CFTC sentiment overview
+  let cftcBullish = 0, cftcBearish = 0, cftcNeutral = 0;
+  cftc.forEach(p => {
+    if (p.percentile_52w >= 60) cftcBullish++;
+    else if (p.percentile_52w <= 40) cftcBearish++;
+    else cftcNeutral++;
+  });
+
+  // Generate synthesis text
+  const usdBiasText = usdAvg >= 7 ? 'Bullish' : usdAvg >= 5 ? 'Slightly Bullish' : usdAvg >= 3 ? 'Slightly Bearish' : 'Bearish';
+  const marketBiasText = bullishCount > bearishCount + neutralCount ? 'broadly bullish' : bearishCount > bullishCount + neutralCount ? 'broadly bearish' : 'mixed/neutral';
+  const cftcText = cftcBullish > cftcBearish ? 'speculators are net long overall' : cftcBearish > cftcBullish ? 'speculators are net short overall' : 'speculative positioning is mixed';
+
+  // Generate directional calls
+  const topLongs = pairs.filter(p => p.combined_bias >= 7.5).slice(0, 5);
+  const topShorts = pairs.filter(p => p.combined_bias <= 2.5).slice(0, 5);
+
+  let html = `
+    <h5 class="section-title">AI Macro Synthesis</h5>
+    <p class="gov-subheader mb-3">Compiled fundamental analysis of the current macroeconomic environment.</p>
+
+    <!-- Status Card -->
+    <div class="card mb-4">
+      <div class="card-header">Market Overview</div>
+      <div class="card-body">
+        <div class="row g-3">
+          <div class="col-md-3 col-6">
+            <div class="stat-card card">
+              <div class="stat-value">${pairs.length}</div>
+              <div class="stat-label">Total Assets Tracked</div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="stat-card card">
+              <div class="stat-value text-bullish">${bullishCount}</div>
+              <div class="stat-label">Bullish Signals</div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="stat-card card">
+              <div class="stat-value text-bearish">${bearishCount}</div>
+              <div class="stat-label">Bearish Signals</div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="stat-card card">
+              <div class="stat-value">${Math.round(usdAvg * 10) / 10}</div>
+              <div class="stat-label">USD Score</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Synthesis -->
+    <div class="card mb-4">
+      <div class="card-header">Fundamental Synthesis</div>
+      <div class="card-body">
+        <p style="font-size: 0.9rem; line-height: 1.7;">
+          The US Dollar is currently <strong>${usdBiasText}</strong> with a composite fundamental score of 
+          <strong>${usdAvg.toFixed(1)}/10</strong>. The broader market is <strong>${marketBiasText}</strong>, 
+          with ${bullishCount} bullish signals vs ${bearishCount} bearish signals across ${pairs.length} tracked assets.
+        </p>
+        <p style="font-size: 0.9rem; line-height: 1.7;">
+          CFTC Commitment of Traders data shows ${cftcText}. 
+          ${cftcBullish >= 4 ? 'Strong speculative long positioning suggests crowded trades in several markets.' : ''}
+          ${cftcBearish >= 4 ? 'Elevated short positioning indicates potential contrarian reversal risks.' : ''}
+        </p>
+        ${usdAvg >= 7 ? '<p style="font-size: 0.9rem; line-height: 1.7;">A strong USD score suggests favoring short EUR/USD, GBP/USD and long USD/JPY setups in alignment with dollar strength.</p>' : ''}
+        ${usdAvg <= 4 ? '<p style="font-size: 0.9rem; line-height: 1.7;">A weak USD score suggests favoring long EUR/USD, GBP/USD and short USD/JPY setups in alignment with dollar weakness.</p>' : ''}
+      </div>
+    </div>
+
+    <!-- Top Directional Calls -->
+    <div class="row g-3">
+      ${topLongs.length > 0 ? `
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header text-bullish">▲ Top Long Setups</div>
+          <div class="card-body p-2">
+            <table class="table table-sm">
+              <thead>
+                <tr><th>Asset</th><th class="text-end">Score</th></tr>
+              </thead>
+              <tbody>
+                ${topLongs.map(p => `<tr><td>${p.name}</td><td class="text-end fw-700 text-bullish">${p.combined_bias.toFixed(1)}</td></tr>`).join('')}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>` : ''}
+      ${topShorts.length > 0 ? `
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header text-bearish">▼ Top Short Setups</div>
+          <div class="card-body p-2">
+            <table class="table table-sm">
+              <thead>
+                <tr><th>Asset</th><th class="text-end">Score</th></tr>
+              </thead>
+              <tbody>
+                ${topShorts.map(p => `<tr><td>${p.name}</td><td class="text-end fw-700 text-bearish">${p.combined_bias.toFixed(1)}</td></tr>`).join('')}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>` : ''}
+    </div>
+  `;
 
   container.innerHTML = html;
 }

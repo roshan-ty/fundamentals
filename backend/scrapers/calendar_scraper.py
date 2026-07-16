@@ -132,7 +132,10 @@ def fetch_calendar_data() -> CalendarData:
         )
 
     except requests.RequestException as e:
-        logger.warning("Calendar: Failed to fetch from EODHD: %s", e)
+        status_code = ""
+        if hasattr(e, 'response') and e.response is not None:
+            status_code = f" (HTTP {e.response.status_code})"
+        logger.warning("Calendar: Failed to fetch from EODHD%s: %s", status_code, e)
     except (ValueError, TypeError, KeyError) as e:
         logger.warning("Calendar: Failed to parse EODHD response: %s", e)
 

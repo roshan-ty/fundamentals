@@ -78,7 +78,10 @@ def fetch_news_data() -> NewsData:
         logger.info("News: Fetched %d articles.", len(news_data.articles))
 
     except requests.RequestException as e:
-        logger.warning("News: Failed to fetch from Newsdata.io: %s", e)
+        status_code = ""
+        if hasattr(e, 'response') and e.response is not None:
+            status_code = f" (HTTP {e.response.status_code})"
+        logger.warning("News: Failed to fetch from Newsdata.io%s: %s", status_code, e)
     except (ValueError, KeyError, TypeError) as e:
         logger.warning("News: Failed to parse Newsdata.io response: %s", e)
 

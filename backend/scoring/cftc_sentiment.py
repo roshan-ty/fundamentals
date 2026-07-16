@@ -57,15 +57,19 @@ def compute_cftc_sentiment_score(cftc_data: CftcData) -> dict[str, float]:
             continue
 
         # Apply Overcrowded Trade Rule
+        # Instead of flatlining to neutral, scale the percentile toward 50
+        # by 70% to reduce conviction without completely eliminating the signal.
         effective_pctl = pctl
         if pctl > 95.0:
-            # Overcrowded long — cap score near neutral
-            effective_pctl = 50.0
-            logger.info("CFTC Sentiment — %s: Overcrowded long (pctl=%.1f%%), capping.", market, pctl)
+            # Overcrowded long — scale toward neutral (70% reduction in extremity)
+            effective_pctl = 50.0 + (pctl - 50.0) * 0.3
+            logger.info("CFTC Sentiment — %s: Overcrowded long (pctl=%.1f%%), scaling to %.1f%%.",
+                        market, pctl, effective_pctl)
         elif pctl < 5.0:
-            # Overcrowded short — cap score near neutral
-            effective_pctl = 50.0
-            logger.info("CFTC Sentiment — %s: Overcrowded short (pctl=%.1f%%), capping.", market, pctl)
+            # Overcrowded short — scale toward neutral
+            effective_pctl = 50.0 + (pctl - 50.0) * 0.3
+            logger.info("CFTC Sentiment — %s: Overcrowded short (pctl=%.1f%%), scaling to %.1f%%.",
+                        market, pctl, effective_pctl)
 
         # Score mapping based on effective percentile
         if effective_pctl >= 90.0:

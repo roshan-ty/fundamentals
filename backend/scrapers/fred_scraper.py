@@ -85,7 +85,10 @@ def fetch_fred_data() -> FredData:
             logger.info("FRED: Fetched %d observations for %s", len(observations), series_id)
 
         except requests.RequestException as e:
-            logger.warning("FRED: Failed to fetch %s: %s", series_id, e)
+            status_code = ""
+            if hasattr(e, 'response') and e.response is not None:
+                status_code = f" (HTTP {e.response.status_code})"
+            logger.warning("FRED: Failed to fetch %s%s: %s", series_id, status_code, e)
             continue
         except (KeyError, ValueError, json.JSONDecodeError) as e:
             logger.warning("FRED: Failed to parse %s response: %s", series_id, e)

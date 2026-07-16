@@ -22,6 +22,7 @@ ALPHAVANTAGE_KEY = os.environ.get("ALPHAVANTAGE_API_KEY", "")
 
 # Instruments to track via yfinance
 YFINANCE_TICKERS: dict[str, str] = {
+    "^TNX":  "US10Y",   # US 10-Year Treasury Note (yield proxy)
     "^GD10": "DE10Y",   # German 10-Year Bund
     "^UMG":  "GB10Y",   # UK 10-Year Gilt
     "^YT10": "JP10Y",   # Japan 10-Year JGB
@@ -128,29 +129,34 @@ def fetch_yfinance_yields() -> list[YieldEntry]:
 def fetch_yield_data() -> YieldData:
     """
     Fetch all yield data (US Treasuries from AV, global bonds from YF).
+    US10Y is fetched via yfinance (^TNX) to get the 50-day MA for scoring.
+    AlphaVantage is used for US2Y and as a fallback for US10Y.
     """
     yield_data = YieldData()
     yield_data.last_updated = datetime.now(timezone.utc).isoformat()
     today_iso = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
-    # US Treasuries from AlphaVantage
-    us_10y = fetch_av_treasury_yield("10year")
-    us_2y = fetch_av_treasury_yield("2year")
+    # Global bonds from yfinance (includes US10Y via ^TNX with MA50)
+    yf_entries = fetch_yfinance_yields()
+    has_us10y_from_yf = any(e.instrument == "US10Y" for e in yf_entries)
+    yield_data.entries.extend(yf_entries)
 
-    if us_10y is not None:
-        yield_data.entries.append(
-            YieldEntry(instrument="US10Y", date=today_iso, yield_value=round(us_10y, 4))
-        )
-        logger.info("Yields: US10Y = %.4f", us_10y)
+    # US2Y from AlphaVantage (yfinance has no direct 2Y ticker)
+    us_2y = fetch_av_treasury_yield("2year")
     if us_2y is not None:
         yield_data.entries.append(
             YieldEntry(instrument="US2Y", date=today_iso, yield_value=round(us_2y, 4))
         )
         logger.info("Yields: US2Y = %.4f", us_2y)
 
-    # Global bonds from yfinance
-    yf_entries = fetch_yfinance_yields()
-    yield_data.entries.extend(yf_entries)
+    # Fallback: if yfinance failed for US10Y, try AlphaVantage
+    if not has_us10y_from_yf:
+        us_10y = fetch_av_treasury_yield("10year")
+        if us_10y is not None:
+            yield_data.entries.append(
+                YieldEntry(instrument="US10Y", date=today_iso, yield_value=round(us_10y, 4))
+            )
+            logger.info("Yields: US10Y (AV fallback) = %.4f", us_10y)
 
     return yield_data
 

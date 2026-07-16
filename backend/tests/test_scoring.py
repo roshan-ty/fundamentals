@@ -274,11 +274,14 @@ class TestCftcSentimentScore:
 
     def test_overcrowded_long_capped(self, overcrowded_long):
         scores = compute_cftc_sentiment_score(overcrowded_long)
-        assert scores["XAU"] <= 6.0, "Overcrowded long should be capped near neutral"
+        # Overcrowded rule scales toward neutral but doesn't flatline — score should be reduced but not fully neutral
+        assert scores["XAU"] <= 7.0, "Overcrowded long should be scaled down toward neutral"
+        assert scores["XAU"] > 5.0, "Overcrowded long should retain some bullish signal"
 
     def test_overcrowded_short_capped(self, overcrowded_short):
         scores = compute_cftc_sentiment_score(overcrowded_short)
-        assert scores["GBP"] <= 6.0, "Overcrowded short should be capped near neutral"
+        assert scores["GBP"] <= 7.0, "Overcrowded short should be scaled down toward neutral"
+        assert scores["GBP"] < 5.0, "Overcrowded short should retain some bearish signal"
 
     def test_empty_data_returns_neutral(self):
         cd = CftcData()
