@@ -18,10 +18,17 @@ function updateChartTheme(charts) {
   charts.forEach(chart => {
     if (!chart) return;
     chart.options.plugins.legend.labels.color = textColor;
-    chart.options.scales.x.ticks.color = textColor;
-    chart.options.scales.y.ticks.color = textColor;
-    chart.options.scales.x.grid.color = gridColor;
-    chart.options.scales.y.grid.color = gridColor;
+    // Doughnut/gauge charts don't have scales — skip safely
+    if (chart.options.scales) {
+      if (chart.options.scales.x) {
+        chart.options.scales.x.ticks.color = textColor;
+        chart.options.scales.x.grid.color = gridColor;
+      }
+      if (chart.options.scales.y) {
+        chart.options.scales.y.ticks.color = textColor;
+        chart.options.scales.y.grid.color = gridColor;
+      }
+    }
     chart.update('none');
   });
 }

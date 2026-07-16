@@ -64,6 +64,9 @@ body {
   color: var(--text-primary);
   line-height: 1.6;
   transition: background-color 0.3s, color 0.3s;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* ── Typography ──────────────────────────────────────────────────────────── */
@@ -98,6 +101,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ── Navigation Tabs ─────────────────────────────────────────────────────── */
+.nav-tabs {
+  flex-wrap: wrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.nav-tabs::-webkit-scrollbar { display: none; }
+
 .nav-tabs .nav-link {
   color: var(--text-secondary);
   background-color: var(--nav-tab-bg);
@@ -108,6 +119,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   padding: 0.5rem 1rem;
   transition: all 0.2s;
+  white-space: nowrap;
 }
 
 .nav-tabs .nav-link:hover {
@@ -436,8 +448,59 @@ h1, h2, h3, h4, h5, h6 {
 .text-bearish { color: var(--accent-red); }
 .text-neutral { color: var(--text-muted); }
 
-/* ── Responsive ──────────────────────────────────────────────────────────── */
-@media (max-width: 768px) {
+/* ── Responsive: Small phones (≤576px) ──────────────────────────────────── */
+@media (max-width: 576px) {
+  .stat-card .stat-value {
+    font-size: 1.2rem;
+  }
+  .gauge-value {
+    font-size: 2rem;
+  }
+  .nav-tabs .nav-link {
+    font-size: 0.7rem;
+    padding: 0.35rem 0.5rem;
+  }
+  .table thead th,
+  .table tbody td {
+    font-size: 0.65rem;
+    padding: 0.25rem;
+  }
+  .cta-banner {
+    padding: 0.5rem 0.75rem;
+  }
+  .cta-banner h3 {
+    font-size: 1rem;
+  }
+  .cta-banner .discount-code {
+    font-size: 1rem;
+  }
+  .cta-btn {
+    padding: 0.4rem 1.2rem;
+    font-size: 0.85rem;
+  }
+  .gov-header {
+    font-size: 1.1rem !important;
+  }
+  .gov-subheader {
+    font-size: 0.75rem;
+  }
+  .filter-input {
+    max-width: 100%;
+  }
+  .section-title {
+    font-size: 0.9rem;
+  }
+  .card-header {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.75rem;
+  }
+  .bias-detail-row .col-3 {
+    padding: 0 0.25rem;
+  }
+}
+
+/* ── Responsive: Tablets (577px–768px) ──────────────────────────────────── */
+@media (min-width: 577px) and (max-width: 768px) {
   .stat-card .stat-value {
     font-size: 1.5rem;
   }
@@ -455,6 +518,28 @@ h1, h2, h3, h4, h5, h6 {
   }
   .cta-banner {
     padding: 0.75rem 1rem;
+  }
+}
+
+/* ── Responsive: Large screens (≥1200px) ────────────────────────────────── */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1280px;
+  }
+  .stat-card .stat-value {
+    font-size: 2.2rem;
+  }
+  .table thead th,
+  .table tbody td {
+    font-size: 0.9rem;
+    padding: 0.6rem 0.75rem;
+  }
+  .nav-tabs .nav-link {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+  .card-body {
+    padding: 1.25rem;
   }
 }
 

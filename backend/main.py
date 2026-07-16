@@ -101,7 +101,18 @@ def run_pipeline() -> None:
     logger.info("  ✓ Yield momentum scores computed")
 
     cftc_scores = compute_cftc_sentiment_score(cftc_data)
-    logger.info("  ✓ CFTC sentiment scores computed")
+    # Derive USD CFTC score from inverse of non-USD currency positions
+    # Since there is no "USD" futures contract, we take the average of
+    # EUR, GBP, JPY, AUD, CAD, CHF scores and invert it (10 - avg)
+    # A strong EUR/GBP/etc. bullish position = USD bearish sentiment
+    non_usd_currencies = ["EUR", "GBP", "JPY", "AUD", "CAD", "CHF"]
+    usd_cftc_derived = 5.0
+    non_usd_scores = [cftc_scores.get(c, 5.0) for c in non_usd_currencies]
+    if non_usd_scores:
+        avg_non_usd = sum(non_usd_scores) / len(non_usd_scores)
+        usd_cftc_derived = clamp(10.0 - avg_non_usd)
+    cftc_scores["USD"] = usd_cftc_derived
+    logger.info("  ✓ CFTC sentiment scores computed (USD derived from non-USD inverse: %.2f)", usd_cftc_derived)
 
     # ── Step 3: Aggregate into CurrencyScores ────────────────────────────────
     logger.info("\n[Step 3/5] Aggregating currency scores...")

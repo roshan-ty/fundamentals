@@ -75,6 +75,7 @@ async function loadAllData() {
   renderBiasTab();
   renderFredTab();
   renderCftcTab();
+  renderYieldsTab();
   renderSetupsTab();
   renderNewsTab();
   renderAITab();
@@ -658,7 +659,83 @@ function renderCftcCharts() {
 }
 
 // ═══════════════════════════════════════════════════════════════════════════
-// ── TAB 5: Trade Setups ──────────────────────────────────────────────────
+// ── TAB 5: Bond Yields ──────────────────────────────────────────────────
+// ═══════════════════════════════════════════════════════════════════════════
+
+function renderYieldsTab() {
+  const container = document.getElementById('tab-yields');
+  if (!container) return;
+
+  const yieldData = state.yieldData;
+  const entries = yieldData?.entries || [];
+
+  let html = `
+    <h5 class="section-title">Global Bond Yields & 50-Day Moving Averages</h5>
+    <p class="gov-subheader mb-3">Government bond yields from major economies with trend analysis.</p>
+  `;
+
+  if (entries.length === 0) {
+    html += '<div class="text-center py-5 text-muted">No yield data available. Run the data pipeline to fetch bond yields.</div>';
+  } else {
+    html += `
+      <div class="card mb-3">
+        <div class="card-header">Yield Comparison</div>
+        <div class="card-body p-2">
+          <canvas id="yield-chart" height="300"></canvas>
+        </div>
+      </div>
+      <div class="table-responsive">
+        <table class="table table-striped table-hover">
+          <thead>
+            <tr>
+              <th>Instrument</th>
+              <th class="text-end">Date</th>
+              <th class="text-end">Current Yield</th>
+              <th class="text-end">50-Day MA</th>
+              <th class="text-center">Trend</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${entries.map(e => {
+              const trend = e.yield_ma50 != null && e.yield_value > e.yield_ma50 ? 'Rising ↑' 
+                : e.yield_ma50 != null && e.yield_value < e.yield_ma50 ? 'Falling ↓' : 'Flat →';
+              const trendClass = trend.includes('Rising') ? 'text-bullish' 
+                : trend.includes('Falling') ? 'text-bearish' : 'text-neutral';
+              return `
+                <tr>
+                  <td><strong>${e.instrument}</strong></td>
+                  <td class="text-end">${e.date}</td>
+                  <td class="text-end fw-700">${e.yield_value.toFixed(2)}%</td>
+                  <td class="text-end">${e.yield_ma50 != null ? e.yield_ma50.toFixed(2) + '%' : '—'}</td>
+                  <td class="text-center ${trendClass} fw-700">${trend}</td>
+                </tr>
+              `;
+            }).join('')}
+          </tbody>
+        </table>
+      </div>
+    `;
+  }
+
+  container.innerHTML = html;
+
+  // Draw yield chart
+  if (entries.length > 0) {
+    // Destroy existing yield chart
+    state.charts = state.charts.filter(c => {
+      if (c && c.canvas && c.canvas.id === 'yield-chart') {
+        c.destroy();
+        return false;
+      }
+      return true;
+    });
+    const chart = createYieldChart('yield-chart', yieldData);
+    if (chart) state.charts.push(chart);
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
+// ── TAB 6: Trade Setups ──────────────────────────────────────────────────
 // ═══════════════════════════════════════════════════════════════════════════
 
 function renderSetupsTab() {

@@ -118,22 +118,22 @@ def _filter_and_process(df: pd.DataFrame) -> list[CftcPosition]:
         logger.warning("CFTC: No target markets found in data.")
         return []
 
-    # Parse date column
-    df_filtered[COL_DATE] = pd.to_datetime(
+    # Parse date column — use .loc to avoid chained assignment warning
+    df_filtered.loc[:, COL_DATE] = pd.to_datetime(
         df_filtered[COL_DATE], format="%m/%d/%Y", errors="coerce"
     )
     df_filtered = df_filtered.dropna(subset=[COL_DATE])
 
-    # Convert position columns to numeric
+    # Convert position columns to numeric — use .loc to avoid chained assignment warning
     for col in [COL_NONCOMM_LONG, COL_NONCOMM_SHORT]:
-        df_filtered[col] = (
+        df_filtered.loc[:, col] = (
             pd.to_numeric(df_filtered[col], errors="coerce").fillna(0).astype(float)
         )
 
     # Compute net speculative position
-    df_filtered["net_spec"] = (
+    df_filtered.loc[:, "net_spec"] = (
         df_filtered[COL_NONCOMM_LONG] - df_filtered[COL_NONCOMM_SHORT]
-    )
+        )
 
     # Sort by market and date
     df_filtered = df_filtered.sort_values([COL_MARKET, COL_DATE])
