@@ -73,9 +73,15 @@ jobs:
           cd frontend
           npm run build
 
+      - name: Copy data files to dist
+        run: |
+          cp -r public/data frontend/dist/data
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./frontend/dist
           force_orphan: true
+          user_name: "github-actions[bot]"
+          user_email: "bot@bullsandbears.com"
