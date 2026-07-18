@@ -38,6 +38,27 @@ FMP_API_KEY = os.environ.get("FMP_API_KEY", "")
 EODHD_API_KEY = os.environ.get("EODHD_API_KEY", "")
 NEWSDATA_API_KEY = os.environ.get("NEWSDATA_API_KEY", "")
 
+# ── Base URLs ──────────────────────────────────────────────────────────────────
+FMP_BASE = "https://financialmodelingprep.com/api/v3"
+
+# Browser-like headers to avoid 403 blocks
+BROWSER_HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/120.0.0.0 Safari/537.36"
+    ),
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Connection": "keep-alive",
+    "Upgrade-Insecure-Requests": "1",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1",
+}
+
 # ── Constants ──────────────────────────────────────────────────────────────────
 TARGET_CURRENCIES = ["USD", "EUR", "GBP", "JPY", "AUD", "CAD", "CHF", "NZD"]
 TARGET_CRYPTO = ["BTC", "ETH", "SOL", "XRP"]
@@ -149,15 +170,11 @@ def fetch_forex_factory_calendar() -> list[dict]:
     """
     try:
         url = "https://www.forexfactory.com/ff_calendar_thisweek.json"
-        headers = {
-            "User-Agent": (
-                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                "AppleWebKit/537.36 (KHTML, like Gecko) "
-                "Chrome/120.0.0.0 Safari/537.36"
-            ),
-            "Accept": "application/json",
-        }
-        resp = requests.get(url, headers=headers, timeout=30)
+        # Use full browser headers to avoid 403 blocks
+        ff_headers = dict(BROWSER_HEADERS)
+        ff_headers["Accept"] = "application/json"
+        ff_headers["Referer"] = "https://www.forexfactory.com/"
+        resp = requests.get(url, headers=ff_headers, timeout=30)
         resp.raise_for_status()
         raw_events = resp.json()
 
@@ -282,8 +299,10 @@ def fetch_av_cpi() -> Optional[float]:
 # ═══════════════════════════════════════════════════════════════════════════════
 
 # CFTC data sources (probed in order):
-#   Current year (new types format): https://www.cftc.gov/dea/newtypes/deam{yy}.txt
-#   Current year (legacy ZIP):       https://www.cftc.gov/files/dea/history/deahist{yyyy}.zip
+#   CoT archive (newer format):     https://www.cftc.gov/files/dea/history/deacot{year}.zip
+#   Legacy ZIP format:               https://www.cftc.gov/files/dea/history/deahist{year}.zip
+#   Disaggregated TXT:               https://www.cftc.gov/dea/newtypes/deam{yy}.txt
+CFTC_COT_URL = "https://www.cftc.gov/files/dea/history/deacot{year}.zip"
 CFTC_DEAM_URL = "https://www.cftc.gov/dea/newtypes/deam{yy}.txt"
 CFTC_BASE_URL = "https://www.cftc.gov/files/dea/history/deahist{year}.zip"
 
@@ -484,13 +503,28 @@ def _process_cftc_dataframe(df: pd.DataFrame) -> dict[str, dict]:
     return result
 
 
+def _download_cftc_cot(year: int) -> Optional[pd.DataFrame]:
+    """Download CFTC CoT archive ZIP for a given year (deacot format)."""
+    url = CFTC_COT_URL.format(year=year)
+    try:
+        resp = requests.get(url, timeout=60)
+        resp.raise_for_status()
+        logger.info("CFTC: Downloaded %s (%d bytes)", url, len(resp.content))
+        return _parse_cftc_zip(resp.content)
+    except requests.RequestException as e:
+        logger.warning("CFTC: Failed CoT %s: %s", url, e)
+        return None
+
+
 def fetch_cftc_data() -> dict[str, dict]:
     """
     Download and parse CFTC data with robust fallback chain:
-    1. Try current year DEAM (disaggregated) TXT with two-digit year
-    2. Try previous year DEAM TXT
-    3. Try current year legacy ZIP
-    4. Try previous year legacy ZIP
+    1. Try current year CoT archive (deacot{year}.zip)
+    2. Try previous year CoT archive
+    3. Try current year DEAM (disaggregated) TXT
+    4. Try previous year DEAM TXT
+    5. Try current year legacy ZIP (deahist)
+    6. Try previous year legacy ZIP
     Returns structured dict per market.
     """
     result: dict[str, dict] = {}
@@ -500,6 +534,8 @@ def fetch_cftc_data() -> dict[str, dict]:
 
     # Fallback chain
     sources = [
+        ("CoT current", lambda: _download_cftc_cot(current_year)),
+        ("CoT previous", lambda: _download_cftc_cot(current_year - 1)),
         ("DEAM current", lambda: _download_cftc_deam(yy)),
         ("DEAM previous", lambda: _download_cftc_deam(prev_yy)),
         ("ZIP current", lambda: _parse_cftc_zip(_download_cftc_zip(current_year)) if _download_cftc_zip(current_year) else pd.DataFrame()),
@@ -542,14 +578,11 @@ def fetch_retail_sentiment() -> dict[str, dict]:
     result: dict[str, dict] = {}
     try:
         url = "https://www.dailyfx.com/sentiment"
-        headers = {
-            "User-Agent": (
-                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                "AppleWebKit/537.36 (KHTML, like Gecko) "
-                "Chrome/120.0.0.0 Safari/537.36"
-            )
-        }
-        resp = requests.get(url, headers=headers, timeout=30)
+        # Use full browser headers to avoid Cloudflare 403 blocks
+        dfx_headers = dict(BROWSER_HEADERS)
+        dfx_headers["Accept"] = "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+        dfx_headers["Referer"] = "https://www.dailyfx.com/"
+        resp = requests.get(url, headers=dfx_headers, timeout=30)
         resp.raise_for_status()
 
         soup = BeautifulSoup(resp.text, "html.parser")

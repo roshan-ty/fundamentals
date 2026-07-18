@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 # ── Configuration ──────────────────────────────────────────────────────────────
 XAI_API_KEY = os.environ.get("XAI_API_KEY", "")
 XAI_API_URL = "https://api.x.ai/v1/chat/completions"
-XAI_MODEL = "grok-2-latest"  # or grok-3 if available
+XAI_MODEL = "grok-2"  # Use stable model name (grok-2-latest may be deprecated)
 
 
 def generate_macro_summary(scoring_results: dict[str, Any],
