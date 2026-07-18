@@ -180,8 +180,11 @@ def fetch_forex_factory_calendar() -> list[dict]:
                 "AppleWebKit/537.36 (KHTML, like Gecko) "
                 "Chrome/120.0.0.0 Safari/537.36"
             ),
-            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-            "Accept-Language": "en-US,en;q=0.9",
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+            "Accept-Language": "en-US,en;q=0.5",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Connection": "keep-alive",
+            "Upgrade-Insecure-Requests": "1",
         }
         resp = requests.get(url, headers=headers, timeout=30)
         resp.raise_for_status()
@@ -622,11 +625,9 @@ def fetch_cftc_data() -> dict[str, dict]:
                 continue
 
             result = _process_cftc_dataframe(df)
-            if len(result) >= 5:
-                logger.info("CFTC: Using %d markets from %s source.", len(result), source_name)
+            if result:
+                logger.info("CFTC: Using %d markets from %s source (stopping chain).", len(result), source_name)
                 return result
-            elif result:
-                logger.info("CFTC: %d markets from %s, trying next for more.", len(result), source_name)
             else:
                 logger.info("CFTC: %s had no target markets.", source_name)
         except Exception as e:
