@@ -170,10 +170,18 @@ def fetch_forex_factory_calendar() -> list[dict]:
     """
     try:
         url = "https://www.forexfactory.com/ff_calendar_thisweek.json"
-        # Use full browser headers to avoid 403 blocks
-        ff_headers = dict(BROWSER_HEADERS)
-        ff_headers["Accept"] = "application/json"
-        ff_headers["Referer"] = "https://www.forexfactory.com/"
+        # Use XHR-style browser headers to avoid Cloudflare 403 blocks
+        ff_headers = {
+            "User-Agent": (
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) "
+                "Chrome/120.0.0.0 Safari/537.36"
+            ),
+            "Accept": "application/json, text/javascript, */*; q=0.01",
+            "Accept-Language": "en-US,en;q=0.9",
+            "Referer": "https://www.forexfactory.com/",
+            "X-Requested-With": "XMLHttpRequest",
+        }
         resp = requests.get(url, headers=ff_headers, timeout=30)
         resp.raise_for_status()
         raw_events = resp.json()
@@ -325,14 +333,62 @@ CFTC_TARGET_MARKETS: dict[str, str] = {
     "10 YEAR U.S. TREASURY NOTE":   "UST10Y",
 }
 
+# Legacy report column names (used in deacot zips)
 CFTC_COL_MARKET = "Market_and_Exchange_Names"
 CFTC_COL_DATE = "Report_Date_as_MM_DD_YYYY"
+
+# Disaggregated / TFF column names (used in com/fin zips)
 CFTC_COL_ASST_MANAGER_LONG = "Asset_Mgr_Positions_Long_All"
 CFTC_COL_ASST_MANAGER_SHORT = "Asset_Mgr_Positions_Short_All"
 CFTC_COL_LEV_FUNDS_LONG = "Lev_Money_Positions_Long_All"
 CFTC_COL_LEV_FUNDS_SHORT = "Lev_Money_Positions_Short_All"
 CFTC_COL_NONCOMM_LONG = "Non_Commercial_Positions_Long_All"
 CFTC_COL_NONCOMM_SHORT = "Non_Commercial_Positions_Short_All"
+
+# Legacy report column names (used in deacot zips)
+# deacot files use spaces and hyphens instead of underscores
+CFTC_LEGACY_NONCOMM_LONG = "Noncommercial Positions-Long (All)"
+CFTC_LEGACY_NONCOMM_SHORT = "Noncommercial Positions-Short (All)"
+CFTC_LEGACY_COMM_LONG = "Commercial Positions-Long (All)"
+CFTC_LEGACY_COMM_SHORT = "Commercial Positions-Short (All)"
+
+# Column name aliases: maps multiple possible names to our standard keys
+CFTC_COLUMN_ALIASES = {
+    "noncomm_long": [
+        "Non_Commercial_Positions_Long_All",
+        "Noncommercial Positions-Long (All)",
+        "Non Commercial Positions-Long (All)",
+    ],
+    "noncomm_short": [
+        "Non_Commercial_Positions_Short_All",
+        "Noncommercial Positions-Short (All)",
+        "Non Commercial Positions-Short (All)",
+    ],
+    "asset_mgr_long": [
+        "Asset_Mgr_Positions_Long_All",
+        "Asset Manager Positions-Long (All)",
+    ],
+    "asset_mgr_short": [
+        "Asset_Mgr_Positions_Short_All",
+        "Asset Manager Positions-Short (All)",
+    ],
+    "lev_funds_long": [
+        "Lev_Money_Positions_Long_All",
+        "Leveraged Funds Positions-Long (All)",
+    ],
+    "lev_funds_short": [
+        "Lev_Money_Positions_Short_All",
+        "Leveraged Funds Positions-Short (All)",
+    ],
+}
+
+
+def _resolve_cftc_column(df: pd.DataFrame, aliases: list[str]) -> Optional[str]:
+    """Find the first column name from aliases that exists in the DataFrame."""
+    for alias in aliases:
+        if alias in df.columns:
+            return alias
+    return None
 
 
 def _download_cftc_zip(year: int) -> Optional[bytes]:
@@ -421,29 +477,35 @@ def _process_cftc_dataframe(df: pd.DataFrame) -> dict[str, dict]:
     )
     df_filtered = df_filtered.dropna(subset=[CFTC_COL_DATE])
 
-    # Convert numeric columns
-    for col in [CFTC_COL_NONCOMM_LONG, CFTC_COL_NONCOMM_SHORT,
-                 CFTC_COL_ASST_MANAGER_LONG, CFTC_COL_ASST_MANAGER_SHORT,
-                 CFTC_COL_LEV_FUNDS_LONG, CFTC_COL_LEV_FUNDS_SHORT]:
-        if col in df_filtered.columns:
-            df_filtered.loc[:, col] = (
-                pd.to_numeric(df_filtered[col], errors="coerce").fillna(0).astype(float)
-            )
+    # Resolve column names using aliases (supports both legacy and disaggregated formats)
+    noncomm_long_col = _resolve_cftc_column(df_filtered, CFTC_COLUMN_ALIASES["noncomm_long"])
+    noncomm_short_col = _resolve_cftc_column(df_filtered, CFTC_COLUMN_ALIASES["noncomm_short"])
+    asset_mgr_long_col = _resolve_cftc_column(df_filtered, CFTC_COLUMN_ALIASES["asset_mgr_long"])
+    asset_mgr_short_col = _resolve_cftc_column(df_filtered, CFTC_COLUMN_ALIASES["asset_mgr_short"])
+    lev_funds_long_col = _resolve_cftc_column(df_filtered, CFTC_COLUMN_ALIASES["lev_funds_long"])
+    lev_funds_short_col = _resolve_cftc_column(df_filtered, CFTC_COLUMN_ALIASES["lev_funds_short"])
+
+    # Convert numeric columns using resolved names
+    resolved_cols = [c for c in [noncomm_long_col, noncomm_short_col,
+                                  asset_mgr_long_col, asset_mgr_short_col,
+                                  lev_funds_long_col, lev_funds_short_col] if c]
+    for col in resolved_cols:
+        df_filtered.loc[:, col] = (
+            pd.to_numeric(df_filtered[col], errors="coerce").fillna(0).astype(float)
+        )
 
     # Compute net speculative
-    if CFTC_COL_NONCOMM_LONG in df_filtered.columns:
+    if noncomm_long_col and noncomm_short_col:
         df_filtered.loc[:, "net_spec"] = (
-            df_filtered[CFTC_COL_NONCOMM_LONG] - df_filtered[CFTC_COL_NONCOMM_SHORT]
+            df_filtered[noncomm_long_col] - df_filtered[noncomm_short_col]
+        )
+    elif asset_mgr_long_col and asset_mgr_short_col:
+        df_filtered.loc[:, "net_spec"] = (
+            df_filtered[asset_mgr_long_col] - df_filtered[asset_mgr_short_col]
         )
     else:
-        # If no non-commercial columns, use asset manager as proxy
-        if CFTC_COL_ASST_MANAGER_LONG in df_filtered.columns:
-            df_filtered.loc[:, "net_spec"] = (
-                df_filtered[CFTC_COL_ASST_MANAGER_LONG] - df_filtered[CFTC_COL_ASST_MANAGER_SHORT]
-            )
-        else:
-            logger.warning("CFTC: No position columns found for net_spec.")
-            return result
+        logger.warning("CFTC: No position columns found for net_spec. Columns: %s", list(df_filtered.columns))
+        return result
 
     df_filtered = df_filtered.sort_values([CFTC_COL_MARKET, CFTC_COL_DATE])
 
@@ -480,19 +542,19 @@ def _process_cftc_dataframe(df: pd.DataFrame) -> dict[str, dict]:
 
         entry = {
             "report_date": latest[CFTC_COL_DATE].strftime("%Y-%m-%d"),
-            "noncomm_long": float(latest.get(CFTC_COL_NONCOMM_LONG, 0)),
-            "noncomm_short": float(latest.get(CFTC_COL_NONCOMM_SHORT, 0)),
+            "noncomm_long": float(latest.get(noncomm_long_col, 0)) if noncomm_long_col else 0,
+            "noncomm_short": float(latest.get(noncomm_short_col, 0)) if noncomm_short_col else 0,
             "net_speculative": float(latest["net_spec"]),
             "weekly_change": float(latest["weekly_change"]),
             "percentile_52w": round(float(latest["percentile_52w"]), 2),
         }
 
-        if CFTC_COL_ASST_MANAGER_LONG in latest:
-            entry["asset_mgr_long"] = float(latest[CFTC_COL_ASST_MANAGER_LONG])
-            entry["asset_mgr_short"] = float(latest[CFTC_COL_ASST_MANAGER_SHORT])
-        if CFTC_COL_LEV_FUNDS_LONG in latest:
-            entry["lev_funds_long"] = float(latest[CFTC_COL_LEV_FUNDS_LONG])
-            entry["lev_funds_short"] = float(latest[CFTC_COL_LEV_FUNDS_SHORT])
+        if asset_mgr_long_col and asset_mgr_short_col:
+            entry["asset_mgr_long"] = float(latest[asset_mgr_long_col])
+            entry["asset_mgr_short"] = float(latest[asset_mgr_short_col])
+        if lev_funds_long_col and lev_funds_short_col:
+            entry["lev_funds_long"] = float(latest[lev_funds_long_col])
+            entry["lev_funds_short"] = float(latest[lev_funds_short_col])
 
         result[short_code] = entry
         logger.info(
