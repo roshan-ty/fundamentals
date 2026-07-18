@@ -180,6 +180,8 @@ def fetch_forex_factory_calendar() -> list[dict]:
                 "AppleWebKit/537.36 (KHTML, like Gecko) "
                 "Chrome/120.0.0.0 Safari/537.36"
             ),
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+            "Accept-Language": "en-US,en;q=0.9",
         }
         resp = requests.get(url, headers=headers, timeout=30)
         resp.raise_for_status()
@@ -847,10 +849,9 @@ def fetch_yield_curve() -> dict[str, dict]:
     Returns {instrument: {"yield": float, "ma50": float}}.
     """
     yield_tickers = {
-        "^TNX":  "US10Y",
-        "^GD10": "DE10Y",
-        "^UMG":  "GB10Y",
-        "^YT10": "JP10Y",
+        "^TNX":  "US10Y",   # US 10-Year Treasury Note yield
+        "^TYX":  "US30Y",   # US 30-Year Treasury Bond yield (replaces delisted ^GD10)
+        "^IRX":  "US13W",   # US 13-Week Treasury Bill (short end of curve)
     }
     result: dict[str, dict] = {}
 
