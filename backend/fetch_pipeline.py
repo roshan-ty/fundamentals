@@ -164,34 +164,16 @@ def run_pipeline() -> dict[str, Any]:
 
 def _extract_calendar_events(collected_data: dict[str, Any]) -> list[dict]:
     """
-    Extract and normalize calendar events from all sources
-    (FMP, Finnhub) into a unified format.
+    Extract and normalize calendar events from Forex Factory JSON feed.
     """
     events: list[dict] = []
 
-    # From FMP
-    fmp_events = collected_data.get("fmp_calendar", [])
-    for ev in fmp_events:
+    # From Forex Factory
+    ff_events = collected_data.get("forex_factory_calendar", [])
+    for ev in ff_events:
         try:
             events.append({
-                "source": "FMP",
-                "date": ev.get("date", ""),
-                "currency": ev.get("currency", ""),
-                "event": ev.get("event", ""),
-                "forecast": _safe_float(ev.get("forecast")),
-                "actual": _safe_float(ev.get("actual")),
-                "previous": _safe_float(ev.get("previous")),
-                "impact": ev.get("impact", "low"),
-            })
-        except (KeyError, ValueError):
-            continue
-
-    # From Finnhub
-    finnhub_events = collected_data.get("finnhub_calendar", [])
-    for ev in finnhub_events:
-        try:
-            events.append({
-                "source": "Finnhub",
+                "source": ev.get("source", "ForexFactory"),
                 "date": ev.get("date", ""),
                 "currency": ev.get("currency", ""),
                 "event": ev.get("event", ""),
@@ -206,8 +188,7 @@ def _extract_calendar_events(collected_data: dict[str, Any]) -> list[dict]:
     # Sort by date descending, most recent first
     events.sort(key=lambda e: e.get("date", ""), reverse=True)
 
-    logger.info("Calendar: %d events extracted (%d FMP, %d Finnhub)",
-                 len(events), len(fmp_events), len(finnhub_events))
+    logger.info("Calendar: %d events extracted from Forex Factory", len(events))
     return events
 
 

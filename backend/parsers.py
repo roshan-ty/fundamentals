@@ -119,71 +119,109 @@ def get_latest_fred(results: dict[str, list[dict]], series_id: str) -> Optional[
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
-# SECTION 2: FMP Economic Indicators (Points 1-6, 11, 12, 20-22, 29)
+# SECTION 2: Economic Calendar — Forex Factory JSON Feed (Points 1-6, 11, 12, 20-22, 29)
 # ═══════════════════════════════════════════════════════════════════════════════
 
-FMP_BASE = "https://financialmodelingprep.com/api/v3"
+# Country code mapping from Forex Factory country names to our currency codes
+FF_COUNTRY_MAP: dict[str, str] = {
+    "USD": "USD", "EUR": "EUR", "GBP": "GBP", "JPY": "JPY",
+    "AUD": "AUD", "CAD": "CAD", "CHF": "CHF", "NZD": "NZD",
+    "CNY": "CNY", "HKD": "HKD", "SGD": "SGD", "MXN": "MXN",
+    "NOK": "NOK", "SEK": "SEK", "TRY": "TRY", "ZAR": "ZAR",
+    "INR": "INR", "BRL": "BRL", "RUB": "RUB", "KRW": "KRW",
+}
+
+# High-impact event keywords to track for our 30 fundamental data points
+HIGH_IMPACT_KEYWORDS = [
+    "CPI", "GDP", "NFP", "PPI", "UNEMPLOYMENT", "FED", "BOE", "ECB",
+    "INTEREST RATE", "INFLATION", "RETAIL SALES", "PMI", "MANUFACTURING",
+    "SERVICES", "EMPLOYMENT CHANGE", "JOBLESS CLAIMS", "TRADE BALANCE",
+    "INDUSTRIAL PRODUCTION", "CONSUMER CONFIDENCE", "BUILDING PERMITS",
+    "HOUSING STARTS", "PCE", "WAGE", "EARNINGS", "GDP",
+]
 
 
-def fetch_fmp_economic_calendar() -> list[dict]:
-    """Fetch economic calendar events from FMP."""
-    if not FMP_API_KEY:
-        logger.warning("FMP_API_KEY not set. Skipping FMP calendar.")
-        return []
-
+def fetch_forex_factory_calendar() -> list[dict]:
+    """
+    Fetch economic calendar events from Forex Factory's public JSON feed.
+    URL: https://www.forexfactory.com/ff_calendar_thisweek.json
+    Returns a list of normalized event dicts.
+    """
     try:
-        url = f"{FMP_BASE}/economic_calendar"
-        params = {"apikey": FMP_API_KEY}
-        resp = requests.get(url, params=params, timeout=30)
+        url = "https://www.forexfactory.com/ff_calendar_thisweek.json"
+        headers = {
+            "User-Agent": (
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) "
+                "Chrome/120.0.0.0 Safari/537.36"
+            ),
+            "Accept": "application/json",
+        }
+        resp = requests.get(url, headers=headers, timeout=30)
         resp.raise_for_status()
-        events = resp.json()
-        logger.info("FMP Calendar: %d events fetched", len(events))
-        return events if isinstance(events, list) else []
-    except Exception as e:
-        logger.warning("FMP Calendar failed: %s", e)
-        return []
+        raw_events = resp.json()
 
+        if not isinstance(raw_events, list):
+            logger.warning("Forex Factory: Unexpected response format (not a list).")
+            return []
 
-def fetch_fmp_forex_data() -> list[dict]:
-    """Fetch major forex pair quotes from FMP."""
-    if not FMP_API_KEY:
-        return []
-    try:
-        url = f"{FMP_BASE}/forex"
-        params = {"apikey": FMP_API_KEY}
-        resp = requests.get(url, params=params, timeout=30)
-        resp.raise_for_status()
-        return resp.json() if isinstance(resp.json(), list) else []
-    except Exception as e:
-        logger.warning("FMP Forex failed: %s", e)
-        return []
+        events: list[dict] = []
+        for ev in raw_events:
+            try:
+                # Extract fields from Forex Factory JSON structure
+                title = ev.get("title", "") or ""
+                country = ev.get("country", "") or ""
+                date_str = ev.get("date", "") or ""
+                forecast_raw = ev.get("forecast", "")
+                previous_raw = ev.get("previous", "")
+                actual_raw = ev.get("actual", "")
+                impact = ev.get("impact", "low")
 
+                # Map country to currency code
+                currency = FF_COUNTRY_MAP.get(country.upper(), "")
 
-# ═══════════════════════════════════════════════════════════════════════════════
-# SECTION 3: Finnhub Economic Calendar (Points 1-6, 11, 12)
-# ═══════════════════════════════════════════════════════════════════════════════
+                # Skip if no currency mapping or no event title
+                if not currency or not title:
+                    continue
 
-FINNHUB_BASE = "https://finnhub.io/api/v1"
+                # Parse numeric values
+                forecast = _safe_float(forecast_raw)
+                previous = _safe_float(previous_raw)
+                actual = _safe_float(actual_raw)
 
+                # Normalize date: Forex Factory uses ISO format with timezone
+                # e.g. "2026-07-18T12:30:00-04:00"
+                event_date = date_str
+                if event_date and "T" in event_date:
+                    # Keep the full ISO string, frontend will format
+                    pass
 
-def fetch_finnhub_calendar() -> list[dict]:
-    """Fetch economic calendar from Finnhub."""
-    if not FINNHUB_API_KEY:
-        logger.warning("FINNHUB_API_KEY not set. Skipping Finnhub calendar.")
-        return []
+                events.append({
+                    "source": "ForexFactory",
+                    "date": event_date,
+                    "currency": currency,
+                    "event": title[:120],
+                    "forecast": forecast,
+                    "actual": actual,
+                    "previous": previous,
+                    "impact": impact.lower(),
+                })
 
-    try:
-        today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-        url = f"{FINNHUB_BASE}/calendar/economic"
-        params = {"token": FINNHUB_API_KEY, "from": today, "to": today}
-        resp = requests.get(url, params=params, timeout=30)
-        resp.raise_for_status()
-        data = resp.json()
-        events = data.get("economicCalendar", [])
-        logger.info("Finnhub Calendar: %d events", len(events))
+            except (KeyError, ValueError, TypeError) as e:
+                logger.debug("Forex Factory: Skipping event row: %s", e)
+                continue
+
+        logger.info(
+            "Forex Factory Calendar: %d events fetched (%d total raw).",
+            len(events), len(raw_events),
+        )
         return events
-    except Exception as e:
-        logger.warning("Finnhub Calendar failed: %s", e)
+
+    except requests.RequestException as e:
+        logger.warning("Forex Factory Calendar failed: %s", e)
+        return []
+    except (ValueError, TypeError, json.JSONDecodeError) as e:
+        logger.warning("Forex Factory Calendar parse failed: %s", e)
         return []
 
 
@@ -243,6 +281,10 @@ def fetch_av_cpi() -> Optional[float]:
 # SECTION 5: CFTC Commitments of Traders (Points 26, 28)
 # ═══════════════════════════════════════════════════════════════════════════════
 
+# CFTC data sources (probed in order):
+#   Current year (new types format): https://www.cftc.gov/dea/newtypes/deam{yy}.txt
+#   Current year (legacy ZIP):       https://www.cftc.gov/files/dea/history/deahist{yyyy}.zip
+CFTC_DEAM_URL = "https://www.cftc.gov/dea/newtypes/deam{yy}.txt"
 CFTC_BASE_URL = "https://www.cftc.gov/files/dea/history/deahist{year}.zip"
 
 CFTC_TARGET_MARKETS: dict[str, str] = {
@@ -307,133 +349,184 @@ def _parse_cftc_zip(content: bytes) -> pd.DataFrame:
         return pd.DataFrame()
 
 
+def _download_cftc_deam(yy: str) -> Optional[pd.DataFrame]:
+    """Download CFTC disaggregated (DEAM) TXT file for a given two-digit year."""
+    url = CFTC_DEAM_URL.format(yy=yy)
+    try:
+        resp = requests.get(url, timeout=60)
+        resp.raise_for_status()
+        logger.info("CFTC: Downloaded %s (%d bytes)", url, len(resp.content))
+        text = resp.text
+        # DEAM files are pipe-delimited or tab-delimited
+        # Try pipe first, then tab, then comma
+        for sep in ['|', '\t', ',']:
+            try:
+                df = pd.read_csv(io.StringIO(text), sep=sep, low_memory=False)
+                if len(df.columns) > 1:
+                    return df
+            except Exception:
+                continue
+        return pd.read_csv(io.StringIO(text), low_memory=False)
+    except requests.RequestException as e:
+        logger.warning("CFTC: Failed DEAM %s: %s", url, e)
+        return None
+
+
+def _process_cftc_dataframe(df: pd.DataFrame) -> dict[str, dict]:
+    """Process a CFTC DataFrame into the standard result format."""
+    result: dict[str, dict] = {}
+
+    df.columns = df.columns.str.strip()
+
+    # Check required columns exist
+    required = [CFTC_COL_MARKET, CFTC_COL_DATE]
+    if not all(c in df.columns for c in required):
+        logger.warning("CFTC: Missing required columns. Available: %s", list(df.columns))
+        return result
+
+    # Filter to target markets
+    market_names = list(CFTC_TARGET_MARKETS.keys())
+    df_filtered = df[
+        df[CFTC_COL_MARKET].str.strip().str.upper().isin(
+            [m.upper() for m in market_names]
+        )
+    ].copy()
+
+    if df_filtered.empty:
+        logger.warning("CFTC: No target markets found in data.")
+        return result
+
+    # Parse dates
+    df_filtered.loc[:, CFTC_COL_DATE] = pd.to_datetime(
+        df_filtered[CFTC_COL_DATE], format="%m/%d/%Y", errors="coerce"
+    )
+    df_filtered = df_filtered.dropna(subset=[CFTC_COL_DATE])
+
+    # Convert numeric columns
+    for col in [CFTC_COL_NONCOMM_LONG, CFTC_COL_NONCOMM_SHORT,
+                 CFTC_COL_ASST_MANAGER_LONG, CFTC_COL_ASST_MANAGER_SHORT,
+                 CFTC_COL_LEV_FUNDS_LONG, CFTC_COL_LEV_FUNDS_SHORT]:
+        if col in df_filtered.columns:
+            df_filtered.loc[:, col] = (
+                pd.to_numeric(df_filtered[col], errors="coerce").fillna(0).astype(float)
+            )
+
+    # Compute net speculative
+    if CFTC_COL_NONCOMM_LONG in df_filtered.columns:
+        df_filtered.loc[:, "net_spec"] = (
+            df_filtered[CFTC_COL_NONCOMM_LONG] - df_filtered[CFTC_COL_NONCOMM_SHORT]
+        )
+    else:
+        # If no non-commercial columns, use asset manager as proxy
+        if CFTC_COL_ASST_MANAGER_LONG in df_filtered.columns:
+            df_filtered.loc[:, "net_spec"] = (
+                df_filtered[CFTC_COL_ASST_MANAGER_LONG] - df_filtered[CFTC_COL_ASST_MANAGER_SHORT]
+            )
+        else:
+            logger.warning("CFTC: No position columns found for net_spec.")
+            return result
+
+    df_filtered = df_filtered.sort_values([CFTC_COL_MARKET, CFTC_COL_DATE])
+
+    for market_name, short_code in CFTC_TARGET_MARKETS.items():
+        market_df = df_filtered[
+            df_filtered[CFTC_COL_MARKET].str.strip().str.upper() == market_name.upper()
+        ].copy()
+
+        if market_df.empty:
+            continue
+
+        # Weekly change
+        market_df["weekly_change"] = market_df["net_spec"].diff().fillna(0.0)
+
+        # 52-week percentile
+        window = min(52, len(market_df))
+        if window > 1:
+            market_df["percentile_52w"] = (
+                market_df["net_spec"]
+                .rolling(window=window, min_periods=1)
+                .apply(
+                    lambda x: (
+                        (x.iloc[-1] - x.min()) / (x.max() - x.min()) * 100
+                        if x.max() != x.min()
+                        else 50.0
+                    ),
+                    raw=False,
+                )
+            )
+        else:
+            market_df["percentile_52w"] = 50.0
+
+        latest = market_df.iloc[-1]
+
+        entry = {
+            "report_date": latest[CFTC_COL_DATE].strftime("%Y-%m-%d"),
+            "noncomm_long": float(latest.get(CFTC_COL_NONCOMM_LONG, 0)),
+            "noncomm_short": float(latest.get(CFTC_COL_NONCOMM_SHORT, 0)),
+            "net_speculative": float(latest["net_spec"]),
+            "weekly_change": float(latest["weekly_change"]),
+            "percentile_52w": round(float(latest["percentile_52w"]), 2),
+        }
+
+        if CFTC_COL_ASST_MANAGER_LONG in latest:
+            entry["asset_mgr_long"] = float(latest[CFTC_COL_ASST_MANAGER_LONG])
+            entry["asset_mgr_short"] = float(latest[CFTC_COL_ASST_MANAGER_SHORT])
+        if CFTC_COL_LEV_FUNDS_LONG in latest:
+            entry["lev_funds_long"] = float(latest[CFTC_COL_LEV_FUNDS_LONG])
+            entry["lev_funds_short"] = float(latest[CFTC_COL_LEV_FUNDS_SHORT])
+
+        result[short_code] = entry
+        logger.info(
+            "CFTC: %s — Net: %.0f, Pctl: %.1f%%",
+            short_code, entry["net_speculative"], entry["percentile_52w"],
+        )
+
+    return result
+
+
 def fetch_cftc_data() -> dict[str, dict]:
     """
-    Download and parse CFTC data. Returns structured dict per market:
-    {
-      "EUR": {
-        "report_date": "2026-07-15",
-        "noncomm_long": 200000, "noncomm_short": 100000,
-        "asset_mgr_long": 80000, "asset_mgr_short": 40000,
-        "lev_funds_long": 60000, "lev_funds_short": 30000,
-        "net_speculative": 100000,
-        "percentile_52w": 82.5,
-        "weekly_change": 5000
-      }, ...
-    }
+    Download and parse CFTC data with robust fallback chain:
+    1. Try current year DEAM (disaggregated) TXT with two-digit year
+    2. Try previous year DEAM TXT
+    3. Try current year legacy ZIP
+    4. Try previous year legacy ZIP
+    Returns structured dict per market.
     """
     result: dict[str, dict] = {}
     current_year = datetime.now().year
+    yy = str(current_year)[-2:]  # "26" for 2026
+    prev_yy = str(current_year - 1)[-2:]
 
-    for year in [current_year, current_year - 1, 2025]:
-        content = _download_cftc_zip(year)
-        if content is None:
-            continue
+    # Fallback chain
+    sources = [
+        ("DEAM current", lambda: _download_cftc_deam(yy)),
+        ("DEAM previous", lambda: _download_cftc_deam(prev_yy)),
+        ("ZIP current", lambda: _parse_cftc_zip(_download_cftc_zip(current_year)) if _download_cftc_zip(current_year) else pd.DataFrame()),
+        ("ZIP previous", lambda: _parse_cftc_zip(_download_cftc_zip(current_year - 1)) if _download_cftc_zip(current_year - 1) else pd.DataFrame()),
+        ("ZIP 2025", lambda: _parse_cftc_zip(_download_cftc_zip(2025)) if _download_cftc_zip(2025) else pd.DataFrame()),
+    ]
 
-        df = _parse_cftc_zip(content)
-        if df.empty:
-            continue
-
-        df.columns = df.columns.str.strip()
-
-        # Check required columns exist
-        required = [CFTC_COL_MARKET, CFTC_COL_DATE]
-        if not all(c in df.columns for c in required):
-            logger.warning("CFTC: Missing required columns in %d data", year)
-            continue
-
-        # Filter to target markets
-        market_names = list(CFTC_TARGET_MARKETS.keys())
-        df_filtered = df[
-            df[CFTC_COL_MARKET].str.strip().str.upper().isin(
-                [m.upper() for m in market_names]
-            )
-        ].copy()
-
-        if df_filtered.empty:
-            continue
-
-        # Parse dates
-        df_filtered.loc[:, CFTC_COL_DATE] = pd.to_datetime(
-            df_filtered[CFTC_COL_DATE], format="%m/%d/%Y", errors="coerce"
-        )
-        df_filtered = df_filtered.dropna(subset=[CFTC_COL_DATE])
-
-        # Convert numeric columns
-        numeric_cols = []
-        for col in [CFTC_COL_NONCOMM_LONG, CFTC_COL_NONCOMM_SHORT,
-                     CFTC_COL_ASST_MANAGER_LONG, CFTC_COL_ASST_MANAGER_SHORT,
-                     CFTC_COL_LEV_FUNDS_LONG, CFTC_COL_LEV_FUNDS_SHORT]:
-            if col in df_filtered.columns:
-                numeric_cols.append(col)
-                df_filtered.loc[:, col] = (
-                    pd.to_numeric(df_filtered[col], errors="coerce").fillna(0).astype(float)
-                )
-
-        # Compute net speculative
-        if CFTC_COL_NONCOMM_LONG in df_filtered.columns:
-            df_filtered.loc[:, "net_spec"] = (
-                df_filtered[CFTC_COL_NONCOMM_LONG] - df_filtered[CFTC_COL_NONCOMM_SHORT]
-            )
-
-        df_filtered = df_filtered.sort_values([CFTC_COL_MARKET, CFTC_COL_DATE])
-
-        for market_name, short_code in CFTC_TARGET_MARKETS.items():
-            market_df = df_filtered[
-                df_filtered[CFTC_COL_MARKET].str.strip().str.upper() == market_name.upper()
-            ].copy()
-
-            if market_df.empty:
+    for source_name, source_fn in sources:
+        try:
+            df = source_fn()
+            if df is None or df.empty:
+                logger.info("CFTC: %s source returned empty, trying next.", source_name)
                 continue
 
-            # Weekly change
-            market_df["weekly_change"] = market_df["net_spec"].diff().fillna(0.0)
-
-            # 52-week percentile
-            window = min(52, len(market_df))
-            if window > 1:
-                market_df["percentile_52w"] = (
-                    market_df["net_spec"]
-                    .rolling(window=window, min_periods=1)
-                    .apply(
-                        lambda x: (
-                            (x.iloc[-1] - x.min()) / (x.max() - x.min()) * 100
-                            if x.max() != x.min()
-                            else 50.0
-                        ),
-                        raw=False,
-                    )
-                )
+            result = _process_cftc_dataframe(df)
+            if len(result) >= 5:
+                logger.info("CFTC: Using %d markets from %s source.", len(result), source_name)
+                return result
+            elif result:
+                logger.info("CFTC: %d markets from %s, trying next for more.", len(result), source_name)
             else:
-                market_df["percentile_52w"] = 50.0
+                logger.info("CFTC: %s had no target markets.", source_name)
+        except Exception as e:
+            logger.warning("CFTC: %s failed: %s", source_name, e)
+            continue
 
-            latest = market_df.iloc[-1]
-
-            entry = {
-                "report_date": latest[CFTC_COL_DATE].strftime("%Y-%m-%d"),
-                "noncomm_long": float(latest.get(CFTC_COL_NONCOMM_LONG, 0)),
-                "noncomm_short": float(latest.get(CFTC_COL_NONCOMM_SHORT, 0)),
-                "net_speculative": float(latest["net_spec"]),
-                "weekly_change": float(latest["weekly_change"]),
-                "percentile_52w": round(float(latest["percentile_52w"]), 2),
-            }
-
-            if CFTC_COL_ASST_MANAGER_LONG in latest:
-                entry["asset_mgr_long"] = float(latest[CFTC_COL_ASST_MANAGER_LONG])
-                entry["asset_mgr_short"] = float(latest[CFTC_COL_ASST_MANAGER_SHORT])
-            if CFTC_COL_LEV_FUNDS_LONG in latest:
-                entry["lev_funds_long"] = float(latest[CFTC_COL_LEV_FUNDS_LONG])
-                entry["lev_funds_short"] = float(latest[CFTC_COL_LEV_FUNDS_SHORT])
-
-            result[short_code] = entry
-            logger.info(
-                "CFTC: %s — Net: %.0f, Pctl: %.1f%%",
-                short_code, entry["net_speculative"], entry["percentile_52w"],
-            )
-
-        if len(result) >= 5:
-            break
-
+    logger.warning("CFTC: All sources exhausted. Returning %d markets.", len(result))
     return result
 
 
@@ -674,13 +767,9 @@ def collect_all_data() -> dict[str, Any]:
     logger.info("\n[1/8] FRED Macro Series...")
     data["fred"] = fetch_fred_series()
 
-    # FMP Economic Calendar (Points 1-6, 11, 12, 20-22, 29)
-    logger.info("\n[2/8] FMP Economic Calendar...")
-    data["fmp_calendar"] = fetch_fmp_economic_calendar()
-
-    # Finnhub Calendar (Points 1-6, 11, 12)
-    logger.info("\n[3/8] Finnhub Calendar...")
-    data["finnhub_calendar"] = fetch_finnhub_calendar()
+    # Economic Calendar — Forex Factory JSON Feed (Points 1-6, 11, 12, 20-22, 29)
+    logger.info("\n[2/8] Economic Calendar (Forex Factory)...")
+    data["forex_factory_calendar"] = fetch_forex_factory_calendar()
 
     # AlphaVantage Indicators (Points 7-10, 23, 24)
     logger.info("\n[4/8] AlphaVantage Indicators...")
