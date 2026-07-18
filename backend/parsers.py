@@ -319,27 +319,39 @@ CFTC_DEAM_URL = "https://www.cftc.gov/dea/newtypes/deam{yy}.txt"
 CFTC_BASE_URL = "https://www.cftc.gov/files/dea/history/deahist{year}.zip"
 
 CFTC_TARGET_MARKETS: dict[str, str] = {
-    "EURO CURRENCY":                "EUR",
-    "BRITISH POUND STERLING":       "GBP",
+    "EURO FX":                      "EUR",
+    "BRITISH POUND":                "GBP",
     "JAPANESE YEN":                 "JPY",
     "CANADIAN DOLLAR":              "CAD",
     "SWISS FRANC":                  "CHF",
     "AUSTRALIAN DOLLAR":            "AUD",
     "MEXICAN PESO":                 "MXN",
-    "NEW ZEALAND DOLLAR":           "NZD",
+    "NZ DOLLAR":                    "NZD",
     "GOLD":                         "XAU",
     "SILVER":                       "XAG",
-    "CRUDE OIL, LIGHT SWEET":       "WTI",
-    "S&P 500 STOCK INDEX":          "SP500",
-    "NASDAQ-100 STOCK INDEX MINI":  "NAS100",
-    "E-MINI S&P 500":               "ES",
+    "WTI CRUDE OIL":                "WTI",
+    "E-MINI S&P 500":               "SP500",
+    "NASDAQ-100":                   "NAS100",
     "U.S. TREASURY BOND":           "USB",
     "10 YEAR U.S. TREASURY NOTE":   "UST10Y",
 }
 
-# Legacy report column names (used in deacot zips)
-CFTC_COL_MARKET = "Market_and_Exchange_Names"
-CFTC_COL_DATE = "Report_Date_as_MM_DD_YYYY"
+# Column name aliases for the Market column (deacot uses spaces, legacy uses underscores)
+# Deacot format: 'Market and Exchange Names'
+# Legacy format: 'Market_and_Exchange_Names'
+CFTC_MARKET_COL_ALIASES = [
+    "Market_and_Exchange_Names",
+    "Market and Exchange Names",
+]
+
+# Column name aliases for the Date column
+# Deacot format: 'As of Date in Form YYYY-MM-DD'
+# Legacy format: 'Report_Date_as_MM_DD_YYYY'
+CFTC_DATE_COL_ALIASES = [
+    "Report_Date_as_MM_DD_YYYY",
+    "As of Date in Form YYYY-MM-DD",
+    "As of Date in Form YYMMDD",
+]
 
 # Disaggregated / TFF column names (used in com/fin zips)
 CFTC_COL_ASST_MANAGER_LONG = "Asset_Mgr_Positions_Long_All"
@@ -455,37 +467,41 @@ def _process_cftc_dataframe(df: pd.DataFrame) -> dict[str, dict]:
     """Process a CFTC DataFrame into the standard result format."""
     result: dict[str, dict] = {}
 
-    df.columns = df.columns.str.strip()
+    # Resolve market and date columns using aliases
+    market_col = _resolve_cftc_column(df, CFTC_MARKET_COL_ALIASES)
+    date_col = _resolve_cftc_column(df, CFTC_DATE_COL_ALIASES)
 
-    # Check required columns exist
-    required = [CFTC_COL_MARKET, CFTC_COL_DATE]
-    if not all(c in df.columns for c in required):
-        logger.warning("CFTC: Missing required columns. Available: %s", list(df.columns))
+    if not market_col or not date_col:
+        logger.warning("CFTC: Missing market/date columns. Available: %s", list(df.columns))
         return result
 
+    # Reset index to avoid issues with auto-parsed datetime index
+    df = df.reset_index(drop=True)
+
     # Debug: log sample market names to understand the actual format
-    sample_markets = df[CFTC_COL_MARKET].dropna().str.strip().unique()[:10]
+    sample_markets = df[market_col].dropna().astype(str).str.strip().unique()[:10]
     logger.info("CFTC: Sample market names from file: %s", sample_markets)
 
     # Filter to target markets using substring matching (handles suffixes like
     # "EURO CURRENCY - CHICAGO MERCANTILE EXCHANGE" matching "EURO CURRENCY")
     market_names = list(CFTC_TARGET_MARKETS.keys())
-    mask = pd.Series([False] * len(df), index=df.index)
+    mask = pd.Series([False] * len(df))
     for mkt in market_names:
-        mask |= df[CFTC_COL_MARKET].str.strip().str.contains(
+        mask |= df[market_col].fillna('').astype(str).str.strip().str.contains(
             mkt, case=False, na=False, regex=False
         )
-    df_filtered = df[mask].copy()
+    df_filtered = df[mask].copy().reset_index(drop=True)
 
     if df_filtered.empty:
-        logger.warning("CFTC: No target markets found in data. Sample names: %s", sample_markets)
+        logger.warning("CFTC: No target markets found in data. All sample markets: %s", sample_markets)
         return result
 
-    # Parse dates
-    df_filtered.loc[:, CFTC_COL_DATE] = pd.to_datetime(
-        df_filtered[CFTC_COL_DATE], format="%m/%d/%Y", errors="coerce"
-    )
-    df_filtered = df_filtered.dropna(subset=[CFTC_COL_DATE])
+    # Ensure date column is datetime - convert at the start before filtering
+    if not pd.api.types.is_datetime64_any_dtype(df_filtered[date_col]):
+        df_filtered.loc[:, date_col] = pd.to_datetime(
+            df_filtered[date_col].astype(str), errors="coerce"
+        )
+    df_filtered = df_filtered.dropna(subset=[date_col])
 
     # Resolve column names using aliases (supports both legacy and disaggregated formats)
     noncomm_long_col = _resolve_cftc_column(df_filtered, CFTC_COLUMN_ALIASES["noncomm_long"])
@@ -517,11 +533,11 @@ def _process_cftc_dataframe(df: pd.DataFrame) -> dict[str, dict]:
         logger.warning("CFTC: No position columns found for net_spec. Columns: %s", list(df_filtered.columns))
         return result
 
-    df_filtered = df_filtered.sort_values([CFTC_COL_MARKET, CFTC_COL_DATE])
+    df_filtered = df_filtered.sort_values([market_col, date_col])
 
     for market_name, short_code in CFTC_TARGET_MARKETS.items():
         market_df = df_filtered[
-            df_filtered[CFTC_COL_MARKET].str.strip().str.contains(
+            df_filtered[market_col].astype(str).str.strip().str.contains(
                 market_name, case=False, na=False, regex=False
             )
         ].copy()
@@ -552,8 +568,14 @@ def _process_cftc_dataframe(df: pd.DataFrame) -> dict[str, dict]:
 
         latest = market_df.iloc[-1]
 
+        # Use resolved date_col name for entry
+        report_date_val = latest[date_col]
+        if hasattr(report_date_val, 'strftime'):
+            report_date_str = report_date_val.strftime("%Y-%m-%d")
+        else:
+            report_date_str = str(report_date_val)[:10]
         entry = {
-            "report_date": latest[CFTC_COL_DATE].strftime("%Y-%m-%d"),
+            "report_date": report_date_str,
             "noncomm_long": float(latest.get(noncomm_long_col, 0)) if noncomm_long_col else 0,
             "noncomm_short": float(latest.get(noncomm_short_col, 0)) if noncomm_short_col else 0,
             "net_speculative": float(latest["net_spec"]),
