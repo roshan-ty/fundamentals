@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #334155 #0f172a;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0f172a;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #475569;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-dark-card border border-dark-border rounded-lg;
+  }
+  .card-header {
+    @apply px-3 py-2 border-b border-dark-border text-xs font-semibold uppercase tracking-wider text-gray-400;
+  }
+  .stat-value {
+    @apply text-2xl font-bold font-mono;
+  }
+  .stat-label {
+    @apply text-xs text-gray-500 mt-0.5;
+  }
+  .badge-bullish {
+    @apply bg-emerald-900/50 text-emerald-400 border border-emerald-700/50;
+  }
+  .badge-bearish {
+    @apply bg-red-900/50 text-red-400 border border-red-700/50;
+  }
+  .badge-neutral {
+    @apply bg-gray-700/50 text-gray-400 border border-gray-600/50;
+  }
+  .filter-input {
+    @apply bg-dark-card border border-dark-border rounded px-3 py-1.5 text-sm text-gray-200 
+           placeholder-gray-500 focus:outline-none focus:border-accent-blue w-full max-w-xs;
+  }
+  .tab-btn {
+    @apply px-4 py-2 text-sm font-medium text-gray-400 hover:text-gray-200 
+           border-b-2 border-transparent hover:border-gray-500 transition-colors;
+  }
+  .tab-btn.active {
+    @apply text-accent-blue border-accent-blue;
+  }
+  .cta-banner {
+    @apply bg-gradient-to-r from-blue-900/40 to-indigo-900/40 border border-blue-700/30 
+           rounded-lg p-4 text-center;
+  }
+  .cta-btn {
+    @apply inline-block bg-accent-blue hover:bg-blue-600 text-white font-semibold 
+           px-6 py-2 rounded-lg transition-colors text-sm;
+  }
+  .discount-code {
+    @apply font-mono text-lg font-bold text-yellow-400 bg-yellow-900/30 
+           px-3 py-1 rounded border border-yellow-600/30;
+  }
+  .modal-overlay {
+    @apply fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4;
+  }
+  .modal-content {
+    @apply bg-dark-card border border-dark-border rounded-lg max-w-2xl w-full max-h-[80vh] overflow-y-auto;
+  }
+}

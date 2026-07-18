@@ -3,15 +3,20 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# Environment
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# Environment Variables
 .env
 backend/.env
-venv/
-.venv/
 
 # IDE
 .vscode/
 .idea/
+*.swp
+*.swo
 
 # OS
 .DS_Store
@@ -19,8 +24,15 @@ Thumbs.db
 
 # Node
 node_modules/
+dist/
+build/
 
 # Logs
 *.log
 
-frontend/
+# Raw scraped data (not committed)
+raw_scrapes/
+tmp/
+
+# Frontend build output
+frontend/dist/
