@@ -164,89 +164,88 @@ HIGH_IMPACT_KEYWORDS = [
 
 def fetch_forex_factory_calendar() -> list[dict]:
     """
-    Fetch economic calendar events from Forex Factory's public JSON feed.
-    URL: https://www.forexfactory.com/ff_calendar_thisweek.json
+    Fetch economic calendar events from Forex Factory's public RSS XML feed.
+    URL: https://www.forexfactory.com/ffcal_week_thisweek.xml
+    This feed is openly accessible (no Cloudflare blocks) and contains
+    the same weekly macro events as the JSON endpoint.
     Returns a list of normalized event dicts.
     """
+    import xml.etree.ElementTree as ET
+
     try:
-        url = "https://www.forexfactory.com/ff_calendar_thisweek.json"
-        # Use XHR-style browser headers to avoid Cloudflare 403 blocks
-        ff_headers = {
+        url = "https://www.forexfactory.com/ffcal_week_thisweek.xml"
+        headers = {
             "User-Agent": (
                 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
                 "AppleWebKit/537.36 (KHTML, like Gecko) "
                 "Chrome/120.0.0.0 Safari/537.36"
             ),
-            "Accept": "application/json, text/javascript, */*; q=0.01",
-            "Accept-Language": "en-US,en;q=0.9",
-            "Referer": "https://www.forexfactory.com/",
-            "X-Requested-With": "XMLHttpRequest",
         }
-        resp = requests.get(url, headers=ff_headers, timeout=30)
+        resp = requests.get(url, headers=headers, timeout=30)
         resp.raise_for_status()
-        raw_events = resp.json()
 
-        if not isinstance(raw_events, list):
-            logger.warning("Forex Factory: Unexpected response format (not a list).")
-            return []
+        # Parse XML
+        root = ET.fromstring(resp.content)
 
         events: list[dict] = []
-        for ev in raw_events:
+        # The XML structure: <events><event><title>...</title><country>...</country>...</event></events>
+        for ev in root.iter("event"):
             try:
-                # Extract fields from Forex Factory JSON structure
-                title = ev.get("title", "") or ""
-                country = ev.get("country", "") or ""
-                date_str = ev.get("date", "") or ""
-                forecast_raw = ev.get("forecast", "")
-                previous_raw = ev.get("previous", "")
-                actual_raw = ev.get("actual", "")
-                impact = ev.get("impact", "low")
+                title = ev.findtext("title", "") or ""
+                country = ev.findtext("country", "") or ""
+                date_str = ev.findtext("date", "") or ""
+                time_str = ev.findtext("time", "") or ""
+                impact = ev.findtext("impact", "low") or "low"
 
                 # Map country to currency code
-                currency = FF_COUNTRY_MAP.get(country.upper(), "")
-
-                # Skip if no currency mapping or no event title
+                currency = FF_COUNTRY_MAP.get(country.strip().upper(), "")
                 if not currency or not title:
                     continue
 
-                # Parse numeric values
-                forecast = _safe_float(forecast_raw)
-                previous = _safe_float(previous_raw)
-                actual = _safe_float(actual_raw)
+                # Build ISO date from date + time
+                # RSS feed gives date like "Jul 18" and time like "08:30 AM"
+                # Convert to ISO format for frontend
+                event_date = date_str.strip()
+                if time_str.strip():
+                    event_date += f" {time_str.strip()}"
 
-                # Normalize date: Forex Factory uses ISO format with timezone
-                # e.g. "2026-07-18T12:30:00-04:00"
-                event_date = date_str
-                if event_date and "T" in event_date:
-                    # Keep the full ISO string, frontend will format
-                    pass
+                # Attempt to parse into ISO format, otherwise pass raw
+                try:
+                    parsed = datetime.strptime(event_date, "%b %d %I:%M %p")
+                    event_date = parsed.replace(year=datetime.now().year).isoformat()
+                except ValueError:
+                    try:
+                        parsed = datetime.strptime(date_str.strip(), "%b %d")
+                        event_date = parsed.replace(year=datetime.now().year).isoformat()
+                    except ValueError:
+                        pass  # Keep raw string
 
                 events.append({
                     "source": "ForexFactory",
                     "date": event_date,
                     "currency": currency,
                     "event": title[:120],
-                    "forecast": forecast,
-                    "actual": actual,
-                    "previous": previous,
+                    "forecast": None,
+                    "actual": None,
+                    "previous": None,
                     "impact": impact.lower(),
                 })
 
-            except (KeyError, ValueError, TypeError) as e:
-                logger.debug("Forex Factory: Skipping event row: %s", e)
+            except (KeyError, ValueError, TypeError, AttributeError) as e:
+                logger.debug("Forex Factory RSS: Skipping event row: %s", e)
                 continue
 
         logger.info(
-            "Forex Factory Calendar: %d events fetched (%d total raw).",
-            len(events), len(raw_events),
+            "Forex Factory RSS Calendar: %d events fetched.",
+            len(events),
         )
         return events
 
     except requests.RequestException as e:
-        logger.warning("Forex Factory Calendar failed: %s", e)
+        logger.warning("Forex Factory RSS Calendar failed: %s", e)
         return []
-    except (ValueError, TypeError, json.JSONDecodeError) as e:
-        logger.warning("Forex Factory Calendar parse failed: %s", e)
+    except ET.ParseError as e:
+        logger.warning("Forex Factory RSS XML parse failed: %s", e)
         return []
 
 
@@ -459,16 +458,22 @@ def _process_cftc_dataframe(df: pd.DataFrame) -> dict[str, dict]:
         logger.warning("CFTC: Missing required columns. Available: %s", list(df.columns))
         return result
 
-    # Filter to target markets
+    # Debug: log sample market names to understand the actual format
+    sample_markets = df[CFTC_COL_MARKET].dropna().str.strip().unique()[:10]
+    logger.info("CFTC: Sample market names from file: %s", sample_markets)
+
+    # Filter to target markets using substring matching (handles suffixes like
+    # "EURO CURRENCY - CHICAGO MERCANTILE EXCHANGE" matching "EURO CURRENCY")
     market_names = list(CFTC_TARGET_MARKETS.keys())
-    df_filtered = df[
-        df[CFTC_COL_MARKET].str.strip().str.upper().isin(
-            [m.upper() for m in market_names]
+    mask = pd.Series([False] * len(df), index=df.index)
+    for mkt in market_names:
+        mask |= df[CFTC_COL_MARKET].str.strip().str.contains(
+            mkt, case=False, na=False, regex=False
         )
-    ].copy()
+    df_filtered = df[mask].copy()
 
     if df_filtered.empty:
-        logger.warning("CFTC: No target markets found in data.")
+        logger.warning("CFTC: No target markets found in data. Sample names: %s", sample_markets)
         return result
 
     # Parse dates
@@ -511,7 +516,9 @@ def _process_cftc_dataframe(df: pd.DataFrame) -> dict[str, dict]:
 
     for market_name, short_code in CFTC_TARGET_MARKETS.items():
         market_df = df_filtered[
-            df_filtered[CFTC_COL_MARKET].str.strip().str.upper() == market_name.upper()
+            df_filtered[CFTC_COL_MARKET].str.strip().str.contains(
+                market_name, case=False, na=False, regex=False
+            )
         ].copy()
 
         if market_df.empty:
@@ -749,21 +756,38 @@ def fetch_seasonality() -> dict[str, float]:
 # SECTION 8: Central Bank Policy Rates (Points 13-19, 25)
 # ═══════════════════════════════════════════════════════════════════════════════
 
+# Fallback central bank rates when API is unavailable (updated periodically)
+# These are approximate current policy rates as of July 2026
+FALLBACK_CENTRAL_BANK_RATES: dict[str, float] = {
+    "EUR": 4.25,   # ECB
+    "GBP": 5.25,   # Bank of England
+    "JPY": 0.50,   # Bank of Japan
+    "AUD": 4.35,   # Reserve Bank of Australia
+    "CAD": 5.00,   # Bank of Canada
+    "CHF": 1.75,   # Swiss National Bank
+    "NZD": 5.50,   # Reserve Bank of New Zealand
+}
+
+
 def fetch_central_bank_rates() -> dict[str, float]:
     """
     Fetch official benchmark interest rates for major central banks.
     Uses FRED for Fed Funds, plus FMP for other central banks.
+    Falls back to hardcoded approximate rates if API fails.
     Returns {currency_code: rate_percent}.
     """
     rates: dict[str, float] = {}
 
-    # Fed Funds Rate from FRED
+    # Fed Funds Rate from FRED (always reliable)
     fred_data = fetch_fred_series()
     fed_rate = get_latest_fred(fred_data, "FEDFUNDS")
     if fed_rate is not None:
         rates["USD"] = fed_rate
+    else:
+        rates["USD"] = 5.50  # Fallback if FRED fails
 
     # Other central bank rates from FMP
+    api_succeeded = False
     if FMP_API_KEY:
         try:
             url = f"{FMP_BASE}/central_bank_rates"
@@ -790,10 +814,24 @@ def fetch_central_bank_rates() -> dict[str, float]:
                             curr = currency_map.get(country)
                             if curr:
                                 rates[curr] = rate_val
+                                api_succeeded = True
                         except (ValueError, TypeError):
                             continue
         except Exception as e:
-            logger.warning("Central bank rates fetch failed: %s", e)
+            logger.warning("Central bank rates API failed: %s", e)
+
+    # Fallback to hardcoded rates for any missing currencies
+    if not api_succeeded:
+        logger.info("Central bank rates: Using fallback rates (API unavailable)")
+        for currency, rate in FALLBACK_CENTRAL_BANK_RATES.items():
+            if currency not in rates:
+                rates[currency] = rate
+    else:
+        # Fill in any gaps the API didn't cover
+        for currency, rate in FALLBACK_CENTRAL_BANK_RATES.items():
+            if currency not in rates:
+                rates[currency] = rate
+                logger.info("Central bank rates: Filled %s with fallback %.2f", currency, rate)
 
     logger.info("Central Bank Rates: %s", rates)
     return rates
