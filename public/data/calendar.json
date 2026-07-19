@@ -1,5 +1,696 @@
 {
-  "last_updated": "2026-07-19T12:12:51.914631+00:00",
-  "events": [],
-  "total_events": 0
+  "last_updated": "2026-07-19T12:37:38.212211+00:00",
+  "events": [
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-24T10:00:00-04:00",
+      "currency": "USD",
+      "event": "New Home Sales",
+      "forecast": null,
+      "actual": null,
+      "previous": null,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-24T09:45:00-04:00",
+      "currency": "USD",
+      "event": "Flash Manufacturing PMI",
+      "forecast": 54.5,
+      "actual": null,
+      "previous": 55.7,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-24T09:45:00-04:00",
+      "currency": "USD",
+      "event": "Flash Services PMI",
+      "forecast": 51.4,
+      "actual": null,
+      "previous": 51.3,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-24T09:00:00-04:00",
+      "currency": "EUR",
+      "event": "Belgian NBB Business Climate",
+      "forecast": -10.2,
+      "actual": null,
+      "previous": -12.4,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-24T08:30:00-04:00",
+      "currency": "CAD",
+      "event": "IPPI m/m",
+      "forecast": -0.4,
+      "actual": null,
+      "previous": 1.2,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-24T08:30:00-04:00",
+      "currency": "CAD",
+      "event": "NHPI m/m",
+      "forecast": -0.2,
+      "actual": null,
+      "previous": -0.3,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-24T08:30:00-04:00",
+      "currency": "CAD",
+      "event": "RMPI m/m",
+      "forecast": -2.7,
+      "actual": null,
+      "previous": 0.7,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-24T04:30:00-04:00",
+      "currency": "GBP",
+      "event": "Flash Manufacturing PMI",
+      "forecast": 52.1,
+      "actual": null,
+      "previous": 53.1,
+      "impact": "medium"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-24T04:30:00-04:00",
+      "currency": "GBP",
+      "event": "Flash Services PMI",
+      "forecast": 49.4,
+      "actual": null,
+      "previous": 48.7,
+      "impact": "medium"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-24T04:00:00-04:00",
+      "currency": "EUR",
+      "event": "Flash Manufacturing PMI",
+      "forecast": 51.6,
+      "actual": null,
+      "previous": 51.3,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-24T04:00:00-04:00",
+      "currency": "EUR",
+      "event": "Flash Services PMI",
+      "forecast": 49.8,
+      "actual": null,
+      "previous": 48.9,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-24T03:30:00-04:00",
+      "currency": "EUR",
+      "event": "German Flash Manufacturing PMI",
+      "forecast": 50.5,
+      "actual": null,
+      "previous": 50.0,
+      "impact": "medium"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-24T03:30:00-04:00",
+      "currency": "EUR",
+      "event": "German Flash Services PMI",
+      "forecast": 49.0,
+      "actual": null,
+      "previous": 46.8,
+      "impact": "medium"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-24T03:15:00-04:00",
+      "currency": "EUR",
+      "event": "French Flash Manufacturing PMI",
+      "forecast": 51.2,
+      "actual": null,
+      "previous": 50.7,
+      "impact": "medium"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-24T03:15:00-04:00",
+      "currency": "EUR",
+      "event": "French Flash Services PMI",
+      "forecast": 47.7,
+      "actual": null,
+      "previous": 47.4,
+      "impact": "medium"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-24T02:00:00-04:00",
+      "currency": "EUR",
+      "event": "German GfK Consumer Climate",
+      "forecast": -28.5,
+      "actual": null,
+      "previous": -29.2,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-24T02:00:00-04:00",
+      "currency": "GBP",
+      "event": "Retail Sales m/m",
+      "forecast": -0.1,
+      "actual": null,
+      "previous": 1.2,
+      "impact": "medium"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-23T20:30:00-04:00",
+      "currency": "JPY",
+      "event": "Flash Manufacturing PMI",
+      "forecast": 55.0,
+      "actual": null,
+      "previous": 54.9,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-23T19:30:00-04:00",
+      "currency": "JPY",
+      "event": "National Core CPI y/y",
+      "forecast": 1.6,
+      "actual": null,
+      "previous": 1.4,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-23T19:01:00-04:00",
+      "currency": "GBP",
+      "event": "GfK Consumer Confidence",
+      "forecast": -21.0,
+      "actual": null,
+      "previous": -23.0,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-23T19:00:00-04:00",
+      "currency": "AUD",
+      "event": "Flash Manufacturing PMI",
+      "forecast": null,
+      "actual": null,
+      "previous": 51.2,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-23T19:00:00-04:00",
+      "currency": "AUD",
+      "event": "Flash Services PMI",
+      "forecast": null,
+      "actual": null,
+      "previous": 49.9,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-23T16:30:00-04:00",
+      "currency": "USD",
+      "event": "Treasury Currency Report",
+      "forecast": null,
+      "actual": null,
+      "previous": null,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-23T10:30:00-04:00",
+      "currency": "USD",
+      "event": "Natural Gas Storage",
+      "forecast": null,
+      "actual": null,
+      "previous": null,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-23T10:00:00-04:00",
+      "currency": "EUR",
+      "event": "Consumer Confidence",
+      "forecast": -17.0,
+      "actual": null,
+      "previous": -18.0,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-23T09:00:00-04:00",
+      "currency": "CNY",
+      "event": "CB Leading Index m/m",
+      "forecast": null,
+      "actual": null,
+      "previous": -0.1,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-23T08:45:00-04:00",
+      "currency": "EUR",
+      "event": "ECB Press Conference",
+      "forecast": null,
+      "actual": null,
+      "previous": null,
+      "impact": "high"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-23T08:30:00-04:00",
+      "currency": "CAD",
+      "event": "Core Retail Sales m/m",
+      "forecast": 1.4,
+      "actual": null,
+      "previous": 0.1,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-23T08:30:00-04:00",
+      "currency": "CAD",
+      "event": "Retail Sales m/m",
+      "forecast": 1.0,
+      "actual": null,
+      "previous": 0.5,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-23T08:30:00-04:00",
+      "currency": "USD",
+      "event": "Unemployment Claims",
+      "forecast": null,
+      "actual": null,
+      "previous": null,
+      "impact": "medium"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-23T08:15:00-04:00",
+      "currency": "EUR",
+      "event": "Main Refinancing Rate",
+      "forecast": 2.4,
+      "actual": null,
+      "previous": 2.4,
+      "impact": "high"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-23T08:15:00-04:00",
+      "currency": "EUR",
+      "event": "Monetary Policy Statement",
+      "forecast": null,
+      "actual": null,
+      "previous": null,
+      "impact": "high"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-23T06:00:00-04:00",
+      "currency": "GBP",
+      "event": "CBI Industrial Order Expectations",
+      "forecast": -40.0,
+      "actual": null,
+      "previous": -45.0,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-22T21:30:00-04:00",
+      "currency": "AUD",
+      "event": "Employment Change",
+      "forecast": null,
+      "actual": null,
+      "previous": null,
+      "impact": "high"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-22T21:30:00-04:00",
+      "currency": "AUD",
+      "event": "Unemployment Rate",
+      "forecast": 4.4,
+      "actual": null,
+      "previous": 4.4,
+      "impact": "high"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-22T10:30:00-04:00",
+      "currency": "USD",
+      "event": "Crude Oil Inventories",
+      "forecast": null,
+      "actual": null,
+      "previous": null,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-22T04:30:00-04:00",
+      "currency": "GBP",
+      "event": "HPI y/y",
+      "forecast": 3.9,
+      "actual": null,
+      "previous": 3.8,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-22T02:00:00-04:00",
+      "currency": "GBP",
+      "event": "CPI y/y",
+      "forecast": 2.7,
+      "actual": null,
+      "previous": 2.8,
+      "impact": "high"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-22T02:00:00-04:00",
+      "currency": "GBP",
+      "event": "Core CPI y/y",
+      "forecast": 2.5,
+      "actual": null,
+      "previous": 2.6,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-22T02:00:00-04:00",
+      "currency": "GBP",
+      "event": "PPI Input m/m",
+      "forecast": -0.6,
+      "actual": null,
+      "previous": 0.2,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-22T02:00:00-04:00",
+      "currency": "GBP",
+      "event": "PPI Output m/m",
+      "forecast": -0.3,
+      "actual": null,
+      "previous": 0.5,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-22T02:00:00-04:00",
+      "currency": "GBP",
+      "event": "RPI y/y",
+      "forecast": 3.0,
+      "actual": null,
+      "previous": 3.1,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-21T23:00:00-04:00",
+      "currency": "NZD",
+      "event": "Credit Card Spending y/y",
+      "forecast": null,
+      "actual": null,
+      "previous": 5.1,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-21T20:30:00-04:00",
+      "currency": "AUD",
+      "event": "MI Leading Index m/m",
+      "forecast": null,
+      "actual": null,
+      "previous": 0.0,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-21T19:50:00-04:00",
+      "currency": "JPY",
+      "event": "Trade Balance",
+      "forecast": null,
+      "actual": null,
+      "previous": null,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-21T16:30:00-04:00",
+      "currency": "USD",
+      "event": "API Weekly Statistical Bulletin",
+      "forecast": null,
+      "actual": null,
+      "previous": null,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-21T10:50:00-04:00",
+      "currency": "NZD",
+      "event": "GDT Price Index",
+      "forecast": null,
+      "actual": null,
+      "previous": -4.9,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-21T08:15:00-04:00",
+      "currency": "USD",
+      "event": "ADP Weekly Employment Change",
+      "forecast": null,
+      "actual": null,
+      "previous": null,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-21T07:30:00-04:00",
+      "currency": "EUR",
+      "event": "German Buba President Nagel Speaks",
+      "forecast": null,
+      "actual": null,
+      "previous": null,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-21T05:00:00-04:00",
+      "currency": "EUR",
+      "event": "ZEW Economic Sentiment",
+      "forecast": 11.5,
+      "actual": null,
+      "previous": 9.5,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-21T05:00:00-04:00",
+      "currency": "EUR",
+      "event": "German ZEW Economic Sentiment",
+      "forecast": 15.7,
+      "actual": null,
+      "previous": 10.5,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-21T02:00:00-04:00",
+      "currency": "GBP",
+      "event": "Claimant Count Change",
+      "forecast": null,
+      "actual": null,
+      "previous": null,
+      "impact": "high"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-21T02:00:00-04:00",
+      "currency": "GBP",
+      "event": "Average Earnings Index 3m/y",
+      "forecast": 4.5,
+      "actual": null,
+      "previous": 4.4,
+      "impact": "medium"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-21T02:00:00-04:00",
+      "currency": "GBP",
+      "event": "Public Sector Net Borrowing",
+      "forecast": null,
+      "actual": null,
+      "previous": null,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-21T02:00:00-04:00",
+      "currency": "GBP",
+      "event": "Unemployment Rate",
+      "forecast": 4.9,
+      "actual": null,
+      "previous": 4.9,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-20T18:45:00-04:00",
+      "currency": "NZD",
+      "event": "CPI q/q",
+      "forecast": 1.5,
+      "actual": null,
+      "previous": 0.9,
+      "impact": "high"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-20T10:00:00-04:00",
+      "currency": "USD",
+      "event": "CB Leading Index m/m",
+      "forecast": -0.1,
+      "actual": null,
+      "previous": 0.1,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-20T08:30:00-04:00",
+      "currency": "CAD",
+      "event": "CPI m/m",
+      "forecast": -0.2,
+      "actual": null,
+      "previous": 1.0,
+      "impact": "high"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-20T08:30:00-04:00",
+      "currency": "CAD",
+      "event": "Median CPI y/y",
+      "forecast": 2.1,
+      "actual": null,
+      "previous": 2.1,
+      "impact": "high"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-20T08:30:00-04:00",
+      "currency": "CAD",
+      "event": "Trimmed CPI y/y",
+      "forecast": 2.0,
+      "actual": null,
+      "previous": 2.0,
+      "impact": "high"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-20T08:30:00-04:00",
+      "currency": "CAD",
+      "event": "Common CPI y/y",
+      "forecast": 2.5,
+      "actual": null,
+      "previous": 2.7,
+      "impact": "medium"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-20T08:30:00-04:00",
+      "currency": "CAD",
+      "event": "Core CPI m/m",
+      "forecast": null,
+      "actual": null,
+      "previous": 0.6,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-20T02:02:00-04:00",
+      "currency": "CNY",
+      "event": "Foreign Direct Investment ytd/y",
+      "forecast": null,
+      "actual": null,
+      "previous": -8.6,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-20T02:00:00-04:00",
+      "currency": "EUR",
+      "event": "German PPI m/m",
+      "forecast": -0.2,
+      "actual": null,
+      "previous": 0.3,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-19T21:00:00-04:00",
+      "currency": "CNY",
+      "event": "1-y Loan Prime Rate",
+      "forecast": 3.0,
+      "actual": null,
+      "previous": 3.0,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-19T21:00:00-04:00",
+      "currency": "CNY",
+      "event": "5-y Loan Prime Rate",
+      "forecast": 3.5,
+      "actual": null,
+      "previous": 3.5,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-19T19:01:00-04:00",
+      "currency": "GBP",
+      "event": "Rightmove HPI m/m",
+      "forecast": null,
+      "actual": null,
+      "previous": -0.6,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-19T19:00:00-04:00",
+      "currency": "JPY",
+      "event": "Bank Holiday",
+      "forecast": null,
+      "actual": null,
+      "previous": null,
+      "impact": "holiday"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-07-19T18:45:00-04:00",
+      "currency": "NZD",
+      "event": "Trade Balance",
+      "forecast": null,
+      "actual": null,
+      "previous": null,
+      "impact": "low"
+    }
+  ],
+  "total_events": 69
 }

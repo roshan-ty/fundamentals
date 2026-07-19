@@ -140,11 +140,11 @@ def get_latest_fred(results: dict[str, list[dict]], series_id: str) -> Optional[
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
-# SECTION 2: Economic Calendar — DailyFX API (Points 1-6, 11, 12, 20-22, 29)
+# SECTION 2: Economic Calendar — Fair Economy JSON Feed (Points 1-6, 11, 12, 20-22, 29)
 # ═══════════════════════════════════════════════════════════════════════════════
 
-# Currency code mapping (DailyFX uses standard ISO codes)
-DAILYFX_CURRENCY_MAP: dict[str, str] = {
+# Country code mapping from Forex Factory country names to our currency codes
+FF_COUNTRY_MAP: dict[str, str] = {
     "USD": "USD", "EUR": "EUR", "GBP": "GBP", "JPY": "JPY",
     "AUD": "AUD", "CAD": "CAD", "CHF": "CHF", "NZD": "NZD",
     "CNY": "CNY", "HKD": "HKD", "SGD": "SGD", "MXN": "MXN",
@@ -162,91 +162,87 @@ HIGH_IMPACT_KEYWORDS = [
 ]
 
 
-def fetch_dailyfx_calendar() -> list[dict]:
+def fetch_ff_calendar() -> list[dict]:
     """
-    Fetch economic calendar events from DailyFX's public API endpoint.
-    URL: https://content.dailyfx.com/api/v1/calendar
-    This API is openly accessible (no Cloudflare blocks) and returns
-    structured JSON with forecast, actual, previous, and impact data.
-    Returns a list of normalized event dicts.
+    Fetch economic calendar events from the Fair Economy JSON feed.
+    URL: https://nfs.faireconomy.media/ff_calendar_thisweek.json
+    This feed mirrors Forex Factory data in clean JSON format with
+    no Cloudflare blocks. Returns a list of normalized event dicts.
     """
     try:
-        url = "https://content.dailyfx.com/api/v1/calendar"
-        now = datetime.utcnow()
-        # Current week start (Monday) to 7 days ahead
-        start = (now - timedelta(days=now.weekday())).strftime("%Y-%m-%dT00:00:00Z")
-        end = (now + timedelta(days=7)).strftime("%Y-%m-%dT23:59:59Z")
-        params = {"start": start, "end": end}
+        url = "https://nfs.faireconomy.media/ff_calendar_thisweek.json"
         headers = {
             "User-Agent": BROWSER_HEADERS["User-Agent"],
             "Accept": "application/json",
         }
-        resp = requests.get(url, headers=headers, params=params, timeout=30)
+        resp = requests.get(url, headers=headers, timeout=30)
         resp.raise_for_status()
         data = resp.json()
 
         events: list[dict] = []
-        # DailyFX returns an array of event objects, or wrapped in a key
-        raw_events = data if isinstance(data, list) else data.get("calendar", data.get("events", []))
+        # The feed returns an array of event objects
+        raw_events = data if isinstance(data, list) else []
 
         for item in raw_events:
             try:
-                title = item.get("title") or item.get("event") or item.get("name", "")
-                currency = item.get("currency", "")
-                date_str = item.get("dateTime") or item.get("date", "")
+                title = item.get("title", "") or ""
+                country = item.get("country", "") or ""
+                date_str = item.get("date", "") or ""
+                time_str = item.get("time", "") or ""
                 impact = item.get("impact", "low") or "low"
                 forecast = item.get("forecast")
-                actual = item.get("actual")
                 previous = item.get("previous")
 
-                if not title or not currency:
+                if not title or not country:
                     continue
 
-                # Normalize currency code
-                currency = currency.strip().upper()
-                if currency not in DAILYFX_CURRENCY_MAP:
+                # Map country to currency code
+                currency = FF_COUNTRY_MAP.get(country.strip().upper(), "")
+                if not currency:
                     continue
 
-                # Parse date to ISO format
-                event_date = date_str
-                if date_str:
+                # Build ISO date from date + time
+                event_date = date_str.strip()
+                if time_str.strip():
+                    event_date += f" {time_str.strip()}"
+
+                # Attempt to parse into ISO format, otherwise pass raw
+                try:
+                    parsed = datetime.strptime(event_date, "%b %d %I:%M %p")
+                    event_date = parsed.replace(year=datetime.now().year).isoformat()
+                except ValueError:
                     try:
-                        # Try ISO format first
-                        parsed = datetime.fromisoformat(date_str.replace("Z", "+00:00"))
-                        event_date = parsed.isoformat()
-                    except (ValueError, TypeError):
-                        try:
-                            parsed = datetime.strptime(date_str, "%Y-%m-%dT%H:%M:%S")
-                            event_date = parsed.isoformat()
-                        except (ValueError, TypeError):
-                            pass  # Keep raw string
+                        parsed = datetime.strptime(date_str.strip(), "%b %d")
+                        event_date = parsed.replace(year=datetime.now().year).isoformat()
+                    except ValueError:
+                        pass  # Keep raw string
 
                 events.append({
-                    "source": "DailyFX",
+                    "source": "ForexFactory",
                     "date": event_date,
                     "currency": currency,
                     "event": str(title)[:120],
                     "forecast": _safe_float(forecast),
-                    "actual": _safe_float(actual),
+                    "actual": None,
                     "previous": _safe_float(previous),
                     "impact": impact.lower(),
                 })
 
             except (KeyError, ValueError, TypeError, AttributeError) as e:
-                logger.debug("DailyFX Calendar: Skipping event row: %s", e)
+                logger.debug("FF Calendar: Skipping event row: %s", e)
                 continue
 
         logger.info(
-            "DailyFX Calendar: %d events fetched.",
+            "FF Calendar: %d events fetched.",
             len(events),
         )
         return events
 
     except requests.RequestException as e:
-        logger.warning("DailyFX Calendar failed: %s", e)
+        logger.warning("FF Calendar failed: %s", e)
         return []
     except (ValueError, TypeError, json.JSONDecodeError) as e:
-        logger.warning("DailyFX Calendar parse failed: %s", e)
+        logger.warning("FF Calendar parse failed: %s", e)
         return []
 
 
@@ -508,14 +504,10 @@ def _process_cftc_dataframe(df: pd.DataFrame) -> dict[str, dict]:
         logger.warning("CFTC: No target markets found in data. All sample markets: %s", sample_markets)
         return result
 
-    # Force date column to string first to prevent DatetimeArray type clashes
-    df_filtered.loc[:, date_col] = df_filtered[date_col].astype(str)
-
-    # Ensure date column is datetime - convert at the start before filtering
-    if not pd.api.types.is_datetime64_any_dtype(df_filtered[date_col]):
-        df_filtered.loc[:, date_col] = pd.to_datetime(
-            df_filtered[date_col], errors="coerce"
-        )
+    # Convert date column safely: parse to datetime, then format as string
+    # Using dt.strftime avoids Pandas 2.x strict dtype clash with DatetimeArray
+    parsed_dates = pd.to_datetime(df_filtered[date_col], errors="coerce")
+    df_filtered.loc[:, date_col] = parsed_dates.dt.strftime('%Y-%m-%d')
     df_filtered = df_filtered.dropna(subset=[date_col])
 
     # Resolve column names using aliases (supports both legacy and disaggregated formats)
@@ -941,9 +933,9 @@ def collect_all_data() -> dict[str, Any]:
     logger.info("\n[1/8] FRED Macro Series...")
     data["fred"] = fetch_fred_series()
 
-    # Economic Calendar — DailyFX API (Points 1-6, 11, 12, 20-22, 29)
-    logger.info("\n[2/8] Economic Calendar (DailyFX)...")
-    data["forex_factory_calendar"] = fetch_dailyfx_calendar()
+    # Economic Calendar — Fair Economy JSON Feed (Points 1-6, 11, 12, 20-22, 29)
+    logger.info("\n[2/8] Economic Calendar (Fair Economy)...")
+    data["forex_factory_calendar"] = fetch_ff_calendar()
 
     # AlphaVantage Indicators (Points 7-10, 23, 24)
     logger.info("\n[4/8] AlphaVantage Indicators...")
