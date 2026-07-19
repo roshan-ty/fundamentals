@@ -14,18 +14,21 @@ import os
 import sys
 import json
 import logging
+from pathlib import Path
 from datetime import datetime, timezone
 from typing import Any, Optional
 
-# Add project root to path
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# Determine project root reliably cross-platform (Windows / Linux / macOS)
+# __file__ is backend/fetch_pipeline.py, so parent.parent is the repo root
+_PROJECT_ROOT = Path(os.path.realpath(os.path.join(os.path.dirname(__file__), '..'))).resolve()
+sys.path.insert(0, str(_PROJECT_ROOT))
 
 # Load .env for local development
 try:
     from dotenv import load_dotenv
-    dotenv_path = os.path.join(os.path.dirname(__file__), ".env")
-    if os.path.exists(dotenv_path):
-        load_dotenv(dotenv_path)
+    dotenv_path = _PROJECT_ROOT / "backend" / ".env"
+    if dotenv_path.exists():
+        load_dotenv(str(dotenv_path))
 except ImportError:
     pass
 
@@ -35,11 +38,9 @@ from backend.ai_analyst import generate_macro_summary
 
 logger = logging.getLogger(__name__)
 
-# ── Output Directory ───────────────────────────────────────────────────────────
-OUTPUT_DIR = os.path.join(
-    os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
-    "public", "data",
-)
+# ── Output Directory (relative to project root) ────────────────────────────────
+PROJECT_ROOT = _PROJECT_ROOT
+OUTPUT_DIR = PROJECT_ROOT / "public" / "data"
 
 
 def ensure_output_dir() -> None:
@@ -50,7 +51,7 @@ def ensure_output_dir() -> None:
 def write_json(filename: str, data: Any) -> str:
     """Write data to JSON file in the output directory."""
     ensure_output_dir()
-    filepath = os.path.join(OUTPUT_DIR, filename)
+    filepath = str(OUTPUT_DIR / filename)
     with open(filepath, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, default=str)
     size = os.path.getsize(filepath)

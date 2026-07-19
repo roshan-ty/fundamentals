@@ -443,7 +443,7 @@ def _parse_cftc_zip(content: bytes) -> pd.DataFrame:
                     text = raw.decode("utf-8")
                 except UnicodeDecodeError:
                     text = raw.decode("latin-1")
-                return pd.read_csv(io.StringIO(text), low_memory=False, dtype=str)
+                return pd.read_csv(io.StringIO(text), low_memory=False)
     except Exception as e:
         logger.error("CFTC: ZIP parse failed: %s", e)
         return pd.DataFrame()

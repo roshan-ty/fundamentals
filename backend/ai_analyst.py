@@ -66,7 +66,6 @@ def generate_macro_summary(scoring_results: dict[str, Any],
                     },
                 ],
                 "temperature": 0.3,  # Low temperature for factual analysis
-                "max_tokens": 1024,
             },
             timeout=60,
         )
