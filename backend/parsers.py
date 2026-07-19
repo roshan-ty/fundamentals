@@ -174,18 +174,7 @@ def fetch_forex_factory_calendar() -> list[dict]:
 
     try:
         url = "https://www.forexfactory.com/ffcal_week_thisweek.xml"
-        headers = {
-            "User-Agent": (
-                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                "AppleWebKit/537.36 (KHTML, like Gecko) "
-                "Chrome/120.0.0.0 Safari/537.36"
-            ),
-            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
-            "Accept-Language": "en-US,en;q=0.5",
-            "Accept-Encoding": "gzip, deflate, br",
-            "Connection": "keep-alive",
-            "Upgrade-Insecure-Requests": "1",
-        }
+        headers = dict(BROWSER_HEADERS)
         resp = requests.get(url, headers=headers, timeout=30)
         resp.raise_for_status()
 
@@ -434,7 +423,7 @@ def _parse_cftc_zip(content: bytes) -> pd.DataFrame:
                     text = raw.decode("utf-8")
                 except UnicodeDecodeError:
                     text = raw.decode("latin-1")
-                return pd.read_csv(io.StringIO(text), low_memory=False)
+                return pd.read_csv(io.StringIO(text), low_memory=False, dtype=str)
     except Exception as e:
         logger.error("CFTC: ZIP parse failed: %s", e)
         return pd.DataFrame()
@@ -478,18 +467,17 @@ def _process_cftc_dataframe(df: pd.DataFrame) -> dict[str, dict]:
     # Reset index to avoid issues with auto-parsed datetime index
     df = df.reset_index(drop=True)
 
+    # Defensively ensure market column is string type for text processing
+    df[market_col] = df[market_col].astype(str).str.strip()
+
     # Debug: log sample market names to understand the actual format
-    sample_markets = df[market_col].dropna().astype(str).str.strip().unique()[:10]
+    sample_markets = df[market_col].dropna().unique()[:10]
     logger.info("CFTC: Sample market names from file: %s", sample_markets)
 
-    # Filter to target markets using substring matching (handles suffixes like
-    # "EURO CURRENCY - CHICAGO MERCANTILE EXCHANGE" matching "EURO CURRENCY")
-    market_names = list(CFTC_TARGET_MARKETS.keys())
-    mask = pd.Series([False] * len(df))
-    for mkt in market_names:
-        mask |= df[market_col].fillna('').astype(str).str.strip().str.contains(
-            mkt, case=False, na=False, regex=False
-        )
+    # Filter to target markets using a single combined case-insensitive regex
+    # This handles suffixes like "EURO FX - CHICAGO MERCANTILE EXCHANGE"
+    market_pattern = '|'.join(re.escape(m) for m in CFTC_TARGET_MARKETS.keys())
+    mask = df[market_col].str.contains(market_pattern, case=False, na=False, regex=True)
     df_filtered = df[mask].copy().reset_index(drop=True)
 
     if df_filtered.empty:
@@ -811,9 +799,11 @@ def fetch_central_bank_rates() -> dict[str, float]:
     else:
         rates["USD"] = 5.50  # Fallback if FRED fails
 
-    # Other central bank rates from FMP
+    # Other central bank rates from FMP — bail out cleanly if key is missing
     api_succeeded = False
-    if FMP_API_KEY:
+    if not FMP_API_KEY:
+        logger.info("Central bank rates: FMP_API_KEY not set, skipping FMP extraction.")
+    else:
         try:
             url = f"{FMP_BASE}/central_bank_rates"
             params = {"apikey": FMP_API_KEY}
