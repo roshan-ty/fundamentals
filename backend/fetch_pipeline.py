@@ -123,6 +123,7 @@ def run_pipeline() -> dict[str, Any]:
         "last_updated": datetime.now(timezone.utc).isoformat(),
         "base_scores": scoring_results["base_scores"],
         "total_base_assets": len(scoring_results["base_scores"]),
+        "momentum_scores": scoring_results.get("momentum_scores", {}),
         "pairs": scoring_results["pairs"],
         "total_pairs": scoring_results["total_pairs"],
         "extreme_setups": scoring_results["extreme_setups"],

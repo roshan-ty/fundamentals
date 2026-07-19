@@ -163,6 +163,207 @@ def score_for_asset_class(base_score: float, event_name: str,
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
+# SECTION 2A: 2-Week Momentum / Trend Analysis
+# ═══════════════════════════════════════════════════════════════════════════════
+
+def compute_fred_momentum_scores(collected_data: dict[str, Any]) -> dict[str, float]:
+    """
+    Compute 2-week directional momentum scores from FRED series for each asset.
+    
+    For USD, uses:
+      - GDPC1: (V_current - V_2q_ago) / V_2q_ago → momentum score
+      - UNRATE: rising unemployment = weakening economy → negative momentum
+      - CPILFESL: inflation change → directional momentum
+      - FEDFUNDS: rate change → monetary policy momentum
+      - DGS10: yield change → bond market momentum
+      - T10YIE: breakeven inflation change
+    
+    Returns {asset_code: momentum_score} where 1-10 scale:
+      1-3: Strongly weakening trend
+      4-5: Slightly weakening / neutral
+      6-7: Slightly strengthening
+      8-10: Strongly strengthening
+    """
+    fred = collected_data.get("fred", {})
+    momentum: dict[str, float] = {}
+    
+    # USD momentum from multiple FRED series
+    if "GDPC1" in fred:
+        obs = fred["GDPC1"]
+        if len(obs) >= 5:
+            v_cur = obs[0]["value"]
+            v_prev = obs[4]["value"]  # ~1 quarter ago (desc order)
+            if v_prev > 0:
+                pct_change = (v_cur - v_prev) / v_prev * 100
+                # GDP growth > 3% = strong positive momentum
+                if pct_change > 3.0:
+                    usd_gdp = 8.0
+                elif pct_change > 2.0:
+                    usd_gdp = 7.0
+                elif pct_change > 1.0:
+                    usd_gdp = 6.0
+                elif pct_change > 0.0:
+                    usd_gdp = 5.5
+                elif pct_change > -1.0:
+                    usd_gdp = 4.5
+                else:
+                    usd_gdp = 3.0
+                momentum["usd_gdp"] = usd_gdp
+
+    if "UNRATE" in fred:
+        obs = fred["UNRATE"]
+        if len(obs) >= 3:
+            v_cur = obs[0]["value"]
+            v_w2 = obs[2]["value"] if len(obs) >= 3 else obs[-1]["value"]
+            unrate_change = v_cur - v_w2
+            # Rising unemployment = negative momentum for economy
+            if unrate_change > 0.5:
+                usd_unemp = 2.0
+            elif unrate_change > 0.2:
+                usd_unemp = 3.0
+            elif unrate_change > 0.0:
+                usd_unemp = 4.5
+            elif unrate_change > -0.2:
+                usd_unemp = 5.5
+            elif unrate_change > -0.5:
+                usd_unemp = 7.0
+            else:
+                usd_unemp = 8.0
+            momentum["usd_unemp"] = usd_unemp
+
+    if "CPILFESL" in fred:
+        obs = fred["CPILFESL"]
+        if len(obs) >= 13:
+            v_cur = obs[0]["value"]
+            v_12m = obs[12]["value"] if len(obs) >= 13 else obs[-1]["value"]
+            if v_12m > 0:
+                cpi_yoy = (v_cur - v_12m) / v_12m * 100
+                # Inflation momentum
+                if cpi_yoy > 5.0:
+                    momentum["usd_cpi"] = 9.0  # Very hot
+                elif cpi_yoy > 3.5:
+                    momentum["usd_cpi"] = 7.0
+                elif cpi_yoy > 2.5:
+                    momentum["usd_cpi"] = 6.0
+                elif cpi_yoy > 1.5:
+                    momentum["usd_cpi"] = 5.5
+                elif cpi_yoy > 0.0:
+                    momentum["usd_cpi"] = 5.0
+                else:
+                    momentum["usd_cpi"] = 3.0
+
+    if "FEDFUNDS" in fred:
+        obs = fred["FEDFUNDS"]
+        if len(obs) >= 3:
+            v_cur = obs[0]["value"]
+            v_prev = obs[2]["value"] if len(obs) >= 3 else obs[-1]["value"]
+            rate_change = v_cur - v_prev
+            # Rate hikes = hawkish momentum
+            if rate_change > 0.5:
+                momentum["usd_rates"] = 9.0
+            elif rate_change > 0.25:
+                momentum["usd_rates"] = 8.0
+            elif rate_change > 0.0:
+                momentum["usd_rates"] = 6.5
+            elif rate_change > -0.25:
+                momentum["usd_rates"] = 4.5
+            elif rate_change > -0.5:
+                momentum["usd_rates"] = 3.0
+            else:
+                momentum["usd_rates"] = 2.0
+
+    if "DGS10" in fred:
+        obs = fred["DGS10"]
+        if len(obs) >= 3:
+            v_cur = obs[0]["value"]
+            v_prev = obs[2]["value"] if len(obs) >= 3 else obs[-1]["value"]
+            yld_change = v_cur - v_prev
+            # Rising yields = bond market momentum
+            if yld_change > 0.5:
+                momentum["usd_yields"] = 8.0
+            elif yld_change > 0.25:
+                momentum["usd_yields"] = 7.0
+            elif yld_change > 0.0:
+                momentum["usd_yields"] = 6.0
+            elif yld_change > -0.25:
+                momentum["usd_yields"] = 5.0
+            elif yld_change > -0.5:
+                momentum["usd_yields"] = 4.0
+            else:
+                momentum["usd_yields"] = 3.0
+
+    # Compute aggregate USD momentum score
+    usd_components = [v for k, v in momentum.items() if k.startswith("usd_")]
+    if usd_components:
+        usd_momentum = sum(usd_components) / len(usd_components)
+    else:
+        usd_momentum = 5.0
+
+    # Compute CFTC-based momentum for FX majors
+    cftc = collected_data.get("cftc", {})
+    cftc_momentum_map: dict[str, float] = {}
+    for asset_code, cftc_entry in cftc.items():
+        weekly_chg = cftc_entry.get("weekly_change", 0)
+        pctl = cftc_entry.get("percentile_52w", 50)
+        # Positive weekly change + high percentile = strengthening momentum
+        if weekly_chg > 0 and pctl > 60:
+            cftc_momentum_map[asset_code] = 7.0
+        elif weekly_chg > 0 and pctl > 40:
+            cftc_momentum_map[asset_code] = 6.0
+        elif weekly_chg < 0 and pctl < 40:
+            cftc_momentum_map[asset_code] = 4.0
+        elif weekly_chg < 0 and pctl < 20:
+            cftc_momentum_map[asset_code] = 3.0
+        else:
+            cftc_momentum_map[asset_code] = 5.0
+
+    # Build final momentum dict per asset
+    result: dict[str, float] = {}
+    for asset in BASE_ASSETS:
+        if asset == "USD":
+            result[asset] = round(usd_momentum, 2)
+        elif asset in cftc_momentum_map:
+            # Blend CFTC momentum with USD momentum for cross-rate assets
+            cftc_m = cftc_momentum_map[asset]
+            # For FX pairs, asset momentum is relative to USD momentum
+            if asset in ["EUR", "GBP", "AUD", "NZD"]:
+                # Long-side assets: CFTC bullish = positive
+                result[asset] = round((cftc_m + 5.0) / 2, 2)
+            elif asset in ["JPY", "CAD", "CHF", "MXN"]:
+                # Short-side assets: CFTC bearish = positive for the asset
+                result[asset] = round((cftc_m + 5.0) / 2, 2)
+            else:
+                result[asset] = round(cftc_m, 2)
+        else:
+            result[asset] = 5.0  # Neutral default
+
+    return result
+
+
+def adjust_bias_with_momentum(
+    base_score: float,
+    quote_score: float,
+    base_momentum: float,
+    quote_momentum: float,
+) -> float:
+    """
+    Adjust pair bias using 2-week momentum differential.
+    
+    Formula: 
+      momentum_delta = (base_momentum - quote_momentum) / 5 * 2
+      adjusted_bias = base_bias + momentum_delta
+    
+    If base momentum is strong and quote momentum is weak,
+    the pair gets an additional bullish boost.
+    """
+    # Normalize momentum delta to a -2 to +2 adjustment range
+    momentum_delta = (base_momentum - quote_momentum) / 5.0 * 2.0
+    base_bias = 5.0 + (base_score - quote_score)
+    adjusted = base_bias + momentum_delta
+    return max(1.0, min(10.0, adjusted))
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
 # SECTION 3: Score Aggregation with Tier Weights
 # ═══════════════════════════════════════════════════════════════════════════════
 
@@ -507,9 +708,47 @@ def score_all(collected_data: dict[str, Any]) -> dict[str, Any]:
     for asset, score in sorted(base_scores.items()):
         logger.info("  %s: %.2f", asset, score)
 
-    # Step 2: Compute all cross-pairs
-    logger.info("\n[Step 2/3] Computing cross-pair biases...")
+    # Step 1b: Compute 2-week momentum scores
+    logger.info("\n[Step 1b/3] Computing 2-week momentum trends...")
+    momentum_scores = compute_fred_momentum_scores(collected_data)
+    for asset, m_score in sorted(momentum_scores.items()):
+        logger.info("  Momentum %s: %.2f", asset, m_score)
+
+    # Step 2: Compute all cross-pairs with momentum adjustment
+    logger.info("\n[Step 2/3] Computing cross-pair biases (momentum-adjusted)...")
     pair_scores = compute_all_pairs(base_scores)
+
+    # Apply momentum adjustment to each pair
+    for pair in pair_scores:
+        base = pair["base_asset"]
+        quote = pair["quote_asset"]
+        base_mom = momentum_scores.get(base, 5.0)
+        quote_mom = momentum_scores.get(quote, 5.0)
+        pair["momentum_base"] = round(base_mom, 2)
+        pair["momentum_quote"] = round(quote_mom, 2)
+        pair["momentum_adjusted_bias"] = round(
+            adjust_bias_with_momentum(
+                pair["base_score"], pair["quote_score"],
+                base_mom, quote_mom
+            ), 2
+        )
+        # Update combined_bias to use momentum-adjusted value
+        pair["combined_bias"] = pair["momentum_adjusted_bias"]
+        # Recalculate direction
+        cb = pair["combined_bias"]
+        if cb >= 8.0:
+            pair["direction"] = "Strongly Bullish"
+        elif cb >= 6.0:
+            pair["direction"] = "Bullish"
+        elif cb >= 4.1:
+            pair["direction"] = "Neutral"
+        elif cb >= 2.1:
+            pair["direction"] = "Bearish"
+        else:
+            pair["direction"] = "Strongly Bearish"
+
+    # Re-sort by momentum-adjusted bias
+    pair_scores.sort(key=lambda p: abs(p["combined_bias"] - 5.0), reverse=True)
 
     # Step 3: Identify extreme setups
     logger.info("\n[Step 3/3] Identifying extreme setups...")
@@ -521,6 +760,7 @@ def score_all(collected_data: dict[str, Any]) -> dict[str, Any]:
     result = {
         "timestamp": datetime.now(timezone.utc).isoformat(),
         "base_scores": base_scores,
+        "momentum_scores": momentum_scores,
         "pairs": pair_scores,
         "total_pairs": len(pair_scores),
         "extreme_setups": extreme_setups,
