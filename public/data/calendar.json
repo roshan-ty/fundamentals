@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-19T15:17:03.959659+00:00",
+  "last_updated": "2026-07-20T13:26:14.371963+00:00",
   "events": [
     {
       "source": "ForexFactory",
@@ -513,6 +513,16 @@
     },
     {
       "source": "ForexFactory",
+      "date": "2026-07-21T02:02:00-04:00",
+      "currency": "CNY",
+      "event": "Foreign Direct Investment ytd/y",
+      "forecast": null,
+      "actual": null,
+      "previous": -8.6,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
       "date": "2026-07-21T02:00:00-04:00",
       "currency": "GBP",
       "event": "Claimant Count Change",
@@ -619,16 +629,6 @@
       "forecast": null,
       "actual": null,
       "previous": 0.6,
-      "impact": "low"
-    },
-    {
-      "source": "ForexFactory",
-      "date": "2026-07-20T02:02:00-04:00",
-      "currency": "CNY",
-      "event": "Foreign Direct Investment ytd/y",
-      "forecast": null,
-      "actual": null,
-      "previous": -8.6,
       "impact": "low"
     },
     {
