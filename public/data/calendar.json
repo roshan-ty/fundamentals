@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-21T12:10:06.172944+00:00",
+  "last_updated": "2026-07-22T12:14:24.884194+00:00",
   "events": [
     {
       "source": "ForexFactory",
@@ -333,6 +333,16 @@
     },
     {
       "source": "ForexFactory",
+      "date": "2026-07-23T02:02:00-04:00",
+      "currency": "CNY",
+      "event": "Foreign Direct Investment ytd/y",
+      "forecast": null,
+      "actual": null,
+      "previous": -8.6,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
       "date": "2026-07-22T21:30:00-04:00",
       "currency": "AUD",
       "event": "Employment Change",
@@ -353,6 +363,16 @@
     },
     {
       "source": "ForexFactory",
+      "date": "2026-07-22T15:00:00-04:00",
+      "currency": "USD",
+      "event": "President Trump Speaks",
+      "forecast": null,
+      "actual": null,
+      "previous": null,
+      "impact": "medium"
+    },
+    {
+      "source": "ForexFactory",
       "date": "2026-07-22T10:30:00-04:00",
       "currency": "USD",
       "event": "Crude Oil Inventories",
@@ -369,16 +389,6 @@
       "forecast": 3.2,
       "actual": null,
       "previous": 3.8,
-      "impact": "low"
-    },
-    {
-      "source": "ForexFactory",
-      "date": "2026-07-22T02:02:00-04:00",
-      "currency": "CNY",
-      "event": "Foreign Direct Investment ytd/y",
-      "forecast": null,
-      "actual": null,
-      "previous": -8.6,
       "impact": "low"
     },
     {
@@ -433,7 +443,7 @@
     },
     {
       "source": "ForexFactory",
-      "date": "2026-07-21T23:00:00-04:00",
+      "date": "2026-07-21T23:03:00-04:00",
       "currency": "NZD",
       "event": "Credit Card Spending y/y",
       "forecast": null,
@@ -473,7 +483,7 @@
     },
     {
       "source": "ForexFactory",
-      "date": "2026-07-21T10:50:00-04:00",
+      "date": "2026-07-21T11:16:00-04:00",
       "currency": "NZD",
       "event": "GDT Price Index",
       "forecast": null,
@@ -505,20 +515,20 @@
       "source": "ForexFactory",
       "date": "2026-07-21T05:00:00-04:00",
       "currency": "EUR",
-      "event": "German ZEW Economic Sentiment",
-      "forecast": 15.1,
+      "event": "ZEW Economic Sentiment",
+      "forecast": 11.2,
       "actual": null,
-      "previous": 10.5,
+      "previous": 9.5,
       "impact": "low"
     },
     {
       "source": "ForexFactory",
       "date": "2026-07-21T05:00:00-04:00",
       "currency": "EUR",
-      "event": "ZEW Economic Sentiment",
-      "forecast": 11.2,
+      "event": "German ZEW Economic Sentiment",
+      "forecast": 15.1,
       "actual": null,
-      "previous": 9.5,
+      "previous": 10.5,
       "impact": "low"
     },
     {
@@ -692,5 +702,5 @@
       "impact": "low"
     }
   ],
-  "total_events": 69
+  "total_events": 70
 }
