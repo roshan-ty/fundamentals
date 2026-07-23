@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-22T12:14:24.893591+00:00",
+  "last_updated": "2026-07-23T12:11:55.182644+00:00",
   "base_scores": {
     "USD": 7.43,
     "EUR": 7.42,
@@ -7,7 +7,7 @@
     "JPY": 4.4,
     "AUD": 4.98,
     "CAD": 5.51,
-    "CHF": 4.81,
+    "CHF": 4.92,
     "NZD": 5.6,
     "XAU": 3.42,
     "XAG": 8.0,
@@ -160,19 +160,6 @@
       "momentum_adjusted_bias": 8.02
     },
     {
-      "name": "GBP/CHF",
-      "asset_class": "FX",
-      "base_asset": "GBP",
-      "quote_asset": "CHF",
-      "base_score": 7.81,
-      "quote_score": 4.81,
-      "combined_bias": 8.0,
-      "direction": "Strongly Bullish",
-      "momentum_base": 5.0,
-      "momentum_quote": 5.0,
-      "momentum_adjusted_bias": 8.0
-    },
-    {
       "name": "AUD/USD",
       "asset_class": "FX",
       "base_asset": "AUD",
@@ -186,17 +173,30 @@
       "momentum_adjusted_bias": 2.03
     },
     {
+      "name": "GBP/CHF",
+      "asset_class": "FX",
+      "base_asset": "GBP",
+      "quote_asset": "CHF",
+      "base_score": 7.81,
+      "quote_score": 4.92,
+      "combined_bias": 7.89,
+      "direction": "Bullish",
+      "momentum_base": 5.0,
+      "momentum_quote": 5.0,
+      "momentum_adjusted_bias": 7.89
+    },
+    {
       "name": "USD/CHF",
       "asset_class": "FX",
       "base_asset": "USD",
       "quote_asset": "CHF",
       "base_score": 7.43,
-      "quote_score": 4.81,
-      "combined_bias": 7.94,
+      "quote_score": 4.92,
+      "combined_bias": 7.83,
       "direction": "Bullish",
       "momentum_base": 5.8,
       "momentum_quote": 5.0,
-      "momentum_adjusted_bias": 7.94
+      "momentum_adjusted_bias": 7.83
     },
     {
       "name": "SOL/USD",
@@ -243,12 +243,12 @@
       "base_asset": "EUR",
       "quote_asset": "CHF",
       "base_score": 7.42,
-      "quote_score": 4.81,
-      "combined_bias": 7.61,
+      "quote_score": 4.92,
+      "combined_bias": 7.5,
       "direction": "Bullish",
       "momentum_base": 5.0,
       "momentum_quote": 5.0,
-      "momentum_adjusted_bias": 7.61
+      "momentum_adjusted_bias": 7.5
     },
     {
       "name": "GBP/CAD",
@@ -399,12 +399,12 @@
       "base_asset": "NZD",
       "quote_asset": "CHF",
       "base_score": 5.6,
-      "quote_score": 4.81,
-      "combined_bias": 5.79,
+      "quote_score": 4.92,
+      "combined_bias": 5.68,
       "direction": "Neutral",
       "momentum_base": 5.0,
       "momentum_quote": 5.0,
-      "momentum_adjusted_bias": 5.79
+      "momentum_adjusted_bias": 5.68
     },
     {
       "name": "BTC/USD",
@@ -437,13 +437,13 @@
       "asset_class": "FX",
       "base_asset": "CHF",
       "quote_asset": "JPY",
-      "base_score": 4.81,
+      "base_score": 4.92,
       "quote_score": 4.4,
-      "combined_bias": 5.41,
+      "combined_bias": 5.52,
       "direction": "Neutral",
       "momentum_base": 5.0,
       "momentum_quote": 5.0,
-      "momentum_adjusted_bias": 5.41
+      "momentum_adjusted_bias": 5.52
     },
     {
       "name": "EUR/GBP",
@@ -511,6 +511,19 @@
       "momentum_adjusted_bias": 5.25
     },
     {
+      "name": "AUD/CHF",
+      "asset_class": "FX",
+      "base_asset": "AUD",
+      "quote_asset": "CHF",
+      "base_score": 4.98,
+      "quote_score": 4.92,
+      "combined_bias": 4.86,
+      "direction": "Neutral",
+      "momentum_base": 4.5,
+      "momentum_quote": 5.0,
+      "momentum_adjusted_bias": 4.86
+    },
+    {
       "name": "GBP/USD",
       "asset_class": "FX",
       "base_asset": "GBP",
@@ -522,19 +535,6 @@
       "momentum_base": 5.0,
       "momentum_quote": 5.8,
       "momentum_adjusted_bias": 5.06
-    },
-    {
-      "name": "AUD/CHF",
-      "asset_class": "FX",
-      "base_asset": "AUD",
-      "quote_asset": "CHF",
-      "base_score": 4.98,
-      "quote_score": 4.81,
-      "combined_bias": 4.97,
-      "direction": "Neutral",
-      "momentum_base": 4.5,
-      "momentum_quote": 5.0,
-      "momentum_adjusted_bias": 4.97
     }
   ],
   "total_pairs": 38,
@@ -655,22 +655,9 @@
       "momentum_base": 5.0,
       "momentum_quote": 5.0,
       "momentum_adjusted_bias": 8.02
-    },
-    {
-      "name": "GBP/CHF",
-      "asset_class": "FX",
-      "base_asset": "GBP",
-      "quote_asset": "CHF",
-      "base_score": 7.81,
-      "quote_score": 4.81,
-      "combined_bias": 8.0,
-      "direction": "Strongly Bullish",
-      "momentum_base": 5.0,
-      "momentum_quote": 5.0,
-      "momentum_adjusted_bias": 8.0
     }
   ],
-  "total_extreme": 10,
+  "total_extreme": 9,
   "summary": {
     "bullish_count": 17,
     "bearish_count": 8,
