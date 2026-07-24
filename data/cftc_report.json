@@ -1,0 +1,110 @@
+{
+  "last_updated": "2026-07-24T11:59:10.389023+00:00",
+  "positions": {
+    "EUR": {
+      "report_date": "2026-07-14",
+      "noncomm_long": 6424.0,
+      "noncomm_short": 3140.0,
+      "net_speculative": 3284.0,
+      "weekly_change": -4.0,
+      "percentile_52w": 92.91
+    },
+    "GBP": {
+      "report_date": "2026-07-14",
+      "noncomm_long": 6880.0,
+      "noncomm_short": 6423.0,
+      "net_speculative": 457.0,
+      "weekly_change": -300.0,
+      "percentile_52w": 96.97
+    },
+    "JPY": {
+      "report_date": "2026-07-14",
+      "noncomm_long": 115965.0,
+      "noncomm_short": 238628.0,
+      "net_speculative": -122663.0,
+      "weekly_change": 1115.0,
+      "percentile_52w": 19.3
+    },
+    "CAD": {
+      "report_date": "2026-07-14",
+      "noncomm_long": 29712.0,
+      "noncomm_short": 205991.0,
+      "net_speculative": -176279.0,
+      "weekly_change": -3153.0,
+      "percentile_52w": 0.0
+    },
+    "CHF": {
+      "report_date": "2026-07-14",
+      "noncomm_long": 9909.0,
+      "noncomm_short": 46865.0,
+      "net_speculative": -36956.0,
+      "weekly_change": 458.0,
+      "percentile_52w": 35.4
+    },
+    "AUD": {
+      "report_date": "2026-07-14",
+      "noncomm_long": 68377.0,
+      "noncomm_short": 99087.0,
+      "net_speculative": -30710.0,
+      "weekly_change": -6059.0,
+      "percentile_52w": 0.0
+    },
+    "MXN": {
+      "report_date": "2026-07-14",
+      "noncomm_long": 107127.0,
+      "noncomm_short": 34172.0,
+      "net_speculative": 72955.0,
+      "weekly_change": -4402.0,
+      "percentile_52w": 33.49
+    },
+    "NZD": {
+      "report_date": "2026-07-14",
+      "noncomm_long": 8936.0,
+      "noncomm_short": 71702.0,
+      "net_speculative": -62766.0,
+      "weekly_change": 2423.0,
+      "percentile_52w": 5.75
+    },
+    "XAU": {
+      "report_date": "2026-07-14",
+      "noncomm_long": 29727.0,
+      "noncomm_short": 45283.0,
+      "net_speculative": -15556.0,
+      "weekly_change": -93.0,
+      "percentile_52w": 4.71
+    },
+    "XAG": {
+      "report_date": "2026-07-14",
+      "noncomm_long": 36246.0,
+      "noncomm_short": 11172.0,
+      "net_speculative": 25074.0,
+      "weekly_change": -2941.0,
+      "percentile_52w": 85.26
+    },
+    "WTI": {
+      "report_date": "2026-07-14",
+      "noncomm_long": 4681.0,
+      "noncomm_short": 9131.0,
+      "net_speculative": -4450.0,
+      "weekly_change": 129.0,
+      "percentile_52w": 1.27
+    },
+    "SP500": {
+      "report_date": "2026-07-14",
+      "noncomm_long": 31457.0,
+      "noncomm_short": 67719.0,
+      "net_speculative": -36262.0,
+      "weekly_change": -25315.0,
+      "percentile_52w": 51.38
+    },
+    "NAS100": {
+      "report_date": "2026-07-14",
+      "noncomm_long": 61576.0,
+      "noncomm_short": 71889.0,
+      "net_speculative": -10313.0,
+      "weekly_change": -1572.0,
+      "percentile_52w": 72.33
+    }
+  },
+  "total_markets": 13
+}
