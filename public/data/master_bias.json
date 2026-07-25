@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-25T07:49:00.041877+00:00",
+  "last_updated": "2026-07-25T10:54:04.805715+00:00",
   "base_scores": {
     "USD": 7.43,
     "EUR": 7.08,
@@ -9,7 +9,7 @@
     "CAD": 5.51,
     "CHF": 5.58,
     "NZD": 6.0,
-    "XAU": 3.17,
+    "XAU": 3.42,
     "XAG": 8.0,
     "WTI": 2.92,
     "SP500": 6.45,
@@ -73,7 +73,7 @@
       "asset_class": "METAL",
       "base_asset": "XAU",
       "quote_asset": "USD",
-      "base_score": 3.17,
+      "base_score": 3.42,
       "quote_score": 7.43,
       "combined_bias": 1.0,
       "direction": "Strongly Bearish",
@@ -570,7 +570,7 @@
       "asset_class": "METAL",
       "base_asset": "XAU",
       "quote_asset": "USD",
-      "base_score": 3.17,
+      "base_score": 3.42,
       "quote_score": 7.43,
       "combined_bias": 1.0,
       "direction": "Strongly Bearish",
