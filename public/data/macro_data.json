@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-28T08:31:17.323047+00:00",
+  "last_updated": "2026-07-29T08:37:47.546080+00:00",
   "series": {
     "GDPC1": [
       {
@@ -3003,6 +3003,11 @@
     ],
     "DFII10": [
       {
+        "date": "2026-07-27",
+        "value": 2.44,
+        "unit": "Percent"
+      },
+      {
         "date": "2026-07-24",
         "value": 2.43,
         "unit": "Percent"
@@ -3576,14 +3581,14 @@
         "date": "2026-02-10",
         "value": 1.84,
         "unit": "Percent"
-      },
-      {
-        "date": "2026-02-09",
-        "value": 1.87,
-        "unit": "Percent"
       }
     ],
     "T10YIE": [
+      {
+        "date": "2026-07-28",
+        "value": 2.2,
+        "unit": "Percent"
+      },
       {
         "date": "2026-07-27",
         "value": 2.21,
@@ -4158,192 +4163,192 @@
         "date": "2026-02-11",
         "value": 2.32,
         "unit": "Percent"
-      },
-      {
-        "date": "2026-02-10",
-        "value": 2.32,
-        "unit": "Percent"
       }
     ],
     "M2SL": [
       {
+        "date": "2026-06-01",
+        "value": 23155.2,
+        "unit": "Billions USD"
+      },
+      {
         "date": "2026-05-01",
-        "value": 23052.3,
+        "value": 23055.6,
         "unit": "Billions USD"
       },
       {
         "date": "2026-04-01",
-        "value": 22804.5,
+        "value": 22799.9,
         "unit": "Billions USD"
       },
       {
         "date": "2026-03-01",
-        "value": 22686.2,
+        "value": 22676.1,
         "unit": "Billions USD"
       },
       {
         "date": "2026-02-01",
-        "value": 22626.9,
+        "value": 22620.3,
         "unit": "Billions USD"
       },
       {
         "date": "2026-01-01",
-        "value": 22429.3,
+        "value": 22420.1,
         "unit": "Billions USD"
       },
       {
         "date": "2025-12-01",
-        "value": 22353.4,
+        "value": 22355.3,
         "unit": "Billions USD"
       },
       {
         "date": "2025-11-01",
-        "value": 22277.3,
+        "value": 22279.8,
         "unit": "Billions USD"
       },
       {
         "date": "2025-10-01",
-        "value": 22245.1,
+        "value": 22249.8,
         "unit": "Billions USD"
       },
       {
         "date": "2025-09-01",
-        "value": 22170.4,
+        "value": 22176.1,
         "unit": "Billions USD"
       },
       {
         "date": "2025-08-01",
-        "value": 22087.1,
+        "value": 22092.5,
         "unit": "Billions USD"
       },
       {
         "date": "2025-07-01",
-        "value": 22020.4,
+        "value": 22025.5,
         "unit": "Billions USD"
       },
       {
         "date": "2025-06-01",
-        "value": 21938.7,
+        "value": 21942.7,
         "unit": "Billions USD"
       },
       {
         "date": "2025-05-01",
-        "value": 21833.9,
+        "value": 21836.2,
         "unit": "Billions USD"
       },
       {
         "date": "2025-04-01",
-        "value": 21775.8,
+        "value": 21770.9,
         "unit": "Billions USD"
       },
       {
         "date": "2025-03-01",
-        "value": 21693.6,
+        "value": 21684.1,
         "unit": "Billions USD"
       },
       {
         "date": "2025-02-01",
-        "value": 21613.4,
+        "value": 21607.2,
         "unit": "Billions USD"
       },
       {
         "date": "2025-01-01",
-        "value": 21548.1,
+        "value": 21539.2,
         "unit": "Billions USD"
       },
       {
         "date": "2024-12-01",
-        "value": 21485.8,
+        "value": 21487.6,
         "unit": "Billions USD"
       },
       {
         "date": "2024-11-01",
-        "value": 21452.2,
+        "value": 21454.8,
         "unit": "Billions USD"
       },
       {
         "date": "2024-10-01",
-        "value": 21331.9,
+        "value": 21336.7,
         "unit": "Billions USD"
       },
       {
         "date": "2024-09-01",
-        "value": 21269.5,
+        "value": 21275.5,
         "unit": "Billions USD"
       },
       {
         "date": "2024-08-01",
-        "value": 21186.7,
+        "value": 21191.9,
         "unit": "Billions USD"
       },
       {
         "date": "2024-07-01",
-        "value": 21095.3,
+        "value": 21098.8,
         "unit": "Billions USD"
       },
       {
         "date": "2024-06-01",
-        "value": 21068.4,
+        "value": 21070.7,
         "unit": "Billions USD"
       },
       {
         "date": "2024-05-01",
-        "value": 21020.6,
+        "value": 21021.7,
         "unit": "Billions USD"
       },
       {
         "date": "2024-04-01",
-        "value": 20959.6,
+        "value": 20955.5,
         "unit": "Billions USD"
       },
       {
         "date": "2024-03-01",
-        "value": 20973.4,
+        "value": 20965.9,
         "unit": "Billions USD"
       },
       {
         "date": "2024-02-01",
-        "value": 20926.7,
+        "value": 20921.7,
         "unit": "Billions USD"
       },
       {
         "date": "2024-01-01",
-        "value": 20843.7,
+        "value": 20835.5,
         "unit": "Billions USD"
       },
       {
         "date": "2023-12-01",
-        "value": 20777.9,
+        "value": 20779.9,
         "unit": "Billions USD"
       },
       {
         "date": "2023-11-01",
-        "value": 20746.6,
+        "value": 20749.7,
         "unit": "Billions USD"
       },
       {
         "date": "2023-10-01",
-        "value": 20733.1,
+        "value": 20737.5,
         "unit": "Billions USD"
       },
       {
         "date": "2023-09-01",
-        "value": 20747.6,
+        "value": 20753.6,
         "unit": "Billions USD"
       },
       {
         "date": "2023-08-01",
-        "value": 20777.0,
+        "value": 20782.0,
         "unit": "Billions USD"
       },
       {
         "date": "2023-07-01",
-        "value": 20791.1,
+        "value": 20792.2,
         "unit": "Billions USD"
       },
       {
         "date": "2023-06-01",
-        "value": 20799.2,
+        "value": 20798.9,
         "unit": "Billions USD"
       },
       {
@@ -4353,222 +4358,222 @@
       },
       {
         "date": "2023-04-01",
-        "value": 20761.3,
+        "value": 20758.3,
         "unit": "Billions USD"
       },
       {
         "date": "2023-03-01",
-        "value": 20946.7,
+        "value": 20942.3,
         "unit": "Billions USD"
       },
       {
         "date": "2023-02-01",
-        "value": 21242.6,
+        "value": 21240.2,
         "unit": "Billions USD"
       },
       {
         "date": "2023-01-01",
-        "value": 21279.4,
+        "value": 21274.0,
         "unit": "Billions USD"
       },
       {
         "date": "2022-12-01",
-        "value": 21290.8,
+        "value": 21293.1,
         "unit": "Billions USD"
       },
       {
         "date": "2022-11-01",
-        "value": 21406.3,
+        "value": 21409.4,
         "unit": "Billions USD"
       },
       {
         "date": "2022-10-01",
-        "value": 21461.4,
+        "value": 21464.1,
         "unit": "Billions USD"
       },
       {
         "date": "2022-09-01",
-        "value": 21536.7,
+        "value": 21541.3,
         "unit": "Billions USD"
       },
       {
         "date": "2022-08-01",
-        "value": 21638.9,
+        "value": 21641.9,
         "unit": "Billions USD"
       },
       {
         "date": "2022-07-01",
-        "value": 21652.5,
+        "value": 21649.2,
         "unit": "Billions USD"
       },
       {
         "date": "2022-06-01",
-        "value": 21651.1,
+        "value": 21646.7,
         "unit": "Billions USD"
       },
       {
         "date": "2022-05-01",
-        "value": 21719.2,
+        "value": 21717.4,
         "unit": "Billions USD"
       },
       {
         "date": "2022-04-01",
-        "value": 21769.4,
+        "value": 21767.6,
         "unit": "Billions USD"
       },
       {
         "date": "2022-03-01",
-        "value": 21786.9,
+        "value": 21787.2,
         "unit": "Billions USD"
       },
       {
         "date": "2022-02-01",
-        "value": 21724.8,
+        "value": 21724.7,
         "unit": "Billions USD"
       },
       {
         "date": "2022-01-01",
-        "value": 21650.0,
+        "value": 21646.4,
         "unit": "Billions USD"
       },
       {
         "date": "2021-12-01",
-        "value": 21498.7,
+        "value": 21502.0,
         "unit": "Billions USD"
       },
       {
         "date": "2021-11-01",
-        "value": 21335.7,
+        "value": 21340.1,
         "unit": "Billions USD"
       },
       {
         "date": "2021-10-01",
-        "value": 21160.6,
+        "value": 21163.3,
         "unit": "Billions USD"
       },
       {
         "date": "2021-09-01",
-        "value": 20981.0,
+        "value": 20984.5,
         "unit": "Billions USD"
       },
       {
         "date": "2021-08-01",
-        "value": 20840.6,
+        "value": 20843.2,
         "unit": "Billions USD"
       },
       {
         "date": "2021-07-01",
-        "value": 20633.2,
+        "value": 20629.1,
         "unit": "Billions USD"
       },
       {
         "date": "2021-06-01",
-        "value": 20477.0,
+        "value": 20472.1,
         "unit": "Billions USD"
       },
       {
         "date": "2021-05-01",
-        "value": 20458.8,
+        "value": 20457.2,
         "unit": "Billions USD"
       },
       {
         "date": "2021-04-01",
-        "value": 20175.3,
+        "value": 20174.1,
         "unit": "Billions USD"
       },
       {
         "date": "2021-03-01",
-        "value": 19873.2,
+        "value": 19874.5,
         "unit": "Billions USD"
       },
       {
         "date": "2021-02-01",
-        "value": 19641.8,
+        "value": 19641.4,
         "unit": "Billions USD"
       },
       {
         "date": "2021-01-01",
-        "value": 19379.0,
+        "value": 19375.3,
         "unit": "Billions USD"
       },
       {
         "date": "2020-12-01",
-        "value": 19115.7,
+        "value": 19119.4,
         "unit": "Billions USD"
       },
       {
         "date": "2020-11-01",
-        "value": 18997.0,
+        "value": 19002.4,
         "unit": "Billions USD"
       },
       {
         "date": "2020-10-01",
-        "value": 18757.6,
+        "value": 18759.9,
         "unit": "Billions USD"
       },
       {
         "date": "2020-09-01",
-        "value": 18602.5,
+        "value": 18605.0,
         "unit": "Billions USD"
       },
       {
         "date": "2020-08-01",
-        "value": 18411.2,
+        "value": 18413.3,
         "unit": "Billions USD"
       },
       {
         "date": "2020-07-01",
-        "value": 18335.4,
+        "value": 18331.4,
         "unit": "Billions USD"
       },
       {
         "date": "2020-06-01",
-        "value": 18184.3,
+        "value": 18180.0,
         "unit": "Billions USD"
       },
       {
         "date": "2020-05-01",
-        "value": 17932.9,
+        "value": 17931.9,
         "unit": "Billions USD"
       },
       {
         "date": "2020-04-01",
-        "value": 17065.3,
+        "value": 17064.0,
         "unit": "Billions USD"
       },
       {
         "date": "2020-03-01",
-        "value": 16033.0,
+        "value": 16034.4,
         "unit": "Billions USD"
       },
       {
         "date": "2020-02-01",
-        "value": 15493.4,
+        "value": 15492.8,
         "unit": "Billions USD"
       },
       {
         "date": "2020-01-01",
-        "value": 15427.1,
+        "value": 15425.0,
         "unit": "Billions USD"
       },
       {
         "date": "2019-12-01",
-        "value": 15347.5,
+        "value": 15351.5,
         "unit": "Billions USD"
       },
       {
         "date": "2019-11-01",
-        "value": 15296.0,
+        "value": 15301.3,
         "unit": "Billions USD"
       },
       {
         "date": "2019-10-01",
-        "value": 15184.1,
+        "value": 15185.6,
         "unit": "Billions USD"
       },
       {
         "date": "2019-09-01",
-        "value": 15047.0,
+        "value": 15047.2,
         "unit": "Billions USD"
       },
       {
@@ -4578,192 +4583,187 @@
       },
       {
         "date": "2019-07-01",
-        "value": 14886.8,
+        "value": 14882.7,
         "unit": "Billions USD"
       },
       {
         "date": "2019-06-01",
-        "value": 14802.8,
+        "value": 14798.8,
         "unit": "Billions USD"
       },
       {
         "date": "2019-05-01",
-        "value": 14704.4,
+        "value": 14703.2,
         "unit": "Billions USD"
       },
       {
         "date": "2019-04-01",
-        "value": 14594.7,
+        "value": 14594.0,
         "unit": "Billions USD"
       },
       {
         "date": "2019-03-01",
-        "value": 14557.5,
+        "value": 14559.5,
         "unit": "Billions USD"
       },
       {
         "date": "2019-02-01",
-        "value": 14506.3,
+        "value": 14506.6,
         "unit": "Billions USD"
       },
       {
         "date": "2019-01-01",
-        "value": 14459.7,
+        "value": 14460.2,
         "unit": "Billions USD"
       },
       {
         "date": "2018-12-01",
-        "value": 14386.8,
+        "value": 14392.0,
         "unit": "Billions USD"
       },
       {
         "date": "2018-11-01",
-        "value": 14282.8,
+        "value": 14288.4,
         "unit": "Billions USD"
       },
       {
         "date": "2018-10-01",
-        "value": 14256.6,
+        "value": 14257.6,
         "unit": "Billions USD"
       },
       {
         "date": "2018-09-01",
-        "value": 14245.5,
+        "value": 14243.9,
         "unit": "Billions USD"
       },
       {
         "date": "2018-08-01",
-        "value": 14223.2,
+        "value": 14221.3,
         "unit": "Billions USD"
       },
       {
         "date": "2018-07-01",
-        "value": 14174.6,
+        "value": 14170.0,
         "unit": "Billions USD"
       },
       {
         "date": "2018-06-01",
-        "value": 14137.2,
+        "value": 14133.2,
         "unit": "Billions USD"
       },
       {
         "date": "2018-05-01",
-        "value": 14092.4,
+        "value": 14091.0,
         "unit": "Billions USD"
       },
       {
         "date": "2018-04-01",
-        "value": 14035.9,
+        "value": 14034.8,
         "unit": "Billions USD"
       },
       {
         "date": "2018-03-01",
-        "value": 14012.7,
+        "value": 14014.5,
         "unit": "Billions USD"
       },
       {
         "date": "2018-02-01",
-        "value": 13949.3,
+        "value": 13949.8,
         "unit": "Billions USD"
       },
       {
         "date": "2018-01-01",
-        "value": 13900.3,
+        "value": 13902.4,
         "unit": "Billions USD"
       },
       {
         "date": "2017-12-01",
-        "value": 13881.7,
+        "value": 13887.3,
         "unit": "Billions USD"
       },
       {
         "date": "2017-11-01",
-        "value": 13843.5,
+        "value": 13849.1,
         "unit": "Billions USD"
       },
       {
         "date": "2017-10-01",
-        "value": 13800.1,
+        "value": 13801.5,
         "unit": "Billions USD"
       },
       {
         "date": "2017-09-01",
-        "value": 13745.1,
+        "value": 13743.0,
         "unit": "Billions USD"
       },
       {
         "date": "2017-08-01",
-        "value": 13697.7,
+        "value": 13695.0,
         "unit": "Billions USD"
       },
       {
         "date": "2017-07-01",
-        "value": 13643.1,
+        "value": 13638.5,
         "unit": "Billions USD"
       },
       {
         "date": "2017-06-01",
-        "value": 13580.5,
+        "value": 13577.0,
         "unit": "Billions USD"
       },
       {
         "date": "2017-05-01",
-        "value": 13568.9,
+        "value": 13567.4,
         "unit": "Billions USD"
       },
       {
         "date": "2017-04-01",
-        "value": 13521.7,
+        "value": 13520.3,
         "unit": "Billions USD"
       },
       {
         "date": "2017-03-01",
-        "value": 13463.6,
+        "value": 13464.6,
         "unit": "Billions USD"
       },
       {
         "date": "2017-02-01",
-        "value": 13394.8,
+        "value": 13395.2,
         "unit": "Billions USD"
       },
       {
         "date": "2017-01-01",
-        "value": 13315.7,
+        "value": 13318.9,
         "unit": "Billions USD"
       },
       {
         "date": "2016-12-01",
-        "value": 13234.9,
+        "value": 13240.6,
         "unit": "Billions USD"
       },
       {
         "date": "2016-11-01",
-        "value": 13208.7,
+        "value": 13214.2,
         "unit": "Billions USD"
       },
       {
         "date": "2016-10-01",
-        "value": 13122.8,
+        "value": 13124.5,
         "unit": "Billions USD"
       },
       {
         "date": "2016-09-01",
-        "value": 13054.9,
+        "value": 13052.7,
         "unit": "Billions USD"
       },
       {
         "date": "2016-08-01",
-        "value": 12989.7,
+        "value": 12986.7,
         "unit": "Billions USD"
       },
       {
         "date": "2016-07-01",
-        "value": 12911.9,
-        "unit": "Billions USD"
-      },
-      {
-        "date": "2016-06-01",
-        "value": 12852.5,
+        "value": 12907.3,
         "unit": "Billions USD"
       }
     ],
@@ -7172,6 +7172,11 @@
     ],
     "DGS10": [
       {
+        "date": "2026-07-27",
+        "value": 4.65,
+        "unit": "Percent"
+      },
+      {
         "date": "2026-07-24",
         "value": 4.69,
         "unit": "Percent"
@@ -7745,14 +7750,14 @@
         "date": "2026-02-10",
         "value": 4.16,
         "unit": "Percent"
-      },
-      {
-        "date": "2026-02-09",
-        "value": 4.22,
-        "unit": "Percent"
       }
     ],
     "DGS2": [
+      {
+        "date": "2026-07-27",
+        "value": 4.31,
+        "unit": "Percent"
+      },
       {
         "date": "2026-07-24",
         "value": 4.33,
@@ -8326,11 +8331,6 @@
       {
         "date": "2026-02-10",
         "value": 3.45,
-        "unit": "Percent"
-      },
-      {
-        "date": "2026-02-09",
-        "value": 3.48,
         "unit": "Percent"
       }
     ]
