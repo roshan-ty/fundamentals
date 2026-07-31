@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-30T08:23:21.895825+00:00",
+  "last_updated": "2026-07-31T08:47:20.700549+00:00",
   "events": [
     {
       "source": "ForexFactory",
@@ -123,6 +123,16 @@
     },
     {
       "source": "ForexFactory",
+      "date": "2026-07-31T02:30:00-04:00",
+      "currency": "JPY",
+      "event": "BOJ Press Conference",
+      "forecast": null,
+      "actual": null,
+      "previous": null,
+      "impact": "high"
+    },
+    {
+      "source": "ForexFactory",
       "date": "2026-07-31T02:00:00-04:00",
       "currency": "GBP",
       "event": "Nationwide HPI m/m",
@@ -130,16 +140,6 @@
       "actual": null,
       "previous": 0.0,
       "impact": "low"
-    },
-    {
-      "source": "ForexFactory",
-      "date": "2026-07-31T01:30:00-04:00",
-      "currency": "JPY",
-      "event": "BOJ Press Conference",
-      "forecast": null,
-      "actual": null,
-      "previous": null,
-      "impact": "high"
     },
     {
       "source": "ForexFactory",
@@ -153,7 +153,7 @@
     },
     {
       "source": "ForexFactory",
-      "date": "2026-07-30T22:31:00-04:00",
+      "date": "2026-07-30T23:11:00-04:00",
       "currency": "JPY",
       "event": "BOJ Outlook Report",
       "forecast": null,
@@ -163,7 +163,7 @@
     },
     {
       "source": "ForexFactory",
-      "date": "2026-07-30T22:30:00-04:00",
+      "date": "2026-07-30T23:11:00-04:00",
       "currency": "JPY",
       "event": "BOJ Policy Rate",
       "forecast": null,
@@ -173,7 +173,7 @@
     },
     {
       "source": "ForexFactory",
-      "date": "2026-07-30T22:30:00-04:00",
+      "date": "2026-07-30T23:11:00-04:00",
       "currency": "JPY",
       "event": "Monetary Policy Statement",
       "forecast": null,
@@ -333,7 +333,7 @@
     },
     {
       "source": "ForexFactory",
-      "date": "2026-07-30T07:30:00-04:00",
+      "date": "2026-07-30T08:00:00-04:00",
       "currency": "GBP",
       "event": "BOE Gov Bailey Speaks",
       "forecast": null,
@@ -383,7 +383,7 @@
     },
     {
       "source": "ForexFactory",
-      "date": "2026-07-30T05:33:00-04:00",
+      "date": "2026-07-30T05:06:00-04:00",
       "currency": "EUR",
       "event": "Italian 10-y Bond Auction",
       "forecast": null,
