@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo, useState } from 'react';
 
 interface CalendarEvent {
   date: string;
@@ -17,6 +17,14 @@ interface Props {
 
 export default function CalendarTab({ data }: Props) {
   const events: CalendarEvent[] = data?.events || [];
+  const [showOnlyReleased, setShowOnlyReleased] = useState(false);
+
+  const filteredEvents = useMemo(() => {
+    if (!showOnlyReleased) return events;
+    return events.filter(ev => ev.actual !== null && ev.actual !== undefined);
+  }, [events, showOnlyReleased]);
+
+  const releasedCount = events.filter(ev => ev.actual !== null && ev.actual !== undefined).length;
 
   if (!events.length) {
     return (
@@ -26,12 +34,61 @@ export default function CalendarTab({ data }: Props) {
     );
   }
 
+  const getSurprise = (ev: CalendarEvent): number | null => {
+    if (ev.actual === null || ev.forecast === null) return null;
+    if (ev.forecast === 0) {
+      return ev.actual !== 0 ? (ev.actual > 0 ? 100 : -100) : 0;
+    }
+    return ((ev.actual - ev.forecast) / Math.abs(ev.forecast)) * 100;
+  };
+
+  const getSurpriseLabel = (surprise: number | null): string => {
+    if (surprise === null) return '—';
+    if (surprise > 0) return `+${surprise.toFixed(1)}%`;
+    return `${surprise.toFixed(1)}%`;
+  };
+
+  const getSurpriseColor = (surprise: number | null): string => {
+    if (surprise === null) return 'text-gray-600';
+    if (surprise > 0) return 'text-emerald-400';
+    if (surprise < 0) return 'text-red-400';
+    return 'text-gray-400';
+  };
+
+  const getSurpriseBadge = (surprise: number | null): string => {
+    if (surprise === null) return 'bg-gray-700/30 text-gray-400';
+    if (surprise > 0) return 'bg-emerald-900/30 text-emerald-400';
+    if (surprise < 0) return 'bg-red-900/30 text-red-400';
+    return 'bg-gray-700/30 text-gray-400';
+  };
+
+  const getImpactBadge = (impact: string): string => {
+    const i = (impact || 'low').toLowerCase();
+    if (i === 'high') return 'bg-red-900/40 text-red-400 border-red-700/40';
+    if (i === 'medium' || i === 'med') return 'bg-yellow-900/40 text-yellow-400 border-yellow-700/40';
+    return 'bg-gray-700/40 text-gray-400 border-gray-600/40';
+  };
+
   return (
     <div>
-      <div className="flex items-center justify-between mb-4">
+      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 mb-4">
         <div>
           <h2 className="text-sm font-semibold text-white">Economic Calendar</h2>
-          <p className="text-2xs text-gray-500 mt-0.5">{events.length} events · Sorted by date</p>
+          <p className="text-2xs text-gray-500 mt-0.5">
+            {events.length} events · {releasedCount} released with actual data
+          </p>
+        </div>
+        <div className="flex items-center gap-2">
+          <button
+            onClick={() => setShowOnlyReleased(!showOnlyReleased)}
+            className={`text-2xs px-3 py-1.5 rounded border transition-colors ${
+              showOnlyReleased
+                ? 'bg-emerald-900/40 text-emerald-400 border-emerald-700/40'
+                : 'bg-dark-border text-gray-400 border-dark-border hover:text-white'
+            }`}
+          >
+            {showOnlyReleased ? '✓ Showing Released Only' : 'Show Released Only'}
+          </button>
         </div>
       </div>
 
@@ -46,19 +103,18 @@ export default function CalendarTab({ data }: Props) {
               <th className="text-right py-2 px-3 text-gray-500 font-medium uppercase tracking-wider">Actual</th>
               <th className="text-right py-2 px-3 text-gray-500 font-medium uppercase tracking-wider">Previous</th>
               <th className="text-center py-2 px-3 text-gray-500 font-medium uppercase tracking-wider">Surprise</th>
+              <th className="text-center py-2 px-3 text-gray-500 font-medium uppercase tracking-wider">Impact</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-dark-border">
-            {events.map((ev, i) => {
-              const surprise = ev.actual !== null && ev.forecast !== null && ev.forecast !== 0
-                ? ((ev.actual - ev.forecast) / Math.abs(ev.forecast) * 100).toFixed(1)
-                : null;
-              const surpriseNum = surprise ? parseFloat(surprise) : 0;
-              const isBeat = surpriseNum > 0;
-              const isMiss = surpriseNum < 0;
+            {filteredEvents.map((ev, i) => {
+              const surprise = getSurprise(ev);
+              const isBeat = surprise !== null && surprise > 0;
+              const isMiss = surprise !== null && surprise < 0;
+              const hasActual = ev.actual !== null && ev.actual !== undefined;
 
               return (
-                <tr key={i} className="hover:bg-dark-card/50 transition-colors">
+                <tr key={i} className={`hover:bg-dark-card/50 transition-colors ${hasActual ? 'bg-dark-card/20' : ''}`}>
                   <td className="py-2 px-3 text-gray-400 font-mono whitespace-nowrap">
                     {ev.date ? new Date(ev.date).toLocaleDateString('en-US', {
                       month: 'short', day: 'numeric', year: 'numeric'
@@ -74,25 +130,28 @@ export default function CalendarTab({ data }: Props) {
                     {ev.forecast?.toFixed(1) ?? '—'}
                   </td>
                   <td className={`py-2 px-3 text-right font-mono font-bold ${
-                    isBeat ? 'text-emerald-400' : isMiss ? 'text-red-400' : 'text-gray-300'
+                    hasActual
+                      ? isBeat ? 'text-emerald-400' : isMiss ? 'text-red-400' : 'text-gray-300'
+                      : 'text-gray-600'
                   }`}>
-                    {ev.actual?.toFixed(1) ?? '—'}
+                    {hasActual ? ev.actual?.toFixed(1) : '—'}
                   </td>
                   <td className="py-2 px-3 text-right text-gray-500 font-mono">
                     {ev.previous?.toFixed(1) ?? '—'}
                   </td>
                   <td className="py-2 px-3 text-center">
-                    {surprise ? (
-                      <span className={`text-2xs px-2 py-0.5 rounded font-medium ${
-                        isBeat ? 'bg-emerald-900/30 text-emerald-400' :
-                        isMiss ? 'bg-red-900/30 text-red-400' :
-                        'bg-gray-700/30 text-gray-400'
-                      }`}>
-                        {isBeat ? '+' : ''}{surprise}%
+                    {hasActual && surprise !== null ? (
+                      <span className={`text-2xs px-2 py-0.5 rounded font-medium ${getSurpriseBadge(surprise)}`}>
+                        {getSurpriseLabel(surprise)}
                       </span>
                     ) : (
                       <span className="text-gray-600">—</span>
                     )}
+                  </td>
+                  <td className="py-2 px-3 text-center">
+                    <span className={`text-2xs px-2 py-0.5 rounded border ${getImpactBadge(ev.impact)}`}>
+                      {(ev.impact || 'low').toUpperCase()}
+                    </span>
                   </td>
                 </tr>
               );
@@ -100,6 +159,12 @@ export default function CalendarTab({ data }: Props) {
           </tbody>
         </table>
       </div>
+
+      {filteredEvents.length === 0 && (
+        <div className="text-center py-8 text-gray-500 text-sm">
+          No released events with actual data yet. Check back after the next economic data release.
+        </div>
+      )}
     </div>
   );
 }

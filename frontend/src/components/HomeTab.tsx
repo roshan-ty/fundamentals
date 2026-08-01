@@ -16,6 +16,8 @@ export default function HomeTab({ data }: Props) {
   const usdScore = baseScores['USD'] || 5.0;
   const pairs = masterBias?.pairs || [];
   const summary = masterBias?.summary || {};
+  const analysisWindowDays = masterBias?.analysis_window_days || 14;
+  const analysisNote = masterBias?.analysis_note || '';
 
   const bullishCount = summary.bullish_count || 0;
   const bearishCount = summary.bearish_count || 0;
@@ -44,6 +46,13 @@ export default function HomeTab({ data }: Props) {
 
   return (
     <div className="space-y-6">
+      {/* ═══ Analysis Window Note ═══ */}
+      {analysisNote && (
+        <div className="text-2xs text-blue-400/70 bg-blue-900/10 border border-blue-800/30 rounded px-3 py-2">
+          ℹ️ {analysisNote}
+        </div>
+      )}
+
       {/* ═══ Header Stats ═══ */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
         <div className="card p-3">

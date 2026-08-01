@@ -33,11 +33,11 @@ const TABS: TabConfig[] = [
 ];
 
 const DATA_FILES: { key: keyof DataStore; path: string }[] = [
-  { key: 'calendar', path: './data/calendar.json' },
-  { key: 'macro_data', path: './data/macro_data.json' },
-  { key: 'cftc_report', path: './data/cftc_report.json' },
-  { key: 'master_bias', path: './data/master_bias.json' },
-  { key: 'ai_insights', path: './data/ai_insights.json' },
+  { key: 'calendar', path: '/fundamentals/data/calendar.json' },
+  { key: 'macro_data', path: '/fundamentals/data/macro_data.json' },
+  { key: 'cftc_report', path: '/fundamentals/data/cftc_report.json' },
+  { key: 'master_bias', path: '/fundamentals/data/master_bias.json' },
+  { key: 'ai_insights', path: '/fundamentals/data/ai_insights.json' },
 ];
 
 export default function App() {

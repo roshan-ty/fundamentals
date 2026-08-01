@@ -38,6 +38,13 @@ FMP_API_KEY = os.environ.get("FMP_API_KEY", "")
 EODHD_API_KEY = os.environ.get("EODHD_API_KEY", "")
 NEWSDATA_API_KEY = os.environ.get("NEWSDATA_API_KEY", "")
 
+# ── Recent Data Window for Analysis ────────────────────────────────────────────
+# Only the most recent N days of data are used for bias & fundamental analysis.
+# All historical data remains available for display (charts, tables) but is
+# NOT used in scoring. This ensures analysis reflects the latest economic
+# releases rather than stale multi-year averages.
+RECENT_DATA_WINDOW_DAYS = 14
+
 # ── Base URLs ──────────────────────────────────────────────────────────────────
 FMP_BASE = "https://financialmodelingprep.com/api/v3"
 
@@ -261,6 +268,186 @@ def _safe_float(val: Any) -> Optional[float]:
         except ValueError:
             return None
     return None
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# SECTION 3: Actual Economic Data — Finnhub Economic Calendar
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# Finnhub economic calendar provides ACTUAL released values (unlike the
+# Fair Economy feed which only has forecast/previous). We merge these
+# actuals into the Forex Factory events by matching event name + currency.
+FINNHUB_ECON_URL = "https://finnhub.io/api/v1/calendar/economic"
+
+
+def fetch_finnhub_economic_calendar() -> list[dict]:
+    """
+    Fetch economic calendar with ACTUAL released values from Finnhub.
+    Returns list of dicts with: date, currency, event, actual, forecast, previous.
+    """
+    if not FINNHUB_API_KEY:
+        logger.warning("FINNHUB_API_KEY not set. Skipping Finnhub economic calendar.")
+        return []
+
+    try:
+        # Fetch last 30 days + next 7 days to capture recent actuals
+        from_date = (datetime.now(timezone.utc) - timedelta(days=30)).strftime("%Y-%m-%d")
+        to_date = (datetime.now(timezone.utc) + timedelta(days=7)).strftime("%Y-%m-%d")
+
+        params = {
+            "from": from_date,
+            "to": to_date,
+            "token": FINNHUB_API_KEY,
+        }
+        resp = requests.get(FINNHUB_ECON_URL, params=params, timeout=30)
+        resp.raise_for_status()
+        data = resp.json()
+
+        events: list[dict] = []
+        raw_events = data.get("economicCalendar", [])
+
+        for item in raw_events:
+            try:
+                event_name = item.get("event", "") or ""
+                country = item.get("country", "") or ""
+                currency = FF_COUNTRY_MAP.get(country.strip().upper(), "")
+                if not currency or not event_name:
+                    continue
+
+                actual = _safe_float(item.get("actual"))
+                forecast = _safe_float(item.get("forecast"))
+                previous = _safe_float(item.get("previous"))
+
+                # Only include events that have an actual value OR are high-impact
+                if actual is None and forecast is None and previous is None:
+                    continue
+
+                events.append({
+                    "source": "Finnhub",
+                    "date": item.get("date", ""),
+                    "currency": currency,
+                    "event": str(event_name)[:120],
+                    "forecast": forecast,
+                    "actual": actual,
+                    "previous": previous,
+                    "impact": "medium",  # Finnhub doesn't provide impact; default medium
+                })
+            except (KeyError, ValueError, TypeError, AttributeError) as e:
+                logger.debug("Finnhub Econ: Skipping event row: %s", e)
+                continue
+
+        logger.info("Finnhub Econ Calendar: %d events fetched (with actuals).", len(events))
+        return events
+
+    except requests.RequestException as e:
+        logger.warning("Finnhub Econ Calendar failed: %s", e)
+        return []
+    except (ValueError, TypeError, json.JSONDecodeError) as e:
+        logger.warning("Finnhub Econ Calendar parse failed: %s", e)
+        return []
+
+
+def merge_actual_calendar_data(ff_events: list[dict],
+                               finnhub_events: list[dict]) -> list[dict]:
+    """
+    Merge actual released values from Finnhub into Forex Factory events.
+    Matching is done by event name keyword + currency + date proximity.
+
+    Returns the merged list of events with actual values populated where
+    a match was found.
+    """
+    if not finnhub_events:
+        return ff_events
+
+    merged = []
+    for ev in ff_events:
+        matched = False
+        ev_currency = ev.get("currency", "")
+        ev_event = ev.get("event", "").lower()
+        ev_date_str = ev.get("date", "")
+
+        # Parse event date for proximity matching
+        try:
+            ev_date = datetime.fromisoformat(ev_date_str.replace("Z", "+00:00"))
+        except (ValueError, TypeError):
+            ev_date = None
+
+        for fh in finnhub_events:
+            if fh.get("currency") != ev_currency:
+                continue
+            if fh.get("actual") is None:
+                continue
+
+            fh_event = fh.get("event", "").lower()
+            fh_date_str = fh.get("date", "")
+
+            # Parse Finnhub date
+            try:
+                fh_date = datetime.fromisoformat(fh_date_str.replace("Z", "+00:00"))
+            except (ValueError, TypeError):
+                fh_date = None
+
+            # Date proximity: within 3 days
+            if ev_date and fh_date:
+                if abs((ev_date - fh_date).days) > 3:
+                    continue
+            elif ev_date_str[:10] != fh_date_str[:10]:
+                continue
+
+            # Event name matching: check if key words overlap
+            # Extract significant words (length > 3) from both event names
+            ev_words = set(re.findall(r'[a-z]{4,}', ev_event))
+            fh_words = set(re.findall(r'[a-z]{4,}', fh_event))
+
+            # Check for meaningful overlap
+            overlap = ev_words & fh_words
+            # Require at least 2 matching significant words OR one very distinctive word
+            if len(overlap) >= 2 or (len(overlap) == 1 and len(ev_words) <= 3):
+                ev["actual"] = fh.get("actual")
+                ev["source"] = f"{ev.get('source', 'ForexFactory')}+Finnhub"
+                matched = True
+                break
+
+        merged.append(ev)
+
+    # Also append any Finnhub events with actuals that weren't in FF feed
+    ff_keys = {(e.get("currency"), e.get("event", "").lower()) for e in merged}
+    for fh in finnhub_events:
+        if fh.get("actual") is None:
+            continue
+        key = (fh.get("currency"), fh.get("event", "").lower())
+        if key not in ff_keys:
+            merged.append(fh)
+
+    # Sort by date descending
+    merged.sort(key=lambda e: e.get("date", ""), reverse=True)
+    return merged
+
+
+def filter_recent_observations(observations: list[dict],
+                               days: int = RECENT_DATA_WINDOW_DAYS) -> list[dict]:
+    """
+    Filter a list of FRED observations to only those within the recent window.
+    Observations are expected in descending date order (newest first).
+
+    This is the KEY function that ensures bias/analysis uses ONLY recent data
+    while all historical data remains available for display.
+    """
+    if not observations:
+        return []
+
+    cutoff = datetime.now(timezone.utc) - timedelta(days=days)
+    recent = []
+    for obs in observations:
+        try:
+            obs_date = datetime.fromisoformat(obs.get("date", "").replace("Z", "+00:00"))
+            if obs_date >= cutoff:
+                recent.append(obs)
+        except (ValueError, TypeError):
+            # If date can't be parsed, include it (better safe than missing data)
+            recent.append(obs)
+
+    return recent
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -935,7 +1122,18 @@ def collect_all_data() -> dict[str, Any]:
 
     # Economic Calendar — Fair Economy JSON Feed (Points 1-6, 11, 12, 20-22, 29)
     logger.info("\n[2/8] Economic Calendar (Fair Economy)...")
-    data["forex_factory_calendar"] = fetch_ff_calendar()
+    ff_events = fetch_ff_calendar()
+    data["forex_factory_calendar"] = ff_events
+
+    # Economic Calendar — Finnhub (actual released values)
+    logger.info("\n[3/8] Economic Calendar (Finnhub actuals)...")
+    finnhub_events = fetch_finnhub_economic_calendar()
+    data["finnhub_calendar"] = finnhub_events
+
+    # Merge actual values into the calendar events
+    data["forex_factory_calendar"] = merge_actual_calendar_data(
+        ff_events, finnhub_events
+    )
 
     # AlphaVantage Indicators (Points 7-10, 23, 24)
     logger.info("\n[4/8] AlphaVantage Indicators...")

@@ -8,12 +8,20 @@ Scoring Framework:
   2. Multi-Asset Correlation Logic (reactive scoring per asset class)
   3. Tier Weights Multiplier (Tier 1: x3, Tier 2: x2, Tier 3: x1)
   4. 200+ Cross-Pair Scaling via relative valuation delta
+
+RECENT-DATA POLICY:
+  Only the most recent 14 days of economic data are used for bias and
+  fundamental analysis. All historical data remains available for display
+  (charts, tables) but is NOT used in scoring. This ensures the analysis
+  reflects the latest economic releases rather than stale multi-year averages.
 """
 
 import logging
 from typing import Any, Optional
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 import numpy as np
+
+from backend.parsers import filter_recent_observations, RECENT_DATA_WINDOW_DAYS
 
 logger = logging.getLogger(__name__)
 
@@ -163,21 +171,457 @@ def score_for_asset_class(base_score: float, event_name: str,
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
-# SECTION 2A: 2-Week Momentum / Trend Analysis
+# SECTION 2A: Recent-Data Momentum / Trend Analysis
 # ═══════════════════════════════════════════════════════════════════════════════
+
+def _get_recent_obs(observations: list[dict],
+                    days: int = RECENT_DATA_WINDOW_DAYS) -> list[dict]:
+    """Get only the most recent observations within the window."""
+    return filter_recent_observations(observations, days)
+
+
+def _latest_value(observations: list[dict]) -> Optional[float]:
+    """Get the most recent value from a descending-ordered observation list."""
+    if not observations:
+        return None
+    return observations[0]["value"]
+
+
+def _latest_date(observations: list[dict]) -> Optional[str]:
+    """Get the most recent date from a descending-ordered observation list."""
+    if not observations:
+        return None
+    return observations[0].get("date", "")
+
+
+def _previous_value(observations: list[dict]) -> Optional[float]:
+    """Get the second-most-recent value (previous release)."""
+    if len(observations) < 2:
+        return None
+    return observations[1]["value"]
+
+
+def _pct_change(current: float, previous: float) -> Optional[float]:
+    """Calculate percentage change between two values."""
+    if previous is None or previous == 0:
+        return None
+    return (current - previous) / abs(previous) * 100
+
+
+def compute_asset_score_breakdowns(
+    collected_data: dict[str, Any],
+    base_scores: dict[str, float],
+) -> dict[str, list[dict]]:
+    """
+    Compute detailed score breakdowns for each base asset showing every
+    economic data point that contributed to the final bias score.
+
+    Returns {asset_code: [breakdown_item, ...]} where each breakdown_item has:
+      - indicator: Name of the economic data point
+      - value: The actual value used
+      - unit: Unit of measurement
+      - date: Date of the data release
+      - score: The 1-10 score contribution
+      - tier: "Tier 1 / 2 / 3"
+      - weight: Tier multiplier
+      - direction: "bullish" / "bearish" / "neutral"
+      - contribution: Weighted contribution to final score
+    """
+    fred = collected_data.get("fred", {})
+    cftc = collected_data.get("cftc", {})
+    central_bank_rates = collected_data.get("central_bank_rates", {})
+    yield_curve = collected_data.get("yield_curve", {})
+    seasonality = collected_data.get("seasonality", {})
+    retail_sentiment = collected_data.get("retail_sentiment", {})
+
+    breakdowns: dict[str, list[dict]] = {}
+
+    for asset in BASE_ASSETS:
+        items: list[dict] = []
+
+        # ── Macro Health (FRED-based) — RECENT DATA ONLY ──────────────────
+        if asset == "USD" and "GDPC1" in fred:
+            gdp_recent = _get_recent_obs(fred["GDPC1"])
+            unrate_recent = _get_recent_obs(fred.get("UNRATE", []))
+            cpi_recent = _get_recent_obs(fred.get("CPILFESL", []))
+            hcpi_recent = _get_recent_obs(fred.get("CPIAUCSL", []))
+            ppi_recent = _get_recent_obs(fred.get("PPIACO", []))
+            payems_recent = _get_recent_obs(fred.get("PAYEMS", []))
+            fedfunds_recent = _get_recent_obs(fred.get("FEDFUNDS", []))
+
+            # GDP
+            if gdp_recent:
+                latest_gdp = _latest_value(gdp_recent)
+                prev_gdp = _previous_value(gdp_recent)
+                gdp_score = 5.0
+                gdp_growth = None
+                if latest_gdp is not None and prev_gdp is not None and prev_gdp > 0:
+                    gdp_growth = (latest_gdp - prev_gdp) / prev_gdp * 100
+                    if gdp_growth > 1.0:
+                        gdp_score = 9.0
+                    elif gdp_growth > 0.5:
+                        gdp_score = 8.0
+                    elif gdp_growth > 0.2:
+                        gdp_score = 7.0
+                    elif gdp_growth > 0.0:
+                        gdp_score = 6.0
+                    elif gdp_growth > -0.5:
+                        gdp_score = 4.0
+                    else:
+                        gdp_score = 2.0
+                items.append({
+                    "indicator": "GDP Growth (Latest vs Previous Release)",
+                    "value": round(gdp_growth, 3) if gdp_growth is not None else None,
+                    "unit": "%",
+                    "date": _latest_date(gdp_recent),
+                    "score": gdp_score,
+                    "tier": "Tier 1",
+                    "weight": TIER_1_MULTIPLIER,
+                    "direction": "bullish" if gdp_score >= 6 else "bearish" if gdp_score <= 4 else "neutral",
+                    "contribution": round(gdp_score * TIER_1_MULTIPLIER, 2),
+                })
+
+            # Unemployment
+            if unrate_recent:
+                latest_unrate = _latest_value(unrate_recent)
+                prev_unrate = _previous_value(unrate_recent)
+                unrate_score = 5.0
+                if latest_unrate is not None:
+                    if latest_unrate < 3.5:
+                        unrate_score = 9.0
+                    elif latest_unrate < 4.5:
+                        unrate_score = 8.0
+                    elif latest_unrate < 5.5:
+                        unrate_score = 6.0
+                    elif latest_unrate < 7.0:
+                        unrate_score = 4.0
+                    else:
+                        unrate_score = 2.0
+                    if prev_unrate is not None:
+                        unrate_trend = latest_unrate - prev_unrate
+                        if unrate_trend > 0.2:
+                            unrate_score = max(1.0, unrate_score - 2.0)
+                        elif unrate_trend > 0.1:
+                            unrate_score = max(1.0, unrate_score - 1.0)
+                        elif unrate_trend < -0.2:
+                            unrate_score = min(10.0, unrate_score + 2.0)
+                        elif unrate_trend < -0.1:
+                            unrate_score = min(10.0, unrate_score + 1.0)
+                items.append({
+                    "indicator": "Unemployment Rate (Latest Release)",
+                    "value": latest_unrate,
+                    "unit": "%",
+                    "date": _latest_date(unrate_recent),
+                    "score": unrate_score,
+                    "tier": "Tier 1",
+                    "weight": TIER_1_MULTIPLIER,
+                    "direction": "bullish" if unrate_score >= 6 else "bearish" if unrate_score <= 4 else "neutral",
+                    "contribution": round(unrate_score * TIER_1_MULTIPLIER, 2),
+                })
+
+            # Core CPI
+            if cpi_recent:
+                latest_cpi = _latest_value(cpi_recent)
+                prev_cpi = _previous_value(cpi_recent)
+                cpi_score = 5.0
+                cpi_mom = None
+                if latest_cpi is not None and prev_cpi is not None and prev_cpi > 0:
+                    cpi_mom = (latest_cpi - prev_cpi) / prev_cpi * 100
+                    if cpi_mom > 0.5:
+                        cpi_score = 9.0
+                    elif cpi_mom > 0.3:
+                        cpi_score = 8.0
+                    elif cpi_mom > 0.1:
+                        cpi_score = 7.0
+                    elif cpi_mom > 0.0:
+                        cpi_score = 6.0
+                    elif cpi_mom > -0.1:
+                        cpi_score = 5.0
+                    else:
+                        cpi_score = 3.0
+                items.append({
+                    "indicator": "Core CPI Change (Latest vs Previous)",
+                    "value": round(cpi_mom, 3) if cpi_mom is not None else None,
+                    "unit": "%",
+                    "date": _latest_date(cpi_recent),
+                    "score": cpi_score,
+                    "tier": "Tier 1",
+                    "weight": TIER_1_MULTIPLIER,
+                    "direction": "bullish" if cpi_score >= 6 else "bearish" if cpi_score <= 4 else "neutral",
+                    "contribution": round(cpi_score * TIER_1_MULTIPLIER, 2),
+                })
+
+            # Headline CPI
+            if hcpi_recent:
+                latest_hcpi = _latest_value(hcpi_recent)
+                prev_hcpi = _previous_value(hcpi_recent)
+                if latest_hcpi is not None and prev_hcpi is not None and prev_hcpi > 0:
+                    hcpi_mom = (latest_hcpi - prev_hcpi) / prev_hcpi * 100
+                    hcpi_score = 5.0
+                    if hcpi_mom > 0.5:
+                        hcpi_score = 9.0
+                    elif hcpi_mom > 0.3:
+                        hcpi_score = 8.0
+                    elif hcpi_mom > 0.1:
+                        hcpi_score = 7.0
+                    elif hcpi_mom > 0.0:
+                        hcpi_score = 6.0
+                    elif hcpi_mom > -0.1:
+                        hcpi_score = 5.0
+                    else:
+                        hcpi_score = 3.0
+                    items.append({
+                        "indicator": "Headline CPI Change (Latest vs Previous)",
+                        "value": round(hcpi_mom, 3),
+                        "unit": "%",
+                        "date": _latest_date(hcpi_recent),
+                        "score": hcpi_score,
+                        "tier": "Tier 1",
+                        "weight": TIER_1_MULTIPLIER,
+                        "direction": "bullish" if hcpi_score >= 6 else "bearish" if hcpi_score <= 4 else "neutral",
+                        "contribution": round(hcpi_score * TIER_1_MULTIPLIER, 2),
+                    })
+
+            # PPI
+            if ppi_recent:
+                latest_ppi = _latest_value(ppi_recent)
+                prev_ppi = _previous_value(ppi_recent)
+                if latest_ppi is not None and prev_ppi is not None and prev_ppi > 0:
+                    ppi_mom = (latest_ppi - prev_ppi) / prev_ppi * 100
+                    ppi_score = 5.0
+                    if ppi_mom > 0.5:
+                        ppi_score = 9.0
+                    elif ppi_mom > 0.3:
+                        ppi_score = 8.0
+                    elif ppi_mom > 0.1:
+                        ppi_score = 7.0
+                    elif ppi_mom > 0.0:
+                        ppi_score = 6.0
+                    elif ppi_mom > -0.1:
+                        ppi_score = 5.0
+                    else:
+                        ppi_score = 3.0
+                    items.append({
+                        "indicator": "PPI Change (Latest vs Previous)",
+                        "value": round(ppi_mom, 3),
+                        "unit": "%",
+                        "date": _latest_date(ppi_recent),
+                        "score": ppi_score,
+                        "tier": "Tier 2",
+                        "weight": TIER_2_MULTIPLIER,
+                        "direction": "bullish" if ppi_score >= 6 else "bearish" if ppi_score <= 4 else "neutral",
+                        "contribution": round(ppi_score * TIER_2_MULTIPLIER, 2),
+                    })
+
+            # Nonfarm Payrolls
+            if payems_recent:
+                latest_payems = _latest_value(payems_recent)
+                prev_payems = _previous_value(payems_recent)
+                if latest_payems is not None and prev_payems is not None:
+                    payems_change = latest_payems - prev_payems
+                    payems_score = 5.0
+                    if payems_change > 200:
+                        payems_score = 9.0
+                    elif payems_change > 100:
+                        payems_score = 8.0
+                    elif payems_change > 50:
+                        payems_score = 7.0
+                    elif payems_change > 0:
+                        payems_score = 6.0
+                    elif payems_change > -50:
+                        payems_score = 4.0
+                    else:
+                        payems_score = 2.0
+                    items.append({
+                        "indicator": "Nonfarm Payrolls Change (Latest vs Previous)",
+                        "value": round(payems_change, 1),
+                        "unit": "K jobs",
+                        "date": _latest_date(payems_recent),
+                        "score": payems_score,
+                        "tier": "Tier 1",
+                        "weight": TIER_1_MULTIPLIER,
+                        "direction": "bullish" if payems_score >= 6 else "bearish" if payems_score <= 4 else "neutral",
+                        "contribution": round(payems_score * TIER_1_MULTIPLIER, 2),
+                    })
+
+            # Fed Funds Rate
+            if fedfunds_recent:
+                latest_rate = _latest_value(fedfunds_recent)
+                prev_rate = _previous_value(fedfunds_recent)
+                if latest_rate is not None:
+                    rate_score = 5.0
+                    if latest_rate > 5.0:
+                        rate_score = 8.0
+                    elif latest_rate > 3.0:
+                        rate_score = 7.0
+                    elif latest_rate > 1.0:
+                        rate_score = 6.0
+                    elif latest_rate > 0.0:
+                        rate_score = 5.0
+                    else:
+                        rate_score = 3.0
+                    # Recent trend
+                    if prev_rate is not None:
+                        rate_change = latest_rate - prev_rate
+                        if rate_change > 0.1:
+                            rate_score = min(10.0, rate_score + 1.0)
+                        elif rate_change < -0.1:
+                            rate_score = max(1.0, rate_score - 1.0)
+                    items.append({
+                        "indicator": "Fed Funds Rate (Latest)",
+                        "value": latest_rate,
+                        "unit": "%",
+                        "date": _latest_date(fedfunds_recent),
+                        "score": rate_score,
+                        "tier": "Tier 1",
+                        "weight": TIER_1_MULTIPLIER,
+                        "direction": "bullish" if rate_score >= 6 else "bearish" if rate_score <= 4 else "neutral",
+                        "contribution": round(rate_score * TIER_1_MULTIPLIER, 2),
+                    })
+
+        # ── Central Bank Rate Score ──────────────────────────────────────
+        rate = central_bank_rates.get(asset)
+        if rate is not None:
+            if rate > 5.0:
+                rate_score = 8.0
+            elif rate > 3.0:
+                rate_score = 7.0
+            elif rate > 1.0:
+                rate_score = 6.0
+            elif rate > 0.0:
+                rate_score = 5.0
+            else:
+                rate_score = 3.0
+            items.append({
+                "indicator": f"{asset} Central Bank Rate",
+                "value": rate,
+                "unit": "%",
+                "date": None,
+                "score": rate_score,
+                "tier": "Tier 1",
+                "weight": TIER_1_MULTIPLIER,
+                "direction": "bullish" if rate_score >= 6 else "bearish" if rate_score <= 4 else "neutral",
+                "contribution": round(rate_score * TIER_1_MULTIPLIER, 2),
+            })
+
+        # ── CFTC Institutional Positioning ───────────────────────────────
+        cftc_entry = cftc.get(asset)
+        if cftc_entry:
+            pctl = cftc_entry.get("percentile_52w", 50.0)
+            if pctl >= 90.0:
+                cftc_score = 9.0
+            elif pctl >= 75.0:
+                cftc_score = 8.0
+            elif pctl >= 60.0:
+                cftc_score = 7.0
+            elif pctl >= 40.0:
+                cftc_score = 5.0
+            elif pctl >= 25.0:
+                cftc_score = 3.0
+            else:
+                cftc_score = 2.0
+            items.append({
+                "indicator": "CFTC Position Percentile (52w)",
+                "value": pctl,
+                "unit": "%",
+                "date": cftc_entry.get("report_date"),
+                "score": cftc_score,
+                "tier": "Tier 2",
+                "weight": TIER_2_MULTIPLIER,
+                "direction": "bullish" if cftc_score >= 6 else "bearish" if cftc_score <= 4 else "neutral",
+                "contribution": round(cftc_score * TIER_2_MULTIPLIER, 2),
+            })
+
+        # ── Yield Curve Score ────────────────────────────────────────────
+        instrument_map = {
+            "USD": "US10Y", "EUR": "DE10Y", "GBP": "GB10Y", "JPY": "JP10Y",
+        }
+        instrument = instrument_map.get(asset)
+        if instrument and instrument in yield_curve:
+            yc = yield_curve[instrument]
+            if yc.get("ma50") and yc["ma50"] > 0:
+                deviation = (yc["yield"] - yc["ma50"]) / yc["ma50"] * 100
+                if deviation > 2.0:
+                    yc_score = 8.0
+                elif deviation > 1.0:
+                    yc_score = 7.0
+                elif deviation > 0.0:
+                    yc_score = 6.0
+                elif deviation > -1.0:
+                    yc_score = 4.0
+                else:
+                    yc_score = 3.0
+                items.append({
+                    "indicator": f"{instrument} Yield vs 50-Day MA",
+                    "value": round(deviation, 2),
+                    "unit": "%",
+                    "date": None,
+                    "score": yc_score,
+                    "tier": "Tier 2",
+                    "weight": TIER_2_MULTIPLIER,
+                    "direction": "bullish" if yc_score >= 6 else "bearish" if yc_score <= 4 else "neutral",
+                    "contribution": round(yc_score * TIER_2_MULTIPLIER, 2),
+                })
+
+        # ── Seasonality Score ────────────────────────────────────────────
+        if asset in seasonality:
+            s_score = seasonality[asset]
+            items.append({
+                "indicator": "Seasonality",
+                "value": s_score,
+                "unit": "score",
+                "date": None,
+                "score": s_score,
+                "tier": "Tier 3",
+                "weight": TIER_3_MULTIPLIER,
+                "direction": "bullish" if s_score >= 6 else "bearish" if s_score <= 4 else "neutral",
+                "contribution": round(s_score * TIER_3_MULTIPLIER, 2),
+            })
+
+        # ── Retail Sentiment (Contrarian) ────────────────────────────────
+        if asset in retail_sentiment:
+            rs = retail_sentiment[asset]
+            long_pct = rs.get("long_pct", 50)
+            if long_pct > 80:
+                rs_score = 3.0
+            elif long_pct > 65:
+                rs_score = 4.0
+            elif long_pct > 45:
+                rs_score = 5.0
+            elif long_pct > 30:
+                rs_score = 6.0
+            else:
+                rs_score = 7.0
+            items.append({
+                "indicator": "Retail Sentiment (Contrarian)",
+                "value": long_pct,
+                "unit": "% long",
+                "date": None,
+                "score": rs_score,
+                "tier": "Tier 3",
+                "weight": TIER_3_MULTIPLIER,
+                "direction": "bullish" if rs_score >= 6 else "bearish" if rs_score <= 4 else "neutral",
+                "contribution": round(rs_score * TIER_3_MULTIPLIER, 2),
+            })
+
+        if items:
+            breakdowns[asset] = items
+
+    return breakdowns
+
 
 def compute_fred_momentum_scores(collected_data: dict[str, Any]) -> dict[str, float]:
     """
-    Compute 2-week directional momentum scores from FRED series for each asset.
-    
+    Compute recent-data directional momentum scores from FRED series for each asset.
+
+    Uses ONLY the most recent 14 days of data (latest release vs previous release).
     For USD, uses:
-      - GDPC1: (V_current - V_2q_ago) / V_2q_ago → momentum score
-      - UNRATE: rising unemployment = weakening economy → negative momentum
-      - CPILFESL: inflation change → directional momentum
-      - FEDFUNDS: rate change → monetary policy momentum
-      - DGS10: yield change → bond market momentum
-      - T10YIE: breakeven inflation change
-    
+      - GDPC1: latest vs previous GDP release → momentum score
+      - UNRATE: latest vs previous unemployment → momentum score
+      - CPILFESL: latest vs previous core CPI → momentum score
+      - FEDFUNDS: latest vs previous rate → monetary policy momentum
+      - DGS10: latest vs previous yield → bond market momentum
+
     Returns {asset_code: momentum_score} where 1-10 scale:
       1-3: Strongly weakening trend
       4-5: Slightly weakening / neutral
@@ -186,108 +630,106 @@ def compute_fred_momentum_scores(collected_data: dict[str, Any]) -> dict[str, fl
     """
     fred = collected_data.get("fred", {})
     momentum: dict[str, float] = {}
-    
-    # USD momentum from multiple FRED series
+
+    # USD momentum from multiple FRED series — using ONLY recent data
     if "GDPC1" in fred:
-        obs = fred["GDPC1"]
-        if len(obs) >= 5:
-            v_cur = obs[0]["value"]
-            v_prev = obs[4]["value"]  # ~1 quarter ago (desc order)
-            if v_prev > 0:
-                pct_change = (v_cur - v_prev) / v_prev * 100
-                # GDP growth > 3% = strong positive momentum
-                if pct_change > 3.0:
-                    usd_gdp = 8.0
-                elif pct_change > 2.0:
-                    usd_gdp = 7.0
-                elif pct_change > 1.0:
-                    usd_gdp = 6.0
-                elif pct_change > 0.0:
-                    usd_gdp = 5.5
-                elif pct_change > -1.0:
-                    usd_gdp = 4.5
-                else:
-                    usd_gdp = 3.0
-                momentum["usd_gdp"] = usd_gdp
+        recent = _get_recent_obs(fred["GDPC1"])
+        v_cur = _latest_value(recent)
+        v_prev = _previous_value(recent)
+        if v_cur is not None and v_prev is not None and v_prev > 0:
+            pct_change = (v_cur - v_prev) / v_prev * 100
+            # Recent GDP growth momentum
+            if pct_change > 1.0:
+                usd_gdp = 8.0
+            elif pct_change > 0.5:
+                usd_gdp = 7.0
+            elif pct_change > 0.2:
+                usd_gdp = 6.0
+            elif pct_change > 0.0:
+                usd_gdp = 5.5
+            elif pct_change > -0.5:
+                usd_gdp = 4.5
+            else:
+                usd_gdp = 3.0
+            momentum["usd_gdp"] = usd_gdp
 
     if "UNRATE" in fred:
-        obs = fred["UNRATE"]
-        if len(obs) >= 3:
-            v_cur = obs[0]["value"]
-            v_w2 = obs[2]["value"] if len(obs) >= 3 else obs[-1]["value"]
-            unrate_change = v_cur - v_w2
+        recent = _get_recent_obs(fred["UNRATE"])
+        v_cur = _latest_value(recent)
+        v_prev = _previous_value(recent)
+        if v_cur is not None and v_prev is not None:
+            unrate_change = v_cur - v_prev
             # Rising unemployment = negative momentum for economy
-            if unrate_change > 0.5:
+            if unrate_change > 0.3:
                 usd_unemp = 2.0
-            elif unrate_change > 0.2:
+            elif unrate_change > 0.1:
                 usd_unemp = 3.0
             elif unrate_change > 0.0:
                 usd_unemp = 4.5
-            elif unrate_change > -0.2:
+            elif unrate_change > -0.1:
                 usd_unemp = 5.5
-            elif unrate_change > -0.5:
+            elif unrate_change > -0.3:
                 usd_unemp = 7.0
             else:
                 usd_unemp = 8.0
             momentum["usd_unemp"] = usd_unemp
 
     if "CPILFESL" in fred:
-        obs = fred["CPILFESL"]
-        if len(obs) >= 13:
-            v_cur = obs[0]["value"]
-            v_12m = obs[12]["value"] if len(obs) >= 13 else obs[-1]["value"]
-            if v_12m > 0:
-                cpi_yoy = (v_cur - v_12m) / v_12m * 100
-                # Inflation momentum
-                if cpi_yoy > 5.0:
-                    momentum["usd_cpi"] = 9.0  # Very hot
-                elif cpi_yoy > 3.5:
-                    momentum["usd_cpi"] = 7.0
-                elif cpi_yoy > 2.5:
-                    momentum["usd_cpi"] = 6.0
-                elif cpi_yoy > 1.5:
-                    momentum["usd_cpi"] = 5.5
-                elif cpi_yoy > 0.0:
-                    momentum["usd_cpi"] = 5.0
-                else:
-                    momentum["usd_cpi"] = 3.0
+        recent = _get_recent_obs(fred["CPILFESL"])
+        v_cur = _latest_value(recent)
+        v_prev = _previous_value(recent)
+        if v_cur is not None and v_prev is not None and v_prev > 0:
+            cpi_change = (v_cur - v_prev) / v_prev * 100
+            # Recent inflation momentum (monthly change)
+            if cpi_change > 0.5:
+                momentum["usd_cpi"] = 9.0  # Very hot
+            elif cpi_change > 0.3:
+                momentum["usd_cpi"] = 7.0
+            elif cpi_change > 0.1:
+                momentum["usd_cpi"] = 6.0
+            elif cpi_change > 0.0:
+                momentum["usd_cpi"] = 5.5
+            elif cpi_change > -0.1:
+                momentum["usd_cpi"] = 4.5
+            else:
+                momentum["usd_cpi"] = 3.0
 
     if "FEDFUNDS" in fred:
-        obs = fred["FEDFUNDS"]
-        if len(obs) >= 3:
-            v_cur = obs[0]["value"]
-            v_prev = obs[2]["value"] if len(obs) >= 3 else obs[-1]["value"]
+        recent = _get_recent_obs(fred["FEDFUNDS"])
+        v_cur = _latest_value(recent)
+        v_prev = _previous_value(recent)
+        if v_cur is not None and v_prev is not None:
             rate_change = v_cur - v_prev
             # Rate hikes = hawkish momentum
-            if rate_change > 0.5:
+            if rate_change > 0.25:
                 momentum["usd_rates"] = 9.0
-            elif rate_change > 0.25:
+            elif rate_change > 0.1:
                 momentum["usd_rates"] = 8.0
             elif rate_change > 0.0:
                 momentum["usd_rates"] = 6.5
-            elif rate_change > -0.25:
+            elif rate_change > -0.1:
                 momentum["usd_rates"] = 4.5
-            elif rate_change > -0.5:
+            elif rate_change > -0.25:
                 momentum["usd_rates"] = 3.0
             else:
                 momentum["usd_rates"] = 2.0
 
     if "DGS10" in fred:
-        obs = fred["DGS10"]
-        if len(obs) >= 3:
-            v_cur = obs[0]["value"]
-            v_prev = obs[2]["value"] if len(obs) >= 3 else obs[-1]["value"]
+        recent = _get_recent_obs(fred["DGS10"])
+        v_cur = _latest_value(recent)
+        v_prev = _previous_value(recent)
+        if v_cur is not None and v_prev is not None:
             yld_change = v_cur - v_prev
             # Rising yields = bond market momentum
-            if yld_change > 0.5:
+            if yld_change > 0.3:
                 momentum["usd_yields"] = 8.0
-            elif yld_change > 0.25:
+            elif yld_change > 0.1:
                 momentum["usd_yields"] = 7.0
             elif yld_change > 0.0:
                 momentum["usd_yields"] = 6.0
-            elif yld_change > -0.25:
+            elif yld_change > -0.1:
                 momentum["usd_yields"] = 5.0
-            elif yld_change > -0.5:
+            elif yld_change > -0.3:
                 momentum["usd_yields"] = 4.0
             else:
                 momentum["usd_yields"] = 3.0
@@ -347,12 +789,12 @@ def adjust_bias_with_momentum(
     quote_momentum: float,
 ) -> float:
     """
-    Adjust pair bias using 2-week momentum differential.
-    
-    Formula: 
+    Adjust pair bias using recent-data momentum differential.
+
+    Formula:
       momentum_delta = (base_momentum - quote_momentum) / 5 * 2
       adjusted_bias = base_bias + momentum_delta
-    
+
     If base momentum is strong and quote momentum is weak,
     the pair gets an additional bullish boost.
     """
@@ -388,7 +830,7 @@ def compute_weighted_average(scores_with_tiers: list[tuple[float, float]]) -> fl
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
-# SECTION 4: Base Asset Scoring
+# SECTION 4: Base Asset Scoring — RECENT DATA ONLY
 # ═══════════════════════════════════════════════════════════════════════════════
 
 def score_base_assets(collected_data: dict[str, Any]) -> dict[str, float]:
@@ -396,8 +838,11 @@ def score_base_assets(collected_data: dict[str, Any]) -> dict[str, float]:
     Score all base assets (USD, EUR, GBP, JPY, AUD, CAD, CHF, NZD,
     GOLD, OIL, SP500, BTC, ETH, SOL, XRP) from 1-10.
 
+    IMPORTANT: Uses ONLY the most recent 14 days of data for analysis.
+    Historical data is NOT used for scoring — it is only for display.
+
     Uses:
-    - FRED series for US macro health
+    - FRED series for US macro health (recent releases only)
     - CFTC data for institutional positioning
     - Central bank rates for monetary policy stance
     - Yield curve for bond market sentiment
@@ -418,72 +863,159 @@ def score_base_assets(collected_data: dict[str, Any]) -> dict[str, float]:
     for asset in BASE_ASSETS:
         weighted_scores: list[tuple[float, float]] = []
 
-        # ── Macro Health (FRED-based) ────────────────────────────────────
+        # ── Macro Health (FRED-based) — RECENT DATA ONLY ──────────────────
         if asset == "USD" and "GDPC1" in fred:
-            gdp_obs = fred["GDPC1"]
-            unrate_obs = fred.get("UNRATE", [])
+            gdp_recent = _get_recent_obs(fred["GDPC1"])
+            unrate_recent = _get_recent_obs(fred.get("UNRATE", []))
 
-            if gdp_obs and unrate_obs:
-                latest_gdp = gdp_obs[0]["value"]
-                gdp_4q_ago = gdp_obs[4]["value"] if len(gdp_obs) >= 5 else None
-                latest_unrate = unrate_obs[0]["value"]
+            if gdp_recent:
+                latest_gdp = _latest_value(gdp_recent)
+                prev_gdp = _previous_value(gdp_recent)
 
-                # GDP growth
+                # GDP growth — latest vs previous release (recent data only)
                 gdp_score = 5.0
-                if gdp_4q_ago and gdp_4q_ago > 0:
-                    gdp_growth = (latest_gdp - gdp_4q_ago) / gdp_4q_ago * 100
-                    if gdp_growth > 3.0:
+                if latest_gdp is not None and prev_gdp is not None and prev_gdp > 0:
+                    gdp_growth = (latest_gdp - prev_gdp) / prev_gdp * 100
+                    if gdp_growth > 1.0:
                         gdp_score = 9.0
-                    elif gdp_growth > 2.0:
+                    elif gdp_growth > 0.5:
                         gdp_score = 8.0
-                    elif gdp_growth > 1.0:
+                    elif gdp_growth > 0.2:
                         gdp_score = 7.0
                     elif gdp_growth > 0.0:
                         gdp_score = 6.0
-                    elif gdp_growth > -1.0:
+                    elif gdp_growth > -0.5:
                         gdp_score = 4.0
                     else:
                         gdp_score = 2.0
 
                 weighted_scores.append((gdp_score, TIER_1_MULTIPLIER))
 
-                # Unemployment score
-                unrate_score = 5.0
-                if latest_unrate < 3.5:
-                    unrate_score = 9.0
-                elif latest_unrate < 4.5:
-                    unrate_score = 8.0
-                elif latest_unrate < 5.5:
-                    unrate_score = 6.0
-                elif latest_unrate < 7.0:
-                    unrate_score = 4.0
-                else:
-                    unrate_score = 2.0
+                # Unemployment — latest vs previous (recent data only)
+                if unrate_recent:
+                    latest_unrate = _latest_value(unrate_recent)
+                    prev_unrate = _previous_value(unrate_recent)
 
-                weighted_scores.append((unrate_score, TIER_1_MULTIPLIER))
+                    unrate_score = 5.0
+                    if latest_unrate is not None:
+                        if latest_unrate < 3.5:
+                            unrate_score = 9.0
+                        elif latest_unrate < 4.5:
+                            unrate_score = 8.0
+                        elif latest_unrate < 5.5:
+                            unrate_score = 6.0
+                        elif latest_unrate < 7.0:
+                            unrate_score = 4.0
+                        else:
+                            unrate_score = 2.0
 
-                # Core CPI / Inflation score
+                        # Adjust for recent trend
+                        if prev_unrate is not None:
+                            unrate_trend = latest_unrate - prev_unrate
+                            if unrate_trend > 0.2:
+                                unrate_score = max(1.0, unrate_score - 2.0)
+                            elif unrate_trend > 0.1:
+                                unrate_score = max(1.0, unrate_score - 1.0)
+                            elif unrate_trend < -0.2:
+                                unrate_score = min(10.0, unrate_score + 2.0)
+                            elif unrate_trend < -0.1:
+                                unrate_score = min(10.0, unrate_score + 1.0)
+
+                    weighted_scores.append((unrate_score, TIER_1_MULTIPLIER))
+
+                # Core CPI / Inflation — latest vs previous (recent data only)
                 if "CPILFESL" in fred:
-                    cpi_obs = fred["CPILFESL"]
-                    if cpi_obs:
-                        # YoY change in CPI
-                        latest_cpi = cpi_obs[0]["value"]
-                        cpi_12m_ago = cpi_obs[12]["value"] if len(cpi_obs) >= 13 else None
-                        if cpi_12m_ago and cpi_12m_ago > 0:
-                            cpi_yoy = (latest_cpi - cpi_12m_ago) / cpi_12m_ago * 100
-                            if cpi_yoy > 5.0:
+                    cpi_recent = _get_recent_obs(fred["CPILFESL"])
+                    if cpi_recent:
+                        latest_cpi = _latest_value(cpi_recent)
+                        prev_cpi = _previous_value(cpi_recent)
+
+                        cpi_score = 5.0
+                        if latest_cpi is not None and prev_cpi is not None and prev_cpi > 0:
+                            cpi_mom = (latest_cpi - prev_cpi) / prev_cpi * 100
+                            # Recent monthly CPI momentum
+                            if cpi_mom > 0.5:
                                 cpi_score = 9.0  # Very hot
-                            elif cpi_yoy > 3.5:
+                            elif cpi_mom > 0.3:
                                 cpi_score = 8.0
-                            elif cpi_yoy > 2.5:
+                            elif cpi_mom > 0.1:
                                 cpi_score = 7.0
-                            elif cpi_yoy > 1.5:
-                                cpi_score = 6.0  # In target range
-                            elif cpi_yoy > 0.0:
+                            elif cpi_mom > 0.0:
+                                cpi_score = 6.0
+                            elif cpi_mom > -0.1:
                                 cpi_score = 5.0
                             else:
                                 cpi_score = 3.0  # Deflationary
                             weighted_scores.append((cpi_score, TIER_1_MULTIPLIER))
+
+                # Headline CPI — recent data only
+                if "CPIAUCSL" in fred:
+                    hcpi_recent = _get_recent_obs(fred["CPIAUCSL"])
+                    if hcpi_recent:
+                        latest_hcpi = _latest_value(hcpi_recent)
+                        prev_hcpi = _previous_value(hcpi_recent)
+                        if latest_hcpi is not None and prev_hcpi is not None and prev_hcpi > 0:
+                            hcpi_mom = (latest_hcpi - prev_hcpi) / prev_hcpi * 100
+                            hcpi_score = 5.0
+                            if hcpi_mom > 0.5:
+                                hcpi_score = 9.0
+                            elif hcpi_mom > 0.3:
+                                hcpi_score = 8.0
+                            elif hcpi_mom > 0.1:
+                                hcpi_score = 7.0
+                            elif hcpi_mom > 0.0:
+                                hcpi_score = 6.0
+                            elif hcpi_mom > -0.1:
+                                hcpi_score = 5.0
+                            else:
+                                hcpi_score = 3.0
+                            weighted_scores.append((hcpi_score, TIER_1_MULTIPLIER))
+
+                # PPI — recent data only
+                if "PPIACO" in fred:
+                    ppi_recent = _get_recent_obs(fred["PPIACO"])
+                    if ppi_recent:
+                        latest_ppi = _latest_value(ppi_recent)
+                        prev_ppi = _previous_value(ppi_recent)
+                        if latest_ppi is not None and prev_ppi is not None and prev_ppi > 0:
+                            ppi_mom = (latest_ppi - prev_ppi) / prev_ppi * 100
+                            ppi_score = 5.0
+                            if ppi_mom > 0.5:
+                                ppi_score = 9.0
+                            elif ppi_mom > 0.3:
+                                ppi_score = 8.0
+                            elif ppi_mom > 0.1:
+                                ppi_score = 7.0
+                            elif ppi_mom > 0.0:
+                                ppi_score = 6.0
+                            elif ppi_mom > -0.1:
+                                ppi_score = 5.0
+                            else:
+                                ppi_score = 3.0
+                            weighted_scores.append((ppi_score, TIER_2_MULTIPLIER))
+
+                # Nonfarm Payrolls — recent data only
+                if "PAYEMS" in fred:
+                    payems_recent = _get_recent_obs(fred["PAYEMS"])
+                    if payems_recent:
+                        latest_payems = _latest_value(payems_recent)
+                        prev_payems = _previous_value(payems_recent)
+                        if latest_payems is not None and prev_payems is not None:
+                            payems_change = latest_payems - prev_payems
+                            payems_score = 5.0
+                            if payems_change > 200:
+                                payems_score = 9.0
+                            elif payems_change > 100:
+                                payems_score = 8.0
+                            elif payems_change > 50:
+                                payems_score = 7.0
+                            elif payems_change > 0:
+                                payems_score = 6.0
+                            elif payems_change > -50:
+                                payems_score = 4.0
+                            else:
+                                payems_score = 2.0
+                            weighted_scores.append((payems_score, TIER_1_MULTIPLIER))
 
         # ── Central Bank Rate Score ──────────────────────────────────────
         rate = central_bank_rates.get(asset)
@@ -697,22 +1229,28 @@ def score_all(collected_data: dict[str, Any]) -> dict[str, Any]:
     Returns: Dict with base scores, pair scores, and metadata.
     """
     logger.info("=" * 60)
-    logger.info("SCORING ENGINE — Computing All Scores")
+    logger.info("SCORING ENGINE — Computing All Scores (Recent Data Only)")
     logger.info("=" * 60)
 
     # Step 1: Score all base assets
-    logger.info("\n[Step 1/3] Scoring base assets...")
+    logger.info("\n[Step 1/3] Scoring base assets (recent 14-day window)...")
     base_scores = score_base_assets(collected_data)
 
     # Log all base scores
     for asset, score in sorted(base_scores.items()):
         logger.info("  %s: %.2f", asset, score)
 
-    # Step 1b: Compute 2-week momentum scores
-    logger.info("\n[Step 1b/3] Computing 2-week momentum trends...")
+    # Step 1b: Compute recent-data momentum scores
+    logger.info("\n[Step 1b/3] Computing recent-data momentum trends...")
     momentum_scores = compute_fred_momentum_scores(collected_data)
     for asset, m_score in sorted(momentum_scores.items()):
         logger.info("  Momentum %s: %.2f", asset, m_score)
+
+    # Step 1c: Compute detailed score breakdowns for each asset
+    logger.info("\n[Step 1c/3] Computing asset score breakdowns...")
+    score_breakdowns = compute_asset_score_breakdowns(collected_data, base_scores)
+    for asset, items in score_breakdowns.items():
+        logger.info("  Breakdown %s: %d data points", asset, len(items))
 
     # Step 2: Compute all cross-pairs with momentum adjustment
     logger.info("\n[Step 2/3] Computing cross-pair biases (momentum-adjusted)...")
@@ -761,10 +1299,16 @@ def score_all(collected_data: dict[str, Any]) -> dict[str, Any]:
         "timestamp": datetime.now(timezone.utc).isoformat(),
         "base_scores": base_scores,
         "momentum_scores": momentum_scores,
+        "score_breakdowns": score_breakdowns,
         "pairs": pair_scores,
         "total_pairs": len(pair_scores),
         "extreme_setups": extreme_setups,
         "total_extreme": len(extreme_setups),
+        "analysis_window_days": RECENT_DATA_WINDOW_DAYS,
+        "analysis_note": (
+            f"Bias and analysis use ONLY the most recent {RECENT_DATA_WINDOW_DAYS} days "
+            "of economic data. Historical data is shown for reference only."
+        ),
     }
 
     logger.info("\n" + "=" * 60)
@@ -795,8 +1339,14 @@ def direction_label(bias: float) -> str:
 def scoring_metadata() -> dict:
     """Return the scoring framework metadata for documentation."""
     return {
-        "framework": "Bulls & Bears Fundamentals Scoring Engine v2.0",
+        "framework": "Bulls & Bears Fundamentals Scoring Engine v3.0",
         "scale": "1.0 (Strongly Bearish) to 10.0 (Strongly Bullish), 5.0 = Neutral",
+        "analysis_window_days": RECENT_DATA_WINDOW_DAYS,
+        "analysis_policy": (
+            f"Only the most recent {RECENT_DATA_WINDOW_DAYS} days of economic data "
+            "are used for bias and fundamental analysis. Historical data is shown "
+            "for reference only and does not affect scores."
+        ),
         "tier_multipliers": {
             "tier_1": {"multiplier": 3.0, "events": list(TIER_1_EVENTS)},
             "tier_2": {"multiplier": 2.0, "events": list(TIER_2_EVENTS)},
