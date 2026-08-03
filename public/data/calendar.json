@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-02T08:21:43.464175+00:00",
+  "last_updated": "2026-08-03T09:40:34.856486+00:00",
   "events": [
     {
       "source": "ForexFactory",
@@ -19,6 +19,16 @@
       "forecast": 3.9,
       "actual": null,
       "previous": 4.1,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-08-08T12:45:00-04:00",
+      "currency": "USD",
+      "event": "FOMC Member Bowman Speaks",
+      "forecast": null,
+      "actual": null,
+      "previous": null,
       "impact": "low"
     },
     {
@@ -366,6 +376,16 @@
       "date": "2026-08-05T21:30:00-04:00",
       "currency": "AUD",
       "event": "Goods Trade Balance",
+      "forecast": null,
+      "actual": null,
+      "previous": null,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-08-05T20:35:00-04:00",
+      "currency": "USD",
+      "event": "FOMC Member Daly Speaks",
       "forecast": null,
       "actual": null,
       "previous": null,
@@ -942,5 +962,5 @@
       "impact": "holiday"
     }
   ],
-  "total_events": 94
+  "total_events": 96
 }
