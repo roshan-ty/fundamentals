@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-03T09:40:34.857771+00:00",
+  "last_updated": "2026-08-04T08:33:29.710600+00:00",
   "series": {
     "GDPC1": [
       {
@@ -2401,6 +2401,11 @@
     ],
     "FEDFUNDS": [
       {
+        "date": "2026-07-01",
+        "value": 3.63,
+        "unit": "Percent"
+      },
+      {
         "date": "2026-06-01",
         "value": 3.63,
         "unit": "Percent"
@@ -2994,14 +2999,14 @@
         "date": "2016-08-01",
         "value": 0.4,
         "unit": "Percent"
-      },
-      {
-        "date": "2016-07-01",
-        "value": 0.39,
-        "unit": "Percent"
       }
     ],
     "DFII10": [
+      {
+        "date": "2026-07-31",
+        "value": 2.47,
+        "unit": "Percent"
+      },
       {
         "date": "2026-07-30",
         "value": 2.41,
@@ -3576,14 +3581,14 @@
         "date": "2026-02-17",
         "value": 1.79,
         "unit": "Percent"
-      },
-      {
-        "date": "2026-02-13",
-        "value": 1.77,
-        "unit": "Percent"
       }
     ],
     "T10YIE": [
+      {
+        "date": "2026-08-03",
+        "value": 2.27,
+        "unit": "Percent"
+      },
       {
         "date": "2026-07-31",
         "value": 2.28,
@@ -7172,6 +7177,11 @@
     ],
     "DGS10": [
       {
+        "date": "2026-07-31",
+        "value": 4.75,
+        "unit": "Percent"
+      },
+      {
         "date": "2026-07-30",
         "value": 4.68,
         "unit": "Percent"
@@ -7745,14 +7755,14 @@
         "date": "2026-02-17",
         "value": 4.05,
         "unit": "Percent"
-      },
-      {
-        "date": "2026-02-13",
-        "value": 4.04,
-        "unit": "Percent"
       }
     ],
     "DGS2": [
+      {
+        "date": "2026-07-31",
+        "value": 4.28,
+        "unit": "Percent"
+      },
       {
         "date": "2026-07-30",
         "value": 4.23,
@@ -8326,11 +8336,6 @@
       {
         "date": "2026-02-17",
         "value": 3.43,
-        "unit": "Percent"
-      },
-      {
-        "date": "2026-02-13",
-        "value": 3.4,
         "unit": "Percent"
       }
     ]
