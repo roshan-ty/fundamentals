@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-04T08:33:29.709405+00:00",
+  "last_updated": "2026-08-05T08:32:42.315310+00:00",
   "events": [
     {
       "source": "ForexFactory",
@@ -393,6 +393,16 @@
     },
     {
       "source": "ForexFactory",
+      "date": "2026-08-05T16:30:00-04:00",
+      "currency": "USD",
+      "event": "President Trump Speaks",
+      "forecast": null,
+      "actual": null,
+      "previous": null,
+      "impact": "medium"
+    },
+    {
+      "source": "ForexFactory",
       "date": "2026-08-05T16:05:00-04:00",
       "currency": "USD",
       "event": "FOMC Member Cook Speaks",
@@ -613,7 +623,7 @@
     },
     {
       "source": "ForexFactory",
-      "date": "2026-08-04T10:50:00-04:00",
+      "date": "2026-08-04T11:14:00-04:00",
       "currency": "NZD",
       "event": "GDT Price Index",
       "forecast": null,
@@ -623,7 +633,7 @@
     },
     {
       "source": "ForexFactory",
-      "date": "2026-08-04T10:10:00-04:00",
+      "date": "2026-08-04T10:13:00-04:00",
       "currency": "USD",
       "event": "RCM/TIPP Economic Optimism",
       "forecast": 47.5,
@@ -972,5 +982,5 @@
       "impact": "holiday"
     }
   ],
-  "total_events": 97
+  "total_events": 98
 }
