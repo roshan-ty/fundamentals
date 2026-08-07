@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-06T08:32:55.756574+00:00",
+  "last_updated": "2026-08-07T07:12:21.337463+00:00",
   "events": [
     {
       "source": "ForexFactory",
@@ -143,6 +143,16 @@
     },
     {
       "source": "ForexFactory",
+      "date": "2026-08-07T02:03:00-04:00",
+      "currency": "GBP",
+      "event": "Lloyds HPI m/m",
+      "forecast": 0.2,
+      "actual": null,
+      "previous": 0.2,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
       "date": "2026-08-07T02:00:00-04:00",
       "currency": "EUR",
       "event": "German Industrial Production m/m",
@@ -163,16 +173,6 @@
     },
     {
       "source": "ForexFactory",
-      "date": "2026-08-07T02:00:00-04:00",
-      "currency": "GBP",
-      "event": "Lloyds HPI m/m",
-      "forecast": 0.2,
-      "actual": null,
-      "previous": 0.2,
-      "impact": "low"
-    },
-    {
-      "source": "ForexFactory",
       "date": "2026-08-07T01:00:00-04:00",
       "currency": "JPY",
       "event": "Leading Indicators",
@@ -183,9 +183,9 @@
     },
     {
       "source": "ForexFactory",
-      "date": "2026-08-06T22:04:00-04:00",
+      "date": "2026-08-06T22:38:00-04:00",
       "currency": "CNY",
-      "event": "USD-Denominated Trade Balance",
+      "event": "Trade Balance",
       "forecast": null,
       "actual": null,
       "previous": null,
@@ -193,9 +193,9 @@
     },
     {
       "source": "ForexFactory",
-      "date": "2026-08-06T22:03:00-04:00",
+      "date": "2026-08-06T22:38:00-04:00",
       "currency": "CNY",
-      "event": "Trade Balance",
+      "event": "USD-Denominated Trade Balance",
       "forecast": null,
       "actual": null,
       "previous": null,
@@ -283,7 +283,17 @@
     },
     {
       "source": "ForexFactory",
-      "date": "2026-08-06T05:18:00-04:00",
+      "date": "2026-08-06T05:00:00-04:00",
+      "currency": "EUR",
+      "event": "Retail Sales m/m",
+      "forecast": 0.1,
+      "actual": null,
+      "previous": 0.2,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-08-06T04:57:00-04:00",
       "currency": "EUR",
       "event": "French 10-y Bond Auction",
       "forecast": null,
@@ -293,22 +303,12 @@
     },
     {
       "source": "ForexFactory",
-      "date": "2026-08-06T05:03:00-04:00",
+      "date": "2026-08-06T04:41:00-04:00",
       "currency": "EUR",
       "event": "Spanish 10-y Bond Auction",
       "forecast": null,
       "actual": null,
       "previous": null,
-      "impact": "low"
-    },
-    {
-      "source": "ForexFactory",
-      "date": "2026-08-06T05:00:00-04:00",
-      "currency": "EUR",
-      "event": "Retail Sales m/m",
-      "forecast": 0.1,
-      "actual": null,
-      "previous": 0.2,
       "impact": "low"
     },
     {
