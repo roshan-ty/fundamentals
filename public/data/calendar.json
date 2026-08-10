@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-09T06:53:06.679350+00:00",
+  "last_updated": "2026-08-10T07:28:47.309486+00:00",
   "events": [
     {
       "source": "ForexFactory",
@@ -673,6 +673,16 @@
     },
     {
       "source": "ForexFactory",
+      "date": "2026-08-10T15:00:00-04:00",
+      "currency": "USD",
+      "event": "FOMC Member Hammack Speaks",
+      "forecast": null,
+      "actual": null,
+      "previous": null,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
       "date": "2026-08-10T09:48:00-04:00",
       "currency": "USD",
       "event": "Cleveland Fed Inflation Expectations",
@@ -732,5 +742,5 @@
       "impact": "low"
     }
   ],
-  "total_events": 73
+  "total_events": 74
 }
