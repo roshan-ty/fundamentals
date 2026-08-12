@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-11T07:03:59.237678+00:00",
+  "last_updated": "2026-08-12T07:21:39.188128+00:00",
   "events": [
     {
       "source": "ForexFactory",
@@ -306,7 +306,7 @@
       "date": "2026-08-13T02:00:00-04:00",
       "currency": "GBP",
       "event": "GDP m/m",
-      "forecast": -0.1,
+      "forecast": 0.0,
       "actual": null,
       "previous": 0.1,
       "impact": "high"
@@ -563,7 +563,7 @@
     },
     {
       "source": "ForexFactory",
-      "date": "2026-08-11T08:16:00-04:00",
+      "date": "2026-08-11T08:15:00-04:00",
       "currency": "USD",
       "event": "ADP Weekly Employment Change",
       "forecast": null,
@@ -573,7 +573,7 @@
     },
     {
       "source": "ForexFactory",
-      "date": "2026-08-11T08:15:00-04:00",
+      "date": "2026-08-11T08:14:00-04:00",
       "currency": "USD",
       "event": "ADP Weekly Employment Change",
       "forecast": null,

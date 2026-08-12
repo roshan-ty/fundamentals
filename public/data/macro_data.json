@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-11T07:03:59.238691+00:00",
+  "last_updated": "2026-08-12T07:21:39.189149+00:00",
   "series": {
     "GDPC1": [
       {
@@ -3003,6 +3003,11 @@
     ],
     "DFII10": [
       {
+        "date": "2026-08-10",
+        "value": 2.43,
+        "unit": "Percent"
+      },
+      {
         "date": "2026-08-07",
         "value": 2.4,
         "unit": "Percent"
@@ -3581,14 +3586,14 @@
         "date": "2026-02-24",
         "value": 1.78,
         "unit": "Percent"
-      },
-      {
-        "date": "2026-02-23",
-        "value": 1.77,
-        "unit": "Percent"
       }
     ],
     "T10YIE": [
+      {
+        "date": "2026-08-11",
+        "value": 2.27,
+        "unit": "Percent"
+      },
       {
         "date": "2026-08-10",
         "value": 2.29,
@@ -4167,11 +4172,6 @@
       {
         "date": "2026-02-25",
         "value": 2.28,
-        "unit": "Percent"
-      },
-      {
-        "date": "2026-02-24",
-        "value": 2.26,
         "unit": "Percent"
       }
     ],
@@ -7182,6 +7182,11 @@
     ],
     "DGS10": [
       {
+        "date": "2026-08-10",
+        "value": 4.72,
+        "unit": "Percent"
+      },
+      {
         "date": "2026-08-07",
         "value": 4.65,
         "unit": "Percent"
@@ -7760,14 +7765,14 @@
         "date": "2026-02-24",
         "value": 4.04,
         "unit": "Percent"
-      },
-      {
-        "date": "2026-02-23",
-        "value": 4.03,
-        "unit": "Percent"
       }
     ],
     "DGS2": [
+      {
+        "date": "2026-08-10",
+        "value": 4.25,
+        "unit": "Percent"
+      },
       {
         "date": "2026-08-07",
         "value": 4.19,
@@ -8345,11 +8350,6 @@
       },
       {
         "date": "2026-02-24",
-        "value": 3.43,
-        "unit": "Percent"
-      },
-      {
-        "date": "2026-02-23",
         "value": 3.43,
         "unit": "Percent"
       }
