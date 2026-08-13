@@ -1,13 +1,13 @@
 {
-  "last_updated": "2026-08-12T07:21:39.197568+00:00",
+  "last_updated": "2026-08-13T07:23:49.421999+00:00",
   "base_scores": {
-    "USD": 5.82,
+    "USD": 6.32,
     "EUR": 6.98,
     "GBP": 8.02,
     "JPY": 6.18,
     "AUD": 4.98,
     "CAD": 5.3,
-    "CHF": 5.48,
+    "CHF": 5.58,
     "NZD": 6.8,
     "XAU": 3.51,
     "XAG": 8.0,
@@ -22,7 +22,7 @@
   },
   "total_base_assets": 18,
   "momentum_scores": {
-    "USD": 5.6,
+    "USD": 5.7,
     "EUR": 5.0,
     "GBP": 6.0,
     "JPY": 6.0,
@@ -67,25 +67,25 @@
       },
       {
         "indicator": "Core CPI Change (Latest vs Previous)",
-        "value": -0.017,
+        "value": 0.215,
         "unit": "%",
-        "date": "2026-06-01",
-        "score": 5.0,
+        "date": "2026-07-01",
+        "score": 7.0,
         "tier": "Tier 1",
         "weight": 3.0,
-        "direction": "neutral",
-        "contribution": 15.0
+        "direction": "bullish",
+        "contribution": 21.0
       },
       {
         "indicator": "Headline CPI Change (Latest vs Previous)",
-        "value": -0.422,
+        "value": 0.074,
         "unit": "%",
-        "date": "2026-06-01",
-        "score": 3.0,
+        "date": "2026-07-01",
+        "score": 6.0,
         "tier": "Tier 1",
         "weight": 3.0,
-        "direction": "bearish",
-        "contribution": 9.0
+        "direction": "bullish",
+        "contribution": 18.0
       },
       {
         "indicator": "PPI Change (Latest vs Previous)",
@@ -130,17 +130,6 @@
         "weight": 3.0,
         "direction": "bullish",
         "contribution": 21.0
-      },
-      {
-        "indicator": "US10Y Yield vs 50-Day MA",
-        "value": 2.97,
-        "unit": "%",
-        "date": null,
-        "score": 8.0,
-        "tier": "Tier 2",
-        "weight": 2.0,
-        "direction": "bullish",
-        "contribution": 16.0
       },
       {
         "indicator": "Seasonality",
@@ -354,14 +343,14 @@
       },
       {
         "indicator": "Seasonality",
-        "value": 4.86,
+        "value": 5.5,
         "unit": "score",
         "date": null,
-        "score": 4.86,
+        "score": 5.5,
         "tier": "Tier 3",
         "weight": 1.0,
         "direction": "neutral",
-        "contribution": 4.86
+        "contribution": 5.5
       }
     ],
     "NZD": [
@@ -526,7 +515,7 @@
       "combined_bias": 10.0,
       "direction": "Strongly Bullish",
       "momentum_base": 5.0,
-      "momentum_quote": 5.6,
+      "momentum_quote": 5.7,
       "momentum_adjusted_bias": 10.0
     },
     {
@@ -539,7 +528,7 @@
       "combined_bias": 10.0,
       "direction": "Strongly Bullish",
       "momentum_base": 6.0,
-      "momentum_quote": 5.6,
+      "momentum_quote": 5.7,
       "momentum_adjusted_bias": 10.0
     },
     {
@@ -548,12 +537,12 @@
       "base_asset": "WTI",
       "quote_asset": "USD",
       "base_score": 2.82,
-      "quote_score": 5.82,
-      "combined_bias": 1.36,
+      "quote_score": 6.32,
+      "combined_bias": 1.0,
       "direction": "Strongly Bearish",
       "momentum_base": 4.0,
-      "momentum_quote": 5.6,
-      "momentum_adjusted_bias": 1.36
+      "momentum_quote": 5.7,
+      "momentum_adjusted_bias": 1.0
     },
     {
       "name": "GBP/AUD",
@@ -595,17 +584,30 @@
       "momentum_adjusted_bias": 8.32
     },
     {
+      "name": "XAU/USD",
+      "asset_class": "METAL",
+      "base_asset": "XAU",
+      "quote_asset": "USD",
+      "base_score": 3.51,
+      "quote_score": 6.32,
+      "combined_bias": 1.91,
+      "direction": "Strongly Bearish",
+      "momentum_base": 5.0,
+      "momentum_quote": 5.7,
+      "momentum_adjusted_bias": 1.91
+    },
+    {
       "name": "GBP/CHF",
       "asset_class": "FX",
       "base_asset": "GBP",
       "quote_asset": "CHF",
       "base_score": 8.02,
-      "quote_score": 5.48,
-      "combined_bias": 7.74,
+      "quote_score": 5.58,
+      "combined_bias": 7.64,
       "direction": "Bullish",
       "momentum_base": 6.0,
       "momentum_quote": 5.5,
-      "momentum_adjusted_bias": 7.74
+      "momentum_adjusted_bias": 7.64
     },
     {
       "name": "XAG/USD",
@@ -613,51 +615,12 @@
       "base_asset": "XAG",
       "quote_asset": "USD",
       "base_score": 8.0,
-      "quote_score": 5.82,
-      "combined_bias": 7.74,
+      "quote_score": 6.32,
+      "combined_bias": 7.2,
       "direction": "Bullish",
       "momentum_base": 7.0,
-      "momentum_quote": 5.6,
-      "momentum_adjusted_bias": 7.74
-    },
-    {
-      "name": "XAU/USD",
-      "asset_class": "METAL",
-      "base_asset": "XAU",
-      "quote_asset": "USD",
-      "base_score": 3.51,
-      "quote_score": 5.82,
-      "combined_bias": 2.45,
-      "direction": "Bearish",
-      "momentum_base": 5.0,
-      "momentum_quote": 5.6,
-      "momentum_adjusted_bias": 2.45
-    },
-    {
-      "name": "GBP/USD",
-      "asset_class": "FX",
-      "base_asset": "GBP",
-      "quote_asset": "USD",
-      "base_score": 8.02,
-      "quote_score": 5.82,
-      "combined_bias": 7.36,
-      "direction": "Bullish",
-      "momentum_base": 6.0,
-      "momentum_quote": 5.6,
-      "momentum_adjusted_bias": 7.36
-    },
-    {
-      "name": "BTC/USD",
-      "asset_class": "CRYPTO",
-      "base_asset": "BTC",
-      "quote_asset": "USD",
-      "base_score": 8.36,
-      "quote_score": 5.82,
-      "combined_bias": 7.3,
-      "direction": "Bullish",
-      "momentum_base": 5.0,
-      "momentum_quote": 5.6,
-      "momentum_adjusted_bias": 7.3
+      "momentum_quote": 5.7,
+      "momentum_adjusted_bias": 7.2
     },
     {
       "name": "AUD/NZD",
@@ -738,6 +701,71 @@
       "momentum_adjusted_bias": 6.84
     },
     {
+      "name": "GBP/USD",
+      "asset_class": "FX",
+      "base_asset": "GBP",
+      "quote_asset": "USD",
+      "base_score": 8.02,
+      "quote_score": 6.32,
+      "combined_bias": 6.82,
+      "direction": "Bullish",
+      "momentum_base": 6.0,
+      "momentum_quote": 5.7,
+      "momentum_adjusted_bias": 6.82
+    },
+    {
+      "name": "BTC/USD",
+      "asset_class": "CRYPTO",
+      "base_asset": "BTC",
+      "quote_asset": "USD",
+      "base_score": 8.36,
+      "quote_score": 6.32,
+      "combined_bias": 6.76,
+      "direction": "Bullish",
+      "momentum_base": 5.0,
+      "momentum_quote": 5.7,
+      "momentum_adjusted_bias": 6.76
+    },
+    {
+      "name": "AUD/USD",
+      "asset_class": "FX",
+      "base_asset": "AUD",
+      "quote_asset": "USD",
+      "base_score": 4.98,
+      "quote_score": 6.32,
+      "combined_bias": 3.38,
+      "direction": "Bearish",
+      "momentum_base": 5.0,
+      "momentum_quote": 5.7,
+      "momentum_adjusted_bias": 3.38
+    },
+    {
+      "name": "SOL/USD",
+      "asset_class": "CRYPTO",
+      "base_asset": "SOL",
+      "quote_asset": "USD",
+      "base_score": 5.0,
+      "quote_score": 6.32,
+      "combined_bias": 3.4,
+      "direction": "Bearish",
+      "momentum_base": 5.0,
+      "momentum_quote": 5.7,
+      "momentum_adjusted_bias": 3.4
+    },
+    {
+      "name": "XRP/USD",
+      "asset_class": "CRYPTO",
+      "base_asset": "XRP",
+      "quote_asset": "USD",
+      "base_score": 5.0,
+      "quote_score": 6.32,
+      "combined_bias": 3.4,
+      "direction": "Bearish",
+      "momentum_base": 5.0,
+      "momentum_quote": 5.7,
+      "momentum_adjusted_bias": 3.4
+    },
+    {
       "name": "AUD/JPY",
       "asset_class": "FX",
       "base_asset": "AUD",
@@ -749,6 +777,19 @@
       "momentum_base": 5.0,
       "momentum_quote": 6.0,
       "momentum_adjusted_bias": 3.4
+    },
+    {
+      "name": "USD/CAD",
+      "asset_class": "FX",
+      "base_asset": "USD",
+      "quote_asset": "CAD",
+      "base_score": 6.32,
+      "quote_score": 5.3,
+      "combined_bias": 6.5,
+      "direction": "Bullish",
+      "momentum_base": 5.7,
+      "momentum_quote": 4.5,
+      "momentum_adjusted_bias": 6.5
     },
     {
       "name": "CAD/JPY",
@@ -795,12 +836,12 @@
       "base_asset": "NZD",
       "quote_asset": "CHF",
       "base_score": 6.8,
-      "quote_score": 5.48,
-      "combined_bias": 6.32,
+      "quote_score": 5.58,
+      "combined_bias": 6.22,
       "direction": "Bullish",
       "momentum_base": 5.5,
       "momentum_quote": 5.5,
-      "momentum_adjusted_bias": 6.32
+      "momentum_adjusted_bias": 6.22
     },
     {
       "name": "EUR/CHF",
@@ -808,103 +849,25 @@
       "base_asset": "EUR",
       "quote_asset": "CHF",
       "base_score": 6.98,
-      "quote_score": 5.48,
-      "combined_bias": 6.3,
+      "quote_score": 5.58,
+      "combined_bias": 6.2,
       "direction": "Bullish",
       "momentum_base": 5.0,
       "momentum_quote": 5.5,
-      "momentum_adjusted_bias": 6.3
+      "momentum_adjusted_bias": 6.2
     },
     {
-      "name": "AUD/USD",
-      "asset_class": "FX",
-      "base_asset": "AUD",
-      "quote_asset": "USD",
-      "base_score": 4.98,
-      "quote_score": 5.82,
-      "combined_bias": 3.92,
-      "direction": "Bearish",
-      "momentum_base": 5.0,
-      "momentum_quote": 5.6,
-      "momentum_adjusted_bias": 3.92
-    },
-    {
-      "name": "SOL/USD",
-      "asset_class": "CRYPTO",
-      "base_asset": "SOL",
-      "quote_asset": "USD",
-      "base_score": 5.0,
-      "quote_score": 5.82,
-      "combined_bias": 3.94,
-      "direction": "Bearish",
-      "momentum_base": 5.0,
-      "momentum_quote": 5.6,
-      "momentum_adjusted_bias": 3.94
-    },
-    {
-      "name": "XRP/USD",
-      "asset_class": "CRYPTO",
-      "base_asset": "XRP",
-      "quote_asset": "USD",
-      "base_score": 5.0,
-      "quote_score": 5.82,
-      "combined_bias": 3.94,
-      "direction": "Bearish",
-      "momentum_base": 5.0,
-      "momentum_quote": 5.6,
-      "momentum_adjusted_bias": 3.94
-    },
-    {
-      "name": "USD/CAD",
+      "name": "USD/CHF",
       "asset_class": "FX",
       "base_asset": "USD",
-      "quote_asset": "CAD",
-      "base_score": 5.82,
-      "quote_score": 5.3,
-      "combined_bias": 5.96,
+      "quote_asset": "CHF",
+      "base_score": 6.32,
+      "quote_score": 5.58,
+      "combined_bias": 5.82,
       "direction": "Neutral",
-      "momentum_base": 5.6,
-      "momentum_quote": 4.5,
-      "momentum_adjusted_bias": 5.96
-    },
-    {
-      "name": "NZD/USD",
-      "asset_class": "FX",
-      "base_asset": "NZD",
-      "quote_asset": "USD",
-      "base_score": 6.8,
-      "quote_score": 5.82,
-      "combined_bias": 5.94,
-      "direction": "Neutral",
-      "momentum_base": 5.5,
-      "momentum_quote": 5.6,
-      "momentum_adjusted_bias": 5.94
-    },
-    {
-      "name": "EUR/USD",
-      "asset_class": "FX",
-      "base_asset": "EUR",
-      "quote_asset": "USD",
-      "base_score": 6.98,
-      "quote_score": 5.82,
-      "combined_bias": 5.92,
-      "direction": "Neutral",
-      "momentum_base": 5.0,
-      "momentum_quote": 5.6,
-      "momentum_adjusted_bias": 5.92
-    },
-    {
-      "name": "CHF/JPY",
-      "asset_class": "FX",
-      "base_asset": "CHF",
-      "quote_asset": "JPY",
-      "base_score": 5.48,
-      "quote_score": 6.18,
-      "combined_bias": 4.1,
-      "direction": "Neutral",
-      "momentum_base": 5.5,
-      "momentum_quote": 6.0,
-      "momentum_adjusted_bias": 4.1
+      "momentum_base": 5.7,
+      "momentum_quote": 5.5,
+      "momentum_adjusted_bias": 5.82
     },
     {
       "name": "AUD/CHF",
@@ -912,38 +875,25 @@
       "base_asset": "AUD",
       "quote_asset": "CHF",
       "base_score": 4.98,
-      "quote_score": 5.48,
-      "combined_bias": 4.3,
+      "quote_score": 5.58,
+      "combined_bias": 4.2,
       "direction": "Neutral",
       "momentum_base": 5.0,
       "momentum_quote": 5.5,
-      "momentum_adjusted_bias": 4.3
+      "momentum_adjusted_bias": 4.2
     },
     {
-      "name": "ETH/USD",
-      "asset_class": "CRYPTO",
-      "base_asset": "ETH",
-      "quote_asset": "USD",
-      "base_score": 6.62,
-      "quote_score": 5.82,
-      "combined_bias": 5.56,
-      "direction": "Neutral",
-      "momentum_base": 5.0,
-      "momentum_quote": 5.6,
-      "momentum_adjusted_bias": 5.56
-    },
-    {
-      "name": "USD/JPY",
+      "name": "CHF/JPY",
       "asset_class": "FX",
-      "base_asset": "USD",
+      "base_asset": "CHF",
       "quote_asset": "JPY",
-      "base_score": 5.82,
+      "base_score": 5.58,
       "quote_score": 6.18,
-      "combined_bias": 4.48,
+      "combined_bias": 4.2,
       "direction": "Neutral",
-      "momentum_base": 5.6,
+      "momentum_base": 5.5,
       "momentum_quote": 6.0,
-      "momentum_adjusted_bias": 4.48
+      "momentum_adjusted_bias": 4.2
     },
     {
       "name": "NZD/JPY",
@@ -972,16 +922,29 @@
       "momentum_adjusted_bias": 5.4
     },
     {
-      "name": "USD/CHF",
+      "name": "NZD/USD",
       "asset_class": "FX",
-      "base_asset": "USD",
-      "quote_asset": "CHF",
-      "base_score": 5.82,
-      "quote_score": 5.48,
+      "base_asset": "NZD",
+      "quote_asset": "USD",
+      "base_score": 6.8,
+      "quote_score": 6.32,
+      "combined_bias": 5.4,
+      "direction": "Neutral",
+      "momentum_base": 5.5,
+      "momentum_quote": 5.7,
+      "momentum_adjusted_bias": 5.4
+    },
+    {
+      "name": "EUR/USD",
+      "asset_class": "FX",
+      "base_asset": "EUR",
+      "quote_asset": "USD",
+      "base_score": 6.98,
+      "quote_score": 6.32,
       "combined_bias": 5.38,
       "direction": "Neutral",
-      "momentum_base": 5.6,
-      "momentum_quote": 5.5,
+      "momentum_base": 5.0,
+      "momentum_quote": 5.7,
       "momentum_adjusted_bias": 5.38
     },
     {
@@ -998,6 +961,19 @@
       "momentum_adjusted_bias": 4.88
     },
     {
+      "name": "ETH/USD",
+      "asset_class": "CRYPTO",
+      "base_asset": "ETH",
+      "quote_asset": "USD",
+      "base_score": 6.62,
+      "quote_score": 6.32,
+      "combined_bias": 5.02,
+      "direction": "Neutral",
+      "momentum_base": 5.0,
+      "momentum_quote": 5.7,
+      "momentum_adjusted_bias": 5.02
+    },
+    {
       "name": "EUR/NZD",
       "asset_class": "FX",
       "base_asset": "EUR",
@@ -1009,6 +985,19 @@
       "momentum_base": 5.0,
       "momentum_quote": 5.5,
       "momentum_adjusted_bias": 4.98
+    },
+    {
+      "name": "USD/JPY",
+      "asset_class": "FX",
+      "base_asset": "USD",
+      "quote_asset": "JPY",
+      "base_score": 6.32,
+      "quote_score": 6.18,
+      "combined_bias": 5.02,
+      "direction": "Neutral",
+      "momentum_base": 5.7,
+      "momentum_quote": 6.0,
+      "momentum_adjusted_bias": 5.02
     }
   ],
   "total_pairs": 38,
@@ -1023,7 +1012,7 @@
       "combined_bias": 10.0,
       "direction": "Strongly Bullish",
       "momentum_base": 5.0,
-      "momentum_quote": 5.6,
+      "momentum_quote": 5.7,
       "momentum_adjusted_bias": 10.0
     },
     {
@@ -1036,7 +1025,7 @@
       "combined_bias": 10.0,
       "direction": "Strongly Bullish",
       "momentum_base": 6.0,
-      "momentum_quote": 5.6,
+      "momentum_quote": 5.7,
       "momentum_adjusted_bias": 10.0
     },
     {
@@ -1045,12 +1034,12 @@
       "base_asset": "WTI",
       "quote_asset": "USD",
       "base_score": 2.82,
-      "quote_score": 5.82,
-      "combined_bias": 1.36,
+      "quote_score": 6.32,
+      "combined_bias": 1.0,
       "direction": "Strongly Bearish",
       "momentum_base": 4.0,
-      "momentum_quote": 5.6,
-      "momentum_adjusted_bias": 1.36
+      "momentum_quote": 5.7,
+      "momentum_adjusted_bias": 1.0
     },
     {
       "name": "GBP/AUD",
@@ -1090,12 +1079,25 @@
       "momentum_base": 6.0,
       "momentum_quote": 4.5,
       "momentum_adjusted_bias": 8.32
+    },
+    {
+      "name": "XAU/USD",
+      "asset_class": "METAL",
+      "base_asset": "XAU",
+      "quote_asset": "USD",
+      "base_score": 3.51,
+      "quote_score": 6.32,
+      "combined_bias": 1.91,
+      "direction": "Strongly Bearish",
+      "momentum_base": 5.0,
+      "momentum_quote": 5.7,
+      "momentum_adjusted_bias": 1.91
     }
   ],
-  "total_extreme": 6,
+  "total_extreme": 7,
   "summary": {
-    "bullish_count": 16,
+    "bullish_count": 17,
     "bearish_count": 10,
-    "neutral_count": 12
+    "neutral_count": 11
   }
 }
