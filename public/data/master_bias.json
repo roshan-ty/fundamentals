@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-13T07:23:49.421999+00:00",
+  "last_updated": "2026-08-14T07:21:21.524955+00:00",
   "base_scores": {
     "USD": 6.32,
     "EUR": 6.98,
@@ -89,9 +89,9 @@
       },
       {
         "indicator": "PPI Change (Latest vs Previous)",
-        "value": -1.261,
+        "value": -0.776,
         "unit": "%",
-        "date": "2026-06-01",
+        "date": "2026-07-01",
         "score": 3.0,
         "tier": "Tier 2",
         "weight": 2.0,
