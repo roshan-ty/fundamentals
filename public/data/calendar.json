@@ -1,6 +1,16 @@
 {
-  "last_updated": "2026-08-14T07:21:21.515587+00:00",
+  "last_updated": "2026-08-15T06:34:18.164244+00:00",
   "events": [
+    {
+      "source": "ForexFactory",
+      "date": "2026-08-14T15:00:00-04:00",
+      "currency": "USD",
+      "event": "President Trump Speaks",
+      "forecast": null,
+      "actual": null,
+      "previous": null,
+      "impact": "medium"
+    },
     {
       "source": "ForexFactory",
       "date": "2026-08-14T10:00:00-04:00",
@@ -73,26 +83,6 @@
     },
     {
       "source": "ForexFactory",
-      "date": "2026-08-14T05:03:00-04:00",
-      "currency": "CNY",
-      "event": "M2 Money Supply y/y",
-      "forecast": 7.9,
-      "actual": null,
-      "previous": 8.0,
-      "impact": "low"
-    },
-    {
-      "source": "ForexFactory",
-      "date": "2026-08-14T05:03:00-04:00",
-      "currency": "CNY",
-      "event": "New Loans",
-      "forecast": null,
-      "actual": null,
-      "previous": null,
-      "impact": "low"
-    },
-    {
-      "source": "ForexFactory",
       "date": "2026-08-14T05:00:00-04:00",
       "currency": "EUR",
       "event": "Flash Employment Change q/q",
@@ -119,6 +109,26 @@
       "forecast": null,
       "actual": null,
       "previous": null,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-08-14T04:02:00-04:00",
+      "currency": "CNY",
+      "event": "New Loans",
+      "forecast": null,
+      "actual": null,
+      "previous": null,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-08-14T04:01:00-04:00",
+      "currency": "CNY",
+      "event": "M2 Money Supply y/y",
+      "forecast": 7.9,
+      "actual": null,
+      "previous": 8.0,
       "impact": "low"
     },
     {
@@ -732,5 +742,5 @@
       "impact": "low"
     }
   ],
-  "total_events": 73
+  "total_events": 74
 }
