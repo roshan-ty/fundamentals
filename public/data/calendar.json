@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-16T06:36:10.543737+00:00",
+  "last_updated": "2026-08-17T06:51:08.467864+00:00",
   "events": [
     {
       "source": "ForexFactory",
@@ -693,6 +693,16 @@
     },
     {
       "source": "ForexFactory",
+      "date": "2026-08-18T02:02:00-04:00",
+      "currency": "CNY",
+      "event": "Foreign Direct Investment ytd/y",
+      "forecast": null,
+      "actual": null,
+      "previous": -5.0,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
       "date": "2026-08-18T02:00:00-04:00",
       "currency": "GBP",
       "event": "Claimant Count Change",
@@ -823,12 +833,62 @@
     },
     {
       "source": "ForexFactory",
-      "date": "2026-08-17T02:02:00-04:00",
+      "date": "2026-08-17T03:00:00-04:00",
       "currency": "CNY",
-      "event": "Foreign Direct Investment ytd/y",
+      "event": "Fixed Asset Investment ytd/y",
+      "forecast": -6.2,
+      "actual": null,
+      "previous": -5.7,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-08-17T03:00:00-04:00",
+      "currency": "CNY",
+      "event": "Industrial Production y/y",
+      "forecast": 5.0,
+      "actual": null,
+      "previous": 5.3,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-08-17T03:00:00-04:00",
+      "currency": "CNY",
+      "event": "NBS Press Conference",
       "forecast": null,
       "actual": null,
-      "previous": -5.0,
+      "previous": null,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-08-17T03:00:00-04:00",
+      "currency": "CNY",
+      "event": "New Home Prices m/m",
+      "forecast": null,
+      "actual": null,
+      "previous": -0.15,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-08-17T03:00:00-04:00",
+      "currency": "CNY",
+      "event": "Retail Sales y/y",
+      "forecast": 1.5,
+      "actual": null,
+      "previous": 1.0,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-08-17T03:00:00-04:00",
+      "currency": "CNY",
+      "event": "Unemployment Rate",
+      "forecast": 5.1,
+      "actual": null,
+      "previous": 5.0,
       "impact": "low"
     },
     {
@@ -849,66 +909,6 @@
       "forecast": -0.9,
       "actual": null,
       "previous": 1.1,
-      "impact": "low"
-    },
-    {
-      "source": "ForexFactory",
-      "date": "2026-08-16T22:00:00-04:00",
-      "currency": "CNY",
-      "event": "Fixed Asset Investment ytd/y",
-      "forecast": -6.2,
-      "actual": null,
-      "previous": -5.7,
-      "impact": "low"
-    },
-    {
-      "source": "ForexFactory",
-      "date": "2026-08-16T22:00:00-04:00",
-      "currency": "CNY",
-      "event": "Industrial Production y/y",
-      "forecast": 5.0,
-      "actual": null,
-      "previous": 5.3,
-      "impact": "low"
-    },
-    {
-      "source": "ForexFactory",
-      "date": "2026-08-16T22:00:00-04:00",
-      "currency": "CNY",
-      "event": "NBS Press Conference",
-      "forecast": null,
-      "actual": null,
-      "previous": null,
-      "impact": "low"
-    },
-    {
-      "source": "ForexFactory",
-      "date": "2026-08-16T22:00:00-04:00",
-      "currency": "CNY",
-      "event": "Retail Sales y/y",
-      "forecast": 1.5,
-      "actual": null,
-      "previous": 1.0,
-      "impact": "low"
-    },
-    {
-      "source": "ForexFactory",
-      "date": "2026-08-16T22:00:00-04:00",
-      "currency": "CNY",
-      "event": "Unemployment Rate",
-      "forecast": 5.1,
-      "actual": null,
-      "previous": 5.0,
-      "impact": "low"
-    },
-    {
-      "source": "ForexFactory",
-      "date": "2026-08-16T21:30:00-04:00",
-      "currency": "CNY",
-      "event": "New Home Prices m/m",
-      "forecast": null,
-      "actual": null,
-      "previous": -0.15,
       "impact": "low"
     },
     {
