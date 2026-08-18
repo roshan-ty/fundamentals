@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-17T06:51:08.467864+00:00",
+  "last_updated": "2026-08-18T06:39:47.012737+00:00",
   "events": [
     {
       "source": "ForexFactory",
@@ -16,7 +16,7 @@
       "date": "2026-08-21T09:45:00-04:00",
       "currency": "USD",
       "event": "Flash Manufacturing PMI",
-      "forecast": 54.0,
+      "forecast": 53.9,
       "actual": null,
       "previous": 53.8,
       "impact": "low"
@@ -26,7 +26,7 @@
       "date": "2026-08-21T09:45:00-04:00",
       "currency": "USD",
       "event": "Flash Services PMI",
-      "forecast": 53.9,
+      "forecast": 54.0,
       "actual": null,
       "previous": 53.6,
       "impact": "low"
@@ -36,7 +36,7 @@
       "date": "2026-08-21T08:30:00-04:00",
       "currency": "CAD",
       "event": "Core Retail Sales m/m",
-      "forecast": 0.0,
+      "forecast": 0.2,
       "actual": null,
       "previous": 1.2,
       "impact": "low"
@@ -66,7 +66,7 @@
       "date": "2026-08-21T04:30:00-04:00",
       "currency": "GBP",
       "event": "Flash Services PMI",
-      "forecast": 51.9,
+      "forecast": 51.8,
       "actual": null,
       "previous": 51.8,
       "impact": "medium"
@@ -96,7 +96,7 @@
       "date": "2026-08-21T03:30:00-04:00",
       "currency": "EUR",
       "event": "German Flash Manufacturing PMI",
-      "forecast": 52.0,
+      "forecast": 52.1,
       "actual": null,
       "previous": 52.2,
       "impact": "medium"
@@ -106,7 +106,7 @@
       "date": "2026-08-21T03:30:00-04:00",
       "currency": "EUR",
       "event": "German Flash Services PMI",
-      "forecast": 50.2,
+      "forecast": 50.1,
       "actual": null,
       "previous": 49.6,
       "impact": "medium"
@@ -136,7 +136,7 @@
       "date": "2026-08-21T02:00:00-04:00",
       "currency": "GBP",
       "event": "Retail Sales m/m",
-      "forecast": -0.4,
+      "forecast": -0.5,
       "actual": null,
       "previous": 1.0,
       "impact": "medium"
@@ -186,7 +186,7 @@
       "date": "2026-08-20T19:01:00-04:00",
       "currency": "GBP",
       "event": "GfK Consumer Confidence",
-      "forecast": -17.0,
+      "forecast": -18.0,
       "actual": null,
       "previous": -17.0,
       "impact": "low"
@@ -246,7 +246,7 @@
       "date": "2026-08-20T08:30:00-04:00",
       "currency": "CAD",
       "event": "IPPI m/m",
-      "forecast": null,
+      "forecast": -0.4,
       "actual": null,
       "previous": -1.4,
       "impact": "low"
@@ -256,7 +256,7 @@
       "date": "2026-08-20T08:30:00-04:00",
       "currency": "CAD",
       "event": "NHPI m/m",
-      "forecast": null,
+      "forecast": 0.0,
       "actual": null,
       "previous": -0.1,
       "impact": "low"
@@ -266,7 +266,7 @@
       "date": "2026-08-20T08:30:00-04:00",
       "currency": "CAD",
       "event": "RMPI m/m",
-      "forecast": null,
+      "forecast": -1.8,
       "actual": null,
       "previous": -6.9,
       "impact": "low"
@@ -276,7 +276,7 @@
       "date": "2026-08-20T08:30:00-04:00",
       "currency": "USD",
       "event": "Philly Fed Manufacturing Index",
-      "forecast": 24.3,
+      "forecast": 24.1,
       "actual": null,
       "previous": 41.4,
       "impact": "medium"
@@ -294,21 +294,21 @@
     {
       "source": "ForexFactory",
       "date": "2026-08-20T06:00:00-04:00",
-      "currency": "GBP",
-      "event": "CBI Industrial Order Expectations",
-      "forecast": -40.0,
-      "actual": null,
-      "previous": -45.0,
-      "impact": "low"
-    },
-    {
-      "source": "ForexFactory",
-      "date": "2026-08-20T06:00:00-04:00",
       "currency": "EUR",
       "event": "German Buba Monthly Report",
       "forecast": null,
       "actual": null,
       "previous": null,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-08-20T06:00:00-04:00",
+      "currency": "GBP",
+      "event": "CBI Industrial Order Expectations",
+      "forecast": -40.0,
+      "actual": null,
+      "previous": -45.0,
       "impact": "low"
     },
     {
@@ -436,7 +436,7 @@
       "date": "2026-08-19T04:30:00-04:00",
       "currency": "GBP",
       "event": "HPI y/y",
-      "forecast": 2.5,
+      "forecast": 1.9,
       "actual": null,
       "previous": 2.7,
       "impact": "low"
@@ -486,7 +486,7 @@
       "date": "2026-08-19T02:00:00-04:00",
       "currency": "GBP",
       "event": "PPI Input m/m",
-      "forecast": -0.5,
+      "forecast": 0.0,
       "actual": null,
       "previous": -2.0,
       "impact": "low"
@@ -496,7 +496,7 @@
       "date": "2026-08-19T02:00:00-04:00",
       "currency": "GBP",
       "event": "PPI Output m/m",
-      "forecast": 0.3,
+      "forecast": 0.2,
       "actual": null,
       "previous": 0.0,
       "impact": "low"
@@ -536,7 +536,7 @@
       "date": "2026-08-18T19:50:00-04:00",
       "currency": "JPY",
       "event": "Core Machinery Orders m/m",
-      "forecast": 7.6,
+      "forecast": 7.2,
       "actual": null,
       "previous": -12.4,
       "impact": "low"
@@ -546,7 +546,7 @@
       "date": "2026-08-18T18:45:00-04:00",
       "currency": "NZD",
       "event": "PPI Input q/q",
-      "forecast": 0.5,
+      "forecast": 1.3,
       "actual": null,
       "previous": 1.4,
       "impact": "low"
@@ -556,7 +556,7 @@
       "date": "2026-08-18T18:45:00-04:00",
       "currency": "NZD",
       "event": "PPI Output q/q",
-      "forecast": 0.4,
+      "forecast": 0.8,
       "actual": null,
       "previous": 0.8,
       "impact": "low"
@@ -676,7 +676,7 @@
       "date": "2026-08-18T05:00:00-04:00",
       "currency": "EUR",
       "event": "ZEW Economic Sentiment",
-      "forecast": 25.4,
+      "forecast": 25.9,
       "actual": null,
       "previous": 23.4,
       "impact": "low"
@@ -686,7 +686,7 @@
       "date": "2026-08-18T05:00:00-04:00",
       "currency": "EUR",
       "event": "German ZEW Economic Sentiment",
-      "forecast": 30.0,
+      "forecast": 30.1,
       "actual": null,
       "previous": 26.3,
       "impact": "low"
@@ -763,6 +763,16 @@
     },
     {
       "source": "ForexFactory",
+      "date": "2026-08-17T08:32:00-04:00",
+      "currency": "CAD",
+      "event": "Core CPI m/m",
+      "forecast": null,
+      "actual": null,
+      "previous": 0.1,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
       "date": "2026-08-17T08:30:00-04:00",
       "currency": "CAD",
       "event": "CPI m/m",
@@ -800,16 +810,6 @@
       "actual": null,
       "previous": 2.6,
       "impact": "medium"
-    },
-    {
-      "source": "ForexFactory",
-      "date": "2026-08-17T08:30:00-04:00",
-      "currency": "CAD",
-      "event": "Core CPI m/m",
-      "forecast": null,
-      "actual": null,
-      "previous": 0.1,
-      "impact": "low"
     },
     {
       "source": "ForexFactory",
