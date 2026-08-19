@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-18T06:39:47.012737+00:00",
+  "last_updated": "2026-08-19T06:40:22.786541+00:00",
   "events": [
     {
       "source": "ForexFactory",
@@ -130,6 +130,16 @@
       "actual": null,
       "previous": 49.8,
       "impact": "medium"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-08-21T02:02:00-04:00",
+      "currency": "CNY",
+      "event": "Foreign Direct Investment ytd/y",
+      "forecast": null,
+      "actual": null,
+      "previous": -5.0,
+      "impact": "low"
     },
     {
       "source": "ForexFactory",
@@ -383,6 +393,16 @@
     },
     {
       "source": "ForexFactory",
+      "date": "2026-08-19T14:30:00-04:00",
+      "currency": "USD",
+      "event": "President Trump Speaks",
+      "forecast": null,
+      "actual": null,
+      "previous": null,
+      "impact": "medium"
+    },
+    {
+      "source": "ForexFactory",
       "date": "2026-08-19T14:00:00-04:00",
       "currency": "USD",
       "event": "FOMC Meeting Minutes",
@@ -400,6 +420,16 @@
       "actual": null,
       "previous": null,
       "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-08-19T06:15:00-04:00",
+      "currency": "EUR",
+      "event": "ECB President Lagarde Speaks",
+      "forecast": null,
+      "actual": null,
+      "previous": null,
+      "impact": "medium"
     },
     {
       "source": "ForexFactory",
@@ -573,7 +603,7 @@
     },
     {
       "source": "ForexFactory",
-      "date": "2026-08-18T10:50:00-04:00",
+      "date": "2026-08-18T11:31:00-04:00",
       "currency": "NZD",
       "event": "GDT Price Index",
       "forecast": null,
@@ -663,7 +693,7 @@
     },
     {
       "source": "ForexFactory",
-      "date": "2026-08-18T05:33:00-04:00",
+      "date": "2026-08-18T05:02:00-04:00",
       "currency": "GBP",
       "event": "10-y Bond Auction",
       "forecast": null,
@@ -689,16 +719,6 @@
       "forecast": 30.1,
       "actual": null,
       "previous": 26.3,
-      "impact": "low"
-    },
-    {
-      "source": "ForexFactory",
-      "date": "2026-08-18T02:02:00-04:00",
-      "currency": "CNY",
-      "event": "Foreign Direct Investment ytd/y",
-      "forecast": null,
-      "actual": null,
-      "previous": -5.0,
       "impact": "low"
     },
     {
@@ -962,5 +982,5 @@
       "impact": "low"
     }
   ],
-  "total_events": 96
+  "total_events": 98
 }
