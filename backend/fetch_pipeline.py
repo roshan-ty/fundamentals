@@ -198,7 +198,15 @@ def _extract_calendar_events(collected_data: dict[str, Any]) -> list[dict]:
 
 
 def _safe_float(val: Any) -> Optional[float]:
-    """Safely convert a value to float."""
+    """
+    Safely convert a value to float.
+
+    Handles unit suffixes commonly found in economic data feeds:
+      - 'K' / 'k'  → ×1,000
+      - 'M' / 'm'  → ×1,000,000
+      - 'B' / 'b'  → ×1,000,000,000
+      - '%', '$', '€', '£', ',' are stripped.
+    """
     if val is None:
         return None
     if isinstance(val, (int, float)):
@@ -207,8 +215,21 @@ def _safe_float(val: Any) -> Optional[float]:
         val = val.strip().replace(",", "").replace("%", "").replace("$", "")
         if val in ("", "-", "N/A", "."):
             return None
+
+        # Handle K/M/B suffix multipliers
+        multiplier = 1.0
+        if val and val[-1] in ("K", "k"):
+            multiplier = 1_000.0
+            val = val[:-1]
+        elif val and val[-1] in ("M", "m"):
+            multiplier = 1_000_000.0
+            val = val[:-1]
+        elif val and val[-1] in ("B", "b"):
+            multiplier = 1_000_000_000.0
+            val = val[:-1]
+
         try:
-            return float(val)
+            return float(val) * multiplier
         except ValueError:
             return None
     return None

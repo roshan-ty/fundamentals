@@ -1110,47 +1110,39 @@ def score_base_assets(collected_data: dict[str, Any]) -> dict[str, float]:
 # SECTION 5: Cross-Pair Scaling (200+ Pairs)
 # ═══════════════════════════════════════════════════════════════════════════════
 
-FOREX_PAIRS = [
-    ("EUR", "USD"), ("GBP", "USD"), ("USD", "JPY"), ("AUD", "USD"),
-    ("USD", "CAD"), ("USD", "CHF"), ("NZD", "USD"),
-    ("EUR", "GBP"), ("EUR", "JPY"), ("GBP", "JPY"),
-    ("EUR", "AUD"), ("GBP", "AUD"), ("AUD", "JPY"),
-    ("EUR", "CHF"), ("GBP", "CHF"), ("EUR", "NZD"),
-    ("AUD", "CAD"), ("AUD", "CHF"), ("CAD", "JPY"),
-    ("CHF", "JPY"), ("NZD", "JPY"), ("GBP", "NZD"),
-    ("EUR", "CAD"), ("GBP", "CAD"), ("NZD", "CAD"),
-    ("NZD", "CHF"), ("AUD", "NZD"), ("GBP", "AUD"),
-]
+# Asset-class grouping used to classify every (base, quote) pair.
+FX_MAJORS = ["USD", "EUR", "GBP", "JPY", "AUD", "CAD", "CHF", "NZD"]
+METALS = ["XAU", "XAG"]
+ENERGY = ["WTI"]
+INDICES = ["SP500", "NAS100", "GER40"]
+CRYPTOS = ["BTC", "ETH", "SOL", "XRP"]
 
-METAL_PAIRS = [
-    ("XAU", "USD"), ("XAG", "USD"),
-]
+# Convenience lists retained for logging / documentation
+FOREX_PAIRS = [(b, q) for b in FX_MAJORS for q in FX_MAJORS if b != q]
+METAL_PAIRS = [(b, q) for b in METALS for q in FX_MAJORS if b != q]
+ENERGY_PAIRS = [(b, q) for b in ENERGY for q in FX_MAJORS if b != q]
+INDEX_PAIRS = [(b, q) for b in INDICES for q in FX_MAJORS if b != q]
+CRYPTO_PAIRS = [(b, q) for b in CRYPTOS for q in FX_MAJORS if b != q]
 
-ENERGY_PAIRS = [
-    ("WTI", "USD"),
-]
+# Full 200+ cross-pair universe: every ordered (base, quote) over BASE_ASSETS.
+ALL_PAIRS = [(b, q) for b in BASE_ASSETS for q in BASE_ASSETS if b != q]
 
-INDEX_PAIRS = [
-    ("SP500", "USD"), ("NAS100", "USD"), ("GER40", "EUR"),
-]
+# Classify each pair by the asset class of its base asset.
+BASE_CLASS_MAP: dict[str, str] = {}
+for a in FX_MAJORS:
+    BASE_CLASS_MAP[a] = "FX"
+for a in METALS:
+    BASE_CLASS_MAP[a] = "METAL"
+for a in ENERGY:
+    BASE_CLASS_MAP[a] = "ENERGY"
+for a in INDICES:
+    BASE_CLASS_MAP[a] = "INDEX"
+for a in CRYPTOS:
+    BASE_CLASS_MAP[a] = "CRYPTO"
 
-CRYPTO_PAIRS = [
-    ("BTC", "USD"), ("ETH", "USD"), ("SOL", "USD"), ("XRP", "USD"),
-]
-
-ALL_PAIRS = FOREX_PAIRS + METAL_PAIRS + ENERGY_PAIRS + INDEX_PAIRS + CRYPTO_PAIRS
-
-PAIR_CLASS_MAP: dict[tuple[str, str], str] = {}
-for pair in FOREX_PAIRS:
-    PAIR_CLASS_MAP[pair] = "FX"
-for pair in METAL_PAIRS:
-    PAIR_CLASS_MAP[pair] = "METAL"
-for pair in ENERGY_PAIRS:
-    PAIR_CLASS_MAP[pair] = "ENERGY"
-for pair in INDEX_PAIRS:
-    PAIR_CLASS_MAP[pair] = "INDEX"
-for pair in CRYPTO_PAIRS:
-    PAIR_CLASS_MAP[pair] = "CRYPTO"
+PAIR_CLASS_MAP: dict[tuple[str, str], str] = {
+    (b, q): BASE_CLASS_MAP[b] for b, q in ALL_PAIRS
+}
 
 
 def compute_pair_bias(base_score: float, quote_score: float) -> float:
@@ -1200,7 +1192,7 @@ def compute_all_pairs(base_scores: dict[str, float]) -> list[dict[str, Any]]:
             "base_asset": base,
             "quote_asset": quote,
             "base_score": round(bs, 2),
-            "quote_score": round(qs, 2) if quote != "USD" or asset_class != "INDEX" else 0.0,
+            "quote_score": round(qs, 2),
             "combined_bias": round(combined, 2),
             "direction": direction,
         })

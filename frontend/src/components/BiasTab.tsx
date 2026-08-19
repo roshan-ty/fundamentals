@@ -172,7 +172,10 @@ export default function BiasTab({ data }: Props) {
                 Pair Bias = 5 + ({p.base_asset} Score - {p.quote_asset} Score) + Momentum Adjustment
               </div>
               <div className="text-xs font-mono text-gray-400 mt-1">
-                = 5 + ({p.base_score.toFixed(2)} - {p.quote_score.toFixed(2)}){p.momentum_base && p.momentum_quote ? ` + (${p.momentum_base.toFixed(2)} - ${p.momentum_quote.toFixed(2)})/5*2` : ''}
+                {p.momentum_base !== undefined && p.momentum_base !== null && p.momentum_quote !== undefined && p.momentum_quote !== null
+                  ? `= 5 + (${p.base_score.toFixed(2)} - ${p.quote_score.toFixed(2)}) + (${p.momentum_base.toFixed(2)} - ${p.momentum_quote.toFixed(2)})/5*2`
+                  : `= 5 + (${p.base_score.toFixed(2)} - ${p.quote_score.toFixed(2)})`
+                }
                 = <span className="text-white font-bold">{netBias.toFixed(2)}</span>
               </div>
             </div>

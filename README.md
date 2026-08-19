@@ -1,6 +1,6 @@
 # Bulls & Bears Fundamentals
 
-**Advanced Macroeconomic Fundamental Screening Dashboard** — A $0-infrastructure, fully automated platform that processes 30+ global macroeconomic data points across 200+ multi-asset trading pairs (Forex, Commodities, Equity Indices, and Cryptocurrencies).
+**Advanced Macroeconomic Fundamental Screening Dashboard** — A $0-infrastructure, fully automated platform that processes 30+ global macroeconomic data points across 300+ multi-asset trading pairs (Forex, Commodities, Equity Indices, and Cryptocurrencies).
 
 ## Architecture
 
@@ -84,7 +84,7 @@ Clamped to [1.0, 10.0]
 **Indices:** SP500, NAS100, GER40  
 **Crypto:** BTC, ETH, SOL, XRP
 
-**Total Cross-Pairs:** 45+ FX pairs + Metals + Energy + Indices + Crypto = **200+ pairs**
+**Total Cross-Pairs:** 306 (56 FX, 16 Metals, 8 Energy, 24 Indices, 32 Crypto + all remaining cross-asset combinations)
 
 ## Output Files
 
@@ -93,7 +93,7 @@ Clamped to [1.0, 10.0]
 | `/public/data/calendar.json` | Economic events with surprise ratios |
 | `/public/data/macro_data.json` | FRED historical series (GDP, CPI, PCE, etc.) |
 | `/public/data/cftc_report.json` | Institutional long/short positions |
-| `/public/data/master_bias.json` | Complete 200+ pair scoring matrix |
+| `/public/data/master_bias.json` | Complete 300+ pair scoring matrix |
 | `/public/data/ai_insights.json` | xAI-generated macro summary |
 
 ## Local Development

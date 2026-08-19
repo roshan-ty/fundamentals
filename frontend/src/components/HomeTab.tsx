@@ -7,6 +7,11 @@ interface Props {
   data: DataStore;
 }
 
+interface ScoreItem {
+  label: string;
+  score: number;
+}
+
 export default function HomeTab({ data }: Props) {
   const masterBias = data.master_bias;
   const macroData = data.macro_data;
@@ -14,6 +19,7 @@ export default function HomeTab({ data }: Props) {
 
   const baseScores = masterBias?.base_scores || {};
   const usdScore = baseScores['USD'] || 5.0;
+  const scoreBreakdowns = masterBias?.score_breakdowns || {};
   const pairs = masterBias?.pairs || [];
   const summary = masterBias?.summary || {};
   const analysisWindowDays = masterBias?.analysis_window_days || 14;
@@ -36,13 +42,21 @@ export default function HomeTab({ data }: Props) {
   const unrateVal = getFredVal('UNRATE');
   const fedFundsVal = getFredVal('FEDFUNDS');
 
-  // Score breakdown
-  const scoreItems = [
-    { label: 'Macro Health', score: usdScore },
-    { label: 'Inflation', score: cpiVal ? (cpiVal > 320 ? 7 : cpiVal > 310 ? 6 : 5) : 5 },
-    { label: 'Labor Market', score: unrateVal ? (unrateVal < 4 ? 8 : unrateVal < 5 ? 6 : 4) : 5 },
-    { label: 'Rate Environment', score: fedFundsVal ? (fedFundsVal > 5 ? 7 : fedFundsVal > 3 ? 6 : fedFundsVal > 0 ? 5 : 3) : 5 },
-  ];
+  // Score breakdown — use the engine's real per-indicator scores if available,
+  // otherwise fall back to the current USD composite for display.
+  const usdBreakdown: Array<{ indicator: string; score: number }> = scoreBreakdowns['USD'] || [];
+  const scoreItems: ScoreItem[] =
+    usdBreakdown.length > 0
+      ? usdBreakdown
+          .filter(item => item.score >= 1 && item.score <= 10)
+          .map(item => ({ label: item.indicator, score: item.score }))
+          .slice(0, 6)
+      : [
+          { label: 'Macro Health (USD Composite)', score: usdScore },
+          { label: 'Inflation', score: cpiVal ? (cpiVal > 320 ? 7 : cpiVal > 310 ? 6 : 5) : 5 },
+          { label: 'Labor Market', score: unrateVal ? (unrateVal < 4 ? 8 : unrateVal < 5 ? 6 : 4) : 5 },
+          { label: 'Rate Environment', score: fedFundsVal ? (fedFundsVal > 5 ? 7 : fedFundsVal > 3 ? 6 : fedFundsVal > 0 ? 5 : 3) : 5 },
+        ];
 
   return (
     <div className="space-y-6">

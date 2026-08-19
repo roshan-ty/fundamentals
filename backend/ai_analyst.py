@@ -34,7 +34,7 @@ def generate_macro_summary(scoring_results: dict[str, Any],
     """
     if not XAI_API_KEY:
         logger.warning("XAI_API_KEY not set. Using local synthesis fallback.")
-        return _local_synthesis(scoring_results)
+        return _local_synthesis(scoring_results, collected_data)
 
     # Prepare a concise prompt with the data
     prompt = _build_prompt(scoring_results, collected_data)
@@ -88,10 +88,10 @@ def generate_macro_summary(scoring_results: dict[str, Any],
 
     except requests.RequestException as e:
         logger.error("xAI API call failed: %s", e)
-        return _local_synthesis(scoring_results)
+        return _local_synthesis(scoring_results, collected_data)
     except (KeyError, IndexError, json.JSONDecodeError) as e:
         logger.error("xAI response parse failed: %s", e)
-        return _local_synthesis(scoring_results)
+        return _local_synthesis(scoring_results, collected_data)
 
 
 def _build_prompt(scoring_results: dict[str, Any],
@@ -120,6 +120,7 @@ def _build_prompt(scoring_results: dict[str, Any],
 
     # CFTC summary
     cftc_data = collected_data.get("cftc", {})
+    pair_count = max(1, len(pairs))  # Guard against division by zero
 
     prompt = f"""CURRENT FUNDAMENTAL SCORES (1-10 scale, 5=Neutral):
 
@@ -132,8 +133,8 @@ Bitcoin (BTC): {btc_score:.2f}
 
 MARKET BREADTH:
 Total Pairs Tracked: {len(pairs)}
-Bullish Signals: {bullish} ({bullish/len(pairs)*100:.0f}%)
-Bearish Signals: {bearish} ({bearish/len(pairs)*100:.0f}%)
+Bullish Signals: {bullish} ({bullish/pair_count*100:.0f}%)
+Bearish Signals: {bearish} ({bearish/pair_count*100:.0f}%)
 Neutral: {neutral}
 Extreme Setups: {total_extreme}
 
@@ -155,14 +156,20 @@ Use quantitative evidence throughout."""
     return prompt
 
 
-def _local_synthesis(scoring_results: dict[str, Any]) -> dict[str, Any]:
+def _local_synthesis(scoring_results: dict[str, Any],
+                     collected_data: Optional[dict[str, Any]] = None) -> dict[str, Any]:
     """
     Fallback synthesis when xAI is unavailable.
     Generates a structured textual analysis from the scoring data.
+
+    Args:
+        scoring_results: Output from scorer.score_all()
+        collected_data: Optional raw collected data (used for CFTC positioning).
     """
     base_scores = scoring_results.get("base_scores", {})
     pairs = scoring_results.get("pairs", [])
-    cftc = scoring_results.get("cftc", {})
+    # CFTC data lives in collected_data, not scoring_results.
+    cftc = (collected_data or {}).get("cftc", {})
 
     usd_score = base_scores.get("USD", 5.0)
     eur_score = base_scores.get("EUR", 5.0)
@@ -173,6 +180,7 @@ def _local_synthesis(scoring_results: dict[str, Any]) -> dict[str, Any]:
 
     bullish = sum(1 for p in pairs if p["combined_bias"] >= 6.0)
     bearish = sum(1 for p in pairs if p["combined_bias"] <= 4.0)
+    pair_count = max(1, len(pairs))  # Guard against division by zero
 
     usd_assessment = "bullish" if usd_score >= 6.0 else \
                      "bearish" if usd_score <= 4.0 else "neutral"
@@ -191,7 +199,7 @@ def _local_synthesis(scoring_results: dict[str, Any]) -> dict[str, Any]:
         f"USD/JPY bias reflects yen fundamental score of {jpy_score:.1f}.",
         f"",
         f"KEY THEMES: The broader market is {market_bias}, with {bullish} bullish ",
-        f"vs {bearish} bearish signals across {len(pairs)} tracked pairs.",
+        f"vs {bearish} bearish signals across {pair_count} tracked pairs.",
         f"Gold (XAU) scores {xau_score:.1f}/10, reflecting real yield and inflation dynamics.",
         f"Bitcoin (BTC) scores {btc_score:.1f}/10, reflecting global liquidity conditions.",
         f"",
@@ -261,5 +269,5 @@ if __name__ == "__main__":
         "cftc": {},
     }
 
-    result = generate_macro_summary(test_scores, {"cftc": {}})
+    result = generate_macro_summary(test_scores, {"cftc": {"EUR": {"net_speculative": 2586.0}, "GBP": {"net_speculative": -222.0}}})
     print("\n" + result["analysis"])

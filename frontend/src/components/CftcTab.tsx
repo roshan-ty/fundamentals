@@ -58,7 +58,7 @@ export default function CftcTab({ data }: Props) {
                 <div className="flex-1 bg-gray-700 rounded-full h-1.5">
                   <div
                     className={`h-1.5 rounded-full ${pos.percentile_52w >= 50 ? 'bg-emerald-500' : 'bg-red-500'}`}
-                    style={{ width: `${pos.percentile_52w}%` }}
+                    style={{ width: `${Math.min(pos.percentile_52w, 100)}%` }}
                   />
                 </div>
                 <span className={`text-2xs font-mono ${signal.color}`}>{pos.percentile_52w.toFixed(0)}%</span>
