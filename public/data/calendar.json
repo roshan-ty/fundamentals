@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-19T06:40:22.786541+00:00",
+  "last_updated": "2026-08-20T06:41:18.810947+00:00",
   "events": [
     {
       "source": "ForexFactory",
@@ -156,9 +156,9 @@
       "date": "2026-08-21T02:00:00-04:00",
       "currency": "GBP",
       "event": "Public Sector Net Borrowing",
-      "forecast": null,
+      "forecast": 0.0,
       "actual": null,
-      "previous": null,
+      "previous": 16000000000.0,
       "impact": "low"
     },
     {
@@ -226,9 +226,9 @@
       "date": "2026-08-20T18:45:00-04:00",
       "currency": "NZD",
       "event": "Trade Balance",
-      "forecast": null,
+      "forecast": -175000000.0,
       "actual": null,
-      "previous": null,
+      "previous": 23000000.0,
       "impact": "low"
     },
     {
@@ -236,9 +236,9 @@
       "date": "2026-08-20T10:30:00-04:00",
       "currency": "USD",
       "event": "Natural Gas Storage",
-      "forecast": null,
+      "forecast": 15000000000.0,
       "actual": null,
-      "previous": null,
+      "previous": 36000000000.0,
       "impact": "low"
     },
     {
@@ -296,9 +296,9 @@
       "date": "2026-08-20T08:30:00-04:00",
       "currency": "USD",
       "event": "Unemployment Claims",
-      "forecast": null,
+      "forecast": 210000.0,
       "actual": null,
-      "previous": null,
+      "previous": 209000.0,
       "impact": "medium"
     },
     {
@@ -336,7 +336,7 @@
       "date": "2026-08-19T21:30:00-04:00",
       "currency": "AUD",
       "event": "Employment Change",
-      "forecast": null,
+      "forecast": 11700.0,
       "actual": null,
       "previous": 76300.0,
       "impact": "high"
@@ -416,9 +416,9 @@
       "date": "2026-08-19T10:30:00-04:00",
       "currency": "USD",
       "event": "Crude Oil Inventories",
-      "forecast": null,
+      "forecast": 200000.0,
       "actual": null,
-      "previous": null,
+      "previous": 17400000.0,
       "impact": "low"
     },
     {
@@ -433,7 +433,7 @@
     },
     {
       "source": "ForexFactory",
-      "date": "2026-08-19T05:42:00-04:00",
+      "date": "2026-08-19T05:34:00-04:00",
       "currency": "EUR",
       "event": "German 10-y Bond Auction",
       "forecast": null,
@@ -476,9 +476,9 @@
       "date": "2026-08-19T04:00:00-04:00",
       "currency": "EUR",
       "event": "Current Account",
-      "forecast": null,
+      "forecast": 26800000000.0,
       "actual": null,
-      "previous": null,
+      "previous": 25100000000.0,
       "impact": "low"
     },
     {
@@ -646,9 +646,9 @@
       "date": "2026-08-18T08:30:00-04:00",
       "currency": "USD",
       "event": "Building Permits",
-      "forecast": null,
+      "forecast": 1370000.0,
       "actual": null,
-      "previous": null,
+      "previous": 1370000.0,
       "impact": "low"
     },
     {
@@ -656,9 +656,9 @@
       "date": "2026-08-18T08:30:00-04:00",
       "currency": "USD",
       "event": "Housing Starts",
-      "forecast": null,
+      "forecast": 1340000.0,
       "actual": null,
-      "previous": null,
+      "previous": 1430000.0,
       "impact": "low"
     },
     {
@@ -676,9 +676,9 @@
       "date": "2026-08-18T08:15:00-04:00",
       "currency": "CAD",
       "event": "Housing Starts",
-      "forecast": null,
+      "forecast": 249000.0,
       "actual": null,
-      "previous": null,
+      "previous": 239000.0,
       "impact": "low"
     },
     {
@@ -688,7 +688,7 @@
       "event": "ADP Weekly Employment Change",
       "forecast": null,
       "actual": null,
-      "previous": null,
+      "previous": 8300.0,
       "impact": "low"
     },
     {
@@ -726,9 +726,9 @@
       "date": "2026-08-18T02:00:00-04:00",
       "currency": "GBP",
       "event": "Claimant Count Change",
-      "forecast": null,
+      "forecast": 16500.0,
       "actual": null,
-      "previous": null,
+      "previous": 6700.0,
       "impact": "high"
     },
     {
@@ -766,9 +766,9 @@
       "date": "2026-08-17T16:00:00-04:00",
       "currency": "USD",
       "event": "TIC Long-Term Purchases",
-      "forecast": null,
+      "forecast": 151400000000.0,
       "actual": null,
-      "previous": null,
+      "previous": 232700000000.0,
       "impact": "low"
     },
     {
@@ -836,9 +836,9 @@
       "date": "2026-08-17T08:30:00-04:00",
       "currency": "CAD",
       "event": "Foreign Securities Purchases",
-      "forecast": null,
+      "forecast": 15000000000.0,
       "actual": null,
-      "previous": null,
+      "previous": 7900000000.0,
       "impact": "low"
     },
     {
