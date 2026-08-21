@@ -5,46 +5,67 @@
       "report_date": "2026-08-11",
       "noncomm_long": 6445.0,
       "noncomm_short": 3705.0,
+      "long_ratio": 63.5,
       "net_speculative": 2740.0,
       "weekly_change": 440.0,
-      "percentile_52w": 74.63
+      "weekly_change_pct": 19.13,
+      "percentile_52w": 74.63,
+      "cftc_score": 6.83,
+      "sentiment": "Moderately Bullish"
     },
     "GBP": {
       "report_date": "2026-08-11",
       "noncomm_long": 8077.0,
       "noncomm_short": 8185.0,
+      "long_ratio": 49.67,
       "net_speculative": -108.0,
       "weekly_change": -7.0,
-      "percentile_52w": 96.45
+      "weekly_change_pct": -6.93,
+      "percentile_52w": 96.45,
+      "cftc_score": 4.48,
+      "sentiment": "Mildly Bearish"
     },
     "JPY": {
       "report_date": "2026-08-11",
       "noncomm_long": 134188.0,
       "noncomm_short": 176273.0,
+      "long_ratio": 43.22,
       "net_speculative": -42085.0,
       "weekly_change": 3388.0,
-      "percentile_52w": 68.79
+      "weekly_change_pct": 7.45,
+      "percentile_52w": 68.79,
+      "cftc_score": 3.89,
+      "sentiment": "Mildly Bearish"
     },
     "CAD": {
       "report_date": "2026-08-11",
       "noncomm_long": 12854.0,
       "noncomm_short": 186216.0,
+      "long_ratio": 6.46,
       "net_speculative": -173362.0,
       "weekly_change": 5733.0,
-      "percentile_52w": 2.66
+      "weekly_change_pct": 3.2,
+      "percentile_52w": 2.66,
+      "cftc_score": 1.26,
+      "sentiment": "Strongly Bearish / Extreme Short"
     },
     "CHF": {
       "report_date": "2026-08-11",
       "noncomm_long": 9773.0,
       "noncomm_short": 42235.0,
+      "long_ratio": 18.79,
       "net_speculative": -32462.0,
       "weekly_change": 360.0,
-      "percentile_52w": 60.12
+      "weekly_change_pct": 1.1,
+      "percentile_52w": 60.12,
+      "cftc_score": 1.75,
+      "sentiment": "Strongly Bearish / Extreme Short"
     },
     "AUD": {
       "report_date": "2026-08-11",
       "noncomm_long": 80538.0,
       "noncomm_short": 119761.0,
+      "long_ratio": 40.21,
       "net_speculative": -39223.0,
       "weekly_change": -6033.0,
       "percentile_52w": 0.59
@@ -53,57 +74,85 @@
       "report_date": "2026-08-11",
       "noncomm_long": 150731.0,
       "noncomm_short": 67058.0,
+      "long_ratio": 69.21,
       "net_speculative": 83673.0,
       "weekly_change": 7130.0,
-      "percentile_52w": 53.1
+      "weekly_change_pct": 9.32,
+      "percentile_52w": 53.1,
+      "cftc_score": 7.37,
+      "sentiment": "Moderately Bullish"
     },
     "NZD": {
       "report_date": "2026-08-11",
       "noncomm_long": 4949.0,
       "noncomm_short": 44535.0,
+      "long_ratio": 10.0,
       "net_speculative": -39586.0,
       "weekly_change": 1617.0,
-      "percentile_52w": 60.77
+      "weekly_change_pct": 3.92,
+      "percentile_52w": 60.77,
+      "cftc_score": 1.4,
+      "sentiment": "Strongly Bearish / Extreme Short"
     },
     "XAU": {
       "report_date": "2026-07-28",
       "noncomm_long": 739.0,
       "noncomm_short": 1138.0,
+      "long_ratio": 39.37,
       "net_speculative": -399.0,
       "weekly_change": 110.0,
-      "percentile_52w": 10.47
+      "weekly_change_pct": 21.61,
+      "percentile_52w": 10.47,
+      "cftc_score": 3.44,
+      "sentiment": "Moderately Bearish"
     },
     "XAG": {
       "report_date": "2026-08-11",
       "noncomm_long": 39275.0,
       "noncomm_short": 15629.0,
+      "long_ratio": 71.53,
       "net_speculative": 23646.0,
       "weekly_change": 1366.0,
-      "percentile_52w": 82.25
+      "weekly_change_pct": 6.13,
+      "percentile_52w": 82.25,
+      "cftc_score": 7.58,
+      "sentiment": "Moderately Bullish"
     },
     "WTI": {
       "report_date": "2026-07-28",
       "noncomm_long": 4875.0,
       "noncomm_short": 9425.0,
+      "long_ratio": 34.09,
       "net_speculative": -4550.0,
       "weekly_change": -80.0,
-      "percentile_52w": 0.29
+      "weekly_change_pct": -1.79,
+      "percentile_52w": 0.29,
+      "cftc_score": 2.95,
+      "sentiment": "Moderately Bearish"
     },
     "SP500": {
       "report_date": "2026-08-11",
       "noncomm_long": 93994.0,
       "noncomm_short": 132461.0,
+      "long_ratio": 41.51,
       "net_speculative": -38467.0,
       "weekly_change": -30976.0,
-      "percentile_52w": 50.76
+      "weekly_change_pct": -413.51,
+      "percentile_52w": 50.76,
+      "cftc_score": 3.73,
+      "sentiment": "Mildly Bearish"
     },
     "NAS100": {
       "report_date": "2026-08-11",
       "noncomm_long": 66813.0,
       "noncomm_short": 109718.0,
+      "long_ratio": 37.85,
       "net_speculative": -42905.0,
       "weekly_change": -7899.0,
-      "percentile_52w": 67.19
+      "weekly_change_pct": -22.56,
+      "percentile_52w": 67.19,
+      "cftc_score": 3.3,
+      "sentiment": "Moderately Bearish"
     }
   },
   "total_markets": 13

@@ -35,6 +35,9 @@ except ImportError:
 from backend.parsers import collect_all_data
 from backend.scorer import score_all
 from backend.ai_analyst import generate_macro_summary
+from backend.calendar_scraper import fetch_ff_calendar_html
+from backend.news_scraper import fetch_ff_news
+from backend.generate_ai_notes import generate_ai_notes
 
 logger = logging.getLogger(__name__)
 
@@ -88,10 +91,36 @@ def run_pipeline() -> dict[str, Any]:
                  len(scoring_results["base_scores"]),
                  scoring_results["total_pairs"])
 
+    # ── Step 2b: Verification Table ───────────────────────────────────────────
+    print_verification_table(scoring_results)
+
     # ── Step 3: AI Analysis ────────────────────────────────────────────────────
     logger.info("\n[STEP 3/4] Generating AI macro summary...")
     ai_insights = generate_macro_summary(scoring_results, collected_data)
     logger.info("✓ AI analysis generated (provider: %s)", ai_insights["provider"])
+
+    # ── Step 3b: News Scraper ─────────────────────────────────────────────────
+    logger.info("\n[STEP 3b/4] Scraping Forex Factory news...")
+    try:
+        news_articles = fetch_ff_news()
+        logger.info("✓ News scraped: %d articles", len(news_articles))
+    except Exception as e:
+        logger.warning("News scraper failed: %s", e)
+        news_articles = []
+
+    # ── Step 3c: AI Notes Generator ───────────────────────────────────────────
+    logger.info("\n[STEP 3c/4] Generating AI market analysis notes...")
+    try:
+        ai_notes = generate_ai_notes()
+        # Merge AI notes into ai_insights if richer
+        if ai_notes.get("notes"):
+            ai_insights["notes"] = ai_notes["notes"]
+            ai_insights["analysis"] = ai_notes["analysis"]
+            ai_insights["model"] = ai_notes["model"]
+            ai_insights["provider"] = ai_notes["provider"]
+        logger.info("✓ AI notes generated: %d notes", len(ai_notes.get("notes", [])))
+    except Exception as e:
+        logger.warning("AI notes generator failed: %s", e)
 
     # ── Step 4: Export All ─────────────────────────────────────────────────────
     logger.info("\n[STEP 4/4] Exporting to /public/data/...")
@@ -145,6 +174,13 @@ def run_pipeline() -> dict[str, Any]:
     # 4e: AI insights
     write_json("ai_insights.json", ai_insights)
 
+    # 4f: News feed
+    write_json("news.json", {
+        "last_updated": datetime.now(timezone.utc).isoformat(),
+        "articles": news_articles,
+        "total_articles": len(news_articles),
+    })
+
     # ── Pipeline Summary ───────────────────────────────────────────────────────
     elapsed = (datetime.now(timezone.utc) - start_time).total_seconds()
     logger.info("\n" + "=" * 70)
@@ -156,15 +192,76 @@ def run_pipeline() -> dict[str, Any]:
     logger.info("   /public/data/cftc_report.json    — %d markets", len(cftc_data))
     logger.info("   /public/data/master_bias.json    — %d pairs", scoring_results["total_pairs"])
     logger.info("   /public/data/ai_insights.json    — 1 file")
+    logger.info("   /public/data/news.json           — %d articles", len(news_articles))
     logger.info("=" * 70)
 
     return {
         "status": "success",
         "elapsed_seconds": round(elapsed, 2),
-        "files_written": 5,
+        "files_written": 6,
         "total_pairs": scoring_results["total_pairs"],
         "extreme_setups": scoring_results["total_extreme"],
     }
+
+
+def print_verification_table(scoring_results: dict[str, Any]) -> None:
+    """
+    Print a terminal verification table confirming the Latest Release Delta
+    Model and Cross-Asset Spillover Matrix are working correctly.
+
+    Verifies that a weak USD fundamental dataset generates:
+      - Bearish USD score (< 4.0)
+      - Bullish Gold/EUR scores (11.0 - S_USD)
+    """
+    base_scores = scoring_results.get("base_scores", {})
+    usd = base_scores.get("USD", 5.0)
+
+    # Classify USD bias
+    if usd < 4.0:
+        usd_bias = "BEARISH"
+    elif usd > 6.0:
+        usd_bias = "BULLISH"
+    else:
+        usd_bias = "NEUTRAL"
+
+    line = "=" * 72
+    print(f"\n{line}")
+    print("  BULLS & BEARS FUNDAMENTALS — SCORING VERIFICATION")
+    print(f"{line}")
+    print(f"  USD Bias Score: {usd:.2f}  →  {usd_bias} USD")
+    print(f"{line}")
+
+    # Inverse USD assets
+    print("  INVERSE USD ASSETS  (Score = 11.0 - S_USD)")
+    print(f"  {'Asset':<8}{'Score':>8}{'Expected':>12}{'Status':>12}")
+    print(f"  {'-'*56}")
+    for asset in ["XAU", "XAG", "EUR", "GBP", "AUD", "NZD", "BTC"]:
+        score = base_scores.get(asset)
+        if score is None:
+            continue
+        expected = round(max(1.0, min(10.0, 11.0 - usd)), 2)
+        status = "PASS" if abs(score - expected) < 0.01 else "FAIL"
+        print(f"  {asset:<8}{score:>8.2f}{expected:>12.2f}{status:>12}")
+
+    # Direct USD assets
+    print(f"\n  DIRECT USD ASSETS  (Score = S_USD)")
+    print(f"  {'Asset':<8}{'Score':>8}{'Expected':>12}{'Status':>12}")
+    print(f"  {'-'*56}")
+    for asset in ["JPY", "CAD", "CHF"]:
+        score = base_scores.get(asset)
+        if score is None:
+            continue
+        expected = round(max(1.0, min(10.0, usd)), 2)
+        status = "PASS" if abs(score - expected) < 0.01 else "FAIL"
+        print(f"  {asset:<8}{score:>8.2f}{expected:>12.2f}{status:>12}")
+
+    # Summary
+    print(f"\n  USD Bias: {usd_bias} ({usd:.2f})")
+    if usd < 4.0:
+        print("  ✓ Weak USD dataset correctly generates BEARISH USD score (< 4.0)")
+    else:
+        print(f"  ⚠ USD score is {usd:.2f} — expected < 4.0 for bearish scenario")
+    print(f"{line}\n")
 
 
 def _extract_calendar_events(collected_data: dict[str, Any]) -> list[dict]:

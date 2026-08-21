@@ -4,8 +4,12 @@ interface CftcPosition {
   report_date: string;
   noncomm_long: number;
   noncomm_short: number;
+  long_ratio?: number;
+  cftc_score?: number;
+  sentiment?: string;
   net_speculative: number;
   weekly_change: number;
+  weekly_change_pct?: number;
   percentile_52w: number;
   asset_mgr_long?: number;
   asset_mgr_short?: number;
@@ -15,6 +19,45 @@ interface CftcPosition {
 
 interface Props {
   data: any;
+}
+
+// Tiered bias labels centered at 50.0% long ratio
+function getLongRatioSignal(longRatio: number) {
+  const lr = longRatio;
+  if (lr > 50.0) {
+    if (lr >= 75.0) return { label: 'Strongly Bullish', color: 'text-emerald-400', bg: 'bg-emerald-900/40' };
+    if (lr >= 60.0) return { label: 'Moderately Bullish', color: 'text-emerald-400', bg: 'bg-emerald-900/30' };
+    return { label: 'Mildly Bullish', color: 'text-emerald-300', bg: 'bg-emerald-900/20' };
+  }
+  if (lr < 50.0) {
+    if (lr <= 24.9) return { label: 'Strongly Bearish', color: 'text-red-400', bg: 'bg-red-900/40' };
+    if (lr <= 40.0) return { label: 'Moderately Bearish', color: 'text-red-400', bg: 'bg-red-900/30' };
+    return { label: 'Mildly Bearish', color: 'text-red-300', bg: 'bg-red-900/20' };
+  }
+  return { label: 'Neutral', color: 'text-gray-400', bg: 'bg-gray-700/30' };
+}
+
+function computeLongRatio(pos: CftcPosition): number {
+  if (pos.long_ratio !== undefined && pos.long_ratio !== null) return pos.long_ratio;
+  const total = (pos.noncomm_long || 0) + (pos.noncomm_short || 0);
+  if (total <= 0) return 50.0;
+  return (pos.noncomm_long / total) * 100;
+}
+
+// Weekly Net Positioning Change (ΔW) — visual momentum badge only.
+// This NEVER overrides the overall L% bias.
+function WeeklyChangeBadge({ pct }: { pct: number }) {
+  const positive = pct >= 0;
+  return (
+    <span
+      className={`inline-flex items-center gap-1 text-2xs px-1.5 py-0.5 rounded font-mono font-medium ${
+        positive ? 'bg-blue-900/30 text-blue-300' : 'bg-orange-900/30 text-orange-300'
+      }`}
+      title="Weekly Net Positioning Change (momentum only - does not affect bias)"
+    >
+      {positive ? '▲' : '▼'} {positive ? '+' : ''}{pct.toFixed(2)}%
+    </span>
+  );
 }
 
 export default function CftcTab({ data }: Props) {
@@ -29,39 +72,41 @@ export default function CftcTab({ data }: Props) {
     );
   }
 
-  const getSignal = (pctl: number) => {
-    if (pctl >= 75) return { label: 'Bullish', color: 'text-emerald-400', bg: 'bg-emerald-900/30' };
-    if (pctl <= 25) return { label: 'Bearish', color: 'text-red-400', bg: 'bg-red-900/30' };
-    return { label: 'Neutral', color: 'text-gray-400', bg: 'bg-gray-700/30' };
-  };
-
   return (
     <div>
       <div className="mb-4">
         <h2 className="text-sm font-semibold text-white">CFTC Commitments of Traders</h2>
         <p className="text-2xs text-gray-500 mt-0.5">
-          Institutional long/short positioning with 52-week percentile ranks · {entries.length} markets
+          Institutional long/short positioning with Long Ratio tiered bias · {entries.length} markets
         </p>
       </div>
 
       {/* Summary cards */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
         {entries.slice(0, 4).map(([market, pos]) => {
-          const signal = getSignal(pos.percentile_52w);
+          const lr = computeLongRatio(pos);
+          const signal = getLongRatioSignal(lr);
+          const weeklyPct = pos.weekly_change_pct ?? 0;
           return (
             <div key={market} className="card p-3">
               <div className="text-2xs text-gray-500 uppercase mb-1">{market}</div>
               <div className={`stat-value ${pos.net_speculative >= 0 ? 'text-emerald-400' : 'text-red-400'}`}>
                 {pos.net_speculative >= 0 ? '+' : ''}{(pos.net_speculative / 1000).toFixed(0)}K
               </div>
+              {/* Overall Long Ratio bar — sentiment-colored */}
               <div className="flex items-center gap-2 mt-1">
                 <div className="flex-1 bg-gray-700 rounded-full h-1.5">
                   <div
-                    className={`h-1.5 rounded-full ${pos.percentile_52w >= 50 ? 'bg-emerald-500' : 'bg-red-500'}`}
-                    style={{ width: `${Math.min(pos.percentile_52w, 100)}%` }}
+                    className={`h-1.5 rounded-full ${lr >= 50 ? 'bg-emerald-500' : 'bg-red-500'}`}
+                    style={{ width: `${Math.min(lr, 100)}%` }}
                   />
                 </div>
-                <span className={`text-2xs font-mono ${signal.color}`}>{pos.percentile_52w.toFixed(0)}%</span>
+                <span className={`text-2xs font-mono ${signal.color}`}>{lr.toFixed(1)}%</span>
+              </div>
+              <div className="flex items-center justify-between mt-1">
+                <div className="text-2xs text-gray-500">{signal.label}</div>
+                {/* ΔW momentum badge — visual only, never flips bias */}
+                <WeeklyChangeBadge pct={weeklyPct} />
               </div>
             </div>
           );
@@ -78,14 +123,18 @@ export default function CftcTab({ data }: Props) {
               <th className="text-right py-2 px-3 text-gray-500 font-medium uppercase tracking-wider">Long Contracts</th>
               <th className="text-right py-2 px-3 text-gray-500 font-medium uppercase tracking-wider">Short Contracts</th>
               <th className="text-right py-2 px-3 text-gray-500 font-medium uppercase tracking-wider">Net Speculative</th>
-              <th className="text-right py-2 px-3 text-gray-500 font-medium uppercase tracking-wider">Weekly Change</th>
-              <th className="text-center py-2 px-3 text-gray-500 font-medium uppercase tracking-wider">52W Pctl</th>
-              <th className="text-center py-2 px-3 text-gray-500 font-medium uppercase tracking-wider">Signal</th>
+              <th className="text-right py-2 px-3 text-gray-500 font-medium uppercase tracking-wider">Weekly ΔW</th>
+              <th className="text-center py-2 px-3 text-gray-500 font-medium uppercase tracking-wider">Long Ratio</th>
+              <th className="text-center py-2 px-3 text-gray-500 font-medium uppercase tracking-wider">Score</th>
+              <th className="text-center py-2 px-3 text-gray-500 font-medium uppercase tracking-wider">Bias</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-dark-border">
             {entries.map(([market, pos]) => {
-              const signal = getSignal(pos.percentile_52w);
+              const lr = computeLongRatio(pos);
+              const signal = getLongRatioSignal(lr);
+              const weeklyPct = pos.weekly_change_pct ?? 0;
+              const score = pos.cftc_score ?? 5.0;
               return (
                 <tr key={market} className="hover:bg-dark-card/50 transition-colors">
                   <td className="py-2 px-3 font-bold text-white">{market}</td>
@@ -101,21 +150,23 @@ export default function CftcTab({ data }: Props) {
                   }`}>
                     {pos.net_speculative >= 0 ? '+' : ''}{pos.net_speculative.toLocaleString()}
                   </td>
-                  <td className={`py-2 px-3 text-right font-mono ${
-                    pos.weekly_change >= 0 ? 'text-emerald-400' : 'text-red-400'
-                  }`}>
-                    {pos.weekly_change >= 0 ? '+' : ''}{pos.weekly_change.toLocaleString()}
+                  {/* ΔW — visual momentum only, never flips the bias */}
+                  <td className="py-2 px-3 text-right">
+                    <WeeklyChangeBadge pct={weeklyPct} />
                   </td>
                   <td className="py-2 px-3 text-center">
                     <div className="flex items-center gap-2 justify-center">
                       <div className="w-16 bg-gray-700 rounded-full h-1.5">
                         <div
-                          className={`h-1.5 rounded-full ${pos.percentile_52w >= 50 ? 'bg-emerald-500' : 'bg-red-500'}`}
-                          style={{ width: `${Math.min(pos.percentile_52w, 100)}%` }}
+                          className={`h-1.5 rounded-full ${lr >= 50 ? 'bg-emerald-500' : 'bg-red-500'}`}
+                          style={{ width: `${Math.min(lr, 100)}%` }}
                         />
                       </div>
-                      <span className="font-mono text-gray-300">{pos.percentile_52w.toFixed(0)}%</span>
+                      <span className="font-mono text-gray-300">{lr.toFixed(1)}%</span>
                     </div>
+                  </td>
+                  <td className="py-2 px-3 text-center">
+                    <span className={`font-mono font-bold ${signal.color}`}>{score.toFixed(1)}</span>
                   </td>
                   <td className="py-2 px-3 text-center">
                     <span className={`text-2xs px-2 py-0.5 rounded font-medium ${signal.bg} ${signal.color}`}>

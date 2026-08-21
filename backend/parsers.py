@@ -28,6 +28,7 @@ import requests
 from bs4 import BeautifulSoup
 import yfinance as yf
 
+
 logger = logging.getLogger(__name__)
 
 # ── API Key Configuration ──────────────────────────────────────────────────────
@@ -682,6 +683,7 @@ def _download_cftc_deam(yy: str) -> Optional[pd.DataFrame]:
 
 def _process_cftc_dataframe(df: pd.DataFrame) -> dict[str, dict]:
     """Process a CFTC DataFrame into the standard result format."""
+    from backend.scorer import cftc_score_from_long_ratio, cftc_sentiment_label  # lazy import (avoids circular)
     result: dict[str, dict] = {}
 
     # Resolve market and date columns using aliases
@@ -789,12 +791,30 @@ def _process_cftc_dataframe(df: pd.DataFrame) -> dict[str, dict]:
             report_date_str = report_date_val.strftime("%Y-%m-%d")
         else:
             report_date_str = str(report_date_val)[:10]
+        long_positions = float(latest.get(noncomm_long_col, 0)) if noncomm_long_col else 0
+        short_positions = float(latest.get(noncomm_short_col, 0)) if noncomm_short_col else 0
+        total_positions = long_positions + short_positions
+
+        # Long Ratio: (Long / (Long + Short)) * 100
+        long_ratio = (long_positions / total_positions * 100.0) if total_positions > 0 else 50.0
+
+        # Weekly net positioning change %
+        prev_net = market_df["net_spec"].iloc[-2] if len(market_df) >= 2 else 0.0
+        curr_net = float(latest["net_spec"])
+        weekly_change_pct = (
+            ((curr_net - prev_net) / abs(prev_net) * 100.0) if prev_net != 0 else 0.0
+        )
+
         entry = {
             "report_date": report_date_str,
-            "noncomm_long": float(latest.get(noncomm_long_col, 0)) if noncomm_long_col else 0,
-            "noncomm_short": float(latest.get(noncomm_short_col, 0)) if noncomm_short_col else 0,
-            "net_speculative": float(latest["net_spec"]),
+            "noncomm_long": long_positions,
+            "noncomm_short": short_positions,
+            "long_ratio": round(long_ratio, 2),
+            "cftc_score": round(cftc_score_from_long_ratio(long_ratio), 2),
+            "sentiment": cftc_sentiment_label(long_ratio),
+            "net_speculative": curr_net,
             "weekly_change": float(latest["weekly_change"]),
+            "weekly_change_pct": round(weekly_change_pct, 2),
             "percentile_52w": round(float(latest["percentile_52w"]), 2),
         }
 
@@ -1152,9 +1172,16 @@ def collect_all_data() -> dict[str, Any]:
     data["finnhub_calendar"] = finnhub_events
 
     # Merge actual values into the calendar events
-    data["forex_factory_calendar"] = merge_actual_calendar_data(
+    merged_calendar = merge_actual_calendar_data(
         ff_events, finnhub_events
     )
+    data["forex_factory_calendar"] = merged_calendar
+
+    # Expose calendar events with actuals for the Latest Release Delta scorer
+    data["calendar_events"] = [
+        ev for ev in merged_calendar
+        if ev.get("actual") is not None
+    ]
 
     # AlphaVantage Indicators (Points 7-10, 23, 24)
     logger.info("\n[4/8] AlphaVantage Indicators...")

@@ -1,11 +1,12 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { TrendingUp, Calendar, BarChart3, Table2, Building2, Bot, Menu, X } from 'lucide-react';
+import { TrendingUp, Calendar, BarChart3, Table2, Building2, Bot, Menu, X, Newspaper } from 'lucide-react';
 import HomeTab from './components/HomeTab';
 import CalendarTab from './components/CalendarTab';
 import FundamentalTab from './components/FundamentalTab';
 import BiasTab from './components/BiasTab';
 import CftcTab from './components/CftcTab';
 import FredTab from './components/FredTab';
+import NewsTab from './components/NewsTab';
 
 export interface DataStore {
   calendar: any | null;
@@ -13,9 +14,10 @@ export interface DataStore {
   cftc_report: any | null;
   master_bias: any | null;
   ai_insights: any | null;
+  news: any | null;
 }
 
-type TabId = 'home' | 'calendar' | 'fundamental' | 'bias' | 'cftc' | 'fred';
+type TabId = 'home' | 'calendar' | 'fundamental' | 'bias' | 'cftc' | 'fred' | 'news';
 
 interface TabConfig {
   id: TabId;
@@ -30,6 +32,7 @@ const TABS: TabConfig[] = [
   { id: 'bias', label: 'Bias', icon: <Table2 size={16} /> },
   { id: 'cftc', label: 'CFTC', icon: <Building2 size={16} /> },
   { id: 'fred', label: 'FRED', icon: <Building2 size={16} /> },
+  { id: 'news', label: 'News Feed', icon: <Newspaper size={16} /> },
 ];
 
 const DATA_FILES: { key: keyof DataStore; path: string }[] = [
@@ -38,13 +41,14 @@ const DATA_FILES: { key: keyof DataStore; path: string }[] = [
   { key: 'cftc_report', path: '/fundamentals/data/cftc_report.json' },
   { key: 'master_bias', path: '/fundamentals/data/master_bias.json' },
   { key: 'ai_insights', path: '/fundamentals/data/ai_insights.json' },
+  { key: 'news', path: '/fundamentals/data/news.json' },
 ];
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<TabId>('home');
   const [data, setData] = useState<DataStore>({
     calendar: null, macro_data: null, cftc_report: null,
-    master_bias: null, ai_insights: null,
+    master_bias: null, ai_insights: null, news: null,
   });
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -55,7 +59,7 @@ export default function App() {
     setError(null);
     const results: DataStore = {
       calendar: null, macro_data: null, cftc_report: null,
-      master_bias: null, ai_insights: null,
+      master_bias: null, ai_insights: null, news: null,
     };
     let hasError = false;
 
@@ -96,6 +100,7 @@ export default function App() {
       case 'bias': return <BiasTab data={data.master_bias} />;
       case 'cftc': return <CftcTab data={data.cftc_report} />;
       case 'fred': return <FredTab data={data.macro_data} />;
+      case 'news': return <NewsTab data={data.news} />;
       default: return null;
     }
   };
