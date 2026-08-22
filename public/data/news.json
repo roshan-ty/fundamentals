@@ -1,15 +1,120 @@
 {
-  "last_updated": "2026-08-21T06:51:33.854923+00:00",
+  "last_updated": "2026-08-22T06:36:24.397629+00:00",
   "articles": [
     {
-      "headline": "France August business confidence 98 vs 98 expected",
-      "timestamp": "Fri, 21 Aug 2026 06:45:10 GMT",
+      "headline": "investingLive Americas FX news wrap 21 Aug: Trump folds on beef tariffs.",
+      "timestamp": "Fri, 21 Aug 2026 22:14:33 GMT",
+      "currency_tags": [],
+      "impact": "medium",
+      "source_link": "https://investinglive.com/news/investinglive-americas-fx-news-wrap-21-aug-trump-folds-on-beef-tariffs-0/",
+      "snippet": "Nasdaq and S&amp;P indices are settling between risk/bias defining MAs as the week comes to a closeBaker Hughes rig count -5 at 588European stocks rebound Friday, but weekly losses dominateBrazil's Lu"
+    },
+    {
+      "headline": "Brazil's Lula and US Pres. Trump held phone call on Friday.",
+      "timestamp": "Fri, 21 Aug 2026 16:22:38 GMT",
+      "currency_tags": [],
+      "impact": "medium",
+      "source_link": "https://investinglive.com/news/brazil-s-lula-us-trump-held-phone-call-on-friday/",
+      "snippet": "Brazilian President Luiz In\u00e1cio Lula da Silva and U.S. President Donald Trump held a phone call Friday, with trade and tariffs among the issues discussed.According to the Brazilian government:Lula and"
+    },
+    {
+      "headline": "Trump: Gets rid of 26.4% tariffs on imported beef and prices will come down by 25%",
+      "timestamp": "Fri, 21 Aug 2026 14:59:43 GMT",
+      "currency_tags": [],
+      "impact": "medium",
+      "source_link": "https://investinglive.com/news/trump-gets-rid-of-26-4-tariffs-on-imported-beef-and-prices-will-come-down-by-25/",
+      "snippet": "President Trump is looking to solve another problem - the rising cost of beef prices. He is solving the problem by getting rid of a tariff.&nbsp;&nbsp;Trump in a TruthSocial post said:&nbsp;Beef price"
+    },
+    {
+      "headline": "EU consumer confidence -15.5 versus -16.3 expected",
+      "timestamp": "Fri, 21 Aug 2026 14:04:08 GMT",
+      "currency_tags": [],
+      "impact": "medium",
+      "source_link": "https://investinglive.com/news/eu-consumer-confidence-15-5-versus-16-3-expected/",
+      "snippet": "Prior month -15.9Flash estimate for August -15.5 versus -16.3 estimateEvery month, the Directorate-GeneralEconomic and Financial Affairs (DG ECFIN) of the European Commission releases the flash CCI fo"
+    },
+    {
+      "headline": "S&P Global manufacturing PMI flash estimate for August 53.2 versus 53.9 estimate",
+      "timestamp": "Fri, 21 Aug 2026 13:45:06 GMT",
+      "currency_tags": [],
+      "impact": "medium",
+      "source_link": "https://investinglive.com/news/s-p-global-manufacturing-pmi-flash-estimate-for-august-53-2-versus-53-9-estimate/",
+      "snippet": "Prior month 53.9Manufacturing PMI flash 53.2 versus 53.9 estimate.Services PMI 56.8 versus 54.0 estimate. Prior month 54.6.Composite 56.0 versus 54.5 prior. The manufacturing index was lower than expe"
+    },
+    {
+      "headline": "Canada Retail sales for June 0.6% vs 0.4% estimate",
+      "timestamp": "Fri, 21 Aug 2026 12:31:15 GMT",
+      "currency_tags": [
+        "CAD"
+      ],
+      "impact": "medium",
+      "source_link": "https://investinglive.com/news/canada-retail-sales-for-june-0-6-vs-0-4-estimate/",
+      "snippet": "Prior&nbsp;was +1.0% revised to 1.1%The advanced July reading comes in at 0.8%Retail sales for June 0.6% vs 0.4% estimateEx Autos for June 0.5% vs 0.4% estimate. Prior 1.2%.In volume terms retail sale"
+    },
+    {
+      "headline": "investingLive European markets wrap: Gold runs higher, dollar stays under pressure",
+      "timestamp": "Fri, 21 Aug 2026 11:38:13 GMT",
+      "currency_tags": [
+        "USD",
+        "XAU"
+      ],
+      "impact": "medium",
+      "source_link": "https://investinglive.com/news/investinglive-european-markets-wrap-gold-runs-higher-dollar-stays-under-pressure/",
+      "snippet": "Headlines:Gold stays poised to post third straight week of gainsUS Treasury move risks creating unintended consequences for markets and the economyWhy markets care more about the signal than the size "
+    },
+    {
+      "headline": "Euro area business activity sees further pick up in August despite France, Germany softness",
+      "timestamp": "Fri, 21 Aug 2026 08:00:23 GMT",
       "currency_tags": [
         "EUR"
       ],
       "impact": "medium",
-      "source_link": "https://investinglive.com/news/france-august-business-confidence-98-vs-98-expected/",
-      "snippet": "August business confidence 98 vs 98 expectedPrior 97More to come..\n                            This article was written by Justin Low at investinglive.com."
+      "source_link": "https://investinglive.com/news/euro-area-business-activity-sees-further-pick-up-in-august-despite-france-germany-softness/",
+      "snippet": "August flash services PMI 51.7 vs 51.5 expectedPrior 51.7August flash manufacturing PMI 52.8 vs 51.8 expectedPrior 51.9August flash composite PMI 52.1 vs 51.7 expectedPrior 52.0After the misses from F"
+    },
+    {
+      "headline": "UK August flash services PMI 52.8 vs 51.8 expected",
+      "timestamp": "Fri, 21 Aug 2026 08:30:20 GMT",
+      "currency_tags": [
+        "GBP"
+      ],
+      "impact": "medium",
+      "source_link": "https://investinglive.com/news/uk-august-flash-services-pmi-xx-vs-51-8-expected/",
+      "snippet": "Prior 52.1Manufacturing PMI 51.5 vs 51.5 expectedPrior 51.9Composite PMI 52.5 vs 51.6 expectedPrior 52.2Comment:Chris Williamson, Chief Business Economist at S&amp;P Global Market Intelligence:\u201cThe UK"
+    },
+    {
+      "headline": "Germany August flash manufacturing PMI 54.1 vs 52.0 expected",
+      "timestamp": "Fri, 21 Aug 2026 07:30:21 GMT",
+      "currency_tags": [
+        "EUR"
+      ],
+      "impact": "medium",
+      "source_link": "https://investinglive.com/news/germany-august-flash-manufacturing-pmi-xx-vs-52-0-expected/",
+      "snippet": "Prior 52.2Services PMI 48.5 vs 50.1 expectedPrior 49.8Composite PMI 51.0 vs 51.3 expectedPrior 51.3Comment:Phil Smith, Economics Associate Director at S&amp;P Global Market Intelligence: \"The recovery"
+    },
+    {
+      "headline": "French business activity contracts further in August as demand conditions remain subdued",
+      "timestamp": "Fri, 21 Aug 2026 07:15:15 GMT",
+      "currency_tags": [],
+      "impact": "medium",
+      "source_link": "https://investinglive.com/news/french-business-activity-contracts-further-in-august-as-demand-conditions-remain-subdued/",
+      "snippet": "August flash services PMI 48.4 vs 49.8 expectedPrior 49.6August flash manufacturing PMI 51.5 vs 50.0 expectedPrior 49.8August flash composite PMI 48.8 vs 49.5 expectedPrior 49.4The French private sect"
+    },
+    {
+      "headline": "Why markets care more about the signal than the size of the Treasury buyback",
+      "timestamp": "Fri, 21 Aug 2026 08:50:53 GMT",
+      "currency_tags": [],
+      "impact": "medium",
+      "source_link": "https://investinglive.com/news/why-markets-care-more-about-the-signal-than-the-size-of-the-treasury-buyback/",
+      "snippet": "The first thing any trader should learn is that markets move on expectations. It doesn't matter if they are right or wrong, prices will still move based on the prevailing context and expectations abou"
+    },
+    {
+      "headline": "French business confidence extends recovery into August",
+      "timestamp": "Fri, 21 Aug 2026 06:45:10 GMT",
+      "currency_tags": [],
+      "impact": "medium",
+      "source_link": "https://investinglive.com/news/french-business-confidence-extends-recovery-into-august/",
+      "snippet": "August business confidence 98 vs 98 expectedPrior 97The French business climate indicator picks up again in August, nudging back up to the highest since February. That being said, it's still keeping b"
     },
     {
       "headline": "What are the main events for today?",
@@ -114,123 +219,7 @@
       "impact": "medium",
       "source_link": "https://investinglive.com/news/new-zealand-july-trade-balance-nz-1-95-billion-prior-23mn/",
       "snippet": "New Zealand trade data, July 2026Trade balance NZ$-1.95 billion (prior 23mn)Imports NZ$+9.34 billion (prior 8.07bn)Exports NZ$+7.39 billion (prior 8.09bn)New Zealand July annual trade balance NZ$-5.24"
-    },
-    {
-      "headline": "South Korea producer prices fall for first time in 11 months on cheaper oil that month",
-      "timestamp": "Thu, 20 Aug 2026 21:52:37 GMT",
-      "currency_tags": [
-        "WTI"
-      ],
-      "impact": "medium",
-      "source_link": "https://investinglive.com/news/south-korea-producer-prices-fall-for-first-time-in-11-months-on-cheaper-oil-that-month/",
-      "snippet": "The on month decline snaps an 11 month run of gains and points to some near term easing in the pipeline pressures that feed into consumer prices, though the year on year rate remains elevated at 7.7 p"
-    },
-    {
-      "headline": "Economic and event calendar in Asia Friday, August 21, 2026 - focus on Japanese inflation data",
-      "timestamp": "Thu, 20 Aug 2026 20:12:54 GMT",
-      "currency_tags": [],
-      "impact": "high",
-      "source_link": "https://investinglive.com/news/economic-and-event-calendar-in-asia-friday-august-21-2026-focus-on-japanese-inflation-data/",
-      "snippet": "It's a busy data agenda ahead, with the eyes mainly on the CPI data from Japan.&nbsp;I'll have a preview to come on this separately (ADDED, here it is), inclduing implications for the Bank of Japan's "
-    },
-    {
-      "headline": "investingLive Americas news wrap: Bessent doubles down on buyback plan",
-      "timestamp": "Thu, 20 Aug 2026 19:31:32 GMT",
-      "currency_tags": [],
-      "impact": "medium",
-      "source_link": "https://investinglive.com/news/investinglive-americas-news-wrap-bessent-doubles-down-on-buyback-plan/",
-      "snippet": "US Treasury auctions off $9 billion of 30-year TIPS at 2.973% vs 2.991% WIFed's Musalem says hiking rates now could save more aggressive action laterUS Treasury Secretary Bessent says the long-dated b"
-    },
-    {
-      "headline": "US Treasury auctions off $9 billion of 30-year TIPS at 2.973% vs 2.991% WI",
-      "timestamp": "Thu, 20 Aug 2026 17:11:13 GMT",
-      "currency_tags": [
-        "USD"
-      ],
-      "impact": "medium",
-      "source_link": "https://investinglive.com/news/us-treasury-auctions-off-9-billion-of-30-year-tips-at-2-973-vs-2-991-wi/",
-      "snippet": "High yield: 2.973%WI level at the time of the auction 2.991%Stopped through by 1.8 bpsBid-to-cover ratio 2.82XDirect (domestic buyers) 13.4%Indirect (international buyers) 84.4%Dealers 2.1%The US Trea"
-    },
-    {
-      "headline": "US Treasury Secretary Bessent says the long-dated bond buyback could be more than 4 billion",
-      "timestamp": "Thu, 20 Aug 2026 15:04:57 GMT",
-      "currency_tags": [
-        "USD"
-      ],
-      "impact": "medium",
-      "source_link": "https://investinglive.com/news/us-treasury-secretary-bessent-says-the-long-dated-bond-buyback-could-be-more-than-4-billion/",
-      "snippet": "Buyback could be more than 4 billionPart of it is signalling&nbsp;We want to show that yields do not reflect underlying fundamentalsProbably going to announce increased focus on fiscal consolidation&n"
-    },
-    {
-      "headline": "US leading index for July +0.2% vs +0.1% expected",
-      "timestamp": "Thu, 20 Aug 2026 14:00:08 GMT",
-      "currency_tags": [],
-      "impact": "medium",
-      "source_link": "https://investinglive.com/news/us-leading-index-for-july-0-2-vs-0-1-expected/",
-      "snippet": "Prior -0.2% (revised to -0.1%)The Conference Board Leading Economic Index&nbsp;increased by 0.2% in July, after an upwardly revised decline of 0.1% in June. As a result, the LEI\u2019s six-month growth rat"
-    },
-    {
-      "headline": "US August Philly Fed business index +47.4 vs +25.0 expected",
-      "timestamp": "Thu, 20 Aug 2026 12:30:42 GMT",
-      "currency_tags": [
-        "USD"
-      ],
-      "impact": "high",
-      "source_link": "https://investinglive.com/news/us-august-philly-fed-business-index-xx-vs-25-0-expected/",
-      "snippet": "Prior was +41.4Details:New orders 30.1 versus 37.0 last monthShipments 27.7 versus 33.7 last monthUnfilled orders 14.4 versus 18.1 last monthDelivery times 3.7 versus 9.6 last monthInventories -3.7 ve"
-    },
-    {
-      "headline": "Canada July PPI +0.6% vs -0.5% expected",
-      "timestamp": "Thu, 20 Aug 2026 12:30:27 GMT",
-      "currency_tags": [
-        "CAD"
-      ],
-      "impact": "medium",
-      "source_link": "https://investinglive.com/news/canada-july-ppi-xx-vs-0-5-expected/",
-      "snippet": "Prior&nbsp;-1.4% PPI Y/Y +12.4% vs +12.4% priorRaw Material Price index M/M -2.2% vs -6.9% priorRaw Material Price index Y/Y +18.1% vs +20.7% priorThe&nbsp;PPI&nbsp;increased&nbsp;0.6% m/m in July, fo"
-    },
-    {
-      "headline": "US initial jobless claims 206K vs 210K expected",
-      "timestamp": "Thu, 20 Aug 2026 12:30:07 GMT",
-      "currency_tags": [],
-      "impact": "medium",
-      "source_link": "https://investinglive.com/news/us-initial-jobless-claims-206k-vs-210k-expected/",
-      "snippet": "Prior 209K (revised to 212K)Continuing claims 1799K vs 1790K expectedPrior 1777K (revised to 1781K)Initial jobless claims fell to 206,000 for the week ending August 15, below the 210,000 consensus for"
-    },
-    {
-      "headline": "investingLive European markets wrap: Dollar, yields recover some poise; Walmart shares slide after earnings",
-      "timestamp": "Thu, 20 Aug 2026 11:58:01 GMT",
-      "currency_tags": [
-        "USD"
-      ],
-      "impact": "medium",
-      "source_link": "https://investinglive.com/news/investinglive-european-markets-wrap-dollar-yields-recover-some-poise-walmart-shares-slide-after-earnings/",
-      "snippet": "Headlines:Will the US Treasury buyback be a game changer for markets?Why gold and Bitcoin surged together: What Treasury buybacks teach investors about dollar debasementChart of the day: Is the Nasdaq"
-    },
-    {
-      "headline": "At best, German economy may grow slightly in this quarter - Bundesbank",
-      "timestamp": "Thu, 20 Aug 2026 10:09:33 GMT",
-      "currency_tags": [],
-      "impact": "medium",
-      "source_link": "https://investinglive.com/news/at-best-german-economy-may-grow-slightly-in-this-quarter-bundesbank/",
-      "snippet": "Poor weather conditions have hampered economic recoveryLimited usable transport routes on major rivers likely to impair industrial output, export growthThe low water levels are noticeably impacting ov"
-    },
-    {
-      "headline": "Experienced Traders Can Now Apply to Teach  on investingLive Academy",
-      "timestamp": "Thu, 20 Aug 2026 11:52:24 GMT",
-      "currency_tags": [],
-      "impact": "medium",
-      "source_link": "https://investinglive.com/news/experienced-traders-can-now-apply-to-teach-on-investinglive-academy/",
-      "snippet": "Have years of trading experience and knowledge worth sharing? investingLive Academy is now welcoming new instructors.Trading knowledge is built over time.It comes from following the markets, testing i"
-    },
-    {
-      "headline": "Iran foreign minister plays down US president Trump's economic threat",
-      "timestamp": "Thu, 20 Aug 2026 07:19:49 GMT",
-      "currency_tags": [],
-      "impact": "medium",
-      "source_link": "https://investinglive.com/news/iran-foreign-minister-plays-down-us-president-trump-s-economic-threat/",
-      "snippet": "From overnight:&nbsp;Trump vows crushing new economic operation against Iran, warns alliesThe threat by Trump pretty much underscores that we are still nowhere near any deal between the two sides. And"
     }
   ],
-  "total_articles": 25
+  "total_articles": 24
 }

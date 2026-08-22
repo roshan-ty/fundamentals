@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-21T06:42:12.691604+00:00",
+  "last_updated": "2026-08-22T06:36:24.384085+00:00",
   "events": [
     {
       "source": "ForexFactory",
@@ -59,6 +59,16 @@
       "forecast": 0.4,
       "actual": null,
       "previous": 1.0,
+      "impact": "low"
+    },
+    {
+      "source": "ForexFactory",
+      "date": "2026-08-21T05:03:00-04:00",
+      "currency": "CNY",
+      "event": "Foreign Direct Investment ytd/y",
+      "forecast": null,
+      "actual": null,
+      "previous": -5.0,
       "impact": "low"
     },
     {
@@ -992,5 +1002,5 @@
       "impact": "low"
     }
   ],
-  "total_events": 99
+  "total_events": 100
 }

@@ -1,7 +1,214 @@
 {
-  "generated_at": "2026-08-21T06:42:12.690362+00:00",
-  "model": "local-synthesis",
-  "provider": "local-fallback",
-  "analysis": "=== Bulls & Bears Fundamentals \u2014 Macro Synthesis ===Generated: 2026-08-21 06:42 UTCUSD BIAS: The US Dollar composite score is 6.5/10, indicating a bullish stance. EUR/USD bias reflects euro fundamental score of 6.8 vs dollar.GBP/USD bias reflects pound fundamental score of 8.0.USD/JPY bias reflects yen fundamental score of 6.2.KEY THEMES: The broader market is mixed with a slight negative tilt, with 113 bullish vs 113 bearish signals across 306 tracked pairs.Gold (XAU) scores 3.5/10, reflecting real yield and inflation dynamics.Bitcoin (BTC) scores 8.4/10, reflecting global liquidity conditions.INSTITUTIONAL FLOWS: CFTC data shows 3 markets with net long speculative positions vs 10 net short. ASSET CLASS OUTLOOK: FX: Favor USD-long pairs (short EUR/USD, GBP/USD). Gold: Headwinds from real yields and USD. Crypto: Bullish liquidity backdrop. ",
-  "token_usage": {}
+  "generated_at": "2026-08-22T06:36:24.034596+00:00",
+  "model": "local-ai-notes",
+  "provider": "Bulls & Bears Fundamentals AI Generator",
+  "analysis": "USD (USD Bias): The US Dollar composite score is 6.5/10 (Bullish). Strong macro releases and/or elevated yields are supporting capital flows into the dollar. Rate expectations remain hawkish.\n\nEUR/USD (Pair Analysis): EUR/USD composite bias is 5.4/10 (Neutral). Base score 6.8 vs quote score 6.5. EUR is the base asset and USD is the quote asset. Weak USD is bullish for this pair; strong USD is bearish.\n\nGBP/USD (Pair Analysis): GBP/USD composite bias is 6.3/10 (Bullish). Base score 8.0 vs quote score 6.5. GBP is the base asset and USD is the quote asset. Weak USD is bullish for this pair; strong USD is bearish.\n\nAUD/USD (Pair Analysis): AUD/USD composite bias is 3.0/10 (Bearish). Base score 5.0 vs quote score 6.5. AUD is the base asset and USD is the quote asset. Weak USD is bullish for this pair; strong USD is bearish.\n\nNZD/USD (Pair Analysis): NZD/USD composite bias is 6.3/10 (Bullish). Base score 7.6 vs quote score 6.5. NZD is the base asset and USD is the quote asset. Weak USD is bullish for this pair; strong USD is bearish.\n\nUSD/JPY (Pair Analysis): USD/JPY composite bias is 5.2/10 (Neutral). Base score 6.5 vs quote score 6.2. USD is the base asset and JPY is the quote asset. This pair has a DIRECT relationship with USD strength.\n\nUSD/CAD (Pair Analysis): USD/CAD composite bias is 6.4/10 (Bullish). Base score 6.5 vs quote score 5.3. USD is the base asset and CAD is the quote asset. This pair has a DIRECT relationship with USD strength.\n\nUSD/CHF (Pair Analysis): USD/CHF composite bias is 5.2/10 (Neutral). Base score 6.5 vs quote score 6.1. USD vs CHF relative fundamental strength.\n\nXAU/USD (Pair Analysis): XAU/USD composite bias is 1.8/10 (Strongly Bearish). Base score 3.5 vs quote score 6.5. XAU is the base asset and USD is the quote asset. Weak USD is bullish for this pair; strong USD is bearish.\n\nXAG/USD (Pair Analysis): XAG/USD composite bias is 7.1/10 (Bullish). Base score 8.0 vs quote score 6.5. XAG is the base asset and USD is the quote asset. Weak USD is bullish for this pair; strong USD is bearish.\n\nETH/USD (Pair Analysis): ETH/USD composite bias is 4.9/10 (Neutral). Base score 6.6 vs quote score 6.5. ETH vs USD relative fundamental strength.\n\nMARKET_BREADTH (Market Breadth): Across 326 tracked pairs, 113 are bullish (35%) and 125 are bearish (38%). USD composite: 6.5/10.",
+  "token_usage": {},
+  "notes": [
+    {
+      "asset": "USD",
+      "section": "USD Bias",
+      "score": 6.45,
+      "direction": "Bullish",
+      "summary": "The US Dollar composite score is 6.5/10 (Bullish). Strong macro releases and/or elevated yields are supporting capital flows into the dollar. Rate expectations remain hawkish.",
+      "key_data_points": [
+        "Real GDP: $24.3T",
+        "Unemployment: 4.1%",
+        "Core CPI: 336.8",
+        "Fed Funds: 3.63%",
+        "10Y Yield: 4.65%"
+      ],
+      "breakdown_items": [
+        {
+          "indicator": "GDP Growth (Latest vs Previous)",
+          "score": 2.0,
+          "direction": "bearish"
+        },
+        {
+          "indicator": "Unemployment Rate (Latest Release)",
+          "score": 2.0,
+          "direction": "bearish"
+        },
+        {
+          "indicator": "Core CPI Change (Latest vs Previous)",
+          "score": 3.0,
+          "direction": "bearish"
+        },
+        {
+          "indicator": "Nonfarm Payrolls Change (Latest vs Previous)",
+          "score": 2.0,
+          "direction": "bearish"
+        },
+        {
+          "indicator": "Fed Funds Rate (Latest)",
+          "score": 7.0,
+          "direction": "bullish"
+        },
+        {
+          "indicator": "10Y Treasury Yield Change",
+          "score": 3.0,
+          "direction": "bearish"
+        }
+      ],
+      "news_headlines": [
+        "US Treasury move risks creating unintended consequences for markets and the economy",
+        "US Treasury auctions off $9 billion of 30-year TIPS at 2.973% vs 2.991% WI",
+        "US Treasury Secretary Bessent says the long-dated bond buyback could be more than 4 billion"
+      ]
+    },
+    {
+      "asset": "EUR/USD",
+      "section": "Pair Analysis",
+      "score": 5.42,
+      "direction": "Neutral",
+      "summary": "EUR/USD composite bias is 5.4/10 (Neutral). Base score 6.8 vs quote score 6.5. EUR is the base asset and USD is the quote asset. Weak USD is bullish for this pair; strong USD is bearish.",
+      "key_data_points": [
+        "Base (EUR) score: 6.8",
+        "Quote (USD) score: 6.5",
+        "Combined bias: 5.4/10"
+      ],
+      "breakdown_items": [],
+      "news_headlines": []
+    },
+    {
+      "asset": "GBP/USD",
+      "section": "Pair Analysis",
+      "score": 6.29,
+      "direction": "Bullish",
+      "summary": "GBP/USD composite bias is 6.3/10 (Bullish). Base score 8.0 vs quote score 6.5. GBP is the base asset and USD is the quote asset. Weak USD is bullish for this pair; strong USD is bearish.",
+      "key_data_points": [
+        "Base (GBP) score: 8.0",
+        "Quote (USD) score: 6.5",
+        "Combined bias: 6.3/10"
+      ],
+      "breakdown_items": [],
+      "news_headlines": []
+    },
+    {
+      "asset": "AUD/USD",
+      "section": "Pair Analysis",
+      "score": 3.05,
+      "direction": "Bearish",
+      "summary": "AUD/USD composite bias is 3.0/10 (Bearish). Base score 5.0 vs quote score 6.5. AUD is the base asset and USD is the quote asset. Weak USD is bullish for this pair; strong USD is bearish.",
+      "key_data_points": [
+        "Base (AUD) score: 5.0",
+        "Quote (USD) score: 6.5",
+        "Combined bias: 3.0/10"
+      ],
+      "breakdown_items": [],
+      "news_headlines": []
+    },
+    {
+      "asset": "NZD/USD",
+      "section": "Pair Analysis",
+      "score": 6.27,
+      "direction": "Bullish",
+      "summary": "NZD/USD composite bias is 6.3/10 (Bullish). Base score 7.6 vs quote score 6.5. NZD is the base asset and USD is the quote asset. Weak USD is bullish for this pair; strong USD is bearish.",
+      "key_data_points": [
+        "Base (NZD) score: 7.6",
+        "Quote (USD) score: 6.5",
+        "Combined bias: 6.3/10"
+      ],
+      "breakdown_items": [],
+      "news_headlines": []
+    },
+    {
+      "asset": "USD/JPY",
+      "section": "Pair Analysis",
+      "score": 5.15,
+      "direction": "Neutral",
+      "summary": "USD/JPY composite bias is 5.2/10 (Neutral). Base score 6.5 vs quote score 6.2. USD is the base asset and JPY is the quote asset. This pair has a DIRECT relationship with USD strength.",
+      "key_data_points": [
+        "Base (USD) score: 6.5",
+        "Quote (JPY) score: 6.2",
+        "Combined bias: 5.2/10"
+      ],
+      "breakdown_items": [],
+      "news_headlines": []
+    },
+    {
+      "asset": "USD/CAD",
+      "section": "Pair Analysis",
+      "score": 6.43,
+      "direction": "Bullish",
+      "summary": "USD/CAD composite bias is 6.4/10 (Bullish). Base score 6.5 vs quote score 5.3. USD is the base asset and CAD is the quote asset. This pair has a DIRECT relationship with USD strength.",
+      "key_data_points": [
+        "Base (USD) score: 6.5",
+        "Quote (CAD) score: 5.3",
+        "Combined bias: 6.4/10"
+      ],
+      "breakdown_items": [],
+      "news_headlines": []
+    },
+    {
+      "asset": "USD/CHF",
+      "section": "Pair Analysis",
+      "score": 5.19,
+      "direction": "Neutral",
+      "summary": "USD/CHF composite bias is 5.2/10 (Neutral). Base score 6.5 vs quote score 6.1. USD vs CHF relative fundamental strength.",
+      "key_data_points": [
+        "Base (USD) score: 6.5",
+        "Quote (CHF) score: 6.1",
+        "Combined bias: 5.2/10"
+      ],
+      "breakdown_items": [],
+      "news_headlines": []
+    },
+    {
+      "asset": "XAU/USD",
+      "section": "Pair Analysis",
+      "score": 1.78,
+      "direction": "Strongly Bearish",
+      "summary": "XAU/USD composite bias is 1.8/10 (Strongly Bearish). Base score 3.5 vs quote score 6.5. XAU is the base asset and USD is the quote asset. Weak USD is bullish for this pair; strong USD is bearish.",
+      "key_data_points": [
+        "Base (XAU) score: 3.5",
+        "Quote (USD) score: 6.5",
+        "Combined bias: 1.8/10"
+      ],
+      "breakdown_items": [],
+      "news_headlines": []
+    },
+    {
+      "asset": "XAG/USD",
+      "section": "Pair Analysis",
+      "score": 7.07,
+      "direction": "Bullish",
+      "summary": "XAG/USD composite bias is 7.1/10 (Bullish). Base score 8.0 vs quote score 6.5. XAG is the base asset and USD is the quote asset. Weak USD is bullish for this pair; strong USD is bearish.",
+      "key_data_points": [
+        "Base (XAG) score: 8.0",
+        "Quote (USD) score: 6.5",
+        "Combined bias: 7.1/10"
+      ],
+      "breakdown_items": [],
+      "news_headlines": []
+    },
+    {
+      "asset": "ETH/USD",
+      "section": "Pair Analysis",
+      "score": 4.89,
+      "direction": "Neutral",
+      "summary": "ETH/USD composite bias is 4.9/10 (Neutral). Base score 6.6 vs quote score 6.5. ETH vs USD relative fundamental strength.",
+      "key_data_points": [
+        "Base (ETH) score: 6.6",
+        "Quote (USD) score: 6.5",
+        "Combined bias: 4.9/10"
+      ],
+      "breakdown_items": [],
+      "news_headlines": []
+    },
+    {
+      "asset": "MARKET_BREADTH",
+      "section": "Market Breadth",
+      "score": 3.47,
+      "direction": "Bearish",
+      "summary": "Across 326 tracked pairs, 113 are bullish (35%) and 125 are bearish (38%). USD composite: 6.5/10.",
+      "key_data_points": [
+        "Bullish signals: 113",
+        "Bearish signals: 125",
+        "Total pairs: 326"
+      ],
+      "breakdown_items": [],
+      "news_headlines": []
+    }
+  ]
 }
