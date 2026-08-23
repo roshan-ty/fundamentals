@@ -68,8 +68,10 @@ BROWSER_HEADERS = {
 }
 
 # ── Constants ──────────────────────────────────────────────────────────────────
+# Target currency / asset codes are aligned with the canonical whitelist in
+# scripts/config.py — the single source of truth for the traded universe.
 TARGET_CURRENCIES = ["USD", "EUR", "GBP", "JPY", "AUD", "CAD", "CHF", "NZD"]
-TARGET_CRYPTO = ["BTC", "ETH", "SOL", "XRP"]
+TARGET_CRYPTO = ["AVAX", "BTC", "ETH", "LTC", "SOL", "SUI", "XLM", "XRP"]
 
 # ═══════════════════════════════════════════════════════════════════════════════
 # SECTION 1: FRED Macro Series (Points 7-10, 13-16, 23-24)
@@ -548,8 +550,10 @@ CFTC_TARGET_MARKETS: dict[str, str] = {
     "GOLD":                         "XAU",
     "SILVER":                       "XAG",
     "WTI CRUDE OIL":                "WTI",
-    "E-MINI S&P 500":               "SP500",
-    "NASDAQ-100":                   "NAS100",
+    "BRENT CRUDE OIL":              "BRENT",
+    "COPPER":                       "COPPER",
+    "PALLADIUM":                    "PALLADIUM",
+    "PLATINUM":                     "PLATINUM",
     "U.S. TREASURY BOND":           "USB",
     "10 YEAR U.S. TREASURY NOTE":   "UST10Y",
 }
@@ -957,8 +961,12 @@ SEASONALITY_TICKERS = {
     "USDCAD=X": "CAD",
     "USDCHF=X": "CHF",
     "GC=F":     "XAU",   # Gold
+    "SI=F":     "XAG",   # Silver
+    "HG=F":     "COPPER",# Copper
+    "PA=F":     "PALLADIUM",
+    "PL=F":     "PLATINUM",
     "CL=F":     "WTI",   # Crude Oil
-    "^GSPC":    "SP500", # S&P 500
+    "BZ=F":     "BRENT", # Brent Crude
     "BTC-USD":  "BTC",
     "ETH-USD":  "ETH",
 }

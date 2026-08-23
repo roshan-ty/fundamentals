@@ -14,7 +14,21 @@ interface Props {
   data: any;
 }
 
-const ALL_TAGS = ['USD', 'EUR', 'GBP', 'JPY', 'AUD', 'CAD', 'CHF', 'NZD', 'XAU', 'XAG', 'WTI', 'BTC', 'ETH'];
+// Filter pills aligned with the task spec: ALL, USD, EUR, GBP, JPY, AUD, CAD,
+// GOLD, CRYPTO. GOLD maps to XAU tag; CRYPTO maps to BTC/ETH/etc.
+const ALL_TAGS = ['USD', 'EUR', 'GBP', 'JPY', 'AUD', 'CAD', 'GOLD', 'CRYPTO'];
+
+// Map display pill -> underlying currency_tags to match
+const TAG_MATCH: Record<string, string[]> = {
+  USD: ['USD'],
+  EUR: ['EUR'],
+  GBP: ['GBP'],
+  JPY: ['JPY'],
+  AUD: ['AUD'],
+  CAD: ['CAD'],
+  GOLD: ['XAU'],
+  CRYPTO: ['BTC', 'ETH', 'LTC', 'SOL', 'XRP', 'AVAX', 'SUI', 'XLM'],
+};
 
 export default function NewsTab({ data }: Props) {
   const articles: NewsArticle[] = data?.articles || [];
@@ -24,7 +38,10 @@ export default function NewsTab({ data }: Props) {
   const filteredArticles = useMemo(() => {
     let filtered = articles;
     if (activeTag) {
-      filtered = filtered.filter(a => a.currency_tags?.includes(activeTag));
+      const matchTags = TAG_MATCH[activeTag] || [activeTag];
+      filtered = filtered.filter(a =>
+        a.currency_tags?.some(tag => matchTags.includes(tag))
+      );
     }
     if (search.trim()) {
       const q = search.toLowerCase();
@@ -60,7 +77,7 @@ export default function NewsTab({ data }: Props) {
     return (
       <div className="text-center py-12 text-gray-500">
         <Newspaper size={32} className="mx-auto mb-3 text-gray-600" />
-        <p>No news articles available. Run the news scraper to fetch the latest Forex Factory headlines.</p>
+        <p>No news articles available.</p>
       </div>
     );
   }

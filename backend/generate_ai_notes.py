@@ -20,10 +20,15 @@ PROJECT_ROOT = os.path.realpath(os.path.join(os.path.dirname(__file__), ".."))
 DATA_DIR = os.path.join(PROJECT_ROOT, "public", "data")
 
 # ── Asset universe for analysis ────────────────────────────────────────────────
+# Aligned with the canonical whitelist in scripts/config.py.
+# Only whitelisted symbols are analyzed — synthetic assets (WTI, SP500,
+# NAS100, GER40, ...) are excluded from the traded universe.
 USD_COUNTER_ASSETS = ["XAU", "XAG", "EUR", "GBP", "AUD", "NZD", "BTC"]
 MAJOR_PAIRS = [
     "EUR/USD", "GBP/USD", "AUD/USD", "NZD/USD", "USD/JPY", "USD/CAD",
     "USD/CHF", "XAU/USD", "XAG/USD", "BTC/USD", "ETH/USD",
+    "LTC/USD", "SOL/USD", "XRP/USD", "AVAX/USD", "SUI/USD", "XLM/USD",
+    "COPPER/USD", "PALLADIUM/USD", "PLATINUM/USD", "BRENT/USD",
 ]
 
 

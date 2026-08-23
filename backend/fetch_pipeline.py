@@ -35,7 +35,6 @@ except ImportError:
 from backend.parsers import collect_all_data
 from backend.scorer import score_all
 from backend.ai_analyst import generate_macro_summary
-from backend.calendar_scraper import fetch_ff_calendar_html
 from backend.news_scraper import fetch_ff_news
 from backend.generate_ai_notes import generate_ai_notes
 
@@ -125,13 +124,13 @@ def run_pipeline() -> dict[str, Any]:
     # ── Step 4: Export All ─────────────────────────────────────────────────────
     logger.info("\n[STEP 4/4] Exporting to /public/data/...")
 
-    # 4a: Calendar data — economic events with surprise ratios
+    # 4a: Calendar data — economic events with surprise ratios.
+    # NOTE: scripts/calendar_scraper.py is the canonical owner of calendar.json
+    # and writes a bare JSON array. The pipeline writes the same bare-array
+    # format so the frontend (which handles both) stays consistent and the
+    # scraper's rich output is never clobbered by the old wrapped object.
     calendar_events = _extract_calendar_events(collected_data)
-    write_json("calendar.json", {
-        "last_updated": datetime.now(timezone.utc).isoformat(),
-        "events": calendar_events,
-        "total_events": len(calendar_events),
-    })
+    write_json("calendar.json", calendar_events)
 
     # 4b: Macro data — FRED historical series
     macro_data = collected_data.get("fred", {})

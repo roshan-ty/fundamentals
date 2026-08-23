@@ -1,7 +1,7 @@
 import React from 'react';
-import { TrendingUp, DollarSign, BarChart3, Users, Target } from 'lucide-react';
+import { DollarSign, BarChart3, Users, Target } from 'lucide-react';
 import { DataStore } from '../App';
-import GaugeChart from './GaugeChart';
+import HorizontalBiasMeter from './HorizontalBiasMeter';
 
 interface Props {
   data: DataStore;
@@ -22,8 +22,6 @@ export default function HomeTab({ data }: Props) {
   const scoreBreakdowns = masterBias?.score_breakdowns || {};
   const pairs = masterBias?.pairs || [];
   const summary = masterBias?.summary || {};
-  const analysisWindowDays = masterBias?.analysis_window_days || 14;
-  const analysisNote = masterBias?.analysis_note || '';
 
   const bullishCount = summary.bullish_count || 0;
   const bearishCount = summary.bearish_count || 0;
@@ -60,13 +58,6 @@ export default function HomeTab({ data }: Props) {
 
   return (
     <div className="space-y-6">
-      {/* ═══ Analysis Window Note ═══ */}
-      {analysisNote && (
-        <div className="text-2xs text-blue-400/70 bg-blue-900/10 border border-blue-800/30 rounded px-3 py-2">
-          ℹ️ {analysisNote}
-        </div>
-      )}
-
       {/* ═══ Header Stats ═══ */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
         <div className="card p-3">
@@ -108,22 +99,11 @@ export default function HomeTab({ data }: Props) {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        {/* ═══ USD Bias Gauge ═══ */}
+        {/* ═══ USD Bias Meter ═══ */}
         <div className="card">
           <div className="card-header">USD Fundamental Bias Score</div>
-          <div className="p-4 flex flex-col items-center">
-            <GaugeChart score={usdScore} size={200} />
-            <div className="mt-3 text-center">
-              <span className={`text-lg font-bold font-mono ${
-                usdScore >= 6 ? 'text-emerald-400' : usdScore <= 4 ? 'text-red-400' : 'text-gray-400'
-              }`}>
-                {usdScore.toFixed(1)} / 10
-              </span>
-              <div className="text-xs text-gray-500 mt-1">
-                {usdScore >= 7 ? 'Strongly Bullish' : usdScore >= 6 ? 'Bullish' :
-                 usdScore >= 4.1 ? 'Neutral' : usdScore >= 2.1 ? 'Bearish' : 'Strongly Bearish'}
-              </div>
-            </div>
+          <div className="p-4">
+            <HorizontalBiasMeter score={usdScore} />
           </div>
         </div>
 
@@ -180,10 +160,6 @@ export default function HomeTab({ data }: Props) {
           <div className="p-4">
             <div className="text-sm text-gray-300 leading-relaxed whitespace-pre-wrap font-mono text-[13px]">
               {aiInsights.analysis}
-            </div>
-            <div className="mt-3 text-2xs text-gray-600">
-              Generated: {aiInsights.generated_at ? new Date(aiInsights.generated_at).toLocaleString() : 'N/A'}
-              {aiInsights.provider && ` · Source: ${aiInsights.provider}`}
             </div>
           </div>
         </div>

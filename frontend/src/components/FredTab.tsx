@@ -53,7 +53,7 @@ export default function FredTab({ data }: Props) {
   if (availableSeries.length === 0) {
     return (
       <div className="text-center py-12 text-gray-500">
-        No FRED data available. Run the data pipeline with a valid FRED_API_KEY.
+        No FRED data available.
       </div>
     );
   }

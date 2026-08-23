@@ -16,7 +16,9 @@ interface Props {
 }
 
 export default function CalendarTab({ data }: Props) {
-  const events: CalendarEvent[] = data?.events || [];
+  // Support both the bare-array format (scripts/calendar_scraper.py) and the
+  // legacy wrapped format ({ events: [...] }).
+  const events: CalendarEvent[] = Array.isArray(data) ? data : (data?.events || []);
   const [showOnlyReleased, setShowOnlyReleased] = useState(false);
 
   const filteredEvents = useMemo(() => {
@@ -29,7 +31,7 @@ export default function CalendarTab({ data }: Props) {
   if (!events.length) {
     return (
       <div className="text-center py-12 text-gray-500">
-        <p>No calendar events available. Run the data pipeline to fetch the latest economic calendar.</p>
+        <p>No calendar events available.</p>
       </div>
     );
   }

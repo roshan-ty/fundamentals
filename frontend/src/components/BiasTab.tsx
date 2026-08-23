@@ -136,9 +136,6 @@ export default function BiasTab({ data }: Props) {
             <div className="flex items-center gap-2 text-xs text-gray-400">
               <span className="px-2 py-0.5 bg-dark-border rounded">{p.asset_class}</span>
               <span>{p.base_asset} / {p.quote_asset}</span>
-              <span className="ml-auto text-2xs text-gray-600">
-                Analysis window: last {analysisWindowDays} days
-              </span>
             </div>
 
             {/* Main Bias Score */}
@@ -245,8 +242,7 @@ export default function BiasTab({ data }: Props) {
               </div>
             ) : (
               <div className="card p-4 text-center text-2xs text-gray-500">
-                No detailed breakdown data available for this pair yet.
-                Run the data pipeline to generate score breakdowns.
+                No detailed breakdown data available for this pair.
               </div>
             )}
 
@@ -279,7 +275,7 @@ export default function BiasTab({ data }: Props) {
         <div>
           <h2 className="text-sm font-semibold text-white">Master Bias Matrix</h2>
           <p className="text-2xs text-gray-500 mt-0.5">
-            {allPairs.length} pairs · Sorted by strength · Based on last {analysisWindowDays} days of data
+            {allPairs.length} pairs · Sorted by strength
           </p>
         </div>
         <div className="relative w-full sm:w-64">
@@ -293,12 +289,6 @@ export default function BiasTab({ data }: Props) {
           />
         </div>
       </div>
-
-      {data?.analysis_note && (
-        <div className="mb-4 text-2xs text-blue-400/70 bg-blue-900/10 border border-blue-800/30 rounded px-3 py-2">
-          ℹ️ {data.analysis_note}
-        </div>
-      )}
 
       {/* Pairs by class */}
       {classOrder.map(cls => {
@@ -373,7 +363,7 @@ export default function BiasTab({ data }: Props) {
 
       {allPairs.length === 0 && (
         <div className="text-center py-12 text-gray-500">
-          No pair data available. Run the data pipeline to generate scores.
+          No pair data available.
         </div>
       )}
 

@@ -484,7 +484,7 @@
     ]
   },
   "analysis_window_days": 14,
-  "analysis_note": "Latest Release Delta Model: Only the single most recent data release per macro indicator is scored (Actual vs Forecast/Previous). No multi-week historical averaging. Historical data is shown for reference only and does not affect scores.",
+  "analysis_note": "Latest Release Delta Model: per-currency scores from calendar events (Actual vs Forecast), weighted by impact. Cross-asset relative strength derived from currency differentials.",
   "pairs": [
     {
       "name": "WTI/ETH",

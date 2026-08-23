@@ -19,35 +19,46 @@ LATEST RELEASE POLICY:
   guarantees maximum score sensitivity to the newest economic prints.
 """
 
+import os
+import sys
 import math
 import logging
 from typing import Any, Optional
 from dataclasses import dataclass
 from datetime import datetime, timezone
 
+# Ensure project root is importable when running standalone
+_PROJECT_ROOT = os.path.realpath(os.path.join(os.path.dirname(__file__), '..'))
+if _PROJECT_ROOT not in sys.path:
+    sys.path.insert(0, _PROJECT_ROOT)
+
 from backend.parsers import RECENT_DATA_WINDOW_DAYS
+from scripts.config import (
+    ALLOWED_BASE_ASSETS,
+    ALLOWED_ENGINE_CLASSES,
+    ALLOWED_DISPLAY_PAIRS,
+)
 
 logger = logging.getLogger(__name__)
 
 # ── Constants ──────────────────────────────────────────────────────────────────
-ASSET_CLASSES = {
-    "FOREX": ["USD", "EUR", "GBP", "JPY", "AUD", "CAD", "CHF", "NZD"],
-    "COMMODITIES": ["XAU", "XAG", "WTI"],
-    "INDICES": ["SP500", "NAS100", "GER40"],
-    "CRYPTO": ["BTC", "ETH", "SOL", "XRP"],
+# Asset classes & base assets are derived from the canonical whitelist in
+# scripts/config.py. Any symbol not in ALLOWED_ASSETS is STRIPPED from all
+# scored pairs by construction.
+ASSET_CLASSES: dict[str, list[str]] = {
+    class_name: list(codes) for class_name, codes in ALLOWED_ENGINE_CLASSES.items()
 }
 
-# All base assets we score independently
-BASE_ASSETS = [
-    "USD", "EUR", "GBP", "JPY", "AUD", "CAD", "CHF", "NZD",
-    "XAU", "XAG", "WTI",
-    "SP500", "NAS100", "GER40",
-    "BTC", "ETH", "SOL", "XRP",
-]
+# All base assets we score independently — from the canonical whitelist only
+BASE_ASSETS: list[str] = list(ALLOWED_BASE_ASSETS)
 
 # Counter-assets that move INVERSE to the US Dollar:
 # Weak USD => Bullish, Strong USD => Bearish
-USD_COUNTER_ASSETS = ["XAU", "XAG", "EUR", "GBP", "AUD", "NZD", "BTC"]
+# (only retains codes that are actually present in the whitelisted universe)
+USD_COUNTER_ASSETS = [
+    code for code in ["XAU", "XAG", "EUR", "GBP", "AUD", "NZD", "BTC", "SILVER", "GOLD", "PALLADIUM", "PLATINUM", "COPPER"]
+    if code in ALLOWED_BASE_ASSETS
+]
 
 # ── Tier Definitions ───────────────────────────────────────────────────────────
 TIER_1_MULTIPLIER = 3.0
@@ -919,25 +930,32 @@ def compute_asset_score_breakdowns(
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
-# SECTION 6: Cross-Pair Universe (200+ pairs)
+# SECTION 6: Canonical Pair Universe (whitelist-only)
 # ═══════════════════════════════════════════════════════════════════════════════
+# Pairs are derived STRICTLY from scripts/config.py ALLOWED_ASSETS.
+# Synthetic / non-standard pairs (JPY/WTI, CAD/WTI, USD/NAS100, JPY/NAS100,
+# EUR/Gold, CAD/Bitcoin, ...) are excluded by construction — the pair matrix
+# is no longer a cartesian product of every base asset.
 
-FX_MAJORS = ["USD", "EUR", "GBP", "JPY", "AUD", "CAD", "CHF", "NZD"]
-METALS = ["XAU", "XAG"]
-ENERGY = ["WTI"]
-INDICES = ["SP500", "NAS100", "GER40"]
-CRYPTOS = ["BTC", "ETH", "SOL", "XRP"]
-
-ALL_PAIRS = [(b, q) for b in BASE_ASSETS for q in BASE_ASSETS if b != q]
-
+# Class assignment for each base asset code in the whitelisted universe
 BASE_CLASS_MAP: dict[str, str] = {}
-for a in FX_MAJORS: BASE_CLASS_MAP[a] = "FX"
-for a in METALS:    BASE_CLASS_MAP[a] = "METAL"
-for a in ENERGY:    BASE_CLASS_MAP[a] = "ENERGY"
-for a in INDICES:   BASE_CLASS_MAP[a] = "INDEX"
-for a in CRYPTOS:   BASE_CLASS_MAP[a] = "CRYPTO"
-
-PAIR_CLASS_MAP = {(b, q): BASE_CLASS_MAP[b] for b, q in ALL_PAIRS}
+for _class_name, _codes in ALLOWED_ENGINE_CLASSES.items():
+    _normalized = _class_name.upper()
+    _class_label = {
+        "FOREX": "FX", "COMMODITIES": "COMMODITY", "CRYPTO": "CRYPTO",
+        "INDICES": "INDEX",
+    }.get(_normalized, _normalized.title())
+    for _code in _codes:
+        # Precious metals get METAL label, energy gets ENERGY label
+        if _class_label == "COMMODITY":
+            if _code in ("XAU", "XAG", "COPPER", "PALLADIUM", "PLATINUM"):
+                BASE_CLASS_MAP[_code] = "METAL"
+            elif _code in ("WTI", "BRENT"):
+                BASE_CLASS_MAP[_code] = "ENERGY"
+            else:
+                BASE_CLASS_MAP[_code] = "COMMODITY"
+        else:
+            BASE_CLASS_MAP[_code] = _class_label
 
 
 def compute_pair_bias(base_score: float, quote_score: float) -> float:
@@ -946,12 +964,21 @@ def compute_pair_bias(base_score: float, quote_score: float) -> float:
 
 
 def compute_all_pairs(base_scores: dict[str, float]) -> list[dict[str, Any]]:
+    """
+    Compute pair biases for the canonical whitelisted pair universe only.
+
+    Iterates ALLOWED_DISPLAY_PAIRS (generated from scripts/config.py) so
+    synthetic pairs are structurally impossible. Each pair is BINNED to its
+    base-asset class (FX / METAL / ENERGY / INDEX / CRYPTO / COMMODITY).
+    """
     pairs: list[dict[str, Any]] = []
-    for base, quote in ALL_PAIRS:
+    for spec in ALLOWED_DISPLAY_PAIRS:
+        base = spec["base"]
+        quote = spec["quote"]
         bs = base_scores.get(base, 5.0)
         qs = base_scores.get(quote, 5.0)
         combined = compute_pair_bias(bs, qs)
-        asset_class = PAIR_CLASS_MAP.get((base, quote), "OTHER")
+        asset_class = BASE_CLASS_MAP.get(base, "OTHER")
 
         if combined >= 8.0:
             direction = "Strongly Bullish"
@@ -976,7 +1003,7 @@ def compute_all_pairs(base_scores: dict[str, float]) -> list[dict[str, Any]]:
         })
 
     pairs.sort(key=lambda p: abs(p["combined_bias"] - 5.0), reverse=True)
-    logger.info("Pairs: %d computed", len(pairs))
+    logger.info("Pairs: %d computed (whitelist-only universe)", len(pairs))
     return pairs
 
 
