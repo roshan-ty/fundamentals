@@ -1,70 +1,58 @@
 {
-  "generated_at": "2026-08-23T06:37:06.812858+00:00",
+  "generated_at": "2026-08-23T17:22:32.840554+00:00",
   "model": "local-ai-notes",
   "provider": "Bulls & Bears Fundamentals AI Generator",
-  "analysis": "USD (USD Bias): The US Dollar composite score is 6.4/10 (Bullish). Strong macro releases and/or elevated yields are supporting capital flows into the dollar. Rate expectations remain hawkish.\n\nEUR/USD (Pair Analysis): EUR/USD composite bias is 3.1/10 (Bearish). Base score 4.6 vs quote score 6.4. EUR is the base asset and USD is the quote asset. Weak USD is bullish for this pair; strong USD is bearish.\n\nGBP/USD (Pair Analysis): GBP/USD composite bias is 3.1/10 (Bearish). Base score 4.6 vs quote score 6.4. GBP is the base asset and USD is the quote asset. Weak USD is bullish for this pair; strong USD is bearish.\n\nAUD/USD (Pair Analysis): AUD/USD composite bias is 3.1/10 (Bearish). Base score 4.6 vs quote score 6.4. AUD is the base asset and USD is the quote asset. Weak USD is bullish for this pair; strong USD is bearish.\n\nNZD/USD (Pair Analysis): NZD/USD composite bias is 3.1/10 (Bearish). Base score 4.6 vs quote score 6.4. NZD is the base asset and USD is the quote asset. Weak USD is bullish for this pair; strong USD is bearish.\n\nUSD/JPY (Pair Analysis): USD/JPY composite bias is 5.0/10 (Neutral). Base score 6.4 vs quote score 6.4. USD is the base asset and JPY is the quote asset. This pair has a DIRECT relationship with USD strength.\n\nUSD/CAD (Pair Analysis): USD/CAD composite bias is 5.0/10 (Neutral). Base score 6.4 vs quote score 6.4. USD is the base asset and CAD is the quote asset. This pair has a DIRECT relationship with USD strength.\n\nUSD/CHF (Pair Analysis): USD/CHF composite bias is 5.0/10 (Neutral). Base score 6.4 vs quote score 6.4. USD vs CHF relative fundamental strength.\n\nXAU/USD (Pair Analysis): XAU/USD composite bias is 3.1/10 (Bearish). Base score 4.6 vs quote score 6.4. XAU is the base asset and USD is the quote asset. Weak USD is bullish for this pair; strong USD is bearish.\n\nXAG/USD (Pair Analysis): XAG/USD composite bias is 3.1/10 (Bearish). Base score 4.6 vs quote score 6.4. XAG is the base asset and USD is the quote asset. Weak USD is bullish for this pair; strong USD is bearish.\n\nBTC/USD (Pair Analysis): BTC/USD composite bias is 3.1/10 (Bearish). Base score 4.6 vs quote score 6.4. BTC is the base asset and USD is the quote asset. Weak USD is bullish for this pair; strong USD is bearish.\n\nETH/USD (Pair Analysis): ETH/USD composite bias is 5.2/10 (Neutral). Base score 6.6 vs quote score 6.4. ETH vs USD relative fundamental strength.\n\nMARKET_BREADTH (Market Breadth): Across 306 tracked pairs, 76 are bullish (25%) and 76 are bearish (25%). USD composite: 6.4/10.",
-  "token_usage": {},
+  "analysis": "USD (USD Bias): The US Dollar composite score is 4.6/10 (Neutral). Mixed macro signals keep the dollar in a neutral-to-uncertain range.\n\nCROSS_ASSET_TAILWINDS (Cross-Asset Tailwinds): With USD neutral (4.6/10), Gold (5.0), Silver (5.0), and EUR/USD are driven more by their own macro fundamentals than dollar direction.\n\nCFTC_CONFLUENCE (Institutional Confluence): No assets currently show strong institutional-fundamental confluence (CFTC Long Ratio > 75% AND fundamental score > 6.0).\n\nEUR/USD (Pair Analysis): EUR/USD composite bias is 5.8/10 (Neutral). Base score 5.2 vs quote score 4.6. EUR is the base asset and USD is the quote asset. Weak USD is bullish for this pair; strong USD is bearish.\n\nGBP/USD (Pair Analysis): GBP/USD composite bias is 5.2/10 (Neutral). Base score 5.8 vs quote score 4.6. GBP is the base asset and USD is the quote asset. Weak USD is bullish for this pair; strong USD is bearish.\n\nNZD/USD (Pair Analysis): NZD/USD composite bias is 5.5/10 (Neutral). Base score 5.5 vs quote score 4.6. NZD is the base asset and USD is the quote asset. Weak USD is bullish for this pair; strong USD is bearish.\n\nUSD/JPY (Pair Analysis): USD/JPY composite bias is 4.6/10 (Neutral). Base score 4.6 vs quote score 4.2. USD is the base asset and JPY is the quote asset. This pair has a DIRECT relationship with USD strength.\n\nUSD/CAD (Pair Analysis): USD/CAD composite bias is 4.6/10 (Neutral). Base score 4.6 vs quote score 5.3. USD is the base asset and CAD is the quote asset. This pair has a DIRECT relationship with USD strength.\n\nUSD/CHF (Pair Analysis): USD/CHF composite bias is 4.6/10 (Neutral). Base score 4.6 vs quote score 5.0. USD vs CHF relative fundamental strength.\n\nXAU/USD (Pair Analysis): XAU/USD composite bias is 6.0/10 (Bullish). Base score 5.0 vs quote score 4.6. XAU is the base asset and USD is the quote asset. Weak USD is bullish for this pair; strong USD is bearish.\n\nXAG/USD (Pair Analysis): XAG/USD composite bias is 6.0/10 (Bullish). Base score 5.0 vs quote score 4.6. XAG is the base asset and USD is the quote asset. Weak USD is bullish for this pair; strong USD is bearish.\n\nBTC/USD (Pair Analysis): BTC/USD composite bias is 6.0/10 (Bullish). Base score 5.0 vs quote score 4.6. BTC is the base asset and USD is the quote asset. Weak USD is bullish for this pair; strong USD is bearish.\n\nETH/USD (Pair Analysis): ETH/USD composite bias is 6.0/10 (Bullish). Base score 5.0 vs quote score 4.6. ETH vs USD relative fundamental strength.\n\nLTC/USD (Pair Analysis): LTC/USD composite bias is 6.0/10 (Bullish). Base score 5.0 vs quote score 4.6. LTC vs USD relative fundamental strength.\n\nSOL/USD (Pair Analysis): SOL/USD composite bias is 6.0/10 (Bullish). Base score 5.0 vs quote score 4.6. SOL vs USD relative fundamental strength.\n\nXRP/USD (Pair Analysis): XRP/USD composite bias is 6.0/10 (Bullish). Base score 5.0 vs quote score 4.6. XRP vs USD relative fundamental strength.\n\nAVAX/USD (Pair Analysis): AVAX/USD composite bias is 6.0/10 (Bullish). Base score 5.0 vs quote score 4.6. AVAX vs USD relative fundamental strength.\n\nSUI/USD (Pair Analysis): SUI/USD composite bias is 6.0/10 (Bullish). Base score 5.0 vs quote score 4.6. SUI vs USD relative fundamental strength.\n\nXLM/USD (Pair Analysis): XLM/USD composite bias is 6.0/10 (Bullish). Base score 5.0 vs quote score 4.6. XLM vs USD relative fundamental strength.\n\nCOPPER/USD (Pair Analysis): COPPER/USD composite bias is 6.0/10 (Bullish). Base score 5.0 vs quote score 4.6. COPPER vs USD relative fundamental strength.\n\nPALLADIUM/USD (Pair Analysis): PALLADIUM/USD composite bias is 6.0/10 (Bullish). Base score 5.0 vs quote score 4.6. PALLADIUM vs USD relative fundamental strength.\n\nPLATINUM/USD (Pair Analysis): PLATINUM/USD composite bias is 6.0/10 (Bullish). Base score 5.0 vs quote score 4.6. PLATINUM vs USD relative fundamental strength.\n\nBRENT/USD (Pair Analysis): BRENT/USD composite bias is 6.0/10 (Bullish). Base score 5.0 vs quote score 4.6. BRENT vs USD relative fundamental strength.\n\nMARKET_BREADTH (Market Breadth): Across 80 tracked pairs, 25 are bullish (31%) and 3 are bearish (4%). USD composite: 4.6/10.",
   "notes": [
     {
       "asset": "USD",
       "section": "USD Bias",
-      "score": 6.44,
-      "direction": "Bullish",
-      "summary": "The US Dollar composite score is 6.4/10 (Bullish). Strong macro releases and/or elevated yields are supporting capital flows into the dollar. Rate expectations remain hawkish.",
+      "score": 4.57,
+      "direction": "Neutral",
+      "summary": "The US Dollar composite score is 4.6/10 (Neutral). Mixed macro signals keep the dollar in a neutral-to-uncertain range.",
       "key_data_points": [
-        "Real GDP: $24.3T",
-        "Unemployment: 4.1%",
-        "Core CPI: 336.8",
-        "Fed Funds: 3.63%",
-        "10Y Yield: 4.69%"
+        "Non-Farm Employment Change: Actual 147000.0 vs Forecast 165000.0 (miss)"
       ],
-      "breakdown_items": [
-        {
-          "indicator": "GDP Growth (Latest vs Previous)",
-          "score": 7.0,
-          "direction": "bullish"
-        },
-        {
-          "indicator": "Unemployment Rate (Latest Release)",
-          "score": 9.0,
-          "direction": "bullish"
-        },
-        {
-          "indicator": "Core CPI Change (Latest vs Previous)",
-          "score": 7.0,
-          "direction": "bullish"
-        },
-        {
-          "indicator": "Nonfarm Payrolls Change (Latest vs Previous)",
-          "score": 4.0,
-          "direction": "bearish"
-        },
-        {
-          "indicator": "Fed Funds Rate (Latest)",
-          "score": 7.0,
-          "direction": "bullish"
-        },
-        {
-          "indicator": "10Y Treasury Yield Change",
-          "score": 6.0,
-          "direction": "bullish"
-        }
-      ],
+      "breakdown_items": [],
       "news_headlines": [
-        "investingLive European markets wrap: Gold runs higher, dollar stays under pressure",
-        "US Treasury move risks creating unintended consequences for markets and the economy"
+        "Dollar firms as Fed signals hawkish stance on rates",
+        "Gold rallies as Treasury yields fall on soft CPI"
       ]
+    },
+    {
+      "asset": "CROSS_ASSET_TAILWINDS",
+      "section": "Cross-Asset Tailwinds",
+      "score": 5.17,
+      "direction": "Neutral",
+      "summary": "With USD neutral (4.6/10), Gold (5.0), Silver (5.0), and EUR/USD are driven more by their own macro fundamentals than dollar direction.",
+      "key_data_points": [
+        "Gold (XAU): 5.0/10",
+        "Silver (XAG): 5.0/10",
+        "EUR/USD: 5.2/10"
+      ],
+      "breakdown_items": [],
+      "news_headlines": []
+    },
+    {
+      "asset": "CFTC_CONFLUENCE",
+      "section": "Institutional Confluence",
+      "score": 5.0,
+      "direction": "Neutral",
+      "summary": "No assets currently show strong institutional-fundamental confluence (CFTC Long Ratio > 75% AND fundamental score > 6.0).",
+      "key_data_points": [],
+      "breakdown_items": [],
+      "news_headlines": []
     },
     {
       "asset": "EUR/USD",
       "section": "Pair Analysis",
-      "score": 3.12,
-      "direction": "Bearish",
-      "summary": "EUR/USD composite bias is 3.1/10 (Bearish). Base score 4.6 vs quote score 6.4. EUR is the base asset and USD is the quote asset. Weak USD is bullish for this pair; strong USD is bearish.",
+      "score": 5.83,
+      "direction": "Neutral",
+      "summary": "EUR/USD composite bias is 5.8/10 (Neutral). Base score 5.2 vs quote score 4.6. EUR is the base asset and USD is the quote asset. Weak USD is bullish for this pair; strong USD is bearish.",
       "key_data_points": [
-        "Base (EUR) score: 4.6",
-        "Quote (USD) score: 6.4",
-        "Combined bias: 3.1/10"
+        "Base (EUR) score: 5.2",
+        "Quote (USD) score: 4.6",
+        "Combined bias: 5.8/10"
       ],
       "breakdown_items": [],
       "news_headlines": []
@@ -72,27 +60,13 @@
     {
       "asset": "GBP/USD",
       "section": "Pair Analysis",
-      "score": 3.12,
-      "direction": "Bearish",
-      "summary": "GBP/USD composite bias is 3.1/10 (Bearish). Base score 4.6 vs quote score 6.4. GBP is the base asset and USD is the quote asset. Weak USD is bullish for this pair; strong USD is bearish.",
+      "score": 5.21,
+      "direction": "Neutral",
+      "summary": "GBP/USD composite bias is 5.2/10 (Neutral). Base score 5.8 vs quote score 4.6. GBP is the base asset and USD is the quote asset. Weak USD is bullish for this pair; strong USD is bearish.",
       "key_data_points": [
-        "Base (GBP) score: 4.6",
-        "Quote (USD) score: 6.4",
-        "Combined bias: 3.1/10"
-      ],
-      "breakdown_items": [],
-      "news_headlines": []
-    },
-    {
-      "asset": "AUD/USD",
-      "section": "Pair Analysis",
-      "score": 3.12,
-      "direction": "Bearish",
-      "summary": "AUD/USD composite bias is 3.1/10 (Bearish). Base score 4.6 vs quote score 6.4. AUD is the base asset and USD is the quote asset. Weak USD is bullish for this pair; strong USD is bearish.",
-      "key_data_points": [
-        "Base (AUD) score: 4.6",
-        "Quote (USD) score: 6.4",
-        "Combined bias: 3.1/10"
+        "Base (GBP) score: 5.8",
+        "Quote (USD) score: 4.6",
+        "Combined bias: 5.2/10"
       ],
       "breakdown_items": [],
       "news_headlines": []
@@ -100,13 +74,13 @@
     {
       "asset": "NZD/USD",
       "section": "Pair Analysis",
-      "score": 3.12,
-      "direction": "Bearish",
-      "summary": "NZD/USD composite bias is 3.1/10 (Bearish). Base score 4.6 vs quote score 6.4. NZD is the base asset and USD is the quote asset. Weak USD is bullish for this pair; strong USD is bearish.",
+      "score": 5.5,
+      "direction": "Neutral",
+      "summary": "NZD/USD composite bias is 5.5/10 (Neutral). Base score 5.5 vs quote score 4.6. NZD is the base asset and USD is the quote asset. Weak USD is bullish for this pair; strong USD is bearish.",
       "key_data_points": [
-        "Base (NZD) score: 4.6",
-        "Quote (USD) score: 6.4",
-        "Combined bias: 3.1/10"
+        "Base (NZD) score: 5.5",
+        "Quote (USD) score: 4.6",
+        "Combined bias: 5.5/10"
       ],
       "breakdown_items": [],
       "news_headlines": []
@@ -114,13 +88,13 @@
     {
       "asset": "USD/JPY",
       "section": "Pair Analysis",
-      "score": 5.0,
+      "score": 4.57,
       "direction": "Neutral",
-      "summary": "USD/JPY composite bias is 5.0/10 (Neutral). Base score 6.4 vs quote score 6.4. USD is the base asset and JPY is the quote asset. This pair has a DIRECT relationship with USD strength.",
+      "summary": "USD/JPY composite bias is 4.6/10 (Neutral). Base score 4.6 vs quote score 4.2. USD is the base asset and JPY is the quote asset. This pair has a DIRECT relationship with USD strength.",
       "key_data_points": [
-        "Base (USD) score: 6.4",
-        "Quote (JPY) score: 6.4",
-        "Combined bias: 5.0/10"
+        "Base (USD) score: 4.6",
+        "Quote (JPY) score: 4.2",
+        "Combined bias: 4.6/10"
       ],
       "breakdown_items": [],
       "news_headlines": []
@@ -128,13 +102,13 @@
     {
       "asset": "USD/CAD",
       "section": "Pair Analysis",
-      "score": 5.0,
+      "score": 4.57,
       "direction": "Neutral",
-      "summary": "USD/CAD composite bias is 5.0/10 (Neutral). Base score 6.4 vs quote score 6.4. USD is the base asset and CAD is the quote asset. This pair has a DIRECT relationship with USD strength.",
+      "summary": "USD/CAD composite bias is 4.6/10 (Neutral). Base score 4.6 vs quote score 5.3. USD is the base asset and CAD is the quote asset. This pair has a DIRECT relationship with USD strength.",
       "key_data_points": [
-        "Base (USD) score: 6.4",
-        "Quote (CAD) score: 6.4",
-        "Combined bias: 5.0/10"
+        "Base (USD) score: 4.6",
+        "Quote (CAD) score: 5.3",
+        "Combined bias: 4.6/10"
       ],
       "breakdown_items": [],
       "news_headlines": []
@@ -142,13 +116,13 @@
     {
       "asset": "USD/CHF",
       "section": "Pair Analysis",
-      "score": 5.0,
+      "score": 4.57,
       "direction": "Neutral",
-      "summary": "USD/CHF composite bias is 5.0/10 (Neutral). Base score 6.4 vs quote score 6.4. USD vs CHF relative fundamental strength.",
+      "summary": "USD/CHF composite bias is 4.6/10 (Neutral). Base score 4.6 vs quote score 5.0. USD vs CHF relative fundamental strength.",
       "key_data_points": [
-        "Base (USD) score: 6.4",
-        "Quote (CHF) score: 6.4",
-        "Combined bias: 5.0/10"
+        "Base (USD) score: 4.6",
+        "Quote (CHF) score: 5.0",
+        "Combined bias: 4.6/10"
       ],
       "breakdown_items": [],
       "news_headlines": []
@@ -156,13 +130,13 @@
     {
       "asset": "XAU/USD",
       "section": "Pair Analysis",
-      "score": 3.12,
-      "direction": "Bearish",
-      "summary": "XAU/USD composite bias is 3.1/10 (Bearish). Base score 4.6 vs quote score 6.4. XAU is the base asset and USD is the quote asset. Weak USD is bullish for this pair; strong USD is bearish.",
+      "score": 6.0,
+      "direction": "Bullish",
+      "summary": "XAU/USD composite bias is 6.0/10 (Bullish). Base score 5.0 vs quote score 4.6. XAU is the base asset and USD is the quote asset. Weak USD is bullish for this pair; strong USD is bearish.",
       "key_data_points": [
-        "Base (XAU) score: 4.6",
-        "Quote (USD) score: 6.4",
-        "Combined bias: 3.1/10"
+        "Base (XAU) score: 5.0",
+        "Quote (USD) score: 4.6",
+        "Combined bias: 6.0/10"
       ],
       "breakdown_items": [],
       "news_headlines": []
@@ -170,13 +144,13 @@
     {
       "asset": "XAG/USD",
       "section": "Pair Analysis",
-      "score": 3.12,
-      "direction": "Bearish",
-      "summary": "XAG/USD composite bias is 3.1/10 (Bearish). Base score 4.6 vs quote score 6.4. XAG is the base asset and USD is the quote asset. Weak USD is bullish for this pair; strong USD is bearish.",
+      "score": 6.0,
+      "direction": "Bullish",
+      "summary": "XAG/USD composite bias is 6.0/10 (Bullish). Base score 5.0 vs quote score 4.6. XAG is the base asset and USD is the quote asset. Weak USD is bullish for this pair; strong USD is bearish.",
       "key_data_points": [
-        "Base (XAG) score: 4.6",
-        "Quote (USD) score: 6.4",
-        "Combined bias: 3.1/10"
+        "Base (XAG) score: 5.0",
+        "Quote (USD) score: 4.6",
+        "Combined bias: 6.0/10"
       ],
       "breakdown_items": [],
       "news_headlines": []
@@ -184,13 +158,13 @@
     {
       "asset": "BTC/USD",
       "section": "Pair Analysis",
-      "score": 3.12,
-      "direction": "Bearish",
-      "summary": "BTC/USD composite bias is 3.1/10 (Bearish). Base score 4.6 vs quote score 6.4. BTC is the base asset and USD is the quote asset. Weak USD is bullish for this pair; strong USD is bearish.",
+      "score": 6.0,
+      "direction": "Bullish",
+      "summary": "BTC/USD composite bias is 6.0/10 (Bullish). Base score 5.0 vs quote score 4.6. BTC is the base asset and USD is the quote asset. Weak USD is bullish for this pair; strong USD is bearish.",
       "key_data_points": [
-        "Base (BTC) score: 4.6",
-        "Quote (USD) score: 6.4",
-        "Combined bias: 3.1/10"
+        "Base (BTC) score: 5.0",
+        "Quote (USD) score: 4.6",
+        "Combined bias: 6.0/10"
       ],
       "breakdown_items": [],
       "news_headlines": []
@@ -198,13 +172,153 @@
     {
       "asset": "ETH/USD",
       "section": "Pair Analysis",
-      "score": 5.18,
-      "direction": "Neutral",
-      "summary": "ETH/USD composite bias is 5.2/10 (Neutral). Base score 6.6 vs quote score 6.4. ETH vs USD relative fundamental strength.",
+      "score": 6.0,
+      "direction": "Bullish",
+      "summary": "ETH/USD composite bias is 6.0/10 (Bullish). Base score 5.0 vs quote score 4.6. ETH vs USD relative fundamental strength.",
       "key_data_points": [
-        "Base (ETH) score: 6.6",
-        "Quote (USD) score: 6.4",
-        "Combined bias: 5.2/10"
+        "Base (ETH) score: 5.0",
+        "Quote (USD) score: 4.6",
+        "Combined bias: 6.0/10"
+      ],
+      "breakdown_items": [],
+      "news_headlines": []
+    },
+    {
+      "asset": "LTC/USD",
+      "section": "Pair Analysis",
+      "score": 6.0,
+      "direction": "Bullish",
+      "summary": "LTC/USD composite bias is 6.0/10 (Bullish). Base score 5.0 vs quote score 4.6. LTC vs USD relative fundamental strength.",
+      "key_data_points": [
+        "Base (LTC) score: 5.0",
+        "Quote (USD) score: 4.6",
+        "Combined bias: 6.0/10"
+      ],
+      "breakdown_items": [],
+      "news_headlines": []
+    },
+    {
+      "asset": "SOL/USD",
+      "section": "Pair Analysis",
+      "score": 6.0,
+      "direction": "Bullish",
+      "summary": "SOL/USD composite bias is 6.0/10 (Bullish). Base score 5.0 vs quote score 4.6. SOL vs USD relative fundamental strength.",
+      "key_data_points": [
+        "Base (SOL) score: 5.0",
+        "Quote (USD) score: 4.6",
+        "Combined bias: 6.0/10"
+      ],
+      "breakdown_items": [],
+      "news_headlines": []
+    },
+    {
+      "asset": "XRP/USD",
+      "section": "Pair Analysis",
+      "score": 6.0,
+      "direction": "Bullish",
+      "summary": "XRP/USD composite bias is 6.0/10 (Bullish). Base score 5.0 vs quote score 4.6. XRP vs USD relative fundamental strength.",
+      "key_data_points": [
+        "Base (XRP) score: 5.0",
+        "Quote (USD) score: 4.6",
+        "Combined bias: 6.0/10"
+      ],
+      "breakdown_items": [],
+      "news_headlines": []
+    },
+    {
+      "asset": "AVAX/USD",
+      "section": "Pair Analysis",
+      "score": 6.0,
+      "direction": "Bullish",
+      "summary": "AVAX/USD composite bias is 6.0/10 (Bullish). Base score 5.0 vs quote score 4.6. AVAX vs USD relative fundamental strength.",
+      "key_data_points": [
+        "Base (AVAX) score: 5.0",
+        "Quote (USD) score: 4.6",
+        "Combined bias: 6.0/10"
+      ],
+      "breakdown_items": [],
+      "news_headlines": []
+    },
+    {
+      "asset": "SUI/USD",
+      "section": "Pair Analysis",
+      "score": 6.0,
+      "direction": "Bullish",
+      "summary": "SUI/USD composite bias is 6.0/10 (Bullish). Base score 5.0 vs quote score 4.6. SUI vs USD relative fundamental strength.",
+      "key_data_points": [
+        "Base (SUI) score: 5.0",
+        "Quote (USD) score: 4.6",
+        "Combined bias: 6.0/10"
+      ],
+      "breakdown_items": [],
+      "news_headlines": []
+    },
+    {
+      "asset": "XLM/USD",
+      "section": "Pair Analysis",
+      "score": 6.0,
+      "direction": "Bullish",
+      "summary": "XLM/USD composite bias is 6.0/10 (Bullish). Base score 5.0 vs quote score 4.6. XLM vs USD relative fundamental strength.",
+      "key_data_points": [
+        "Base (XLM) score: 5.0",
+        "Quote (USD) score: 4.6",
+        "Combined bias: 6.0/10"
+      ],
+      "breakdown_items": [],
+      "news_headlines": []
+    },
+    {
+      "asset": "COPPER/USD",
+      "section": "Pair Analysis",
+      "score": 6.0,
+      "direction": "Bullish",
+      "summary": "COPPER/USD composite bias is 6.0/10 (Bullish). Base score 5.0 vs quote score 4.6. COPPER vs USD relative fundamental strength.",
+      "key_data_points": [
+        "Base (COPPER) score: 5.0",
+        "Quote (USD) score: 4.6",
+        "Combined bias: 6.0/10"
+      ],
+      "breakdown_items": [],
+      "news_headlines": []
+    },
+    {
+      "asset": "PALLADIUM/USD",
+      "section": "Pair Analysis",
+      "score": 6.0,
+      "direction": "Bullish",
+      "summary": "PALLADIUM/USD composite bias is 6.0/10 (Bullish). Base score 5.0 vs quote score 4.6. PALLADIUM vs USD relative fundamental strength.",
+      "key_data_points": [
+        "Base (PALLADIUM) score: 5.0",
+        "Quote (USD) score: 4.6",
+        "Combined bias: 6.0/10"
+      ],
+      "breakdown_items": [],
+      "news_headlines": []
+    },
+    {
+      "asset": "PLATINUM/USD",
+      "section": "Pair Analysis",
+      "score": 6.0,
+      "direction": "Bullish",
+      "summary": "PLATINUM/USD composite bias is 6.0/10 (Bullish). Base score 5.0 vs quote score 4.6. PLATINUM vs USD relative fundamental strength.",
+      "key_data_points": [
+        "Base (PLATINUM) score: 5.0",
+        "Quote (USD) score: 4.6",
+        "Combined bias: 6.0/10"
+      ],
+      "breakdown_items": [],
+      "news_headlines": []
+    },
+    {
+      "asset": "BRENT/USD",
+      "section": "Pair Analysis",
+      "score": 6.0,
+      "direction": "Bullish",
+      "summary": "BRENT/USD composite bias is 6.0/10 (Bullish). Base score 5.0 vs quote score 4.6. BRENT vs USD relative fundamental strength.",
+      "key_data_points": [
+        "Base (BRENT) score: 5.0",
+        "Quote (USD) score: 4.6",
+        "Combined bias: 6.0/10"
       ],
       "breakdown_items": [],
       "news_headlines": []
@@ -212,16 +326,17 @@
     {
       "asset": "MARKET_BREADTH",
       "section": "Market Breadth",
-      "score": 2.48,
-      "direction": "Neutral",
-      "summary": "Across 306 tracked pairs, 76 are bullish (25%) and 76 are bearish (25%). USD composite: 6.4/10.",
+      "score": 3.12,
+      "direction": "Bullish",
+      "summary": "Across 80 tracked pairs, 25 are bullish (31%) and 3 are bearish (4%). USD composite: 4.6/10.",
       "key_data_points": [
-        "Bullish signals: 76",
-        "Bearish signals: 76",
-        "Total pairs: 306"
+        "Bullish signals: 25",
+        "Bearish signals: 3",
+        "Total pairs: 80"
       ],
       "breakdown_items": [],
       "news_headlines": []
     }
-  ]
+  ],
+  "token_usage": {}
 }
