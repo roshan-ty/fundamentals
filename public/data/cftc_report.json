@@ -1,173 +1,330 @@
 {
-  "last_updated": "2026-08-25T06:42:13.527071+00:00",
+  "updated_at": "2026-08-25T09:27:40.620947+00:00",
+  "data": {
+    "EURUSD": {
+      "asset": "EURUSD",
+      "category": "FOREX",
+      "long_contracts": 6450.0,
+      "short_contracts": 3794.0,
+      "long_percentage": 62.96,
+      "short_percentage": 37.04,
+      "weekly_change_pct": -3.07,
+      "sentiment": "Moderately Bullish",
+      "cftc_score": 6.78
+    },
+    "GBPUSD": {
+      "asset": "GBPUSD",
+      "category": "FOREX",
+      "long_contracts": 8483.0,
+      "short_contracts": 8695.0,
+      "long_percentage": 49.38,
+      "short_percentage": 50.62,
+      "weekly_change_pct": -96.3,
+      "sentiment": "Mildly Bearish",
+      "cftc_score": 4.45
+    },
+    "USDJPY": {
+      "asset": "USDJPY",
+      "category": "FOREX",
+      "long_contracts": 128932.0,
+      "short_contracts": 181825.0,
+      "long_percentage": 41.49,
+      "short_percentage": 58.51,
+      "weekly_change_pct": -25.68,
+      "sentiment": "Mildly Bearish",
+      "cftc_score": 3.73
+    },
+    "USDCAD": {
+      "asset": "USDCAD",
+      "category": "FOREX",
+      "long_contracts": 22985.0,
+      "short_contracts": 181151.0,
+      "long_percentage": 11.26,
+      "short_percentage": 88.74,
+      "weekly_change_pct": 8.77,
+      "sentiment": "Strongly Bearish",
+      "cftc_score": 1.45
+    },
+    "USDCHF": {
+      "asset": "USDCHF",
+      "category": "FOREX",
+      "long_contracts": 14041.0,
+      "short_contracts": 41319.0,
+      "long_percentage": 25.36,
+      "short_percentage": 74.64,
+      "weekly_change_pct": 15.97,
+      "sentiment": "Moderately Bearish",
+      "cftc_score": 2.13
+    },
+    "AUDUSD": {
+      "asset": "AUDUSD",
+      "category": "OTHER",
+      "long_contracts": 88204.0,
+      "short_contracts": 132363.0,
+      "long_percentage": 39.99,
+      "short_percentage": 60.01,
+      "weekly_change_pct": -12.58,
+      "sentiment": "Moderately Bearish",
+      "cftc_score": 3.5
+    },
+    "USDMXN": {
+      "asset": "USDMXN",
+      "category": "FOREX",
+      "long_contracts": 160766.0,
+      "short_contracts": 81314.0,
+      "long_percentage": 66.41,
+      "short_percentage": 33.59,
+      "weekly_change_pct": -5.04,
+      "sentiment": "Moderately Bullish",
+      "cftc_score": 7.1
+    },
+    "NZDUSD": {
+      "asset": "NZDUSD",
+      "category": "FOREX",
+      "long_contracts": 6344.0,
+      "short_contracts": 38964.0,
+      "long_percentage": 14.0,
+      "short_percentage": 86.0,
+      "weekly_change_pct": 17.6,
+      "sentiment": "Strongly Bearish",
+      "cftc_score": 1.56
+    },
+    "GOLD": {
+      "asset": "GOLD",
+      "category": "COMMODITIES",
+      "long_contracts": 739.0,
+      "short_contracts": 1138.0,
+      "long_percentage": 39.37,
+      "short_percentage": 60.63,
+      "weekly_change_pct": 21.61,
+      "sentiment": "Moderately Bearish",
+      "cftc_score": 3.44
+    },
+    "SILVER": {
+      "asset": "SILVER",
+      "category": "COMMODITIES",
+      "long_contracts": 38353.0,
+      "short_contracts": 14728.0,
+      "long_percentage": 72.25,
+      "short_percentage": 27.75,
+      "weekly_change_pct": -0.09,
+      "sentiment": "Moderately Bullish",
+      "cftc_score": 7.65
+    },
+    "OIL": {
+      "asset": "OIL",
+      "category": "COMMODITIES",
+      "long_contracts": 4875.0,
+      "short_contracts": 9425.0,
+      "long_percentage": 34.09,
+      "short_percentage": 65.91,
+      "weekly_change_pct": -1.79,
+      "sentiment": "Moderately Bearish",
+      "cftc_score": 2.95
+    },
+    "COPPER": {
+      "asset": "COPPER",
+      "category": "COMMODITIES",
+      "long_contracts": 4207.0,
+      "short_contracts": 8308.0,
+      "long_percentage": 33.62,
+      "short_percentage": 66.38,
+      "weekly_change_pct": 53.77,
+      "sentiment": "Moderately Bearish",
+      "cftc_score": 2.9
+    },
+    "PALLADIUM": {
+      "asset": "PALLADIUM",
+      "category": "COMMODITIES",
+      "long_contracts": 6016.0,
+      "short_contracts": 10414.0,
+      "long_percentage": 36.62,
+      "short_percentage": 63.38,
+      "weekly_change_pct": -12.31,
+      "sentiment": "Moderately Bearish",
+      "cftc_score": 3.18
+    },
+    "PLATINUM": {
+      "asset": "PLATINUM",
+      "category": "COMMODITIES",
+      "long_contracts": 23514.0,
+      "short_contracts": 10475.0,
+      "long_percentage": 69.18,
+      "short_percentage": 30.82,
+      "weekly_change_pct": -3.7,
+      "sentiment": "Moderately Bullish",
+      "cftc_score": 7.36
+    }
+  },
+  "last_updated": "2026-08-25T09:27:40.620957+00:00",
   "positions": {
     "EUR": {
       "report_date": "2026-08-18",
       "noncomm_long": 6450.0,
       "noncomm_short": 3794.0,
       "long_ratio": 62.96,
-      "cftc_score": 6.78,
-      "sentiment": "Moderately Bullish",
       "net_speculative": 2656.0,
       "weekly_change": -84.0,
       "weekly_change_pct": -3.07,
-      "percentile_52w": 72.57
+      "percentile_52w": 72.57,
+      "cftc_score": 6.78,
+      "sentiment": "Moderately Bullish"
     },
     "GBP": {
       "report_date": "2026-08-18",
       "noncomm_long": 8483.0,
       "noncomm_short": 8695.0,
       "long_ratio": 49.38,
-      "cftc_score": 4.45,
-      "sentiment": "Mildly Bearish",
       "net_speculative": -212.0,
       "weekly_change": -104.0,
       "weekly_change_pct": -96.3,
-      "percentile_52w": 96.36
+      "percentile_52w": 96.36,
+      "cftc_score": 4.45,
+      "sentiment": "Mildly Bearish"
     },
     "JPY": {
       "report_date": "2026-08-18",
       "noncomm_long": 128932.0,
       "noncomm_short": 181825.0,
       "long_ratio": 41.49,
-      "cftc_score": 3.73,
-      "sentiment": "Mildly Bearish",
       "net_speculative": -52893.0,
       "weekly_change": -10808.0,
       "weekly_change_pct": -25.68,
-      "percentile_52w": 62.66
+      "percentile_52w": 62.66,
+      "cftc_score": 3.73,
+      "sentiment": "Mildly Bearish"
     },
     "CAD": {
       "report_date": "2026-08-18",
       "noncomm_long": 22985.0,
       "noncomm_short": 181151.0,
       "long_ratio": 11.26,
-      "cftc_score": 1.45,
-      "sentiment": "Strongly Bearish / Extreme Short",
       "net_speculative": -158166.0,
       "weekly_change": 15196.0,
       "weekly_change_pct": 8.77,
-      "percentile_52w": 9.72
+      "percentile_52w": 9.72,
+      "cftc_score": 1.45,
+      "sentiment": "Strongly Bearish"
     },
     "CHF": {
       "report_date": "2026-08-18",
       "noncomm_long": 14041.0,
       "noncomm_short": 41319.0,
       "long_ratio": 25.36,
-      "cftc_score": 2.13,
-      "sentiment": "Moderately Bearish",
       "net_speculative": -27278.0,
       "weekly_change": 5184.0,
       "weekly_change_pct": 15.97,
-      "percentile_52w": 88.64
+      "percentile_52w": 88.64,
+      "cftc_score": 2.13,
+      "sentiment": "Moderately Bearish"
     },
     "AUD": {
       "report_date": "2026-08-18",
       "noncomm_long": 88204.0,
       "noncomm_short": 132363.0,
       "long_ratio": 39.99,
-      "cftc_score": 3.5,
-      "sentiment": "Moderately Bearish",
       "net_speculative": -44159.0,
       "weekly_change": -4936.0,
       "weekly_change_pct": -12.58,
-      "percentile_52w": 0.0
+      "percentile_52w": 0.0,
+      "cftc_score": 3.5,
+      "sentiment": "Moderately Bearish"
     },
     "MXN": {
       "report_date": "2026-08-18",
       "noncomm_long": 160766.0,
       "noncomm_short": 81314.0,
       "long_ratio": 66.41,
-      "cftc_score": 7.1,
-      "sentiment": "Moderately Bullish",
       "net_speculative": 79452.0,
       "weekly_change": -4221.0,
       "weekly_change_pct": -5.04,
-      "percentile_52w": 45.38
+      "percentile_52w": 45.38,
+      "cftc_score": 7.1,
+      "sentiment": "Moderately Bullish"
     },
     "NZD": {
       "report_date": "2026-08-18",
       "noncomm_long": 6344.0,
       "noncomm_short": 38964.0,
       "long_ratio": 14.0,
-      "cftc_score": 1.56,
-      "sentiment": "Strongly Bearish / Extreme Short",
       "net_speculative": -32620.0,
       "weekly_change": 6966.0,
       "weekly_change_pct": 17.6,
-      "percentile_52w": 77.3
+      "percentile_52w": 77.3,
+      "cftc_score": 1.56,
+      "sentiment": "Strongly Bearish"
     },
     "XAU": {
       "report_date": "2026-07-28",
       "noncomm_long": 739.0,
       "noncomm_short": 1138.0,
       "long_ratio": 39.37,
-      "cftc_score": 3.44,
-      "sentiment": "Moderately Bearish",
       "net_speculative": -399.0,
       "weekly_change": 110.0,
       "weekly_change_pct": 21.61,
-      "percentile_52w": 10.29
+      "percentile_52w": 10.29,
+      "cftc_score": 3.44,
+      "sentiment": "Moderately Bearish"
     },
     "XAG": {
       "report_date": "2026-08-18",
       "noncomm_long": 38353.0,
       "noncomm_short": 14728.0,
       "long_ratio": 72.25,
-      "cftc_score": 7.65,
-      "sentiment": "Moderately Bullish",
       "net_speculative": 23625.0,
       "weekly_change": -21.0,
       "weekly_change_pct": -0.09,
-      "percentile_52w": 82.21
+      "percentile_52w": 82.21,
+      "cftc_score": 7.65,
+      "sentiment": "Moderately Bullish"
     },
     "WTI": {
       "report_date": "2026-07-28",
       "noncomm_long": 4875.0,
       "noncomm_short": 9425.0,
       "long_ratio": 34.09,
-      "cftc_score": 2.95,
-      "sentiment": "Moderately Bearish",
       "net_speculative": -4550.0,
       "weekly_change": -80.0,
       "weekly_change_pct": -1.79,
-      "percentile_52w": 0.29
+      "percentile_52w": 0.29,
+      "cftc_score": 2.95,
+      "sentiment": "Moderately Bearish"
     },
     "COPPER": {
       "report_date": "2026-05-12",
       "noncomm_long": 4207.0,
       "noncomm_short": 8308.0,
       "long_ratio": 33.62,
-      "cftc_score": 2.9,
-      "sentiment": "Moderately Bearish",
       "net_speculative": -4101.0,
       "weekly_change": 4769.0,
       "weekly_change_pct": 53.77,
-      "percentile_52w": 9.32
+      "percentile_52w": 9.32,
+      "cftc_score": 2.9,
+      "sentiment": "Moderately Bearish"
     },
     "PALLADIUM": {
       "report_date": "2026-08-18",
       "noncomm_long": 6016.0,
       "noncomm_short": 10414.0,
       "long_ratio": 36.62,
-      "cftc_score": 3.18,
-      "sentiment": "Moderately Bearish",
       "net_speculative": -4398.0,
       "weekly_change": -482.0,
       "weekly_change_pct": -12.31,
-      "percentile_52w": 9.71
+      "percentile_52w": 9.71,
+      "cftc_score": 3.18,
+      "sentiment": "Moderately Bearish"
     },
     "PLATINUM": {
       "report_date": "2026-08-18",
       "noncomm_long": 23514.0,
       "noncomm_short": 10475.0,
       "long_ratio": 69.18,
-      "cftc_score": 7.36,
-      "sentiment": "Moderately Bullish",
       "net_speculative": 13039.0,
       "weekly_change": -501.0,
       "weekly_change_pct": -3.7,
-      "percentile_52w": 15.47
+      "percentile_52w": 15.47,
+      "cftc_score": 7.36,
+      "sentiment": "Moderately Bullish"
     }
   },
   "total_markets": 14
