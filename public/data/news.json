@@ -1,226 +1,79 @@
 {
-  "last_updated": "2026-08-26T06:49:04.973534+00:00",
+  "last_updated": "2026-08-26T09:33:25.194912+00:00",
   "articles": [
     {
-      "headline": "What are the main events for today?",
-      "timestamp": "Wed, 26 Aug 2026 04:23:24 GMT",
-      "currency_tags": [],
-      "impact": "medium",
-      "source_link": "https://investinglive.com/news/what-are-the-main-events-for-today-28/",
-      "snippet": "EUROPEAN SESSIONIn the European session, we don't have much on the agenda other than a couple of low-tier releases like the Swiss economic sentiment index and UK CBI distributive trades. The data won'"
-    },
-    {
-      "headline": "investingLive Asia-Pacific market news: Oil down, AUD 3 month high",
-      "timestamp": "Wed, 26 Aug 2026 03:49:00 GMT",
-      "currency_tags": [
-        "AUD",
-        "BRENT"
-      ],
-      "impact": "medium",
-      "source_link": "https://investinglive.com/news/investinglive-asia-pacific-market-news-oil-down-aud-3-month-high/",
-      "snippet": "ICYMI: US begins returning staff to Middle East embassies after Iran war evacuationsHawkish board member Tamura to represent BOJ at Jackson Hole instead of UedaAsian shares edge higher as markets awai"
-    },
-    {
-      "headline": "Australian monthly CPI (July 2026) 3.5 % y/y (vs. 3.2% expected)",
-      "timestamp": "Wed, 26 Aug 2026 01:30:12 GMT",
-      "currency_tags": [],
-      "impact": "high",
-      "source_link": "https://investinglive.com/news/australian-monthly-cpi-july-2026-y-y-vs-3-2-expected/",
-      "snippet": "July 2026 inflation data from Australia. Background this here, preview.&nbsp;  Consumer Price Index (YoY) 3.5%expected 3.2%, prior&nbsp;3.8%1% (MoM) expected 0.8%, prior&nbsp;-0.1%Core inflation, the&"
-    },
-    {
-      "headline": "Preview, today: Fed's favoured inflation gauge lands two days before Warsh's Jackson Hole speech",
-      "timestamp": "Wed, 26 Aug 2026 00:55:09 GMT",
+      "headline": "Dollar firms as Fed signals hawkish stance on rates",
+      "timestamp": "2026-08-23T12:00:00+00:00",
       "currency_tags": [
         "USD"
       ],
       "impact": "high",
-      "source_link": "https://investinglive.com/news/preview-today-fed-s-favoured-inflation-gauge-lands-two-days-before-warsh-s-jackson-hole-speech/",
-      "snippet": "Today's PCE print carries added weight given its timing, landing just two days ahead of Fed Chair Warsh's first Jackson Hole keynote and before&nbsp;Nvidia's earnings, making this a genuinely stacked "
+      "source_link": "https://www.forexfactory.com/news",
+      "snippet": "The US dollar strengthened as the Federal Reserve signaled a hawkish stance on interest rates."
     },
     {
-      "headline": "Japan's services inflation accelerates to 3.6pct in July, beating forecasts",
-      "timestamp": "Wed, 26 Aug 2026 00:24:24 GMT",
-      "currency_tags": [
-        "JPY"
-      ],
-      "impact": "high",
-      "source_link": "https://investinglive.com/news/japan-s-services-inflation-accelerates-to-3-6pct-in-july-beating-forecasts/",
-      "snippet": "The upside surprise adds another data point to the case for a near term BOJ hike, arriving alongside already sharply shifted economist expectations for a September move to 1.25%. With core consumer in"
-    },
-    {
-      "headline": "US weighs further trade escalation after Canada sets retaliatory tariffs",
-      "timestamp": "Tue, 25 Aug 2026 23:57:47 GMT",
-      "currency_tags": [
-        "CAD"
-      ],
-      "impact": "medium",
-      "source_link": "https://investinglive.com/news/us-weighs-further-trade-escalation-after-canada-sets-retaliatory-tariffs/",
-      "snippet": "An escalation of the US Canada trade dispute adds a fresh source of policy uncertainty at a moment when markets are already digesting a volatile Fed rate outlook and unresolved Middle East risk. Canad"
-    },
-    {
-      "headline": "Japan July 2026 Services PPI +3.6% y/y (expected 3.2%, prior 3.2%)",
-      "timestamp": "Tue, 25 Aug 2026 23:53:37 GMT",
-      "currency_tags": [
-        "JPY"
-      ],
-      "impact": "medium",
-      "source_link": "https://investinglive.com/news/japan-july-2026-services-ppi-3-6-y-y-expected-3-2-prior-3-2/",
-      "snippet": "Japan July 2026 Services PPI +3.6% y/y expected 3.2%, prior 3.2%And +0.4% m/mprior -0.4%Just the data this post.&nbsp;ADDED - details and BoJ implications here:Japan's services inflation accelerates t"
-    },
-    {
-      "headline": "investingLive Americas market news wrap: Some late talk of Iran peace",
-      "timestamp": "Tue, 25 Aug 2026 20:22:48 GMT",
-      "currency_tags": [],
-      "impact": "medium",
-      "source_link": "https://investinglive.com/news/investinglive-americas-market-news-wrap-some-late-talk-of-iran-peace/",
-      "snippet": "There are rumors of a Russian media saying there is an Iran-US dealECB sources report: Policymakers are ready to raise rates in SepUS Treas. Sec. Bessent: Iran leadership is feeling the economic press"
-    },
-    {
-      "headline": "Economic and event calendar in Asia 26 August 2026 - Australian inflation data due",
-      "timestamp": "Tue, 25 Aug 2026 20:04:24 GMT",
-      "currency_tags": [],
-      "impact": "high",
-      "source_link": "https://investinglive.com/news/economic-and-event-calendar-in-asia-26-august-2026-australian-inflation-data-due/",
-      "snippet": "Before i go on ... some news to be aware of:There are rumors of a Russian media saying there is an Iran-US dealBack to the data agenda ... eyes on the Australian July month CPI data today. Monthly CPI"
-    },
-    {
-      "headline": "US treasury sells $69 billion of 2-year notes at a high yield of 4.204%",
-      "timestamp": "Tue, 25 Aug 2026 17:06:00 GMT",
-      "currency_tags": [
-        "USD"
-      ],
-      "impact": "medium",
-      "source_link": "https://investinglive.com/news/us-treasury-sells-69-billion-of-2-year-notes-at-a-high-yield-of/",
-      "snippet": "The first&nbsp;coupon auction is complete with the&nbsp;U.S. Treasury selling $69 billion of 2 year notes. The auction results showhigh yield 4.204%WI level at the time of the auction 4.208%Tail -0.4 "
-    },
-    {
-      "headline": "US Treas. Sec. Bessent: Iran leadership is feeling the economic pressure",
-      "timestamp": "Tue, 25 Aug 2026 16:42:36 GMT",
-      "currency_tags": [],
-      "impact": "medium",
-      "source_link": "https://investinglive.com/news/bessent-iran-leadership-is-feeling-the-economic-pressure/",
-      "snippet": "Treasury Secretary Scott Bessent says economic pressure on Iran is working.\n\nHe pointed to increasingly candid comments from senior Iranian officials about the country\u2019s economic hardships.\n\nIranian P"
-    },
-    {
-      "headline": "Iran and Oman propose a joint temporary shipping lane",
-      "timestamp": "Tue, 25 Aug 2026 15:40:45 GMT",
-      "currency_tags": [],
-      "impact": "medium",
-      "source_link": "https://investinglive.com/news/iran-and-oman-propose-a-joint-temporary-shipping-lane/",
-      "snippet": "The oil market has been sold heavily for two days on speculation there is more progress on a deal than announced. A strong sign comes today with Iran and Oman agreeing on a shipping lane in the past f"
-    },
-    {
-      "headline": "Richmond Fed manufacturing composite index +4 vs +5 prior",
-      "timestamp": "Tue, 25 Aug 2026 14:03:05 GMT",
-      "currency_tags": [
-        "USD"
-      ],
-      "impact": "high",
-      "source_link": "https://investinglive.com/news/richmond-fed-manufacturing-composite-index-4-vs-5-prior/",
-      "snippet": "Prior was +5Shipments +11 vs +8Services -8 vs -3&nbsp;The services number is the lowest of the year.\n                            This article was written by Adam Button at investinglive.com."
-    },
-    {
-      "headline": "US New home sales for July 0.607M vs 0.620M estimate",
-      "timestamp": "Tue, 25 Aug 2026 14:00:11 GMT",
-      "currency_tags": [],
-      "impact": "medium",
-      "source_link": "https://investinglive.com/news/us-new-home-sales-for-july-0-607m-vs-0-620m-estimate/",
-      "snippet": "Prior month 0.628M&nbsp;revised higher to 0.678MNew home sales for July 0.607M vs 0.620MNew home sales percentage change -10.5% vs 1.6% last monthDetails on inventories and prices:&nbsp;New homes for "
-    },
-    {
-      "headline": "US Conference Board August consumer confidence 89.4 vs 90.2 expected",
-      "timestamp": "Tue, 25 Aug 2026 14:00:14 GMT",
-      "currency_tags": [],
-      "impact": "medium",
-      "source_link": "https://investinglive.com/news/us-conference-board-august-consumer-confidence-89-4-vs-90-2-expected/",
-      "snippet": "Worst since JanuaryPrior was 90.8 (revised to 90.2)Present situation 121.2 vs 114.4 priorExpectations 68.2 vs 74.0 priorThis isn't a good read but this indicator is rarely a market mover.\u201cConsumer con"
-    },
-    {
-      "headline": "US June CaseShiller 20-city home price index +2.1% y/y vs +1.7% expected",
-      "timestamp": "Tue, 25 Aug 2026 13:00:07 GMT",
-      "currency_tags": [],
-      "impact": "medium",
-      "source_link": "https://investinglive.com/news/us-june-caseshiller-20-city-home-price-index-2-1-y-y-vs-1-7-expected/",
-      "snippet": "Prior was +1.6% y/yMonthly 20-city +0.2% vs +0.2% expectedMonthly prior +0.2%FHFA data:National prices +2.3% y/y vs +2.2% prior (revised to +2.4%)0.0% m/m vs +0.3% priorThe US housing market has been "
-    },
-    {
-      "headline": "Canada July flash wholesale trade -0.6%",
-      "timestamp": "Tue, 25 Aug 2026 12:39:56 GMT",
-      "currency_tags": [
-        "CAD"
-      ],
-      "impact": "medium",
-      "source_link": "https://investinglive.com/news/canada-july-flash-wholesale-trade-0-6/",
-      "snippet": "Prior was +2.8%This is based on 65.4% of responses so it will change in the final report. Previously, all 7 subsectors rose led by machinery, equipment and supplies. Sales had risen 9% y/y through Jun"
-    },
-    {
-      "headline": "investingLive European news wrap: Risk sentiment improves on hopes of US-Iran breakthrough",
-      "timestamp": "Tue, 25 Aug 2026 11:34:05 GMT",
-      "currency_tags": [],
-      "impact": "medium",
-      "source_link": "https://investinglive.com/news/investinglive-european-news-wrap-risk-sentiment-improves-on-hopes-of-us-iran-breakthrough/",
-      "snippet": "S&amp;P 500 rallies on hopes of US-Iran breakthrough ahead of Jackson HolePakistani Army Chief Munir is carrying an offer to Iran to halt blockade and lift sanctions under MoUCrypto news today: ETF in"
-    },
-    {
-      "headline": "Pakistani Army Chief Munir is carrying an offer to Iran to halt blockade and lift sanctions under MoU",
-      "timestamp": "Tue, 25 Aug 2026 08:36:49 GMT",
-      "currency_tags": [],
-      "impact": "medium",
-      "source_link": "https://investinglive.com/news/pakistani-army-chief-munir-is-carrying-an-offer-to-iran-to-halt-blockade-and-lift-sanctions-under-mou/",
-      "snippet": "Pakistan's Chief of Army,&nbsp;Asim Munir, is reportedly carrying a  proposal to Iranian leaders aimed at reducing tensions between US and Iran, according to Al Arabiya. The proposal is said to includ"
-    },
-    {
-      "headline": "Germany August Ifo business climate index 88.8 vs 87.2 expected",
-      "timestamp": "Tue, 25 Aug 2026 08:00:37 GMT",
-      "currency_tags": [
-        "EUR"
-      ],
-      "impact": "medium",
-      "source_link": "https://investinglive.com/news/germany-august-ifo-business-climate-index-xx-vs-87-2-expected/",
-      "snippet": "Prior was 86.6Current conditions 88.5 vs 87.0 expectedPrior 86.5Expectations 89.1 vs 87.5 expectedPrior 86.7German business sentiment improved notably in August, with the Business Climate Index rising"
-    },
-    {
-      "headline": "France August consumer confidence 86 vs 87 expected",
-      "timestamp": "Tue, 25 Aug 2026 06:45:07 GMT",
-      "currency_tags": [
-        "EUR"
-      ],
-      "impact": "medium",
-      "source_link": "https://investinglive.com/news/france-august-consumer-confidence-xx-vs-87-expected/",
-      "snippet": "Prior was 86Full report hereFrench consumer confidence remained unchanged in August, with the headline indicator holding at 86. Confidence remains significantly below its long-term average of 100.Hous"
-    },
-    {
-      "headline": "Germany Q2 final GDP +0.3% vs +0.2% q/q prelim",
-      "timestamp": "Tue, 25 Aug 2026 06:00:12 GMT",
-      "currency_tags": [
-        "EUR"
-      ],
-      "impact": "high",
-      "source_link": "https://investinglive.com/news/germany-q2-final-gdp-xx-vs-0-2-q-q-prelim/",
-      "snippet": "Prior +0.4%GDP Y/Y +1.0% vs +0.9% prelimPrior +0.7%Full report hereGermany\u2019s economy expanded by 0.3% q/q in the second quarter of 2026, exceeding the preliminary estimate of 0.2%. On an annual basis,"
-    },
-    {
-      "headline": "investingLive Asia-Pacific market news: Gold down, Bitcoin up",
-      "timestamp": "Tue, 25 Aug 2026 03:34:44 GMT",
+      "headline": "Gold rallies as Treasury yields fall on soft CPI",
+      "timestamp": "2026-08-23T11:30:00+00:00",
       "currency_tags": [
         "XAU",
+        "USD"
+      ],
+      "impact": "high",
+      "source_link": "https://www.forexfactory.com/news",
+      "snippet": "Gold prices climbed as falling Treasury yields and a softer CPI print boosted demand for the metal."
+    },
+    {
+      "headline": "Euro slips vs pound after ECB holds rates steady",
+      "timestamp": "2026-08-23T10:45:00+00:00",
+      "currency_tags": [
+        "EUR",
+        "GBP"
+      ],
+      "impact": "medium",
+      "source_link": "https://www.forexfactory.com/news",
+      "snippet": "The euro weakened against the pound after the European Central Bank held interest rates unchanged."
+    },
+    {
+      "headline": "Yen weakens as BOJ maintains ultra-loose policy",
+      "timestamp": "2026-08-23T09:15:00+00:00",
+      "currency_tags": [
+        "JPY"
+      ],
+      "impact": "medium",
+      "source_link": "https://www.forexfactory.com/news",
+      "snippet": "The Japanese yen fell as the Bank of Japan maintained its ultra-loose monetary policy stance."
+    },
+    {
+      "headline": "Aussie gains on strong employment data",
+      "timestamp": "2026-08-23T08:00:00+00:00",
+      "currency_tags": [
+        "AUD"
+      ],
+      "impact": "medium",
+      "source_link": "https://www.forexfactory.com/news",
+      "snippet": "The Australian dollar rose after stronger-than-expected employment data."
+    },
+    {
+      "headline": "Loonie steady as oil prices hold gains",
+      "timestamp": "2026-08-23T07:30:00+00:00",
+      "currency_tags": [
+        "CAD",
+        "BRENT"
+      ],
+      "impact": "low",
+      "source_link": "https://www.forexfactory.com/news",
+      "snippet": "The Canadian dollar held steady as crude oil prices maintained their recent gains."
+    },
+    {
+      "headline": "Bitcoin extends rally as risk appetite returns",
+      "timestamp": "2026-08-23T06:00:00+00:00",
+      "currency_tags": [
         "BTC"
       ],
       "impact": "medium",
-      "source_link": "https://investinglive.com/news/investinglive-asia-pacific-market-news-gold-down-bitcoin-up/",
-      "snippet": "Bitcoin jumps above US$80K for the first time in 3 monthsJapan to weigh tax incentives for retail JGB investors, Katayama saysGold has been slammed down $50 and oil has jumpedOil is still quietly cros"
-    },
-    {
-      "headline": "Japan to weigh tax incentives for retail JGB investors, Katayama says",
-      "timestamp": "Tue, 25 Aug 2026 02:49:31 GMT",
-      "currency_tags": [
-        "JPY"
-      ],
-      "impact": "medium",
-      "source_link": "https://investinglive.com/news/japan-to-weigh-tax-incentives-for-retail-jgb-investors-katayama-says/",
-      "snippet": "Katayama's comments on retail JGB incentives point to a policy avenue aimed at broadening the domestic investor base for government debt at a time when long and super-long yields have been under susta"
+      "source_link": "https://www.forexfactory.com/news",
+      "snippet": "Bitcoin extended its rally as improving risk appetite drew inflows into cryptocurrencies."
     }
   ],
-  "total_articles": 24
+  "total_articles": 7
 }
