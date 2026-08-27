@@ -1,656 +1,285 @@
 {
-  "updated_at": "2026-08-27T13:26:20.688164+00:00",
-  "currencies": {
-    "USD": {
-      "score": 4.57,
-      "bias": "Neutral"
-    },
-    "EUR": {
-      "score": 5.17,
-      "bias": "Neutral"
-    },
-    "GBP": {
-      "score": 5.79,
-      "bias": "Neutral"
-    },
-    "JPY": {
-      "score": 4.21,
-      "bias": "Neutral"
-    },
-    "AUD": {
-      "score": 6.97,
-      "bias": "Bullish"
-    },
-    "CAD": {
-      "score": 5.28,
-      "bias": "Neutral"
-    },
-    "CHF": {
-      "score": 5.0,
-      "bias": "Neutral"
-    },
-    "NZD": {
-      "score": 5.5,
-      "bias": "Neutral"
-    }
-  },
-  "assets": {
-    "AUDCAD": {
-      "score": 6.69,
-      "bias": "Bullish",
-      "category": "FOREX"
-    },
-    "AUDCHF": {
-      "score": 6.97,
-      "bias": "Bullish",
-      "category": "FOREX"
-    },
-    "AUDNZD": {
-      "score": 6.47,
-      "bias": "Bullish",
-      "category": "FOREX"
-    },
-    "AUDJPY": {
-      "score": 7.76,
-      "bias": "Strongly Bullish",
-      "category": "FOREX"
-    },
-    "CADCHF": {
-      "score": 5.28,
-      "bias": "Neutral",
-      "category": "FOREX"
-    },
-    "CADJPY": {
-      "score": 6.07,
-      "bias": "Bullish",
-      "category": "FOREX"
-    },
-    "CHFJPY": {
-      "score": 5.79,
-      "bias": "Neutral",
-      "category": "FOREX"
-    },
-    "EURAUD": {
-      "score": 3.2,
-      "bias": "Bearish",
-      "category": "FOREX"
-    },
-    "EURCAD": {
-      "score": 4.89,
-      "bias": "Neutral",
-      "category": "FOREX"
-    },
-    "EURCHF": {
-      "score": 5.17,
-      "bias": "Neutral",
-      "category": "FOREX"
-    },
-    "EURGBP": {
-      "score": 4.38,
-      "bias": "Neutral",
-      "category": "FOREX"
-    },
-    "EURHKD": {
-      "score": 5.17,
-      "bias": "Neutral",
-      "category": "FOREX"
-    },
-    "EURHUF": {
-      "score": 5.17,
-      "bias": "Neutral",
-      "category": "FOREX"
-    },
-    "EURJPY": {
-      "score": 5.96,
-      "bias": "Neutral",
-      "category": "FOREX"
-    },
-    "EURNOK": {
-      "score": 5.17,
-      "bias": "Neutral",
-      "category": "FOREX"
-    },
-    "EURNZD": {
-      "score": 4.67,
-      "bias": "Neutral",
-      "category": "FOREX"
-    },
-    "EURPLN": {
-      "score": 5.17,
-      "bias": "Neutral",
-      "category": "FOREX"
-    },
-    "EURSEK": {
-      "score": 5.17,
-      "bias": "Neutral",
-      "category": "FOREX"
-    },
-    "EURSGD": {
-      "score": 5.17,
-      "bias": "Neutral",
-      "category": "FOREX"
-    },
-    "EURTRY": {
-      "score": 5.17,
-      "bias": "Neutral",
-      "category": "FOREX"
-    },
-    "EURUSD": {
-      "score": 6.43,
-      "bias": "Bullish",
-      "category": "FOREX"
-    },
-    "EURZAR": {
-      "score": 5.17,
-      "bias": "Neutral",
-      "category": "FOREX"
-    },
-    "GBPAUD": {
-      "score": 3.82,
-      "bias": "Bearish",
-      "category": "FOREX"
-    },
-    "GBPCAD": {
-      "score": 5.51,
-      "bias": "Neutral",
-      "category": "FOREX"
-    },
-    "GBPCHF": {
-      "score": 5.79,
-      "bias": "Neutral",
-      "category": "FOREX"
-    },
-    "GBPHKD": {
-      "score": 5.79,
-      "bias": "Neutral",
-      "category": "FOREX"
-    },
-    "GBPHUF": {
-      "score": 5.79,
-      "bias": "Neutral",
-      "category": "FOREX"
-    },
-    "GBPJPY": {
-      "score": 6.58,
-      "bias": "Bullish",
-      "category": "FOREX"
-    },
-    "GBPNOK": {
-      "score": 5.79,
-      "bias": "Neutral",
-      "category": "FOREX"
-    },
-    "GBPNZD": {
-      "score": 5.29,
-      "bias": "Neutral",
-      "category": "FOREX"
-    },
-    "GBPPLN": {
-      "score": 5.79,
-      "bias": "Neutral",
-      "category": "FOREX"
-    },
-    "GBPSEK": {
-      "score": 5.79,
-      "bias": "Neutral",
-      "category": "FOREX"
-    },
-    "GBPTRY": {
-      "score": 5.79,
-      "bias": "Neutral",
-      "category": "FOREX"
-    },
-    "GBPUSD": {
-      "score": 6.43,
-      "bias": "Bullish",
-      "category": "FOREX"
-    },
-    "GBPZAR": {
-      "score": 5.79,
-      "bias": "Neutral",
-      "category": "FOREX"
-    },
-    "NZDCAD": {
-      "score": 5.22,
-      "bias": "Neutral",
-      "category": "FOREX"
-    },
-    "NZDCHF": {
-      "score": 5.5,
-      "bias": "Neutral",
-      "category": "FOREX"
-    },
-    "NZDJPY": {
-      "score": 6.29,
-      "bias": "Bullish",
-      "category": "FOREX"
-    },
-    "NZDSGD": {
-      "score": 5.5,
-      "bias": "Neutral",
-      "category": "FOREX"
-    },
-    "NZDUSD": {
-      "score": 6.43,
-      "bias": "Bullish",
-      "category": "FOREX"
-    },
-    "USDBRL": {
-      "score": 4.57,
-      "bias": "Neutral",
-      "category": "FOREX"
-    },
-    "USDCAD": {
-      "score": 4.57,
-      "bias": "Neutral",
-      "category": "FOREX"
-    },
-    "USDCHF": {
-      "score": 4.57,
-      "bias": "Neutral",
-      "category": "FOREX"
-    },
-    "USDCNY": {
-      "score": 4.57,
-      "bias": "Neutral",
-      "category": "FOREX"
-    },
-    "USDCZK": {
-      "score": 4.57,
-      "bias": "Neutral",
-      "category": "FOREX"
-    },
-    "USDDKK": {
-      "score": 4.57,
-      "bias": "Neutral",
-      "category": "FOREX"
-    },
-    "USDHUF": {
-      "score": 4.57,
-      "bias": "Neutral",
-      "category": "FOREX"
-    },
-    "USDJPY": {
-      "score": 4.57,
-      "bias": "Neutral",
-      "category": "FOREX"
-    },
-    "USDMXN": {
-      "score": 4.57,
-      "bias": "Neutral",
-      "category": "FOREX"
-    },
-    "USDNOK": {
-      "score": 4.57,
-      "bias": "Neutral",
-      "category": "FOREX"
-    },
-    "USDPLN": {
-      "score": 4.57,
-      "bias": "Neutral",
-      "category": "FOREX"
-    },
-    "USDSEK": {
-      "score": 4.57,
-      "bias": "Neutral",
-      "category": "FOREX"
-    },
-    "USDSGD": {
-      "score": 4.57,
-      "bias": "Neutral",
-      "category": "FOREX"
-    },
-    "BRENT": {
-      "score": 6.43,
-      "bias": "Bullish",
-      "category": "COMMODITIES"
-    },
-    "COPPER": {
-      "score": 6.43,
-      "bias": "Bullish",
-      "category": "COMMODITIES"
-    },
-    "OIL": {
-      "score": 6.43,
-      "bias": "Bullish",
-      "category": "COMMODITIES"
-    },
-    "SILVER": {
-      "score": 6.43,
-      "bias": "Bullish",
-      "category": "COMMODITIES"
-    },
-    "GOLD": {
-      "score": 6.43,
-      "bias": "Bullish",
-      "category": "COMMODITIES"
-    },
-    "PALLADIUM": {
-      "score": 6.43,
-      "bias": "Bullish",
-      "category": "COMMODITIES"
-    },
-    "PLATINUM": {
-      "score": 6.43,
-      "bias": "Bullish",
-      "category": "COMMODITIES"
-    },
-    "AVAXUSD": {
-      "score": 6.43,
-      "bias": "Bullish",
-      "category": "CRYPTO"
-    },
-    "BTCUSD": {
-      "score": 6.43,
-      "bias": "Bullish",
-      "category": "CRYPTO"
-    },
-    "ETHUSD": {
-      "score": 6.43,
-      "bias": "Bullish",
-      "category": "CRYPTO"
-    },
-    "LTCUSD": {
-      "score": 6.43,
-      "bias": "Bullish",
-      "category": "CRYPTO"
-    },
-    "SOLUSD": {
-      "score": 6.43,
-      "bias": "Bullish",
-      "category": "CRYPTO"
-    },
-    "SUIUSD": {
-      "score": 6.43,
-      "bias": "Bullish",
-      "category": "CRYPTO"
-    },
-    "XLMUSD": {
-      "score": 6.43,
-      "bias": "Bullish",
-      "category": "CRYPTO"
-    },
-    "XRPUSD": {
-      "score": 6.43,
-      "bias": "Bullish",
-      "category": "CRYPTO"
-    },
-    "AUS200": {
-      "score": 7.14,
-      "bias": "Strongly Bullish",
-      "category": "INDICES"
-    },
-    "CH20": {
-      "score": 8.13,
-      "bias": "Strongly Bullish",
-      "category": "INDICES"
-    },
-    "ES35": {
-      "score": 8.04,
-      "bias": "Strongly Bullish",
-      "category": "INDICES"
-    },
-    "EU50": {
-      "score": 8.04,
-      "bias": "Strongly Bullish",
-      "category": "INDICES"
-    },
-    "FR40": {
-      "score": 8.04,
-      "bias": "Strongly Bullish",
-      "category": "INDICES"
-    },
-    "GB100": {
-      "score": 7.73,
-      "bias": "Strongly Bullish",
-      "category": "INDICES"
-    },
-    "GE40": {
-      "score": 8.04,
-      "bias": "Strongly Bullish",
-      "category": "INDICES"
-    },
-    "HK50": {
-      "score": 8.13,
-      "bias": "Strongly Bullish",
-      "category": "INDICES"
-    },
-    "JP225": {
-      "score": 8.52,
-      "bias": "Strongly Bullish",
-      "category": "INDICES"
-    },
-    "US100": {
-      "score": 8.34,
-      "bias": "Strongly Bullish",
-      "category": "INDICES"
-    },
-    "US30": {
-      "score": 8.34,
-      "bias": "Strongly Bullish",
-      "category": "INDICES"
-    },
-    "US500": {
-      "score": 8.34,
-      "bias": "Strongly Bullish",
-      "category": "INDICES"
-    }
-  },
-  "last_updated": "2026-08-27T13:26:20.688174+00:00",
+  "last_updated": "2026-08-27T17:19:58.038864+00:00",
   "base_scores": {
-    "USD": 4.57,
-    "EUR": 5.17,
-    "GBP": 5.79,
-    "JPY": 4.21,
-    "AUD": 6.97,
-    "CAD": 5.28,
-    "CHF": 5.0,
-    "NZD": 5.5,
-    "AUDCAD": 6.69,
-    "AUDCHF": 6.97,
-    "AUDNZD": 6.47,
-    "AUDJPY": 7.76,
-    "CADCHF": 5.28,
-    "CADJPY": 6.07,
-    "CHFJPY": 5.79,
-    "EURAUD": 3.2,
-    "EURCAD": 4.89,
-    "EURCHF": 5.17,
-    "EURGBP": 4.38,
-    "EURHKD": 5.17,
-    "EURHUF": 5.17,
-    "EURJPY": 5.96,
-    "EURNOK": 5.17,
-    "EURNZD": 4.67,
-    "EURPLN": 5.17,
-    "EURSEK": 5.17,
-    "EURSGD": 5.17,
-    "EURTRY": 5.17,
-    "EURUSD": 6.43,
-    "EURZAR": 5.17,
-    "GBPAUD": 3.82,
-    "GBPCAD": 5.51,
-    "GBPCHF": 5.79,
-    "GBPHKD": 5.79,
-    "GBPHUF": 5.79,
-    "GBPJPY": 6.58,
-    "GBPNOK": 5.79,
-    "GBPNZD": 5.29,
-    "GBPPLN": 5.79,
-    "GBPSEK": 5.79,
-    "GBPTRY": 5.79,
-    "GBPUSD": 6.43,
-    "GBPZAR": 5.79,
-    "NZDCAD": 5.22,
-    "NZDCHF": 5.5,
-    "NZDJPY": 6.29,
-    "NZDSGD": 5.5,
-    "NZDUSD": 6.43,
-    "USDBRL": 4.57,
-    "USDCAD": 4.57,
-    "USDCHF": 4.57,
-    "USDCNY": 4.57,
-    "USDCZK": 4.57,
-    "USDDKK": 4.57,
-    "USDHUF": 4.57,
-    "USDJPY": 4.57,
-    "USDMXN": 4.57,
-    "USDNOK": 4.57,
-    "USDPLN": 4.57,
-    "USDSEK": 4.57,
-    "USDSGD": 4.57,
-    "BRENT": 6.43,
-    "COPPER": 6.43,
-    "OIL": 6.43,
-    "SILVER": 6.43,
-    "GOLD": 6.43,
-    "PALLADIUM": 6.43,
-    "PLATINUM": 6.43,
-    "AVAXUSD": 6.43,
-    "BTCUSD": 6.43,
-    "ETHUSD": 6.43,
-    "LTCUSD": 6.43,
-    "SOLUSD": 6.43,
-    "SUIUSD": 6.43,
-    "XLMUSD": 6.43,
-    "XRPUSD": 6.43,
-    "AUS200": 7.14,
-    "CH20": 8.13,
-    "ES35": 8.04,
-    "EU50": 8.04,
-    "FR40": 8.04,
-    "GB100": 7.73,
-    "GE40": 8.04,
-    "HK50": 8.13,
-    "JP225": 8.52,
-    "US100": 8.34,
-    "US30": 8.34,
-    "US500": 8.34
+    "BRENT": 3.77,
+    "COPPER": 3.89,
+    "WTI": 3.45,
+    "XAG": 6.0,
+    "XAU": 6.0,
+    "PALLADIUM": 4.53,
+    "PLATINUM": 6.63,
+    "AVAX": 5.0,
+    "BTC": 6.0,
+    "ETH": 6.62,
+    "LTC": 5.0,
+    "SOL": 5.0,
+    "SUI": 5.0,
+    "XLM": 5.0,
+    "XRP": 5.0,
+    "AUDCAD": 5.0,
+    "AUDCHF": 5.0,
+    "AUDNZD": 5.0,
+    "AUDJPY": 5.0,
+    "CADCHF": 5.0,
+    "CADJPY": 5.0,
+    "CHFJPY": 5.0,
+    "EURAUD": 5.0,
+    "EURCAD": 5.0,
+    "EURCHF": 5.0,
+    "EURGBP": 5.0,
+    "EURHKD": 5.0,
+    "EURHUF": 5.0,
+    "EURJPY": 5.0,
+    "EURNOK": 5.0,
+    "EURNZD": 5.0,
+    "EURPLN": 5.0,
+    "EURSEK": 5.0,
+    "EURSGD": 5.0,
+    "EURTRY": 5.0,
+    "EURUSD": 5.0,
+    "EURZAR": 5.0,
+    "GBPAUD": 5.0,
+    "GBPCAD": 5.0,
+    "GBPCHF": 5.0,
+    "GBPHKD": 5.0,
+    "GBPHUF": 5.0,
+    "GBPJPY": 5.0,
+    "GBPNOK": 5.0,
+    "GBPNZD": 5.0,
+    "GBPPLN": 5.0,
+    "GBPSEK": 5.0,
+    "GBPTRY": 5.0,
+    "GBPUSD": 5.0,
+    "GBPZAR": 5.0,
+    "NZDCAD": 5.0,
+    "NZDCHF": 5.0,
+    "NZDJPY": 5.0,
+    "NZDSGD": 5.0,
+    "NZDUSD": 5.0,
+    "USDBRL": 5.0,
+    "USDCAD": 5.0,
+    "USDCHF": 5.0,
+    "USDCNY": 5.0,
+    "USDCZK": 5.0,
+    "USDDKK": 5.0,
+    "USDHUF": 5.0,
+    "USDJPY": 5.0,
+    "USDMXN": 5.0,
+    "USDNOK": 5.0,
+    "USDPLN": 5.0,
+    "USDSEK": 5.0,
+    "USDSGD": 5.0,
+    "AUS200": 5.0,
+    "CH20": 5.0,
+    "ES35": 5.0,
+    "EU50": 5.0,
+    "FR40": 5.0,
+    "GB100": 5.0,
+    "GE40": 5.0,
+    "HK50": 5.0,
+    "JP225": 5.0,
+    "NAS100": 5.0,
+    "US30": 5.0,
+    "SP500": 5.0
   },
-  "total_base_assets": 88,
+  "total_base_assets": 80,
   "momentum_scores": {},
-  "score_breakdowns": {},
+  "score_breakdowns": {
+    "BRENT": [
+      {
+        "indicator": "Seasonality",
+        "value": 3.77,
+        "unit": "score",
+        "date": null,
+        "score": 3.77,
+        "tier": "Tier 3",
+        "weight": 1.0,
+        "direction": "bearish",
+        "contribution": 3.77
+      }
+    ],
+    "COPPER": [
+      {
+        "indicator": "CFTC Long Ratio (COPPER)",
+        "value": 33.62,
+        "unit": "%",
+        "date": "2026-05-12",
+        "score": 2.9,
+        "tier": "Tier 2",
+        "weight": 2.0,
+        "direction": "bearish",
+        "contribution": 5.81
+      },
+      {
+        "indicator": "Seasonality",
+        "value": 5.85,
+        "unit": "score",
+        "date": null,
+        "score": 5.85,
+        "tier": "Tier 3",
+        "weight": 1.0,
+        "direction": "neutral",
+        "contribution": 5.85
+      }
+    ],
+    "WTI": [
+      {
+        "indicator": "CFTC Long Ratio (WTI)",
+        "value": 34.09,
+        "unit": "%",
+        "date": "2026-07-28",
+        "score": 2.95,
+        "tier": "Tier 2",
+        "weight": 2.0,
+        "direction": "bearish",
+        "contribution": 5.9
+      },
+      {
+        "indicator": "Seasonality",
+        "value": 4.46,
+        "unit": "score",
+        "date": null,
+        "score": 4.46,
+        "tier": "Tier 3",
+        "weight": 1.0,
+        "direction": "neutral",
+        "contribution": 4.46
+      }
+    ],
+    "XAG": [
+      {
+        "indicator": "CFTC Long Ratio (XAG)",
+        "value": 72.25,
+        "unit": "%",
+        "date": "2026-08-18",
+        "score": 7.65,
+        "tier": "Tier 2",
+        "weight": 2.0,
+        "direction": "bullish",
+        "contribution": 15.3
+      },
+      {
+        "indicator": "Seasonality",
+        "value": 5.85,
+        "unit": "score",
+        "date": null,
+        "score": 5.85,
+        "tier": "Tier 3",
+        "weight": 1.0,
+        "direction": "neutral",
+        "contribution": 5.85
+      }
+    ],
+    "XAU": [
+      {
+        "indicator": "CFTC Long Ratio (XAU)",
+        "value": 39.37,
+        "unit": "%",
+        "date": "2026-07-28",
+        "score": 3.44,
+        "tier": "Tier 2",
+        "weight": 2.0,
+        "direction": "bearish",
+        "contribution": 6.88
+      },
+      {
+        "indicator": "Seasonality",
+        "value": 6.54,
+        "unit": "score",
+        "date": null,
+        "score": 6.54,
+        "tier": "Tier 3",
+        "weight": 1.0,
+        "direction": "bullish",
+        "contribution": 6.54
+      }
+    ],
+    "PALLADIUM": [
+      {
+        "indicator": "CFTC Long Ratio (PALLADIUM)",
+        "value": 36.62,
+        "unit": "%",
+        "date": "2026-08-18",
+        "score": 3.18,
+        "tier": "Tier 2",
+        "weight": 2.0,
+        "direction": "bearish",
+        "contribution": 6.37
+      },
+      {
+        "indicator": "Seasonality",
+        "value": 7.23,
+        "unit": "score",
+        "date": null,
+        "score": 7.23,
+        "tier": "Tier 3",
+        "weight": 1.0,
+        "direction": "bullish",
+        "contribution": 7.23
+      }
+    ],
+    "PLATINUM": [
+      {
+        "indicator": "CFTC Long Ratio (PLATINUM)",
+        "value": 69.18,
+        "unit": "%",
+        "date": "2026-08-18",
+        "score": 7.36,
+        "tier": "Tier 2",
+        "weight": 2.0,
+        "direction": "bullish",
+        "contribution": 14.73
+      },
+      {
+        "indicator": "Seasonality",
+        "value": 5.15,
+        "unit": "score",
+        "date": null,
+        "score": 5.15,
+        "tier": "Tier 3",
+        "weight": 1.0,
+        "direction": "neutral",
+        "contribution": 5.15
+      }
+    ],
+    "BTC": [
+      {
+        "indicator": "Seasonality",
+        "value": 8.36,
+        "unit": "score",
+        "date": null,
+        "score": 8.36,
+        "tier": "Tier 3",
+        "weight": 1.0,
+        "direction": "bullish",
+        "contribution": 8.36
+      }
+    ],
+    "ETH": [
+      {
+        "indicator": "Seasonality",
+        "value": 6.62,
+        "unit": "score",
+        "date": null,
+        "score": 6.62,
+        "tier": "Tier 3",
+        "weight": 1.0,
+        "direction": "bullish",
+        "contribution": 6.62
+      }
+    ]
+  },
   "analysis_window_days": 14,
-  "analysis_note": "Latest Release Delta Model: per-currency scores from calendar events (Actual vs Forecast), weighted by impact. Cross-asset relative strength derived from currency differentials.",
+  "analysis_note": "Latest Release Delta Model: Only the single most recent data release per macro indicator is scored (Actual vs Forecast/Previous). No multi-week historical averaging. Historical data is shown for reference only and does not affect scores.",
   "pairs": [
     {
-      "name": "AUD/JPY",
-      "asset_class": "FX",
-      "base_asset": "AUD",
-      "quote_asset": "JPY",
-      "base_score": 6.97,
-      "quote_score": 4.21,
-      "combined_bias": 7.76,
-      "direction": "Strongly Bullish"
-    },
-    {
-      "name": "AUS200/AUD",
-      "asset_class": "INDEX",
-      "base_asset": "AUS200",
-      "quote_asset": "AUD",
-      "base_score": 5.0,
-      "quote_score": 6.97,
-      "combined_bias": 3.03,
-      "direction": "Bearish"
-    },
-    {
-      "name": "AUD/CHF",
-      "asset_class": "FX",
-      "base_asset": "AUD",
-      "quote_asset": "CHF",
-      "base_score": 6.97,
+      "name": "PLATINUM/USD",
+      "asset_class": "METAL",
+      "base_asset": "PLATINUM",
+      "quote_asset": "USD",
+      "base_score": 6.63,
       "quote_score": 5.0,
-      "combined_bias": 6.97,
-      "direction": "Bullish"
-    },
-    {
-      "name": "EUR/AUD",
-      "asset_class": "FX",
-      "base_asset": "EUR",
-      "quote_asset": "AUD",
-      "base_score": 5.17,
-      "quote_score": 6.97,
-      "combined_bias": 3.2,
-      "direction": "Bearish"
-    },
-    {
-      "name": "AUD/CAD",
-      "asset_class": "FX",
-      "base_asset": "AUD",
-      "quote_asset": "CAD",
-      "base_score": 6.97,
-      "quote_score": 5.28,
-      "combined_bias": 6.69,
-      "direction": "Bullish"
-    },
-    {
-      "name": "GBP/JPY",
-      "asset_class": "FX",
-      "base_asset": "GBP",
-      "quote_asset": "JPY",
-      "base_score": 5.79,
-      "quote_score": 4.21,
-      "combined_bias": 6.58,
-      "direction": "Bullish"
-    },
-    {
-      "name": "AUD/NZD",
-      "asset_class": "FX",
-      "base_asset": "AUD",
-      "quote_asset": "NZD",
-      "base_score": 6.97,
-      "quote_score": 5.5,
-      "combined_bias": 6.47,
-      "direction": "Bullish"
-    },
-    {
-      "name": "NZD/JPY",
-      "asset_class": "FX",
-      "base_asset": "NZD",
-      "quote_asset": "JPY",
-      "base_score": 5.5,
-      "quote_score": 4.21,
-      "combined_bias": 6.29,
-      "direction": "Bullish"
-    },
-    {
-      "name": "GBP/AUD",
-      "asset_class": "FX",
-      "base_asset": "GBP",
-      "quote_asset": "AUD",
-      "base_score": 5.79,
-      "quote_score": 6.97,
-      "combined_bias": 3.82,
-      "direction": "Bearish"
-    },
-    {
-      "name": "CAD/JPY",
-      "asset_class": "FX",
-      "base_asset": "CAD",
-      "quote_asset": "JPY",
-      "base_score": 5.28,
-      "quote_score": 4.21,
-      "combined_bias": 6.07,
-      "direction": "Bullish"
-    },
-    {
-      "name": "AVAX/USD",
-      "asset_class": "CRYPTO",
-      "base_asset": "AVAX",
-      "quote_asset": "USD",
-      "base_score": 5.0,
-      "quote_score": 4.57,
-      "combined_bias": 6.0,
-      "direction": "Bullish"
-    },
-    {
-      "name": "BTC/USD",
-      "asset_class": "CRYPTO",
-      "base_asset": "BTC",
-      "quote_asset": "USD",
-      "base_score": 5.0,
-      "quote_score": 4.57,
-      "combined_bias": 6.0,
+      "combined_bias": 6.63,
       "direction": "Bullish"
     },
     {
@@ -658,79 +287,9 @@
       "asset_class": "CRYPTO",
       "base_asset": "ETH",
       "quote_asset": "USD",
-      "base_score": 5.0,
-      "quote_score": 4.57,
-      "combined_bias": 6.0,
-      "direction": "Bullish"
-    },
-    {
-      "name": "LTC/USD",
-      "asset_class": "CRYPTO",
-      "base_asset": "LTC",
-      "quote_asset": "USD",
-      "base_score": 5.0,
-      "quote_score": 4.57,
-      "combined_bias": 6.0,
-      "direction": "Bullish"
-    },
-    {
-      "name": "SOL/USD",
-      "asset_class": "CRYPTO",
-      "base_asset": "SOL",
-      "quote_asset": "USD",
-      "base_score": 5.0,
-      "quote_score": 4.57,
-      "combined_bias": 6.0,
-      "direction": "Bullish"
-    },
-    {
-      "name": "SUI/USD",
-      "asset_class": "CRYPTO",
-      "base_asset": "SUI",
-      "quote_asset": "USD",
-      "base_score": 5.0,
-      "quote_score": 4.57,
-      "combined_bias": 6.0,
-      "direction": "Bullish"
-    },
-    {
-      "name": "XLM/USD",
-      "asset_class": "CRYPTO",
-      "base_asset": "XLM",
-      "quote_asset": "USD",
-      "base_score": 5.0,
-      "quote_score": 4.57,
-      "combined_bias": 6.0,
-      "direction": "Bullish"
-    },
-    {
-      "name": "XRP/USD",
-      "asset_class": "CRYPTO",
-      "base_asset": "XRP",
-      "quote_asset": "USD",
-      "base_score": 5.0,
-      "quote_score": 4.57,
-      "combined_bias": 6.0,
-      "direction": "Bullish"
-    },
-    {
-      "name": "BRENT/USD",
-      "asset_class": "ENERGY",
-      "base_asset": "BRENT",
-      "quote_asset": "USD",
-      "base_score": 5.0,
-      "quote_score": 4.57,
-      "combined_bias": 6.0,
-      "direction": "Bullish"
-    },
-    {
-      "name": "COPPER/USD",
-      "asset_class": "METAL",
-      "base_asset": "COPPER",
-      "quote_asset": "USD",
-      "base_score": 5.0,
-      "quote_score": 4.57,
-      "combined_bias": 6.0,
+      "base_score": 6.62,
+      "quote_score": 5.0,
+      "combined_bias": 6.62,
       "direction": "Bullish"
     },
     {
@@ -738,8 +297,38 @@
       "asset_class": "ENERGY",
       "base_asset": "WTI",
       "quote_asset": "USD",
-      "base_score": 5.0,
-      "quote_score": 4.57,
+      "base_score": 3.45,
+      "quote_score": 5.0,
+      "combined_bias": 3.45,
+      "direction": "Bearish"
+    },
+    {
+      "name": "BRENT/USD",
+      "asset_class": "ENERGY",
+      "base_asset": "BRENT",
+      "quote_asset": "USD",
+      "base_score": 3.77,
+      "quote_score": 5.0,
+      "combined_bias": 3.77,
+      "direction": "Bearish"
+    },
+    {
+      "name": "COPPER/USD",
+      "asset_class": "METAL",
+      "base_asset": "COPPER",
+      "quote_asset": "USD",
+      "base_score": 3.89,
+      "quote_score": 5.0,
+      "combined_bias": 3.89,
+      "direction": "Bearish"
+    },
+    {
+      "name": "BTC/USD",
+      "asset_class": "CRYPTO",
+      "base_asset": "BTC",
+      "quote_asset": "USD",
+      "base_score": 6.0,
+      "quote_score": 5.0,
       "combined_bias": 6.0,
       "direction": "Bullish"
     },
@@ -748,8 +337,8 @@
       "asset_class": "METAL",
       "base_asset": "XAG",
       "quote_asset": "USD",
-      "base_score": 5.0,
-      "quote_score": 4.57,
+      "base_score": 6.0,
+      "quote_score": 5.0,
       "combined_bias": 6.0,
       "direction": "Bullish"
     },
@@ -758,8 +347,8 @@
       "asset_class": "METAL",
       "base_asset": "XAU",
       "quote_asset": "USD",
-      "base_score": 5.0,
-      "quote_score": 4.57,
+      "base_score": 6.0,
+      "quote_score": 5.0,
       "combined_bias": 6.0,
       "direction": "Bullish"
     },
@@ -768,499 +357,619 @@
       "asset_class": "METAL",
       "base_asset": "PALLADIUM",
       "quote_asset": "USD",
-      "base_score": 5.0,
-      "quote_score": 4.57,
-      "combined_bias": 6.0,
-      "direction": "Bullish"
-    },
-    {
-      "name": "PLATINUM/USD",
-      "asset_class": "METAL",
-      "base_asset": "PLATINUM",
-      "quote_asset": "USD",
-      "base_score": 5.0,
-      "quote_score": 4.57,
-      "combined_bias": 6.0,
-      "direction": "Bullish"
-    },
-    {
-      "name": "NAS100/USD",
-      "asset_class": "INDEX",
-      "base_asset": "NAS100",
-      "quote_asset": "USD",
-      "base_score": 5.0,
-      "quote_score": 4.57,
-      "combined_bias": 6.0,
-      "direction": "Bullish"
-    },
-    {
-      "name": "US30/USD",
-      "asset_class": "INDEX",
-      "base_asset": "US30",
-      "quote_asset": "USD",
-      "base_score": 5.0,
-      "quote_score": 4.57,
-      "combined_bias": 6.0,
-      "direction": "Bullish"
-    },
-    {
-      "name": "SP500/USD",
-      "asset_class": "INDEX",
-      "base_asset": "SP500",
-      "quote_asset": "USD",
-      "base_score": 5.0,
-      "quote_score": 4.57,
-      "combined_bias": 6.0,
-      "direction": "Bullish"
-    },
-    {
-      "name": "EUR/JPY",
-      "asset_class": "FX",
-      "base_asset": "EUR",
-      "quote_asset": "JPY",
-      "base_score": 5.17,
-      "quote_score": 4.21,
-      "combined_bias": 5.96,
-      "direction": "Neutral"
-    },
-    {
-      "name": "EUR/USD",
-      "asset_class": "FX",
-      "base_asset": "EUR",
-      "quote_asset": "USD",
-      "base_score": 5.17,
-      "quote_score": 4.57,
-      "combined_bias": 5.83,
-      "direction": "Neutral"
-    },
-    {
-      "name": "CHF/JPY",
-      "asset_class": "FX",
-      "base_asset": "CHF",
-      "quote_asset": "JPY",
-      "base_score": 5.0,
-      "quote_score": 4.21,
-      "combined_bias": 5.79,
-      "direction": "Neutral"
-    },
-    {
-      "name": "GBP/CHF",
-      "asset_class": "FX",
-      "base_asset": "GBP",
-      "quote_asset": "CHF",
-      "base_score": 5.79,
+      "base_score": 4.53,
       "quote_score": 5.0,
-      "combined_bias": 5.79,
+      "combined_bias": 4.53,
       "direction": "Neutral"
     },
     {
-      "name": "GBP/HKD",
-      "asset_class": "FX",
-      "base_asset": "GBP",
-      "quote_asset": "HKD",
-      "base_score": 5.79,
-      "quote_score": 5.0,
-      "combined_bias": 5.79,
-      "direction": "Neutral"
-    },
-    {
-      "name": "GBP/HUF",
-      "asset_class": "FX",
-      "base_asset": "GBP",
-      "quote_asset": "HUF",
-      "base_score": 5.79,
-      "quote_score": 5.0,
-      "combined_bias": 5.79,
-      "direction": "Neutral"
-    },
-    {
-      "name": "GBP/NOK",
-      "asset_class": "FX",
-      "base_asset": "GBP",
-      "quote_asset": "NOK",
-      "base_score": 5.79,
-      "quote_score": 5.0,
-      "combined_bias": 5.79,
-      "direction": "Neutral"
-    },
-    {
-      "name": "GBP/PLN",
-      "asset_class": "FX",
-      "base_asset": "GBP",
-      "quote_asset": "PLN",
-      "base_score": 5.79,
-      "quote_score": 5.0,
-      "combined_bias": 5.79,
-      "direction": "Neutral"
-    },
-    {
-      "name": "GBP/SEK",
-      "asset_class": "FX",
-      "base_asset": "GBP",
-      "quote_asset": "SEK",
-      "base_score": 5.79,
-      "quote_score": 5.0,
-      "combined_bias": 5.79,
-      "direction": "Neutral"
-    },
-    {
-      "name": "GBP/TRY",
-      "asset_class": "FX",
-      "base_asset": "GBP",
-      "quote_asset": "TRY",
-      "base_score": 5.79,
-      "quote_score": 5.0,
-      "combined_bias": 5.79,
-      "direction": "Neutral"
-    },
-    {
-      "name": "GBP/ZAR",
-      "asset_class": "FX",
-      "base_asset": "GBP",
-      "quote_asset": "ZAR",
-      "base_score": 5.79,
-      "quote_score": 5.0,
-      "combined_bias": 5.79,
-      "direction": "Neutral"
-    },
-    {
-      "name": "GB100/GBP",
-      "asset_class": "INDEX",
-      "base_asset": "GB100",
-      "quote_asset": "GBP",
-      "base_score": 5.0,
-      "quote_score": 5.79,
-      "combined_bias": 4.21,
-      "direction": "Neutral"
-    },
-    {
-      "name": "JP225/JPY",
-      "asset_class": "INDEX",
-      "base_asset": "JP225",
-      "quote_asset": "JPY",
-      "base_score": 5.0,
-      "quote_score": 4.21,
-      "combined_bias": 5.79,
-      "direction": "Neutral"
-    },
-    {
-      "name": "EUR/GBP",
-      "asset_class": "FX",
-      "base_asset": "EUR",
-      "quote_asset": "GBP",
-      "base_score": 5.17,
-      "quote_score": 5.79,
-      "combined_bias": 4.38,
-      "direction": "Neutral"
-    },
-    {
-      "name": "GBP/CAD",
-      "asset_class": "FX",
-      "base_asset": "GBP",
+      "name": "AUD/CAD",
+      "asset_class": "OTHER",
+      "base_asset": "AUD",
       "quote_asset": "CAD",
-      "base_score": 5.79,
-      "quote_score": 5.28,
-      "combined_bias": 5.51,
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
       "direction": "Neutral"
     },
     {
-      "name": "NZD/CHF",
-      "asset_class": "FX",
-      "base_asset": "NZD",
+      "name": "AUD/CHF",
+      "asset_class": "OTHER",
+      "base_asset": "AUD",
       "quote_asset": "CHF",
-      "base_score": 5.5,
+      "base_score": 5.0,
       "quote_score": 5.0,
-      "combined_bias": 5.5,
+      "combined_bias": 5.0,
       "direction": "Neutral"
     },
     {
-      "name": "NZD/SGD",
-      "asset_class": "FX",
-      "base_asset": "NZD",
-      "quote_asset": "SGD",
-      "base_score": 5.5,
+      "name": "AUD/NZD",
+      "asset_class": "OTHER",
+      "base_asset": "AUD",
+      "quote_asset": "NZD",
+      "base_score": 5.0,
       "quote_score": 5.0,
-      "combined_bias": 5.5,
+      "combined_bias": 5.0,
       "direction": "Neutral"
     },
     {
-      "name": "NZD/USD",
-      "asset_class": "FX",
-      "base_asset": "NZD",
-      "quote_asset": "USD",
-      "base_score": 5.5,
-      "quote_score": 4.57,
-      "combined_bias": 5.5,
-      "direction": "Neutral"
-    },
-    {
-      "name": "USD/BRL",
-      "asset_class": "FX",
-      "base_asset": "USD",
-      "quote_asset": "BRL",
-      "base_score": 4.57,
-      "quote_score": 5.0,
-      "combined_bias": 4.57,
-      "direction": "Neutral"
-    },
-    {
-      "name": "USD/CAD",
-      "asset_class": "FX",
-      "base_asset": "USD",
-      "quote_asset": "CAD",
-      "base_score": 4.57,
-      "quote_score": 5.28,
-      "combined_bias": 4.57,
-      "direction": "Neutral"
-    },
-    {
-      "name": "USD/CHF",
-      "asset_class": "FX",
-      "base_asset": "USD",
-      "quote_asset": "CHF",
-      "base_score": 4.57,
-      "quote_score": 5.0,
-      "combined_bias": 4.57,
-      "direction": "Neutral"
-    },
-    {
-      "name": "USD/CNY",
-      "asset_class": "FX",
-      "base_asset": "USD",
-      "quote_asset": "CNY",
-      "base_score": 4.57,
-      "quote_score": 5.0,
-      "combined_bias": 4.57,
-      "direction": "Neutral"
-    },
-    {
-      "name": "USD/CZK",
-      "asset_class": "FX",
-      "base_asset": "USD",
-      "quote_asset": "CZK",
-      "base_score": 4.57,
-      "quote_score": 5.0,
-      "combined_bias": 4.57,
-      "direction": "Neutral"
-    },
-    {
-      "name": "USD/DKK",
-      "asset_class": "FX",
-      "base_asset": "USD",
-      "quote_asset": "DKK",
-      "base_score": 4.57,
-      "quote_score": 5.0,
-      "combined_bias": 4.57,
-      "direction": "Neutral"
-    },
-    {
-      "name": "USD/HUF",
-      "asset_class": "FX",
-      "base_asset": "USD",
-      "quote_asset": "HUF",
-      "base_score": 4.57,
-      "quote_score": 5.0,
-      "combined_bias": 4.57,
-      "direction": "Neutral"
-    },
-    {
-      "name": "USD/JPY",
-      "asset_class": "FX",
-      "base_asset": "USD",
+      "name": "AUD/JPY",
+      "asset_class": "OTHER",
+      "base_asset": "AUD",
       "quote_asset": "JPY",
-      "base_score": 4.57,
-      "quote_score": 4.21,
-      "combined_bias": 4.57,
-      "direction": "Neutral"
-    },
-    {
-      "name": "USD/MXN",
-      "asset_class": "FX",
-      "base_asset": "USD",
-      "quote_asset": "MXN",
-      "base_score": 4.57,
+      "base_score": 5.0,
       "quote_score": 5.0,
-      "combined_bias": 4.57,
-      "direction": "Neutral"
-    },
-    {
-      "name": "USD/NOK",
-      "asset_class": "FX",
-      "base_asset": "USD",
-      "quote_asset": "NOK",
-      "base_score": 4.57,
-      "quote_score": 5.0,
-      "combined_bias": 4.57,
-      "direction": "Neutral"
-    },
-    {
-      "name": "USD/PLN",
-      "asset_class": "FX",
-      "base_asset": "USD",
-      "quote_asset": "PLN",
-      "base_score": 4.57,
-      "quote_score": 5.0,
-      "combined_bias": 4.57,
-      "direction": "Neutral"
-    },
-    {
-      "name": "USD/SEK",
-      "asset_class": "FX",
-      "base_asset": "USD",
-      "quote_asset": "SEK",
-      "base_score": 4.57,
-      "quote_score": 5.0,
-      "combined_bias": 4.57,
-      "direction": "Neutral"
-    },
-    {
-      "name": "USD/SGD",
-      "asset_class": "FX",
-      "base_asset": "USD",
-      "quote_asset": "SGD",
-      "base_score": 4.57,
-      "quote_score": 5.0,
-      "combined_bias": 4.57,
-      "direction": "Neutral"
-    },
-    {
-      "name": "EUR/NZD",
-      "asset_class": "FX",
-      "base_asset": "EUR",
-      "quote_asset": "NZD",
-      "base_score": 5.17,
-      "quote_score": 5.5,
-      "combined_bias": 4.67,
-      "direction": "Neutral"
-    },
-    {
-      "name": "GBP/NZD",
-      "asset_class": "FX",
-      "base_asset": "GBP",
-      "quote_asset": "NZD",
-      "base_score": 5.79,
-      "quote_score": 5.5,
-      "combined_bias": 5.29,
+      "combined_bias": 5.0,
       "direction": "Neutral"
     },
     {
       "name": "CAD/CHF",
-      "asset_class": "FX",
+      "asset_class": "OTHER",
       "base_asset": "CAD",
       "quote_asset": "CHF",
-      "base_score": 5.28,
+      "base_score": 5.0,
       "quote_score": 5.0,
-      "combined_bias": 5.28,
+      "combined_bias": 5.0,
       "direction": "Neutral"
     },
     {
-      "name": "NZD/CAD",
-      "asset_class": "FX",
-      "base_asset": "NZD",
+      "name": "CAD/JPY",
+      "asset_class": "OTHER",
+      "base_asset": "CAD",
+      "quote_asset": "JPY",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "CHF/JPY",
+      "asset_class": "OTHER",
+      "base_asset": "CHF",
+      "quote_asset": "JPY",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "EUR/AUD",
+      "asset_class": "OTHER",
+      "base_asset": "EUR",
+      "quote_asset": "AUD",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "EUR/CAD",
+      "asset_class": "OTHER",
+      "base_asset": "EUR",
       "quote_asset": "CAD",
-      "base_score": 5.5,
-      "quote_score": 5.28,
-      "combined_bias": 5.22,
-      "direction": "Neutral"
-    },
-    {
-      "name": "GBP/USD",
-      "asset_class": "FX",
-      "base_asset": "GBP",
-      "quote_asset": "USD",
-      "base_score": 5.79,
-      "quote_score": 4.57,
-      "combined_bias": 5.21,
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
       "direction": "Neutral"
     },
     {
       "name": "EUR/CHF",
-      "asset_class": "FX",
+      "asset_class": "OTHER",
       "base_asset": "EUR",
       "quote_asset": "CHF",
-      "base_score": 5.17,
+      "base_score": 5.0,
       "quote_score": 5.0,
-      "combined_bias": 5.17,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "EUR/GBP",
+      "asset_class": "OTHER",
+      "base_asset": "EUR",
+      "quote_asset": "GBP",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
       "direction": "Neutral"
     },
     {
       "name": "EUR/HKD",
-      "asset_class": "FX",
+      "asset_class": "OTHER",
       "base_asset": "EUR",
       "quote_asset": "HKD",
-      "base_score": 5.17,
+      "base_score": 5.0,
       "quote_score": 5.0,
-      "combined_bias": 5.17,
+      "combined_bias": 5.0,
       "direction": "Neutral"
     },
     {
       "name": "EUR/HUF",
-      "asset_class": "FX",
+      "asset_class": "OTHER",
       "base_asset": "EUR",
       "quote_asset": "HUF",
-      "base_score": 5.17,
+      "base_score": 5.0,
       "quote_score": 5.0,
-      "combined_bias": 5.17,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "EUR/JPY",
+      "asset_class": "OTHER",
+      "base_asset": "EUR",
+      "quote_asset": "JPY",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
       "direction": "Neutral"
     },
     {
       "name": "EUR/NOK",
-      "asset_class": "FX",
+      "asset_class": "OTHER",
       "base_asset": "EUR",
       "quote_asset": "NOK",
-      "base_score": 5.17,
+      "base_score": 5.0,
       "quote_score": 5.0,
-      "combined_bias": 5.17,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "EUR/NZD",
+      "asset_class": "OTHER",
+      "base_asset": "EUR",
+      "quote_asset": "NZD",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
       "direction": "Neutral"
     },
     {
       "name": "EUR/PLN",
-      "asset_class": "FX",
+      "asset_class": "OTHER",
       "base_asset": "EUR",
       "quote_asset": "PLN",
-      "base_score": 5.17,
+      "base_score": 5.0,
       "quote_score": 5.0,
-      "combined_bias": 5.17,
+      "combined_bias": 5.0,
       "direction": "Neutral"
     },
     {
       "name": "EUR/SEK",
-      "asset_class": "FX",
+      "asset_class": "OTHER",
       "base_asset": "EUR",
       "quote_asset": "SEK",
-      "base_score": 5.17,
+      "base_score": 5.0,
       "quote_score": 5.0,
-      "combined_bias": 5.17,
+      "combined_bias": 5.0,
       "direction": "Neutral"
     },
     {
       "name": "EUR/SGD",
-      "asset_class": "FX",
+      "asset_class": "OTHER",
       "base_asset": "EUR",
       "quote_asset": "SGD",
-      "base_score": 5.17,
+      "base_score": 5.0,
       "quote_score": 5.0,
-      "combined_bias": 5.17,
+      "combined_bias": 5.0,
       "direction": "Neutral"
     },
     {
       "name": "EUR/TRY",
-      "asset_class": "FX",
+      "asset_class": "OTHER",
       "base_asset": "EUR",
       "quote_asset": "TRY",
-      "base_score": 5.17,
+      "base_score": 5.0,
       "quote_score": 5.0,
-      "combined_bias": 5.17,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "EUR/USD",
+      "asset_class": "OTHER",
+      "base_asset": "EUR",
+      "quote_asset": "USD",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
       "direction": "Neutral"
     },
     {
       "name": "EUR/ZAR",
-      "asset_class": "FX",
+      "asset_class": "OTHER",
       "base_asset": "EUR",
       "quote_asset": "ZAR",
-      "base_score": 5.17,
+      "base_score": 5.0,
       "quote_score": 5.0,
-      "combined_bias": 5.17,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "GBP/AUD",
+      "asset_class": "OTHER",
+      "base_asset": "GBP",
+      "quote_asset": "AUD",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "GBP/CAD",
+      "asset_class": "OTHER",
+      "base_asset": "GBP",
+      "quote_asset": "CAD",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "GBP/CHF",
+      "asset_class": "OTHER",
+      "base_asset": "GBP",
+      "quote_asset": "CHF",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "GBP/HKD",
+      "asset_class": "OTHER",
+      "base_asset": "GBP",
+      "quote_asset": "HKD",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "GBP/HUF",
+      "asset_class": "OTHER",
+      "base_asset": "GBP",
+      "quote_asset": "HUF",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "GBP/JPY",
+      "asset_class": "OTHER",
+      "base_asset": "GBP",
+      "quote_asset": "JPY",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "GBP/NOK",
+      "asset_class": "OTHER",
+      "base_asset": "GBP",
+      "quote_asset": "NOK",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "GBP/NZD",
+      "asset_class": "OTHER",
+      "base_asset": "GBP",
+      "quote_asset": "NZD",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "GBP/PLN",
+      "asset_class": "OTHER",
+      "base_asset": "GBP",
+      "quote_asset": "PLN",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "GBP/SEK",
+      "asset_class": "OTHER",
+      "base_asset": "GBP",
+      "quote_asset": "SEK",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "GBP/TRY",
+      "asset_class": "OTHER",
+      "base_asset": "GBP",
+      "quote_asset": "TRY",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "GBP/USD",
+      "asset_class": "OTHER",
+      "base_asset": "GBP",
+      "quote_asset": "USD",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "GBP/ZAR",
+      "asset_class": "OTHER",
+      "base_asset": "GBP",
+      "quote_asset": "ZAR",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "NZD/CAD",
+      "asset_class": "OTHER",
+      "base_asset": "NZD",
+      "quote_asset": "CAD",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "NZD/CHF",
+      "asset_class": "OTHER",
+      "base_asset": "NZD",
+      "quote_asset": "CHF",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "NZD/JPY",
+      "asset_class": "OTHER",
+      "base_asset": "NZD",
+      "quote_asset": "JPY",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "NZD/SGD",
+      "asset_class": "OTHER",
+      "base_asset": "NZD",
+      "quote_asset": "SGD",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "NZD/USD",
+      "asset_class": "OTHER",
+      "base_asset": "NZD",
+      "quote_asset": "USD",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "USD/BRL",
+      "asset_class": "OTHER",
+      "base_asset": "USD",
+      "quote_asset": "BRL",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "USD/CAD",
+      "asset_class": "OTHER",
+      "base_asset": "USD",
+      "quote_asset": "CAD",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "USD/CHF",
+      "asset_class": "OTHER",
+      "base_asset": "USD",
+      "quote_asset": "CHF",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "USD/CNY",
+      "asset_class": "OTHER",
+      "base_asset": "USD",
+      "quote_asset": "CNY",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "USD/CZK",
+      "asset_class": "OTHER",
+      "base_asset": "USD",
+      "quote_asset": "CZK",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "USD/DKK",
+      "asset_class": "OTHER",
+      "base_asset": "USD",
+      "quote_asset": "DKK",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "USD/HUF",
+      "asset_class": "OTHER",
+      "base_asset": "USD",
+      "quote_asset": "HUF",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "USD/JPY",
+      "asset_class": "OTHER",
+      "base_asset": "USD",
+      "quote_asset": "JPY",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "USD/MXN",
+      "asset_class": "OTHER",
+      "base_asset": "USD",
+      "quote_asset": "MXN",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "USD/NOK",
+      "asset_class": "OTHER",
+      "base_asset": "USD",
+      "quote_asset": "NOK",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "USD/PLN",
+      "asset_class": "OTHER",
+      "base_asset": "USD",
+      "quote_asset": "PLN",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "USD/SEK",
+      "asset_class": "OTHER",
+      "base_asset": "USD",
+      "quote_asset": "SEK",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "USD/SGD",
+      "asset_class": "OTHER",
+      "base_asset": "USD",
+      "quote_asset": "SGD",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "AVAX/USD",
+      "asset_class": "CRYPTO",
+      "base_asset": "AVAX",
+      "quote_asset": "USD",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "LTC/USD",
+      "asset_class": "CRYPTO",
+      "base_asset": "LTC",
+      "quote_asset": "USD",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "SOL/USD",
+      "asset_class": "CRYPTO",
+      "base_asset": "SOL",
+      "quote_asset": "USD",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "SUI/USD",
+      "asset_class": "CRYPTO",
+      "base_asset": "SUI",
+      "quote_asset": "USD",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "XLM/USD",
+      "asset_class": "CRYPTO",
+      "base_asset": "XLM",
+      "quote_asset": "USD",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "XRP/USD",
+      "asset_class": "CRYPTO",
+      "base_asset": "XRP",
+      "quote_asset": "USD",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "AUS200/AUD",
+      "asset_class": "INDEX",
+      "base_asset": "AUS200",
+      "quote_asset": "AUD",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "CH20/CHF",
+      "asset_class": "INDEX",
+      "base_asset": "CH20",
+      "quote_asset": "CHF",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
       "direction": "Neutral"
     },
     {
@@ -1269,8 +978,8 @@
       "base_asset": "ES35",
       "quote_asset": "EUR",
       "base_score": 5.0,
-      "quote_score": 5.17,
-      "combined_bias": 4.83,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
       "direction": "Neutral"
     },
     {
@@ -1279,8 +988,8 @@
       "base_asset": "EU50",
       "quote_asset": "EUR",
       "base_score": 5.0,
-      "quote_score": 5.17,
-      "combined_bias": 4.83,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
       "direction": "Neutral"
     },
     {
@@ -1289,8 +998,18 @@
       "base_asset": "FR40",
       "quote_asset": "EUR",
       "base_score": 5.0,
-      "quote_score": 5.17,
-      "combined_bias": 4.83,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "GB100/GBP",
+      "asset_class": "INDEX",
+      "base_asset": "GB100",
+      "quote_asset": "GBP",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
       "direction": "Neutral"
     },
     {
@@ -1298,26 +1017,6 @@
       "asset_class": "INDEX",
       "base_asset": "GE40",
       "quote_asset": "EUR",
-      "base_score": 5.0,
-      "quote_score": 5.17,
-      "combined_bias": 4.83,
-      "direction": "Neutral"
-    },
-    {
-      "name": "EUR/CAD",
-      "asset_class": "FX",
-      "base_asset": "EUR",
-      "quote_asset": "CAD",
-      "base_score": 5.17,
-      "quote_score": 5.28,
-      "combined_bias": 4.89,
-      "direction": "Neutral"
-    },
-    {
-      "name": "CH20/CHF",
-      "asset_class": "INDEX",
-      "base_asset": "CH20",
-      "quote_asset": "CHF",
       "base_score": 5.0,
       "quote_score": 5.0,
       "combined_bias": 5.0,
@@ -1332,14 +1031,54 @@
       "quote_score": 5.0,
       "combined_bias": 5.0,
       "direction": "Neutral"
+    },
+    {
+      "name": "JP225/JPY",
+      "asset_class": "INDEX",
+      "base_asset": "JP225",
+      "quote_asset": "JPY",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "NAS100/USD",
+      "asset_class": "INDEX",
+      "base_asset": "NAS100",
+      "quote_asset": "USD",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "US30/USD",
+      "asset_class": "INDEX",
+      "base_asset": "US30",
+      "quote_asset": "USD",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
+    },
+    {
+      "name": "SP500/USD",
+      "asset_class": "INDEX",
+      "base_asset": "SP500",
+      "quote_asset": "USD",
+      "base_score": 5.0,
+      "quote_score": 5.0,
+      "combined_bias": 5.0,
+      "direction": "Neutral"
     }
   ],
   "total_pairs": 80,
   "extreme_setups": [],
   "total_extreme": 0,
   "summary": {
-    "bullish_count": 25,
+    "bullish_count": 5,
     "bearish_count": 3,
-    "neutral_count": 52
+    "neutral_count": 72
   }
 }
