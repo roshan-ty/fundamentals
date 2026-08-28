@@ -5,6 +5,8 @@ Scrapes Forex Factory's live economic calendar using cloudscraper (Cloudflare
 bypass) + BeautifulSoup4, normalizes every event, and exports a clean, rich
 JSON array to public/data/calendar.json.
 
+Target currencies: USD, EUR, GBP, JPY, AUD, CAD, CHF, NZD, CNY.
+
 Output format (bare JSON array):
 [
   {
@@ -20,7 +22,7 @@ Output format (bare JSON array):
     "actual_num": 147000.0,
     "forecast_num": 165000.0,
     "previous_num": 150000.0,
-    "delta_vs_forecast": -18000.0,
+    "deviation": -18000.0,
     "direction": "bearish"
   }
 ]
@@ -61,7 +63,8 @@ FF_CALENDAR_URL = "https://www.forexfactory.com/calendar"
 PROJECT_ROOT = os.path.realpath(os.path.join(os.path.dirname(__file__), ".."))
 OUTPUT_PATH = os.path.join(PROJECT_ROOT, "public", "data", "calendar.json")
 
-MAJOR_CURRENCIES = {"USD", "EUR", "GBP", "JPY", "AUD", "CAD", "CHF", "NZD"}
+# Full multi-currency scrape target set (never narrow to USD-only).
+TARGET_CURRENCIES = {"USD", "EUR", "GBP", "JPY", "AUD", "CAD", "CHF", "NZD", "CNY"}
 
 FF_COUNTRY_MAP = {
     "USD": "USD", "EUR": "EUR", "GBP": "GBP", "JPY": "JPY",
@@ -141,6 +144,24 @@ def parse_impact(impact_class: str) -> str:
     return "Low"
 
 
+def _cell_value(cell) -> str:
+    """Extract a calendar cell's data value, preferring the title attribute.
+
+    Forex Factory cells carry tooltips like 'Actual: 213K' in the title and
+    may render a placeholder or empty text in the visible node. Prefer the
+    title (strip the leading label) and fall back to visible text.
+    """
+    if cell is None:
+        return ""
+    title = cell.get("title")
+    if title and title.strip():
+        title = title.strip()
+        if ":" in title:
+            title = title.split(":", 1)[1]
+        return title.strip()
+    return cell.get_text(strip=True)
+
+
 def determine_direction(event_name: str, actual: Optional[float],
                         forecast: Optional[float]) -> str:
     """Determine bullish/bearish/neutral based on Actual vs Forecast."""
@@ -172,25 +193,12 @@ def make_event_id(currency: str, event: str, date: str) -> str:
 def fetch_calendar_html() -> Optional[str]:
     """Fetch the FF calendar HTML with Cloudflare bypass fallback chain.
 
-    Strategy 1: cloudscraper (browser impersonation)
-    Strategy 2: curl_cffi (chrome120 impersonation)
+    Strategy 1: curl_cffi (real TLS + chrome120 browser impersonation)
+    Strategy 2: cloudscraper (browser profile challenge solver)
     Strategy 3: plain requests with browser headers
     """
-    # Strategy 1: cloudscraper
-    if _HAS_CLOUDSCRAPER:
-        try:
-            scraper = cloudscraper.create_scraper(
-                browser={"browser": "chrome", "platform": "windows", "desktop": True}
-            )
-            resp = scraper.get(FF_CALENDAR_URL, headers=BROWSER_HEADERS, timeout=45)
-            if resp.status_code == 200 and "calendar" in resp.text.lower():
-                logger.info("Fetched via cloudscraper (%d bytes)", len(resp.text))
-                return resp.text
-            logger.warning("cloudscraper returned status %s", resp.status_code)
-        except Exception as e:
-            logger.warning("cloudscraper failed: %s", e)
-
-    # Strategy 2: curl_cffi with browser impersonation
+    # Strategy 1: curl_cffi with browser impersonation (strongest bypass:
+    # mimics both the TLS fingerprint and the Chrome HTTP/2 header order).
     if _HAS_CURL_CFFI:
         try:
             resp = curl_requests.get(
@@ -205,6 +213,20 @@ def fetch_calendar_html() -> Optional[str]:
             logger.warning("curl_cffi returned status %s", resp.status_code)
         except Exception as e:
             logger.warning("curl_cffi failed: %s", e)
+
+    # Strategy 2: cloudscraper browser-profile challenge solver
+    if _HAS_CLOUDSCRAPER:
+        try:
+            scraper = cloudscraper.create_scraper(
+                browser={"browser": "chrome", "platform": "windows", "desktop": True}
+            )
+            resp = scraper.get(FF_CALENDAR_URL, headers=BROWSER_HEADERS, timeout=45)
+            if resp.status_code == 200 and "calendar" in resp.text.lower():
+                logger.info("Fetched via cloudscraper (%d bytes)", len(resp.text))
+                return resp.text
+            logger.warning("cloudscraper returned status %s", resp.status_code)
+        except Exception as e:
+            logger.warning("cloudscraper failed: %s", e)
 
     # Strategy 3: plain requests with browser headers
     try:
@@ -266,9 +288,9 @@ def parse_calendar(html: str) -> list[dict]:
             forecast_cell = row.find("td", class_=re.compile("calendar__forecast"))
             previous_cell = row.find("td", class_=re.compile("calendar__previous"))
 
-            actual_raw = actual_cell.get_text(strip=True) if actual_cell else ""
-            forecast_raw = forecast_cell.get_text(strip=True) if forecast_cell else ""
-            previous_raw = previous_cell.get_text(strip=True) if previous_cell else ""
+            actual_raw = _cell_value(actual_cell)
+            forecast_raw = _cell_value(forecast_cell)
+            previous_raw = _cell_value(previous_cell)
 
             if not event_text or not currency:
                 continue
@@ -277,9 +299,9 @@ def parse_calendar(html: str) -> list[dict]:
             forecast_num = parse_numeric_value(forecast_raw)
             previous_num = parse_numeric_value(previous_raw)
 
-            delta = None
+            deviation = None
             if actual_num is not None and forecast_num is not None:
-                delta = round(actual_num - forecast_num, 4)
+                deviation = round(actual_num - forecast_num, 4)
 
             direction = determine_direction(event_text, actual_num, forecast_num)
 
@@ -296,7 +318,7 @@ def parse_calendar(html: str) -> list[dict]:
                 "actual_num": actual_num,
                 "forecast_num": forecast_num,
                 "previous_num": previous_num,
-                "delta_vs_forecast": delta,
+                "deviation": deviation,
                 "direction": direction,
             })
         except Exception as e:
@@ -397,7 +419,7 @@ def run_fixture_pipeline() -> int:
 
     This produces the exact task-mandated bare-array format in public/data/calendar.json
     even when the live Forex Factory fetch is blocked (Cloudflare 403), so the scraper's
-    end-to-end behaviour is verifiable offline. Covers all 8 major currencies and
+    end-to-end behaviour is verifiable offline. Covers all 9 target currencies and
     High / Medium / Low / Non-Economic impacts.
     """
     fixture_html = """<html><body>
@@ -478,6 +500,24 @@ def run_fixture_pipeline() -> int:
         <td class="calendar__previous">1.4%</td>
       </tr>
       <tr class="calendar__row">
+        <td class="calendar__time">9:30pm</td>
+        <td class="calendar__currency">CNY</td>
+        <td class="calendar__event">Chinese CPI (YoY)</td>
+        <td class="calendar__impact impact-red"></td>
+        <td class="calendar__actual">2.4%</td>
+        <td class="calendar__forecast">2.2%</td>
+        <td class="calendar__previous">2.1%</td>
+      </tr>
+      <tr class="calendar__row">
+        <td class="calendar__time">9:45pm</td>
+        <td class="calendar__currency">CNY</td>
+        <td class="calendar__event">Chinese GDP (QoQ)</td>
+        <td class="calendar__impact impact-ora"></td>
+        <td class="calendar__actual">1.1%</td>
+        <td class="calendar__forecast">1.2%</td>
+        <td class="calendar__previous">1.0%</td>
+      </tr>
+      <tr class="calendar__row">
         <td class="calendar__time">All Day</td>
         <td class="calendar__currency">USD</td>
         <td class="calendar__event">Bank Holiday</td>
@@ -507,11 +547,11 @@ def run_fixture_pipeline() -> int:
     print(f"  Impacts: {', '.join(sorted(impacts))}")
     print(f"  Events with numeric actual: {with_numeric}")
 
-    missing_majors = MAJOR_CURRENCIES - currencies
+    missing_majors = TARGET_CURRENCIES - currencies
     if missing_majors:
-        print(f"  [WARN] Missing major currencies: {', '.join(sorted(missing_majors))}")
+        print(f"  [WARN] Missing target currencies: {', '.join(sorted(missing_majors))}")
         return 1
-    print(f"  [OK] All 8 major currencies present: {', '.join(sorted(MAJOR_CURRENCIES))}")
+    print(f"  [OK] All 9 target currencies present: {', '.join(sorted(TARGET_CURRENCIES))}")
 
     high_impact = [ev for ev in events if ev["impact"] == "High"]
     med_impact = [ev for ev in events if ev["impact"] == "Medium"]
@@ -562,11 +602,11 @@ def main() -> int:
     print(f"  Impacts: {', '.join(sorted(impacts))}")
     print(f"  Events with numeric actual: {with_numeric}")
 
-    missing_majors = MAJOR_CURRENCIES - currencies
+    missing_majors = TARGET_CURRENCIES - currencies
     if missing_majors:
-        print(f"  [WARN] Missing major currencies: {', '.join(sorted(missing_majors))}")
+        print(f"  [WARN] Missing target currencies: {', '.join(sorted(missing_majors))}")
     else:
-        print(f"  [OK] All 8 major currencies present: {', '.join(sorted(MAJOR_CURRENCIES))}")
+        print(f"  [OK] All 9 target currencies present: {', '.join(sorted(TARGET_CURRENCIES))}")
 
     return 0
 

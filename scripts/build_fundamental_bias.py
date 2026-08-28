@@ -1,31 +1,38 @@
 #!/usr/bin/env python3
 """
-Bulls & Bears Fundamentals — Fundamental Scoring Engine & Cross-Asset Relative Strength
+Bulls & Bears Fundamentals — Relative Strength & Differential Fundamental Scoring Engine
 
 Authoritative script that computes:
-  1. Per-currency Fundamental Strength Score S_c in [1.0, 10.0] for the 8 major
-     currencies (USD, EUR, GBP, JPY, AUD, CAD, CHF, NZD) using the Latest Release
-     Delta Scoring model over public/data/calendar.json.
-  2. All-pair & cross-asset relative strength for every whitelisted asset in
-     scripts/config.py ALLOWED_ASSETS.
 
-Output: public/data/master_bias.json (superset schema — task data model + the
-frontend's existing base_scores/pairs/score_breakdowns structure so the website
-keeps working).
+  STEP 1 — Individual Currency Strength Scores S_c ∈ [1.0, 10.0]
+  ---------------------------------------------------------------
+  For each major currency (USD, EUR, GBP, JPY, AUD, CAD, CHF, NZD):
 
-Scoring math (see task spec):
-  Event Deviation:  delta = (Actual - Forecast) / (|Forecast| + eps)
-  Normalized d in [-1, +1] (sign flipped for Unemployment / Jobless Claims)
-  Weight w: High=1.0, Medium=0.5, Low=0.2
-  Z_c = sum(d_i * w_i) / sum(w_i)
-  S_c = clamp(5.0 + Z_c * 4.0, 1.0, 10.0)
+    d_i = Direction_Multiplier × clamp( (Actual − Forecast) / (|Forecast| + ε), −1.0, 1.0 )
 
-Pair / cross-asset formulas:
-  Direct USD (USD/XXX):        S = S_USD
-  Inverse USD (XXX/USD):       S = 11.0 - S_USD
-  Non-USD cross (BASE/QUOTE):  S = clamp(5.0 + (S_BASE - S_QUOTE), 1, 10)
-  Commodities & Crypto:        S = 11.0 - S_USD
-  Indices:                     growth/rate-based (bullish >6, bearish <4)
+    Impact weights:              High = 1.0 · Medium = 0.5 · Low = 0.2
+    Weighted aggregate sentiment: Z_c = Σ(d_i · w_i) / Σ(w_i)
+    Currency strength:           S_c = clamp(5.0 + Z_c × 4.0, 1.0, 10.0)
+
+    Direction multipliers:
+      Standard growth/inflation (GDP, CPI, PPI, Retail, NFP, PMI):  +1 (beat = bullish)
+      Distress/employment (Unemployment, Jobless Claims):           −1 (rise = bearish)
+
+  STEP 2 — Pair Relative Strength Differential Scores
+  ---------------------------------------------------
+  Forex currency pairs (EURUSD, GBPUSD, EURGBP, GBPJPY, AUDCAD, USDJPY, ...)
+    Pair Score = clamp(5.0 + (S_BASE − S_QUOTE), 1.0, 10.0)
+    => EURUSD with S_EUR=5.5, S_USD=8.0  → 5.0 + (5.5 − 8.0) = 2.5  (Strongly Bearish)
+    => USDJPY with S_USD=8.0, S_JPY=3.0  → 5.0 + (8.0 − 3.0) = 10.0 (Extremely Bullish)
+
+  Precious metals / crypto / equity indices (non-yielding, USD-priced)
+    Asset Score = 11.0 − S_USD
+    => S_USD=8.0 (bullish USD)  →  Gold = 3.0  (bearish Gold)
+
+Output: public/data/master_bias.json
+    Superset schema: task data model (currencies, assets, pairs) + the frontend's
+    existing base_scores / pairs / event_breakdowns structure so the website and
+    the "Analyze" modal keep working.
 
 Run:
   python scripts/build_fundamental_bias.py            # generate master_bias.json
@@ -35,7 +42,6 @@ Run:
 import os
 import sys
 import json
-import math
 import logging
 from datetime import datetime, timezone
 from typing import Any, Optional
@@ -47,10 +53,10 @@ if _PROJECT_ROOT not in sys.path:
 
 from scripts.config import (
     ALLOWED_ASSETS,
-    CURRENCY_ASSIGNMENT,
     ALLOWED_DISPLAY_PAIRS,
-    ALLOWED_BASE_ASSETS,
     symbol_to_code,
+    _COMMODITY_METALS,
+    _COMMODITY_ENERGY,
 )
 
 logger = logging.getLogger(__name__)
@@ -70,23 +76,13 @@ IMPACT_WEIGHTS = {
     "Non-Economic": 0.0,
 }
 
-# Inverse distress indicators: higher actual => bearish
+# Inverse distress indicators: higher actual => bearish (flip sign)
 INVERSE_KEYWORDS = ["UNEMPLOYMENT", "JOBLESS CLAIMS", "INITIAL CLAIMS", "JOBLESS"]
 
-# PMI benchmark: >50 expansion, <50 contraction
-PMI_KEYWORDS = ["PMI", "MANUFACTURING PMI", "SERVICES PMI", "COMPOSITE PMI"]
 
-# Index home currency (for index growth/rate logic)
-INDEX_HOME_CURRENCY = {
-    "AUS200": "AUD", "CH20": "CHF", "ES35": "EUR", "EU50": "EUR",
-    "FR40": "EUR", "GB100": "GBP", "GE40": "EUR", "HK50": "HKD",
-    "JP225": "JPY", "US100": "USD", "US30": "USD", "US500": "USD",
-}
-
-
-def _clamp(score: float, lo: float = 1.0, hi: float = 10.0) -> float:
-    """Clamp a score strictly to [lo, hi]."""
-    return max(lo, min(hi, score))
+def _clamp(value: float, lo: float = 1.0, hi: float = 10.0) -> float:
+    """Clamp a value strictly to [lo, hi]."""
+    return max(lo, min(hi, value))
 
 
 def _bias_label(score: float) -> str:
@@ -102,51 +98,43 @@ def _bias_label(score: float) -> str:
     return "Strongly Bearish"
 
 
-# ═══════════════════════════════════════════════════════════════════════════════
-# SECTION 1: Latest Release Delta Scoring (per currency)
-# ═══════════════════════════════════════════════════════════════════════════════
-
 def _is_inverse(event_name: str) -> bool:
+    """True for distress indicators where a higher actual is bearish."""
     upper = event_name.upper()
     return any(kw in upper for kw in INVERSE_KEYWORDS)
 
 
-def _is_pmi(event_name: str) -> bool:
-    upper = event_name.upper()
-    return any(kw in upper for kw in PMI_KEYWORDS)
+# ═══════════════════════════════════════════════════════════════════════════════
+# STEP 1 — Normalized event score & per-currency aggregation
+# ═══════════════════════════════════════════════════════════════════════════════
 
-
-def event_deviation(actual: float, forecast: Optional[float],
+def event_deviation(actual: Optional[float], forecast: Optional[float],
                     previous: Optional[float], event_name: str) -> Optional[float]:
-    """Compute the bounded normalized delta d in [-1, +1] for one event.
+    """Normalized event deviation d_i ∈ [−1, +1] per the task spec.
 
-    delta = (Actual - Forecast) / (|Forecast| + eps)
-    Sign is flipped for inverse indicators (Unemployment / Jobless Claims).
-    PMI contraction (<50) is treated as bearish.
+    d_i = Direction_Multiplier × clamp((Actual − Forecast) / (|Forecast| + ε), −1, 1)
+
+    Falls back to Previous when Forecast is missing so released events with no
+    consensus estimate still contribute.
     """
     if actual is None:
         return None
 
-    # Prefer forecast; fall back to previous if forecast missing
     ref = forecast if forecast is not None else previous
     if ref is None:
         return None
 
     eps = 1e-9
-    delta = (actual - ref) / (abs(ref) + eps)
+    raw = (actual - ref) / (abs(ref) + eps)
 
-    # Normalize to [-1, +1] via tanh
-    d = math.tanh(delta)
+    # Linear clamp to [-1, +1] (not tanh — task spec mandates hard clamp)
+    d = _clamp(raw, -1.0, 1.0)
 
-    # Inverse indicators: higher actual => bearish (flip sign)
+    # Distress indicators: higher actual => bearish (Direction_Multiplier = −1)
     if _is_inverse(event_name):
         d = -d
 
-    # PMI contraction (<50) => bearish regardless of delta
-    if _is_pmi(event_name) and actual < 50.0:
-        d = min(d, -0.1)
-
-    return _clamp(d, -1.0, 1.0)
+    return d
 
 
 def score_currency_from_events(events: list[dict], currency: str) -> float:
@@ -187,111 +175,76 @@ def compute_currency_scores(events: list[dict]) -> dict[str, float]:
     for c in MAJOR_CURRENCIES:
         scores[c] = score_currency_from_events(events, c)
     return scores
-
-
 # ═══════════════════════════════════════════════════════════════════════════════
-# SECTION 2: All-Pair & Cross-Asset Relative Strength
+# STEP 2 — Cross-asset relative strength & pair differential scores
 # ═══════════════════════════════════════════════════════════════════════════════
 
 def compute_asset_scores(currency_scores: dict[str, float]) -> dict[str, dict]:
-    """Compute the relative strength score for every whitelisted asset.
+    """Compute per-asset scores for commodities, crypto and equity indices.
 
-    Returns {asset_symbol: {"score": float, "bias": str, "category": str}}.
+    Non-yielding USD-priced assets (precious metals, crypto, equity indices)
+    carry the inverse-USD score:  Asset Score = 11.0 − S_USD
     """
     usd = currency_scores.get("USD", 5.0)
+    inverse = _clamp(11.0 - usd)
+
     assets: dict[str, dict] = {}
 
-    # ── Forex pairs ────────────────────────────────────────────────────────
-    for symbol in ALLOWED_ASSETS.get("FOREX", []):
-        if len(symbol) != 6:
-            continue
-        base, quote = symbol[:3], symbol[3:]
-        sb = currency_scores.get(base, 5.0)
-        sq = currency_scores.get(quote, 5.0)
+    for asset_class in ("COMMODITIES", "CRYPTO", "INDICES"):
+        for symbol in ALLOWED_ASSETS.get(asset_class, []):
+            code = symbol_to_code(symbol)
+            if asset_class == "COMMODITIES":
+                category = (
+                    "METAL" if code in _COMMODITY_METALS
+                    else "ENERGY" if code in _COMMODITY_ENERGY
+                    else "COMMODITY"
+                )
+            else:
+                category = asset_class  # CRYPTO | INDICES
 
-        if base == "USD":
-            # Direct USD pair (USD/XXX): S = S_USD
-            score = usd
-        elif quote == "USD":
-            # Inverse USD pair (XXX/USD): S = 11.0 - S_USD
-            score = 11.0 - usd
-        else:
-            # Non-USD cross (BASE/QUOTE): S = clamp(5 + (S_BASE - S_QUOTE))
-            score = _clamp(5.0 + (sb - sq))
-
-        assets[symbol] = {
-            "score": round(score, 2),
-            "bias": _bias_label(score),
-            "category": "FOREX",
-        }
-
-    # ── Commodities (priced in USD, inverse to USD) ────────────────────────
-    for symbol in ALLOWED_ASSETS.get("COMMODITIES", []):
-        score = 11.0 - usd
-        assets[symbol] = {
-            "score": round(score, 2),
-            "bias": _bias_label(score),
-            "category": "COMMODITIES",
-        }
-
-    # ── Crypto (high-beta risk-on, priced in USD) ──────────────────────────
-    for symbol in ALLOWED_ASSETS.get("CRYPTO", []):
-        score = 11.0 - usd
-        assets[symbol] = {
-            "score": round(score, 2),
-            "bias": _bias_label(score),
-            "category": "CRYPTO",
-        }
-
-    # ── Global Equity Indices (growth/rate-based) ──────────────────────────
-    for symbol in ALLOWED_ASSETS.get("INDICES", []):
-        home = INDEX_HOME_CURRENCY.get(symbol, "USD")
-        shome = currency_scores.get(home, 5.0)
-        # Soft home currency (weak rates) => bullish; hawkish => bearish
-        # Base 5.0, adjusted by home-currency weakness (11 - S_home) and USD
-        # strength. Indices thrive on soft rates + expansion.
-        score = 5.0 + (11.0 - shome) * 0.5 - (usd - 5.0) * 0.3
-        score = _clamp(score)
-        assets[symbol] = {
-            "score": round(score, 2),
-            "bias": _bias_label(score),
-            "category": "INDICES",
-        }
+            assets[code] = {
+                "score": round(inverse, 2),
+                "bias": _bias_label(inverse),
+                "category": category,
+            }
 
     return assets
 
 
-# ═══════════════════════════════════════════════════════════════════════════════
-# SECTION 3: Frontend-compatible pair matrix (keeps website working)
-# ═══════════════════════════════════════════════════════════════════════════════
+def compute_pair_matrix(base_scores: dict[str, float]) -> list[dict]:
+    """Build the frontend `pairs` array from ALLOWED_DISPLAY_PAIRS.
 
-def compute_pair_matrix(currency_scores: dict[str, float]) -> list[dict]:
-    """Build the frontend's `pairs` array from ALLOWED_DISPLAY_PAIRS.
+    Forex pairs (both legs are currencies):
+        Pair Score = clamp(5.0 + (S_BASE − S_QUOTE), 1, 10)
+    Assets priced in USD (metals / crypto / indices / energy):
+        Pair Score = asset's own score (= 11.0 − S_USD)
 
     Each pair: {name, asset_class, base_asset, quote_asset, base_score,
-                quote_score, combined_bias, direction}.
+                quote_score, net_differential, combined_bias, direction}.
     """
     pairs: list[dict] = []
     for spec in ALLOWED_DISPLAY_PAIRS:
         base = spec["base"]
         quote = spec["quote"]
-        bs = currency_scores.get(base, 5.0)
-        qs = currency_scores.get(quote, 5.0)
+        asset_class = spec.get("asset_class", "OTHER")
+        bs = base_scores.get(base, 5.0)
+        qs = base_scores.get(quote, 5.0)
 
-        if base == "USD":
-            combined = bs
-        elif quote == "USD":
-            combined = 11.0 - bs
-        else:
+        if asset_class == "FX":
+            # Relative strength differential — compare BASE vs QUOTE currency
             combined = _clamp(5.0 + (bs - qs))
+        else:
+            # Non-yielding USD-priced asset — its score already encodes 11 − S_USD
+            combined = _clamp(bs)
 
         pairs.append({
-            "name": f"{base}/{quote}",
-            "asset_class": spec.get("asset_class", "OTHER"),
+            "name": spec.get("name", f"{base}/{quote}"),
+            "asset_class": asset_class,
             "base_asset": base,
             "quote_asset": quote,
             "base_score": round(bs, 2),
             "quote_score": round(qs, 2),
+            "net_differential": round(bs - qs, 2),
             "combined_bias": round(combined, 2),
             "direction": _bias_label(combined),
         })
@@ -301,7 +254,84 @@ def compute_pair_matrix(currency_scores: dict[str, float]) -> list[dict]:
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
-# SECTION 4: Master JSON Generation
+# Event-level breakdowns (drives the frontend "Analyze" modal)
+# ═══════════════════════════════════════════════════════════════════════════════
+
+def build_event_breakdowns(events: list[dict]) -> dict[str, list[dict]]:
+    """Group every released calendar event by currency with full analytics.
+
+    One record per event for each major currency:
+      date, time, event, impact, actual/forecast/previous (raw + numeric),
+      deviation (Actual − Forecast), d_score (normalized d_i), weight, direction.
+    """
+    breakdowns: dict[str, list[dict]] = {c: [] for c in MAJOR_CURRENCIES}
+
+    for ev in events:
+        currency = ev.get("currency")
+        if currency not in breakdowns:
+            continue
+
+        actual = ev.get("actual_num")
+        forecast = ev.get("forecast_num")
+        previous = ev.get("previous_num")
+        event_name = ev.get("event", "")
+        impact = ev.get("impact", "Low")
+        w = IMPACT_WEIGHTS.get(impact, 0.0)
+
+        d = event_deviation(actual, forecast, previous, event_name)
+
+        deviation = None
+        if actual is not None and forecast is not None:
+            deviation = round(actual - forecast, 4)
+
+        direction = "neutral"
+        if d is not None:
+            direction = "bullish" if d > 0 else "bearish" if d < 0 else "neutral"
+
+        breakdowns[currency].append({
+            "date": ev.get("date", ""),
+            "time": ev.get("time", ""),
+            "event": event_name,
+            "impact": impact,
+            "actual_raw": ev.get("actual_raw", ""),
+            "forecast_raw": ev.get("forecast_raw", ""),
+            "previous_raw": ev.get("previous_raw", ""),
+            "actual_num": actual,
+            "forecast_num": forecast,
+            "previous_num": previous,
+            "deviation": deviation,
+            "d_score": None if d is None else round(d, 4),
+            "weight": w,
+            "direction": direction,
+        })
+
+    return breakdowns
+
+
+def build_score_breakdowns(breakdowns: dict[str, list[dict]]) -> dict[str, list[dict]]:
+    """Derive the legacy per-indicator score breakdown shape for HomeTab cards."""
+    out: dict[str, list[dict]] = {}
+    for currency, items in breakdowns.items():
+        rows = []
+        for it in items:
+            if it["d_score"] is None:
+                continue
+            score = round(_clamp(5.0 + it["d_score"] * 4.0), 2)
+            rows.append({
+                "indicator": it["event"],
+                "value": it["actual_num"],
+                "unit": "",
+                "date": it["date"],
+                "score": score,
+                "tier": it["impact"],
+                "weight": it["weight"],
+                "direction": it["direction"],
+                "contribution": round(it["d_score"] * it["weight"], 4),
+})
+        out[currency] = rows
+    return out
+# ═══════════════════════════════════════════════════════════════════════════════
+# Master JSON Generation
 # ═══════════════════════════════════════════════════════════════════════════════
 
 def load_calendar_events() -> list[dict]:
@@ -320,9 +350,14 @@ def build_master_bias(events: list[dict]) -> dict[str, Any]:
     """Assemble the superset master_bias.json payload."""
     currency_scores = compute_currency_scores(events)
     asset_scores = compute_asset_scores(currency_scores)
-    pairs = compute_pair_matrix(currency_scores)
 
-    # Task schema: currencies + assets
+    # base_scores = 8 majors + every whitelisted non-currency asset
+    base_scores: dict[str, float] = dict(currency_scores)
+    for code, a in asset_scores.items():
+        base_scores[code] = a["score"]
+
+    pairs = compute_pair_matrix(base_scores)
+
     currencies_out = {
         c: {"score": currency_scores[c], "bias": _bias_label(currency_scores[c])}
         for c in MAJOR_CURRENCIES
@@ -332,10 +367,8 @@ def build_master_bias(events: list[dict]) -> dict[str, Any]:
         for sym, a in asset_scores.items()
     }
 
-    # Frontend schema: base_scores + pairs + summary + extreme_setups
-    base_scores = dict(currency_scores)
-    for sym, a in asset_scores.items():
-        base_scores[sym] = a["score"]
+    event_breakdowns = build_event_breakdowns(events)
+    score_breakdowns = build_score_breakdowns(event_breakdowns)
 
     summary = {
         "bullish_count": sum(1 for p in pairs if p["combined_bias"] >= 6.0),
@@ -357,12 +390,14 @@ def build_master_bias(events: list[dict]) -> dict[str, Any]:
         "base_scores": base_scores,
         "total_base_assets": len(base_scores),
         "momentum_scores": {},
-        "score_breakdowns": {},
+        "event_breakdowns": event_breakdowns,
+        "score_breakdowns": score_breakdowns,
         "analysis_window_days": 14,
         "analysis_note": (
-            "Latest Release Delta Model: per-currency scores from calendar "
-            "events (Actual vs Forecast), weighted by impact. Cross-asset "
-            "relative strength derived from currency differentials."
+            "Relative Strength & Differential Model: per-currency scores from "
+            "calendar events (Actual vs Forecast, /|Forecast| normalized, impact-"
+            "weighted). Forex pairs = 5 + (S_BASE − S_QUOTE); USD-priced assets "
+            "(metals/crypto/indices) = 11 − S_USD."
         ),
         "pairs": pairs,
         "total_pairs": len(pairs),
@@ -380,10 +415,8 @@ def write_master_bias(payload: dict[str, Any], output_path: str = OUTPUT_PATH) -
     logger.info("Exported master_bias.json (%d assets, %d pairs)",
                 len(payload["assets"]), payload["total_pairs"])
     return output_path
-
-
 # ═══════════════════════════════════════════════════════════════════════════════
-# SECTION 5: Self-Test (offline formula verification)
+# Self-Test (offline formula verification against the task's worked examples)
 # ═══════════════════════════════════════════════════════════════════════════════
 
 def run_self_test() -> int:
@@ -392,7 +425,7 @@ def run_self_test() -> int:
     print(" BULLS & BEARS FUNDAMENTALS — SCORING ENGINE SELF-TEST")
     print("=" * 60)
 
-    # ── Latest Release Delta Scoring ───────────────────────────────────────
+    # ── Step 1: normalized event deviation ──────────────────────────────────
     # NFP miss: actual 147K vs forecast 165K => bearish (negative d)
     d = event_deviation(147000.0, 165000.0, 150000.0, "Non-Farm Employment Change")
     print(f"  [INFO] NFP miss delta = {d:.4f} (expected negative)")
@@ -408,8 +441,7 @@ def run_self_test() -> int:
     print(f"  [INFO] PMI contraction delta = {d3:.4f} (expected negative)")
     assert d3 is not None and d3 < 0, "PMI contraction should be bearish"
 
-    # ── Currency score aggregation ─────────────────────────────────────────
-    # A single bullish event (actual > forecast) should push S_c above 5.0
+    # ── Currency score aggregation ───────────────────────────────────────────
     events = [
         {"currency": "USD", "impact": "High", "event": "Non-Farm Employment Change",
          "actual_num": 170000.0, "forecast_num": 165000.0, "previous_num": 150000.0},
@@ -418,31 +450,55 @@ def run_self_test() -> int:
     print(f"  [INFO] USD score from single bullish NFP = {s}")
     assert s > 5.0, "Bullish event should push score above 5.0"
 
-    # ── Cross-asset relative strength ──────────────────────────────────────
-    # Inverse USD: S = 11.0 - S_USD
-    cs = {"USD": 3.4, "EUR": 6.8, "GBP": 5.2, "JPY": 5.0, "AUD": 5.0,
+    # ── Step 2: Worked Example 1 — EURUSD = 5 + (S_EUR − S_USD) = 2.5 ───────
+    cs = {"USD": 8.0, "EUR": 5.5, "GBP": 5.0, "JPY": 3.0, "AUD": 5.0,
           "CAD": 5.0, "CHF": 5.0, "NZD": 5.0}
+    base_scores = dict(cs)
+    for code, a in compute_asset_scores(cs).items():
+        base_scores[code] = a["score"]
+
+    pairs_map = {p["name"]: p for p in compute_pair_matrix(base_scores)}
+    eurusd = pairs_map["EUR/USD"]["combined_bias"]
+    print(f"  [INFO] EUR/USD = {eurusd} (expected 2.5)")
+    assert abs(eurusd - 2.5) < 0.01, "EURUSD should be 5 + (5.5 − 8.0) = 2.5"
+
+    # ── Worked Example 2 — USDJPY = 5 + (S_USD − S_JPY) = 10.0 ───────────────
+    cs2 = dict(cs)
+    cs2["JPY"] = 3.0
+    base_scores2 = dict(cs2)
+    for code, a in compute_asset_scores(cs2).items():
+        base_scores2[code] = a["score"]
+    pairs_map2 = {p["name"]: p for p in compute_pair_matrix(base_scores2)}
+    usdjpy = pairs_map2["USD/JPY"]["combined_bias"]
+    print(f"  [INFO] USD/JPY = {usdjpy} (expected 10.0)")
+    assert abs(usdjpy - 10.0) < 0.01, "USDJPY should be 5 + (8.0 − 3.0) = 10.0"
+
+    # ── Precious metals & crypto: 11 − S_USD ─────────────────────────────────
     assets = compute_asset_scores(cs)
-    print(f"  [INFO] S_USD=3.4 -> GOLD = {assets['GOLD']['score']} (expected 7.6)")
-    assert abs(assets["GOLD"]["score"] - 7.6) < 0.01, "GOLD should be 11.0 - 3.4 = 7.6"
-    assert abs(assets["BTCUSD"]["score"] - 7.6) < 0.01, "BTCUSD should be 7.6"
+    print(f"  [INFO] S_USD=8.0 -> XAU = {assets['XAU']['score']} (expected 3.0)")
+    assert abs(assets["XAU"]["score"] - 3.0) < 0.01, "GOLD should be 11 − 8.0 = 3.0"
+    assert abs(assets["XAG"]["score"] - 3.0) < 0.01, "SILVER should be 3.0"
+    assert abs(assets["BTC"]["score"] - 3.0) < 0.01, "BTC should be 3.0"
+    assert abs(assets["SP500"]["score"] - 3.0) < 0.01, "US500 should be 3.0"
+    assert abs(assets["NAS100"]["score"] - 3.0) < 0.01, "US100 should be 3.0"
 
-    # Non-USD cross: EURGBP = 5 + (S_EUR - S_GBP) = 5 + (6.8 - 5.2) = 6.6
-    print(f"  [INFO] EURGBP = {assets['EURGBP']['score']} (expected 6.6)")
-    assert abs(assets["EURGBP"]["score"] - 6.6) < 0.01, "EURGBP should be 6.6"
+    # Weak USD => bullish Gold
+    cs_weak = dict(cs)
+    cs_weak["USD"] = 3.4
+    assets_weak = compute_asset_scores(cs_weak)
+    print(f"  [INFO] S_USD=3.4 -> XAU = {assets_weak['XAU']['score']} (expected 7.6)")
+    assert abs(assets_weak["XAU"]["score"] - 7.6) < 0.01, "GOLD should be 11 − 3.4 = 7.6"
 
-    # Direct USD: USDJPY = S_USD = 3.4
-    print(f"  [INFO] USDJPY = {assets['USDJPY']['score']} (expected 3.4)")
-    assert abs(assets["USDJPY"]["score"] - 3.4) < 0.01, "USDJPY should be 3.4"
+    # ── Event breakdowns & whitelist coverage ────────────────────────────────
+    breakdowns = build_event_breakdowns(events)
+    assert "USD" in breakdowns and len(breakdowns["USD"]) >= 1
+    assert breakdowns["USD"][0]["d_score"] is not None
 
-    # Inverse USD: EURUSD = 11.0 - 3.4 = 7.6
-    print(f"  [INFO] EURUSD = {assets['EURUSD']['score']} (expected 7.6)")
-    assert abs(assets["EURUSD"]["score"] - 7.6) < 0.01, "EURUSD should be 7.6"
-
-    # ── Whitelist coverage ─────────────────────────────────────────────────
-    expected_count = sum(len(v) for v in ALLOWED_ASSETS.values())
-    print(f"  [INFO] Whitelist assets = {expected_count}, generated = {len(assets)}")
-    assert len(assets) == expected_count, "All whitelist assets must be scored"
+    expected_assets = (len(ALLOWED_ASSETS["COMMODITIES"]) +
+                       len(ALLOWED_ASSETS["CRYPTO"]) +
+                       len(ALLOWED_ASSETS["INDICES"]))
+    print(f"  [INFO] Non-FX whitelist assets = {expected_assets}, generated = {len(assets)}")
+    assert len(assets) == expected_assets, "All non-FX whitelist assets must be scored"
 
     print("\nAll scoring engine self-test assertions passed.")
     return 0

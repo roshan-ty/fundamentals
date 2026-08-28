@@ -6,12 +6,14 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                    GITHUB ACTIONS (Daily)                    │
+│                    GITHUB ACTIONS (24/7)                     │
 │  ┌───────────────────────────────────────────────────────┐  │
-│  │  1. parsers.py — Collect 30 data points from 8+ APIs  │  │
-│  │  2. scorer.py — Compute 1-10 scores with tier weights │  │
-│  │  3. ai_analyst.py — xAI macro summary generation      │  │
-│  │  4. Export 5 JSON files to /public/data/              │  │
+│  │  1. calendar_scraper.py — Forex Factory calendar     │  │
+│  │  2. news_scraper.py — Forex Factory news             │  │
+│  │  3. build_fundamental_bias.py — Differential scoring │  │
+│  │  4. build_cftc_data.py — CFTC positioning            │  │
+│  │  5. generate_ai_notes.py — AI macro analysis         │  │
+│  │  6. Export 5 JSON files to /public/data/             │  │
 │  └───────────────────────────────────────────────────────┘  │
 │                           │                                  │
 │                           ▼                                  │
@@ -111,14 +113,17 @@ python -m venv .venv
 source .venv/bin/activate  # Linux/Mac
 
 # Install dependencies
-pip install -r backend/requirements.txt
+pip install cloudscraper beautifulsoup4 requests curl_cffi
 
-# Configure API keys
-cp backend/.env.example backend/.env
-# Edit backend/.env with your API keys
+# Run the full master pipeline (calendar, news, bias, CFTC, AI notes)
+python scripts/run_all.py --live
 
-# Run the pipeline
-python backend/fetch_pipeline.py
+# Run each stage individually
+python scripts/calendar_scraper.py          # → public/data/calendar.json
+python scripts/news_scraper.py              # → public/data/news.json
+python scripts/build_fundamental_bias.py    # → public/data/master_bias.json
+python scripts/build_cftc_data.py           # → public/data/cftc_report.json
+python scripts/generate_ai_notes.py         # → public/data/ai_insights.json
 ```
 
 ### Frontend Setup

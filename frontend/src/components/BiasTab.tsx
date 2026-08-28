@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { Search, X, ChevronDown, ChevronUp } from 'lucide-react';
+import { Search, X } from 'lucide-react';
 
 interface PairBias {
   name: string;
@@ -8,6 +8,7 @@ interface PairBias {
   quote_asset: string;
   base_score: number;
   quote_score: number;
+  net_differential?: number;
   combined_bias: number;
   direction: string;
   momentum_base?: number;
@@ -26,6 +27,24 @@ interface BreakdownItem {
   contribution: number;
 }
 
+// Per-event analytical record emitted by build_fundamental_bias.py
+interface EventItem {
+  date: string;
+  time: string;
+  event: string;
+  impact: string;
+  actual_raw: string;
+  forecast_raw: string;
+  previous_raw: string;
+  actual_num: number | null;
+  forecast_num: number | null;
+  previous_num: number | null;
+  deviation: number | null;
+  d_score: number | null;
+  weight: number;
+  direction: string;
+}
+
 interface Props {
   data: any;
 }
@@ -38,6 +57,7 @@ export default function BiasTab({ data }: Props) {
 
   const allPairs: PairBias[] = data?.pairs || [];
   const baseScores: Record<string, number> = data?.base_scores || {};
+  const eventBreakdowns: Record<string, EventItem[]> = data?.event_breakdowns || {};
   const scoreBreakdowns: Record<string, BreakdownItem[]> = data?.score_breakdowns || {};
   const analysisWindowDays = data?.analysis_window_days || 14;
 
@@ -92,13 +112,125 @@ export default function BiasTab({ data }: Props) {
       return 'bg-red-900/40 text-red-400 border-red-700/40';
     return 'bg-gray-700/40 text-gray-400 border-gray-600/40';
   };
-
-  const formatValue = (item: BreakdownItem) => {
-    if (item.value === null || item.value === undefined) return '—';
-    return `${item.value} ${item.unit || ''}`.trim();
+  // ── Compact number formatting (K / M / B) ─────────────────────────────────────
+  const fmtNum = (n: number | null | undefined): string => {
+    if (n === null || n === undefined || Number.isNaN(n)) return '—';
+    const abs = Math.abs(n);
+    const sign = n < 0 ? '-' : '';
+    if (abs >= 1e9) return `${sign}${(abs / 1e9).toFixed(2)}B`;
+    if (abs >= 1e6) return `${sign}${(abs / 1e6).toFixed(2)}M`;
+    if (abs >= 1e3) return `${sign}${(abs / 1e3).toFixed(1)}K`;
+    if (Number.isInteger(n)) return n.toString();
+    return (Math.round(n * 100) / 100).toString();
   };
 
-  // Detail Modal with full breakdown
+  // Prefer the clean raw string; otherwise compact numeric.
+  const displayVal = (raw: string, num: number | null) =>
+    raw && raw.trim() && raw.trim() !== '—' ? raw : fmtNum(num);
+
+  const getImpactBadge = (impact: string) => {
+    if (impact === 'High') return 'bg-red-900/40 text-red-400 border-red-700/40';
+    if (impact === 'Medium') return 'bg-orange-900/40 text-orange-400 border-orange-700/40';
+    if (impact === 'Low') return 'bg-yellow-900/40 text-yellow-400 border-yellow-700/40';
+    return 'bg-gray-700/40 text-gray-400 border-gray-600/40';
+  };
+
+  // ── Fundamental Verdict Paragraph ─────────────────────────────────────────────
+  const buildVerdict = (p: PairBias): string => {
+    const diff = p.net_differential !== undefined ? p.net_differential : p.base_score - p.quote_score;
+    const baseEvents = (eventBreakdowns[p.base_asset] || []).filter(e => e.d_score !== null);
+    const quoteEvents = (eventBreakdowns[p.quote_asset] || []).filter(e => e.d_score !== null);
+    const topBase = [...baseEvents]
+      .sort((a, b) => Math.abs(b.d_score ?? 0) - Math.abs(a.d_score ?? 0))
+      .slice(0, 2);
+    const topQuote = [...quoteEvents]
+      .sort((a, b) => Math.abs(b.d_score ?? 0) - Math.abs(a.d_score ?? 0))
+      .slice(0, 2);
+
+    const absDiff = Math.abs(diff);
+    let strength;
+    if (absDiff >= 2.0) strength = 'overwhelmingly';
+    else if (absDiff >= 1.0) strength = 'significantly';
+    else if (absDiff >= 0.5) strength = 'moderately';
+    else strength = 'only marginally';
+
+    const label = p.direction.includes('Bullish') ? 'Bullish' : p.direction.includes('Bearish') ? 'Bearish' : 'Neutral';
+
+    const baseBit = topBase.length > 0
+      ? `Recent ${p.base_asset} data (${topBase.map(e => `"${e.event}" (${e.direction})`).join(', ')}) reinforces this view.`
+      : `No recent ${p.base_asset} calendar events were available in the ${analysisWindowDays}-day window.`;
+    const quoteBit = topQuote.length > 0
+      ? `Meanwhile ${p.quote_asset} data (${topQuote.map(e => `"${e.event}" (${e.direction})`).join(', ')}) moves in the opposite direction.`
+      : `No recent ${p.quote_asset} calendar events were available in the ${analysisWindowDays}-day window.`;
+
+    if (label === 'Neutral') {
+      return `The ${p.name} pair sits near equilibrium: ${p.base_asset} scores ${p.base_score.toFixed(1)} against ${p.quote_asset}'s ${p.quote_score.toFixed(1)}, for a net differential of ${diff >= 0 ? '+' : ''}${diff.toFixed(1)}. Neither side carries a clear macroeconomic edge. ${baseBit} ${quoteBit}`;
+    }
+    return `The ${p.name} pair is ${label.toLowerCase()} overall. ${p.base_asset} carries a fundamental strength score of ${p.base_score.toFixed(1)} versus ${p.quote_asset}'s ${p.quote_score.toFixed(1)} — a net differential of ${diff >= 0 ? '+' : ''}${diff.toFixed(1)} that ${diff > 0 ? 'favors' : 'weighs against'} the base currency ${strength}. ${baseBit} ${quoteBit}`;
+  };
+
+  // ── Currency breakdown table (Base & Quote legs) ──────────────────────────────
+  const renderCurrencyTable = (currency: string) => {
+    const events = (eventBreakdowns[currency] || [])
+      .filter(e => e.d_score !== null && e.d_score !== undefined)
+      .slice()
+      .sort((a, b) => (b.date || '').localeCompare(a.date || ''))
+      .slice(0, 8);
+
+    if (events.length === 0) {
+      return (
+        <div className="text-center py-6 text-2xs text-gray-500">
+          No released economic events for {currency} in the {analysisWindowDays}-day window.
+        </div>
+      );
+    }
+
+    return (
+      <div className="overflow-x-auto">
+        <table className="w-full text-[11px]">
+          <thead>
+            <tr className="border-b border-dark-border text-2xs text-gray-500">
+              <th className="text-left py-2 pl-3 pr-2 font-medium">Date</th>
+              <th className="text-left py-2 px-2 font-medium">Event</th>
+              <th className="text-center py-2 px-2 font-medium">Impact</th>
+              <th className="text-right py-2 px-2 font-medium">Actual</th>
+              <th className="text-right py-2 px-2 font-medium">Forecast</th>
+              <th className="text-center py-2 pr-3 font-medium">Score</th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-dark-border">
+            {events.map((e, i) => (
+              <tr key={i} className="hover:bg-dark-card/50">
+                <td className="py-1.5 pl-3 pr-2 whitespace-nowrap text-gray-400 font-mono">
+                  {e.date ? (e.date.length > 10 ? e.date.slice(0, 10) : e.date) : '—'}
+                </td>
+                <td className="py-1.5 px-2 text-gray-300 max-w-[220px] truncate" title={e.event}>
+                  {e.event}
+                </td>
+                <td className="py-1.5 px-2 text-center">
+                  <span className={`inline-flex items-center gap-1 text-2xs px-1.5 py-0.5 rounded border ${getImpactBadge(e.impact)}`}>
+                    <span className={`w-1.5 h-1.5 rounded-full ${e.impact === 'High' ? 'bg-red-500' : e.impact === 'Medium' ? 'bg-orange-500' : e.impact === 'Low' ? 'bg-yellow-500' : 'bg-gray-500'}`} />
+                    {e.impact}
+                  </span>
+                </td>
+                <td className="py-1.5 px-2 text-right font-mono text-gray-200 whitespace-nowrap">
+                  {displayVal(e.actual_raw, e.actual_num)}
+                </td>
+                <td className="py-1.5 px-2 text-right font-mono text-gray-400 whitespace-nowrap">
+                  {displayVal(e.forecast_raw, e.forecast_num)}
+                </td>
+                <td className={`py-1.5 pr-3 text-center font-mono font-bold ${getScoreColor(5 + (e.d_score ?? 0) * 4)}`}>
+                  {((e.d_score ?? 0) >= 0 ? '+' : '')}{(e.d_score ?? 0).toFixed(2)}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    );
+  };
+
+  // Detail Modal — Relative Strength + per-currency event breakdown + verdict
   const renderModal = () => {
     if (!selectedPair) return null;
     const p = selectedPair;
@@ -106,20 +238,19 @@ export default function BiasTab({ data }: Props) {
     const baseBreakdown = scoreBreakdowns[p.base_asset] || [];
     const quoteBreakdown = scoreBreakdowns[p.quote_asset] || [];
 
-    // Calculate bias contribution from base vs quote
-    const netBias = p.combined_bias;
-    const directionLabel = p.direction;
+    const netDiff = p.net_differential !== undefined
+      ? p.net_differential
+      : Math.round((p.base_score - p.quote_score) * 100) / 100;
+    const diffColor = netDiff >= 0.5 ? 'text-emerald-400' : netDiff <= -0.5 ? 'text-red-400' : 'text-gray-400';
+    const diffLabel = p.direction.includes('Bullish') ? 'Bullish' : p.direction.includes('Bearish') ? 'Bearish' : 'Neutral';
+    const diffLabelBg = p.direction.includes('Bullish')
+      ? 'bg-emerald-900/40 text-emerald-400 border-emerald-700/40'
+      : p.direction.includes('Bearish')
+        ? 'bg-red-900/40 text-red-400 border-red-700/40'
+        : 'bg-gray-700/40 text-gray-400 border-gray-600/40';
 
-    // Merge and sort breakdown items by contribution impact (highest weight first)
-    const allBreakdown = [
-      ...baseBreakdown.map(item => ({ ...item, asset: p.base_asset })),
-      ...quoteBreakdown.map(item => ({ ...item, asset: p.quote_asset })),
-    ];
-
-    // Count bullish vs bearish data points
-    const bullishCount = allBreakdown.filter(i => i.direction === 'bullish').length;
-    const bearishCount = allBreakdown.filter(i => i.direction === 'bearish').length;
-    const neutralCount = allBreakdown.filter(i => i.direction === 'neutral').length;
+    const baseHasEvents = (eventBreakdowns[p.base_asset] || []).some(e => e.d_score !== null && e.d_score !== undefined);
+    const quoteHasEvents = (eventBreakdowns[p.quote_asset] || []).some(e => e.d_score !== null && e.d_score !== undefined);
 
     return (
       <div className="modal-overlay" onClick={() => setSelectedPair(null)}>
@@ -131,135 +262,102 @@ export default function BiasTab({ data }: Props) {
             </button>
           </div>
 
-          <div className="p-4 space-y-4">
-            {/* Asset class */}
-            <div className="flex items-center gap-2 text-xs text-gray-400">
-              <span className="px-2 py-0.5 bg-dark-border rounded">{p.asset_class}</span>
-              <span>{p.base_asset} / {p.quote_asset}</span>
-            </div>
-
-            {/* Main Bias Score */}
-            <div className="card p-4">
-              <div className="flex items-center justify-between">
-                <div>
-                  <div className={`text-3xl font-bold font-mono ${getScoreColor(netBias)}`}>
-                    {netBias.toFixed(2)} / 10
-                  </div>
-                  <div className={`text-xs mt-1 ${getBadge(directionLabel)} px-2 py-0.5 rounded inline-block`}>
-                    {directionLabel}
+          <div className="divide-y divide-dark-border">
+            {/* ═══ Relative Strength Header ═══ */}
+            <div className="p-4">
+              <div className="text-2xs text-gray-500 uppercase tracking-wider mb-3 font-semibold">
+                Relative Strength Differential
+              </div>
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+                <div className="flex items-center gap-2">
+                  <span className="font-mono text-lg font-bold text-white">{p.base_asset}</span>
+                  <span className={`font-mono text-lg font-bold ${getScoreColor(p.base_score)}`}>
+                    ({p.base_score.toFixed(1)})
+                  </span>
+                </div>
+                <span className="text-gray-600 text-xs">vs</span>
+                <div className="flex items-center gap-2">
+                  <span className="font-mono text-lg font-bold text-white">{p.quote_asset}</span>
+                  <span className={`font-mono text-lg font-bold ${getScoreColor(p.quote_score)}`}>
+                    ({p.quote_score.toFixed(1)})
+                  </span>
+                </div>
+                <div className="ml-auto text-right">
+                  <div className="text-2xs text-gray-500 uppercase">Net Differential</div>
+                  <div className={`font-mono text-lg font-bold ${diffColor}`}>
+                    {netDiff >= 0 ? '+' : ''}{netDiff.toFixed(1)}
+                    <span className={`ml-2 text-xs px-2 py-0.5 rounded border align-middle ${diffLabelBg}`}>
+                      {diffLabel}
+                    </span>
                   </div>
                 </div>
-                <div className="text-right text-2xs text-gray-500 space-y-1">
-                  <div className="flex items-center gap-2 justify-end">
-                    <span>{p.base_asset} score:</span>
-                    <span className={`font-mono font-bold ${getScoreColor(p.base_score)}`}>{p.base_score.toFixed(2)}</span>
-                  </div>
-                  <div className="flex items-center gap-2 justify-end">
-                    <span>{p.quote_asset} score:</span>
-                    <span className={`font-mono font-bold ${getScoreColor(p.quote_score)}`}>{p.quote_score.toFixed(2)}</span>
-                  </div>
+              </div>
+              <div className="mt-3 relative h-1.5 rounded-full bg-dark-border overflow-hidden">
+                <div
+                  className={`h-full rounded-full transition-all ${netDiff >= 0 ? 'bg-emerald-500' : 'bg-red-500'}`}
+                  style={{
+                    width: `${Math.min(50, Math.abs(netDiff) * 5)}%`,
+                    marginLeft: '50%',
+                    transform: netDiff >= 0 ? 'none' : 'translateX(-100%)',
+                  }}
+                />
+              </div>
+              <div className="mt-1 flex justify-between text-[10px] text-gray-600 font-mono">
+                <span>Bearish {p.base_asset}</span>
+                <span>Neutral</span>
+                <span>Bullish {p.base_asset}</span>
+              </div>
+            </div>
+
+{/* ═══ Base Currency Data Breakdown ═══ */}
+            <div className="p-4">
+              <div className="flex items-center justify-between mb-2">
+                <h4 className="text-xs font-semibold text-white">
+                  {p.base_asset} — Recent Economic Data
+                </h4>
+                <span className={`text-2xs px-2 py-0.5 rounded border bg-gray-800 ${getScoreColor(p.base_score)}`}>
+                  Strength {p.base_score.toFixed(1)}/10
+                </span>
+              </div>
+              {baseHasEvents ? renderCurrencyTable(p.base_asset) : (
+                <div className="text-center py-4 text-2xs text-gray-500">
+                  {p.asset_class === 'FX'
+                    ? `No released economic events for ${p.base_asset} in the ${analysisWindowDays}-day window.`
+                    : `${p.base_asset} is a USD-priced ${p.asset_class.toLowerCase()} asset — its score is driven by the inverse USD relationship (11 − S_USD).`}
                 </div>
-              </div>
+              )}
             </div>
 
-            {/* Formula breakdown */}
-            <div className="card p-3">
-              <div className="text-2xs text-gray-500 uppercase mb-2">How Bias Is Calculated</div>
-              <div className="text-xs font-mono text-gray-300">
-                Pair Bias = 5 + ({p.base_asset} Score - {p.quote_asset} Score) + Momentum Adjustment
+            {/* ═══ Quote Currency Data Breakdown ═══ */}
+            <div className="p-4">
+              <div className="flex items-center justify-between mb-2">
+                <h4 className="text-xs font-semibold text-white">
+                  {p.quote_asset} — Recent Economic Data
+                </h4>
+                <span className={`text-2xs px-2 py-0.5 rounded border bg-gray-800 ${getScoreColor(p.quote_score)}`}>
+                  Strength {p.quote_score.toFixed(1)}/10
+                </span>
               </div>
-              <div className="text-xs font-mono text-gray-400 mt-1">
-                {p.momentum_base !== undefined && p.momentum_base !== null && p.momentum_quote !== undefined && p.momentum_quote !== null
-                  ? `= 5 + (${p.base_score.toFixed(2)} - ${p.quote_score.toFixed(2)}) + (${p.momentum_base.toFixed(2)} - ${p.momentum_quote.toFixed(2)})/5*2`
-                  : `= 5 + (${p.base_score.toFixed(2)} - ${p.quote_score.toFixed(2)})`
-                }
-                = <span className="text-white font-bold">{netBias.toFixed(2)}</span>
-              </div>
-            </div>
-
-            {/* Data point summary */}
-            <div className="grid grid-cols-3 gap-2">
-              <div className="card p-2 text-center">
-                <div className="text-lg font-bold font-mono text-emerald-400">{bullishCount}</div>
-                <div className="text-2xs text-gray-500">Bullish Data Points</div>
-              </div>
-              <div className="card p-2 text-center">
-                <div className="text-lg font-bold font-mono text-gray-400">{neutralCount}</div>
-                <div className="text-2xs text-gray-500">Neutral</div>
-              </div>
-              <div className="card p-2 text-center">
-                <div className="text-lg font-bold font-mono text-red-400">{bearishCount}</div>
-                <div className="text-2xs text-gray-500">Bearish Data Points</div>
-              </div>
-            </div>
-
-            {/* Full Breakdown Table */}
-            {allBreakdown.length > 0 ? (
-              <div className="card p-3 overflow-x-auto">
-                <div className="text-2xs text-gray-500 uppercase mb-2">
-                  Economic Data Points Used for This Bias (Recent {analysisWindowDays} Days Only)
+              {quoteHasEvents ? renderCurrencyTable(p.quote_asset) : (
+                <div className="text-center py-4 text-2xs text-gray-500">
+                  {`No released economic events for ${p.quote_asset} in the ${analysisWindowDays}-day window.`}
                 </div>
-                <table className="w-full text-xs">
-                  <thead>
-                    <tr className="border-b border-dark-border">
-                      <th className="text-left py-1.5 pr-2 text-gray-500 font-medium">Asset</th>
-                      <th className="text-left py-1.5 pr-2 text-gray-500 font-medium">Data Point</th>
-                      <th className="text-right py-1.5 pr-2 text-gray-500 font-medium">Value</th>
-                      <th className="text-right py-1.5 pr-2 text-gray-500 font-medium">Date</th>
-                      <th className="text-center py-1.5 pr-2 text-gray-500 font-medium">Score</th>
-                      <th className="text-center py-1.5 pr-2 text-gray-500 font-medium">Tier</th>
-                      <th className="text-center py-1.5 text-gray-500 font-medium">Signal</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-dark-border">
-                    {allBreakdown.map((item, i) => (
-                      <tr key={i} className={item.direction === 'bearish' ? 'bg-red-950/10' : item.direction === 'bullish' ? 'bg-emerald-950/10' : ''}>
-                        <td className="py-1.5 pr-2 font-bold text-white">{item.asset}</td>
-                        <td className="py-1.5 pr-2 text-gray-300">{item.indicator}</td>
-                        <td className="py-1.5 pr-2 text-right font-mono text-gray-300">
-                          {formatValue(item)}
-                        </td>
-                        <td className="py-1.5 pr-2 text-right text-gray-500 font-mono whitespace-nowrap">
-                          {item.date ? (item.date.length > 10 ? item.date.slice(0, 10) : item.date) : '—'}
-                        </td>
-                        <td className={`py-1.5 pr-2 text-center font-mono font-bold ${getScoreColor(item.score)}`}>
-                          {item.score.toFixed(1)}
-                        </td>
-                        <td className="py-1.5 pr-2 text-center text-2xs text-gray-500">{item.tier}</td>
-                        <td className="py-1.5 text-center">
-                          <span className={`text-2xs px-1.5 py-0.5 rounded font-medium ${
-                            item.direction === 'bullish' ? 'bg-emerald-900/30 text-emerald-400' :
-                            item.direction === 'bearish' ? 'bg-red-900/30 text-red-400' :
-                            'bg-gray-700/30 text-gray-400'
-                          }`}>
-                            {item.direction === 'bullish' ? '▲ Bullish' : item.direction === 'bearish' ? '▼ Bearish' : '■ Neutral'}
-                          </span>
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            ) : (
-              <div className="card p-4 text-center text-2xs text-gray-500">
-                No detailed breakdown data available for this pair.
-              </div>
-            )}
+              )}
+            </div>
 
-            {/* Base score summary */}
-            <div className="card p-3">
-              <div className="text-2xs text-gray-500 uppercase mb-2">Underlying Asset Scores</div>
-              <div className="space-y-1 text-xs">
-                {Object.entries(baseScores)
-                  .filter(([key]) => key === p.base_asset || key === p.quote_asset)
-                  .map(([key, val]) => (
-                    <div key={key} className="flex justify-between">
-                      <span className="text-gray-400">{key}</span>
-                      <span className={`font-mono font-medium ${getScoreColor(val)}`}>
-                        {val.toFixed(2)}
-                      </span>
-                    </div>
-                  ))}
+            {/* ═══ Fundamental Verdict Summary ═══ */}
+            <div className="p-4">
+              <div className="text-2xs text-gray-500 uppercase tracking-wider mb-2 font-semibold">
+                Fundamental Verdict
+              </div>
+              <div className="card p-3">
+                <p className="text-xs text-gray-300 leading-relaxed">
+                  {buildVerdict(p)}
+                </p>
+                <div className="mt-3 flex items-center justify-between text-2xs text-gray-500">
+                  <span>Base {p.base_score.toFixed(1)} · Quote {p.quote_score.toFixed(1)}</span>
+                  <span>Analysis window: {analysisWindowDays} days</span>
+                </div>
               </div>
             </div>
           </div>
@@ -267,8 +365,7 @@ export default function BiasTab({ data }: Props) {
       </div>
     );
   };
-
-  return (
+return (
     <div>
       {/* Header with search */}
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 mb-4">

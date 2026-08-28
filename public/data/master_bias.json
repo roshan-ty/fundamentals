@@ -531,7 +531,7 @@
   "momentum_scores": {},
   "score_breakdowns": {},
   "analysis_window_days": 14,
-  "analysis_note": "Latest Release Delta Model: per-currency scores from calendar events (Actual vs Forecast), weighted by impact. Cross-asset relative strength derived from currency differentials.",
+  "analysis_note": "Relative Strength & Differential Model: per-currency scores from calendar events (Actual vs Forecast, /|Forecast| normalized, impact-weighted). Forex pairs = 5 + (S_BASE \u2212 S_QUOTE); USD-priced assets (metals/crypto/indices) = 11 \u2212 S_USD.",
   "pairs": [
     {
       "name": "AUD/JPY",
@@ -554,7 +554,7 @@
       "direction": "Bearish"
     },
     {
-      "name": "AUD/CHF",
+      "name": "AUD/NZD",
       "asset_class": "FX",
       "base_asset": "AUD",
       "quote_asset": "CHF",
@@ -1320,7 +1320,8 @@
       "quote_asset": "CHF",
       "base_score": 5.0,
       "quote_score": 5.0,
-      "combined_bias": 5.0,
+      "net_differential": 0.17,
+      "combined_bias": 5.17,
       "direction": "Neutral"
     },
     {
@@ -1330,7 +1331,63 @@
       "quote_asset": "HKD",
       "base_score": 5.0,
       "quote_score": 5.0,
-      "combined_bias": 5.0,
+      "net_differential": 0.17,
+      "combined_bias": 5.17,
+      "direction": "Neutral"
+    },
+    {
+      "name": "EUR/SEK",
+      "asset_class": "FX",
+      "base_asset": "EUR",
+      "quote_asset": "SEK",
+      "base_score": 5.17,
+      "quote_score": 5.0,
+      "net_differential": 0.17,
+      "combined_bias": 5.17,
+      "direction": "Neutral"
+    },
+    {
+      "name": "EUR/SGD",
+      "asset_class": "FX",
+      "base_asset": "EUR",
+      "quote_asset": "SGD",
+      "base_score": 5.17,
+      "quote_score": 5.0,
+      "net_differential": 0.17,
+      "combined_bias": 5.17,
+      "direction": "Neutral"
+    },
+    {
+      "name": "EUR/TRY",
+      "asset_class": "FX",
+      "base_asset": "EUR",
+      "quote_asset": "TRY",
+      "base_score": 5.17,
+      "quote_score": 5.0,
+      "net_differential": 0.17,
+      "combined_bias": 5.17,
+      "direction": "Neutral"
+    },
+    {
+      "name": "EUR/ZAR",
+      "asset_class": "FX",
+      "base_asset": "EUR",
+      "quote_asset": "ZAR",
+      "base_score": 5.17,
+      "quote_score": 5.0,
+      "net_differential": 0.17,
+      "combined_bias": 5.17,
+      "direction": "Neutral"
+    },
+    {
+      "name": "EUR/CAD",
+      "asset_class": "FX",
+      "base_asset": "EUR",
+      "quote_asset": "CAD",
+      "base_score": 5.17,
+      "quote_score": 5.28,
+      "net_differential": -0.11,
+      "combined_bias": 4.89,
       "direction": "Neutral"
     }
   ],
