@@ -12,7 +12,7 @@
     "actual_num": 147000.0,
     "forecast_num": 165000.0,
     "previous_num": 150000.0,
-    "delta_vs_forecast": -18000.0,
+    "deviation": -18000.0,
     "direction": "bearish"
   },
   {
@@ -28,7 +28,7 @@
     "actual_num": 2.4,
     "forecast_num": 2.3,
     "previous_num": 2.5,
-    "delta_vs_forecast": 0.1,
+    "deviation": 0.1,
     "direction": "bullish"
   },
   {
@@ -44,7 +44,7 @@
     "actual_num": 0.6,
     "forecast_num": 0.5,
     "previous_num": 0.4,
-    "delta_vs_forecast": 0.1,
+    "deviation": 0.1,
     "direction": "bullish"
   },
   {
@@ -60,7 +60,7 @@
     "actual_num": 1.2,
     "forecast_num": 1.5,
     "previous_num": 1.8,
-    "delta_vs_forecast": -0.3,
+    "deviation": -0.3,
     "direction": "bearish"
   },
   {
@@ -76,7 +76,7 @@
     "actual_num": 38500.0,
     "forecast_num": 25000.0,
     "previous_num": 42000.0,
-    "delta_vs_forecast": 13500.0,
+    "deviation": 13500.0,
     "direction": "bullish"
   },
   {
@@ -92,7 +92,7 @@
     "actual_num": 3.1,
     "forecast_num": 2.9,
     "previous_num": 3.0,
-    "delta_vs_forecast": 0.2,
+    "deviation": 0.2,
     "direction": "bullish"
   },
   {
@@ -108,7 +108,7 @@
     "actual_num": 1.25,
     "forecast_num": 1.25,
     "previous_num": 1.5,
-    "delta_vs_forecast": 0.0,
+    "deviation": 0.0,
     "direction": "neutral"
   },
   {
@@ -124,8 +124,40 @@
     "actual_num": 1.8,
     "forecast_num": 1.6,
     "previous_num": 1.4,
-    "delta_vs_forecast": 0.2,
+    "deviation": 0.2,
     "direction": "bullish"
+  },
+  {
+    "id": "cny-chinese-cpi-yoy-fri-aug-7-2026",
+    "date": "Fri Aug 7 2026",
+    "time": "9:30pm",
+    "currency": "CNY",
+    "impact": "High",
+    "event": "Chinese CPI (YoY)",
+    "actual_raw": "2.4%",
+    "forecast_raw": "2.2%",
+    "previous_raw": "2.1%",
+    "actual_num": 2.4,
+    "forecast_num": 2.2,
+    "previous_num": 2.1,
+    "deviation": 0.2,
+    "direction": "bullish"
+  },
+  {
+    "id": "cny-chinese-gdp-qoq-fri-aug-7-2026",
+    "date": "Fri Aug 7 2026",
+    "time": "9:45pm",
+    "currency": "CNY",
+    "impact": "Medium",
+    "event": "Chinese GDP (QoQ)",
+    "actual_raw": "1.1%",
+    "forecast_raw": "1.2%",
+    "previous_raw": "1.0%",
+    "actual_num": 1.1,
+    "forecast_num": 1.2,
+    "previous_num": 1.0,
+    "deviation": -0.1,
+    "direction": "bearish"
   },
   {
     "id": "usd-bank-holiday-fri-aug-7-2026",
@@ -140,7 +172,7 @@
     "actual_num": null,
     "forecast_num": null,
     "previous_num": null,
-    "delta_vs_forecast": null,
+    "deviation": null,
     "direction": "neutral"
   }
 ]
