@@ -44,5 +44,16 @@
         "ok": true
       }
     }
+  },
+  "intraday": {
+    "updated": "2026-09-10T23:54:37+00:00",
+    "stages": {
+      "quotes": {
+        "ok": true
+      },
+      "news": {
+        "ok": true
+      }
+    }
   }
 }
