@@ -4,7 +4,7 @@
  */
 "use strict";
 
-const DATA_BASE = "../data/";
+const DATA_BASE = "data/";
 let CACHE = {};
 
 async function loadJSON(path, fallback) {
@@ -49,8 +49,11 @@ function bandClass(band) {
   return "dim";
 }
 function scoreBadge(score, band) {
+  if (score === null || score === undefined || score === "") {
+    return `<span class="badge dim">No Score</span>`;
+  }
   const cls = bandClass(band);
-  const txt = (score !== null && score !== undefined && score !== "") ? fmt(score) + "/10 · " + (band || "No Score") : "No Score";
+  const txt = fmt(score) + "/10 · " + (band || "No Score");
   return `<span class="badge ${cls}">${esc(txt)}</span>`;
 }
 
