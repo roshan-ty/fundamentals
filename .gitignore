@@ -1,0 +1,35 @@
+# ── Secrets & local environment ──────────────────────────────────────
+.env
+.env.local
+*.env
+!env.example
+!.env.example
+
+# ── Python ───────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+*.log
+
+# ── Local scratch / temporary (runtime artifacts are committed via workflows) ──
+tmp/
+.tmp/
+*.tmp
+downloaded_reports/
+*.rar
+*.zip.download
+
+# ── OS / editor cruft ────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# ── Keep site/deployable data (never ignore data or site) ────────────
+# data/ and site/ are intentionally committed — they are the database
+# and the static website respectively.

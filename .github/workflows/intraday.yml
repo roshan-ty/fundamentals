@@ -1,0 +1,50 @@
+name: Intraday Quotes & News
+on:
+  schedule:
+    - cron: '5 * * * *'      # hourly, every hour
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: intraday
+  cancel-in-progress: false
+
+jobs:
+  quotes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run quotes + news
+        env:
+          FRED_KEY: ${{ secrets.FRED_KEY }}
+          ALPHAVANTAGE_KEY1: ${{ secrets.ALPHAVANTAGE_KEY1 }}
+          ALPHAVANTAGE_KEY2: ${{ secrets.ALPHAVANTAGE_KEY2 }}
+          FINNHUB_KEY: ${{ secrets.FINNHUB_KEY }}
+          TWELVEDATA_KEY: ${{ secrets.TWELVEDATA_KEY }}
+          FMP_KEY: ${{ secrets.FMP_KEY }}
+          NEWSDATA_KEY: ${{ secrets.NEWSDATA_KEY }}
+          EODHD_KEY: ${{ secrets.EODHD_KEY }}
+          MARKETSTACK_KEY: ${{ secrets.MARKETSTACK_KEY }}
+        run: python scripts/orchestrator.py intraday
+      - name: Commit
+        run: |
+          git config user.name "bbf-bot"
+          git config user.email "bbf-bot@users.noreply.github.com"
+          git add data/quotes/ data/news/ data/meta/
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "chore(data): hourly quotes/news refresh [skip ci]"
+            git pull --rebase origin
+            git push origin HEAD
+          fi

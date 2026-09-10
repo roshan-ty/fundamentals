@@ -1,0 +1,12 @@
+# Bulls & Bears Fundamentals - Python runtime dependencies
+# Pinned for Python 3.12+ (installed inside GitHub Actions each run)
+requests>=2.32.0
+beautifulsoup4>=4.12.3
+lxml>=5.3.0
+pandas>=2.2.3
+openpyxl>=3.1.5
+python-docx>=1.1.2
+pypdf>=5.1.0
+rarfile>=4.2
+python-dotenv>=1.0.1
+pytest>=8.3.0

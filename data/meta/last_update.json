@@ -1,0 +1,48 @@
+{
+  "scoring": {
+    "updated": "2026-09-10T21:05:17+00:00",
+    "stages": {
+      "currencies": {
+        "ok": true
+      },
+      "cot": {
+        "ok": true
+      },
+      "instruments": {
+        "ok": true
+      },
+      "pairs": {
+        "ok": true
+      },
+      "narratives": {
+        "ok": true
+      },
+      "setups": {
+        "ok": true
+      }
+    }
+  },
+  "daily": {
+    "updated": "2026-09-10T21:05:17+00:00",
+    "stages": {
+      "fred": {
+        "ok": true
+      },
+      "calendar": {
+        "ok": true
+      },
+      "actuals": {
+        "ok": true
+      },
+      "cftc": {
+        "ok": true
+      },
+      "quotes": {
+        "ok": true
+      },
+      "news": {
+        "ok": true
+      }
+    }
+  }
+}

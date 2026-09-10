@@ -1,0 +1,155 @@
+{
+  "schema": "1.0",
+  "description": "Bias scoring scorecard. A data point is scored ONLY when Actual differs from Previous (stronger/weaker per 'direction'). No change = 0. Weights are impact tiers; higher = more impactful. Currency score = 5 + 5 * (netBuffWeight / totalEligibleWeight), clamped 0-10, 5 = neutral.",
+  "bands": {
+    "0-2": "very bearish",
+    "3-4": "bearish",
+    "5": "neutral",
+    "6-7": "bullish",
+    "8-10": "very bullish"
+  },
+  "direction_meaning": {
+    "higher_is_bullish": "Actual > Previous scores positive",
+    "lower_is_bullish": "Actual < Previous scores positive",
+    "unchanged_is_zero": "Actual == Previous scores 0"
+  },
+  "currencies": {
+    "USD": {
+      "name": "United States Dollar",
+      "dataPoints": [
+        {"id": "us_fed_funds", "name": "Federal Funds Rate / FOMC Statement / FOMC Press Conference", "direction": "higher_is_bullish", "weight": 2.0, "match": ["Federal Funds Rate", "FOMC Statement", "FOMC Press Conference", "Fed Funds", "Fed Interest Rate", "FOMC Rate"]},
+        {"id": "us_nfp", "name": "Non-Farm Employment Change (NFP)", "direction": "higher_is_bullish", "weight": 1.5, "match": ["Non-Farm Employment Change", "Nonfarm Payrolls", "Non-Farm Payrolls", "Change in Non-Farm Payrolls"]},
+        {"id": "us_unemployment", "name": "Unemployment Rate", "direction": "lower_is_bullish", "weight": 1.0, "match": ["Unemployment Rate"]},
+        {"id": "us_ahe", "name": "Average Hourly Earnings (m/m, y/y)", "direction": "higher_is_bullish", "weight": 1.0, "match": ["Average Hourly Earnings"]},
+        {"id": "us_cpi", "name": "CPI & Core CPI (m/m, y/y)", "direction": "higher_is_bullish", "weight": 1.5, "match": ["CPI m/m", "CPI y/y", "Core CPI m/m", "Core CPI y/y", "CPI x", "Core CPI x"]},
+        {"id": "us_pce", "name": "Core PCE Price Index (m/m, y/y)", "direction": "higher_is_bullish", "weight": 1.5, "match": ["Core PCE", "PCE Price Index", "Core PCE Price"]},
+        {"id": "us_gdp", "name": "Advance GDP (q/q)", "direction": "higher_is_bullish", "weight": 1.5, "match": ["GDP q/q", "GDP y/y", "Gross Domestic Product", "Advance GDP"]},
+        {"id": "us_ism", "name": "ISM Manufacturing PMI & ISM Services PMI", "direction": "higher_is_bullish", "weight": 1.0, "match": ["ISM Manufacturing PMI", "ISM Services PMI", "ISM Manufacturing", "ISM Services"]},
+        {"id": "us_retail", "name": "Retail Sales & Core Retail Sales (m/m)", "direction": "higher_is_bullish", "weight": 1.0, "match": ["Retail Sales"]},
+        {"id": "us_adp", "name": "ADP Non-Farm Employment Change", "direction": "higher_is_bullish", "weight": 1.0, "match": ["ADP Non-Farm Employment Change", "ADP Employment Change", "ADP Nonfarm"]},
+        {"id": "us_claims", "name": "Unemployment Claims (Weekly)", "direction": "lower_is_bullish", "weight": 0.5, "match": ["Initial Jobless Claims", "Unemployment Claims", "Jobless Claims", "Continuing Jobless Claims"]},
+        {"id": "us_ppi", "name": "PPI & Core PPI (m/m)", "direction": "higher_is_bullish", "weight": 1.0, "match": ["PPI m/m", "PPI y/y", "Core PPI m/m", "Core PPI y/y", "Producer Prices"]},
+        {"id": "us_confidence", "name": "CB Consumer Confidence / UoM Consumer Sentiment", "direction": "higher_is_bullish", "weight": 0.5, "match": ["CB Consumer Confidence", "Michigan Consumer Sentiment", "UoM Consumer Sentiment", "Consumer Confidence"]},
+        {"id": "us_housing", "name": "Building Permits & Housing Starts", "direction": "higher_is_bullish", "weight": 0.5, "match": ["Building Permits", "Housing Starts", "New Home Sales", "Existing Home Sales"]},
+        {"id": "us_trade", "name": "Trade Balance", "direction": "higher_is_bullish", "weight": 0.5, "match": ["Trade Balance"]}
+      ]
+    },
+    "EUR": {
+      "name": "Euro / Eurozone & Germany",
+      "dataPoints": [
+        {"id": "eu_ecb_rate", "name": "Main Refinancing Rate / ECB Monetary Policy Statement / ECB Press Conference", "direction": "higher_is_bullish", "weight": 2.0, "match": ["Main Refinancing", "ECB Rate", "ECB Interest Rate", "ECB Monetary Policy", "ECB Press Conference", "ECB Deposit Facility", "ECB Statement"]},
+        {"id": "eu_cpi_flash", "name": "CPI Flash Estimate (y/y) & Core CPI Flash Estimate", "direction": "higher_is_bullish", "weight": 1.5, "match": ["CPI Flash Estimate", "Core CPI Flash", "CPI Flash"]},
+        {"id": "eu_de_pmi", "name": "German Flash Manufacturing PMI & Services PMI", "direction": "higher_is_bullish", "weight": 1.0, "match": ["German Flash Manufacturing PMI", "German Flash Services PMI", "German Manufacturing PMI", "German Services PMI", "German Flash Services", "German Flash Manufacturing"]},
+        {"id": "eu_ifo", "name": "German IFO Business Climate", "direction": "higher_is_bullish", "weight": 0.5, "match": ["IFO Business Climate", "German IFO", "IFO"]},
+        {"id": "eu_zew", "name": "German ZEW Economic Sentiment", "direction": "higher_is_bullish", "weight": 0.5, "match": ["ZEW Economic Sentiment", "German ZEW", "ZEW"]},
+        {"id": "eu_gdp", "name": "Eurozone Prelim GDP (q/q, y/y)", "direction": "higher_is_bullish", "weight": 1.0, "match": ["GDP q/q", "GDP y/y", "Gross Domestic Product"]},
+        {"id": "eu_employment_change", "name": "Eurozone Employment Change", "direction": "higher_is_bullish", "weight": 1.0, "match": ["Employment Change"]},
+        {"id": "eu_unemployment", "name": "Eurozone Unemployment Rate", "direction": "lower_is_bullish", "weight": 1.0, "match": ["Unemployment Rate"]},
+        {"id": "eu_de_indprod", "name": "German Industrial Production (m/m)", "direction": "higher_is_bullish", "weight": 0.5, "match": ["German Industrial Production", "Industrial Production m/m", "Industrial Production"]},
+        {"id": "eu_retail", "name": "Eurozone Retail Sales (m/m)", "direction": "higher_is_bullish", "weight": 0.5, "match": ["Retail Sales"]}
+      ]
+    },
+    "GBP": {
+      "name": "British Pound / United Kingdom",
+      "dataPoints": [
+        {"id": "gb_bank_rate", "name": "Official Bank Rate / MPC Rate Statement / MPC Official Bank Rate Votes", "direction": "higher_is_bullish", "weight": 2.0, "match": ["Bank of England Bank Rate", "Official Bank Rate", "MPC Rate Statement", "MPC Official Bank Rate Votes", "MPC Meeting Minutes", "BoE Interest Rate", "BoE Bank Rate"]},
+        {"id": "gb_cpi", "name": "CPI (y/y) & Core CPI (y/y)", "direction": "higher_is_bullish", "weight": 1.5, "match": ["CPI y/y", "Core CPI y/y", "CPI"]},
+        {"id": "gb_employment_change", "name": "Employment Change (3m/y)", "direction": "higher_is_bullish", "weight": 1.0, "match": ["Employment Change"]},
+        {"id": "gb_claimants", "name": "Claimant Count Change", "direction": "lower_is_bullish", "weight": 1.0, "match": ["Claimant Count Change"]},
+        {"id": "gb_unemployment", "name": "Unemployment Rate", "direction": "lower_is_bullish", "weight": 1.0, "match": ["Unemployment Rate"]},
+        {"id": "gb_average_earnings", "name": "Average Earnings Index + Bonus (3m/y)", "direction": "higher_is_bullish", "weight": 1.0, "match": ["Average Earnings Index", "Average Earnings"]},
+        {"id": "gb_gdp", "name": "GDP (m/m, q/q, y/y)", "direction": "higher_is_bullish", "weight": 1.0, "match": ["GDP m/m", "GDP q/q", "GDP y/y", "Gross Domestic Product"]},
+        {"id": "gb_pmi", "name": "Flash Manufacturing PMI & Flash Services PMI", "direction": "higher_is_bullish", "weight": 1.0, "match": ["Flash Manufacturing PMI", "Flash Services PMI", "Flash Manufacturing", "Flash Services"]},
+        {"id": "gb_retail", "name": "Retail Sales (m/m)", "direction": "higher_is_bullish", "weight": 0.5, "match": ["Retail Sales"]}
+      ]
+    },
+    "AUD": {
+      "name": "Australian Dollar",
+      "dataPoints": [
+        {"id": "au_cash_rate", "name": "Official Cash Rate / RBA Rate Statement / RBA Monetary Policy Statement", "direction": "higher_is_bullish", "weight": 2.0, "match": ["Official Cash Rate", "RBA Interest Rate", "RBA Rate Statement", "RBA Monetary Policy", "Cash Rate", "RBA"]},
+        {"id": "au_cpi", "name": "CPI (q/q, y/y) & Trimmed Mean CPI", "direction": "higher_is_bullish", "weight": 1.5, "match": ["CPI q/q", "CPI y/y", "Trimmed Mean CPI"]},
+        {"id": "au_employment", "name": "Employment Change", "direction": "higher_is_bullish", "weight": 1.0, "match": ["Employment Change"]},
+        {"id": "au_unemployment", "name": "Unemployment Rate", "direction": "lower_is_bullish", "weight": 1.0, "match": ["Unemployment Rate"]},
+        {"id": "au_retail", "name": "Retail Sales (m/m)", "direction": "higher_is_bullish", "weight": 0.5, "match": ["Retail Sales"]},
+        {"id": "au_gdp", "name": "GDP (q/q)", "direction": "higher_is_bullish", "weight": 1.0, "match": ["GDP q/q", "Gross Domestic Product"]},
+        {"id": "au_trade", "name": "Trade Balance", "direction": "higher_is_bullish", "weight": 0.5, "match": ["Trade Balance"]}
+      ]
+    },
+    "NZD": {
+      "name": "New Zealand Dollar",
+      "dataPoints": [
+        {"id": "nz_ocr", "name": "Official Cash Rate (OCR) / RBNZ Rate Statement / RBNZ Monetary Policy Statement", "direction": "higher_is_bullish", "weight": 2.0, "match": ["Official Cash Rate", "RBNZ Interest Rate", "RBNZ Rate Statement", "RBNZ Monetary Policy", "RBNZ Cash Rate"]},
+        {"id": "nz_cpi", "name": "CPI (q/q, y/y)", "direction": "higher_is_bullish", "weight": 1.5, "match": ["CPI q/q", "CPI y/y", "CPI"]},
+        {"id": "nz_employment", "name": "Employment Change", "direction": "higher_is_bullish", "weight": 1.0, "match": ["Employment Change"]},
+        {"id": "nz_unemployment", "name": "Unemployment Rate", "direction": "lower_is_bullish", "weight": 1.0, "match": ["Unemployment Rate"]},
+        {"id": "nz_gdp", "name": "GDP (q/q)", "direction": "higher_is_bullish", "weight": 1.0, "match": ["GDP q/q", "GDP y/y", "Gross Domestic Product"]},
+        {"id": "nz_gdt", "name": "GlobalDairyTrade (GDT) Price Index", "direction": "higher_is_bullish", "weight": 0.5, "match": ["GlobalDairyTrade", "GDT"], "note": "Bi-weekly dairy auction; polled when available."}
+      ]
+    },
+    "CAD": {
+      "name": "Canadian Dollar",
+      "dataPoints": [
+        {"id": "ca_overnight", "name": "Overnight Rate / Bank of Canada Rate Statement / Press Conference", "direction": "higher_is_bullish", "weight": 2.0, "match": ["Overnight Rate", "BoC Interest Rate", "Bank of Canada Rate", "BoC Rate Statement", "BoC Press Conference", "BoC Rate"]},
+        {"id": "ca_employment", "name": "Employment Change", "direction": "higher_is_bullish", "weight": 1.0, "match": ["Employment Change"]},
+        {"id": "ca_unemployment", "name": "Unemployment Rate", "direction": "lower_is_bullish", "weight": 1.0, "match": ["Unemployment Rate"]},
+        {"id": "ca_cpi", "name": "CPI (m/m, y/y) & Median/Trimmed CPI", "direction": "higher_is_bullish", "weight": 1.5, "match": ["CPI m/m", "CPI y/y", "Median CPI", "Trimmed CPI", "Core CPI"]},
+        {"id": "ca_gdp", "name": "GDP (m/m)", "direction": "higher_is_bullish", "weight": 1.0, "match": ["GDP m/m", "Gross Domestic Product"]},
+        {"id": "ca_retail", "name": "Retail Sales & Core Retail Sales (m/m)", "direction": "higher_is_bullish", "weight": 0.5, "match": ["Retail Sales"]},
+        {"id": "ca_trade", "name": "Trade Balance", "direction": "higher_is_bullish", "weight": 0.5, "match": ["Trade Balance"]}
+      ]
+    },
+    "JPY": {
+      "name": "Japanese Yen",
+      "dataPoints": [
+        {"id": "jp_boj", "name": "BoJ Policy Rate / Monetary Policy Statement / BoJ Press Conference", "direction": "higher_is_bullish", "weight": 2.0, "match": ["BoJ Policy Rate", "BoJ Interest Rate", "Bank of Japan Policy", "BoJ Monetary Policy", "BoJ Press Conference", "BoJ Rate"]},
+        {"id": "jp_core_cpi", "name": "National Core CPI (y/y) & Tokyo Core CPI (y/y)", "direction": "higher_is_bullish", "weight": 1.5, "match": ["Core CPI y/y", "Tokyo Core CPI", "National Core CPI", "Core CPI"]},
+        {"id": "jp_gdp", "name": "GDP (q/q, annualized)", "direction": "higher_is_bullish", "weight": 1.0, "match": ["GDP q/q", "GDP y/y", "Gross Domestic Product"]},
+        {"id": "jp_tankan", "name": "Tankan Large Manufacturers Index", "direction": "higher_is_bullish", "weight": 0.5, "match": ["Tankan"]},
+        {"id": "jp_trade", "name": "Trade Balance", "direction": "higher_is_bullish", "weight": 0.5, "match": ["Trade Balance"]},
+        {"id": "jp_cash_earnings", "name": "Average Cash Earnings (y/y)", "direction": "higher_is_bullish", "weight": 0.5, "match": ["Average Cash Earnings"]}
+      ]
+    },
+    "CHF": {
+      "name": "Swiss Franc",
+      "dataPoints": [
+        {"id": "ch_snb", "name": "SNB Policy Rate / SNB Monetary Policy Assessment", "direction": "higher_is_bullish", "weight": 2.0, "match": ["SNB Policy Rate", "Swiss National Bank Rate", "SNB Interest Rate", "SNB Monetary Policy", "SNB Rate"]},
+        {"id": "ch_cpi", "name": "CPI (m/m, y/y)", "direction": "higher_is_bullish", "weight": 1.5, "match": ["CPI m/m", "CPI y/y", "CPI"]},
+        {"id": "ch_pmi", "name": "Procure.ch Manufacturing PMI", "direction": "higher_is_bullish", "weight": 0.5, "match": ["Manufacturing PMI", "Procure.ch", "SVME"]},
+        {"id": "ch_kof", "name": "KOF Economic Barometer", "direction": "higher_is_bullish", "weight": 0.5, "match": ["KOF"]},
+        {"id": "ch_reserves", "name": "Foreign Currency Reserves", "direction": "lower_is_bullish", "weight": 0.5, "match": ["Foreign Currency Reserves"], "note": "Decrease = central bank buying the currency (bullish); increase = selling (bearish)."}
+      ]
+    },
+    "CNY": {
+      "name": "Chinese Yuan",
+      "affects": ["CNY", "AUD", "NZD"],
+      "dataPoints": [
+        {"id": "cn_lpr", "name": "Loan Prime Rate (1-Year & 5-Year LPR)", "direction": "higher_is_bullish", "weight": 0.5, "match": ["Loan Prime Rate", "LPR", "PBOC Rate"], "sideEffects": [{"currency": "AUD", "direction": "lower_is_bullish", "weight": 0.5}, {"currency": "NZD", "direction": "lower_is_bullish", "weight": 0.5}], "note": "Rate cuts = stimulus, supportive for AUD/NZD commodity links, weak for CNY yield."},
+        {"id": "cn_pmi", "name": "NBS Manufacturing PMI & Caixin Manufacturing PMI", "direction": "higher_is_bullish", "weight": 1.0, "match": ["Manufacturing PMI", "NBS Manufact", "Caixin Manufact"]},
+        {"id": "cn_cpi_ppi", "name": "CPI & PPI (y/y)", "direction": "higher_is_bullish", "weight": 0.5, "match": ["CPI y/y", "PPI y/y"]},
+        {"id": "cn_indprod", "name": "Industrial Production (y/y)", "direction": "higher_is_bullish", "weight": 0.5, "match": ["Industrial Production"]},
+        {"id": "cn_gdp", "name": "GDP (q/q, y/y)", "direction": "higher_is_bullish", "weight": 1.0, "match": ["GDP q/q", "GDP y/y", "Gross Domestic Product"]},
+        {"id": "cn_trade", "name": "Trade Balance & Exports/Imports (y/y)", "direction": "higher_is_bullish", "weight": 0.5, "match": ["Trade Balance", "Exports", "Imports"]}
+      ]
+    }
+  },
+  "instruments": {
+    "method": "Each precious metal and energy instrument scores from: inverse USD calendar score + COT positioning component. Real yields / DXY run as confirmation only (never scored).",
+    "targets": {
+      "XAUUSD": {"kind": "metal", "usd_inverse": 1.0, "cot_weight": 0.5, "name": "Gold"},
+      "XAGUSD": {"kind": "metal", "usd_inverse": 1.0, "cot_weight": 0.5, "name": "Silver"},
+      "XPTUSD": {"kind": "metal", "usd_inverse": 1.0, "cot_weight": 0.5, "name": "Platinum"},
+      "XPDUSD": {"kind": "metal", "usd_inverse": 1.0, "cot_weight": 0.5, "name": "Palladium"},
+      "OIL": {"kind": "energy", "usd_inverse": 0.7, "cot_weight": 0.5, "name": "Crude Oil (WTI)", "extra_points": [{"id": "eia_inventories", "name": "EIA Crude Oil Inventories", "direction": "lower_is_bullish", "weight": 1.0, "target": "OIL"}, {"id": "eia_inventories_cad", "name": "EIA Crude Oil Inventories (CAD)", "direction": "lower_is_bullish", "weight": 0.5, "target": "CAD"}], "note": "Inventory drawdown (Actual < Previous) is bullish for oil and CAD."},
+      "BRENT": {"kind": "energy", "usd_inverse": 0.7, "cot_weight": 0.5, "name": "Brent Crude"},
+      "COPPER": {"kind": "industrial", "usd_inverse": 0.7, "cot_weight": 0.5, "name": "Copper", "note": "Industrial metal; also driven by Chinese trade/demand data."}
+    },
+    "opec_jmmc": {"id": "opec_jmmc", "name": "OPEC-JMMC Meetings", "kind": "informational", "note": "Qualitative; feeds the analysis narrative only, no numeric score."}
+  },
+  "derived": {
+    "method": "Crypto and equity index instruments have no country calendar or CFTC COT. Bias = inverse normalized USD score + global risk-appetite proxy (10Y real yield, index breadth, US calendar).",
+    "label": "derived",
+    "usd_weight": 0.6,
+    "risk_weight": 0.4,
+    "targets": ["BTCUSD", "ETHUSD", "LTCUSD", "SOLUSD", "SUIUSD", "XLMUSD", "XRPUSD", "AVAXUSD", "US30", "US100", "US500", "GER40", "EU50", "GB100", "FR40", "JP225", "HK50", "AUS200", "CH20", "ES35"]
+  }
+}
