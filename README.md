@@ -51,8 +51,8 @@ python scripts/orchestrator.py scoring
 A local preview server:
 
 ```
-python -m http.server 8899 --directory .
-# open http://127.0.0.1:8899/site/
+python -m http.server 8899
+# open http://127.0.0.1:8899/
 ```
 
 ## Repository layout
@@ -61,6 +61,6 @@ python -m http.server 8899 --directory .
 config/     scoring rules, instrument universe, news rules (all tunable)
 scripts/    collectors, scoring engine, narrative + setup generation
 data/       the committed database the website reads
-site/       static web app (the 7 tabs)
+css, js     static web app (the 7 tabs) served at the repo root
 .github/    scheduled automation, validation and deployment
 ```

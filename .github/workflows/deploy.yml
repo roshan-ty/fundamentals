@@ -22,7 +22,7 @@ jobs:
       - name: Package site + data
         run: |
           mkdir -p _pages
-          cp -r site/* _pages/
+          cp -r index.html css js _pages/
           cp -r data _pages/data
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

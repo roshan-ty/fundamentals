@@ -20,26 +20,6 @@
     "period": "2026-04-01"
   },
   {
-    "title": "CPI m/m",
-    "country": "USD",
-    "date_utc": "2026-06-01T00:00:00+00:00",
-    "impact": "High",
-    "actual": "-0.42",
-    "previous": "",
-    "source_series": "CPIAUCSL",
-    "period": "2026-06-01"
-  },
-  {
-    "title": "Core CPI m/m",
-    "country": "USD",
-    "date_utc": "2026-06-01T00:00:00+00:00",
-    "impact": "High",
-    "actual": "-0.02",
-    "previous": "",
-    "source_series": "CPILFESL",
-    "period": "2026-06-01"
-  },
-  {
     "title": "Core PCE Price Index m/m",
     "country": "USD",
     "date_utc": "2026-06-01T00:00:00+00:00",
@@ -218,6 +198,26 @@
     "previous": "49.5",
     "source_series": "UMCSENT",
     "period": "2026-07-01"
+  },
+  {
+    "title": "CPI m/m",
+    "country": "USD",
+    "date_utc": "2026-08-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "0.4",
+    "previous": "",
+    "source_series": "CPIAUCSL",
+    "period": "2026-08-01"
+  },
+  {
+    "title": "Core CPI m/m",
+    "country": "USD",
+    "date_utc": "2026-08-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "0.29",
+    "previous": "",
+    "source_series": "CPILFESL",
+    "period": "2026-08-01"
   },
   {
     "title": "PPI m/m",

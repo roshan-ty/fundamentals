@@ -9,6 +9,7 @@ import os
 import sys
 import json
 import time
+from datetime import datetime
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from common.utils import load_json, save_json, load_symbols, log, DATA_DIR, now_iso, HttpSession
@@ -52,11 +53,11 @@ def _fmp_symbol(sym, symbols):
 
 def _finnhub_symbol(sym, symbols):
     return symbols.get("providerSymbols", {}).get("finnhub", {}).get(sym) or sym
-def fetch_twelvedata(http, symbols, td_key, fx_set, metal_set, crypto_set):
-    """Rate-limited Twelve Data price fetches."""
+def fetch_twelvedata(http, symbols, td_key, fx_set, metal_set, crypto_set, index_set):
+    """Rate-limited Twelve Data price fetches (FX, metals, crypto, US indices)."""
     out = {}
     budget = MinuteBudget(7)
-    for sym in list(fx_set) + list(metal_set) + list(crypto_set):
+    for sym in list(fx_set) + list(metal_set) + list(crypto_set) + list(index_set):
         try:
             budget.wait()
             s = _td_symbol(sym, symbols)
@@ -104,8 +105,27 @@ def fetch_finnhub(http, symbols, fh_key, crypto_set):
     return out
 
 
+def fetch_eodhd_fx(http, symbols, eod_key, missing_fx):
+    """EODHD `.FOREX` fallback for any FX pairs not covered by TwelveData.
+    Free tier includes daily EOD for all .FOREX tickers."""
+    out = {}
+    today = datetime.utcnow().strftime("%Y-%m-%d")
+    for sym in missing_fx:
+        ticker = f"{sym}.FOREX"
+        try:
+            r = http.get_json(f"https://eodhd.com/api/eod/{ticker}",
+                              params={"api_token": eod_key,
+                                      "from": today, "to": today, "fmt": "json"})
+            rows = r if isinstance(r, list) else []
+            if rows and rows[-1].get("close"):
+                out[sym] = {"price": float(rows[-1]["close"]), "ts": now_iso(), "source": "eodhd"}
+        except Exception as exc:
+            log(f"EODHD {sym} failed: {str(exc)[:80]}", "WARN")
+    return out
+
+
 def fetch_marketstack(http, symbols, ms_key, missing_fx):
-    """Emergency FX fallback (rare; small free quota)."""
+    """Last-resort FX fallback (very small free quota — used only when needed)."""
     out = {}
     if not missing_fx:
         return out
@@ -119,6 +139,29 @@ def fetch_marketstack(http, symbols, ms_key, missing_fx):
                 out[sym_raw] = {"price": float(d["close"]), "ts": now_iso(), "source": "marketstack"}
     except Exception as exc:
         log(f"MarketStack failed: {str(exc)[:80]}", "WARN")
+    return out
+
+
+def fetch_eodhd_index_energy(http, symbols, eod_key, index_set, energy_set, already):
+    """EODHD free-tier EOD for global indices + energy where tickers exist."""
+    out = {}
+    today = datetime.utcnow().strftime("%Y-%m-%d")
+    for sym in list(index_set) + list(energy_set):
+        if sym in already:
+            continue
+        ticker = symbols.get("providerSymbols", {}).get("eodhd", {}).get(sym)
+        if not ticker:
+            continue
+        try:
+            r = http.get_json(f"https://eodhd.com/api/eod/{ticker}",
+                              params={"api_token": eod_key,
+                                      "from": today, "to": today, "fmt": "json"})
+            rows = r if isinstance(r, list) else []
+            if rows and rows[-1].get("close"):
+                out[sym] = {"price": float(rows[-1]["close"]), "ts": now_iso(),
+                            "source": "eodhd", "date": rows[-1].get("date")}
+        except Exception as exc:
+            log(f"EODHD {sym} failed: {str(exc)[:80]}", "WARN")
     return out
 
 
@@ -147,18 +190,34 @@ def collect(env, scope="daily"):
         index_set = set(symbols.get("indices", {}).keys())
         energy_set = set(symbols.get("energy", {}).keys())
 
+    # Restrict TwelveData index candidates to those with actual TD coverage
+    # (SPY/QQQ/DIA); everything else goes through EODHD / stays pending.
+    td_index_set = set(symbols.get("providerSymbols", {}).get("twelvedata", {}).keys()) & index_set
+
     snap = {}
     snap.update(fetch_twelvedata(http, symbols, env.get("TWELVEDATA_KEY", ""),
-                                 fx_set, metal_set, crypto_set))
-    snap.update(fetch_fmp(http, symbols, env.get("FMP_KEY", ""), index_set, energy_set))
+                                 fx_set, metal_set, crypto_set, td_index_set))
     snap.update(fetch_finnhub(http, symbols, env.get("FINNHUB_KEY", ""), crypto_set))
+    # NOTE: the previous FMP legacy quote endpoint was retired (403 for this
+    # account); global indices/energy are picked up via TwelveData (US index
+    # proxies) and EODHD where free tier allows.
 
-    # MarketStack fallback only on the daily cycle for FX failures
+    # EODHD FX fallback for any FX pairs TwelveData could not serve
+    covered_fx = set(t for t in fx_set if t in snap)
+    missing_fx = list(fx_set - covered_fx)
+    if missing_fx and env.get("EODHD_KEY"):
+        snap.update(fetch_eodhd_fx(http, symbols, env.get("EODHD_KEY", ""), missing_fx))
+
+    # EODHD indices/energy fallback (daily only — frees quota on the hourly loop)
     if scope == "daily":
-        missing_fx = list(fx_set - set(snap.keys()))
-        if missing_fx and env.get("MARKETSTACK_KEY"):
-            fallback = fetch_marketstack(http, symbols, env.get("MARKETSTACK_KEY", ""), missing_fx)
-            snap.update(fallback)
+        snap.update(fetch_eodhd_index_energy(http, symbols, env.get("EODHD_KEY", ""),
+                                             index_set, energy_set, set(snap.keys())))
+
+    # MarketStack remains as a last-resort FX source on the daily cycle
+    if scope == "daily":
+        missing_fx2 = list(fx_set - set(snap.keys()))
+        if missing_fx2 and env.get("MARKETSTACK_KEY"):
+            snap.update(fetch_marketstack(http, symbols, env.get("MARKETSTACK_KEY", ""), missing_fx2))
 
     persist(snap)
     log(f"Quotes[{scope}]: {len(snap)} instruments refreshed")
@@ -169,6 +228,6 @@ if __name__ == "__main__":
     from dotenv import load_dotenv
     load_dotenv(os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), ".env"))
     env = {k: os.environ.get(k, "") for k in
-           ("TWELVEDATA_KEY", "FMP_KEY", "FINNHUB_KEY", "MARKETSTACK_KEY")}
+           ("TWELVEDATA_KEY", "FINNHUB_KEY", "EODHD_KEY", "MARKETSTACK_KEY")}
     out = collect(env, scope=os.environ.get("QUOTES_SCOPE", "hourly"))
     print(json.dumps({k: v for k, v in list(out.items())[:5]}, indent=1))

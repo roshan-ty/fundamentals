@@ -133,10 +133,9 @@
       "OIL": "WTI", "BRENT": "BRENT", "COPPER": "COPPER"
     },
     "eodhd": {
-      "OIL": "wti", "BRENT": "brent", "COPPER": "copper", "XAUUSD": "XAUUSD", "XAGUSD": "XAGUSD",
-      "XPTUSD": "XPTUSD", "XPDUSD": "XPDUSD",
-      "US500": "S.P.US", "US100": "NQ.US", "US30": "DJI.US", "GE40": "DAX.US", "GB100": "FTSE.UK",
-      "JP225": "NK225.JP", "HK50": "HSI.HK", "AUS200": "ASX200.AU"
+      "OIL": "wti", "US500": "GSPC.INDX", "US100": "NDX.INDX", "US30": "DJI.INDX",
+      "GE40": "DAX.US", "EU50": "STOXX50E.INDX", "FR40": "FCHI.INDX", "JP225": "N225.INDX",
+      "HK50": "HSI.INDX"
     },
     "finnhub": {
       "BTCUSD": "BINANCE:BTCUSDT", "ETHUSD": "BINANCE:ETHUSDT", "LTCUSD": "BINANCE:LTCUSDT",

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-09-11T08:16:32+00:00",
+    "updated": "2026-09-11T13:57:42+00:00",
     "method": "calendar + COT (calendar part)"
   },
   "currencies": {
@@ -154,30 +154,6 @@
         "actual": "2.1",
         "previous": "",
         "dataPoint": "Advance GDP (q/q)",
-        "direction": "higher_is_bullish",
-        "sign": 0,
-        "weight": 1.5,
-        "verdict": "neutral"
-      },
-      {
-        "event": "CPI m/m",
-        "date": "2026-06-01T00:00:00+00:00",
-        "impact": "High",
-        "actual": "-0.42",
-        "previous": "",
-        "dataPoint": "CPI & Core CPI (m/m, y/y)",
-        "direction": "higher_is_bullish",
-        "sign": 0,
-        "weight": 1.5,
-        "verdict": "neutral"
-      },
-      {
-        "event": "Core CPI m/m",
-        "date": "2026-06-01T00:00:00+00:00",
-        "impact": "High",
-        "actual": "-0.02",
-        "previous": "",
-        "dataPoint": "CPI & Core CPI (m/m, y/y)",
         "direction": "higher_is_bullish",
         "sign": 0,
         "weight": 1.5,
@@ -398,6 +374,30 @@
         "sign": 1,
         "weight": 0.5,
         "verdict": "bullish"
+      },
+      {
+        "event": "CPI m/m",
+        "date": "2026-08-01T00:00:00+00:00",
+        "impact": "High",
+        "actual": "0.4",
+        "previous": "",
+        "dataPoint": "CPI & Core CPI (m/m, y/y)",
+        "direction": "higher_is_bullish",
+        "sign": 0,
+        "weight": 1.5,
+        "verdict": "neutral"
+      },
+      {
+        "event": "Core CPI m/m",
+        "date": "2026-08-01T00:00:00+00:00",
+        "impact": "High",
+        "actual": "0.29",
+        "previous": "",
+        "dataPoint": "CPI & Core CPI (m/m, y/y)",
+        "direction": "higher_is_bullish",
+        "sign": 0,
+        "weight": 1.5,
+        "verdict": "neutral"
       },
       {
         "event": "PPI m/m",

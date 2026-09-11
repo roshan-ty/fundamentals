@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-09-11T08:16:33+00:00",
+    "updated": "2026-09-11T13:57:47+00:00",
     "note": "Data-driven narratives"
   },
   "analyses": {
@@ -11,7 +11,7 @@
       "biasType": "direct",
       "summary": "EURUSD is bearish with a bias of 4.64/10.",
       "narrative_html": "<h3>EURUSD — Euro vs U.S. Dollar</h3>\nThe Euro (base) carries a bias of 5.0 / 10 (balanced or unchanged data flow); the U.S. Dollar (quote) carries 5.36 / 10 (balanced or unchanged data flow).\nA narrow base-minus-quote spread leaves the pair roughly neutral.\nCOT positioning (2026-09-01): non-commercial net exposure for EUR expanded — consistent with weakness\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:32+00:00"
+      "updated": "2026-09-11T13:57:43+00:00"
     },
     "EURGBP": {
       "symbol": "EURGBP",
@@ -20,7 +20,7 @@
       "biasType": "direct",
       "summary": "EURGBP is neutral with a bias of 5.0/10.",
       "narrative_html": "<h3>EURGBP — Euro vs British Pound</h3>\nThe Euro (base) carries a bias of 5.0 / 10 (balanced or unchanged data flow); the British Pound (quote) carries 5.0 / 10 (balanced or unchanged data flow).\nA narrow base-minus-quote spread leaves the pair roughly neutral.\nCOT positioning (2026-09-01): non-commercial net exposure for EUR expanded — consistent with weakness\nCOT positioning (2026-09-01): non-commercial net exposure for GBP expanded — consistent with weakness\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:32+00:00"
+      "updated": "2026-09-11T13:57:43+00:00"
     },
     "EURJPY": {
       "symbol": "EURJPY",
@@ -29,7 +29,7 @@
       "biasType": "direct",
       "summary": "EURJPY is neutral with a bias of 5.0/10.",
       "narrative_html": "<h3>EURJPY — Euro vs Japanese Yen</h3>\nThe Euro (base) carries a bias of 5.0 / 10 (balanced or unchanged data flow); the Japanese Yen (quote) carries 5.0 / 10 (balanced or unchanged data flow).\nA narrow base-minus-quote spread leaves the pair roughly neutral.\nCOT positioning (2026-09-01): non-commercial net exposure for EUR expanded — consistent with weakness\nCOT positioning (2026-09-01): non-commercial net exposure for JPY expanded — consistent with weakness\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:32+00:00"
+      "updated": "2026-09-11T13:57:43+00:00"
     },
     "EURCHF": {
       "symbol": "EURCHF",
@@ -38,7 +38,7 @@
       "biasType": "direct",
       "summary": "EURCHF is neutral with a bias of 5.0/10.",
       "narrative_html": "<h3>EURCHF — Euro vs Swiss Franc</h3>\nThe Euro (base) carries a bias of 5.0 / 10 (balanced or unchanged data flow); the Swiss Franc (quote) carries 5.0 / 10 (balanced or unchanged data flow).\nA narrow base-minus-quote spread leaves the pair roughly neutral.\nCOT positioning (2026-09-01): non-commercial net exposure for EUR expanded — consistent with weakness\nCOT positioning (2026-09-01): non-commercial net exposure for CHF expanded — consistent with weakness\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:43+00:00"
     },
     "EURAUD": {
       "symbol": "EURAUD",
@@ -47,7 +47,7 @@
       "biasType": "direct",
       "summary": "EURAUD is neutral with a bias of 5.0/10.",
       "narrative_html": "<h3>EURAUD — Euro vs Australian Dollar</h3>\nThe Euro (base) carries a bias of 5.0 / 10 (balanced or unchanged data flow); the Australian Dollar (quote) carries 5.0 / 10 (balanced or unchanged data flow).\nA narrow base-minus-quote spread leaves the pair roughly neutral.\nCOT positioning (2026-09-01): non-commercial net exposure for EUR expanded — consistent with weakness\nCOT positioning (2026-09-01): non-commercial net exposure for AUD expanded — consistent with strength\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:43+00:00"
     },
     "EURCAD": {
       "symbol": "EURCAD",
@@ -56,7 +56,7 @@
       "biasType": "direct",
       "summary": "EURCAD is neutral with a bias of 5.0/10.",
       "narrative_html": "<h3>EURCAD — Euro vs Canadian Dollar</h3>\nThe Euro (base) carries a bias of 5.0 / 10 (balanced or unchanged data flow); the Canadian Dollar (quote) carries 5.0 / 10 (balanced or unchanged data flow).\nA narrow base-minus-quote spread leaves the pair roughly neutral.\nCOT positioning (2026-09-01): non-commercial net exposure for EUR expanded — consistent with weakness\nCOT positioning (2026-09-01): non-commercial net exposure for CAD expanded — consistent with strength\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:44+00:00"
     },
     "EURNZD": {
       "symbol": "EURNZD",
@@ -65,7 +65,7 @@
       "biasType": "direct",
       "summary": "EURNZD is neutral with a bias of 5.0/10.",
       "narrative_html": "<h3>EURNZD — Euro vs New Zealand Dollar</h3>\nThe Euro (base) carries a bias of 5.0 / 10 (balanced or unchanged data flow); the New Zealand Dollar (quote) carries 5.0 / 10 (balanced or unchanged data flow).\nA narrow base-minus-quote spread leaves the pair roughly neutral.\nCOT positioning (2026-09-01): non-commercial net exposure for EUR expanded — consistent with weakness\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:44+00:00"
     },
     "GBPUSD": {
       "symbol": "GBPUSD",
@@ -74,7 +74,7 @@
       "biasType": "direct",
       "summary": "GBPUSD is bearish with a bias of 4.64/10.",
       "narrative_html": "<h3>GBPUSD — British Pound vs U.S. Dollar</h3>\nThe British Pound (base) carries a bias of 5.0 / 10 (balanced or unchanged data flow); the U.S. Dollar (quote) carries 5.36 / 10 (balanced or unchanged data flow).\nA narrow base-minus-quote spread leaves the pair roughly neutral.\nCOT positioning (2026-09-01): non-commercial net exposure for GBP expanded — consistent with weakness\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:44+00:00"
     },
     "GBPEUR": {
       "symbol": "GBPEUR",
@@ -83,7 +83,7 @@
       "biasType": "direct",
       "summary": "GBPEUR is neutral with a bias of 5.0/10.",
       "narrative_html": "<h3>GBPEUR — British Pound vs Euro</h3>\nThe British Pound (base) carries a bias of 5.0 / 10 (balanced or unchanged data flow); the Euro (quote) carries 5.0 / 10 (balanced or unchanged data flow).\nA narrow base-minus-quote spread leaves the pair roughly neutral.\nCOT positioning (2026-09-01): non-commercial net exposure for GBP expanded — consistent with weakness\nCOT positioning (2026-09-01): non-commercial net exposure for EUR expanded — consistent with weakness\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:44+00:00"
     },
     "GBPJPY": {
       "symbol": "GBPJPY",
@@ -92,7 +92,7 @@
       "biasType": "direct",
       "summary": "GBPJPY is neutral with a bias of 5.0/10.",
       "narrative_html": "<h3>GBPJPY — British Pound vs Japanese Yen</h3>\nThe British Pound (base) carries a bias of 5.0 / 10 (balanced or unchanged data flow); the Japanese Yen (quote) carries 5.0 / 10 (balanced or unchanged data flow).\nA narrow base-minus-quote spread leaves the pair roughly neutral.\nCOT positioning (2026-09-01): non-commercial net exposure for GBP expanded — consistent with weakness\nCOT positioning (2026-09-01): non-commercial net exposure for JPY expanded — consistent with weakness\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:44+00:00"
     },
     "GBPCHF": {
       "symbol": "GBPCHF",
@@ -101,7 +101,7 @@
       "biasType": "direct",
       "summary": "GBPCHF is neutral with a bias of 5.0/10.",
       "narrative_html": "<h3>GBPCHF — British Pound vs Swiss Franc</h3>\nThe British Pound (base) carries a bias of 5.0 / 10 (balanced or unchanged data flow); the Swiss Franc (quote) carries 5.0 / 10 (balanced or unchanged data flow).\nA narrow base-minus-quote spread leaves the pair roughly neutral.\nCOT positioning (2026-09-01): non-commercial net exposure for GBP expanded — consistent with weakness\nCOT positioning (2026-09-01): non-commercial net exposure for CHF expanded — consistent with weakness\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:44+00:00"
     },
     "GBPAUD": {
       "symbol": "GBPAUD",
@@ -110,7 +110,7 @@
       "biasType": "direct",
       "summary": "GBPAUD is neutral with a bias of 5.0/10.",
       "narrative_html": "<h3>GBPAUD — British Pound vs Australian Dollar</h3>\nThe British Pound (base) carries a bias of 5.0 / 10 (balanced or unchanged data flow); the Australian Dollar (quote) carries 5.0 / 10 (balanced or unchanged data flow).\nA narrow base-minus-quote spread leaves the pair roughly neutral.\nCOT positioning (2026-09-01): non-commercial net exposure for GBP expanded — consistent with weakness\nCOT positioning (2026-09-01): non-commercial net exposure for AUD expanded — consistent with strength\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:44+00:00"
     },
     "GBPCAD": {
       "symbol": "GBPCAD",
@@ -119,7 +119,7 @@
       "biasType": "direct",
       "summary": "GBPCAD is neutral with a bias of 5.0/10.",
       "narrative_html": "<h3>GBPCAD — British Pound vs Canadian Dollar</h3>\nThe British Pound (base) carries a bias of 5.0 / 10 (balanced or unchanged data flow); the Canadian Dollar (quote) carries 5.0 / 10 (balanced or unchanged data flow).\nA narrow base-minus-quote spread leaves the pair roughly neutral.\nCOT positioning (2026-09-01): non-commercial net exposure for GBP expanded — consistent with weakness\nCOT positioning (2026-09-01): non-commercial net exposure for CAD expanded — consistent with strength\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:44+00:00"
     },
     "GBPNZD": {
       "symbol": "GBPNZD",
@@ -128,7 +128,7 @@
       "biasType": "direct",
       "summary": "GBPNZD is neutral with a bias of 5.0/10.",
       "narrative_html": "<h3>GBPNZD — British Pound vs New Zealand Dollar</h3>\nThe British Pound (base) carries a bias of 5.0 / 10 (balanced or unchanged data flow); the New Zealand Dollar (quote) carries 5.0 / 10 (balanced or unchanged data flow).\nA narrow base-minus-quote spread leaves the pair roughly neutral.\nCOT positioning (2026-09-01): non-commercial net exposure for GBP expanded — consistent with weakness\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:44+00:00"
     },
     "USDJPY": {
       "symbol": "USDJPY",
@@ -137,7 +137,7 @@
       "biasType": "direct",
       "summary": "USDJPY is bullish with a bias of 5.36/10.",
       "narrative_html": "<h3>USDJPY — U.S. Dollar vs Japanese Yen</h3>\nThe U.S. Dollar (base) carries a bias of 5.36 / 10 (balanced or unchanged data flow); the Japanese Yen (quote) carries 5.0 / 10 (balanced or unchanged data flow).\nA narrow base-minus-quote spread leaves the pair roughly neutral.\nCOT positioning (2026-09-01): non-commercial net exposure for JPY expanded — consistent with weakness\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.\n<h4>Drivers — U.S. Dollar</h4>- Housing Starts: actual 1415.0 vs previous 1182.0 (bullish, weight +0.5) — strengthens USD.\n- Building Permits: actual 1374.0 vs previous 1410.0 (bearish, weight +0.5) — weakens USD.\n- Trade Balance: actual -71182.0 vs previous -75752.0 (bullish, weight +0.5) — strengthens USD.\n- UoM Consumer Sentiment: actual 49.5 vs previous 44.8 (bullish, weight +0.5) — strengthens USD.\n- Unemployment Rate: actual 4.1 vs previous 4.2 (bullish, weight +1.0) — strengthens USD.\n- Housing Starts: actual 1239.0 vs previous 1415.0 (bearish, weight +0.5) — weakens USD.\n- Building Permits: actual 1433.0 vs previous 1374.0 (bullish, weight +0.5) — strengthens USD.\n- Trade Balance: actual -88576.0 vs previous -71182.0 (bearish, weight +0.5) — weakens USD.\n- UoM Consumer Sentiment: actual 55.2 vs previous 49.5 (bullish, weight +0.5) — strengthens USD.\n- Initial Jobless Claims: actual 207000.0 vs previous 204000.0 (bearish, weight +0.5) — weakens USD.\n- Initial Jobless Claims: actual 206000.0 vs previous 207000.0 (bullish, weight +0.5) — strengthens USD.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:44+00:00"
     },
     "USDCHF": {
       "symbol": "USDCHF",
@@ -146,7 +146,7 @@
       "biasType": "direct",
       "summary": "USDCHF is bullish with a bias of 5.36/10.",
       "narrative_html": "<h3>USDCHF — U.S. Dollar vs Swiss Franc</h3>\nThe U.S. Dollar (base) carries a bias of 5.36 / 10 (balanced or unchanged data flow); the Swiss Franc (quote) carries 5.0 / 10 (balanced or unchanged data flow).\nA narrow base-minus-quote spread leaves the pair roughly neutral.\nCOT positioning (2026-09-01): non-commercial net exposure for CHF expanded — consistent with weakness\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.\n<h4>Drivers — U.S. Dollar</h4>- Housing Starts: actual 1415.0 vs previous 1182.0 (bullish, weight +0.5) — strengthens USD.\n- Building Permits: actual 1374.0 vs previous 1410.0 (bearish, weight +0.5) — weakens USD.\n- Trade Balance: actual -71182.0 vs previous -75752.0 (bullish, weight +0.5) — strengthens USD.\n- UoM Consumer Sentiment: actual 49.5 vs previous 44.8 (bullish, weight +0.5) — strengthens USD.\n- Unemployment Rate: actual 4.1 vs previous 4.2 (bullish, weight +1.0) — strengthens USD.\n- Housing Starts: actual 1239.0 vs previous 1415.0 (bearish, weight +0.5) — weakens USD.\n- Building Permits: actual 1433.0 vs previous 1374.0 (bullish, weight +0.5) — strengthens USD.\n- Trade Balance: actual -88576.0 vs previous -71182.0 (bearish, weight +0.5) — weakens USD.\n- UoM Consumer Sentiment: actual 55.2 vs previous 49.5 (bullish, weight +0.5) — strengthens USD.\n- Initial Jobless Claims: actual 207000.0 vs previous 204000.0 (bearish, weight +0.5) — weakens USD.\n- Initial Jobless Claims: actual 206000.0 vs previous 207000.0 (bullish, weight +0.5) — strengthens USD.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:45+00:00"
     },
     "USDCAD": {
       "symbol": "USDCAD",
@@ -155,7 +155,7 @@
       "biasType": "direct",
       "summary": "USDCAD is bullish with a bias of 5.36/10.",
       "narrative_html": "<h3>USDCAD — U.S. Dollar vs Canadian Dollar</h3>\nThe U.S. Dollar (base) carries a bias of 5.36 / 10 (balanced or unchanged data flow); the Canadian Dollar (quote) carries 5.0 / 10 (balanced or unchanged data flow).\nA narrow base-minus-quote spread leaves the pair roughly neutral.\nCOT positioning (2026-09-01): non-commercial net exposure for CAD expanded — consistent with strength\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.\n<h4>Drivers — U.S. Dollar</h4>- Housing Starts: actual 1415.0 vs previous 1182.0 (bullish, weight +0.5) — strengthens USD.\n- Building Permits: actual 1374.0 vs previous 1410.0 (bearish, weight +0.5) — weakens USD.\n- Trade Balance: actual -71182.0 vs previous -75752.0 (bullish, weight +0.5) — strengthens USD.\n- UoM Consumer Sentiment: actual 49.5 vs previous 44.8 (bullish, weight +0.5) — strengthens USD.\n- Unemployment Rate: actual 4.1 vs previous 4.2 (bullish, weight +1.0) — strengthens USD.\n- Housing Starts: actual 1239.0 vs previous 1415.0 (bearish, weight +0.5) — weakens USD.\n- Building Permits: actual 1433.0 vs previous 1374.0 (bullish, weight +0.5) — strengthens USD.\n- Trade Balance: actual -88576.0 vs previous -71182.0 (bearish, weight +0.5) — weakens USD.\n- UoM Consumer Sentiment: actual 55.2 vs previous 49.5 (bullish, weight +0.5) — strengthens USD.\n- Initial Jobless Claims: actual 207000.0 vs previous 204000.0 (bearish, weight +0.5) — weakens USD.\n- Initial Jobless Claims: actual 206000.0 vs previous 207000.0 (bullish, weight +0.5) — strengthens USD.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:45+00:00"
     },
     "USDCNY": {
       "symbol": "USDCNY",
@@ -164,7 +164,7 @@
       "biasType": "direct",
       "summary": "USDCNY is bullish with a bias of 5.36/10.",
       "narrative_html": "<h3>USDCNY — U.S. Dollar vs Chinese Yuan</h3>\nThe U.S. Dollar (base) carries a bias of 5.36 / 10 (balanced or unchanged data flow); the Chinese Yuan (quote) carries 5.0 / 10 (balanced or unchanged data flow).\nA narrow base-minus-quote spread leaves the pair roughly neutral.\nCOT positioning (2024-08-13): non-commercial net exposure for CNY expanded — consistent with strength\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.\n<h4>Drivers — U.S. Dollar</h4>- Housing Starts: actual 1415.0 vs previous 1182.0 (bullish, weight +0.5) — strengthens USD.\n- Building Permits: actual 1374.0 vs previous 1410.0 (bearish, weight +0.5) — weakens USD.\n- Trade Balance: actual -71182.0 vs previous -75752.0 (bullish, weight +0.5) — strengthens USD.\n- UoM Consumer Sentiment: actual 49.5 vs previous 44.8 (bullish, weight +0.5) — strengthens USD.\n- Unemployment Rate: actual 4.1 vs previous 4.2 (bullish, weight +1.0) — strengthens USD.\n- Housing Starts: actual 1239.0 vs previous 1415.0 (bearish, weight +0.5) — weakens USD.\n- Building Permits: actual 1433.0 vs previous 1374.0 (bullish, weight +0.5) — strengthens USD.\n- Trade Balance: actual -88576.0 vs previous -71182.0 (bearish, weight +0.5) — weakens USD.\n- UoM Consumer Sentiment: actual 55.2 vs previous 49.5 (bullish, weight +0.5) — strengthens USD.\n- Initial Jobless Claims: actual 207000.0 vs previous 204000.0 (bearish, weight +0.5) — weakens USD.\n- Initial Jobless Claims: actual 206000.0 vs previous 207000.0 (bullish, weight +0.5) — strengthens USD.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:45+00:00"
     },
     "AUDUSD": {
       "symbol": "AUDUSD",
@@ -173,7 +173,7 @@
       "biasType": "direct",
       "summary": "AUDUSD is bearish with a bias of 4.64/10.",
       "narrative_html": "<h3>AUDUSD — Australian Dollar vs U.S. Dollar</h3>\nThe Australian Dollar (base) carries a bias of 5.0 / 10 (balanced or unchanged data flow); the U.S. Dollar (quote) carries 5.36 / 10 (balanced or unchanged data flow).\nA narrow base-minus-quote spread leaves the pair roughly neutral.\nCOT positioning (2026-09-01): non-commercial net exposure for AUD expanded — consistent with strength\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:45+00:00"
     },
     "AUDJPY": {
       "symbol": "AUDJPY",
@@ -182,7 +182,7 @@
       "biasType": "direct",
       "summary": "AUDJPY is neutral with a bias of 5.0/10.",
       "narrative_html": "<h3>AUDJPY — Australian Dollar vs Japanese Yen</h3>\nThe Australian Dollar (base) carries a bias of 5.0 / 10 (balanced or unchanged data flow); the Japanese Yen (quote) carries 5.0 / 10 (balanced or unchanged data flow).\nA narrow base-minus-quote spread leaves the pair roughly neutral.\nCOT positioning (2026-09-01): non-commercial net exposure for AUD expanded — consistent with strength\nCOT positioning (2026-09-01): non-commercial net exposure for JPY expanded — consistent with weakness\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:45+00:00"
     },
     "AUDCHF": {
       "symbol": "AUDCHF",
@@ -191,7 +191,7 @@
       "biasType": "direct",
       "summary": "AUDCHF is neutral with a bias of 5.0/10.",
       "narrative_html": "<h3>AUDCHF — Australian Dollar vs Swiss Franc</h3>\nThe Australian Dollar (base) carries a bias of 5.0 / 10 (balanced or unchanged data flow); the Swiss Franc (quote) carries 5.0 / 10 (balanced or unchanged data flow).\nA narrow base-minus-quote spread leaves the pair roughly neutral.\nCOT positioning (2026-09-01): non-commercial net exposure for AUD expanded — consistent with strength\nCOT positioning (2026-09-01): non-commercial net exposure for CHF expanded — consistent with weakness\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:45+00:00"
     },
     "AUDCAD": {
       "symbol": "AUDCAD",
@@ -200,7 +200,7 @@
       "biasType": "direct",
       "summary": "AUDCAD is neutral with a bias of 5.0/10.",
       "narrative_html": "<h3>AUDCAD — Australian Dollar vs Canadian Dollar</h3>\nThe Australian Dollar (base) carries a bias of 5.0 / 10 (balanced or unchanged data flow); the Canadian Dollar (quote) carries 5.0 / 10 (balanced or unchanged data flow).\nA narrow base-minus-quote spread leaves the pair roughly neutral.\nCOT positioning (2026-09-01): non-commercial net exposure for AUD expanded — consistent with strength\nCOT positioning (2026-09-01): non-commercial net exposure for CAD expanded — consistent with strength\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:45+00:00"
     },
     "AUDNZD": {
       "symbol": "AUDNZD",
@@ -209,7 +209,7 @@
       "biasType": "direct",
       "summary": "AUDNZD is neutral with a bias of 5.0/10.",
       "narrative_html": "<h3>AUDNZD — Australian Dollar vs New Zealand Dollar</h3>\nThe Australian Dollar (base) carries a bias of 5.0 / 10 (balanced or unchanged data flow); the New Zealand Dollar (quote) carries 5.0 / 10 (balanced or unchanged data flow).\nA narrow base-minus-quote spread leaves the pair roughly neutral.\nCOT positioning (2026-09-01): non-commercial net exposure for AUD expanded — consistent with strength\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:45+00:00"
     },
     "NZDUSD": {
       "symbol": "NZDUSD",
@@ -218,7 +218,7 @@
       "biasType": "direct",
       "summary": "NZDUSD is bearish with a bias of 4.64/10.",
       "narrative_html": "<h3>NZDUSD — New Zealand Dollar vs U.S. Dollar</h3>\nThe New Zealand Dollar (base) carries a bias of 5.0 / 10 (balanced or unchanged data flow); the U.S. Dollar (quote) carries 5.36 / 10 (balanced or unchanged data flow).\nA narrow base-minus-quote spread leaves the pair roughly neutral.\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:45+00:00"
     },
     "NZDJPY": {
       "symbol": "NZDJPY",
@@ -227,7 +227,7 @@
       "biasType": "direct",
       "summary": "NZDJPY is neutral with a bias of 5.0/10.",
       "narrative_html": "<h3>NZDJPY — New Zealand Dollar vs Japanese Yen</h3>\nThe New Zealand Dollar (base) carries a bias of 5.0 / 10 (balanced or unchanged data flow); the Japanese Yen (quote) carries 5.0 / 10 (balanced or unchanged data flow).\nA narrow base-minus-quote spread leaves the pair roughly neutral.\nCOT positioning (2026-09-01): non-commercial net exposure for JPY expanded — consistent with weakness\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:45+00:00"
     },
     "NZDCAD": {
       "symbol": "NZDCAD",
@@ -236,7 +236,7 @@
       "biasType": "direct",
       "summary": "NZDCAD is neutral with a bias of 5.0/10.",
       "narrative_html": "<h3>NZDCAD — New Zealand Dollar vs Canadian Dollar</h3>\nThe New Zealand Dollar (base) carries a bias of 5.0 / 10 (balanced or unchanged data flow); the Canadian Dollar (quote) carries 5.0 / 10 (balanced or unchanged data flow).\nA narrow base-minus-quote spread leaves the pair roughly neutral.\nCOT positioning (2026-09-01): non-commercial net exposure for CAD expanded — consistent with strength\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:45+00:00"
     },
     "NZDCHF": {
       "symbol": "NZDCHF",
@@ -245,7 +245,7 @@
       "biasType": "direct",
       "summary": "NZDCHF is neutral with a bias of 5.0/10.",
       "narrative_html": "<h3>NZDCHF — New Zealand Dollar vs Swiss Franc</h3>\nThe New Zealand Dollar (base) carries a bias of 5.0 / 10 (balanced or unchanged data flow); the Swiss Franc (quote) carries 5.0 / 10 (balanced or unchanged data flow).\nA narrow base-minus-quote spread leaves the pair roughly neutral.\nCOT positioning (2026-09-01): non-commercial net exposure for CHF expanded — consistent with weakness\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:45+00:00"
     },
     "CADCHF": {
       "symbol": "CADCHF",
@@ -254,7 +254,7 @@
       "biasType": "direct",
       "summary": "CADCHF is neutral with a bias of 5.0/10.",
       "narrative_html": "<h3>CADCHF — Canadian Dollar vs Swiss Franc</h3>\nThe Canadian Dollar (base) carries a bias of 5.0 / 10 (balanced or unchanged data flow); the Swiss Franc (quote) carries 5.0 / 10 (balanced or unchanged data flow).\nA narrow base-minus-quote spread leaves the pair roughly neutral.\nCOT positioning (2026-09-01): non-commercial net exposure for CAD expanded — consistent with strength\nCOT positioning (2026-09-01): non-commercial net exposure for CHF expanded — consistent with weakness\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:45+00:00"
     },
     "CADJPY": {
       "symbol": "CADJPY",
@@ -263,7 +263,7 @@
       "biasType": "direct",
       "summary": "CADJPY is neutral with a bias of 5.0/10.",
       "narrative_html": "<h3>CADJPY — Canadian Dollar vs Japanese Yen</h3>\nThe Canadian Dollar (base) carries a bias of 5.0 / 10 (balanced or unchanged data flow); the Japanese Yen (quote) carries 5.0 / 10 (balanced or unchanged data flow).\nA narrow base-minus-quote spread leaves the pair roughly neutral.\nCOT positioning (2026-09-01): non-commercial net exposure for CAD expanded — consistent with strength\nCOT positioning (2026-09-01): non-commercial net exposure for JPY expanded — consistent with weakness\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:45+00:00"
     },
     "CHFJPY": {
       "symbol": "CHFJPY",
@@ -272,7 +272,7 @@
       "biasType": "direct",
       "summary": "CHFJPY is neutral with a bias of 5.0/10.",
       "narrative_html": "<h3>CHFJPY — Swiss Franc vs Japanese Yen</h3>\nThe Swiss Franc (base) carries a bias of 5.0 / 10 (balanced or unchanged data flow); the Japanese Yen (quote) carries 5.0 / 10 (balanced or unchanged data flow).\nA narrow base-minus-quote spread leaves the pair roughly neutral.\nCOT positioning (2026-09-01): non-commercial net exposure for CHF expanded — consistent with weakness\nCOT positioning (2026-09-01): non-commercial net exposure for JPY expanded — consistent with weakness\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:46+00:00"
     },
     "BTCUSD": {
       "symbol": "BTCUSD",
@@ -281,7 +281,7 @@
       "biasType": "derived",
       "summary": "BTCUSD is bearish with a bias of 4.67/10.",
       "narrative_html": "<h3>BTC / USD (BTCUSD)</h3>\nThis instrument has no economic calendar or COT basis; its bias is a derived sentiment proxy at 4.67 / 10 (Neutral), driven by U.S. dollar pressure and real-yield conditions.\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:46+00:00"
     },
     "ETHUSD": {
       "symbol": "ETHUSD",
@@ -290,7 +290,7 @@
       "biasType": "derived",
       "summary": "ETHUSD is bearish with a bias of 4.67/10.",
       "narrative_html": "<h3>ETH / USD (ETHUSD)</h3>\nThis instrument has no economic calendar or COT basis; its bias is a derived sentiment proxy at 4.67 / 10 (Neutral), driven by U.S. dollar pressure and real-yield conditions.\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:46+00:00"
     },
     "LTCUSD": {
       "symbol": "LTCUSD",
@@ -299,7 +299,7 @@
       "biasType": "derived",
       "summary": "LTCUSD is bearish with a bias of 4.67/10.",
       "narrative_html": "<h3>LTC / USD (LTCUSD)</h3>\nThis instrument has no economic calendar or COT basis; its bias is a derived sentiment proxy at 4.67 / 10 (Neutral), driven by U.S. dollar pressure and real-yield conditions.\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:46+00:00"
     },
     "SOLUSD": {
       "symbol": "SOLUSD",
@@ -308,7 +308,7 @@
       "biasType": "derived",
       "summary": "SOLUSD is bearish with a bias of 4.67/10.",
       "narrative_html": "<h3>SOL / USD (SOLUSD)</h3>\nThis instrument has no economic calendar or COT basis; its bias is a derived sentiment proxy at 4.67 / 10 (Neutral), driven by U.S. dollar pressure and real-yield conditions.\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:46+00:00"
     },
     "SUIUSD": {
       "symbol": "SUIUSD",
@@ -317,7 +317,7 @@
       "biasType": "derived",
       "summary": "SUIUSD is bearish with a bias of 4.67/10.",
       "narrative_html": "<h3>SUI / USD (SUIUSD)</h3>\nThis instrument has no economic calendar or COT basis; its bias is a derived sentiment proxy at 4.67 / 10 (Neutral), driven by U.S. dollar pressure and real-yield conditions.\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:46+00:00"
     },
     "XLMUSD": {
       "symbol": "XLMUSD",
@@ -326,7 +326,7 @@
       "biasType": "derived",
       "summary": "XLMUSD is bearish with a bias of 4.67/10.",
       "narrative_html": "<h3>XLM / USD (XLMUSD)</h3>\nThis instrument has no economic calendar or COT basis; its bias is a derived sentiment proxy at 4.67 / 10 (Neutral), driven by U.S. dollar pressure and real-yield conditions.\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:46+00:00"
     },
     "XRPUSD": {
       "symbol": "XRPUSD",
@@ -335,7 +335,7 @@
       "biasType": "derived",
       "summary": "XRPUSD is bearish with a bias of 4.67/10.",
       "narrative_html": "<h3>XRP / USD (XRPUSD)</h3>\nThis instrument has no economic calendar or COT basis; its bias is a derived sentiment proxy at 4.67 / 10 (Neutral), driven by U.S. dollar pressure and real-yield conditions.\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:46+00:00"
     },
     "AVAXUSD": {
       "symbol": "AVAXUSD",
@@ -344,7 +344,7 @@
       "biasType": "derived",
       "summary": "AVAXUSD is bearish with a bias of 4.67/10.",
       "narrative_html": "<h3>AVAX / USD (AVAXUSD)</h3>\nThis instrument has no economic calendar or COT basis; its bias is a derived sentiment proxy at 4.67 / 10 (Neutral), driven by U.S. dollar pressure and real-yield conditions.\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:46+00:00"
     },
     "XAUUSD": {
       "symbol": "XAUUSD",
@@ -353,7 +353,7 @@
       "biasType": "direct",
       "summary": "XAUUSD is bearish with a bias of 2.89/10.",
       "narrative_html": "<h3>Gold (XAUUSD)</h3>\nBias 2.89 / 10 (Bearish). Metals and energy score inversely to the U.S. Dollar with a COT positioning component: USD bias 5.36 / 10.\nCOT (2026-09-01): non-commercial net tilt short — supporting the current price bias.\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:46+00:00"
     },
     "XAGUSD": {
       "symbol": "XAGUSD",
@@ -362,7 +362,7 @@
       "biasType": "direct",
       "summary": "XAGUSD is bullish with a bias of 6.39/10.",
       "narrative_html": "<h3>Silver (XAGUSD)</h3>\nBias 6.39 / 10 (Bullish). Metals and energy score inversely to the U.S. Dollar with a COT positioning component: USD bias 5.36 / 10.\nCOT (2026-09-01): non-commercial net tilt long — supporting the current price bias.\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:46+00:00"
     },
     "XPTUSD": {
       "symbol": "XPTUSD",
@@ -371,7 +371,7 @@
       "biasType": "direct",
       "summary": "XPTUSD is bearish with a bias of 2.89/10.",
       "narrative_html": "<h3>Platinum (XPTUSD)</h3>\nBias 2.89 / 10 (Bearish). Metals and energy score inversely to the U.S. Dollar with a COT positioning component: USD bias 5.36 / 10.\nCOT (2026-09-01): non-commercial net tilt short — supporting the current price bias.\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:46+00:00"
     },
     "XPDUSD": {
       "symbol": "XPDUSD",
@@ -380,7 +380,7 @@
       "biasType": "direct",
       "summary": "XPDUSD is bullish with a bias of 6.39/10.",
       "narrative_html": "<h3>Palladium (XPDUSD)</h3>\nBias 6.39 / 10 (Bullish). Metals and energy score inversely to the U.S. Dollar with a COT positioning component: USD bias 5.36 / 10.\nCOT (2026-09-01): non-commercial net tilt long — supporting the current price bias.\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:46+00:00"
     },
     "OIL": {
       "symbol": "OIL",
@@ -389,7 +389,7 @@
       "biasType": "direct",
       "summary": "OIL is bearish with a bias of 3.0/10.",
       "narrative_html": "<h3>Crude Oil (WTI) (OIL)</h3>\nBias 3.0 / 10 (Bearish). Metals and energy score inversely to the U.S. Dollar with a COT positioning component: USD bias 5.36 / 10.\nCOT (2026-09-01): non-commercial net tilt short — supporting the current price bias.\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:46+00:00"
     },
     "BRENT": {
       "symbol": "BRENT",
@@ -398,7 +398,7 @@
       "biasType": "direct",
       "summary": "BRENT is bearish with a bias of 3.0/10.",
       "narrative_html": "<h3>Brent Crude (BRENT)</h3>\nBias 3.0 / 10 (Bearish). Metals and energy score inversely to the U.S. Dollar with a COT positioning component: USD bias 5.36 / 10.\nCOT (2026-09-01): non-commercial net tilt short — supporting the current price bias.\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:46+00:00"
     },
     "COPPER": {
       "symbol": "COPPER",
@@ -407,7 +407,7 @@
       "biasType": "direct",
       "summary": "COPPER is bearish with a bias of 3.0/10.",
       "narrative_html": "<h3>Copper (COPPER)</h3>\nBias 3.0 / 10 (Bearish). Metals and energy score inversely to the U.S. Dollar with a COT positioning component: USD bias 5.36 / 10.\nCOT (2026-09-01): non-commercial net tilt short — supporting the current price bias.\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:47+00:00"
     },
     "US500": {
       "symbol": "US500",
@@ -416,7 +416,7 @@
       "biasType": "derived",
       "summary": "US500 is bearish with a bias of 4.67/10.",
       "narrative_html": "<h3>S&P 500 (US500)</h3>\nThis instrument has no economic calendar or COT basis; its bias is a derived sentiment proxy at 4.67 / 10 (Neutral), driven by U.S. dollar pressure and real-yield conditions.\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:47+00:00"
     },
     "US100": {
       "symbol": "US100",
@@ -425,7 +425,7 @@
       "biasType": "derived",
       "summary": "US100 is bearish with a bias of 4.67/10.",
       "narrative_html": "<h3>NASDAQ 100 (US100)</h3>\nThis instrument has no economic calendar or COT basis; its bias is a derived sentiment proxy at 4.67 / 10 (Neutral), driven by U.S. dollar pressure and real-yield conditions.\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:47+00:00"
     },
     "US30": {
       "symbol": "US30",
@@ -434,7 +434,7 @@
       "biasType": "derived",
       "summary": "US30 is bearish with a bias of 4.67/10.",
       "narrative_html": "<h3>Dow Jones 30 (US30)</h3>\nThis instrument has no economic calendar or COT basis; its bias is a derived sentiment proxy at 4.67 / 10 (Neutral), driven by U.S. dollar pressure and real-yield conditions.\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:47+00:00"
     },
     "EU50": {
       "symbol": "EU50",
@@ -443,7 +443,7 @@
       "biasType": "derived",
       "summary": "EU50 is bearish with a bias of 4.67/10.",
       "narrative_html": "<h3>EURO STOXX 50 (EU50)</h3>\nThis instrument has no economic calendar or COT basis; its bias is a derived sentiment proxy at 4.67 / 10 (Neutral), driven by U.S. dollar pressure and real-yield conditions.\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:47+00:00"
     },
     "GB100": {
       "symbol": "GB100",
@@ -452,7 +452,7 @@
       "biasType": "derived",
       "summary": "GB100 is bearish with a bias of 4.67/10.",
       "narrative_html": "<h3>FTSE 100 (GB100)</h3>\nThis instrument has no economic calendar or COT basis; its bias is a derived sentiment proxy at 4.67 / 10 (Neutral), driven by U.S. dollar pressure and real-yield conditions.\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:47+00:00"
     },
     "FR40": {
       "symbol": "FR40",
@@ -461,7 +461,7 @@
       "biasType": "derived",
       "summary": "FR40 is bearish with a bias of 4.67/10.",
       "narrative_html": "<h3>CAC 40 (FR40)</h3>\nThis instrument has no economic calendar or COT basis; its bias is a derived sentiment proxy at 4.67 / 10 (Neutral), driven by U.S. dollar pressure and real-yield conditions.\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:47+00:00"
     },
     "JP225": {
       "symbol": "JP225",
@@ -470,7 +470,7 @@
       "biasType": "derived",
       "summary": "JP225 is bearish with a bias of 4.67/10.",
       "narrative_html": "<h3>Nikkei 225 (JP225)</h3>\nThis instrument has no economic calendar or COT basis; its bias is a derived sentiment proxy at 4.67 / 10 (Neutral), driven by U.S. dollar pressure and real-yield conditions.\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:47+00:00"
     },
     "HK50": {
       "symbol": "HK50",
@@ -479,7 +479,7 @@
       "biasType": "derived",
       "summary": "HK50 is bearish with a bias of 4.67/10.",
       "narrative_html": "<h3>Hang Seng 50 (HK50)</h3>\nThis instrument has no economic calendar or COT basis; its bias is a derived sentiment proxy at 4.67 / 10 (Neutral), driven by U.S. dollar pressure and real-yield conditions.\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:47+00:00"
     },
     "AUS200": {
       "symbol": "AUS200",
@@ -488,7 +488,7 @@
       "biasType": "derived",
       "summary": "AUS200 is bearish with a bias of 4.67/10.",
       "narrative_html": "<h3>ASX 200 (AUS200)</h3>\nThis instrument has no economic calendar or COT basis; its bias is a derived sentiment proxy at 4.67 / 10 (Neutral), driven by U.S. dollar pressure and real-yield conditions.\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:47+00:00"
     },
     "CH20": {
       "symbol": "CH20",
@@ -497,7 +497,7 @@
       "biasType": "derived",
       "summary": "CH20 is bearish with a bias of 4.67/10.",
       "narrative_html": "<h3>SMI 20 (CH20)</h3>\nThis instrument has no economic calendar or COT basis; its bias is a derived sentiment proxy at 4.67 / 10 (Neutral), driven by U.S. dollar pressure and real-yield conditions.\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:47+00:00"
     },
     "ES35": {
       "symbol": "ES35",
@@ -506,7 +506,7 @@
       "biasType": "derived",
       "summary": "ES35 is bearish with a bias of 4.67/10.",
       "narrative_html": "<h3>IBEX 35 (ES35)</h3>\nThis instrument has no economic calendar or COT basis; its bias is a derived sentiment proxy at 4.67 / 10 (Neutral), driven by U.S. dollar pressure and real-yield conditions.\nYield context (confirmation only): 10Y 4.83%, 2Y 4.43%, curve flat.\nReal 10Y yield 2.46% — an ongoing headwind for risk assets.",
-      "updated": "2026-09-11T08:16:33+00:00"
+      "updated": "2026-09-11T13:57:47+00:00"
     }
   }
 }
