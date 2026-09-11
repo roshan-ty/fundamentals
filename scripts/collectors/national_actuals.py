@@ -27,6 +27,14 @@ US_INDICATORS = {
     "UMCSENT": {"name": "UoM Consumer Sentiment", "kind": "level"},
 }
 
+# International OECD-MEI series — feed other currencies' scorecards directly.
+INTL_INDICATORS = {
+    "LRHUTTTTGBM156S": {"country": "GBP", "name": "Unemployment Rate", "kind": "level"},
+    "LRHUTTTTDEM156S": {"country": "EUR", "name": "Unemployment Rate", "kind": "level"},
+    "LRHUTTTTJPM156S": {"country": "JPY", "name": "Unemployment Rate", "kind": "level"},
+    "LRHUTTTTCAM156S": {"country": "CAD", "name": "Unemployment Rate", "kind": "level"},
+}
+
 
 def _pct_change(prev, curr):
     if prev in (None, 0) or curr is None:
@@ -35,13 +43,18 @@ def _pct_change(prev, curr):
 
 
 def build_fred_events():
-    """Derive dated US release 'events' with actual & previous from FRED series."""
+    """Derive dated release 'events' with actual & previous from FRED series
+    (US + international OECD-MEI)."""
     store = load_json(os.path.join(DATA_DIR, "macro", "fred.json"), default={})
     events = []
-    for sid, meta in US_INDICATORS.items():
+    for sid, meta in {**US_INDICATORS, **INTL_INDICATORS}.items():
+        if sid in US_INDICATORS:
+            country = "USD"
+        else:
+            country = meta.get("country", "USD")
         sdata = store.get(sid)
         if not sdata or not sdata.get("points"):
-            log(f"FRED actuals: missing series {sid}", "WARN")
+            log(f"FRED actuals: missing series {sid}", "INFO")
             continue
         pts = sdata["points"]  # ascending by date
         vals = [(p["date"], p["value"]) for p in pts if p.get("value") is not None]
@@ -69,7 +82,7 @@ def build_fred_events():
                 continue
             events.append({
                 "title": meta["name"],
-                "country": "USD",
+                "country": country,
                 "date_utc": d_cur + "T00:00:00+00:00",
                 "impact": "High" if meta["name"] in (
                     "CPI m/m", "Core CPI m/m", "Non-Farm Employment Change",
@@ -79,12 +92,13 @@ def build_fred_events():
                 "source_series": sid,
                 "period": d_cur,
             })
-    # Keep only the latest 2 releases per indicator
-    by_title = {}
+    # Keep only the latest 2 releases per (title, country)
+    by_key = {}
     for ev in events:
-        by_title.setdefault(ev["title"], []).append(ev)
+        k = (ev["title"], ev["country"])
+        by_key.setdefault(k, []).append(ev)
     latest = []
-    for title, evs in by_title.items():
+    for evs in by_key.values():
         evs.sort(key=lambda x: x["date_utc"])
         latest.extend(evs[-2:])
     latest.sort(key=lambda x: x["date_utc"])
@@ -94,7 +108,7 @@ def build_fred_events():
 def collect():
     events = build_fred_events()
     save_json(os.path.join(DATA_DIR, "calendar", "fred_events.json"), events)
-    log(f"FRED actuals: {len(events)} dated US events")
+    log(f"FRED actuals: {len(events)} dated events (currencies: {sorted({e['country'] for e in events})})")
     return {"events": len(events), "titles": sorted({e['title'] for e in events})}
 
 

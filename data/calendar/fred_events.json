@@ -10,6 +10,16 @@
     "period": "2026-01-01"
   },
   {
+    "title": "Unemployment Rate",
+    "country": "GBP",
+    "date_utc": "2026-03-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "4.9",
+    "previous": "5.0",
+    "source_series": "LRHUTTTTGBM156S",
+    "period": "2026-03-01"
+  },
+  {
     "title": "GDP q/q annualized",
     "country": "USD",
     "date_utc": "2026-04-01T00:00:00+00:00",
@@ -18,6 +28,36 @@
     "previous": "",
     "source_series": "GDPC1",
     "period": "2026-04-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "GBP",
+    "date_utc": "2026-04-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "4.9",
+    "previous": "4.9",
+    "source_series": "LRHUTTTTGBM156S",
+    "period": "2026-04-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "EUR",
+    "date_utc": "2026-05-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "3.8",
+    "previous": "3.8",
+    "source_series": "LRHUTTTTDEM156S",
+    "period": "2026-05-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "JPY",
+    "date_utc": "2026-05-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "2.5",
+    "previous": "2.5",
+    "source_series": "LRHUTTTTJPM156S",
+    "period": "2026-05-01"
   },
   {
     "title": "Core PCE Price Index m/m",
@@ -77,6 +117,36 @@
     "actual": "49.5",
     "previous": "44.8",
     "source_series": "UMCSENT",
+    "period": "2026-06-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "EUR",
+    "date_utc": "2026-06-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "3.9",
+    "previous": "3.8",
+    "source_series": "LRHUTTTTDEM156S",
+    "period": "2026-06-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "JPY",
+    "date_utc": "2026-06-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "2.5",
+    "previous": "2.5",
+    "source_series": "LRHUTTTTJPM156S",
+    "period": "2026-06-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "CAD",
+    "date_utc": "2026-06-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "6.5",
+    "previous": "6.6",
+    "source_series": "LRHUTTTTCAM156S",
     "period": "2026-06-01"
   },
   {
@@ -197,6 +267,16 @@
     "actual": "55.2",
     "previous": "49.5",
     "source_series": "UMCSENT",
+    "period": "2026-07-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "CAD",
+    "date_utc": "2026-07-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "6.4",
+    "previous": "6.5",
+    "source_series": "LRHUTTTTCAM156S",
     "period": "2026-07-01"
   },
   {

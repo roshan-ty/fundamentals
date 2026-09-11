@@ -63,6 +63,7 @@ def all_pipeline():
 def scoring_pipeline():
     from scoring import score, cot, instruments, pairs, narrative, setups
     stages = {}
+    stages["verdicts"] = run(score.attach_event_verdicts, "event verdicts")
     stages["currencies"] = run(score.score_currencies, "currency scoring")
     stages["cot"] = run(cot.collect, "cot scoring")
     stages["instruments"] = run(instruments.score_instruments, "instrument scoring")

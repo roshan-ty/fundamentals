@@ -1,20 +1,54 @@
-# Core scoring engine — applies the Bulls & Bears rule:
-#   Actual vs previous per scorecard direction → +1 / -1 / 0 scaled by weight.
-#   Currency score = 5 + 5 * (netBuffWeight / totalEligibleWeight), clamped 0-10.
+# Core scoring engine v2 — applies the Bulls & Bears rule:
+#   A data point is scored ONLY when published actual differs from previous
+#   (unchanged = 0). Sign comes from actual-vs-previous per scorecard direction;
+#   magnitude is scaled by impact weight, recency decay and (when a forecast
+#   exists) forecast confirmation. COT positioning blends into core currencies.
+#   Currency score = 5 + 5 * (netWeight / fullConfiguredWeight), plus a thin-data
+#   momentum guard, clamped 0-10. A coverage % is reported alongside every score.
 import os
 import sys
 import json
 import re
+from datetime import datetime, timezone
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from common.utils import load_json, save_json, load_scorecard, log, DATA_DIR, now_iso
 
+DECAY_BASE = 0.92      # weekly decay factor
+MIN_DECAY = 0.25       # floor so older prints still count a little
+THIN_COVERAGE = 0.35   # below this coverage we add the momentum guard
+COT_CURRENCY_WEIGHT = 0.3
+
+
+def _parse_decimal(s):
+    """Handle European numeric formatting (2,5 / 1.234,56 / (1,2)) for sources
+    like Eurostat/German data, plus standard 1,234.56. Operates on the numeric
+    body only so trailing units ('%', 'B') never break the conversion."""
+    s = str(s).replace("\u00a0", "").replace(" ", "")
+    if s.startswith("(") and s.endswith(")"):
+        s = "-" + s[1:-1]
+    m = re.search(r"[-+]?\d[\d.,]*", s)
+    if not m:
+        return s
+    body = m.group(0)
+    if "," in body and "." not in body:
+        if re.match(r"^-?\d+,\d{1,2}$", body):          # European decimal 2,5
+            body = body.replace(",", ".")
+        else:                                            # thousands 1,234,567
+            body = body.replace(",", "")
+    elif "," in body and "." in body:
+        if re.match(r"^-?\d{1,3}(\.\d{3})+(,\d{1,2})$", body):  # 1.234,56 -> 1234.56
+            body = body.replace(".", "").replace(",", ".")
+        else:                                            # 1,234.56 -> 1234.56
+            body = body.replace(",", "")
+    return s[:m.start()] + body + s[m.end():]
+
 
 def norm_num(text):
-    """Parse numbers out of feed strings: '3.4%', '-1.4M', '2.48T', '805B'."""
-    if text is None:
+    """Parse numbers out of feed strings: '3.4%', '-1.4M', '2.48T', '805B', '2,5%'."""
+    if text is None or str(text).strip() in ("", "-"):
         return None
-    t = str(text).replace(",", "").strip()
+    t = _parse_decimal(str(text))
     m = re.search(r"[-+]?\d*\.?\d+", t)
     if not m:
         return None
@@ -42,7 +76,48 @@ def decide(actual, previous, direction):
     if direction == "lower_is_bullish":
         return 1 if a < p else -1
     return 0
-# Currency -> indicator keyword matchers (feed titles → scorecard dataPoint)
+
+
+def _weeks_old(date_utc):
+    try:
+        d = datetime.fromisoformat((date_utc or "").replace("Z", "+00:00"))
+        if d.tzinfo is None:
+            d = d.replace(tzinfo=timezone.utc)
+        return max(0.0, (datetime.now(timezone.utc) - d).days / 7.0)
+    except Exception:
+        return 0.0
+
+
+def _decay(weeks):
+    return max(MIN_DECAY, DECAY_BASE ** weeks)
+
+
+def _forecast_factor(actual, forecast, direction, sign):
+    """Forecast confirmation — modulates magnitude, never flips the sign.
+    Beat previous AND beat/align forecast = full weight; beat previous but MISS
+    forecast = 0.7x (surprise was less clean)."""
+    if sign == 0 or not forecast:
+        return 1.0
+    a = norm_num(actual)
+    f = norm_num(forecast)
+    if a is None or f is None:
+        return 1.0
+    if sign > 0:
+        return 1.0 if a >= f else 0.7
+    return 1.0 if a <= f else 0.7
+
+
+def _band_for(score, bands=None):
+    if score <= 2:
+        return "Very Bearish"
+    if score <= 4:
+        return "Bearish"
+    if score < 6:
+        return "Neutral"
+    if score <= 7:
+        return "Bullish"
+    return "Very Bullish"
+# Currency -> indicator keyword matchers (calendar titles → scorecard dataPoint)
 _TITLE_MATCHERS = {
     "USD": {
         "us_fed_funds": ["Federal Funds Rate", "FOMC", "Fed Interest Rate", "Fed Funds"],
@@ -63,14 +138,14 @@ _TITLE_MATCHERS = {
     },
     "EUR": {
         "eu_ecb_rate": ["ECB Interest Rate", "Main Refinancing", "ECB Press Conference", "ECB Monetary Policy", "ECB Rate", "ECB Statement"],
-        "eu_cpi_flash": ["CPI Flash", "HICP"],
+        "eu_cpi_flash": ["CPI Flash", "HICP", "Euro Zone CPI", "EU CPI"],
         "eu_de_pmi": ["German Flash Manufacturing PMI", "German Flash Services PMI", "German Manufacturing PMI", "German Services PMI", "German Flash Manufacturing", "German Flash Services"],
         "eu_ifo": ["IFO Business Climate", "IFO"],
         "eu_zew": ["ZEW Economic Sentiment"],
-        "eu_gdp": ["Revised GDP q/q", "GDP q/q", "GDP y/y", "Gross Domestic Product", "Final GDP"],
+        "eu_gdp": ["Revised GDP q/q", "GDP q/q", "GDP y/y", "Gross Domestic Product", "Final GDP", "Euro Zone GDP"],
         "eu_employment_change": ["Employment Change"],
         "eu_unemployment": ["Unemployment Rate"],
-        "eu_de_indprod": ["German Industrial Production", "Industrial Production m/m"],
+        "eu_de_indprod": ["German Industrial Production", "Industrial Production m/m", "Euro Zone Industrial"],
         "eu_retail": ["Retail Sales"],
     },
     "GBP": {
@@ -112,7 +187,7 @@ _TITLE_MATCHERS = {
     },
     "JPY": {
         "jp_boj": ["BoJ Policy Rate", "BoJ Interest Rate", "BoJ Monetary Policy", "BoJ Press Conference", "BoJ Rate"],
-        "jp_core_cpi": ["Core CPI y/y", "Tokyo Core CPI", "Core CPI", "National Core CPI"],
+        "jp_core_cpi": ["Core CPI y/y", "Tokyo Core CPI", "Core CPI", "National Core CPI", "Japan CPI"],
         "jp_gdp": ["GDP q/q", "GDP y/y", "Final GDP", "Gross Domestic Product"],
         "jp_tankan": ["Tankan"],
         "jp_trade": ["Trade Balance"],
@@ -128,14 +203,44 @@ _TITLE_MATCHERS = {
     "CNY": {
         "cn_lpr": ["Loan Prime Rate", "LPR", "PBOC"],
         "cn_pmi": ["Manufacturing PMI", "NBS Manufact", "Caixin Manufact"],
-        "cn_cpi_ppi": ["CPI y/y", "PPI y/y"],
+        "cn_cpi_ppi": ["CPI y/y", "PPI y/y", "China CPI", "Chinese CPI"],
         "cn_indprod": ["Industrial Production"],
         "cn_gdp": ["GDP q/q", "GDP y/y", "Gross Domestic Product"],
         "cn_trade": ["Trade Balance", "Exports", "Imports"],
     },
+    "MXN": {"mx_rate": ["Interest Rate Decision", "Banxico", "Mexican Interest Rate", "Overnight Rate"],
+            "mx_cpi": ["CPI y/y", "CPI"], "mx_gdp": ["GDP q/q", "Gross Domestic Product"],
+            "mx_trade": ["Trade Balance"], "mx_unemployment": ["Unemployment Rate"]},
+    "BRL": {"br_rate": ["Selic", "Brazilian Interest Rate", "COPOM", "Interest Rate Decision"],
+            "br_cpi": ["CPI y/y", "IPCA", "Brazilian CPI"], "br_gdp": ["GDP q/q", "Gross Domestic Product"],
+            "br_trade": ["Trade Balance"], "br_unemployment": ["Unemployment Rate"]},
+    "TRY": {"tr_rate": ["Interest Rate Decision", "CBRT", "Turkish Interest Rate", "One-Week Repo"],
+            "tr_cpi": ["CPI y/y", "CPI"], "tr_gdp": ["GDP q/q", "Gross Domestic Product"],
+            "tr_trade": ["Trade Balance"]},
+    "ZAR": {"za_rate": ["Repo Rate", "South African Interest Rate", "SARB", "Interest Rate Decision"],
+            "za_cpi": ["CPI y/y", "CPI"], "za_gdp": ["GDP q/q", "Gross Domestic Product"],
+            "za_trade": ["Trade Balance"], "za_unemployment": ["Unemployment Rate"]},
+    "PLN": {"pl_rate": ["Interest Rate Decision", "Polish Interest Rate", "Reference Rate"],
+            "pl_cpi": ["CPI y/y", "CPI"], "pl_gdp": ["GDP q/q", "Gross Domestic Product"],
+            "pl_trade": ["Trade Balance"]},
+    "HUF": {"hu_rate": ["Interest Rate Decision", "Hungarian Interest Rate", "Base Rate"],
+            "hu_cpi": ["CPI y/y", "CPI"], "hu_gdp": ["GDP q/q", "Gross Domestic Product"]},
+    "CZK": {"cz_rate": ["Interest Rate Decision", "Czech Interest Rate", "Repo Rate"],
+            "cz_cpi": ["CPI y/y", "CPI"], "cz_gdp": ["GDP q/q", "Gross Domestic Product"]},
+    "DKK": {"dk_rate": ["Interest Rate Decision", "Danish Interest Rate", "Certificate of Deposit"],
+            "dk_cpi": ["CPI y/y", "CPI"], "dk_gdp": ["GDP q/q", "Gross Domestic Product"]},
+    "NOK": {"no_rate": ["Interest Rate Decision", "Norwegian Interest Rate", "Overnight Deposit"],
+            "no_cpi": ["CPI y/y", "CPI"], "no_gdp": ["GDP q/q", "Gross Domestic Product"],
+            "no_trade": ["Trade Balance"]},
+    "SEK": {"se_rate": ["Interest Rate Decision", "Swedish Interest Rate", "Repo Rate"],
+            "se_cpi": ["CPI y/y", "CPIF", "Swedish CPI"], "se_gdp": ["GDP q/q", "Gross Domestic Product"],
+            "se_trade": ["Trade Balance"]},
+    "SGD": {"sg_rate": ["MAS", "Monetary Policy Statement", "Singapore Interest"],
+            "sg_cpi": ["CPI y/y", "CPI"], "sg_gdp": ["GDP q/q", "Gross Domestic Product", "Advance GDP"],
+            "sg_trade": ["Trade Balance"]},
+    "HKD": {"hk_cpi": ["CPI y/y", "CPI"], "hk_gdp": ["GDP q/q", "Gross Domestic Product"],
+            "hk_trade": ["Trade Balance"], "hk_retail": ["Retail Sales"]},
 }
-
-
 def _normalize_title(title):
     """Unify calendar title styles: 'GDP MoM JUL' -> 'GDP m/m jul' so keyword
     matchers written against 'm/m' also catch sources using 'MoM'/'YoY'."""
@@ -143,7 +248,6 @@ def _normalize_title(title):
     t = re.sub(r"\bmom\b", "m/m", t)
     t = re.sub(r"\byoy\b", "y/y", t)
     t = re.sub(r"\booq\b", "q/q", t)
-    t = re.sub(r"\byoy ", "y/y ", t)
     return t
 
 
@@ -165,6 +269,14 @@ def _events():
     return evs
 
 
+def _cot_tilt_for_currency(currency):
+    """Load COT tilt for a currency from the CFTC bias file (secondary input)."""
+    cot = load_json(os.path.join(DATA_DIR, "cftc", "cot_bias.json"), default={})
+    ins = (cot.get("instruments") or {}).get(currency, {})
+    tilt = (ins.get("tilt") or {}).get("tilt", 0)
+    return float(tilt or 0)
+
+
 def score_currencies():
     sc = load_scorecard()
     bands = sc.get("bands", {})
@@ -175,7 +287,7 @@ def score_currencies():
         country = event.get("country")
         title = event.get("title", "")
         actual = event.get("actual")
-        if country not in ("USD", "EUR", "GBP", "AUD", "NZD", "CAD", "JPY", "CHF", "CNY"):
+        if country not in sc["currencies"]:
             continue
         if not actual:
             continue
@@ -188,52 +300,86 @@ def score_currencies():
         rec = {
             "event": title, "date": event.get("date_utc"), "impact": event.get("impact"),
             "actual": str(actual), "previous": str(event.get("previous", "")),
+            "forecast": str(event.get("forecast", "")), "revision": str(event.get("revision", "")),
             "dataPoint": dp["name"], "direction": dp["direction"],
             "sign": sign, "weight": weight, "verdict": verdict,
         }
         detail.setdefault(country, []).append(rec)
+
     for currency, cur in sc["currencies"].items():
-        scored = [d for d in detail.get(currency, []) if d["sign"] != 0]
-        eligible = detail.get(currency, [])
-        net = sum(d["sign"] * d["weight"] for d in scored)
-        total_w = sum(d["weight"] for d in eligible) or 1.0
-        ratio = net / total_w
+        cfg_points = cur.get("dataPoints", [])
+        total_cfg = sum(p.get("weight", 0) for p in cfg_points) or 1.0
+        pts = detail.get(currency, [])
+        contribs = []
+        for d in pts:
+            if d["sign"] == 0:
+                continue
+            w = d["weight"]
+            decay = _decay(_weeks_old(d.get("date")))
+            factor = _forecast_factor(d.get("actual"), d.get("forecast"), d["direction"], d["sign"])
+            contribs.append((d["sign"] * w * decay * factor, d))
+        net = sum(c for c, _ in contribs)
+        # COT positioning (secondary input) for currencies with CFTC coverage
+        cot_tilt = _cot_tilt_for_currency(currency)
+        net += COT_CURRENCY_WEIGHT * cot_tilt
+
+        eligible_weight = sum(d["weight"] for d in pts)
+        coverage = min(1.0, eligible_weight / total_cfg)
+        ratio = net / total_cfg
         raw = 5.0 + 5.0 * ratio
+        # thin-data momentum guard: show direction without saturating
+        if coverage < THIN_COVERAGE and eligible_weight > 0:
+            elig_ratio = net / eligible_weight
+            raw += max(-0.5, min(0.5, 0.5 * elig_ratio))
         score = max(0.0, min(10.0, raw))
         out[currency] = {
             "score": round(score, 2),
             "band": _band_for(score, bands),
             "net": round(net, 2),
-            "scored_points": len(scored),
-            "eligible_points": len(eligible),
+            "coverage": round(coverage * 100, 1),
+            "total_configured_weight": round(total_cfg, 2),
+            "scored_points": len([c for c, _ in contribs if c != 0]),
+            "eligible_points": len(pts),
+            "cot_tilt": cot_tilt,
             "top_drivers": sorted(
                 [{"event": d["event"], "verdict": d["verdict"],
-                  "weighted": round(d["sign"] * d["weight"], 2), "date": d["date"]}
-                 for d in scored],
+                  "weighted": round(c, 2), "date": d["date"]}
+                 for c, d in contribs],
                 key=lambda x: abs(x["weighted"]), reverse=True)[:8],
         }
     payload = {
-        "meta": {"updated": now_iso(), "method": "calendar + COT (calendar part)"},
+        "meta": {"updated": now_iso(), "method": "calendar + COT (v2: decay + forecast confirmation + full-weight normalization)"},
         "currencies": out,
         "band_scale": bands,
         "detail": detail,
     }
     save_json(os.path.join(DATA_DIR, "bias", "currencies.json"), payload)
-    log("Currency scoring: " + ", ".join(f"{c}={v['score']}({v['band']})" for c, v in out.items()))
+    log("Currency scoring: " + ", ".join(f"{c}={v['score']}({v['band']}, cov{v['coverage']}%)" for c, v in out.items()))
     return out
 
 
-def _band_for(score, bands=None):
-    if score <= 2:
-        return "Very Bearish"
-    if score <= 4:
-        return "Bearish"
-    if score < 6:
-        return "Neutral"
-    if score <= 7:
-        return "Bullish"
-    return "Very Bullish"
+def attach_event_verdicts():
+    """Attach bullish/bearish/neutral verdict per released calendar event so the
+    Calendar + Data tabs display the direction the scoring engine derives."""
+    sc = load_scorecard()
+    path = os.path.join(DATA_DIR, "calendar", "events_current.json")
+    evs = load_json(path, default=[])
+    changed = 0
+    for ev in evs:
+        if not ev.get("actual") or not ev.get("previous"):
+            continue
+        dp = match_data_point(sc, ev.get("country"), ev.get("title"))
+        if not dp:
+            continue
+        sign = decide(ev.get("actual"), ev.get("previous"), dp["direction"])
+        verdict = "neutral" if sign == 0 else ("bullish" if sign > 0 else "bearish")
+        if ev.get("verdict") != verdict:
+            ev["verdict"] = verdict
+            changed += 1
+    save_json(path, evs)
+    log(f"Event verdicts: {changed} updated/{len(evs)} events")
+    return changed
 
 
 if __name__ == "__main__":
-    print(json.dumps(score_currencies(), indent=2))
+    print(json.dumps(score_currencies(), indent=1)[:2000])

@@ -130,6 +130,114 @@
         {"id": "cn_gdp", "name": "GDP (q/q, y/y)", "direction": "higher_is_bullish", "weight": 1.0, "match": ["GDP q/q", "GDP y/y", "Gross Domestic Product"]},
         {"id": "cn_trade", "name": "Trade Balance & Exports/Imports (y/y)", "direction": "higher_is_bullish", "weight": 0.5, "match": ["Trade Balance", "Exports", "Imports"]}
       ]
+    },
+    "MXN": {
+      "name": "Mexican Peso",
+      "dataPoints": [
+        {"id": "mx_rate", "name": "Banxico Overnight Rate / Rate Decision", "direction": "higher_is_bullish", "weight": 2.0, "match": ["Interest Rate Decision", "Banxico", "Mexican Interest Rate", "Overnight Rate"]},
+        {"id": "mx_cpi", "name": "CPI y/y", "direction": "higher_is_bullish", "weight": 1.5, "match": ["CPI y/y", "CPI"]},
+        {"id": "mx_gdp", "name": "GDP q/q", "direction": "higher_is_bullish", "weight": 1.0, "match": ["GDP q/q", "Gross Domestic Product"]},
+        {"id": "mx_trade", "name": "Trade Balance", "direction": "higher_is_bullish", "weight": 0.5, "match": ["Trade Balance"]},
+        {"id": "mx_unemployment", "name": "Unemployment Rate", "direction": "lower_is_bullish", "weight": 0.5, "match": ["Unemployment Rate"]}
+      ]
+    },
+    "BRL": {
+      "name": "Brazilian Real",
+      "dataPoints": [
+        {"id": "br_rate", "name": "Selic Rate / COPOM Decision", "direction": "higher_is_bullish", "weight": 2.0, "match": ["Selic", "Brazilian Interest Rate", "COPOM", "Interest Rate Decision"]},
+        {"id": "br_cpi", "name": "CPI y/y (IPCA)", "direction": "higher_is_bullish", "weight": 1.5, "match": ["CPI y/y", "IPCA", "Brazilian CPI"]},
+        {"id": "br_gdp", "name": "GDP q/q", "direction": "higher_is_bullish", "weight": 1.0, "match": ["GDP q/q", "Gross Domestic Product"]},
+        {"id": "br_trade", "name": "Trade Balance", "direction": "higher_is_bullish", "weight": 0.5, "match": ["Trade Balance"]},
+        {"id": "br_unemployment", "name": "Unemployment Rate", "direction": "lower_is_bullish", "weight": 0.5, "match": ["Unemployment Rate"]}
+      ]
+    },
+    "TRY": {
+      "name": "Turkish Lira",
+      "dataPoints": [
+        {"id": "tr_rate", "name": "CBRT Interest Rate Decision", "direction": "higher_is_bullish", "weight": 2.0, "match": ["Interest Rate Decision", "CBRT", "Turkish Interest Rate", "One-Week Repo"]},
+        {"id": "tr_cpi", "name": "CPI y/y", "direction": "higher_is_bullish", "weight": 1.5, "match": ["CPI y/y", "CPI"]},
+        {"id": "tr_gdp", "name": "GDP q/q", "direction": "higher_is_bullish", "weight": 1.0, "match": ["GDP q/q", "Gross Domestic Product"]},
+        {"id": "tr_trade", "name": "Trade Balance", "direction": "higher_is_bullish", "weight": 0.5, "match": ["Trade Balance"]}
+      ]
+    },
+    "ZAR": {
+      "name": "South African Rand",
+      "dataPoints": [
+        {"id": "za_rate", "name": "SARB Repo Rate Decision", "direction": "higher_is_bullish", "weight": 2.0, "match": ["Repo Rate", "South African Interest Rate", "SARB", "Interest Rate Decision"]},
+        {"id": "za_cpi", "name": "CPI y/y", "direction": "higher_is_bullish", "weight": 1.5, "match": ["CPI y/y", "CPI"]},
+        {"id": "za_gdp", "name": "GDP q/q", "direction": "higher_is_bullish", "weight": 1.0, "match": ["GDP q/q", "Gross Domestic Product"]},
+        {"id": "za_trade", "name": "Trade Balance", "direction": "higher_is_bullish", "weight": 0.5, "match": ["Trade Balance"]},
+        {"id": "za_unemployment", "name": "Unemployment Rate", "direction": "lower_is_bullish", "weight": 0.5, "match": ["Unemployment Rate"]}
+      ]
+    },
+    "PLN": {
+      "name": "Polish Zloty",
+      "dataPoints": [
+        {"id": "pl_rate", "name": "Reference Rate / MPC Decision", "direction": "higher_is_bullish", "weight": 2.0, "match": ["Interest Rate Decision", "Polish Interest Rate", "Reference Rate"]},
+        {"id": "pl_cpi", "name": "CPI y/y", "direction": "higher_is_bullish", "weight": 1.5, "match": ["CPI y/y", "CPI"]},
+        {"id": "pl_gdp", "name": "GDP q/q", "direction": "higher_is_bullish", "weight": 1.0, "match": ["GDP q/q", "Gross Domestic Product"]},
+        {"id": "pl_trade", "name": "Trade Balance", "direction": "higher_is_bullish", "weight": 0.5, "match": ["Trade Balance"]}
+      ]
+    },
+    "HUF": {
+      "name": "Hungarian Forint",
+      "dataPoints": [
+        {"id": "hu_rate", "name": "Base Rate / MNB Decision", "direction": "higher_is_bullish", "weight": 2.0, "match": ["Interest Rate Decision", "Hungarian Interest Rate", "Base Rate"]},
+        {"id": "hu_cpi", "name": "CPI y/y", "direction": "higher_is_bullish", "weight": 1.5, "match": ["CPI y/y", "CPI"]},
+        {"id": "hu_gdp", "name": "GDP q/q", "direction": "higher_is_bullish", "weight": 1.0, "match": ["GDP q/q", "Gross Domestic Product"]}
+      ]
+    },
+    "CZK": {
+      "name": "Czech Koruna",
+      "dataPoints": [
+        {"id": "cz_rate", "name": "CNB 2-Week Repo Rate", "direction": "higher_is_bullish", "weight": 2.0, "match": ["Interest Rate Decision", "Czech Interest Rate", "Repo Rate"]},
+        {"id": "cz_cpi", "name": "CPI y/y", "direction": "higher_is_bullish", "weight": 1.5, "match": ["CPI y/y", "CPI"]},
+        {"id": "cz_gdp", "name": "GDP q/q", "direction": "higher_is_bullish", "weight": 1.0, "match": ["GDP q/q", "Gross Domestic Product"]}
+      ]
+    },
+    "DKK": {
+      "name": "Danish Krone",
+      "dataPoints": [
+        {"id": "dk_rate", "name": "Certificate of Deposit Rate / DN Decision", "direction": "higher_is_bullish", "weight": 2.0, "match": ["Interest Rate Decision", "Danish Interest Rate", "Certificate of Deposit"]},
+        {"id": "dk_cpi", "name": "CPI y/y", "direction": "higher_is_bullish", "weight": 1.5, "match": ["CPI y/y", "CPI"]},
+        {"id": "dk_gdp", "name": "GDP q/q", "direction": "higher_is_bullish", "weight": 1.0, "match": ["GDP q/q", "Gross Domestic Product"]}
+      ]
+    },
+    "NOK": {
+      "name": "Norwegian Krone",
+      "dataPoints": [
+        {"id": "no_rate", "name": "Norges Bank Overnight Deposit Rate", "direction": "higher_is_bullish", "weight": 2.0, "match": ["Interest Rate Decision", "Norwegian Interest Rate", "Overnight Deposit"]},
+        {"id": "no_cpi", "name": "CPI y/y", "direction": "higher_is_bullish", "weight": 1.5, "match": ["CPI y/y", "CPI"]},
+        {"id": "no_gdp", "name": "GDP q/q", "direction": "higher_is_bullish", "weight": 1.0, "match": ["GDP q/q", "Gross Domestic Product"]},
+        {"id": "no_trade", "name": "Trade Balance", "direction": "higher_is_bullish", "weight": 0.5, "match": ["Trade Balance"]}
+      ]
+    },
+    "SEK": {
+      "name": "Swedish Krona",
+      "dataPoints": [
+        {"id": "se_rate", "name": "Riksbank Repo Rate", "direction": "higher_is_bullish", "weight": 2.0, "match": ["Interest Rate Decision", "Swedish Interest Rate", "Repo Rate"]},
+        {"id": "se_cpi", "name": "CPI y/y (CPIF)", "direction": "higher_is_bullish", "weight": 1.5, "match": ["CPI y/y", "CPIF", "Swedish CPI"]},
+        {"id": "se_gdp", "name": "GDP q/q", "direction": "higher_is_bullish", "weight": 1.0, "match": ["GDP q/q", "Gross Domestic Product"]},
+        {"id": "se_trade", "name": "Trade Balance", "direction": "higher_is_bullish", "weight": 0.5, "match": ["Trade Balance"]}
+      ]
+    },
+    "SGD": {
+      "name": "Singapore Dollar",
+      "dataPoints": [
+        {"id": "sg_rate", "name": "MAS Monetary Policy", "direction": "higher_is_bullish", "weight": 2.0, "match": ["MAS", "Monetary Policy Statement", "Singapore Interest"]},
+        {"id": "sg_cpi", "name": "CPI y/y", "direction": "higher_is_bullish", "weight": 1.5, "match": ["CPI y/y", "CPI"]},
+        {"id": "sg_gdp", "name": "GDP q/q", "direction": "higher_is_bullish", "weight": 1.0, "match": ["GDP q/q", "Gross Domestic Product", "Advance GDP"]},
+        {"id": "sg_trade", "name": "Trade Balance", "direction": "higher_is_bullish", "weight": 0.5, "match": ["Trade Balance"]}
+      ]
+    },
+    "HKD": {
+      "name": "Hong Kong Dollar",
+      "dataPoints": [
+        {"id": "hk_cpi", "name": "CPI y/y", "direction": "higher_is_bullish", "weight": 1.5, "match": ["CPI y/y", "CPI"]},
+        {"id": "hk_gdp", "name": "GDP q/q", "direction": "higher_is_bullish", "weight": 1.0, "match": ["GDP q/q", "Gross Domestic Product"]},
+        {"id": "hk_trade", "name": "Trade Balance", "direction": "higher_is_bullish", "weight": 0.5, "match": ["Trade Balance"]},
+        {"id": "hk_retail", "name": "Retail Sales", "direction": "higher_is_bullish", "weight": 0.5, "match": ["Retail Sales"]}
+      ]
     }
   },
   "instruments": {
@@ -150,6 +258,6 @@
     "label": "derived",
     "usd_weight": 0.6,
     "risk_weight": 0.4,
-    "targets": ["BTCUSD", "ETHUSD", "LTCUSD", "SOLUSD", "SUIUSD", "XLMUSD", "XRPUSD", "AVAXUSD", "US30", "US100", "US500", "GER40", "EU50", "GB100", "FR40", "JP225", "HK50", "AUS200", "CH20", "ES35"]
+    "targets": ["BTCUSD", "ETHUSD", "LTCUSD", "SOLUSD", "SUIUSD", "XLMUSD", "XRPUSD", "AVAXUSD", "US30", "US100", "US500", "GE40", "EU50", "GB100", "FR40", "JP225", "HK50", "AUS200", "CH20", "ES35"]
   }
 }

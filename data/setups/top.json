@@ -1,125 +1,142 @@
 {
   "meta": {
-    "updated": "2026-09-11T19:00:43+00:00",
+    "updated": "2026-09-11T20:50:07+00:00",
     "note": "Top setups ranked by bias magnitude x data confidence"
   },
   "setups": [
     {
-      "symbol": "GBPUSD",
-      "name": "GBP/USD",
-      "score": 9.74,
-      "band": "Very Bullish",
-      "direction": "Buy",
-      "magnitude": 4.74,
+      "symbol": "EURGBP",
+      "name": "EUR/GBP",
+      "score": 3.07,
+      "band": "Bearish",
+      "direction": "Sell",
+      "magnitude": 1.93,
       "confidence": 1.0,
       "biasType": "direct",
       "drivers": [
-        "GDP MoM JUL",
-        "GDP YoY JUL"
+        "Unemployment Rate"
       ],
-      "rationale": "GBPUSD is bearish with a bias of 4.64/10."
-    },
-    {
-      "symbol": "EURGBP",
-      "name": "EUR/GBP",
-      "score": 0.0,
-      "band": "Very Bearish",
-      "direction": "Sell",
-      "magnitude": 5.0,
-      "confidence": 0.7,
-      "biasType": "direct",
-      "drivers": [],
       "rationale": "EURGBP is neutral with a bias of 5.0/10."
     },
     {
       "symbol": "GBPEUR",
       "name": "GBP/EUR",
-      "score": 10.0,
-      "band": "Very Bullish",
+      "score": 6.93,
+      "band": "Bullish",
       "direction": "Buy",
-      "magnitude": 5.0,
-      "confidence": 0.7,
+      "magnitude": 1.93,
+      "confidence": 1.0,
       "biasType": "direct",
       "drivers": [
+        "GDP m/m",
         "GDP MoM JUL",
         "GDP YoY JUL"
       ],
       "rationale": "GBPEUR is neutral with a bias of 5.0/10."
     },
     {
-      "symbol": "GBPJPY",
-      "name": "GBP/JPY",
-      "score": 10.0,
-      "band": "Very Bullish",
-      "direction": "Buy",
-      "magnitude": 5.0,
-      "confidence": 0.7,
+      "symbol": "XAUUSD",
+      "name": "Gold",
+      "score": 3.17,
+      "band": "Bearish",
+      "direction": "Sell",
+      "magnitude": 1.83,
+      "confidence": 1.0,
       "biasType": "direct",
-      "drivers": [
-        "GDP MoM JUL",
-        "GDP YoY JUL"
-      ],
-      "rationale": "GBPJPY is neutral with a bias of 5.0/10."
+      "drivers": [],
+      "rationale": "XAUUSD is bearish with a bias of 2.89/10."
+    },
+    {
+      "symbol": "XPTUSD",
+      "name": "Platinum",
+      "score": 3.17,
+      "band": "Bearish",
+      "direction": "Sell",
+      "magnitude": 1.83,
+      "confidence": 1.0,
+      "biasType": "direct",
+      "drivers": [],
+      "rationale": "XPTUSD is bearish with a bias of 2.89/10."
+    },
+    {
+      "symbol": "OIL",
+      "name": "Crude Oil (WTI)",
+      "score": 3.19,
+      "band": "Bearish",
+      "direction": "Sell",
+      "magnitude": 1.81,
+      "confidence": 1.0,
+      "biasType": "direct",
+      "drivers": [],
+      "rationale": "OIL is bearish with a bias of 3.0/10."
+    },
+    {
+      "symbol": "BRENT",
+      "name": "Brent Crude",
+      "score": 3.19,
+      "band": "Bearish",
+      "direction": "Sell",
+      "magnitude": 1.81,
+      "confidence": 1.0,
+      "biasType": "direct",
+      "drivers": [],
+      "rationale": "BRENT is bearish with a bias of 3.0/10."
+    },
+    {
+      "symbol": "COPPER",
+      "name": "Copper",
+      "score": 3.19,
+      "band": "Bearish",
+      "direction": "Sell",
+      "magnitude": 1.81,
+      "confidence": 1.0,
+      "biasType": "direct",
+      "drivers": [],
+      "rationale": "COPPER is bearish with a bias of 3.0/10."
     },
     {
       "symbol": "GBPCHF",
       "name": "GBP/CHF",
-      "score": 10.0,
-      "band": "Very Bullish",
+      "score": 6.77,
+      "band": "Bullish",
       "direction": "Buy",
-      "magnitude": 5.0,
-      "confidence": 0.7,
+      "magnitude": 1.77,
+      "confidence": 1.0,
       "biasType": "direct",
       "drivers": [
+        "GDP m/m",
         "GDP MoM JUL",
         "GDP YoY JUL"
       ],
       "rationale": "GBPCHF is neutral with a bias of 5.0/10."
     },
     {
-      "symbol": "GBPAUD",
-      "name": "GBP/AUD",
-      "score": 10.0,
-      "band": "Very Bullish",
+      "symbol": "GBPJPY",
+      "name": "GBP/JPY",
+      "score": 6.72,
+      "band": "Bullish",
       "direction": "Buy",
-      "magnitude": 5.0,
-      "confidence": 0.7,
+      "magnitude": 1.72,
+      "confidence": 1.0,
       "biasType": "direct",
       "drivers": [
+        "GDP m/m",
         "GDP MoM JUL",
         "GDP YoY JUL"
       ],
-      "rationale": "GBPAUD is neutral with a bias of 5.0/10."
+      "rationale": "GBPJPY is neutral with a bias of 5.0/10."
     },
     {
-      "symbol": "GBPCAD",
-      "name": "GBP/CAD",
-      "score": 10.0,
-      "band": "Very Bullish",
+      "symbol": "XAGUSD",
+      "name": "Silver",
+      "score": 6.67,
+      "band": "Bullish",
       "direction": "Buy",
-      "magnitude": 5.0,
-      "confidence": 0.7,
+      "magnitude": 1.67,
+      "confidence": 1.0,
       "biasType": "direct",
-      "drivers": [
-        "GDP MoM JUL",
-        "GDP YoY JUL"
-      ],
-      "rationale": "GBPCAD is neutral with a bias of 5.0/10."
-    },
-    {
-      "symbol": "GBPNZD",
-      "name": "GBP/NZD",
-      "score": 10.0,
-      "band": "Very Bullish",
-      "direction": "Buy",
-      "magnitude": 5.0,
-      "confidence": 0.7,
-      "biasType": "direct",
-      "drivers": [
-        "GDP MoM JUL",
-        "GDP YoY JUL"
-      ],
-      "rationale": "GBPNZD is neutral with a bias of 5.0/10."
+      "drivers": [],
+      "rationale": "XAGUSD is bullish with a bias of 6.39/10."
     }
   ]
 }

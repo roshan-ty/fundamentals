@@ -555,7 +555,10 @@
     "impact": "High",
     "forecast": "0.0%",
     "previous": "0.3%",
-    "actual": ""
+    "actual": "0.4%",
+    "revision": "",
+    "source": "ff-feed",
+    "verdict": "bullish"
   },
   {
     "title": "Construction Output m/m",
@@ -593,7 +596,9 @@
     "impact": "Low",
     "forecast": "-0.2%",
     "previous": "-0.2%",
-    "actual": ""
+    "actual": "0.2%",
+    "revision": "",
+    "source": "ff-feed"
   },
   {
     "title": "Manufacturing Production m/m",
@@ -602,7 +607,9 @@
     "impact": "Low",
     "forecast": "0.2%",
     "previous": "-0.5%",
-    "actual": ""
+    "actual": "0.9%",
+    "revision": "",
+    "source": "ff-feed"
   },
   {
     "title": "50-Year KTB Auction",
@@ -668,7 +675,8 @@
     "forecast": "0.1%",
     "previous": "0.3%",
     "actual": "0.4%",
-    "source": "te"
+    "source": "te",
+    "verdict": "bullish"
   },
   {
     "title": "GDP 3-Month Avg JUL",
@@ -738,7 +746,8 @@
     "forecast": "1.0%",
     "previous": "1.1%",
     "actual": "1.6%",
-    "source": "te"
+    "source": "te",
+    "verdict": "bullish"
   },
   {
     "title": "Industrial Production YoY JUL",
@@ -1006,6 +1015,17 @@
   {
     "title": "Federal Budget Balance",
     "country": "USD",
+    "date_utc": "2026-09-11T17:58+00:00",
+    "impact": "Low",
+    "forecast": "-221.1B",
+    "previous": "-432.3B",
+    "actual": "",
+    "revision": "",
+    "source": "ff-feed"
+  },
+  {
+    "title": "Federal Budget Balance",
+    "country": "USD",
     "date_utc": "2026-09-11T18:00+00:00",
     "impact": "Low",
     "forecast": "-221.1B",
@@ -1020,7 +1040,8 @@
     "forecast": "51.5",
     "previous": "51.7",
     "actual": "47.8",
-    "source": "te"
+    "source": "te",
+    "verdict": "bearish"
   },
   {
     "title": "Michigan 5 Year Inflation Expectations Prel SEP",

@@ -235,6 +235,64 @@
       setTimeout(() => { try { mkChart("cotChart", lineOption("Non-Commercial Net Positioning (contracts)", uniq, series)); } catch (e) {} }, 60);
     }
   }
+/* ── CALENDAR (full economic calendar) ─────────────────── */
+  async function viewCalendar(root) {
+    const events = await loadJSON("calendar/events_current.json", []);
+    const list = (Array.isArray(events) ? events : []).filter((e) => e.date_utc).sort((a, b) =>
+      (a.date_utc || "").localeCompare(b.date_utc || ""));
+    const currencies = [...new Set(list.map((e) => e.country))].sort();
+    const released = list.filter((e) => e.actual).length;
+
+    const panel = el("div", "panel");
+    panel.innerHTML = `<h3>Economic Calendar — ${list.length} events · ${released} released</h3>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px">
+        <select class="instr" id="calCur" style="min-width:110px">${["All"].concat(currencies).map((c) => `<option>${esc(c)}</option>`).join("")}</select>
+        <select class="instr" id="calImp" style="min-width:110px">
+          <option>All impacts</option><option>High</option><option>Medium</option><option>Low</option><option>Holiday</option></select>
+        <label style="display:flex;align-items:center;gap:4px;color:var(--text-dim)"><input type="checkbox" id="calReleased"> released only</label>
+        <input class="search" id="calSearch" placeholder="Search event…">
+      </div>
+      <table class="data"><thead><tr><th>Date (UTC)</th><th>Cur</th><th>Event</th><th>Impact</th><th class="num">Previous</th><th class="num">Forecast</th><th class="num">Actual</th><th>Verdict</th></tr></thead>
+      <tbody id="calBody"></tbody></table>`;
+    root.appendChild(panel);
+    const body = document.getElementById("calBody");
+
+    function verdictBadge(v) {
+      if (!v) return '<span class="dim">—</span>';
+      const cls = v === "bullish" ? "pos" : (v === "bearish" ? "neg" : "dim");
+      return `<span class="${cls}">${v}</span>`;
+    }
+
+    function render() {
+      const cur = document.getElementById("calCur").value;
+      const imp = document.getElementById("calImp").value;
+      const onlyReleased = document.getElementById("calReleased").checked;
+      const q = (document.getElementById("calSearch").value || "").toLowerCase();
+      const rows = list.filter((e) =>
+        (cur === "All" || e.country === cur) &&
+        (imp === "All impacts" || (e.impact || "").toLowerCase() === imp.toLowerCase()) &&
+        (!onlyReleased || e.actual) &&
+        (!q || (e.title || "").toLowerCase().includes(q)));
+      let lastDay = "";
+      body.innerHTML = rows.map((e) => {
+        const day = (e.date_utc || "").slice(0, 10);
+        let dayRow = "";
+        if (day !== lastDay) { lastDay = day; dayRow = `<tr><td colspan="8" class="dim" style="background:var(--panel-2);font-weight:700">${esc(day)}</td></tr>`; }
+        const act = e.actual ? `<span class="pos" style="font-weight:700">${esc(e.actual)}</span>` : `<span class="dim">Pending</span>`;
+        return `${dayRow}<tr>
+          <td class="num">${esc((e.date_utc || "").slice(11, 16))}</td>
+          <td>${esc(e.country)}</td><td>${esc(e.title)}</td>
+          <td>${e.impact === "High" ? '<span class="pos" style="font-weight:700">High</span>' : esc(e.impact || "")}</td>
+          <td class="num">${esc(e.previous || "—")}</td><td class="num">${esc(e.forecast || "—")}</td>
+          <td class="num">${act}</td><td>${verdictBadge(e.verdict)}</td></tr>`;
+      }).join("") || `<tr><td colspan="8" class="dim">No matching events.</td></tr>`;
+    }
+    render();
+    document.getElementById("calCur").onchange = render;
+    document.getElementById("calImp").onchange = render;
+    document.getElementById("calReleased").onchange = render;
+    document.getElementById("calSearch").oninput = render;
+  }
 /* ── HISTORICAL ───────────────────────────────────────── */
   let histSeries = "DGS10";
   async function viewHistorical(root) {
@@ -305,6 +363,7 @@
 
   B.TABS_VIEWS["home"] = viewHome;
   B.TABS_VIEWS["data"] = viewData;
+  B.TABS_VIEWS["calendar"] = viewCalendar;
   B.TABS_VIEWS["bias"] = viewBias;
   B.TABS_VIEWS["cftc"] = viewCFTC;
   B.TABS_VIEWS["historical"] = viewHistorical;

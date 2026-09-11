@@ -82,12 +82,13 @@ def test_eur_more_bullish_than_usd_tilts_eurusd_bullish(tmp_path, monkeypatch):
     res = _score_with(EUR_BULLISH_EVENTS, tmp_path, monkeypatch)
     eur = res["EUR"]
     usd = res["USD"]
-    # EUR strongly bullish, USD bearish
+    # v2: EUR clearly bullish, USD mildly bearish (thin data can't saturate to 0)
     assert eur["score"] > 6
-    assert usd["score"] < 4
+    assert eur["score"] > usd["score"]
+    assert 4 <= usd["score"] < 5
     # pair = 5 + (EUR-5) - (USD-5) must be > 5 → bullish
     eurusd = 5.0 + (eur["score"] - 5.0) - (usd["score"] - 5.0)
-    assert eurusd > 5.5
+    assert eurusd > 5.2
     assert eur["top_drivers"][0]["verdict"] == "bullish"
     assert usd["top_drivers"][0]["verdict"] == "bearish"
 
@@ -107,7 +108,8 @@ def test_usd_more_bullish_than_eur_tilts_eurusd_bearish(tmp_path, monkeypatch):
     res = _score_with(USD_BULLISH_EVENTS, tmp_path, monkeypatch)
     eur = res["EUR"]
     usd = res["USD"]
-    assert usd["score"] > 6
+    assert usd["score"] > eur["score"] + 0.5
+    assert usd["score"] > 5.5
     assert eur["score"] < 5
     eurusd = 5.0 + (eur["score"] - 5.0) - (usd["score"] - 5.0)
     assert eurusd < 4.5
@@ -139,3 +141,52 @@ def test_band_bounds():
     assert _band_for(5.0) == "Neutral"
     assert _band_for(6.5) == "Bullish"
     assert _band_for(9.0) == "Very Bullish"
+# ── engine v2 unit tests ──────────────────────────────────
+def test_european_decimal_parsing():
+    from scoring.score import norm_num
+    assert norm_num("2,5%") == 2.5          # European decimal
+    assert norm_num("1.234,56") == 1234.56  # European thousands+decimal
+    assert norm_num("1,234.56") == 1234.56  # US thousands
+    assert norm_num("(1,2)") == -1.2        # parenthesized negative
+
+
+def test_thin_data_cannot_saturate(tmp_path, monkeypatch):
+    # ONE bullish NFP must NOT print USD=10 anymore (v2 conservative denominator)
+    evs = [{"title": "Non-Farm Employment Change", "country": "USD", "impact": "High",
+            "date_utc": "2026-08-01T12:30:00+00:00", "previous": "160K", "actual": "190K"}]
+    res = _score_with(evs, tmp_path, monkeypatch)
+    assert res["USD"]["score"] < 8
+    assert res["USD"]["score"] > 5
+    assert res["USD"]["coverage"] > 0
+    assert res["USD"]["coverage"] < 100
+
+
+def test_forecast_confirmation_modulates():
+    from scoring.score import _forecast_factor, _weeks_old, _decay
+    # beat previous AND beat forecast -> full weight
+    assert _forecast_factor("200K", "170K", "higher_is_bullish", 1) == 1.0
+    # beat previous but MISS forecast -> 0.7
+    assert _forecast_factor("165K", "170K", "higher_is_bullish", 1) == 0.7
+    # bearish: actual below forecast -> full (aligned), above -> 0.7
+    assert _forecast_factor("160K", "170K", "higher_is_bullish", -1) == 1.0
+    assert _forecast_factor("180K", "170K", "higher_is_bullish", -1) == 0.7
+    # no forecast -> neutral factor
+    assert _forecast_factor("200K", "", "higher_is_bullish", 1) == 1.0
+
+
+def test_recency_decay_floor():
+    from scoring.score import _decay
+    assert _decay(0) == 1.0
+    fresh = _decay(1)
+    stale = _decay(30)
+    assert fresh > stale
+    assert stale >= 0.25  # floor respected
+
+
+def test_exotic_currency_scores(tmp_path, monkeypatch):
+    # MXN has a scorecard now -> an MXN CPI beat must move it off neutral
+    evs = [{"title": "CPI y/y", "country": "MXN", "impact": "High",
+            "date_utc": "2026-08-01T12:30:00+00:00", "previous": "4.5%", "actual": "5.1%"}]
+    res = _score_with(evs, tmp_path, monkeypatch)
+    assert res["MXN"]["score"] > 5
+    assert res["USD"]["score"] == 5.0  # USD untouched by MXN event

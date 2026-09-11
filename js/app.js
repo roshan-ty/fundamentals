@@ -80,6 +80,7 @@ function setupThemeToggle() {
 const TABS = [
   { id: "home", label: "Home" },
   { id: "data", label: "Data" },
+  { id: "calendar", label: "Calendar" },
   { id: "bias", label: "Bias" },
   { id: "cftc", label: "CFTC" },
   { id: "historical", label: "Historical Data" },
