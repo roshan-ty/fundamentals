@@ -33,3 +33,4 @@ Thumbs.db
 # ── Keep site/deployable data (never ignore data or site) ────────────
 # data/ and site/ are intentionally committed — they are the database
 # and the static website respectively.
+data/meta/ff_cookies.txt
