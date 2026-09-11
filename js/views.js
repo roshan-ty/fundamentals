@@ -48,7 +48,6 @@
     root.appendChild(el("h2", "panel-title", "Headline Bias"));
     root.appendChild(grid);
 
-    // Latest quotes strip
     const qKeys = Object.keys(quotes || {}).filter((k) => quotes[k] && quotes[k].price).slice(0, 14);
     const qPanel = el("div", "panel");
     qPanel.innerHTML = `<h3>Markets</h3><table class="data"><thead><tr><th>Instrument</th><th class="num">Last</th><th class="num">Updated (UTC)</th></tr></thead><tbody>` +
@@ -56,7 +55,6 @@
       `</tbody></table>`;
     root.appendChild(qPanel);
 
-    // Global news strip
     const nPanel = el("div", "panel");
     nPanel.innerHTML = `<h3>Markets &amp; World</h3>` + (Array.isArray(news) ? news.slice(0, 6).map((n) =>
       `<div class="news-item"><span class="hl">${esc(n.headline)}</span><div class="sn dim">${esc((n.snippet || "").slice(0, 140))}</div></div>`).join("") : `<div class="dim">No data.</div>`);
@@ -126,7 +124,8 @@
           <td class="num">${d.weight}</td></tr>`).join("") + `</tbody></table>`;
       root.appendChild(dp);
     }
-// COT positioning for this instrument
+
+    // COT positioning for this instrument
     const cotMarkets = cftc.markets || {};
     if (cotMarkets[sym]) {
       const m = cotMarkets[sym];
@@ -158,6 +157,14 @@
 
     // News filtered to this instrument
     const newsPanel = el("div", "panel");
+    const tagged = (Array.isArray(news) ? news : []).filter((n) => (n.tags || []).includes(sym));
+    newsPanel.innerHTML = `<h3>News — ${esc(sym)}</h3>` +
+      (tagged.slice(0, 8).map((n) => `<div class="news-item"><div class="hl">${esc(n.headline)}</div>
+        <div class="sn dim">${esc((n.snippet || "").slice(0, 220))}</div>
+        <div class="meta">${esc((n.published || "").slice(0, 16))}</div></div>`).join("") ||
+       `<div class="dim">No headline currently tagged to this instrument.</div>`);
+    root.appendChild(newsPanel);
+  }
 /* ── BIAS (pairs table) ───────────────────────────────── */
   async function viewBias(root) {
     const pairs = await loadJSON("bias/pairs.json", {});
@@ -227,14 +234,6 @@
       root.appendChild(el2);
       setTimeout(() => { try { mkChart("cotChart", lineOption("Non-Commercial Net Positioning (contracts)", uniq, series)); } catch (e) {} }, 60);
     }
-  }
-    const tagged = (Array.isArray(news) ? news : []).filter((n) => (n.tags || []).includes(sym));
-    newsPanel.innerHTML = `<h3>News — ${esc(sym)}</h3>` +
-      (tagged.slice(0, 8).map((n) => `<div class="news-item"><div class="hl">${esc(n.headline)}</div>
-        <div class="sn dim">${esc((n.snippet || "").slice(0, 220))}</div>
-        <div class="meta">${esc((n.published || "").slice(0, 16))}</div></div>`).join("") ||
-       `<div class="dim">No headline currently tagged to this instrument.</div>`);
-    root.appendChild(newsPanel);
   }
 /* ── HISTORICAL ───────────────────────────────────────── */
   let histSeries = "DGS10";
