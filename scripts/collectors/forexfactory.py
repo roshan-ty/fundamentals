@@ -55,7 +55,7 @@ def _save_cookies(session):
         log(f"Cookie save failed: {exc}", "WARN")
 
 
-def _fetch_plain(retries=6):
+def _fetch_plain(retries=3):
     """Fetch the calendar page with plain requests + persistent cookies."""
     session = requests.Session()
     session.headers.update(_HEADERS)
