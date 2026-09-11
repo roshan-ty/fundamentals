@@ -136,11 +136,22 @@ _TITLE_MATCHERS = {
 }
 
 
+def _normalize_title(title):
+    """Unify calendar title styles: 'GDP MoM JUL' -> 'GDP m/m jul' so keyword
+    matchers written against 'm/m' also catch sources using 'MoM'/'YoY'."""
+    t = (title or "").lower()
+    t = re.sub(r"\bmom\b", "m/m", t)
+    t = re.sub(r"\byoy\b", "y/y", t)
+    t = re.sub(r"\booq\b", "q/q", t)
+    t = re.sub(r"\byoy ", "y/y ", t)
+    return t
+
+
 def match_data_point(sc, currency, title):
     """Map a calendar event title to a scorecard dataPoint for a currency."""
     idx = sc["currencies"].get(currency, {}).get("_index", {})
     matchers = _TITLE_MATCHERS.get(currency, {})
-    tl = title.lower()
+    tl = _normalize_title(title)
     for dp_id, keywords in matchers.items():
         for kw in keywords:
             if kw.lower() in tl:

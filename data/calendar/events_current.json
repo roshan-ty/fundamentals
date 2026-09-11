@@ -572,8 +572,10 @@
     "date_utc": "2026-09-11T06:00+00:00",
     "impact": "Low",
     "forecast": "-22.6B",
-    "previous": "-23.0B",
-    "actual": ""
+    "previous": "-23.01B",
+    "actual": "-20.97B",
+    "revision": "",
+    "source": "ff-feed"
   },
   {
     "title": "Index of Services 3m/3m",
@@ -603,6 +605,16 @@
     "actual": ""
   },
   {
+    "title": "50-Year KTB Auction",
+    "country": "KRW",
+    "date_utc": "2026-09-11T06:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "4.620%",
+    "actual": "4.720%",
+    "source": "te"
+  },
+  {
     "title": "SECO Consumer Climate",
     "country": "CHF",
     "date_utc": "2026-09-11T07:00+00:00",
@@ -610,6 +622,16 @@
     "forecast": "-33",
     "previous": "-35",
     "actual": ""
+  },
+  {
+    "title": "3-Month Bill Auction",
+    "country": "JPY",
+    "date_utc": "2026-09-11T07:35+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "1.1076%",
+    "actual": "1.1149%",
+    "source": "te"
   },
   {
     "title": "Italian Quarterly Unemployment Rate",
@@ -637,6 +659,136 @@
     "forecast": "",
     "previous": "",
     "actual": ""
+  },
+  {
+    "title": "GDP MoM JUL",
+    "country": "GBP",
+    "date_utc": "2026-09-11T10:00+00:00",
+    "impact": "",
+    "forecast": "0.1%",
+    "previous": "0.3%",
+    "actual": "0.4%",
+    "source": "te"
+  },
+  {
+    "title": "GDP 3-Month Avg JUL",
+    "country": "GBP",
+    "date_utc": "2026-09-11T10:00+00:00",
+    "impact": "",
+    "forecast": "0.3%",
+    "previous": "0.4%",
+    "actual": "0.4%",
+    "source": "te"
+  },
+  {
+    "title": "Goods Trade Balance Non-EU JUL",
+    "country": "GBP",
+    "date_utc": "2026-09-11T10:00+00:00",
+    "impact": "",
+    "forecast": "-9.3B",
+    "previous": "-10.45B",
+    "actual": "-9.66B",
+    "source": "te"
+  },
+  {
+    "title": "Industrial Production MoM JUL",
+    "country": "GBP",
+    "date_utc": "2026-09-11T10:00+00:00",
+    "impact": "",
+    "forecast": "0.2%",
+    "previous": "-0.2%",
+    "actual": "0.2%",
+    "source": "te"
+  },
+  {
+    "title": "Manufacturing Production MoM JUL",
+    "country": "GBP",
+    "date_utc": "2026-09-11T10:00+00:00",
+    "impact": "",
+    "forecast": "0.4%",
+    "previous": "-0.5%",
+    "actual": "0.9%",
+    "source": "te"
+  },
+  {
+    "title": "Balance of Trade JUL",
+    "country": "GBP",
+    "date_utc": "2026-09-11T10:00+00:00",
+    "impact": "",
+    "forecast": "-4.0B",
+    "previous": "-5.537B",
+    "actual": "-3.450B",
+    "source": "te"
+  },
+  {
+    "title": "Construction Output YoY JUL",
+    "country": "GBP",
+    "date_utc": "2026-09-11T10:00+00:00",
+    "impact": "",
+    "forecast": "-3.1%",
+    "previous": "-2.3%",
+    "actual": "-2.5%",
+    "source": "te"
+  },
+  {
+    "title": "GDP YoY JUL",
+    "country": "GBP",
+    "date_utc": "2026-09-11T10:00+00:00",
+    "impact": "",
+    "forecast": "1.0%",
+    "previous": "1.1%",
+    "actual": "1.6%",
+    "source": "te"
+  },
+  {
+    "title": "Industrial Production YoY JUL",
+    "country": "GBP",
+    "date_utc": "2026-09-11T10:00+00:00",
+    "impact": "",
+    "forecast": "0.3%",
+    "previous": "-0.2%",
+    "actual": "0.6%",
+    "source": "te"
+  },
+  {
+    "title": "Manufacturing Production YoY JUL",
+    "country": "GBP",
+    "date_utc": "2026-09-11T10:00+00:00",
+    "impact": "",
+    "forecast": "1.0%",
+    "previous": "0.5%",
+    "actual": "2.6%",
+    "source": "te"
+  },
+  {
+    "title": "Current Account JUL",
+    "country": "TRY",
+    "date_utc": "2026-09-11T11:00+00:00",
+    "impact": "",
+    "forecast": "$0.5B",
+    "previous": "$-4.333B ®",
+    "actual": "$0.036B",
+    "source": "te"
+  },
+  {
+    "title": "Retail Sales MoM JUL",
+    "country": "TRY",
+    "date_utc": "2026-09-11T11:00+00:00",
+    "impact": "",
+    "forecast": "-0.5%",
+    "previous": "0.5% ®",
+    "actual": "0.2%",
+    "source": "te"
+  },
+  {
+    "title": "Retail Sales YoY JUL",
+    "country": "TRY",
+    "date_utc": "2026-09-11T11:00+00:00",
+    "impact": "",
+    "forecast": "11.0%",
+    "previous": "11.5% ®",
+    "actual": "10.4%",
+    "source": "te"
   },
   {
     "title": "Core CPI m/m",
@@ -702,6 +854,156 @@
     "actual": ""
   },
   {
+    "title": "Interest Rate Decision",
+    "country": "RU",
+    "date_utc": "2026-09-11T14:30+00:00",
+    "impact": "",
+    "forecast": "14.0%",
+    "previous": "14%",
+    "actual": "14%",
+    "source": "te"
+  },
+  {
+    "title": "Foreign Exchange Reserves SEP/04",
+    "country": "IN",
+    "date_utc": "2026-09-11T15:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "$740.8B",
+    "actual": "$785.71B",
+    "source": "te"
+  },
+  {
+    "title": "Inflation Rate MoM AUG",
+    "country": "BRL",
+    "date_utc": "2026-09-11T16:00+00:00",
+    "impact": "",
+    "forecast": "-0.3%",
+    "previous": "0.07%",
+    "actual": "-0.32%",
+    "source": "te"
+  },
+  {
+    "title": "Inflation Rate YoY AUG",
+    "country": "BRL",
+    "date_utc": "2026-09-11T16:00+00:00",
+    "impact": "",
+    "forecast": "4.2%",
+    "previous": "4.44%",
+    "actual": "4.22%",
+    "source": "te"
+  },
+  {
+    "title": "Industrial Production MoM JUL",
+    "country": "MXN",
+    "date_utc": "2026-09-11T16:00+00:00",
+    "impact": "",
+    "forecast": "0.3%",
+    "previous": "0.2%",
+    "actual": "0.5%",
+    "source": "te"
+  },
+  {
+    "title": "Industrial Production YoY JUL",
+    "country": "MXN",
+    "date_utc": "2026-09-11T16:00+00:00",
+    "impact": "",
+    "forecast": "2.5%",
+    "previous": "1.6% ®",
+    "actual": "2.7%",
+    "source": "te"
+  },
+  {
+    "title": "Current Account JUL",
+    "country": "EUR",
+    "date_utc": "2026-09-11T16:30+00:00",
+    "impact": "",
+    "forecast": "18.7B",
+    "previous": "18.9B ",
+    "actual": "21.2B",
+    "source": "te"
+  },
+  {
+    "title": "NIESR Monthly GDP Tracker AUG",
+    "country": "GBP",
+    "date_utc": "2026-09-11T16:30+00:00",
+    "impact": "",
+    "forecast": "0.3%",
+    "previous": "0.4% ",
+    "actual": "0.5%",
+    "source": "te"
+  },
+  {
+    "title": "Core Inflation Rate MoM AUG",
+    "country": "USD",
+    "date_utc": "2026-09-11T16:30+00:00",
+    "impact": "",
+    "forecast": "0.2%",
+    "previous": "0.2%",
+    "actual": "0.3%",
+    "source": "te"
+  },
+  {
+    "title": "Core Inflation Rate YoY AUG",
+    "country": "USD",
+    "date_utc": "2026-09-11T16:30+00:00",
+    "impact": "",
+    "forecast": "2.4%",
+    "previous": "2.5%",
+    "actual": "2.4%",
+    "source": "te"
+  },
+  {
+    "title": "Inflation Rate MoM AUG",
+    "country": "USD",
+    "date_utc": "2026-09-11T16:30+00:00",
+    "impact": "",
+    "forecast": "0.4%",
+    "previous": "0.1%",
+    "actual": "0.4%",
+    "source": "te"
+  },
+  {
+    "title": "Inflation Rate YoY AUG",
+    "country": "USD",
+    "date_utc": "2026-09-11T16:30+00:00",
+    "impact": "",
+    "forecast": "3.4%",
+    "previous": "3.4%",
+    "actual": "3.4%",
+    "source": "te"
+  },
+  {
+    "title": "CPI AUG",
+    "country": "USD",
+    "date_utc": "2026-09-11T16:30+00:00",
+    "impact": "",
+    "forecast": "334.9",
+    "previous": "333.92",
+    "actual": "334.98",
+    "source": "te"
+  },
+  {
+    "title": "CPI s.a AUG",
+    "country": "USD",
+    "date_utc": "2026-09-11T16:30+00:00",
+    "impact": "",
+    "forecast": "334.14",
+    "previous": "332.81",
+    "actual": "334.131",
+    "source": "te"
+  },
+  {
+    "title": "Balance of Trade JUL",
+    "country": "RU",
+    "date_utc": "2026-09-11T17:00+00:00",
+    "impact": "",
+    "forecast": "$13.5B",
+    "previous": "$12.46B",
+    "actual": "$13.59B",
+    "source": "te"
+  },
+  {
     "title": "Federal Budget Balance",
     "country": "USD",
     "date_utc": "2026-09-11T18:00+00:00",
@@ -709,6 +1011,116 @@
     "forecast": "-221.1B",
     "previous": "-432.3B",
     "actual": ""
+  },
+  {
+    "title": "Michigan Consumer Sentiment Prel SEP",
+    "country": "USD",
+    "date_utc": "2026-09-11T18:00+00:00",
+    "impact": "",
+    "forecast": "51.5",
+    "previous": "51.7",
+    "actual": "47.8",
+    "source": "te"
+  },
+  {
+    "title": "Michigan 5 Year Inflation Expectations Prel SEP",
+    "country": "USD",
+    "date_utc": "2026-09-11T18:00+00:00",
+    "impact": "",
+    "forecast": "3.2%",
+    "previous": "3.3%",
+    "actual": "3.4%",
+    "source": "te"
+  },
+  {
+    "title": "Michigan Consumer Expectations Prel SEP",
+    "country": "USD",
+    "date_utc": "2026-09-11T18:00+00:00",
+    "impact": "",
+    "forecast": "50.7",
+    "previous": "51.5",
+    "actual": "45.8",
+    "source": "te"
+  },
+  {
+    "title": "Michigan Current Conditions Prel SEP",
+    "country": "USD",
+    "date_utc": "2026-09-11T18:00+00:00",
+    "impact": "",
+    "forecast": "51.4",
+    "previous": "51.9",
+    "actual": "50.9",
+    "source": "te"
+  },
+  {
+    "title": "Michigan Inflation Expectations Prel SEP",
+    "country": "USD",
+    "date_utc": "2026-09-11T18:00+00:00",
+    "impact": "",
+    "forecast": "3.9%",
+    "previous": "4%",
+    "actual": "4.6%",
+    "source": "te"
+  },
+  {
+    "title": "Inflation Rate MoM AUG",
+    "country": "RU",
+    "date_utc": "2026-09-11T20:00+00:00",
+    "impact": "",
+    "forecast": "-0.2%",
+    "previous": "0.5%",
+    "actual": "-0.1%",
+    "source": "te"
+  },
+  {
+    "title": "Inflation Rate YoY AUG",
+    "country": "RU",
+    "date_utc": "2026-09-11T20:00+00:00",
+    "impact": "",
+    "forecast": "6.3%",
+    "previous": "6%",
+    "actual": "6.3%",
+    "source": "te"
+  },
+  {
+    "title": "GDP Growth Rate YoY Final Q2",
+    "country": "RU",
+    "date_utc": "2026-09-11T20:00+00:00",
+    "impact": "",
+    "forecast": "1.3%",
+    "previous": "-0.2%",
+    "actual": "1.3%",
+    "source": "te"
+  },
+  {
+    "title": "Baker Hughes Oil Rig Count SEP/11",
+    "country": "USD",
+    "date_utc": "2026-09-11T21:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "449",
+    "actual": "450",
+    "source": "te"
+  },
+  {
+    "title": "Baker Hughes Total Rigs Count SEP/11",
+    "country": "USD",
+    "date_utc": "2026-09-11T21:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "588",
+    "actual": "591",
+    "source": "te"
+  },
+  {
+    "title": "Monthly Budget Statement AUG",
+    "country": "USD",
+    "date_utc": "2026-09-11T22:00+00:00",
+    "impact": "",
+    "forecast": "$-380.0B",
+    "previous": "$-432B",
+    "actual": "$-167B",
+    "source": "te"
   },
   {
     "title": "ECB President Lagarde Speaks",
