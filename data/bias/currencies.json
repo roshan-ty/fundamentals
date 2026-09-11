@@ -1,21 +1,27 @@
 {
   "meta": {
-    "updated": "2026-09-11T16:56:00+00:00",
+    "updated": "2026-09-11T19:00:42+00:00",
     "method": "calendar + COT (calendar part)"
   },
   "currencies": {
     "USD": {
-      "score": 5.36,
+      "score": 5.26,
       "band": "Neutral",
-      "net": 2.0,
-      "scored_points": 11,
-      "eligible_points": 28,
+      "net": 1.5,
+      "scored_points": 12,
+      "eligible_points": 29,
       "top_drivers": [
         {
           "event": "Unemployment Rate",
           "verdict": "bullish",
           "weighted": 1.0,
           "date": "2026-07-01T00:00:00+00:00"
+        },
+        {
+          "event": "Michigan Consumer Sentiment Prel SEP",
+          "verdict": "bearish",
+          "weighted": -0.5,
+          "date": "2026-09-11T18:00+00:00"
         },
         {
           "event": "Housing Starts",
@@ -52,12 +58,6 @@
           "verdict": "bullish",
           "weighted": 0.5,
           "date": "2026-07-01T00:00:00+00:00"
-        },
-        {
-          "event": "Trade Balance",
-          "verdict": "bearish",
-          "weighted": -0.5,
-          "date": "2026-07-01T00:00:00+00:00"
         }
       ]
     },
@@ -70,12 +70,25 @@
       "top_drivers": []
     },
     "GBP": {
-      "score": 5.0,
-      "band": "Neutral",
-      "net": 0,
-      "scored_points": 0,
-      "eligible_points": 0,
-      "top_drivers": []
+      "score": 10.0,
+      "band": "Very Bullish",
+      "net": 2.0,
+      "scored_points": 2,
+      "eligible_points": 2,
+      "top_drivers": [
+        {
+          "event": "GDP MoM JUL",
+          "verdict": "bullish",
+          "weighted": 1.0,
+          "date": "2026-09-11T10:00+00:00"
+        },
+        {
+          "event": "GDP YoY JUL",
+          "verdict": "bullish",
+          "weighted": 1.0,
+          "date": "2026-09-11T10:00+00:00"
+        }
+      ]
     },
     "AUD": {
       "score": 5.0,
@@ -134,7 +147,45 @@
     "8-10": "very bullish"
   },
   "detail": {
+    "GBP": [
+      {
+        "event": "GDP MoM JUL",
+        "date": "2026-09-11T10:00+00:00",
+        "impact": "",
+        "actual": "0.4%",
+        "previous": "0.3%",
+        "dataPoint": "GDP (m/m, q/q, y/y)",
+        "direction": "higher_is_bullish",
+        "sign": 1,
+        "weight": 1.0,
+        "verdict": "bullish"
+      },
+      {
+        "event": "GDP YoY JUL",
+        "date": "2026-09-11T10:00+00:00",
+        "impact": "",
+        "actual": "1.6%",
+        "previous": "1.1%",
+        "dataPoint": "GDP (m/m, q/q, y/y)",
+        "direction": "higher_is_bullish",
+        "sign": 1,
+        "weight": 1.0,
+        "verdict": "bullish"
+      }
+    ],
     "USD": [
+      {
+        "event": "Michigan Consumer Sentiment Prel SEP",
+        "date": "2026-09-11T18:00+00:00",
+        "impact": "",
+        "actual": "47.8",
+        "previous": "51.7",
+        "dataPoint": "CB Consumer Confidence / UoM Consumer Sentiment",
+        "direction": "higher_is_bullish",
+        "sign": -1,
+        "weight": 0.5,
+        "verdict": "bearish"
+      },
       {
         "event": "GDP q/q annualized",
         "date": "2026-01-01T00:00:00+00:00",

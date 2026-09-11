@@ -1,17 +1,17 @@
 {
   "meta": {
-    "updated": "2026-09-11T16:56:00+00:00"
+    "updated": "2026-09-11T19:00:43+00:00"
   },
   "instruments": {
     "XAUUSD": {
       "name": "Gold",
       "type": "metal",
       "biasType": "direct",
-      "score": 2.89,
+      "score": 2.99,
       "band": "Bearish",
       "components": {
-        "inverse_usd": -0.072,
-        "usd_score": 5.36,
+        "inverse_usd": -0.052,
+        "usd_score": 5.26,
         "cot_tilt": -1,
         "cot_contribution": -0.35
       },
@@ -24,11 +24,11 @@
       "name": "Silver",
       "type": "metal",
       "biasType": "direct",
-      "score": 6.39,
+      "score": 6.49,
       "band": "Bullish",
       "components": {
-        "inverse_usd": -0.072,
-        "usd_score": 5.36,
+        "inverse_usd": -0.052,
+        "usd_score": 5.26,
         "cot_tilt": 1,
         "cot_contribution": 0.35
       },
@@ -41,11 +41,11 @@
       "name": "Platinum",
       "type": "metal",
       "biasType": "direct",
-      "score": 2.89,
+      "score": 2.99,
       "band": "Bearish",
       "components": {
-        "inverse_usd": -0.072,
-        "usd_score": 5.36,
+        "inverse_usd": -0.052,
+        "usd_score": 5.26,
         "cot_tilt": -1,
         "cot_contribution": -0.35
       },
@@ -58,11 +58,11 @@
       "name": "Palladium",
       "type": "metal",
       "biasType": "direct",
-      "score": 6.39,
+      "score": 6.49,
       "band": "Bullish",
       "components": {
-        "inverse_usd": -0.072,
-        "usd_score": 5.36,
+        "inverse_usd": -0.052,
+        "usd_score": 5.26,
         "cot_tilt": 1,
         "cot_contribution": 0.35
       },
@@ -75,11 +75,11 @@
       "name": "Crude Oil (WTI)",
       "type": "energy",
       "biasType": "direct",
-      "score": 3.0,
+      "score": 3.07,
       "band": "Bearish",
       "components": {
-        "inverse_usd": -0.05,
-        "usd_score": 5.36,
+        "inverse_usd": -0.036,
+        "usd_score": 5.26,
         "cot_tilt": -1,
         "cot_contribution": -0.35
       },
@@ -92,11 +92,11 @@
       "name": "Brent Crude",
       "type": "energy",
       "biasType": "direct",
-      "score": 3.0,
+      "score": 3.07,
       "band": "Bearish",
       "components": {
-        "inverse_usd": -0.05,
-        "usd_score": 5.36,
+        "inverse_usd": -0.036,
+        "usd_score": 5.26,
         "cot_tilt": -1,
         "cot_contribution": -0.35
       },
@@ -109,11 +109,11 @@
       "name": "Copper",
       "type": "industrial",
       "biasType": "direct",
-      "score": 3.0,
+      "score": 3.07,
       "band": "Bearish",
       "components": {
-        "inverse_usd": -0.05,
-        "usd_score": 5.36,
+        "inverse_usd": -0.036,
+        "usd_score": 5.26,
         "cot_tilt": -1,
         "cot_contribution": -0.35
       },
@@ -126,11 +126,11 @@
       "name": "BTCUSD",
       "type": "derived",
       "biasType": "derived",
-      "score": 4.67,
+      "score": 4.73,
       "band": "Neutral",
       "components": {
-        "inverse_usd": -0.072,
-        "usd_score": 5.36,
+        "inverse_usd": -0.052,
+        "usd_score": 5.26,
         "real_yield_10y": 2.46,
         "risk_proxy": -0.055,
         "note": "No economic calendar or COT positioning exists for this instrument; score is a derived sentiment proxy."
@@ -140,11 +140,11 @@
       "name": "ETHUSD",
       "type": "derived",
       "biasType": "derived",
-      "score": 4.67,
+      "score": 4.73,
       "band": "Neutral",
       "components": {
-        "inverse_usd": -0.072,
-        "usd_score": 5.36,
+        "inverse_usd": -0.052,
+        "usd_score": 5.26,
         "real_yield_10y": 2.46,
         "risk_proxy": -0.055,
         "note": "No economic calendar or COT positioning exists for this instrument; score is a derived sentiment proxy."
@@ -154,11 +154,11 @@
       "name": "LTCUSD",
       "type": "derived",
       "biasType": "derived",
-      "score": 4.67,
+      "score": 4.73,
       "band": "Neutral",
       "components": {
-        "inverse_usd": -0.072,
-        "usd_score": 5.36,
+        "inverse_usd": -0.052,
+        "usd_score": 5.26,
         "real_yield_10y": 2.46,
         "risk_proxy": -0.055,
         "note": "No economic calendar or COT positioning exists for this instrument; score is a derived sentiment proxy."
@@ -168,11 +168,11 @@
       "name": "SOLUSD",
       "type": "derived",
       "biasType": "derived",
-      "score": 4.67,
+      "score": 4.73,
       "band": "Neutral",
       "components": {
-        "inverse_usd": -0.072,
-        "usd_score": 5.36,
+        "inverse_usd": -0.052,
+        "usd_score": 5.26,
         "real_yield_10y": 2.46,
         "risk_proxy": -0.055,
         "note": "No economic calendar or COT positioning exists for this instrument; score is a derived sentiment proxy."
@@ -182,11 +182,11 @@
       "name": "SUIUSD",
       "type": "derived",
       "biasType": "derived",
-      "score": 4.67,
+      "score": 4.73,
       "band": "Neutral",
       "components": {
-        "inverse_usd": -0.072,
-        "usd_score": 5.36,
+        "inverse_usd": -0.052,
+        "usd_score": 5.26,
         "real_yield_10y": 2.46,
         "risk_proxy": -0.055,
         "note": "No economic calendar or COT positioning exists for this instrument; score is a derived sentiment proxy."
@@ -196,11 +196,11 @@
       "name": "XLMUSD",
       "type": "derived",
       "biasType": "derived",
-      "score": 4.67,
+      "score": 4.73,
       "band": "Neutral",
       "components": {
-        "inverse_usd": -0.072,
-        "usd_score": 5.36,
+        "inverse_usd": -0.052,
+        "usd_score": 5.26,
         "real_yield_10y": 2.46,
         "risk_proxy": -0.055,
         "note": "No economic calendar or COT positioning exists for this instrument; score is a derived sentiment proxy."
@@ -210,11 +210,11 @@
       "name": "XRPUSD",
       "type": "derived",
       "biasType": "derived",
-      "score": 4.67,
+      "score": 4.73,
       "band": "Neutral",
       "components": {
-        "inverse_usd": -0.072,
-        "usd_score": 5.36,
+        "inverse_usd": -0.052,
+        "usd_score": 5.26,
         "real_yield_10y": 2.46,
         "risk_proxy": -0.055,
         "note": "No economic calendar or COT positioning exists for this instrument; score is a derived sentiment proxy."
@@ -224,11 +224,11 @@
       "name": "AVAXUSD",
       "type": "derived",
       "biasType": "derived",
-      "score": 4.67,
+      "score": 4.73,
       "band": "Neutral",
       "components": {
-        "inverse_usd": -0.072,
-        "usd_score": 5.36,
+        "inverse_usd": -0.052,
+        "usd_score": 5.26,
         "real_yield_10y": 2.46,
         "risk_proxy": -0.055,
         "note": "No economic calendar or COT positioning exists for this instrument; score is a derived sentiment proxy."
@@ -238,11 +238,11 @@
       "name": "US30",
       "type": "derived",
       "biasType": "derived",
-      "score": 4.67,
+      "score": 4.73,
       "band": "Neutral",
       "components": {
-        "inverse_usd": -0.072,
-        "usd_score": 5.36,
+        "inverse_usd": -0.052,
+        "usd_score": 5.26,
         "real_yield_10y": 2.46,
         "risk_proxy": -0.055,
         "note": "No economic calendar or COT positioning exists for this instrument; score is a derived sentiment proxy."
@@ -252,11 +252,11 @@
       "name": "US100",
       "type": "derived",
       "biasType": "derived",
-      "score": 4.67,
+      "score": 4.73,
       "band": "Neutral",
       "components": {
-        "inverse_usd": -0.072,
-        "usd_score": 5.36,
+        "inverse_usd": -0.052,
+        "usd_score": 5.26,
         "real_yield_10y": 2.46,
         "risk_proxy": -0.055,
         "note": "No economic calendar or COT positioning exists for this instrument; score is a derived sentiment proxy."
@@ -266,11 +266,11 @@
       "name": "US500",
       "type": "derived",
       "biasType": "derived",
-      "score": 4.67,
+      "score": 4.73,
       "band": "Neutral",
       "components": {
-        "inverse_usd": -0.072,
-        "usd_score": 5.36,
+        "inverse_usd": -0.052,
+        "usd_score": 5.26,
         "real_yield_10y": 2.46,
         "risk_proxy": -0.055,
         "note": "No economic calendar or COT positioning exists for this instrument; score is a derived sentiment proxy."
@@ -280,11 +280,11 @@
       "name": "GER40",
       "type": "derived",
       "biasType": "derived",
-      "score": 4.67,
+      "score": 4.73,
       "band": "Neutral",
       "components": {
-        "inverse_usd": -0.072,
-        "usd_score": 5.36,
+        "inverse_usd": -0.052,
+        "usd_score": 5.26,
         "real_yield_10y": 2.46,
         "risk_proxy": -0.055,
         "note": "No economic calendar or COT positioning exists for this instrument; score is a derived sentiment proxy."
@@ -294,11 +294,11 @@
       "name": "EU50",
       "type": "derived",
       "biasType": "derived",
-      "score": 4.67,
+      "score": 4.73,
       "band": "Neutral",
       "components": {
-        "inverse_usd": -0.072,
-        "usd_score": 5.36,
+        "inverse_usd": -0.052,
+        "usd_score": 5.26,
         "real_yield_10y": 2.46,
         "risk_proxy": -0.055,
         "note": "No economic calendar or COT positioning exists for this instrument; score is a derived sentiment proxy."
@@ -308,11 +308,11 @@
       "name": "GB100",
       "type": "derived",
       "biasType": "derived",
-      "score": 4.67,
+      "score": 4.73,
       "band": "Neutral",
       "components": {
-        "inverse_usd": -0.072,
-        "usd_score": 5.36,
+        "inverse_usd": -0.052,
+        "usd_score": 5.26,
         "real_yield_10y": 2.46,
         "risk_proxy": -0.055,
         "note": "No economic calendar or COT positioning exists for this instrument; score is a derived sentiment proxy."
@@ -322,11 +322,11 @@
       "name": "FR40",
       "type": "derived",
       "biasType": "derived",
-      "score": 4.67,
+      "score": 4.73,
       "band": "Neutral",
       "components": {
-        "inverse_usd": -0.072,
-        "usd_score": 5.36,
+        "inverse_usd": -0.052,
+        "usd_score": 5.26,
         "real_yield_10y": 2.46,
         "risk_proxy": -0.055,
         "note": "No economic calendar or COT positioning exists for this instrument; score is a derived sentiment proxy."
@@ -336,11 +336,11 @@
       "name": "JP225",
       "type": "derived",
       "biasType": "derived",
-      "score": 4.67,
+      "score": 4.73,
       "band": "Neutral",
       "components": {
-        "inverse_usd": -0.072,
-        "usd_score": 5.36,
+        "inverse_usd": -0.052,
+        "usd_score": 5.26,
         "real_yield_10y": 2.46,
         "risk_proxy": -0.055,
         "note": "No economic calendar or COT positioning exists for this instrument; score is a derived sentiment proxy."
@@ -350,11 +350,11 @@
       "name": "HK50",
       "type": "derived",
       "biasType": "derived",
-      "score": 4.67,
+      "score": 4.73,
       "band": "Neutral",
       "components": {
-        "inverse_usd": -0.072,
-        "usd_score": 5.36,
+        "inverse_usd": -0.052,
+        "usd_score": 5.26,
         "real_yield_10y": 2.46,
         "risk_proxy": -0.055,
         "note": "No economic calendar or COT positioning exists for this instrument; score is a derived sentiment proxy."
@@ -364,11 +364,11 @@
       "name": "AUS200",
       "type": "derived",
       "biasType": "derived",
-      "score": 4.67,
+      "score": 4.73,
       "band": "Neutral",
       "components": {
-        "inverse_usd": -0.072,
-        "usd_score": 5.36,
+        "inverse_usd": -0.052,
+        "usd_score": 5.26,
         "real_yield_10y": 2.46,
         "risk_proxy": -0.055,
         "note": "No economic calendar or COT positioning exists for this instrument; score is a derived sentiment proxy."
@@ -378,11 +378,11 @@
       "name": "CH20",
       "type": "derived",
       "biasType": "derived",
-      "score": 4.67,
+      "score": 4.73,
       "band": "Neutral",
       "components": {
-        "inverse_usd": -0.072,
-        "usd_score": 5.36,
+        "inverse_usd": -0.052,
+        "usd_score": 5.26,
         "real_yield_10y": 2.46,
         "risk_proxy": -0.055,
         "note": "No economic calendar or COT positioning exists for this instrument; score is a derived sentiment proxy."
@@ -392,11 +392,11 @@
       "name": "ES35",
       "type": "derived",
       "biasType": "derived",
-      "score": 4.67,
+      "score": 4.73,
       "band": "Neutral",
       "components": {
-        "inverse_usd": -0.072,
-        "usd_score": 5.36,
+        "inverse_usd": -0.052,
+        "usd_score": 5.26,
         "real_yield_10y": 2.46,
         "risk_proxy": -0.055,
         "note": "No economic calendar or COT positioning exists for this instrument; score is a derived sentiment proxy."
