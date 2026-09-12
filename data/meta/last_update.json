@@ -1,37 +1,25 @@
 {
   "scoring": {
-    "updated": "2026-09-12T08:07:31+00:00",
+    "updated": "2026-09-12T15:59:52+00:00",
     "stages": {
-      "verdicts": {
-        "ok": true
-      },
-      "currencies": {
-        "ok": true
-      },
       "cot": {
         "ok": true
       },
-      "instruments": {
-        "ok": true
-      },
-      "pairs": {
-        "ok": true
-      },
-      "narratives": {
-        "ok": true
-      },
-      "setups": {
+      "verdicts": {
         "ok": true
       }
     }
   },
   "daily": {
-    "updated": "2026-09-12T08:07:31+00:00",
+    "updated": "2026-09-12T15:59:52+00:00",
     "stages": {
       "fred": {
         "ok": true
       },
       "calendar": {
+        "ok": true
+      },
+      "year_calendar": {
         "ok": true
       },
       "actuals": {
