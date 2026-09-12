@@ -1,7 +1,10 @@
 {
   "scoring": {
-    "updated": "2026-09-11T16:56:01+00:00",
+    "updated": "2026-09-12T08:07:31+00:00",
     "stages": {
+      "verdicts": {
+        "ok": true
+      },
       "currencies": {
         "ok": true
       },
@@ -23,7 +26,7 @@
     }
   },
   "daily": {
-    "updated": "2026-09-11T16:56:01+00:00",
+    "updated": "2026-09-12T08:07:31+00:00",
     "stages": {
       "fred": {
         "ok": true

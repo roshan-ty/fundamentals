@@ -1,13 +1,13 @@
 {
   "meta": {
-    "updated": "2026-09-11T20:50:07+00:00",
+    "updated": "2026-09-12T08:07:30+00:00",
     "method": "calendar + COT (v2: decay + forecast confirmation + full-weight normalization)"
   },
   "currencies": {
     "USD": {
       "score": 5.08,
       "band": "Neutral",
-      "net": 0.26,
+      "net": 0.25,
       "coverage": 100.0,
       "total_configured_weight": 16.0,
       "scored_points": 12,
@@ -23,20 +23,20 @@
         {
           "event": "Initial Jobless Claims",
           "verdict": "bullish",
-          "weighted": 0.47,
+          "weighted": 0.46,
           "date": "2026-09-05T00:00:00+00:00"
-        },
-        {
-          "event": "Initial Jobless Claims",
-          "verdict": "bearish",
-          "weighted": -0.43,
-          "date": "2026-08-29T00:00:00+00:00"
         },
         {
           "event": "Unemployment Rate",
           "verdict": "bullish",
           "weighted": 0.42,
           "date": "2026-07-01T00:00:00+00:00"
+        },
+        {
+          "event": "Initial Jobless Claims",
+          "verdict": "bearish",
+          "weighted": -0.42,
+          "date": "2026-08-29T00:00:00+00:00"
         },
         {
           "event": "Housing Starts",
@@ -67,7 +67,7 @@
     "EUR": {
       "score": 4.54,
       "band": "Neutral",
-      "net": -0.6,
+      "net": -0.59,
       "coverage": 21.1,
       "total_configured_weight": 9.5,
       "scored_points": 1,
@@ -77,7 +77,7 @@
         {
           "event": "Unemployment Rate",
           "verdict": "bearish",
-          "weighted": -0.3,
+          "weighted": -0.29,
           "date": "2026-06-01T00:00:00+00:00"
         }
       ]
@@ -85,19 +85,13 @@
     "GBP": {
       "score": 6.47,
       "band": "Bullish",
-      "net": 2.95,
+      "net": 2.94,
       "coverage": 50.0,
       "total_configured_weight": 10.0,
       "scored_points": 4,
       "eligible_points": 5,
       "cot_tilt": -1.0,
       "top_drivers": [
-        {
-          "event": "GDP m/m",
-          "verdict": "bullish",
-          "weighted": 1.0,
-          "date": "2026-09-11T06:00+00:00"
-        },
         {
           "event": "GDP MoM JUL",
           "verdict": "bullish",
@@ -109,6 +103,12 @@
           "verdict": "bullish",
           "weighted": 1.0,
           "date": "2026-09-11T10:00+00:00"
+        },
+        {
+          "event": "GDP m/m",
+          "verdict": "bullish",
+          "weighted": 0.99,
+          "date": "2026-09-11T06:00+00:00"
         },
         {
           "event": "Unemployment Rate",
@@ -141,9 +141,9 @@
       "top_drivers": []
     },
     "CAD": {
-      "score": 5.94,
+      "score": 5.93,
       "band": "Neutral",
-      "net": 1.02,
+      "net": 1.01,
       "coverage": 26.7,
       "total_configured_weight": 7.5,
       "scored_points": 2,
@@ -159,7 +159,7 @@
         {
           "event": "Unemployment Rate",
           "verdict": "bullish",
-          "weighted": 0.3,
+          "weighted": 0.29,
           "date": "2026-06-01T00:00:00+00:00"
         }
       ]

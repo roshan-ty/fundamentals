@@ -1,27 +1,10 @@
 {
   "meta": {
-    "updated": "2026-09-11T20:53:07+00:00"
+    "updated": "2026-09-12T08:07:30+00:00"
   },
   "instruments": {
     "XAUUSD": {
       "name": "Gold",
-      "type": "metal",
-      "biasType": "direct",
-      "score": 3.17,
-      "band": "Bearish",
-      "components": {
-        "inverse_usd": -0.016,
-        "usd_score": 5.08,
-        "cot_tilt": -1,
-        "cot_contribution": -0.35
-      },
-      "cot": {
-        "week": "2026-09-01",
-        "report_date": "2026-09-01"
-      }
-    },
-    "XAGUSD": {
-      "name": "Silver",
       "type": "metal",
       "biasType": "direct",
       "score": 6.67,
@@ -33,12 +16,12 @@
         "cot_contribution": 0.35
       },
       "cot": {
-        "week": "2026-09-01",
-        "report_date": "2026-09-01"
+        "week": "2026-09-08",
+        "report_date": "2026-09-08"
       }
     },
-    "XPTUSD": {
-      "name": "Platinum",
+    "XAGUSD": {
+      "name": "Silver",
       "type": "metal",
       "biasType": "direct",
       "score": 3.17,
@@ -50,8 +33,25 @@
         "cot_contribution": -0.35
       },
       "cot": {
-        "week": "2026-09-01",
-        "report_date": "2026-09-01"
+        "week": "2026-09-08",
+        "report_date": "2026-09-08"
+      }
+    },
+    "XPTUSD": {
+      "name": "Platinum",
+      "type": "metal",
+      "biasType": "direct",
+      "score": 6.67,
+      "band": "Bullish",
+      "components": {
+        "inverse_usd": -0.016,
+        "usd_score": 5.08,
+        "cot_tilt": 1,
+        "cot_contribution": 0.35
+      },
+      "cot": {
+        "week": "2026-09-08",
+        "report_date": "2026-09-08"
       }
     },
     "XPDUSD": {
@@ -67,25 +67,25 @@
         "cot_contribution": 0.35
       },
       "cot": {
-        "week": "2026-09-01",
-        "report_date": "2026-09-01"
+        "week": "2026-09-08",
+        "report_date": "2026-09-08"
       }
     },
     "OIL": {
       "name": "Crude Oil (WTI)",
       "type": "energy",
       "biasType": "direct",
-      "score": 3.19,
-      "band": "Bearish",
+      "score": 6.69,
+      "band": "Bullish",
       "components": {
         "inverse_usd": -0.011,
         "usd_score": 5.08,
-        "cot_tilt": -1,
-        "cot_contribution": -0.35
+        "cot_tilt": 1,
+        "cot_contribution": 0.35
       },
       "cot": {
-        "week": "2026-09-01",
-        "report_date": "2026-09-01"
+        "week": "2026-09-08",
+        "report_date": "2026-09-08"
       }
     },
     "BRENT": {
@@ -101,25 +101,25 @@
         "cot_contribution": -0.35
       },
       "cot": {
-        "week": "2026-09-01",
-        "report_date": "2026-09-01"
+        "week": "2026-09-08",
+        "report_date": "2026-09-08"
       }
     },
     "COPPER": {
       "name": "Copper",
       "type": "industrial",
       "biasType": "direct",
-      "score": 3.19,
-      "band": "Bearish",
+      "score": 6.69,
+      "band": "Bullish",
       "components": {
         "inverse_usd": -0.011,
         "usd_score": 5.08,
-        "cot_tilt": -1,
-        "cot_contribution": -0.35
+        "cot_tilt": 1,
+        "cot_contribution": 0.35
       },
       "cot": {
-        "week": "2026-09-01",
-        "report_date": "2026-09-01"
+        "week": "2026-09-08",
+        "report_date": "2026-09-08"
       }
     },
     "BTCUSD": {

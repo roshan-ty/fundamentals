@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-09-11T20:50:07+00:00",
+    "updated": "2026-09-12T08:07:31+00:00",
     "note": "Top setups ranked by bias magnitude x data confidence"
   },
   "setups": [
@@ -16,7 +16,7 @@
       "drivers": [
         "Unemployment Rate"
       ],
-      "rationale": "EURGBP is neutral with a bias of 5.0/10."
+      "rationale": "EURGBP is bearish with a bias of 3.07/10."
     },
     {
       "symbol": "GBPEUR",
@@ -28,15 +28,15 @@
       "confidence": 1.0,
       "biasType": "direct",
       "drivers": [
-        "GDP m/m",
         "GDP MoM JUL",
-        "GDP YoY JUL"
+        "GDP YoY JUL",
+        "GDP m/m"
       ],
-      "rationale": "GBPEUR is neutral with a bias of 5.0/10."
+      "rationale": "GBPEUR is bullish with a bias of 6.93/10."
     },
     {
-      "symbol": "XAUUSD",
-      "name": "Gold",
+      "symbol": "XAGUSD",
+      "name": "Silver",
       "score": 3.17,
       "band": "Bearish",
       "direction": "Sell",
@@ -44,31 +44,7 @@
       "confidence": 1.0,
       "biasType": "direct",
       "drivers": [],
-      "rationale": "XAUUSD is bearish with a bias of 2.89/10."
-    },
-    {
-      "symbol": "XPTUSD",
-      "name": "Platinum",
-      "score": 3.17,
-      "band": "Bearish",
-      "direction": "Sell",
-      "magnitude": 1.83,
-      "confidence": 1.0,
-      "biasType": "direct",
-      "drivers": [],
-      "rationale": "XPTUSD is bearish with a bias of 2.89/10."
-    },
-    {
-      "symbol": "OIL",
-      "name": "Crude Oil (WTI)",
-      "score": 3.19,
-      "band": "Bearish",
-      "direction": "Sell",
-      "magnitude": 1.81,
-      "confidence": 1.0,
-      "biasType": "direct",
-      "drivers": [],
-      "rationale": "OIL is bearish with a bias of 3.0/10."
+      "rationale": "XAGUSD is bearish with a bias of 3.17/10."
     },
     {
       "symbol": "BRENT",
@@ -80,19 +56,7 @@
       "confidence": 1.0,
       "biasType": "direct",
       "drivers": [],
-      "rationale": "BRENT is bearish with a bias of 3.0/10."
-    },
-    {
-      "symbol": "COPPER",
-      "name": "Copper",
-      "score": 3.19,
-      "band": "Bearish",
-      "direction": "Sell",
-      "magnitude": 1.81,
-      "confidence": 1.0,
-      "biasType": "direct",
-      "drivers": [],
-      "rationale": "COPPER is bearish with a bias of 3.0/10."
+      "rationale": "BRENT is bearish with a bias of 3.19/10."
     },
     {
       "symbol": "GBPCHF",
@@ -104,11 +68,11 @@
       "confidence": 1.0,
       "biasType": "direct",
       "drivers": [
-        "GDP m/m",
         "GDP MoM JUL",
-        "GDP YoY JUL"
+        "GDP YoY JUL",
+        "GDP m/m"
       ],
-      "rationale": "GBPCHF is neutral with a bias of 5.0/10."
+      "rationale": "GBPCHF is bullish with a bias of 6.77/10."
     },
     {
       "symbol": "GBPJPY",
@@ -120,15 +84,39 @@
       "confidence": 1.0,
       "biasType": "direct",
       "drivers": [
-        "GDP m/m",
         "GDP MoM JUL",
-        "GDP YoY JUL"
+        "GDP YoY JUL",
+        "GDP m/m"
       ],
-      "rationale": "GBPJPY is neutral with a bias of 5.0/10."
+      "rationale": "GBPJPY is bullish with a bias of 6.72/10."
     },
     {
-      "symbol": "XAGUSD",
-      "name": "Silver",
+      "symbol": "OIL",
+      "name": "Crude Oil (WTI)",
+      "score": 6.69,
+      "band": "Bullish",
+      "direction": "Buy",
+      "magnitude": 1.69,
+      "confidence": 1.0,
+      "biasType": "direct",
+      "drivers": [],
+      "rationale": "OIL is bullish with a bias of 6.69/10."
+    },
+    {
+      "symbol": "COPPER",
+      "name": "Copper",
+      "score": 6.69,
+      "band": "Bullish",
+      "direction": "Buy",
+      "magnitude": 1.69,
+      "confidence": 1.0,
+      "biasType": "direct",
+      "drivers": [],
+      "rationale": "COPPER is bullish with a bias of 6.69/10."
+    },
+    {
+      "symbol": "XAUUSD",
+      "name": "Gold",
       "score": 6.67,
       "band": "Bullish",
       "direction": "Buy",
@@ -136,7 +124,47 @@
       "confidence": 1.0,
       "biasType": "direct",
       "drivers": [],
-      "rationale": "XAGUSD is bullish with a bias of 6.39/10."
+      "rationale": "XAUUSD is bullish with a bias of 6.67/10."
+    },
+    {
+      "symbol": "XPTUSD",
+      "name": "Platinum",
+      "score": 6.67,
+      "band": "Bullish",
+      "direction": "Buy",
+      "magnitude": 1.67,
+      "confidence": 1.0,
+      "biasType": "direct",
+      "drivers": [],
+      "rationale": "XPTUSD is bullish with a bias of 6.67/10."
+    },
+    {
+      "symbol": "XPDUSD",
+      "name": "Palladium",
+      "score": 6.67,
+      "band": "Bullish",
+      "direction": "Buy",
+      "magnitude": 1.67,
+      "confidence": 1.0,
+      "biasType": "direct",
+      "drivers": [],
+      "rationale": "XPDUSD is bullish with a bias of 6.67/10."
+    },
+    {
+      "symbol": "GBPNZD",
+      "name": "GBP/NZD",
+      "score": 6.47,
+      "band": "Bullish",
+      "direction": "Buy",
+      "magnitude": 1.47,
+      "confidence": 1.0,
+      "biasType": "direct",
+      "drivers": [
+        "GDP MoM JUL",
+        "GDP YoY JUL",
+        "GDP m/m"
+      ],
+      "rationale": "GBPNZD is bullish with a bias of 6.47/10."
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-09-11T20:53:07+00:00",
+    "updated": "2026-09-12T08:07:30+00:00",
     "total": 82,
     "scored": 82,
     "note": "Pair bias derived from currency/instrument bias; yields & news confirm only."
@@ -66,11 +66,11 @@
       "name": "EUR/CAD",
       "class": "fx",
       "biasType": "direct",
-      "score": 3.6,
+      "score": 3.61,
       "band": "Bearish",
       "direction": "Bearish",
       "base_score": 4.54,
-      "quote_score": 5.94
+      "quote_score": 5.93
     },
     {
       "symbol": "EURNZD",
@@ -231,11 +231,11 @@
       "name": "GBP/CAD",
       "class": "fx",
       "biasType": "direct",
-      "score": 5.53,
+      "score": 5.54,
       "band": "Neutral",
       "direction": "Bullish",
       "base_score": 6.47,
-      "quote_score": 5.94
+      "quote_score": 5.93
     },
     {
       "symbol": "GBPNZD",
@@ -352,11 +352,11 @@
       "name": "USD/CAD",
       "class": "fx",
       "biasType": "direct",
-      "score": 4.14,
+      "score": 4.15,
       "band": "Neutral",
       "direction": "Bearish",
       "base_score": 5.08,
-      "quote_score": 5.94
+      "quote_score": 5.93
     },
     {
       "symbol": "USDSGD",
@@ -506,11 +506,11 @@
       "name": "AUD/CAD",
       "class": "fx",
       "biasType": "direct",
-      "score": 4.26,
+      "score": 4.27,
       "band": "Neutral",
       "direction": "Bearish",
       "base_score": 5.2,
-      "quote_score": 5.94
+      "quote_score": 5.93
     },
     {
       "symbol": "AUDNZD",
@@ -550,11 +550,11 @@
       "name": "NZD/CAD",
       "class": "fx",
       "biasType": "direct",
-      "score": 4.06,
+      "score": 4.07,
       "band": "Neutral",
       "direction": "Bearish",
       "base_score": 5.0,
-      "quote_score": 5.94
+      "quote_score": 5.93
     },
     {
       "symbol": "NZDCHF",
@@ -583,10 +583,10 @@
       "name": "CAD/CHF",
       "class": "fx",
       "biasType": "direct",
-      "score": 6.24,
+      "score": 6.23,
       "band": "Bullish",
       "direction": "Bullish",
-      "base_score": 5.94,
+      "base_score": 5.93,
       "quote_score": 4.7
     },
     {
@@ -594,10 +594,10 @@
       "name": "CAD/JPY",
       "class": "fx",
       "biasType": "direct",
-      "score": 6.19,
+      "score": 6.18,
       "band": "Bullish",
       "direction": "Bullish",
-      "base_score": 5.94,
+      "base_score": 5.93,
       "quote_score": 4.75
     },
     {
@@ -704,9 +704,9 @@
       "name": "Gold",
       "class": "metals",
       "biasType": "direct",
-      "score": 3.17,
-      "band": "Bearish",
-      "direction": "Bearish",
+      "score": 6.67,
+      "band": "Bullish",
+      "direction": "Bullish",
       "base_score": 5.08,
       "quote_score": null
     },
@@ -715,9 +715,9 @@
       "name": "Silver",
       "class": "metals",
       "biasType": "direct",
-      "score": 6.67,
-      "band": "Bullish",
-      "direction": "Bullish",
+      "score": 3.17,
+      "band": "Bearish",
+      "direction": "Bearish",
       "base_score": 5.08,
       "quote_score": null
     },
@@ -726,9 +726,9 @@
       "name": "Platinum",
       "class": "metals",
       "biasType": "direct",
-      "score": 3.17,
-      "band": "Bearish",
-      "direction": "Bearish",
+      "score": 6.67,
+      "band": "Bullish",
+      "direction": "Bullish",
       "base_score": 5.08,
       "quote_score": null
     },
@@ -748,9 +748,9 @@
       "name": "Crude Oil (WTI)",
       "class": "energy",
       "biasType": "direct",
-      "score": 3.19,
-      "band": "Bearish",
-      "direction": "Bearish",
+      "score": 6.69,
+      "band": "Bullish",
+      "direction": "Bullish",
       "base_score": 5.08,
       "quote_score": null
     },
@@ -770,9 +770,9 @@
       "name": "Copper",
       "class": "energy",
       "biasType": "direct",
-      "score": 3.19,
-      "band": "Bearish",
-      "direction": "Bearish",
+      "score": 6.69,
+      "band": "Bullish",
+      "direction": "Bullish",
       "base_score": 5.08,
       "quote_score": null
     },
