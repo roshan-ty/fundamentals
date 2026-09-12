@@ -1,912 +1,940 @@
 {
   "meta": {
-    "updated": "2026-09-12T08:07:30+00:00",
+    "updated": "2026-09-12T12:36:23+00:00",
     "total": 82,
-    "scored": 82,
-    "note": "Pair bias derived from currency/instrument bias; yields & news confirm only."
+    "scored": 82
   },
   "pairs": [
     {
       "symbol": "EURUSD",
-      "name": "EUR/USD",
       "class": "fx",
-      "biasType": "direct",
-      "score": 4.46,
-      "band": "Neutral",
-      "direction": "Bearish",
-      "base_score": 4.54,
-      "quote_score": 5.08
+      "verdict": "Bearish",
+      "base": "EUR",
+      "quote": "USD",
+      "base_verdict": "Bearish",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "EUR: Bearish",
+        "USD: Neutral"
+      ]
     },
     {
       "symbol": "EURGBP",
-      "name": "EUR/GBP",
       "class": "fx",
-      "biasType": "direct",
-      "score": 3.07,
-      "band": "Bearish",
-      "direction": "Bearish",
-      "base_score": 4.54,
-      "quote_score": 6.47
+      "verdict": "Very Bearish",
+      "base": "EUR",
+      "quote": "GBP",
+      "base_verdict": "Bearish",
+      "quote_verdict": "Bullish",
+      "drivers": [
+        "EUR: Bearish",
+        "GBP: Bullish"
+      ]
     },
     {
       "symbol": "EURJPY",
-      "name": "EUR/JPY",
       "class": "fx",
-      "biasType": "direct",
-      "score": 4.79,
-      "band": "Neutral",
-      "direction": "Bearish",
-      "base_score": 4.54,
-      "quote_score": 4.75
+      "verdict": "Bearish",
+      "base": "EUR",
+      "quote": "JPY",
+      "base_verdict": "Bearish",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "EUR: Bearish",
+        "JPY: Neutral"
+      ]
     },
     {
       "symbol": "EURCHF",
-      "name": "EUR/CHF",
       "class": "fx",
-      "biasType": "direct",
-      "score": 4.84,
-      "band": "Neutral",
-      "direction": "Neutral",
-      "base_score": 4.54,
-      "quote_score": 4.7
+      "verdict": "Bearish",
+      "base": "EUR",
+      "quote": "CHF",
+      "base_verdict": "Bearish",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "EUR: Bearish",
+        "CHF: Neutral"
+      ]
     },
     {
       "symbol": "EURAUD",
-      "name": "EUR/AUD",
       "class": "fx",
-      "biasType": "direct",
-      "score": 4.34,
-      "band": "Neutral",
-      "direction": "Bearish",
-      "base_score": 4.54,
-      "quote_score": 5.2
+      "verdict": "Bearish",
+      "base": "EUR",
+      "quote": "AUD",
+      "base_verdict": "Bearish",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "EUR: Bearish",
+        "AUD: Neutral"
+      ]
     },
     {
       "symbol": "EURCAD",
-      "name": "EUR/CAD",
       "class": "fx",
-      "biasType": "direct",
-      "score": 3.61,
-      "band": "Bearish",
-      "direction": "Bearish",
-      "base_score": 4.54,
-      "quote_score": 5.93
+      "verdict": "Very Bearish",
+      "base": "EUR",
+      "quote": "CAD",
+      "base_verdict": "Bearish",
+      "quote_verdict": "Bullish",
+      "drivers": [
+        "EUR: Bearish",
+        "CAD: Bullish"
+      ]
     },
     {
       "symbol": "EURNZD",
-      "name": "EUR/NZD",
       "class": "fx",
-      "biasType": "direct",
-      "score": 4.54,
-      "band": "Neutral",
-      "direction": "Bearish",
-      "base_score": 4.54,
-      "quote_score": 5.0
+      "verdict": "Bearish",
+      "base": "EUR",
+      "quote": "NZD",
+      "base_verdict": "Bearish",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "EUR: Bearish",
+        "NZD: Neutral"
+      ]
     },
     {
       "symbol": "EURNOK",
-      "name": "EUR/NOK",
       "class": "fx",
-      "biasType": "direct",
-      "score": 4.54,
-      "band": "Neutral",
-      "direction": "Bearish",
-      "base_score": 4.54,
-      "quote_score": 5.0
+      "verdict": "Bearish",
+      "base": "EUR",
+      "quote": "NOK",
+      "base_verdict": "Bearish",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "EUR: Bearish",
+        "NOK: Neutral"
+      ]
     },
     {
       "symbol": "EURSEK",
-      "name": "EUR/SEK",
       "class": "fx",
-      "biasType": "direct",
-      "score": 4.54,
-      "band": "Neutral",
-      "direction": "Bearish",
-      "base_score": 4.54,
-      "quote_score": 5.0
+      "verdict": "Bearish",
+      "base": "EUR",
+      "quote": "SEK",
+      "base_verdict": "Bearish",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "EUR: Bearish",
+        "SEK: Neutral"
+      ]
     },
     {
       "symbol": "EURPLN",
-      "name": "EUR/PLN",
       "class": "fx",
-      "biasType": "direct",
-      "score": 4.54,
-      "band": "Neutral",
-      "direction": "Bearish",
-      "base_score": 4.54,
-      "quote_score": 5.0
+      "verdict": "Bearish",
+      "base": "EUR",
+      "quote": "PLN",
+      "base_verdict": "Bearish",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "EUR: Bearish",
+        "PLN: Neutral"
+      ]
     },
     {
       "symbol": "EURHUF",
-      "name": "EUR/HUF",
       "class": "fx",
-      "biasType": "direct",
-      "score": 4.54,
-      "band": "Neutral",
-      "direction": "Bearish",
-      "base_score": 4.54,
-      "quote_score": 5.0
+      "verdict": "Bearish",
+      "base": "EUR",
+      "quote": "HUF",
+      "base_verdict": "Bearish",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "EUR: Bearish",
+        "HUF: Neutral"
+      ]
     },
     {
       "symbol": "EURSGD",
-      "name": "EUR/SGD",
       "class": "fx",
-      "biasType": "direct",
-      "score": 4.54,
-      "band": "Neutral",
-      "direction": "Bearish",
-      "base_score": 4.54,
-      "quote_score": 5.0
+      "verdict": "Bearish",
+      "base": "EUR",
+      "quote": "SGD",
+      "base_verdict": "Bearish",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "EUR: Bearish",
+        "SGD: Neutral"
+      ]
     },
     {
       "symbol": "EURTRY",
-      "name": "EUR/TRY",
       "class": "fx",
-      "biasType": "direct",
-      "score": 4.54,
-      "band": "Neutral",
-      "direction": "Bearish",
-      "base_score": 4.54,
-      "quote_score": 5.0
+      "verdict": "Bearish",
+      "base": "EUR",
+      "quote": "TRY",
+      "base_verdict": "Bearish",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "EUR: Bearish",
+        "TRY: Neutral"
+      ]
     },
     {
       "symbol": "EURZAR",
-      "name": "EUR/ZAR",
       "class": "fx",
-      "biasType": "direct",
-      "score": 4.54,
-      "band": "Neutral",
-      "direction": "Bearish",
-      "base_score": 4.54,
-      "quote_score": 5.0
+      "verdict": "Bearish",
+      "base": "EUR",
+      "quote": "ZAR",
+      "base_verdict": "Bearish",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "EUR: Bearish",
+        "ZAR: Neutral"
+      ]
     },
     {
       "symbol": "EURHKD",
-      "name": "EUR/HKD",
       "class": "fx",
-      "biasType": "direct",
-      "score": 4.54,
-      "band": "Neutral",
-      "direction": "Bearish",
-      "base_score": 4.54,
-      "quote_score": 5.0
+      "verdict": "Bearish",
+      "base": "EUR",
+      "quote": "HKD",
+      "base_verdict": "Bearish",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "EUR: Bearish",
+        "HKD: Neutral"
+      ]
     },
     {
       "symbol": "GBPUSD",
-      "name": "GBP/USD",
       "class": "fx",
-      "biasType": "direct",
-      "score": 6.39,
-      "band": "Bullish",
-      "direction": "Bullish",
-      "base_score": 6.47,
-      "quote_score": 5.08
+      "verdict": "Bullish",
+      "base": "GBP",
+      "quote": "USD",
+      "base_verdict": "Bullish",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "GBP: Bullish",
+        "USD: Neutral"
+      ]
     },
     {
       "symbol": "GBPEUR",
-      "name": "GBP/EUR",
       "class": "fx",
-      "biasType": "direct",
-      "score": 6.93,
-      "band": "Bullish",
-      "direction": "Bullish",
-      "base_score": 6.47,
-      "quote_score": 4.54
+      "verdict": "Very Bullish",
+      "base": "GBP",
+      "quote": "EUR",
+      "base_verdict": "Bullish",
+      "quote_verdict": "Bearish",
+      "drivers": [
+        "GBP: Bullish",
+        "EUR: Bearish"
+      ]
     },
     {
       "symbol": "GBPJPY",
-      "name": "GBP/JPY",
       "class": "fx",
-      "biasType": "direct",
-      "score": 6.72,
-      "band": "Bullish",
-      "direction": "Bullish",
-      "base_score": 6.47,
-      "quote_score": 4.75
+      "verdict": "Bullish",
+      "base": "GBP",
+      "quote": "JPY",
+      "base_verdict": "Bullish",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "GBP: Bullish",
+        "JPY: Neutral"
+      ]
     },
     {
       "symbol": "GBPCHF",
-      "name": "GBP/CHF",
       "class": "fx",
-      "biasType": "direct",
-      "score": 6.77,
-      "band": "Bullish",
-      "direction": "Bullish",
-      "base_score": 6.47,
-      "quote_score": 4.7
+      "verdict": "Bullish",
+      "base": "GBP",
+      "quote": "CHF",
+      "base_verdict": "Bullish",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "GBP: Bullish",
+        "CHF: Neutral"
+      ]
     },
     {
       "symbol": "GBPAUD",
-      "name": "GBP/AUD",
       "class": "fx",
-      "biasType": "direct",
-      "score": 6.27,
-      "band": "Bullish",
-      "direction": "Bullish",
-      "base_score": 6.47,
-      "quote_score": 5.2
+      "verdict": "Bullish",
+      "base": "GBP",
+      "quote": "AUD",
+      "base_verdict": "Bullish",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "GBP: Bullish",
+        "AUD: Neutral"
+      ]
     },
     {
       "symbol": "GBPCAD",
-      "name": "GBP/CAD",
       "class": "fx",
-      "biasType": "direct",
-      "score": 5.54,
-      "band": "Neutral",
-      "direction": "Bullish",
-      "base_score": 6.47,
-      "quote_score": 5.93
+      "verdict": "Neutral",
+      "base": "GBP",
+      "quote": "CAD",
+      "base_verdict": "Bullish",
+      "quote_verdict": "Bullish",
+      "drivers": [
+        "GBP: Bullish",
+        "CAD: Bullish"
+      ]
     },
     {
       "symbol": "GBPNZD",
-      "name": "GBP/NZD",
       "class": "fx",
-      "biasType": "direct",
-      "score": 6.47,
-      "band": "Bullish",
-      "direction": "Bullish",
-      "base_score": 6.47,
-      "quote_score": 5.0
+      "verdict": "Bullish",
+      "base": "GBP",
+      "quote": "NZD",
+      "base_verdict": "Bullish",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "GBP: Bullish",
+        "NZD: Neutral"
+      ]
     },
     {
       "symbol": "GBPNOK",
-      "name": "GBP/NOK",
       "class": "fx",
-      "biasType": "direct",
-      "score": 6.47,
-      "band": "Bullish",
-      "direction": "Bullish",
-      "base_score": 6.47,
-      "quote_score": 5.0
+      "verdict": "Bullish",
+      "base": "GBP",
+      "quote": "NOK",
+      "base_verdict": "Bullish",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "GBP: Bullish",
+        "NOK: Neutral"
+      ]
     },
     {
       "symbol": "GBPSEK",
-      "name": "GBP/SEK",
       "class": "fx",
-      "biasType": "direct",
-      "score": 6.47,
-      "band": "Bullish",
-      "direction": "Bullish",
-      "base_score": 6.47,
-      "quote_score": 5.0
+      "verdict": "Bullish",
+      "base": "GBP",
+      "quote": "SEK",
+      "base_verdict": "Bullish",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "GBP: Bullish",
+        "SEK: Neutral"
+      ]
     },
     {
       "symbol": "GBPPLN",
-      "name": "GBP/PLN",
       "class": "fx",
-      "biasType": "direct",
-      "score": 6.47,
-      "band": "Bullish",
-      "direction": "Bullish",
-      "base_score": 6.47,
-      "quote_score": 5.0
+      "verdict": "Bullish",
+      "base": "GBP",
+      "quote": "PLN",
+      "base_verdict": "Bullish",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "GBP: Bullish",
+        "PLN: Neutral"
+      ]
     },
     {
       "symbol": "GBPHUF",
-      "name": "GBP/HUF",
       "class": "fx",
-      "biasType": "direct",
-      "score": 6.47,
-      "band": "Bullish",
-      "direction": "Bullish",
-      "base_score": 6.47,
-      "quote_score": 5.0
+      "verdict": "Bullish",
+      "base": "GBP",
+      "quote": "HUF",
+      "base_verdict": "Bullish",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "GBP: Bullish",
+        "HUF: Neutral"
+      ]
     },
     {
       "symbol": "GBPTRY",
-      "name": "GBP/TRY",
       "class": "fx",
-      "biasType": "direct",
-      "score": 6.47,
-      "band": "Bullish",
-      "direction": "Bullish",
-      "base_score": 6.47,
-      "quote_score": 5.0
+      "verdict": "Bullish",
+      "base": "GBP",
+      "quote": "TRY",
+      "base_verdict": "Bullish",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "GBP: Bullish",
+        "TRY: Neutral"
+      ]
     },
     {
       "symbol": "GBPZAR",
-      "name": "GBP/ZAR",
       "class": "fx",
-      "biasType": "direct",
-      "score": 6.47,
-      "band": "Bullish",
-      "direction": "Bullish",
-      "base_score": 6.47,
-      "quote_score": 5.0
+      "verdict": "Bullish",
+      "base": "GBP",
+      "quote": "ZAR",
+      "base_verdict": "Bullish",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "GBP: Bullish",
+        "ZAR: Neutral"
+      ]
     },
     {
       "symbol": "GBPHKD",
-      "name": "GBP/HKD",
       "class": "fx",
-      "biasType": "direct",
-      "score": 6.47,
-      "band": "Bullish",
-      "direction": "Bullish",
-      "base_score": 6.47,
-      "quote_score": 5.0
+      "verdict": "Bullish",
+      "base": "GBP",
+      "quote": "HKD",
+      "base_verdict": "Bullish",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "GBP: Bullish",
+        "HKD: Neutral"
+      ]
     },
     {
       "symbol": "USDJPY",
-      "name": "USD/JPY",
       "class": "fx",
-      "biasType": "direct",
-      "score": 5.33,
-      "band": "Neutral",
-      "direction": "Bullish",
-      "base_score": 5.08,
-      "quote_score": 4.75
+      "verdict": "Neutral",
+      "base": "USD",
+      "quote": "JPY",
+      "base_verdict": "Neutral",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "USD: Neutral",
+        "JPY: Neutral"
+      ]
     },
     {
       "symbol": "USDCHF",
-      "name": "USD/CHF",
       "class": "fx",
-      "biasType": "direct",
-      "score": 5.38,
-      "band": "Neutral",
-      "direction": "Bullish",
-      "base_score": 5.08,
-      "quote_score": 4.7
+      "verdict": "Neutral",
+      "base": "USD",
+      "quote": "CHF",
+      "base_verdict": "Neutral",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "USD: Neutral",
+        "CHF: Neutral"
+      ]
     },
     {
       "symbol": "USDCAD",
-      "name": "USD/CAD",
       "class": "fx",
-      "biasType": "direct",
-      "score": 4.15,
-      "band": "Neutral",
-      "direction": "Bearish",
-      "base_score": 5.08,
-      "quote_score": 5.93
+      "verdict": "Bearish",
+      "base": "USD",
+      "quote": "CAD",
+      "base_verdict": "Neutral",
+      "quote_verdict": "Bullish",
+      "drivers": [
+        "USD: Neutral",
+        "CAD: Bullish"
+      ]
     },
     {
       "symbol": "USDSGD",
-      "name": "USD/SGD",
       "class": "fx",
-      "biasType": "direct",
-      "score": 5.08,
-      "band": "Neutral",
-      "direction": "Neutral",
-      "base_score": 5.08,
-      "quote_score": 5.0
+      "verdict": "Neutral",
+      "base": "USD",
+      "quote": "SGD",
+      "base_verdict": "Neutral",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "USD: Neutral",
+        "SGD: Neutral"
+      ]
     },
     {
       "symbol": "USDCNY",
-      "name": "USD/CNY",
       "class": "fx",
-      "biasType": "direct",
-      "score": 4.7,
-      "band": "Neutral",
-      "direction": "Bearish",
-      "base_score": 5.08,
-      "quote_score": 5.38
+      "verdict": "Neutral",
+      "base": "USD",
+      "quote": "CNY",
+      "base_verdict": "Neutral",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "USD: Neutral",
+        "CNY: Neutral"
+      ]
     },
     {
       "symbol": "USDMXN",
-      "name": "USD/MXN",
       "class": "fx",
-      "biasType": "direct",
-      "score": 4.81,
-      "band": "Neutral",
-      "direction": "Neutral",
-      "base_score": 5.08,
-      "quote_score": 5.27
+      "verdict": "Neutral",
+      "base": "USD",
+      "quote": "MXN",
+      "base_verdict": "Neutral",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "USD: Neutral",
+        "MXN: Neutral"
+      ]
     },
     {
       "symbol": "USDBRL",
-      "name": "USD/BRL",
       "class": "fx",
-      "biasType": "direct",
-      "score": 4.81,
-      "band": "Neutral",
-      "direction": "Neutral",
-      "base_score": 5.08,
-      "quote_score": 5.27
+      "verdict": "Neutral",
+      "base": "USD",
+      "quote": "BRL",
+      "base_verdict": "Neutral",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "USD: Neutral",
+        "BRL: Neutral"
+      ]
     },
     {
       "symbol": "USDNOK",
-      "name": "USD/NOK",
       "class": "fx",
-      "biasType": "direct",
-      "score": 5.08,
-      "band": "Neutral",
-      "direction": "Neutral",
-      "base_score": 5.08,
-      "quote_score": 5.0
+      "verdict": "Neutral",
+      "base": "USD",
+      "quote": "NOK",
+      "base_verdict": "Neutral",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "USD: Neutral",
+        "NOK: Neutral"
+      ]
     },
     {
       "symbol": "USDSEK",
-      "name": "USD/SEK",
       "class": "fx",
-      "biasType": "direct",
-      "score": 5.08,
-      "band": "Neutral",
-      "direction": "Neutral",
-      "base_score": 5.08,
-      "quote_score": 5.0
+      "verdict": "Neutral",
+      "base": "USD",
+      "quote": "SEK",
+      "base_verdict": "Neutral",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "USD: Neutral",
+        "SEK: Neutral"
+      ]
     },
     {
       "symbol": "USDPLN",
-      "name": "USD/PLN",
       "class": "fx",
-      "biasType": "direct",
-      "score": 5.08,
-      "band": "Neutral",
-      "direction": "Neutral",
-      "base_score": 5.08,
-      "quote_score": 5.0
+      "verdict": "Neutral",
+      "base": "USD",
+      "quote": "PLN",
+      "base_verdict": "Neutral",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "USD: Neutral",
+        "PLN: Neutral"
+      ]
     },
     {
       "symbol": "USDHUF",
-      "name": "USD/HUF",
       "class": "fx",
-      "biasType": "direct",
-      "score": 5.08,
-      "band": "Neutral",
-      "direction": "Neutral",
-      "base_score": 5.08,
-      "quote_score": 5.0
+      "verdict": "Neutral",
+      "base": "USD",
+      "quote": "HUF",
+      "base_verdict": "Neutral",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "USD: Neutral",
+        "HUF: Neutral"
+      ]
     },
     {
       "symbol": "USDCZK",
-      "name": "USD/CZK",
       "class": "fx",
-      "biasType": "direct",
-      "score": 5.08,
-      "band": "Neutral",
-      "direction": "Neutral",
-      "base_score": 5.08,
-      "quote_score": 5.0
+      "verdict": "Neutral",
+      "base": "USD",
+      "quote": "CZK",
+      "base_verdict": "Neutral",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "USD: Neutral",
+        "CZK: Neutral"
+      ]
     },
     {
       "symbol": "USDDKK",
-      "name": "USD/DKK",
       "class": "fx",
-      "biasType": "direct",
-      "score": 5.08,
-      "band": "Neutral",
-      "direction": "Neutral",
-      "base_score": 5.08,
-      "quote_score": 5.0
+      "verdict": "Neutral",
+      "base": "USD",
+      "quote": "DKK",
+      "base_verdict": "Neutral",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "USD: Neutral",
+        "DKK: Neutral"
+      ]
     },
     {
       "symbol": "AUDUSD",
-      "name": "AUD/USD",
       "class": "fx",
-      "biasType": "direct",
-      "score": 5.12,
-      "band": "Neutral",
-      "direction": "Neutral",
-      "base_score": 5.2,
-      "quote_score": 5.08
+      "verdict": "Neutral",
+      "base": "AUD",
+      "quote": "USD",
+      "base_verdict": "Neutral",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "AUD: Neutral",
+        "USD: Neutral"
+      ]
     },
     {
       "symbol": "AUDJPY",
-      "name": "AUD/JPY",
       "class": "fx",
-      "biasType": "direct",
-      "score": 5.45,
-      "band": "Neutral",
-      "direction": "Bullish",
-      "base_score": 5.2,
-      "quote_score": 4.75
+      "verdict": "Neutral",
+      "base": "AUD",
+      "quote": "JPY",
+      "base_verdict": "Neutral",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "AUD: Neutral",
+        "JPY: Neutral"
+      ]
     },
     {
       "symbol": "AUDCHF",
-      "name": "AUD/CHF",
       "class": "fx",
-      "biasType": "direct",
-      "score": 5.5,
-      "band": "Neutral",
-      "direction": "Bullish",
-      "base_score": 5.2,
-      "quote_score": 4.7
+      "verdict": "Neutral",
+      "base": "AUD",
+      "quote": "CHF",
+      "base_verdict": "Neutral",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "AUD: Neutral",
+        "CHF: Neutral"
+      ]
     },
     {
       "symbol": "AUDCAD",
-      "name": "AUD/CAD",
       "class": "fx",
-      "biasType": "direct",
-      "score": 4.27,
-      "band": "Neutral",
-      "direction": "Bearish",
-      "base_score": 5.2,
-      "quote_score": 5.93
+      "verdict": "Bearish",
+      "base": "AUD",
+      "quote": "CAD",
+      "base_verdict": "Neutral",
+      "quote_verdict": "Bullish",
+      "drivers": [
+        "AUD: Neutral",
+        "CAD: Bullish"
+      ]
     },
     {
       "symbol": "AUDNZD",
-      "name": "AUD/NZD",
       "class": "fx",
-      "biasType": "direct",
-      "score": 5.2,
-      "band": "Neutral",
-      "direction": "Neutral",
-      "base_score": 5.2,
-      "quote_score": 5.0
+      "verdict": "Neutral",
+      "base": "AUD",
+      "quote": "NZD",
+      "base_verdict": "Neutral",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "AUD: Neutral",
+        "NZD: Neutral"
+      ]
     },
     {
       "symbol": "NZDUSD",
-      "name": "NZD/USD",
       "class": "fx",
-      "biasType": "direct",
-      "score": 4.92,
-      "band": "Neutral",
-      "direction": "Neutral",
-      "base_score": 5.0,
-      "quote_score": 5.08
+      "verdict": "Neutral",
+      "base": "NZD",
+      "quote": "USD",
+      "base_verdict": "Neutral",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "NZD: Neutral",
+        "USD: Neutral"
+      ]
     },
     {
       "symbol": "NZDJPY",
-      "name": "NZD/JPY",
       "class": "fx",
-      "biasType": "direct",
-      "score": 5.25,
-      "band": "Neutral",
-      "direction": "Bullish",
-      "base_score": 5.0,
-      "quote_score": 4.75
+      "verdict": "Neutral",
+      "base": "NZD",
+      "quote": "JPY",
+      "base_verdict": "Neutral",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "NZD: Neutral",
+        "JPY: Neutral"
+      ]
     },
     {
       "symbol": "NZDCAD",
-      "name": "NZD/CAD",
       "class": "fx",
-      "biasType": "direct",
-      "score": 4.07,
-      "band": "Neutral",
-      "direction": "Bearish",
-      "base_score": 5.0,
-      "quote_score": 5.93
+      "verdict": "Bearish",
+      "base": "NZD",
+      "quote": "CAD",
+      "base_verdict": "Neutral",
+      "quote_verdict": "Bullish",
+      "drivers": [
+        "NZD: Neutral",
+        "CAD: Bullish"
+      ]
     },
     {
       "symbol": "NZDCHF",
-      "name": "NZD/CHF",
       "class": "fx",
-      "biasType": "direct",
-      "score": 5.3,
-      "band": "Neutral",
-      "direction": "Bullish",
-      "base_score": 5.0,
-      "quote_score": 4.7
+      "verdict": "Neutral",
+      "base": "NZD",
+      "quote": "CHF",
+      "base_verdict": "Neutral",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "NZD: Neutral",
+        "CHF: Neutral"
+      ]
     },
     {
       "symbol": "NZDSGD",
-      "name": "NZD/SGD",
       "class": "fx",
-      "biasType": "direct",
-      "score": 5.0,
-      "band": "Neutral",
-      "direction": "Neutral",
-      "base_score": 5.0,
-      "quote_score": 5.0
+      "verdict": "Neutral",
+      "base": "NZD",
+      "quote": "SGD",
+      "base_verdict": "Neutral",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "NZD: Neutral",
+        "SGD: Neutral"
+      ]
     },
     {
       "symbol": "CADCHF",
-      "name": "CAD/CHF",
       "class": "fx",
-      "biasType": "direct",
-      "score": 6.23,
-      "band": "Bullish",
-      "direction": "Bullish",
-      "base_score": 5.93,
-      "quote_score": 4.7
+      "verdict": "Bullish",
+      "base": "CAD",
+      "quote": "CHF",
+      "base_verdict": "Bullish",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "CAD: Bullish",
+        "CHF: Neutral"
+      ]
     },
     {
       "symbol": "CADJPY",
-      "name": "CAD/JPY",
       "class": "fx",
-      "biasType": "direct",
-      "score": 6.18,
-      "band": "Bullish",
-      "direction": "Bullish",
-      "base_score": 5.93,
-      "quote_score": 4.75
+      "verdict": "Bullish",
+      "base": "CAD",
+      "quote": "JPY",
+      "base_verdict": "Bullish",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "CAD: Bullish",
+        "JPY: Neutral"
+      ]
     },
     {
       "symbol": "CHFJPY",
-      "name": "CHF/JPY",
       "class": "fx",
-      "biasType": "direct",
-      "score": 4.95,
-      "band": "Neutral",
-      "direction": "Neutral",
-      "base_score": 4.7,
-      "quote_score": 4.75
+      "verdict": "Neutral",
+      "base": "CHF",
+      "quote": "JPY",
+      "base_verdict": "Neutral",
+      "quote_verdict": "Neutral",
+      "drivers": [
+        "CHF: Neutral",
+        "JPY: Neutral"
+      ]
     },
     {
       "symbol": "BTCUSD",
-      "name": "BTC / USD",
       "class": "crypto",
-      "biasType": "derived",
-      "score": 4.82,
-      "band": "Neutral",
-      "direction": "Neutral",
-      "base_score": null,
-      "quote_score": null
+      "verdict": "Bullish",
+      "base_verdict": "Bullish",
+      "quote_verdict": null,
+      "drivers": []
     },
     {
       "symbol": "ETHUSD",
-      "name": "ETH / USD",
       "class": "crypto",
-      "biasType": "derived",
-      "score": 4.82,
-      "band": "Neutral",
-      "direction": "Neutral",
-      "base_score": null,
-      "quote_score": null
+      "verdict": "Bullish",
+      "base_verdict": "Bullish",
+      "quote_verdict": null,
+      "drivers": []
     },
     {
       "symbol": "LTCUSD",
-      "name": "LTC / USD",
       "class": "crypto",
-      "biasType": "derived",
-      "score": 4.82,
-      "band": "Neutral",
-      "direction": "Neutral",
-      "base_score": null,
-      "quote_score": null
+      "verdict": "Bullish",
+      "base_verdict": "Bullish",
+      "quote_verdict": null,
+      "drivers": []
     },
     {
       "symbol": "SOLUSD",
-      "name": "SOL / USD",
       "class": "crypto",
-      "biasType": "derived",
-      "score": 4.82,
-      "band": "Neutral",
-      "direction": "Neutral",
-      "base_score": null,
-      "quote_score": null
+      "verdict": "Bullish",
+      "base_verdict": "Bullish",
+      "quote_verdict": null,
+      "drivers": []
     },
     {
       "symbol": "SUIUSD",
-      "name": "SUI / USD",
       "class": "crypto",
-      "biasType": "derived",
-      "score": 4.82,
-      "band": "Neutral",
-      "direction": "Neutral",
-      "base_score": null,
-      "quote_score": null
+      "verdict": "Bullish",
+      "base_verdict": "Bullish",
+      "quote_verdict": null,
+      "drivers": []
     },
     {
       "symbol": "XLMUSD",
-      "name": "XLM / USD",
       "class": "crypto",
-      "biasType": "derived",
-      "score": 4.82,
-      "band": "Neutral",
-      "direction": "Neutral",
-      "base_score": null,
-      "quote_score": null
+      "verdict": "Bullish",
+      "base_verdict": "Bullish",
+      "quote_verdict": null,
+      "drivers": []
     },
     {
       "symbol": "XRPUSD",
-      "name": "XRP / USD",
       "class": "crypto",
-      "biasType": "derived",
-      "score": 4.82,
-      "band": "Neutral",
-      "direction": "Neutral",
-      "base_score": null,
-      "quote_score": null
+      "verdict": "Bullish",
+      "base_verdict": "Bullish",
+      "quote_verdict": null,
+      "drivers": []
     },
     {
       "symbol": "AVAXUSD",
-      "name": "AVAX / USD",
       "class": "crypto",
-      "biasType": "derived",
-      "score": 4.82,
-      "band": "Neutral",
-      "direction": "Neutral",
-      "base_score": null,
-      "quote_score": null
+      "verdict": "Bullish",
+      "base_verdict": "Bullish",
+      "quote_verdict": null,
+      "drivers": []
     },
     {
       "symbol": "XAUUSD",
-      "name": "Gold",
       "class": "metals",
-      "biasType": "direct",
-      "score": 6.67,
-      "band": "Bullish",
-      "direction": "Bullish",
-      "base_score": 5.08,
-      "quote_score": null
+      "verdict": "Bearish",
+      "base_verdict": "Bearish",
+      "quote_verdict": null,
+      "drivers": []
     },
     {
       "symbol": "XAGUSD",
-      "name": "Silver",
       "class": "metals",
-      "biasType": "direct",
-      "score": 3.17,
-      "band": "Bearish",
-      "direction": "Bearish",
-      "base_score": 5.08,
-      "quote_score": null
+      "verdict": "Bullish",
+      "base_verdict": "Bullish",
+      "quote_verdict": null,
+      "drivers": []
     },
     {
       "symbol": "XPTUSD",
-      "name": "Platinum",
       "class": "metals",
-      "biasType": "direct",
-      "score": 6.67,
-      "band": "Bullish",
-      "direction": "Bullish",
-      "base_score": 5.08,
-      "quote_score": null
+      "verdict": "Bearish",
+      "base_verdict": "Bearish",
+      "quote_verdict": null,
+      "drivers": []
     },
     {
       "symbol": "XPDUSD",
-      "name": "Palladium",
       "class": "metals",
-      "biasType": "direct",
-      "score": 6.67,
-      "band": "Bullish",
-      "direction": "Bullish",
-      "base_score": 5.08,
-      "quote_score": null
+      "verdict": "Bullish",
+      "base_verdict": "Bullish",
+      "quote_verdict": null,
+      "drivers": []
     },
     {
       "symbol": "OIL",
-      "name": "Crude Oil (WTI)",
       "class": "energy",
-      "biasType": "direct",
-      "score": 6.69,
-      "band": "Bullish",
-      "direction": "Bullish",
-      "base_score": 5.08,
-      "quote_score": null
+      "verdict": "Bearish",
+      "base_verdict": "Bearish",
+      "quote_verdict": null,
+      "drivers": []
     },
     {
       "symbol": "BRENT",
-      "name": "Brent Crude",
       "class": "energy",
-      "biasType": "direct",
-      "score": 3.19,
-      "band": "Bearish",
-      "direction": "Bearish",
-      "base_score": 5.08,
-      "quote_score": null
+      "verdict": "Bearish",
+      "base_verdict": "Bearish",
+      "quote_verdict": null,
+      "drivers": []
     },
     {
       "symbol": "COPPER",
-      "name": "Copper",
       "class": "energy",
-      "biasType": "direct",
-      "score": 6.69,
-      "band": "Bullish",
-      "direction": "Bullish",
-      "base_score": 5.08,
-      "quote_score": null
+      "verdict": "Bearish",
+      "base_verdict": "Bearish",
+      "quote_verdict": null,
+      "drivers": []
     },
     {
       "symbol": "US500",
-      "name": "S&P 500",
-      "class": "index",
-      "biasType": "derived",
-      "score": 4.82,
-      "band": "Neutral",
-      "direction": "Neutral",
-      "base_score": null,
-      "quote_score": null
+      "class": "indices",
+      "verdict": "Neutral",
+      "base_verdict": "Neutral",
+      "quote_verdict": null,
+      "drivers": []
     },
     {
       "symbol": "US100",
-      "name": "NASDAQ 100",
-      "class": "index",
-      "biasType": "derived",
-      "score": 4.82,
-      "band": "Neutral",
-      "direction": "Neutral",
-      "base_score": null,
-      "quote_score": null
+      "class": "indices",
+      "verdict": "Neutral",
+      "base_verdict": "Neutral",
+      "quote_verdict": null,
+      "drivers": []
     },
     {
       "symbol": "US30",
-      "name": "Dow Jones 30",
-      "class": "index",
-      "biasType": "derived",
-      "score": 4.82,
-      "band": "Neutral",
-      "direction": "Neutral",
-      "base_score": null,
-      "quote_score": null
+      "class": "indices",
+      "verdict": "Neutral",
+      "base_verdict": "Neutral",
+      "quote_verdict": null,
+      "drivers": []
     },
     {
       "symbol": "GE40",
-      "name": "DAX 40",
-      "class": "index",
-      "biasType": "derived",
-      "score": 4.82,
-      "band": "Neutral",
-      "direction": "Neutral",
-      "base_score": null,
-      "quote_score": null
+      "class": "indices",
+      "verdict": "Neutral",
+      "base_verdict": "Neutral",
+      "quote_verdict": null,
+      "drivers": []
     },
     {
       "symbol": "EU50",
-      "name": "EURO STOXX 50",
-      "class": "index",
-      "biasType": "derived",
-      "score": 4.82,
-      "band": "Neutral",
-      "direction": "Neutral",
-      "base_score": null,
-      "quote_score": null
+      "class": "indices",
+      "verdict": "Neutral",
+      "base_verdict": "Neutral",
+      "quote_verdict": null,
+      "drivers": []
     },
     {
       "symbol": "GB100",
-      "name": "FTSE 100",
-      "class": "index",
-      "biasType": "derived",
-      "score": 4.82,
-      "band": "Neutral",
-      "direction": "Neutral",
-      "base_score": null,
-      "quote_score": null
+      "class": "indices",
+      "verdict": "Neutral",
+      "base_verdict": "Neutral",
+      "quote_verdict": null,
+      "drivers": []
     },
     {
       "symbol": "FR40",
-      "name": "CAC 40",
-      "class": "index",
-      "biasType": "derived",
-      "score": 4.82,
-      "band": "Neutral",
-      "direction": "Neutral",
-      "base_score": null,
-      "quote_score": null
+      "class": "indices",
+      "verdict": "Neutral",
+      "base_verdict": "Neutral",
+      "quote_verdict": null,
+      "drivers": []
     },
     {
       "symbol": "JP225",
-      "name": "Nikkei 225",
-      "class": "index",
-      "biasType": "derived",
-      "score": 4.82,
-      "band": "Neutral",
-      "direction": "Neutral",
-      "base_score": null,
-      "quote_score": null
+      "class": "indices",
+      "verdict": "Neutral",
+      "base_verdict": "Neutral",
+      "quote_verdict": null,
+      "drivers": []
     },
     {
       "symbol": "HK50",
-      "name": "Hang Seng 50",
-      "class": "index",
-      "biasType": "derived",
-      "score": 4.82,
-      "band": "Neutral",
-      "direction": "Neutral",
-      "base_score": null,
-      "quote_score": null
+      "class": "indices",
+      "verdict": "Neutral",
+      "base_verdict": "Neutral",
+      "quote_verdict": null,
+      "drivers": []
     },
     {
       "symbol": "AUS200",
-      "name": "ASX 200",
-      "class": "index",
-      "biasType": "derived",
-      "score": 4.82,
-      "band": "Neutral",
-      "direction": "Neutral",
-      "base_score": null,
-      "quote_score": null
+      "class": "indices",
+      "verdict": "Neutral",
+      "base_verdict": "Neutral",
+      "quote_verdict": null,
+      "drivers": []
     },
     {
       "symbol": "CH20",
-      "name": "SMI 20",
-      "class": "index",
-      "biasType": "derived",
-      "score": 4.82,
-      "band": "Neutral",
-      "direction": "Neutral",
-      "base_score": null,
-      "quote_score": null
+      "class": "indices",
+      "verdict": "Neutral",
+      "base_verdict": "Neutral",
+      "quote_verdict": null,
+      "drivers": []
     },
     {
       "symbol": "ES35",
-      "name": "IBEX 35",
-      "class": "index",
-      "biasType": "derived",
-      "score": 4.82,
-      "band": "Neutral",
-      "direction": "Neutral",
-      "base_score": null,
-      "quote_score": null
+      "class": "indices",
+      "verdict": "Neutral",
+      "base_verdict": "Neutral",
+      "quote_verdict": null,
+      "drivers": []
     }
   ]
 }

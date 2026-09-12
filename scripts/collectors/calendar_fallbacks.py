@@ -11,7 +11,7 @@ from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from common.utils import log, HttpSession  # noqa: E402
+from common.utils import log, HttpSession, save_json, DATA_DIR  # noqa: E402
 
 # ISO-2 country -> currency for calibration to our scoring universe
 COUNTRY_CURRENCY = {
@@ -93,6 +93,29 @@ def fetch_tradingeconomics(http=None):
     http = http or HttpSession(timeout=45, max_retries=2)
     html = http.get("https://tradingeconomics.com/calendar", timeout=60).text
     return parse_tradingeconomics(html)
+
+
+def collect_year_calendar(days=365):
+    """Fetch a ~1-year TradingEconomics window so every data point has a recent
+    released predecessor. Saved to data/calendar/year_events.json (used by the
+    verdict engine via build_releases, not displayed directly)."""
+    from datetime import timedelta
+    today = datetime.utcnow()
+    start = (today - timedelta(days=days)).strftime("%Y-%m-%d")
+    end = today.strftime("%Y-%m-%d")
+    http = HttpSession(timeout=60, max_retries=2)
+    events = []
+    try:
+        html = http.get("https://tradingeconomics.com/calendar",
+                        params={"from": start, "to": end}, timeout=90).text
+        events = parse_tradingeconomics(html)
+        log(f"Year calendar: {len(events)} events "
+            f"({sum(1 for e in events if e.get('actual'))} released actuals)")
+    except Exception as exc:
+        log(f"Year calendar failed: {str(exc)[:100]}", "WARN")
+    if events:
+        save_json(os.path.join(DATA_DIR, "calendar", "year_events.json"), events)
+    return events
 def fetch_tradingview():
     """Best-effort TradingView economic calendar data endpoint."""
     out = []

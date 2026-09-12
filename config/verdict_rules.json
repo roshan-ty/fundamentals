@@ -1,0 +1,102 @@
+{
+  "schema": "1.0",
+  "verdicts": ["Very Bearish", "Bearish", "Neutral", "Bullish", "Very Bullish"],
+  "description": "Verdict engine v3. Every data point is judged forecast-first (Actual vs Forecast; fallback Actual vs Previous). Weighted tally -> one of five verdicts. Special composites encode the fundamental-analysis cheat sheet.",
+  "weights": {"Critical": 3.0, "High": 2.0, "Medium": 1.0, "Low": 0.5},
+  "bands": {
+    "net_bull_threshold": 0.20,
+    "net_bear_threshold": -0.20,
+    "strong_threshold": 0.55,
+    "min_released_for_strong": 3
+  },
+  "currencies": {
+    "USD": {
+      "dataPoints": {
+        "us_fed_funds": "Critical", "us_nfp": "High", "us_cpi": "High", "us_pce": "High",
+        "us_unemployment": "High", "us_gdp": "High", "us_ahe": "Medium", "us_ism": "Medium",
+        "us_claims": "Medium", "us_ppi": "Medium", "us_retail": "Medium", "us_adp": "Medium",
+        "us_confidence": "Low", "us_housing": "Low", "us_trade": "Low"
+      },
+      "specials": ["usd_3of4", "stagflation"]
+    },
+    "EUR": {
+      "dataPoints": {
+        "eu_ecb_rate": "Critical", "eu_cpi_flash": "High", "eu_de_pmi": "High",
+        "eu_gdp": "High", "eu_unemployment": "High", "eu_employment_change": "Medium",
+        "eu_ifo": "Medium", "eu_zew": "Medium", "eu_de_indprod": "Medium", "eu_retail": "Low"
+      },
+      "specials": ["stagflation"]
+    },
+    "GBP": {
+      "dataPoints": {
+        "gb_bank_rate": "Critical", "gb_cpi": "High", "gb_gdp": "High", "gb_average_earnings": "High",
+        "gb_unemployment": "High", "gb_claimants": "High", "gb_employment_change": "Medium",
+        "gb_pmi": "Medium", "gb_retail": "Low"
+      },
+      "specials": ["stagflation"]
+    },
+    "AUD": {
+      "dataPoints": {
+        "au_cash_rate": "Critical", "au_cpi": "High", "au_gdp": "High", "au_employment": "High",
+        "au_unemployment": "High", "au_trade": "Medium", "au_retail": "Low"
+      },
+      "specials": ["china_demand"]
+    },
+    "NZD": {
+      "dataPoints": {
+        "nz_ocr": "Critical", "nz_cpi": "High", "nz_gdp": "High", "nz_employment": "High",
+        "nz_unemployment": "High", "nz_gdt": "Medium"
+      },
+      "specials": ["china_demand"]
+    },
+    "CAD": {
+      "dataPoints": {
+        "ca_overnight": "Critical", "ca_cpi": "High", "ca_gdp": "High", "ca_employment": "High",
+        "ca_unemployment": "High", "ca_trade": "Medium", "ca_retail": "Low"
+      },
+      "specials": ["oil_link"]
+    },
+    "JPY": {
+      "dataPoints": {
+        "jp_boj": "Critical", "jp_core_cpi": "High", "jp_gdp": "High", "jp_trade": "Medium",
+        "jp_cash_earnings": "Medium", "jp_tankan": "Low"
+      },
+      "specials": ["jpy_core_above2"]
+    },
+    "CHF": {
+      "dataPoints": {
+        "ch_snb": "Critical", "ch_cpi": "High", "ch_pmi": "Medium", "ch_kof": "Medium",
+        "ch_reserves": "Medium"
+      },
+      "specials": ["safe_haven"]
+    },
+    "CNY": {
+      "dataPoints": {
+        "cn_lpr": "Critical", "cn_pmi": "High", "cn_gdp": "High", "cn_cpi_ppi": "Medium",
+        "cn_indprod": "Medium", "cn_trade": "Medium"
+      },
+      "specials": []
+    },
+    "MXN": {"dataPoints": {"mx_rate": "Critical", "mx_cpi": "High", "mx_gdp": "High", "mx_trade": "Medium", "mx_unemployment": "Medium"}, "specials": []},
+    "BRL": {"dataPoints": {"br_rate": "Critical", "br_cpi": "High", "br_gdp": "High", "br_trade": "Medium", "br_unemployment": "Medium"}, "specials": []},
+    "TRY": {"dataPoints": {"tr_rate": "Critical", "tr_cpi": "High", "tr_gdp": "High", "tr_trade": "Medium"}, "specials": []},
+    "ZAR": {"dataPoints": {"za_rate": "Critical", "za_cpi": "High", "za_gdp": "High", "za_trade": "Medium", "za_unemployment": "Medium"}, "specials": []},
+    "PLN": {"dataPoints": {"pl_rate": "Critical", "pl_cpi": "High", "pl_gdp": "High", "pl_trade": "Medium"}, "specials": []},
+    "HUF": {"dataPoints": {"hu_rate": "Critical", "hu_cpi": "High", "hu_gdp": "High"}, "specials": []},
+    "CZK": {"dataPoints": {"cz_rate": "Critical", "cz_cpi": "High", "cz_gdp": "High"}, "specials": []},
+    "DKK": {"dataPoints": {"dk_rate": "Critical", "dk_cpi": "High", "dk_gdp": "High"}, "specials": []},
+    "NOK": {"dataPoints": {"no_rate": "Critical", "no_cpi": "High", "no_gdp": "High", "no_trade": "Medium"}, "specials": ["oil_link"]},
+    "SEK": {"dataPoints": {"se_rate": "Critical", "se_cpi": "High", "se_gdp": "High", "se_trade": "Medium"}, "specials": []},
+    "SGD": {"dataPoints": {"sg_rate": "Critical", "sg_cpi": "High", "sg_gdp": "High", "sg_trade": "Medium"}, "specials": []},
+    "HKD": {"dataPoints": {"hk_cpi": "High", "hk_gdp": "High", "hk_trade": "Medium", "hk_retail": "Medium"}, "specials": []}
+  },
+  "specials": {
+    "usd_3of4": {"points": ["us_nfp", "us_cpi", "us_pce", "us_ism"], "min": 3},
+    "stagflation": {"inflation": ["us_cpi", "us_pce", "eu_cpi_flash", "gb_cpi", "au_cpi", "nz_cpi", "ca_cpi", "jp_core_cpi", "ch_cpi"],
+                    "growth": ["us_gdp", "eu_gdp", "gb_gdp", "au_gdp", "nz_gdp", "ca_gdp", "jp_gdp", "ch_gdp"]},
+    "jpy_core_above2": {"points": ["jp_core_cpi"], "threshold": 2.0, "direction": "higher_is_bullish"},
+    "china_demand": {"points": ["cn_pmi", "cn_gdp"], "weight": 1.0},
+    "oil_link": {"points": ["ca_overnight", "ca_cpi"], "weight": 0.5},
+    "safe_haven": {"riskWeight": 1.0}
+  }
+}

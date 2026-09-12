@@ -1,170 +1,115 @@
 {
   "meta": {
-    "updated": "2026-09-12T08:07:31+00:00",
-    "note": "Top setups ranked by bias magnitude x data confidence"
+    "updated": "2026-09-12T12:36:23+00:00"
   },
   "setups": [
     {
       "symbol": "EURGBP",
-      "name": "EUR/GBP",
-      "score": 3.07,
-      "band": "Bearish",
+      "name": "EURGBP",
+      "verdict": "Very Bearish",
       "direction": "Sell",
-      "magnitude": 1.93,
-      "confidence": 1.0,
-      "biasType": "direct",
-      "drivers": [
-        "Unemployment Rate"
-      ],
-      "rationale": "EURGBP is bearish with a bias of 3.07/10."
+      "confidence": 0.7,
+      "importance": 2,
+      "rationale": "Very Bearish — EUR: Bearish · GBP: Bullish"
     },
     {
       "symbol": "GBPEUR",
-      "name": "GBP/EUR",
-      "score": 6.93,
-      "band": "Bullish",
+      "name": "GBPEUR",
+      "verdict": "Very Bullish",
       "direction": "Buy",
-      "magnitude": 1.93,
-      "confidence": 1.0,
-      "biasType": "direct",
-      "drivers": [
-        "GDP MoM JUL",
-        "GDP YoY JUL",
-        "GDP m/m"
-      ],
-      "rationale": "GBPEUR is bullish with a bias of 6.93/10."
+      "confidence": 0.7,
+      "importance": 2,
+      "rationale": "Very Bullish — GBP: Bullish · EUR: Bearish"
     },
     {
-      "symbol": "XAGUSD",
-      "name": "Silver",
-      "score": 3.17,
-      "band": "Bearish",
+      "symbol": "EURCAD",
+      "name": "EURCAD",
+      "verdict": "Very Bearish",
       "direction": "Sell",
-      "magnitude": 1.83,
-      "confidence": 1.0,
-      "biasType": "direct",
-      "drivers": [],
-      "rationale": "XAGUSD is bearish with a bias of 3.17/10."
+      "confidence": 0.6,
+      "importance": 2,
+      "rationale": "Very Bearish — EUR: Bearish · CAD: Bullish"
     },
     {
-      "symbol": "BRENT",
-      "name": "Brent Crude",
-      "score": 3.19,
-      "band": "Bearish",
+      "symbol": "EURUSD",
+      "name": "EURUSD",
+      "verdict": "Bearish",
       "direction": "Sell",
-      "magnitude": 1.81,
       "confidence": 1.0,
-      "biasType": "direct",
-      "drivers": [],
-      "rationale": "BRENT is bearish with a bias of 3.19/10."
+      "importance": 1,
+      "rationale": "Bearish — EUR: Bearish · USD: Neutral"
     },
     {
-      "symbol": "GBPCHF",
-      "name": "GBP/CHF",
-      "score": 6.77,
-      "band": "Bullish",
+      "symbol": "GBPUSD",
+      "name": "GBPUSD",
+      "verdict": "Bullish",
       "direction": "Buy",
-      "magnitude": 1.77,
       "confidence": 1.0,
-      "biasType": "direct",
-      "drivers": [
-        "GDP MoM JUL",
-        "GDP YoY JUL",
-        "GDP m/m"
-      ],
-      "rationale": "GBPCHF is bullish with a bias of 6.77/10."
+      "importance": 1,
+      "rationale": "Bullish — GBP: Bullish · USD: Neutral"
+    },
+    {
+      "symbol": "USDCAD",
+      "name": "USDCAD",
+      "verdict": "Bearish",
+      "direction": "Sell",
+      "confidence": 1.0,
+      "importance": 1,
+      "rationale": "Bearish — USD: Neutral · CAD: Bullish"
     },
     {
       "symbol": "GBPJPY",
-      "name": "GBP/JPY",
-      "score": 6.72,
-      "band": "Bullish",
+      "name": "GBPJPY",
+      "verdict": "Bullish",
       "direction": "Buy",
-      "magnitude": 1.72,
-      "confidence": 1.0,
-      "biasType": "direct",
-      "drivers": [
-        "GDP MoM JUL",
-        "GDP YoY JUL",
-        "GDP m/m"
-      ],
-      "rationale": "GBPJPY is bullish with a bias of 6.72/10."
+      "confidence": 0.6,
+      "importance": 1,
+      "rationale": "Bullish — GBP: Bullish · JPY: Neutral"
     },
     {
-      "symbol": "OIL",
-      "name": "Crude Oil (WTI)",
-      "score": 6.69,
-      "band": "Bullish",
+      "symbol": "GBPCHF",
+      "name": "GBPCHF",
+      "verdict": "Bullish",
       "direction": "Buy",
-      "magnitude": 1.69,
-      "confidence": 1.0,
-      "biasType": "direct",
-      "drivers": [],
-      "rationale": "OIL is bullish with a bias of 6.69/10."
+      "confidence": 0.6,
+      "importance": 1,
+      "rationale": "Bullish — GBP: Bullish · CHF: Neutral"
     },
     {
-      "symbol": "COPPER",
-      "name": "Copper",
-      "score": 6.69,
-      "band": "Bullish",
+      "symbol": "GBPAUD",
+      "name": "GBPAUD",
+      "verdict": "Bullish",
       "direction": "Buy",
-      "magnitude": 1.69,
-      "confidence": 1.0,
-      "biasType": "direct",
-      "drivers": [],
-      "rationale": "COPPER is bullish with a bias of 6.69/10."
-    },
-    {
-      "symbol": "XAUUSD",
-      "name": "Gold",
-      "score": 6.67,
-      "band": "Bullish",
-      "direction": "Buy",
-      "magnitude": 1.67,
-      "confidence": 1.0,
-      "biasType": "direct",
-      "drivers": [],
-      "rationale": "XAUUSD is bullish with a bias of 6.67/10."
-    },
-    {
-      "symbol": "XPTUSD",
-      "name": "Platinum",
-      "score": 6.67,
-      "band": "Bullish",
-      "direction": "Buy",
-      "magnitude": 1.67,
-      "confidence": 1.0,
-      "biasType": "direct",
-      "drivers": [],
-      "rationale": "XPTUSD is bullish with a bias of 6.67/10."
-    },
-    {
-      "symbol": "XPDUSD",
-      "name": "Palladium",
-      "score": 6.67,
-      "band": "Bullish",
-      "direction": "Buy",
-      "magnitude": 1.67,
-      "confidence": 1.0,
-      "biasType": "direct",
-      "drivers": [],
-      "rationale": "XPDUSD is bullish with a bias of 6.67/10."
+      "confidence": 0.6,
+      "importance": 1,
+      "rationale": "Bullish — GBP: Bullish · AUD: Neutral"
     },
     {
       "symbol": "GBPNZD",
-      "name": "GBP/NZD",
-      "score": 6.47,
-      "band": "Bullish",
+      "name": "GBPNZD",
+      "verdict": "Bullish",
       "direction": "Buy",
-      "magnitude": 1.47,
-      "confidence": 1.0,
-      "biasType": "direct",
-      "drivers": [
-        "GDP MoM JUL",
-        "GDP YoY JUL",
-        "GDP m/m"
-      ],
-      "rationale": "GBPNZD is bullish with a bias of 6.47/10."
+      "confidence": 0.6,
+      "importance": 1,
+      "rationale": "Bullish — GBP: Bullish · NZD: Neutral"
+    },
+    {
+      "symbol": "GBPNOK",
+      "name": "GBPNOK",
+      "verdict": "Bullish",
+      "direction": "Buy",
+      "confidence": 0.6,
+      "importance": 1,
+      "rationale": "Bullish — GBP: Bullish · NOK: Neutral"
+    },
+    {
+      "symbol": "GBPSEK",
+      "name": "GBPSEK",
+      "verdict": "Bullish",
+      "direction": "Buy",
+      "confidence": 0.6,
+      "importance": 1,
+      "rationale": "Bullish — GBP: Bullish · SEK: Neutral"
     }
   ]
 }

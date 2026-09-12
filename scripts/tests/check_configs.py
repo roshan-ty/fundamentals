@@ -16,7 +16,7 @@ def load(name):
 
 def main():
     errors = []
-    for name in ("scorecard.json", "symbols.json", "news_rules.json"):
+    for name in ("scorecard.json", "symbols.json", "news_rules.json", "verdict_rules.json"):
         try:
             load(name)
             print(f"OK   config/{name}")

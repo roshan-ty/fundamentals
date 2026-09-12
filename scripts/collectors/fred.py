@@ -38,6 +38,7 @@ FRED_SERIES = {
     "PERMIT": {"name": "Building Permits: New Privately Owned", "category": "housing", "unit": "thousands", "freq": "monthly"},
     "UMCSENT": {"name": "University of Michigan Consumer Sentiment", "category": "sentiment", "unit": "index", "freq": "monthly"},
     "INDPRO": {"name": "Industrial Production Index", "category": "industry", "unit": "index", "freq": "monthly"},
+    "M2SL": {"name": "M2 Money Stock", "category": "liquidity", "unit": "billions", "freq": "monthly"},
     # International (OECD-MEI) — fresh series feeding non-US currency scoring
     "LRHUTTTTGBM156S": {"name": "UK Unemployment Rate", "category": "international", "unit": "percent", "freq": "monthly"},
     "LRHUTTTTDEM156S": {"name": "Germany Unemployment Rate", "category": "international", "unit": "percent", "freq": "monthly"},

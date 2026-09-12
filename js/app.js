@@ -57,6 +57,34 @@ function scoreBadge(score, band) {
   return `<span class="badge ${cls}">${esc(txt)}</span>`;
 }
 
+/* ── verdict rendering (one of five) ────────────────────── */
+const VERDICT_ORDER = ["Very Bearish", "Bearish", "Neutral", "Bullish", "Very Bullish"];
+function verdictBadge(verdict) {
+  const v = String(verdict || "Neutral");
+  const cls = bandClass(v); // reuses bull/bear/dim tones
+  return `<span class="badge vbadge ${cls}">${esc(v)}</span>`;
+}
+function tallyBar(tally) {
+  if (!tally) return '<span class="dim">—</span>';
+  const b = Math.max(0, Number(tally.bullish) || 0);
+  const a = Math.max(0, Number(tally.bearish) || 0);
+  const n = Math.max(0, Number(tally.neutral) || 0);
+  const total = b + a + n;
+  if (!total) return '<span class="dim">no released data</span>';
+  const pc = (x) => Math.round((x / total) * 100);
+  return `<span class="tallybar" title="${b} bullish · ${a} bearish · ${n} neutral">` +
+    `<span class="tb-bull" style="width:${pc(b)}%">&nbsp;</span>` +
+    `<span class="tb-bear" style="width:${pc(a)}%">&nbsp;</span>` +
+    `<span class="tb-neut" style="width:${pc(n)}%">&nbsp;</span></span>` +
+    `<span class="meta">${b}↑ ${a}↓ ${n}→</span>`;
+}
+function verdictTone(verdict) {
+  const i = VERDICT_ORDER.indexOf(String(verdict || "Neutral"));
+  if (i >= 3) return "pos";
+  if (i <= 1) return "neg";
+  return "";
+}
+
 /* ── clock / theme ───────────────────────────────────────── */
 function tickClock() {
   const d = new Date();
@@ -81,6 +109,7 @@ const TABS = [
   { id: "home", label: "Home" },
   { id: "data", label: "Data" },
   { id: "calendar", label: "Calendar" },
+  { id: "news", label: "News Feed" },
   { id: "bias", label: "Bias" },
   { id: "cftc", label: "CFTC" },
   { id: "historical", label: "Historical Data" },
@@ -184,4 +213,4 @@ function bandName(score) {
 /* ── views registry (defined in views.js) ───────────────── */
 const TABS_VIEWS = {};
 
-window.BBF = { switchTab, dispatch, TABS_VIEWS, loadJSON, el, fmt, esc, parseNum, scoreBadge, bandName, mkChart, lineOption, gaugeOption, palette, bandClass, setupThemeToggle, tickClock };
+window.BBF = { switchTab, dispatch, TABS_VIEWS, loadJSON, el, fmt, esc, parseNum, scoreBadge, bandName, mkChart, lineOption, gaugeOption, palette, bandClass, setupThemeToggle, tickClock, verdictBadge, tallyBar, verdictTone, VERDICT_ORDER };

@@ -149,4 +149,13 @@ input.search { font-family: var(--font-mono); }
 .code { font-family: var(--font-mono); font-size: 12px; }
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
+
+/* ── verdict badges & tally bars ───────────────────────── */
+.badge.vbadge { font-size: 12px; padding: 2px 10px; letter-spacing: .3px; }
+.tallybar { display: inline-flex; width: 120px; height: 10px; border-radius: 2px; overflow: hidden; gap: 0; }
+.tb-bull { background: rgba(38,160,99,.55); }
+.tb-bear { background: rgba(224,79,79,.55); }
+.tb-neut { background: rgba(138,143,152,.4); }
+.tallybar + .meta { color: var(--text-faint); font-size: 11px; }
+
 footer { padding: 18px 14px; border-top: 1px solid var(--border); color: var(--text-faint); font-size: 12px; }

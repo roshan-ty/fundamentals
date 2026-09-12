@@ -1,882 +1,456 @@
 {
   "meta": {
-    "updated": "2026-09-12T08:07:30+00:00",
-    "method": "calendar + COT (v2: decay + forecast confirmation + full-weight normalization)"
+    "updated": "2026-09-12T12:36:23+00:00",
+    "method": "verdict v3 (forecast-first, released-only)"
   },
   "currencies": {
     "USD": {
-      "score": 5.08,
-      "band": "Neutral",
-      "net": 0.25,
-      "coverage": 100.0,
-      "total_configured_weight": 16.0,
-      "scored_points": 12,
-      "eligible_points": 29,
-      "cot_tilt": 0.0,
-      "top_drivers": [
+      "verdict": "Neutral",
+      "tally": {
+        "bullish": 1.0,
+        "bearish": 1.5,
+        "neutral": 12.0
+      },
+      "released_points": 11,
+      "drivers": [
         {
-          "event": "Michigan Consumer Sentiment Prel SEP",
+          "dataPoint": "CB Consumer Confidence / UoM Consumer Sentiment",
+          "title": "Michigan Consumer Sentiment Prel SEP",
+          "period": "2026-09-11T18:00+00:00",
+          "actual": "47.8",
+          "previous": "51.7",
+          "forecast": "51.5",
+          "direction": "higher_is_bullish",
           "verdict": "bearish",
-          "weighted": -0.5,
-          "date": "2026-09-11T18:00+00:00"
+          "weight": 0.5
         },
         {
-          "event": "Initial Jobless Claims",
+          "dataPoint": "Unemployment Claims (Weekly)",
+          "title": "Initial Jobless Claims",
+          "period": "2026-09-05T00:00:00+00:00",
+          "actual": "206000.0",
+          "previous": "207000.0",
+          "forecast": "",
+          "direction": "lower_is_bullish",
           "verdict": "bullish",
-          "weighted": 0.46,
-          "date": "2026-09-05T00:00:00+00:00"
+          "weight": 1.0
         },
         {
-          "event": "Unemployment Rate",
-          "verdict": "bullish",
-          "weighted": 0.42,
-          "date": "2026-07-01T00:00:00+00:00"
+          "dataPoint": "CPI & Core CPI (m/m, y/y)",
+          "title": "CPI m/m",
+          "period": "2026-08-01T00:00:00+00:00",
+          "actual": "0.4",
+          "previous": "",
+          "forecast": "",
+          "direction": "higher_is_bullish",
+          "verdict": "neutral",
+          "weight": 2.0
         },
         {
-          "event": "Initial Jobless Claims",
+          "dataPoint": "PPI & Core PPI (m/m)",
+          "title": "PPI m/m",
+          "period": "2026-08-01T00:00:00+00:00",
+          "actual": "0.96",
+          "previous": "",
+          "forecast": "",
+          "direction": "higher_is_bullish",
+          "verdict": "neutral",
+          "weight": 1.0
+        },
+        {
+          "dataPoint": "Non-Farm Employment Change (NFP)",
+          "title": "Non-Farm Employment Change",
+          "period": "2026-08-01T00:00:00+00:00",
+          "actual": "162.0",
+          "previous": "",
+          "forecast": "",
+          "direction": "higher_is_bullish",
+          "verdict": "neutral",
+          "weight": 2.0
+        },
+        {
+          "dataPoint": "Unemployment Rate",
+          "title": "Unemployment Rate",
+          "period": "2026-08-01T00:00:00+00:00",
+          "actual": "4.1",
+          "previous": "4.1",
+          "forecast": "",
+          "direction": "lower_is_bullish",
+          "verdict": "neutral",
+          "weight": 2.0
+        },
+        {
+          "dataPoint": "Core PCE Price Index (m/m, y/y)",
+          "title": "Core PCE Price Index m/m",
+          "period": "2026-07-01T00:00:00+00:00",
+          "actual": "0.25",
+          "previous": "",
+          "forecast": "",
+          "direction": "higher_is_bullish",
+          "verdict": "neutral",
+          "weight": 2.0
+        },
+        {
+          "dataPoint": "Retail Sales & Core Retail Sales (m/m)",
+          "title": "Retail Sales m/m",
+          "period": "2026-07-01T00:00:00+00:00",
+          "actual": "-0.58",
+          "previous": "",
+          "forecast": "",
+          "direction": "higher_is_bullish",
+          "verdict": "neutral",
+          "weight": 1.0
+        },
+        {
+          "dataPoint": "Building Permits & Housing Starts",
+          "title": "Housing Starts",
+          "period": "2026-07-01T00:00:00+00:00",
+          "actual": "1239.0",
+          "previous": "1415.0",
+          "forecast": "",
+          "direction": "higher_is_bullish",
           "verdict": "bearish",
-          "weighted": -0.42,
-          "date": "2026-08-29T00:00:00+00:00"
+          "weight": 0.5
         },
         {
-          "event": "Housing Starts",
+          "dataPoint": "Trade Balance",
+          "title": "Trade Balance",
+          "period": "2026-07-01T00:00:00+00:00",
+          "actual": "-88576.0",
+          "previous": "-71182.0",
+          "forecast": "",
+          "direction": "higher_is_bullish",
           "verdict": "bearish",
-          "weighted": -0.21,
-          "date": "2026-07-01T00:00:00+00:00"
+          "weight": 0.5
         },
         {
-          "event": "Building Permits",
-          "verdict": "bullish",
-          "weighted": 0.21,
-          "date": "2026-07-01T00:00:00+00:00"
-        },
-        {
-          "event": "Trade Balance",
-          "verdict": "bearish",
-          "weighted": -0.21,
-          "date": "2026-07-01T00:00:00+00:00"
-        },
-        {
-          "event": "UoM Consumer Sentiment",
-          "verdict": "bullish",
-          "weighted": 0.21,
-          "date": "2026-07-01T00:00:00+00:00"
+          "dataPoint": "Advance GDP (q/q)",
+          "title": "GDP q/q annualized",
+          "period": "2026-04-01T00:00:00+00:00",
+          "actual": "2.1",
+          "previous": "",
+          "forecast": "",
+          "direction": "higher_is_bullish",
+          "verdict": "neutral",
+          "weight": 2.0
         }
-      ]
+      ],
+      "notes": []
     },
     "EUR": {
-      "score": 4.54,
-      "band": "Neutral",
-      "net": -0.59,
-      "coverage": 21.1,
-      "total_configured_weight": 9.5,
-      "scored_points": 1,
-      "eligible_points": 2,
-      "cot_tilt": -1.0,
-      "top_drivers": [
+      "verdict": "Bearish",
+      "tally": {
+        "bullish": 0.0,
+        "bearish": 2.0,
+        "neutral": 0.0
+      },
+      "released_points": 1,
+      "drivers": [
         {
-          "event": "Unemployment Rate",
+          "dataPoint": "Eurozone Unemployment Rate",
+          "title": "Unemployment Rate",
+          "period": "2026-06-01T00:00:00+00:00",
+          "actual": "3.9",
+          "previous": "3.8",
+          "forecast": "",
+          "direction": "lower_is_bullish",
           "verdict": "bearish",
-          "weighted": -0.29,
-          "date": "2026-06-01T00:00:00+00:00"
+          "weight": 2.0
         }
+      ],
+      "notes": [
+        "limited release evidence; cap at single-step verdict"
       ]
     },
     "GBP": {
-      "score": 6.47,
-      "band": "Bullish",
-      "net": 2.94,
-      "coverage": 50.0,
-      "total_configured_weight": 10.0,
-      "scored_points": 4,
-      "eligible_points": 5,
-      "cot_tilt": -1.0,
-      "top_drivers": [
+      "verdict": "Bullish",
+      "tally": {
+        "bullish": 2.0,
+        "bearish": 0.0,
+        "neutral": 2.0
+      },
+      "released_points": 2,
+      "drivers": [
         {
-          "event": "GDP MoM JUL",
+          "dataPoint": "GDP (m/m, q/q, y/y)",
+          "title": "GDP MoM JUL",
+          "period": "2026-09-11T10:00+00:00",
+          "actual": "0.4%",
+          "previous": "0.3%",
+          "forecast": "0.1%",
+          "direction": "higher_is_bullish",
           "verdict": "bullish",
-          "weighted": 1.0,
-          "date": "2026-09-11T10:00+00:00"
+          "weight": 2.0
         },
         {
-          "event": "GDP YoY JUL",
-          "verdict": "bullish",
-          "weighted": 1.0,
-          "date": "2026-09-11T10:00+00:00"
-        },
-        {
-          "event": "GDP m/m",
-          "verdict": "bullish",
-          "weighted": 0.99,
-          "date": "2026-09-11T06:00+00:00"
-        },
-        {
-          "event": "Unemployment Rate",
-          "verdict": "bullish",
-          "weighted": 0.25,
-          "date": "2026-03-01T00:00:00+00:00"
+          "dataPoint": "Unemployment Rate",
+          "title": "Unemployment Rate",
+          "period": "2026-04-01T00:00:00+00:00",
+          "actual": "4.9",
+          "previous": "4.9",
+          "forecast": "",
+          "direction": "lower_is_bullish",
+          "verdict": "neutral",
+          "weight": 2.0
         }
-      ]
+      ],
+      "notes": []
     },
     "AUD": {
-      "score": 5.2,
-      "band": "Neutral",
-      "net": 0.3,
-      "coverage": 0.0,
-      "total_configured_weight": 7.5,
-      "scored_points": 0,
-      "eligible_points": 0,
-      "cot_tilt": 1.0,
-      "top_drivers": []
+      "verdict": "Neutral",
+      "tally": {
+        "bullish": 0,
+        "bearish": 0,
+        "neutral": 0
+      },
+      "released_points": 0,
+      "drivers": [],
+      "notes": [
+        "no released data yet"
+      ]
     },
     "NZD": {
-      "score": 5.0,
-      "band": "Neutral",
-      "net": 0.0,
-      "coverage": 0.0,
-      "total_configured_weight": 7.0,
-      "scored_points": 0,
-      "eligible_points": 0,
-      "cot_tilt": 0.0,
-      "top_drivers": []
+      "verdict": "Neutral",
+      "tally": {
+        "bullish": 0,
+        "bearish": 0,
+        "neutral": 0
+      },
+      "released_points": 0,
+      "drivers": [],
+      "notes": [
+        "no released data yet"
+      ]
     },
     "CAD": {
-      "score": 5.93,
-      "band": "Neutral",
-      "net": 1.01,
-      "coverage": 26.7,
-      "total_configured_weight": 7.5,
-      "scored_points": 2,
-      "eligible_points": 2,
-      "cot_tilt": 1.0,
-      "top_drivers": [
+      "verdict": "Bullish",
+      "tally": {
+        "bullish": 2.0,
+        "bearish": 0.0,
+        "neutral": 0.0
+      },
+      "released_points": 1,
+      "drivers": [
         {
-          "event": "Unemployment Rate",
+          "dataPoint": "Unemployment Rate",
+          "title": "Unemployment Rate",
+          "period": "2026-07-01T00:00:00+00:00",
+          "actual": "6.4",
+          "previous": "6.5",
+          "forecast": "",
+          "direction": "lower_is_bullish",
           "verdict": "bullish",
-          "weighted": 0.42,
-          "date": "2026-07-01T00:00:00+00:00"
-        },
-        {
-          "event": "Unemployment Rate",
-          "verdict": "bullish",
-          "weighted": 0.29,
-          "date": "2026-06-01T00:00:00+00:00"
+          "weight": 2.0
         }
+      ],
+      "notes": [
+        "limited release evidence; cap at single-step verdict"
       ]
     },
     "JPY": {
-      "score": 4.75,
-      "band": "Neutral",
-      "net": -0.3,
-      "coverage": 0.0,
-      "total_configured_weight": 6.0,
-      "scored_points": 0,
-      "eligible_points": 0,
-      "cot_tilt": -1.0,
-      "top_drivers": []
+      "verdict": "Neutral",
+      "tally": {
+        "bullish": 0,
+        "bearish": 0,
+        "neutral": 0
+      },
+      "released_points": 0,
+      "drivers": [],
+      "notes": [
+        "no released data yet"
+      ]
     },
     "CHF": {
-      "score": 4.7,
-      "band": "Neutral",
-      "net": -0.3,
-      "coverage": 0.0,
-      "total_configured_weight": 5.0,
-      "scored_points": 0,
-      "eligible_points": 0,
-      "cot_tilt": -1.0,
-      "top_drivers": []
+      "verdict": "Neutral",
+      "tally": {
+        "bullish": 0,
+        "bearish": 0,
+        "neutral": 0
+      },
+      "released_points": 0,
+      "drivers": [],
+      "notes": [
+        "no released data yet"
+      ]
     },
     "CNY": {
-      "score": 5.38,
-      "band": "Neutral",
-      "net": 0.3,
-      "coverage": 0.0,
-      "total_configured_weight": 4.0,
-      "scored_points": 0,
-      "eligible_points": 0,
-      "cot_tilt": 1.0,
-      "top_drivers": []
+      "verdict": "Neutral",
+      "tally": {
+        "bullish": 0,
+        "bearish": 0,
+        "neutral": 0
+      },
+      "released_points": 0,
+      "drivers": [],
+      "notes": [
+        "no released data yet"
+      ]
     },
     "MXN": {
-      "score": 5.27,
-      "band": "Neutral",
-      "net": 0.3,
-      "coverage": 0.0,
-      "total_configured_weight": 5.5,
-      "scored_points": 0,
-      "eligible_points": 0,
-      "cot_tilt": 1.0,
-      "top_drivers": []
+      "verdict": "Neutral",
+      "tally": {
+        "bullish": 0,
+        "bearish": 0,
+        "neutral": 0
+      },
+      "released_points": 0,
+      "drivers": [],
+      "notes": [
+        "no released data yet"
+      ]
     },
     "BRL": {
-      "score": 5.27,
-      "band": "Neutral",
-      "net": 0.3,
-      "coverage": 0.0,
-      "total_configured_weight": 5.5,
-      "scored_points": 0,
-      "eligible_points": 0,
-      "cot_tilt": 1.0,
-      "top_drivers": []
+      "verdict": "Neutral",
+      "tally": {
+        "bullish": 0,
+        "bearish": 0,
+        "neutral": 0
+      },
+      "released_points": 0,
+      "drivers": [],
+      "notes": [
+        "no released data yet"
+      ]
     },
     "TRY": {
-      "score": 5.0,
-      "band": "Neutral",
-      "net": 0.0,
-      "coverage": 0.0,
-      "total_configured_weight": 5.0,
-      "scored_points": 0,
-      "eligible_points": 0,
-      "cot_tilt": 0.0,
-      "top_drivers": []
+      "verdict": "Neutral",
+      "tally": {
+        "bullish": 0,
+        "bearish": 0,
+        "neutral": 0
+      },
+      "released_points": 0,
+      "drivers": [],
+      "notes": [
+        "no released data yet"
+      ]
     },
     "ZAR": {
-      "score": 5.0,
-      "band": "Neutral",
-      "net": 0.0,
-      "coverage": 0.0,
-      "total_configured_weight": 5.5,
-      "scored_points": 0,
-      "eligible_points": 0,
-      "cot_tilt": 0.0,
-      "top_drivers": []
+      "verdict": "Neutral",
+      "tally": {
+        "bullish": 0,
+        "bearish": 0,
+        "neutral": 0
+      },
+      "released_points": 0,
+      "drivers": [],
+      "notes": [
+        "no released data yet"
+      ]
     },
     "PLN": {
-      "score": 5.0,
-      "band": "Neutral",
-      "net": 0.0,
-      "coverage": 0.0,
-      "total_configured_weight": 5.0,
-      "scored_points": 0,
-      "eligible_points": 0,
-      "cot_tilt": 0.0,
-      "top_drivers": []
+      "verdict": "Neutral",
+      "tally": {
+        "bullish": 0,
+        "bearish": 0,
+        "neutral": 0
+      },
+      "released_points": 0,
+      "drivers": [],
+      "notes": [
+        "no released data yet"
+      ]
     },
     "HUF": {
-      "score": 5.0,
-      "band": "Neutral",
-      "net": 0.0,
-      "coverage": 0.0,
-      "total_configured_weight": 4.5,
-      "scored_points": 0,
-      "eligible_points": 0,
-      "cot_tilt": 0.0,
-      "top_drivers": []
+      "verdict": "Neutral",
+      "tally": {
+        "bullish": 0,
+        "bearish": 0,
+        "neutral": 0
+      },
+      "released_points": 0,
+      "drivers": [],
+      "notes": [
+        "no released data yet"
+      ]
     },
     "CZK": {
-      "score": 5.0,
-      "band": "Neutral",
-      "net": 0.0,
-      "coverage": 0.0,
-      "total_configured_weight": 4.5,
-      "scored_points": 0,
-      "eligible_points": 0,
-      "cot_tilt": 0.0,
-      "top_drivers": []
+      "verdict": "Neutral",
+      "tally": {
+        "bullish": 0,
+        "bearish": 0,
+        "neutral": 0
+      },
+      "released_points": 0,
+      "drivers": [],
+      "notes": [
+        "no released data yet"
+      ]
     },
     "DKK": {
-      "score": 5.0,
-      "band": "Neutral",
-      "net": 0.0,
-      "coverage": 0.0,
-      "total_configured_weight": 4.5,
-      "scored_points": 0,
-      "eligible_points": 0,
-      "cot_tilt": 0.0,
-      "top_drivers": []
+      "verdict": "Neutral",
+      "tally": {
+        "bullish": 0,
+        "bearish": 0,
+        "neutral": 0
+      },
+      "released_points": 0,
+      "drivers": [],
+      "notes": [
+        "no released data yet"
+      ]
     },
     "NOK": {
-      "score": 5.0,
-      "band": "Neutral",
-      "net": 0.0,
-      "coverage": 0.0,
-      "total_configured_weight": 5.0,
-      "scored_points": 0,
-      "eligible_points": 0,
-      "cot_tilt": 0.0,
-      "top_drivers": []
+      "verdict": "Neutral",
+      "tally": {
+        "bullish": 0,
+        "bearish": 0,
+        "neutral": 0
+      },
+      "released_points": 0,
+      "drivers": [],
+      "notes": [
+        "no released data yet"
+      ]
     },
     "SEK": {
-      "score": 5.0,
-      "band": "Neutral",
-      "net": 0.0,
-      "coverage": 0.0,
-      "total_configured_weight": 5.0,
-      "scored_points": 0,
-      "eligible_points": 0,
-      "cot_tilt": 0.0,
-      "top_drivers": []
+      "verdict": "Neutral",
+      "tally": {
+        "bullish": 0,
+        "bearish": 0,
+        "neutral": 0
+      },
+      "released_points": 0,
+      "drivers": [],
+      "notes": [
+        "no released data yet"
+      ]
     },
     "SGD": {
-      "score": 5.0,
-      "band": "Neutral",
-      "net": 0.0,
-      "coverage": 0.0,
-      "total_configured_weight": 5.0,
-      "scored_points": 0,
-      "eligible_points": 0,
-      "cot_tilt": 0.0,
-      "top_drivers": []
+      "verdict": "Neutral",
+      "tally": {
+        "bullish": 0,
+        "bearish": 0,
+        "neutral": 0
+      },
+      "released_points": 0,
+      "drivers": [],
+      "notes": [
+        "no released data yet"
+      ]
     },
     "HKD": {
-      "score": 5.0,
-      "band": "Neutral",
-      "net": 0.0,
-      "coverage": 0.0,
-      "total_configured_weight": 3.5,
-      "scored_points": 0,
-      "eligible_points": 0,
-      "cot_tilt": 0.0,
-      "top_drivers": []
+      "verdict": "Neutral",
+      "tally": {
+        "bullish": 0,
+        "bearish": 0,
+        "neutral": 0
+      },
+      "released_points": 0,
+      "drivers": [],
+      "notes": [
+        "no released data yet"
+      ]
     }
   },
-  "band_scale": {
-    "0-2": "very bearish",
-    "3-4": "bearish",
-    "5": "neutral",
-    "6-7": "bullish",
-    "8-10": "very bullish"
-  },
-  "detail": {
-    "GBP": [
-      {
-        "event": "GDP m/m",
-        "date": "2026-09-11T06:00+00:00",
-        "impact": "High",
-        "actual": "0.4%",
-        "previous": "0.3%",
-        "forecast": "0.0%",
-        "revision": "",
-        "dataPoint": "GDP (m/m, q/q, y/y)",
-        "direction": "higher_is_bullish",
-        "sign": 1,
-        "weight": 1.0,
-        "verdict": "bullish"
-      },
-      {
-        "event": "GDP MoM JUL",
-        "date": "2026-09-11T10:00+00:00",
-        "impact": "",
-        "actual": "0.4%",
-        "previous": "0.3%",
-        "forecast": "0.1%",
-        "revision": "",
-        "dataPoint": "GDP (m/m, q/q, y/y)",
-        "direction": "higher_is_bullish",
-        "sign": 1,
-        "weight": 1.0,
-        "verdict": "bullish"
-      },
-      {
-        "event": "GDP YoY JUL",
-        "date": "2026-09-11T10:00+00:00",
-        "impact": "",
-        "actual": "1.6%",
-        "previous": "1.1%",
-        "forecast": "1.0%",
-        "revision": "",
-        "dataPoint": "GDP (m/m, q/q, y/y)",
-        "direction": "higher_is_bullish",
-        "sign": 1,
-        "weight": 1.0,
-        "verdict": "bullish"
-      },
-      {
-        "event": "Unemployment Rate",
-        "date": "2026-03-01T00:00:00+00:00",
-        "impact": "High",
-        "actual": "4.9",
-        "previous": "5.0",
-        "forecast": "",
-        "revision": "",
-        "dataPoint": "Unemployment Rate",
-        "direction": "lower_is_bullish",
-        "sign": 1,
-        "weight": 1.0,
-        "verdict": "bullish"
-      },
-      {
-        "event": "Unemployment Rate",
-        "date": "2026-04-01T00:00:00+00:00",
-        "impact": "High",
-        "actual": "4.9",
-        "previous": "4.9",
-        "forecast": "",
-        "revision": "",
-        "dataPoint": "Unemployment Rate",
-        "direction": "lower_is_bullish",
-        "sign": 0,
-        "weight": 1.0,
-        "verdict": "neutral"
-      }
-    ],
-    "USD": [
-      {
-        "event": "Michigan Consumer Sentiment Prel SEP",
-        "date": "2026-09-11T18:00+00:00",
-        "impact": "",
-        "actual": "47.8",
-        "previous": "51.7",
-        "forecast": "51.5",
-        "revision": "",
-        "dataPoint": "CB Consumer Confidence / UoM Consumer Sentiment",
-        "direction": "higher_is_bullish",
-        "sign": -1,
-        "weight": 0.5,
-        "verdict": "bearish"
-      },
-      {
-        "event": "GDP q/q annualized",
-        "date": "2026-01-01T00:00:00+00:00",
-        "impact": "High",
-        "actual": "2.68",
-        "previous": "",
-        "forecast": "",
-        "revision": "",
-        "dataPoint": "Advance GDP (q/q)",
-        "direction": "higher_is_bullish",
-        "sign": 0,
-        "weight": 1.5,
-        "verdict": "neutral"
-      },
-      {
-        "event": "GDP q/q annualized",
-        "date": "2026-04-01T00:00:00+00:00",
-        "impact": "High",
-        "actual": "2.1",
-        "previous": "",
-        "forecast": "",
-        "revision": "",
-        "dataPoint": "Advance GDP (q/q)",
-        "direction": "higher_is_bullish",
-        "sign": 0,
-        "weight": 1.5,
-        "verdict": "neutral"
-      },
-      {
-        "event": "Core PCE Price Index m/m",
-        "date": "2026-06-01T00:00:00+00:00",
-        "impact": "Medium",
-        "actual": "0.15",
-        "previous": "",
-        "forecast": "",
-        "revision": "",
-        "dataPoint": "Core PCE Price Index (m/m, y/y)",
-        "direction": "higher_is_bullish",
-        "sign": 0,
-        "weight": 1.5,
-        "verdict": "neutral"
-      },
-      {
-        "event": "Retail Sales m/m",
-        "date": "2026-06-01T00:00:00+00:00",
-        "impact": "Medium",
-        "actual": "0.25",
-        "previous": "",
-        "forecast": "",
-        "revision": "",
-        "dataPoint": "Retail Sales & Core Retail Sales (m/m)",
-        "direction": "higher_is_bullish",
-        "sign": 0,
-        "weight": 1.0,
-        "verdict": "neutral"
-      },
-      {
-        "event": "Housing Starts",
-        "date": "2026-06-01T00:00:00+00:00",
-        "impact": "Medium",
-        "actual": "1415.0",
-        "previous": "1182.0",
-        "forecast": "",
-        "revision": "",
-        "dataPoint": "Building Permits & Housing Starts",
-        "direction": "higher_is_bullish",
-        "sign": 1,
-        "weight": 0.5,
-        "verdict": "bullish"
-      },
-      {
-        "event": "Building Permits",
-        "date": "2026-06-01T00:00:00+00:00",
-        "impact": "Medium",
-        "actual": "1374.0",
-        "previous": "1410.0",
-        "forecast": "",
-        "revision": "",
-        "dataPoint": "Building Permits & Housing Starts",
-        "direction": "higher_is_bullish",
-        "sign": -1,
-        "weight": 0.5,
-        "verdict": "bearish"
-      },
-      {
-        "event": "Trade Balance",
-        "date": "2026-06-01T00:00:00+00:00",
-        "impact": "Medium",
-        "actual": "-71182.0",
-        "previous": "-75752.0",
-        "forecast": "",
-        "revision": "",
-        "dataPoint": "Trade Balance",
-        "direction": "higher_is_bullish",
-        "sign": 1,
-        "weight": 0.5,
-        "verdict": "bullish"
-      },
-      {
-        "event": "UoM Consumer Sentiment",
-        "date": "2026-06-01T00:00:00+00:00",
-        "impact": "Medium",
-        "actual": "49.5",
-        "previous": "44.8",
-        "forecast": "",
-        "revision": "",
-        "dataPoint": "CB Consumer Confidence / UoM Consumer Sentiment",
-        "direction": "higher_is_bullish",
-        "sign": 1,
-        "weight": 0.5,
-        "verdict": "bullish"
-      },
-      {
-        "event": "CPI m/m",
-        "date": "2026-07-01T00:00:00+00:00",
-        "impact": "High",
-        "actual": "0.07",
-        "previous": "",
-        "forecast": "",
-        "revision": "",
-        "dataPoint": "CPI & Core CPI (m/m, y/y)",
-        "direction": "higher_is_bullish",
-        "sign": 0,
-        "weight": 1.5,
-        "verdict": "neutral"
-      },
-      {
-        "event": "Core CPI m/m",
-        "date": "2026-07-01T00:00:00+00:00",
-        "impact": "High",
-        "actual": "0.22",
-        "previous": "",
-        "forecast": "",
-        "revision": "",
-        "dataPoint": "CPI & Core CPI (m/m, y/y)",
-        "direction": "higher_is_bullish",
-        "sign": 0,
-        "weight": 1.5,
-        "verdict": "neutral"
-      },
-      {
-        "event": "PPI m/m",
-        "date": "2026-07-01T00:00:00+00:00",
-        "impact": "Medium",
-        "actual": "-0.29",
-        "previous": "",
-        "forecast": "",
-        "revision": "",
-        "dataPoint": "PPI & Core PPI (m/m)",
-        "direction": "higher_is_bullish",
-        "sign": 0,
-        "weight": 1.0,
-        "verdict": "neutral"
-      },
-      {
-        "event": "Core PPI m/m",
-        "date": "2026-07-01T00:00:00+00:00",
-        "impact": "Medium",
-        "actual": "0.27",
-        "previous": "",
-        "forecast": "",
-        "revision": "",
-        "dataPoint": "PPI & Core PPI (m/m)",
-        "direction": "higher_is_bullish",
-        "sign": 0,
-        "weight": 1.0,
-        "verdict": "neutral"
-      },
-      {
-        "event": "Core PCE Price Index m/m",
-        "date": "2026-07-01T00:00:00+00:00",
-        "impact": "Medium",
-        "actual": "0.25",
-        "previous": "",
-        "forecast": "",
-        "revision": "",
-        "dataPoint": "Core PCE Price Index (m/m, y/y)",
-        "direction": "higher_is_bullish",
-        "sign": 0,
-        "weight": 1.5,
-        "verdict": "neutral"
-      },
-      {
-        "event": "Non-Farm Employment Change",
-        "date": "2026-07-01T00:00:00+00:00",
-        "impact": "High",
-        "actual": "21.0",
-        "previous": "",
-        "forecast": "",
-        "revision": "",
-        "dataPoint": "Non-Farm Employment Change (NFP)",
-        "direction": "higher_is_bullish",
-        "sign": 0,
-        "weight": 1.5,
-        "verdict": "neutral"
-      },
-      {
-        "event": "Unemployment Rate",
-        "date": "2026-07-01T00:00:00+00:00",
-        "impact": "High",
-        "actual": "4.1",
-        "previous": "4.2",
-        "forecast": "",
-        "revision": "",
-        "dataPoint": "Unemployment Rate",
-        "direction": "lower_is_bullish",
-        "sign": 1,
-        "weight": 1.0,
-        "verdict": "bullish"
-      },
-      {
-        "event": "Retail Sales m/m",
-        "date": "2026-07-01T00:00:00+00:00",
-        "impact": "Medium",
-        "actual": "-0.58",
-        "previous": "",
-        "forecast": "",
-        "revision": "",
-        "dataPoint": "Retail Sales & Core Retail Sales (m/m)",
-        "direction": "higher_is_bullish",
-        "sign": 0,
-        "weight": 1.0,
-        "verdict": "neutral"
-      },
-      {
-        "event": "Housing Starts",
-        "date": "2026-07-01T00:00:00+00:00",
-        "impact": "Medium",
-        "actual": "1239.0",
-        "previous": "1415.0",
-        "forecast": "",
-        "revision": "",
-        "dataPoint": "Building Permits & Housing Starts",
-        "direction": "higher_is_bullish",
-        "sign": -1,
-        "weight": 0.5,
-        "verdict": "bearish"
-      },
-      {
-        "event": "Building Permits",
-        "date": "2026-07-01T00:00:00+00:00",
-        "impact": "Medium",
-        "actual": "1433.0",
-        "previous": "1374.0",
-        "forecast": "",
-        "revision": "",
-        "dataPoint": "Building Permits & Housing Starts",
-        "direction": "higher_is_bullish",
-        "sign": 1,
-        "weight": 0.5,
-        "verdict": "bullish"
-      },
-      {
-        "event": "Trade Balance",
-        "date": "2026-07-01T00:00:00+00:00",
-        "impact": "Medium",
-        "actual": "-88576.0",
-        "previous": "-71182.0",
-        "forecast": "",
-        "revision": "",
-        "dataPoint": "Trade Balance",
-        "direction": "higher_is_bullish",
-        "sign": -1,
-        "weight": 0.5,
-        "verdict": "bearish"
-      },
-      {
-        "event": "UoM Consumer Sentiment",
-        "date": "2026-07-01T00:00:00+00:00",
-        "impact": "Medium",
-        "actual": "55.2",
-        "previous": "49.5",
-        "forecast": "",
-        "revision": "",
-        "dataPoint": "CB Consumer Confidence / UoM Consumer Sentiment",
-        "direction": "higher_is_bullish",
-        "sign": 1,
-        "weight": 0.5,
-        "verdict": "bullish"
-      },
-      {
-        "event": "CPI m/m",
-        "date": "2026-08-01T00:00:00+00:00",
-        "impact": "High",
-        "actual": "0.4",
-        "previous": "",
-        "forecast": "",
-        "revision": "",
-        "dataPoint": "CPI & Core CPI (m/m, y/y)",
-        "direction": "higher_is_bullish",
-        "sign": 0,
-        "weight": 1.5,
-        "verdict": "neutral"
-      },
-      {
-        "event": "Core CPI m/m",
-        "date": "2026-08-01T00:00:00+00:00",
-        "impact": "High",
-        "actual": "0.29",
-        "previous": "",
-        "forecast": "",
-        "revision": "",
-        "dataPoint": "CPI & Core CPI (m/m, y/y)",
-        "direction": "higher_is_bullish",
-        "sign": 0,
-        "weight": 1.5,
-        "verdict": "neutral"
-      },
-      {
-        "event": "PPI m/m",
-        "date": "2026-08-01T00:00:00+00:00",
-        "impact": "Medium",
-        "actual": "0.96",
-        "previous": "",
-        "forecast": "",
-        "revision": "",
-        "dataPoint": "PPI & Core PPI (m/m)",
-        "direction": "higher_is_bullish",
-        "sign": 0,
-        "weight": 1.0,
-        "verdict": "neutral"
-      },
-      {
-        "event": "Core PPI m/m",
-        "date": "2026-08-01T00:00:00+00:00",
-        "impact": "Medium",
-        "actual": "0.16",
-        "previous": "",
-        "forecast": "",
-        "revision": "",
-        "dataPoint": "PPI & Core PPI (m/m)",
-        "direction": "higher_is_bullish",
-        "sign": 0,
-        "weight": 1.0,
-        "verdict": "neutral"
-      },
-      {
-        "event": "Non-Farm Employment Change",
-        "date": "2026-08-01T00:00:00+00:00",
-        "impact": "High",
-        "actual": "162.0",
-        "previous": "",
-        "forecast": "",
-        "revision": "",
-        "dataPoint": "Non-Farm Employment Change (NFP)",
-        "direction": "higher_is_bullish",
-        "sign": 0,
-        "weight": 1.5,
-        "verdict": "neutral"
-      },
-      {
-        "event": "Unemployment Rate",
-        "date": "2026-08-01T00:00:00+00:00",
-        "impact": "High",
-        "actual": "4.1",
-        "previous": "4.1",
-        "forecast": "",
-        "revision": "",
-        "dataPoint": "Unemployment Rate",
-        "direction": "lower_is_bullish",
-        "sign": 0,
-        "weight": 1.0,
-        "verdict": "neutral"
-      },
-      {
-        "event": "Initial Jobless Claims",
-        "date": "2026-08-29T00:00:00+00:00",
-        "impact": "Medium",
-        "actual": "207000.0",
-        "previous": "204000.0",
-        "forecast": "",
-        "revision": "",
-        "dataPoint": "Unemployment Claims (Weekly)",
-        "direction": "lower_is_bullish",
-        "sign": -1,
-        "weight": 0.5,
-        "verdict": "bearish"
-      },
-      {
-        "event": "Initial Jobless Claims",
-        "date": "2026-09-05T00:00:00+00:00",
-        "impact": "Medium",
-        "actual": "206000.0",
-        "previous": "207000.0",
-        "forecast": "",
-        "revision": "",
-        "dataPoint": "Unemployment Claims (Weekly)",
-        "direction": "lower_is_bullish",
-        "sign": 1,
-        "weight": 0.5,
-        "verdict": "bullish"
-      }
-    ],
-    "EUR": [
-      {
-        "event": "Unemployment Rate",
-        "date": "2026-05-01T00:00:00+00:00",
-        "impact": "High",
-        "actual": "3.8",
-        "previous": "3.8",
-        "forecast": "",
-        "revision": "",
-        "dataPoint": "Eurozone Unemployment Rate",
-        "direction": "lower_is_bullish",
-        "sign": 0,
-        "weight": 1.0,
-        "verdict": "neutral"
-      },
-      {
-        "event": "Unemployment Rate",
-        "date": "2026-06-01T00:00:00+00:00",
-        "impact": "High",
-        "actual": "3.9",
-        "previous": "3.8",
-        "forecast": "",
-        "revision": "",
-        "dataPoint": "Eurozone Unemployment Rate",
-        "direction": "lower_is_bullish",
-        "sign": -1,
-        "weight": 1.0,
-        "verdict": "bearish"
-      }
-    ],
-    "CAD": [
-      {
-        "event": "Unemployment Rate",
-        "date": "2026-06-01T00:00:00+00:00",
-        "impact": "High",
-        "actual": "6.5",
-        "previous": "6.6",
-        "forecast": "",
-        "revision": "",
-        "dataPoint": "Unemployment Rate",
-        "direction": "lower_is_bullish",
-        "sign": 1,
-        "weight": 1.0,
-        "verdict": "bullish"
-      },
-      {
-        "event": "Unemployment Rate",
-        "date": "2026-07-01T00:00:00+00:00",
-        "impact": "High",
-        "actual": "6.4",
-        "previous": "6.5",
-        "forecast": "",
-        "revision": "",
-        "dataPoint": "Unemployment Rate",
-        "direction": "lower_is_bullish",
-        "sign": 1,
-        "weight": 1.0,
-        "verdict": "bullish"
-      }
-    ]
+  "context": {
+    "real_yield_sig": 1,
+    "dxy_sig": -1,
+    "m2_sig": 1,
+    "china_pmi_sig": 0,
+    "oil_direction": "flat",
+    "risk_mode": "flat",
+    "dxy_level": 99.03,
+    "gold_level": 4390.39382
   }
 }

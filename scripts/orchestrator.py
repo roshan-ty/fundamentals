@@ -46,10 +46,11 @@ def meta_write(pipeline, stages):
 
 def all_pipeline():
     e = env()
-    from collectors import fred, forexfactory, national_actuals, cftc, quotes, news
+    from collectors import fred, forexfactory, national_actuals, calendar_fallbacks, cftc, quotes, news
     stages = {}
     stages["fred"] = run(lambda: fred.collect(e.get("FRED_KEY", "")), "fred")
     stages["calendar"] = run(lambda: forexfactory.collect(), "calendar")
+    stages["year_calendar"] = run(lambda: calendar_fallbacks.collect_year_calendar(), "year calendar")
     stages["actuals"] = run(lambda: national_actuals.collect(), "actuals")
     stages["cftc"] = run(lambda: cftc.collect(), "cftc")
     stages["quotes"] = run(lambda: quotes.collect(e, scope="daily"), "quotes")
@@ -61,15 +62,10 @@ def all_pipeline():
 
 
 def scoring_pipeline():
-    from scoring import score, cot, instruments, pairs, narrative, setups
+    from scoring import cot, verdicts
     stages = {}
-    stages["verdicts"] = run(score.attach_event_verdicts, "event verdicts")
-    stages["currencies"] = run(score.score_currencies, "currency scoring")
-    stages["cot"] = run(cot.collect, "cot scoring")
-    stages["instruments"] = run(instruments.score_instruments, "instrument scoring")
-    stages["pairs"] = run(pairs.score_pairs, "pair scoring")
-    stages["narratives"] = run(narrative.collect, "narratives")
-    stages["setups"] = run(setups.collect, "setups")
+    stages["cot"] = run(cot.collect, "cot positioning")
+    stages["verdicts"] = run(verdicts.collect, "verdict engine")
     meta_write("scoring", stages)
     return stages
 

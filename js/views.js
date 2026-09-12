@@ -24,24 +24,23 @@
     for (const code of order) {
       if (cur[code]) {
         const c = cur[code];
-        cards.push({ code, name: code, score: c.score, band: c.band, type: "currency",
-                     drivers: (c.top_drivers || []).slice(0, 3) });
+        cards.push({ code, name: code, verdict: c.verdict, tally: c.tally, type: "currency",
+                     drivers: (c.drivers || []).slice(0, 2).map((d) => d.dataPoint) });
       } else if (inst[code]) {
         const c = inst[code];
-        cards.push({ code, name: c.name || code, score: c.score, band: c.band, type: c.biasType,
-                     drivers: [] });
+        cards.push({ code, name: code, verdict: c.verdict, tally: null, type: "instrument",
+                     drivers: (c.notes || []).slice(0, 1) });
       }
     }
 
     const grid = el("div", "grid cards");
     for (const c of cards) {
       const card = el("div", "card");
-      const tone = c.score >= 6 ? "pos" : (c.score <= 4 ? "neg" : "");
       card.innerHTML = `
         <div class="lbl">${esc(c.name)} · ${esc(c.type)}</div>
-        <div class="big ${tone}">${fmt(c.score, 1)}<span class="dim">/10</span></div>
-        <div>${scoreBadge(c.score, c.band)}</div>
-        <div class="dim" style="font-size:11px">${c.drivers.slice(0, 2).map((d) => esc(d.event)).join(" · ") || "—"}</div>`;
+        <div class="big ${B.verdictTone(c.verdict)}">${B.verdictBadge(c.verdict)}</div>
+        <div style="font-size:11px">${B.tallyBar(c.tally)}</div>
+        <div class="dim" style="font-size:11px">${(c.drivers || []).slice(0, 2).map(esc).join(" · ") || "—"}</div>`;
       card.onclick = () => B.switchTab("data");
       grid.appendChild(card);
     }
@@ -89,17 +88,20 @@
     };
 
     const sym = dataInstrument;
-    let score = null, band = "No Score", biasType = "direct";
+    let verdict = null, tally = null, drivers = [], biasType = "direct";
     if (cur[sym]) {
-      score = cur[sym].score; band = cur[sym].band; biasType = "currency";
+      verdict = cur[sym].verdict; tally = cur[sym].tally;
+      drivers = cur[sym].drivers || []; biasType = "currency";
     } else if (inst[sym]) {
-      score = inst[sym].score; band = inst[sym].band; biasType = inst[sym].biasType || "direct";
+      verdict = inst[sym].verdict; biasType = "instrument";
+      drivers = (inst[sym].notes || []).map((n) => ({ note: n }));
     }
 
     const head = el("div", "grid cards");
     const c1 = el("div", "card");
-    const tone = score >= 6 ? "pos" : (score <= 4 ? "neg" : "");
-    c1.innerHTML = `<div class="lbl">${esc(sym)} · ${esc(biasType)}</div><div class="big ${tone}">${fmt(score, 1)}<span class="dim">/10</span></div><div>${scoreBadge(score, band)}</div>`;
+    c1.innerHTML = `<div class="lbl">${esc(sym)} · ${esc(biasType)}</div>
+      <div class="big">${B.verdictBadge(verdict)}</div>
+      <div style="font-size:11px">${B.tallyBar(tally)}</div>`;
     head.appendChild(c1);
     root.appendChild(head);
 
@@ -114,14 +116,15 @@
       `</tbody></table>`;
     root.appendChild(evPanel);
 
-    // Scored drivers detail
-    const curDetail = (currencies.detail || {})[sym] || [];
-    if (curDetail.length) {
+    // Released drivers detail
+    const curRec = cur[sym];
+    const curDrivers = curRec ? (curRec.drivers || []) : [];
+    if (curDrivers.length) {
       const dp = el("div", "panel");
-      dp.innerHTML = `<h3>Bias Scoring — ${esc(sym)}</h3><table class="data"><thead><tr><th>Data Point</th><th>Actual</th><th>Previous</th><th>Verdict</th><th class="num">Weight</th></tr></thead><tbody>` +
-        curDetail.map((d) => `<tr><td>${esc(d.event)}</td><td class="num">${esc(d.actual)}</td><td class="num">${esc(d.previous)}</td>
-          <td><span class="${d.verdict === "bullish" ? "pos" : (d.verdict === "bearish" ? "neg" : "dim")}">${esc(d.verdict)}</span></td>
-          <td class="num">${d.weight}</td></tr>`).join("") + `</tbody></table>`;
+      dp.innerHTML = `<h3>Released Readings — ${esc(sym)}</h3><table class="data"><thead><tr><th>Data Point</th><th>Period</th><th class="num">Actual</th><th class="num">Prev</th><th class="num">Forecast</th><th>Verdict</th></tr></thead><tbody>` +
+        curDrivers.map((d) => `<tr><td>${esc(d.dataPoint || d.title)}</td><td class="num">${esc((d.period || "").slice(0, 10))}</td>
+          <td class="num">${esc(d.actual)}</td><td class="num">${esc(d.previous || "—")}</td><td class="num">${esc(d.forecast || "—")}</td>
+          <td><span class="${bandClass(d.verdict)}">${esc(d.verdict)}</span></td></tr>`).join("") + `</tbody></table>`;
       root.appendChild(dp);
     }
 
@@ -169,23 +172,24 @@
   async function viewBias(root) {
     const pairs = await loadJSON("bias/pairs.json", {});
     const list = pairs.pairs || [];
+    const scored = list.filter((p) => p.verdict && p.verdict !== "No Score").length;
     const panel = el("div", "panel");
-    const scored = list.filter((p) => p.score !== null).length;
-    panel.innerHTML = `<h3>Pair Bias — ${esc(list.length)} instruments · ${scored} scored</h3>
+    panel.innerHTML = `<h3>Pair Bias — ${esc(list.length)} instruments · ${scored} with verdict</h3>
       <input class="search" id="biasSearch" placeholder="Search pair…">
-      <table class="data"><thead><tr><th>Symbol</th><th>Name</th><th class="num">Score</th><th>Band</th><th>Type</th><th>Read</th></tr></thead>
+      <table class="data"><thead><tr><th>Symbol</th><th>Verdict</th><th>Base</th><th>Quote</th><th>Class</th><th>Drivers</th></tr></thead>
       <tbody id="biasBody"></tbody></table>`;
     root.appendChild(panel);
     const body = document.getElementById("biasBody");
     function render(filter) {
       const f = (filter || "").toLowerCase();
-      const rows = list.filter((p) => !f || p.symbol.toLowerCase().includes(f) || (p.name || "").toLowerCase().includes(f));
+      const rows = list.filter((p) => !f || p.symbol.toLowerCase().includes(f) || (p.base || "").toLowerCase().includes(f));
       body.innerHTML = rows.map((p) => `<tr>
-        <td><strong>${esc(p.symbol)}</strong></td><td>${esc(p.name || "")}</td>
-        <td class="num ${p.score && p.score >= 6 ? "pos" : (p.score && p.score <= 4 ? "neg" : "")}">${fmt(p.score, 2)}</td>
-        <td>${scoreBadge(p.score, p.band)}</td>
-        <td class="dim">${esc(p.biasType || "")}</td>
-        <td class="dim">${esc(p.direction || "")}${p.score === null ? " (data pending)" : ""}</td></tr>`).join("") || `<tr><td colspan="6" class="dim">No pairs.</td></tr>`;
+        <td><strong>${esc(p.symbol)}</strong></td>
+        <td>${B.verdictBadge(p.verdict)}</td>
+        <td class="dim">${esc(p.base || "")} ${esc(p.base_verdict || "")}</td>
+        <td class="dim">${esc(p.quote || "")} ${esc(p.quote_verdict || "")}</td>
+        <td class="dim">${esc(p.class || "")}</td>
+        <td class="dim">${esc((p.drivers || []).slice(0, 2).join(" · "))}</td></tr>`).join("") || `<tr><td colspan="6" class="dim">No pairs.</td></tr>`;
     }
     render("");
     document.getElementById("biasSearch").oninput = function () { render(this.value); };
@@ -349,21 +353,64 @@
     const list = data.setups || [];
     const panel = el("div", "panel");
     panel.innerHTML = `<h3>Top Setups</h3>
-      <table class="data"><thead><tr><th>Rank</th><th>Symbol</th><th class="num">Score</th><th>Direction</th><th>Band</th><th class="num">Confidence</th><th>Type</th><th>Rationale</th></tr></thead><tbody>` +
+      <table class="data"><thead><tr><th>Rank</th><th>Symbol</th><th>Verdict</th><th>Direction</th><th class="num">Confidence</th><th>Rationale</th></tr></thead><tbody>` +
       list.map((s, i) => `<tr><td class="num">${i + 1}</td><td><strong>${esc(s.symbol)}</strong></td>
-        <td class="num ${s.score >= 6 ? "pos" : (s.score <= 4 ? "neg" : "")}">${fmt(s.score, 2)}</td>
+        <td>${B.verdictBadge(s.verdict)}</td>
         <td><span class="${s.direction === "Buy" ? "pos" : (s.direction === "Sell" ? "neg" : "dim")}">${esc(s.direction)}</span></td>
-        <td>${scoreBadge(s.score, s.band)}</td>
         <td class="num">${fmt(s.confidence, 2)}</td>
-        <td class="dim">${esc(s.biasType || "")}</td>
-        <td class="dim">${esc((s.rationale || "").slice(0, 100))}</td></tr>`).join("") + `</tbody></table>`;
+        <td class="dim">${esc((s.rationale || "").slice(0, 120))}</td></tr>`).join("") + `</tbody></table>`;
     if (!list.length) panel.innerHTML = `<h3>Top Setups</h3><div class="dim">No setups ranked yet.</div>`;
     root.appendChild(panel);
+  }
+
+  /* ── NEWS FEED ────────────────────────────────────────── */
+  async function viewNewsFeed(root) {
+    const news = await loadJSON("news/feed.json", []);
+    const items = (Array.isArray(news) ? news : []).filter((n) => n.headline);
+    items.sort((a, b) => (b.published || "").localeCompare(a.published || ""));
+    const tags = [...new Set(items.flatMap((n) => n.tags || []))].sort();
+    const panel = el("div", "panel");
+    panel.innerHTML = `<h3>News Feed — ${items.length} stories (latest first)</h3>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px">
+        <input class="search" id="newsSearch" placeholder="Search…">
+        <button class="toggle-theme" id="newsTagAll" style="display:none"></button>
+      </div>
+      <div id="newsTags" style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px">
+        <span class="badge Neutral" data-tag="" style="cursor:pointer">All</span>
+        ${tags.map((t) => `<span class="badge Neutral" data-tag="${esc(t)}" style="cursor:pointer">${esc(t)}</span>`).join("")}
+      </div>
+      <div id="newsList"></div>`;
+    root.appendChild(panel);
+    const listEl = document.getElementById("newsList");
+    let activeTag = "";
+    function render() {
+      const q = (document.getElementById("newsSearch").value || "").toLowerCase();
+      const rows = items.filter((n) =>
+        (!activeTag || (n.tags || []).includes(activeTag)) &&
+        (!q || n.headline.toLowerCase().includes(q) || (n.snippet || "").toLowerCase().includes(q)));
+      listEl.innerHTML = rows.map((n) => `<div class="news-item">
+        <a class="hl" href="${esc(n.url || "#")}" target="_blank" rel="noopener noreferrer">${esc(n.headline)}</a>
+        <div class="sn dim">${esc((n.snippet || "").slice(0, 260))}</div>
+        <div class="meta">${esc((n.published || "").slice(0, 16))} · ${esc((n.tags || []).join(" · "))}</div></div>`).join("") ||
+        `<div class="dim">No stories match.</div>`;
+    }
+    render();
+    document.getElementById("newsSearch").oninput = render;
+    document.getElementById("newsTags").querySelectorAll("[data-tag]").forEach((elTag) => {
+      elTag.onclick = () => {
+        activeTag = elTag.dataset.tag || "";
+        document.getElementById("newsTags").querySelectorAll("[data-tag]").forEach((t) => {
+          t.className = (t.dataset.tag === activeTag) ? "badge pos" : "badge Neutral";
+        });
+        render();
+      };
+    });
   }
 
   B.TABS_VIEWS["home"] = viewHome;
   B.TABS_VIEWS["data"] = viewData;
   B.TABS_VIEWS["calendar"] = viewCalendar;
+  B.TABS_VIEWS["news"] = viewNewsFeed;
   B.TABS_VIEWS["bias"] = viewBias;
   B.TABS_VIEWS["cftc"] = viewCFTC;
   B.TABS_VIEWS["historical"] = viewHistorical;

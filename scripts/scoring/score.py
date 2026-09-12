@@ -359,26 +359,33 @@ def score_currencies():
 
 
 def attach_event_verdicts():
-    """Attach bullish/bearish/neutral verdict per released calendar event so the
-    Calendar + Data tabs display the direction the scoring engine derives."""
+    """Attach bullish/bearish/neutral verdict per released calendar event.
+    Forecast-first: beats forecast = bullish; misses = bearish; matches = neutral.
+    Fallback actual-vs-previous when no forecast exists."""
     sc = load_scorecard()
     path = os.path.join(DATA_DIR, "calendar", "events_current.json")
     evs = load_json(path, default=[])
     changed = 0
     for ev in evs:
-        if not ev.get("actual") or not ev.get("previous"):
+        if not ev.get("actual"):
             continue
         dp = match_data_point(sc, ev.get("country"), ev.get("title"))
         if not dp:
             continue
-        sign = decide(ev.get("actual"), ev.get("previous"), dp["direction"])
-        verdict = "neutral" if sign == 0 else ("bullish" if sign > 0 else "bearish")
+        verdict = _event_verdict(ev, dp["direction"])
         if ev.get("verdict") != verdict:
             ev["verdict"] = verdict
             changed += 1
     save_json(path, evs)
     log(f"Event verdicts: {changed} updated/{len(evs)} events")
     return changed
+
+
+def _event_verdict(ev, direction):
+    from scoring.verdicts import data_point_verdict
+    base = dict(actual=ev.get("actual"), previous=ev.get("previous"),
+                forecast=ev.get("forecast"), direction=direction)
+    return data_point_verdict(base)
 
 
 if __name__ == "__main__":

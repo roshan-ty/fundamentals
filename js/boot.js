@@ -6,6 +6,7 @@
     { id: "home", label: "Home" },
     { id: "data", label: "Data" },
     { id: "calendar", label: "Calendar" },
+    { id: "news", label: "News Feed" },
     { id: "bias", label: "Bias" },
     { id: "cftc", label: "CFTC" },
     { id: "historical", label: "Historical Data" },

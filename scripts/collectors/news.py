@@ -38,7 +38,7 @@ def fetch_newsdata(http, key, categories="business,technology,top"):
     return out
 
 
-def fetch_finnhub_news(http, key, categories=("general",)):
+def fetch_finnhub_news(http, key, categories=("general", "forex", "crypto")):
     """Intraday financial + geopolitical headlines (free tier, 60/min)."""
     out = []
     for cat in categories:
@@ -54,6 +54,7 @@ def fetch_finnhub_news(http, key, categories=("general",)):
                     "source": "markets",
                     "published": dt,
                     "tags": [],
+                    "kind": cat,
                 })
         except Exception as exc:
             log(f"Finnhub news({cat}) failed: {str(exc)[:80]}", "WARN")

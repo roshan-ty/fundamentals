@@ -1,406 +1,248 @@
 {
   "meta": {
-    "updated": "2026-09-12T08:07:30+00:00"
+    "updated": "2026-09-12T12:36:23+00:00",
+    "method": "verdict v3"
   },
   "instruments": {
     "XAUUSD": {
-      "name": "Gold",
-      "type": "metal",
-      "biasType": "direct",
-      "score": 6.67,
-      "band": "Bullish",
-      "components": {
-        "inverse_usd": -0.016,
-        "usd_score": 5.08,
-        "cot_tilt": 1,
-        "cot_contribution": 0.35
-      },
-      "cot": {
-        "week": "2026-09-08",
-        "report_date": "2026-09-08"
-      }
+      "verdict": "Bearish",
+      "halo": "signal -1",
+      "notes": [
+        "positioning tilt contributes",
+        "real-yield rising (headwind)",
+        "USD index weak (supportive)"
+      ],
+      "cot_tilt": -1.0
     },
     "XAGUSD": {
-      "name": "Silver",
-      "type": "metal",
-      "biasType": "direct",
-      "score": 3.17,
-      "band": "Bearish",
-      "components": {
-        "inverse_usd": -0.016,
-        "usd_score": 5.08,
-        "cot_tilt": -1,
-        "cot_contribution": -0.35
-      },
-      "cot": {
-        "week": "2026-09-08",
-        "report_date": "2026-09-08"
-      }
+      "verdict": "Bullish",
+      "halo": "signal +1",
+      "notes": [
+        "positioning tilt contributes",
+        "real-yield rising (headwind)",
+        "USD index weak (supportive)"
+      ],
+      "cot_tilt": 1.0
     },
     "XPTUSD": {
-      "name": "Platinum",
-      "type": "metal",
-      "biasType": "direct",
-      "score": 6.67,
-      "band": "Bullish",
-      "components": {
-        "inverse_usd": -0.016,
-        "usd_score": 5.08,
-        "cot_tilt": 1,
-        "cot_contribution": 0.35
-      },
-      "cot": {
-        "week": "2026-09-08",
-        "report_date": "2026-09-08"
-      }
+      "verdict": "Bearish",
+      "halo": "signal -1",
+      "notes": [
+        "positioning tilt contributes",
+        "real-yield rising (headwind)",
+        "USD index weak (supportive)"
+      ],
+      "cot_tilt": -1.0
     },
     "XPDUSD": {
-      "name": "Palladium",
-      "type": "metal",
-      "biasType": "direct",
-      "score": 6.67,
-      "band": "Bullish",
-      "components": {
-        "inverse_usd": -0.016,
-        "usd_score": 5.08,
-        "cot_tilt": 1,
-        "cot_contribution": 0.35
-      },
-      "cot": {
-        "week": "2026-09-08",
-        "report_date": "2026-09-08"
-      }
+      "verdict": "Bullish",
+      "halo": "signal +1",
+      "notes": [
+        "positioning tilt contributes",
+        "real-yield rising (headwind)",
+        "USD index weak (supportive)"
+      ],
+      "cot_tilt": 1.0
     },
     "OIL": {
-      "name": "Crude Oil (WTI)",
-      "type": "energy",
-      "biasType": "direct",
-      "score": 6.69,
-      "band": "Bullish",
-      "components": {
-        "inverse_usd": -0.011,
-        "usd_score": 5.08,
-        "cot_tilt": 1,
-        "cot_contribution": 0.35
-      },
-      "cot": {
-        "week": "2026-09-08",
-        "report_date": "2026-09-08"
-      }
+      "verdict": "Bearish",
+      "halo": "signal -1",
+      "notes": [
+        "positioning tilt contributes"
+      ],
+      "cot_tilt": -1.0
     },
     "BRENT": {
-      "name": "Brent Crude",
-      "type": "energy",
-      "biasType": "direct",
-      "score": 3.19,
-      "band": "Bearish",
-      "components": {
-        "inverse_usd": -0.011,
-        "usd_score": 5.08,
-        "cot_tilt": -1,
-        "cot_contribution": -0.35
-      },
-      "cot": {
-        "week": "2026-09-08",
-        "report_date": "2026-09-08"
-      }
+      "verdict": "Bearish",
+      "halo": "signal -1",
+      "notes": [
+        "positioning tilt contributes"
+      ],
+      "cot_tilt": -1.0
     },
     "COPPER": {
-      "name": "Copper",
-      "type": "industrial",
-      "biasType": "direct",
-      "score": 6.69,
-      "band": "Bullish",
-      "components": {
-        "inverse_usd": -0.011,
-        "usd_score": 5.08,
-        "cot_tilt": 1,
-        "cot_contribution": 0.35
-      },
-      "cot": {
-        "week": "2026-09-08",
-        "report_date": "2026-09-08"
-      }
-    },
-    "BTCUSD": {
-      "name": "BTCUSD",
-      "type": "derived",
-      "biasType": "derived",
-      "score": 4.82,
-      "band": "Neutral",
-      "components": {
-        "inverse_usd": -0.016,
-        "usd_score": 5.08,
-        "real_yield_10y": 2.55,
-        "risk_proxy": -0.066,
-        "note": "No economic calendar or COT positioning exists for this instrument; score is a derived sentiment proxy."
-      }
-    },
-    "ETHUSD": {
-      "name": "ETHUSD",
-      "type": "derived",
-      "biasType": "derived",
-      "score": 4.82,
-      "band": "Neutral",
-      "components": {
-        "inverse_usd": -0.016,
-        "usd_score": 5.08,
-        "real_yield_10y": 2.55,
-        "risk_proxy": -0.066,
-        "note": "No economic calendar or COT positioning exists for this instrument; score is a derived sentiment proxy."
-      }
-    },
-    "LTCUSD": {
-      "name": "LTCUSD",
-      "type": "derived",
-      "biasType": "derived",
-      "score": 4.82,
-      "band": "Neutral",
-      "components": {
-        "inverse_usd": -0.016,
-        "usd_score": 5.08,
-        "real_yield_10y": 2.55,
-        "risk_proxy": -0.066,
-        "note": "No economic calendar or COT positioning exists for this instrument; score is a derived sentiment proxy."
-      }
-    },
-    "SOLUSD": {
-      "name": "SOLUSD",
-      "type": "derived",
-      "biasType": "derived",
-      "score": 4.82,
-      "band": "Neutral",
-      "components": {
-        "inverse_usd": -0.016,
-        "usd_score": 5.08,
-        "real_yield_10y": 2.55,
-        "risk_proxy": -0.066,
-        "note": "No economic calendar or COT positioning exists for this instrument; score is a derived sentiment proxy."
-      }
-    },
-    "SUIUSD": {
-      "name": "SUIUSD",
-      "type": "derived",
-      "biasType": "derived",
-      "score": 4.82,
-      "band": "Neutral",
-      "components": {
-        "inverse_usd": -0.016,
-        "usd_score": 5.08,
-        "real_yield_10y": 2.55,
-        "risk_proxy": -0.066,
-        "note": "No economic calendar or COT positioning exists for this instrument; score is a derived sentiment proxy."
-      }
-    },
-    "XLMUSD": {
-      "name": "XLMUSD",
-      "type": "derived",
-      "biasType": "derived",
-      "score": 4.82,
-      "band": "Neutral",
-      "components": {
-        "inverse_usd": -0.016,
-        "usd_score": 5.08,
-        "real_yield_10y": 2.55,
-        "risk_proxy": -0.066,
-        "note": "No economic calendar or COT positioning exists for this instrument; score is a derived sentiment proxy."
-      }
-    },
-    "XRPUSD": {
-      "name": "XRPUSD",
-      "type": "derived",
-      "biasType": "derived",
-      "score": 4.82,
-      "band": "Neutral",
-      "components": {
-        "inverse_usd": -0.016,
-        "usd_score": 5.08,
-        "real_yield_10y": 2.55,
-        "risk_proxy": -0.066,
-        "note": "No economic calendar or COT positioning exists for this instrument; score is a derived sentiment proxy."
-      }
-    },
-    "AVAXUSD": {
-      "name": "AVAXUSD",
-      "type": "derived",
-      "biasType": "derived",
-      "score": 4.82,
-      "band": "Neutral",
-      "components": {
-        "inverse_usd": -0.016,
-        "usd_score": 5.08,
-        "real_yield_10y": 2.55,
-        "risk_proxy": -0.066,
-        "note": "No economic calendar or COT positioning exists for this instrument; score is a derived sentiment proxy."
-      }
-    },
-    "US30": {
-      "name": "US30",
-      "type": "derived",
-      "biasType": "derived",
-      "score": 4.82,
-      "band": "Neutral",
-      "components": {
-        "inverse_usd": -0.016,
-        "usd_score": 5.08,
-        "real_yield_10y": 2.55,
-        "risk_proxy": -0.066,
-        "note": "No economic calendar or COT positioning exists for this instrument; score is a derived sentiment proxy."
-      }
-    },
-    "US100": {
-      "name": "US100",
-      "type": "derived",
-      "biasType": "derived",
-      "score": 4.82,
-      "band": "Neutral",
-      "components": {
-        "inverse_usd": -0.016,
-        "usd_score": 5.08,
-        "real_yield_10y": 2.55,
-        "risk_proxy": -0.066,
-        "note": "No economic calendar or COT positioning exists for this instrument; score is a derived sentiment proxy."
-      }
+      "verdict": "Bearish",
+      "halo": "signal -1",
+      "notes": [
+        "positioning tilt contributes"
+      ],
+      "cot_tilt": -1.0
     },
     "US500": {
-      "name": "US500",
-      "type": "derived",
-      "biasType": "derived",
-      "score": 4.82,
-      "band": "Neutral",
-      "components": {
-        "inverse_usd": -0.016,
-        "usd_score": 5.08,
-        "real_yield_10y": 2.55,
-        "risk_proxy": -0.066,
-        "note": "No economic calendar or COT positioning exists for this instrument; score is a derived sentiment proxy."
-      }
+      "verdict": "Neutral",
+      "halo": "signal +0",
+      "notes": [
+        "real-yield rising (headwind)"
+      ],
+      "cot_tilt": 0
+    },
+    "US100": {
+      "verdict": "Neutral",
+      "halo": "signal +0",
+      "notes": [
+        "real-yield rising (headwind)"
+      ],
+      "cot_tilt": 0
+    },
+    "US30": {
+      "verdict": "Neutral",
+      "halo": "signal +0",
+      "notes": [
+        "real-yield rising (headwind)"
+      ],
+      "cot_tilt": 0
     },
     "GE40": {
-      "name": "GE40",
-      "type": "derived",
-      "biasType": "derived",
-      "score": 4.82,
-      "band": "Neutral",
-      "components": {
-        "inverse_usd": -0.016,
-        "usd_score": 5.08,
-        "real_yield_10y": 2.55,
-        "risk_proxy": -0.066,
-        "note": "No economic calendar or COT positioning exists for this instrument; score is a derived sentiment proxy."
-      }
+      "verdict": "Neutral",
+      "halo": "signal +0",
+      "notes": [
+        "real-yield rising (headwind)"
+      ],
+      "cot_tilt": 0
     },
     "EU50": {
-      "name": "EU50",
-      "type": "derived",
-      "biasType": "derived",
-      "score": 4.82,
-      "band": "Neutral",
-      "components": {
-        "inverse_usd": -0.016,
-        "usd_score": 5.08,
-        "real_yield_10y": 2.55,
-        "risk_proxy": -0.066,
-        "note": "No economic calendar or COT positioning exists for this instrument; score is a derived sentiment proxy."
-      }
+      "verdict": "Neutral",
+      "halo": "signal +0",
+      "notes": [
+        "real-yield rising (headwind)"
+      ],
+      "cot_tilt": 0
     },
     "GB100": {
-      "name": "GB100",
-      "type": "derived",
-      "biasType": "derived",
-      "score": 4.82,
-      "band": "Neutral",
-      "components": {
-        "inverse_usd": -0.016,
-        "usd_score": 5.08,
-        "real_yield_10y": 2.55,
-        "risk_proxy": -0.066,
-        "note": "No economic calendar or COT positioning exists for this instrument; score is a derived sentiment proxy."
-      }
+      "verdict": "Neutral",
+      "halo": "signal +0",
+      "notes": [
+        "real-yield rising (headwind)"
+      ],
+      "cot_tilt": 0
     },
     "FR40": {
-      "name": "FR40",
-      "type": "derived",
-      "biasType": "derived",
-      "score": 4.82,
-      "band": "Neutral",
-      "components": {
-        "inverse_usd": -0.016,
-        "usd_score": 5.08,
-        "real_yield_10y": 2.55,
-        "risk_proxy": -0.066,
-        "note": "No economic calendar or COT positioning exists for this instrument; score is a derived sentiment proxy."
-      }
+      "verdict": "Neutral",
+      "halo": "signal +0",
+      "notes": [
+        "real-yield rising (headwind)"
+      ],
+      "cot_tilt": 0
     },
     "JP225": {
-      "name": "JP225",
-      "type": "derived",
-      "biasType": "derived",
-      "score": 4.82,
-      "band": "Neutral",
-      "components": {
-        "inverse_usd": -0.016,
-        "usd_score": 5.08,
-        "real_yield_10y": 2.55,
-        "risk_proxy": -0.066,
-        "note": "No economic calendar or COT positioning exists for this instrument; score is a derived sentiment proxy."
-      }
+      "verdict": "Neutral",
+      "halo": "signal +0",
+      "notes": [
+        "real-yield rising (headwind)"
+      ],
+      "cot_tilt": -1.0
     },
     "HK50": {
-      "name": "HK50",
-      "type": "derived",
-      "biasType": "derived",
-      "score": 4.82,
-      "band": "Neutral",
-      "components": {
-        "inverse_usd": -0.016,
-        "usd_score": 5.08,
-        "real_yield_10y": 2.55,
-        "risk_proxy": -0.066,
-        "note": "No economic calendar or COT positioning exists for this instrument; score is a derived sentiment proxy."
-      }
+      "verdict": "Neutral",
+      "halo": "signal +0",
+      "notes": [
+        "real-yield rising (headwind)"
+      ],
+      "cot_tilt": 0
     },
     "AUS200": {
-      "name": "AUS200",
-      "type": "derived",
-      "biasType": "derived",
-      "score": 4.82,
-      "band": "Neutral",
-      "components": {
-        "inverse_usd": -0.016,
-        "usd_score": 5.08,
-        "real_yield_10y": 2.55,
-        "risk_proxy": -0.066,
-        "note": "No economic calendar or COT positioning exists for this instrument; score is a derived sentiment proxy."
-      }
+      "verdict": "Neutral",
+      "halo": "signal +0",
+      "notes": [
+        "real-yield rising (headwind)"
+      ],
+      "cot_tilt": 0
     },
     "CH20": {
-      "name": "CH20",
-      "type": "derived",
-      "biasType": "derived",
-      "score": 4.82,
-      "band": "Neutral",
-      "components": {
-        "inverse_usd": -0.016,
-        "usd_score": 5.08,
-        "real_yield_10y": 2.55,
-        "risk_proxy": -0.066,
-        "note": "No economic calendar or COT positioning exists for this instrument; score is a derived sentiment proxy."
-      }
+      "verdict": "Neutral",
+      "halo": "signal +0",
+      "notes": [
+        "real-yield rising (headwind)"
+      ],
+      "cot_tilt": 0
     },
     "ES35": {
-      "name": "ES35",
-      "type": "derived",
-      "biasType": "derived",
-      "score": 4.82,
-      "band": "Neutral",
-      "components": {
-        "inverse_usd": -0.016,
-        "usd_score": 5.08,
-        "real_yield_10y": 2.55,
-        "risk_proxy": -0.066,
-        "note": "No economic calendar or COT positioning exists for this instrument; score is a derived sentiment proxy."
-      }
+      "verdict": "Neutral",
+      "halo": "signal +0",
+      "notes": [
+        "real-yield rising (headwind)"
+      ],
+      "cot_tilt": 0
+    },
+    "BTCUSD": {
+      "verdict": "Bullish",
+      "halo": "signal +2",
+      "notes": [
+        "liquidity expanding",
+        "USD index weak (supportive)",
+        "proxy-derived signal capped at single step"
+      ],
+      "cot_tilt": 0
+    },
+    "ETHUSD": {
+      "verdict": "Bullish",
+      "halo": "signal +2",
+      "notes": [
+        "liquidity expanding",
+        "USD index weak (supportive)",
+        "proxy-derived signal capped at single step"
+      ],
+      "cot_tilt": 0
+    },
+    "LTCUSD": {
+      "verdict": "Bullish",
+      "halo": "signal +2",
+      "notes": [
+        "liquidity expanding",
+        "USD index weak (supportive)",
+        "proxy-derived signal capped at single step"
+      ],
+      "cot_tilt": 0
+    },
+    "SOLUSD": {
+      "verdict": "Bullish",
+      "halo": "signal +2",
+      "notes": [
+        "liquidity expanding",
+        "USD index weak (supportive)",
+        "proxy-derived signal capped at single step"
+      ],
+      "cot_tilt": 0
+    },
+    "SUIUSD": {
+      "verdict": "Bullish",
+      "halo": "signal +2",
+      "notes": [
+        "liquidity expanding",
+        "USD index weak (supportive)",
+        "proxy-derived signal capped at single step"
+      ],
+      "cot_tilt": 0
+    },
+    "XLMUSD": {
+      "verdict": "Bullish",
+      "halo": "signal +2",
+      "notes": [
+        "liquidity expanding",
+        "USD index weak (supportive)",
+        "proxy-derived signal capped at single step"
+      ],
+      "cot_tilt": 0
+    },
+    "XRPUSD": {
+      "verdict": "Bullish",
+      "halo": "signal +2",
+      "notes": [
+        "liquidity expanding",
+        "USD index weak (supportive)",
+        "proxy-derived signal capped at single step"
+      ],
+      "cot_tilt": 0
+    },
+    "AVAXUSD": {
+      "verdict": "Bullish",
+      "halo": "signal +2",
+      "notes": [
+        "liquidity expanding",
+        "USD index weak (supportive)",
+        "proxy-derived signal capped at single step"
+      ],
+      "cot_tilt": 0
     }
   }
 }
