@@ -272,7 +272,7 @@ def _merge(events):
                 prior_map[k] = ev
         else:
             prior_map[k] = ev
-    # keep events within +-45 days
+    # keep events within +-360 days (full-year calendar view)
     now = datetime.utcnow()
     window = []
     for ev in prior_map.values():
@@ -280,7 +280,7 @@ def _merge(events):
             dt = datetime.fromisoformat((ev.get("date_utc") or "").replace("Z", "+00:00"))
             if dt.tzinfo is None:
                 dt = dt.replace(tzinfo=timezone.utc)
-            if abs((dt.astimezone(timezone.utc).replace(tzinfo=None) - now).days) <= 45:
+            if abs((dt.astimezone(timezone.utc).replace(tzinfo=None) - now).days) <= 360:
                 window.append(ev)
         except Exception:
             window.append(ev)
@@ -320,6 +320,17 @@ def collect():
             log(f"Fallback chain failed: {str(exc)[:120]}", "WARN")
 
     merged = _merge(events)
+    # Merge the 365-day window into the visible calendar store so the Calendar
+    # tab shows a full year of data points (prev/forecast included).
+    try:
+        from collectors.calendar_fallbacks import collect_year_calendar
+        year_evs_path = os.path.join(DATA_DIR, "calendar", "year_events.json")
+        year_evs = load_json(year_evs_path, default=[])
+        if not year_evs:
+            year_evs = collect_year_calendar()
+        merged = _merge(merged + year_evs)
+    except Exception as exc:
+        log(f"Year-into-calendar merge skipped: {str(exc)[:100]}", "WARN")
     save_json(os.path.join(DATA_DIR, "calendar", "events_current.json"), merged)
     save_json(SOURCE_META, {"updated": now_iso(), "source": source_used,
                             "events": len(merged), "with_actual": sum(1 for e in merged if e.get("actual"))})

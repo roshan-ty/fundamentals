@@ -175,6 +175,7 @@ _TITLE_MATCHERS = {
         "nz_unemployment": ["Unemployment Rate"],
         "nz_gdp": ["GDP q/q", "Gross Domestic Product"],
         "nz_gdt": ["GlobalDairyTrade", "GDT"],
+        "nz_pmi": ["Manufacturing PMI", "PMI"],
     },
     "CAD": {
         "ca_overnight": ["BoC Interest Rate", "Overnight Rate", "Bank of Canada Rate", "BoC Rate", "BoC"],
@@ -192,6 +193,7 @@ _TITLE_MATCHERS = {
         "jp_tankan": ["Tankan"],
         "jp_trade": ["Trade Balance"],
         "jp_cash_earnings": ["Average Cash Earnings"],
+        "jp_ppi": ["PPI y/y", "PPI YoY"],
     },
     "CHF": {
         "ch_snb": ["SNB Policy Rate", "SNB Interest Rate", "SNB Monetary Policy", "SNB Rate", "Swiss National Bank"],

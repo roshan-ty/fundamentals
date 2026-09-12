@@ -44,6 +44,10 @@ FRED_SERIES = {
     "LRHUTTTTDEM156S": {"name": "Germany Unemployment Rate", "category": "international", "unit": "percent", "freq": "monthly"},
     "LRHUTTTTJPM156S": {"name": "Japan Unemployment Rate", "category": "international", "unit": "percent", "freq": "monthly"},
     "LRHUTTTTCAM156S": {"name": "Canada Unemployment Rate", "category": "international", "unit": "percent", "freq": "monthly"},
+    "LRHUTTTTAUM156S": {"name": "Australia Unemployment Rate", "category": "international", "unit": "percent", "freq": "monthly"},
+    "JPNRGDPEXP": {"name": "Japan Real GDP (expenditure)", "category": "international", "unit": "index", "freq": "quarterly"},
+    "CHECPIALLMINMEI": {"name": "Switzerland CPI Index", "category": "international", "unit": "index", "freq": "monthly"},
+    "CHNCPIALLMINMEI": {"name": "China CPI Index", "category": "international", "unit": "index", "freq": "monthly"},
 }
 
 

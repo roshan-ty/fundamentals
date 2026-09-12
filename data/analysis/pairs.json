@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-09-12T12:36:23+00:00",
+    "updated": "2026-09-12T14:07:24+00:00",
     "note": "Verdict-based narratives"
   },
   "analyses": {
@@ -8,575 +8,575 @@
       "symbol": "EURUSD",
       "verdict": "Bearish",
       "summary": "EURUSD: Bearish",
-      "narrative_html": "<h3>EURUSD</h3><p>The EUR reads Bearish, while the USD reads Neutral.</p><p>Differentiating base-minus-quote yields a Bearish verdict for EURUSD.</p><p>- Eurozone Unemployment Rate: actual 3.9 (previous 3.8) — bearish</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "narrative_html": "<h3>EURUSD</h3><p>The EUR reads Bearish, while the USD reads Neutral.</p><p>Differentiating base-minus-quote yields a Bearish verdict for EURUSD.</p><p>- German Industrial Production (m/m): actual -0.4% vs forecast 0.4% (previous -0.1% ) — bearish</p><p>- Eurozone Unemployment Rate: actual 3.9 (previous 3.8) — bearish</p>",
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "EURGBP": {
       "symbol": "EURGBP",
       "verdict": "Very Bearish",
       "summary": "EURGBP: Very Bearish",
-      "narrative_html": "<h3>EURGBP</h3><p>The EUR reads Bearish, while the GBP reads Bullish.</p><p>Differentiating base-minus-quote yields a Very Bearish verdict for EURGBP.</p><p>- Eurozone Unemployment Rate: actual 3.9 (previous 3.8) — bearish</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "narrative_html": "<h3>EURGBP</h3><p>The EUR reads Bearish, while the GBP reads Bullish.</p><p>Differentiating base-minus-quote yields a Very Bearish verdict for EURGBP.</p><p>- German Industrial Production (m/m): actual -0.4% vs forecast 0.4% (previous -0.1% ) — bearish</p><p>- Eurozone Unemployment Rate: actual 3.9 (previous 3.8) — bearish</p>",
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "EURJPY": {
       "symbol": "EURJPY",
-      "verdict": "Bearish",
-      "summary": "EURJPY: Bearish",
-      "narrative_html": "<h3>EURJPY</h3><p>The EUR reads Bearish, while the JPY reads Neutral.</p><p>Differentiating base-minus-quote yields a Bearish verdict for EURJPY.</p><p>- Eurozone Unemployment Rate: actual 3.9 (previous 3.8) — bearish</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "verdict": "Neutral",
+      "summary": "EURJPY: Neutral",
+      "narrative_html": "<h3>EURJPY</h3><p>The EUR reads Bearish, while the JPY reads Bearish.</p><p>Differentiating base-minus-quote yields a Neutral verdict for EURJPY.</p><p>- German Industrial Production (m/m): actual -0.4% vs forecast 0.4% (previous -0.1% ) — bearish</p><p>- Eurozone Unemployment Rate: actual 3.9 (previous 3.8) — bearish</p>",
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "EURCHF": {
       "symbol": "EURCHF",
       "verdict": "Bearish",
       "summary": "EURCHF: Bearish",
-      "narrative_html": "<h3>EURCHF</h3><p>The EUR reads Bearish, while the CHF reads Neutral.</p><p>Differentiating base-minus-quote yields a Bearish verdict for EURCHF.</p><p>- Eurozone Unemployment Rate: actual 3.9 (previous 3.8) — bearish</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "narrative_html": "<h3>EURCHF</h3><p>The EUR reads Bearish, while the CHF reads Neutral.</p><p>Differentiating base-minus-quote yields a Bearish verdict for EURCHF.</p><p>- German Industrial Production (m/m): actual -0.4% vs forecast 0.4% (previous -0.1% ) — bearish</p><p>- Eurozone Unemployment Rate: actual 3.9 (previous 3.8) — bearish</p>",
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "EURAUD": {
       "symbol": "EURAUD",
-      "verdict": "Bearish",
-      "summary": "EURAUD: Bearish",
-      "narrative_html": "<h3>EURAUD</h3><p>The EUR reads Bearish, while the AUD reads Neutral.</p><p>Differentiating base-minus-quote yields a Bearish verdict for EURAUD.</p><p>- Eurozone Unemployment Rate: actual 3.9 (previous 3.8) — bearish</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "verdict": "Neutral",
+      "summary": "EURAUD: Neutral",
+      "narrative_html": "<h3>EURAUD</h3><p>The EUR reads Bearish, while the AUD reads Bearish.</p><p>Differentiating base-minus-quote yields a Neutral verdict for EURAUD.</p><p>- German Industrial Production (m/m): actual -0.4% vs forecast 0.4% (previous -0.1% ) — bearish</p><p>- Eurozone Unemployment Rate: actual 3.9 (previous 3.8) — bearish</p>",
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "EURCAD": {
       "symbol": "EURCAD",
       "verdict": "Very Bearish",
       "summary": "EURCAD: Very Bearish",
-      "narrative_html": "<h3>EURCAD</h3><p>The EUR reads Bearish, while the CAD reads Bullish.</p><p>Differentiating base-minus-quote yields a Very Bearish verdict for EURCAD.</p><p>- Eurozone Unemployment Rate: actual 3.9 (previous 3.8) — bearish</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "narrative_html": "<h3>EURCAD</h3><p>The EUR reads Bearish, while the CAD reads Bullish.</p><p>Differentiating base-minus-quote yields a Very Bearish verdict for EURCAD.</p><p>- German Industrial Production (m/m): actual -0.4% vs forecast 0.4% (previous -0.1% ) — bearish</p><p>- Eurozone Unemployment Rate: actual 3.9 (previous 3.8) — bearish</p>",
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "EURNZD": {
       "symbol": "EURNZD",
-      "verdict": "Bearish",
-      "summary": "EURNZD: Bearish",
-      "narrative_html": "<h3>EURNZD</h3><p>The EUR reads Bearish, while the NZD reads Neutral.</p><p>Differentiating base-minus-quote yields a Bearish verdict for EURNZD.</p><p>- Eurozone Unemployment Rate: actual 3.9 (previous 3.8) — bearish</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "verdict": "Neutral",
+      "summary": "EURNZD: Neutral",
+      "narrative_html": "<h3>EURNZD</h3><p>The EUR reads Bearish, while the NZD reads Bearish.</p><p>Differentiating base-minus-quote yields a Neutral verdict for EURNZD.</p><p>- German Industrial Production (m/m): actual -0.4% vs forecast 0.4% (previous -0.1% ) — bearish</p><p>- Eurozone Unemployment Rate: actual 3.9 (previous 3.8) — bearish</p>",
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "EURNOK": {
       "symbol": "EURNOK",
       "verdict": "Bearish",
       "summary": "EURNOK: Bearish",
-      "narrative_html": "<h3>EURNOK</h3><p>The EUR reads Bearish, while the NOK reads Neutral.</p><p>Differentiating base-minus-quote yields a Bearish verdict for EURNOK.</p><p>- Eurozone Unemployment Rate: actual 3.9 (previous 3.8) — bearish</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "narrative_html": "<h3>EURNOK</h3><p>The EUR reads Bearish, while the NOK reads Neutral.</p><p>Differentiating base-minus-quote yields a Bearish verdict for EURNOK.</p><p>- German Industrial Production (m/m): actual -0.4% vs forecast 0.4% (previous -0.1% ) — bearish</p><p>- Eurozone Unemployment Rate: actual 3.9 (previous 3.8) — bearish</p>",
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "EURSEK": {
       "symbol": "EURSEK",
       "verdict": "Bearish",
       "summary": "EURSEK: Bearish",
-      "narrative_html": "<h3>EURSEK</h3><p>The EUR reads Bearish, while the SEK reads Neutral.</p><p>Differentiating base-minus-quote yields a Bearish verdict for EURSEK.</p><p>- Eurozone Unemployment Rate: actual 3.9 (previous 3.8) — bearish</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "narrative_html": "<h3>EURSEK</h3><p>The EUR reads Bearish, while the SEK reads Neutral.</p><p>Differentiating base-minus-quote yields a Bearish verdict for EURSEK.</p><p>- German Industrial Production (m/m): actual -0.4% vs forecast 0.4% (previous -0.1% ) — bearish</p><p>- Eurozone Unemployment Rate: actual 3.9 (previous 3.8) — bearish</p>",
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "EURPLN": {
       "symbol": "EURPLN",
       "verdict": "Bearish",
       "summary": "EURPLN: Bearish",
-      "narrative_html": "<h3>EURPLN</h3><p>The EUR reads Bearish, while the PLN reads Neutral.</p><p>Differentiating base-minus-quote yields a Bearish verdict for EURPLN.</p><p>- Eurozone Unemployment Rate: actual 3.9 (previous 3.8) — bearish</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "narrative_html": "<h3>EURPLN</h3><p>The EUR reads Bearish, while the PLN reads Neutral.</p><p>Differentiating base-minus-quote yields a Bearish verdict for EURPLN.</p><p>- German Industrial Production (m/m): actual -0.4% vs forecast 0.4% (previous -0.1% ) — bearish</p><p>- Eurozone Unemployment Rate: actual 3.9 (previous 3.8) — bearish</p>",
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "EURHUF": {
       "symbol": "EURHUF",
       "verdict": "Bearish",
       "summary": "EURHUF: Bearish",
-      "narrative_html": "<h3>EURHUF</h3><p>The EUR reads Bearish, while the HUF reads Neutral.</p><p>Differentiating base-minus-quote yields a Bearish verdict for EURHUF.</p><p>- Eurozone Unemployment Rate: actual 3.9 (previous 3.8) — bearish</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "narrative_html": "<h3>EURHUF</h3><p>The EUR reads Bearish, while the HUF reads Neutral.</p><p>Differentiating base-minus-quote yields a Bearish verdict for EURHUF.</p><p>- German Industrial Production (m/m): actual -0.4% vs forecast 0.4% (previous -0.1% ) — bearish</p><p>- Eurozone Unemployment Rate: actual 3.9 (previous 3.8) — bearish</p>",
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "EURSGD": {
       "symbol": "EURSGD",
       "verdict": "Bearish",
       "summary": "EURSGD: Bearish",
-      "narrative_html": "<h3>EURSGD</h3><p>The EUR reads Bearish, while the SGD reads Neutral.</p><p>Differentiating base-minus-quote yields a Bearish verdict for EURSGD.</p><p>- Eurozone Unemployment Rate: actual 3.9 (previous 3.8) — bearish</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "narrative_html": "<h3>EURSGD</h3><p>The EUR reads Bearish, while the SGD reads Neutral.</p><p>Differentiating base-minus-quote yields a Bearish verdict for EURSGD.</p><p>- German Industrial Production (m/m): actual -0.4% vs forecast 0.4% (previous -0.1% ) — bearish</p><p>- Eurozone Unemployment Rate: actual 3.9 (previous 3.8) — bearish</p>",
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "EURTRY": {
       "symbol": "EURTRY",
       "verdict": "Bearish",
       "summary": "EURTRY: Bearish",
-      "narrative_html": "<h3>EURTRY</h3><p>The EUR reads Bearish, while the TRY reads Neutral.</p><p>Differentiating base-minus-quote yields a Bearish verdict for EURTRY.</p><p>- Eurozone Unemployment Rate: actual 3.9 (previous 3.8) — bearish</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "narrative_html": "<h3>EURTRY</h3><p>The EUR reads Bearish, while the TRY reads Neutral.</p><p>Differentiating base-minus-quote yields a Bearish verdict for EURTRY.</p><p>- German Industrial Production (m/m): actual -0.4% vs forecast 0.4% (previous -0.1% ) — bearish</p><p>- Eurozone Unemployment Rate: actual 3.9 (previous 3.8) — bearish</p>",
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "EURZAR": {
       "symbol": "EURZAR",
       "verdict": "Bearish",
       "summary": "EURZAR: Bearish",
-      "narrative_html": "<h3>EURZAR</h3><p>The EUR reads Bearish, while the ZAR reads Neutral.</p><p>Differentiating base-minus-quote yields a Bearish verdict for EURZAR.</p><p>- Eurozone Unemployment Rate: actual 3.9 (previous 3.8) — bearish</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "narrative_html": "<h3>EURZAR</h3><p>The EUR reads Bearish, while the ZAR reads Neutral.</p><p>Differentiating base-minus-quote yields a Bearish verdict for EURZAR.</p><p>- German Industrial Production (m/m): actual -0.4% vs forecast 0.4% (previous -0.1% ) — bearish</p><p>- Eurozone Unemployment Rate: actual 3.9 (previous 3.8) — bearish</p>",
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "EURHKD": {
       "symbol": "EURHKD",
       "verdict": "Bearish",
       "summary": "EURHKD: Bearish",
-      "narrative_html": "<h3>EURHKD</h3><p>The EUR reads Bearish, while the HKD reads Neutral.</p><p>Differentiating base-minus-quote yields a Bearish verdict for EURHKD.</p><p>- Eurozone Unemployment Rate: actual 3.9 (previous 3.8) — bearish</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "narrative_html": "<h3>EURHKD</h3><p>The EUR reads Bearish, while the HKD reads Neutral.</p><p>Differentiating base-minus-quote yields a Bearish verdict for EURHKD.</p><p>- German Industrial Production (m/m): actual -0.4% vs forecast 0.4% (previous -0.1% ) — bearish</p><p>- Eurozone Unemployment Rate: actual 3.9 (previous 3.8) — bearish</p>",
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "GBPUSD": {
       "symbol": "GBPUSD",
       "verdict": "Bullish",
       "summary": "GBPUSD: Bullish",
       "narrative_html": "<h3>GBPUSD</h3><p>The GBP reads Bullish, while the USD reads Neutral.</p><p>Differentiating base-minus-quote yields a Bullish verdict for GBPUSD.</p><p>- GDP (m/m, q/q, y/y): actual 0.4% vs forecast 0.1% (previous 0.3%) — bullish</p><p>- Unemployment Rate: actual 4.9 (previous 4.9) — neutral</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "GBPEUR": {
       "symbol": "GBPEUR",
       "verdict": "Very Bullish",
       "summary": "GBPEUR: Very Bullish",
       "narrative_html": "<h3>GBPEUR</h3><p>The GBP reads Bullish, while the EUR reads Bearish.</p><p>Differentiating base-minus-quote yields a Very Bullish verdict for GBPEUR.</p><p>- GDP (m/m, q/q, y/y): actual 0.4% vs forecast 0.1% (previous 0.3%) — bullish</p><p>- Unemployment Rate: actual 4.9 (previous 4.9) — neutral</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "GBPJPY": {
       "symbol": "GBPJPY",
-      "verdict": "Bullish",
-      "summary": "GBPJPY: Bullish",
-      "narrative_html": "<h3>GBPJPY</h3><p>The GBP reads Bullish, while the JPY reads Neutral.</p><p>Differentiating base-minus-quote yields a Bullish verdict for GBPJPY.</p><p>- GDP (m/m, q/q, y/y): actual 0.4% vs forecast 0.1% (previous 0.3%) — bullish</p><p>- Unemployment Rate: actual 4.9 (previous 4.9) — neutral</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "verdict": "Very Bullish",
+      "summary": "GBPJPY: Very Bullish",
+      "narrative_html": "<h3>GBPJPY</h3><p>The GBP reads Bullish, while the JPY reads Bearish.</p><p>Differentiating base-minus-quote yields a Very Bullish verdict for GBPJPY.</p><p>- GDP (m/m, q/q, y/y): actual 0.4% vs forecast 0.1% (previous 0.3%) — bullish</p><p>- Unemployment Rate: actual 4.9 (previous 4.9) — neutral</p>",
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "GBPCHF": {
       "symbol": "GBPCHF",
       "verdict": "Bullish",
       "summary": "GBPCHF: Bullish",
       "narrative_html": "<h3>GBPCHF</h3><p>The GBP reads Bullish, while the CHF reads Neutral.</p><p>Differentiating base-minus-quote yields a Bullish verdict for GBPCHF.</p><p>- GDP (m/m, q/q, y/y): actual 0.4% vs forecast 0.1% (previous 0.3%) — bullish</p><p>- Unemployment Rate: actual 4.9 (previous 4.9) — neutral</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "GBPAUD": {
       "symbol": "GBPAUD",
-      "verdict": "Bullish",
-      "summary": "GBPAUD: Bullish",
-      "narrative_html": "<h3>GBPAUD</h3><p>The GBP reads Bullish, while the AUD reads Neutral.</p><p>Differentiating base-minus-quote yields a Bullish verdict for GBPAUD.</p><p>- GDP (m/m, q/q, y/y): actual 0.4% vs forecast 0.1% (previous 0.3%) — bullish</p><p>- Unemployment Rate: actual 4.9 (previous 4.9) — neutral</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "verdict": "Very Bullish",
+      "summary": "GBPAUD: Very Bullish",
+      "narrative_html": "<h3>GBPAUD</h3><p>The GBP reads Bullish, while the AUD reads Bearish.</p><p>Differentiating base-minus-quote yields a Very Bullish verdict for GBPAUD.</p><p>- GDP (m/m, q/q, y/y): actual 0.4% vs forecast 0.1% (previous 0.3%) — bullish</p><p>- Unemployment Rate: actual 4.9 (previous 4.9) — neutral</p>",
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "GBPCAD": {
       "symbol": "GBPCAD",
       "verdict": "Neutral",
       "summary": "GBPCAD: Neutral",
       "narrative_html": "<h3>GBPCAD</h3><p>The GBP reads Bullish, while the CAD reads Bullish.</p><p>Differentiating base-minus-quote yields a Neutral verdict for GBPCAD.</p><p>- GDP (m/m, q/q, y/y): actual 0.4% vs forecast 0.1% (previous 0.3%) — bullish</p><p>- Unemployment Rate: actual 4.9 (previous 4.9) — neutral</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "GBPNZD": {
       "symbol": "GBPNZD",
-      "verdict": "Bullish",
-      "summary": "GBPNZD: Bullish",
-      "narrative_html": "<h3>GBPNZD</h3><p>The GBP reads Bullish, while the NZD reads Neutral.</p><p>Differentiating base-minus-quote yields a Bullish verdict for GBPNZD.</p><p>- GDP (m/m, q/q, y/y): actual 0.4% vs forecast 0.1% (previous 0.3%) — bullish</p><p>- Unemployment Rate: actual 4.9 (previous 4.9) — neutral</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "verdict": "Very Bullish",
+      "summary": "GBPNZD: Very Bullish",
+      "narrative_html": "<h3>GBPNZD</h3><p>The GBP reads Bullish, while the NZD reads Bearish.</p><p>Differentiating base-minus-quote yields a Very Bullish verdict for GBPNZD.</p><p>- GDP (m/m, q/q, y/y): actual 0.4% vs forecast 0.1% (previous 0.3%) — bullish</p><p>- Unemployment Rate: actual 4.9 (previous 4.9) — neutral</p>",
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "GBPNOK": {
       "symbol": "GBPNOK",
       "verdict": "Bullish",
       "summary": "GBPNOK: Bullish",
       "narrative_html": "<h3>GBPNOK</h3><p>The GBP reads Bullish, while the NOK reads Neutral.</p><p>Differentiating base-minus-quote yields a Bullish verdict for GBPNOK.</p><p>- GDP (m/m, q/q, y/y): actual 0.4% vs forecast 0.1% (previous 0.3%) — bullish</p><p>- Unemployment Rate: actual 4.9 (previous 4.9) — neutral</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "GBPSEK": {
       "symbol": "GBPSEK",
       "verdict": "Bullish",
       "summary": "GBPSEK: Bullish",
       "narrative_html": "<h3>GBPSEK</h3><p>The GBP reads Bullish, while the SEK reads Neutral.</p><p>Differentiating base-minus-quote yields a Bullish verdict for GBPSEK.</p><p>- GDP (m/m, q/q, y/y): actual 0.4% vs forecast 0.1% (previous 0.3%) — bullish</p><p>- Unemployment Rate: actual 4.9 (previous 4.9) — neutral</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "GBPPLN": {
       "symbol": "GBPPLN",
       "verdict": "Bullish",
       "summary": "GBPPLN: Bullish",
       "narrative_html": "<h3>GBPPLN</h3><p>The GBP reads Bullish, while the PLN reads Neutral.</p><p>Differentiating base-minus-quote yields a Bullish verdict for GBPPLN.</p><p>- GDP (m/m, q/q, y/y): actual 0.4% vs forecast 0.1% (previous 0.3%) — bullish</p><p>- Unemployment Rate: actual 4.9 (previous 4.9) — neutral</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "GBPHUF": {
       "symbol": "GBPHUF",
       "verdict": "Bullish",
       "summary": "GBPHUF: Bullish",
       "narrative_html": "<h3>GBPHUF</h3><p>The GBP reads Bullish, while the HUF reads Neutral.</p><p>Differentiating base-minus-quote yields a Bullish verdict for GBPHUF.</p><p>- GDP (m/m, q/q, y/y): actual 0.4% vs forecast 0.1% (previous 0.3%) — bullish</p><p>- Unemployment Rate: actual 4.9 (previous 4.9) — neutral</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "GBPTRY": {
       "symbol": "GBPTRY",
       "verdict": "Bullish",
       "summary": "GBPTRY: Bullish",
       "narrative_html": "<h3>GBPTRY</h3><p>The GBP reads Bullish, while the TRY reads Neutral.</p><p>Differentiating base-minus-quote yields a Bullish verdict for GBPTRY.</p><p>- GDP (m/m, q/q, y/y): actual 0.4% vs forecast 0.1% (previous 0.3%) — bullish</p><p>- Unemployment Rate: actual 4.9 (previous 4.9) — neutral</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "GBPZAR": {
       "symbol": "GBPZAR",
       "verdict": "Bullish",
       "summary": "GBPZAR: Bullish",
       "narrative_html": "<h3>GBPZAR</h3><p>The GBP reads Bullish, while the ZAR reads Neutral.</p><p>Differentiating base-minus-quote yields a Bullish verdict for GBPZAR.</p><p>- GDP (m/m, q/q, y/y): actual 0.4% vs forecast 0.1% (previous 0.3%) — bullish</p><p>- Unemployment Rate: actual 4.9 (previous 4.9) — neutral</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "GBPHKD": {
       "symbol": "GBPHKD",
       "verdict": "Bullish",
       "summary": "GBPHKD: Bullish",
       "narrative_html": "<h3>GBPHKD</h3><p>The GBP reads Bullish, while the HKD reads Neutral.</p><p>Differentiating base-minus-quote yields a Bullish verdict for GBPHKD.</p><p>- GDP (m/m, q/q, y/y): actual 0.4% vs forecast 0.1% (previous 0.3%) — bullish</p><p>- Unemployment Rate: actual 4.9 (previous 4.9) — neutral</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "USDJPY": {
       "symbol": "USDJPY",
-      "verdict": "Neutral",
-      "summary": "USDJPY: Neutral",
-      "narrative_html": "<h3>USDJPY</h3><p>The USD reads Neutral, while the JPY reads Neutral.</p><p>Differentiating base-minus-quote yields a Neutral verdict for USDJPY.</p><p>- CB Consumer Confidence / UoM Consumer Sentiment: actual 47.8 vs forecast 51.5 (previous 51.7) — bearish</p><p>- Unemployment Claims (Weekly): actual 206000.0 (previous 207000.0) — bullish</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "verdict": "Bullish",
+      "summary": "USDJPY: Bullish",
+      "narrative_html": "<h3>USDJPY</h3><p>The USD reads Neutral, while the JPY reads Bearish.</p><p>Differentiating base-minus-quote yields a Bullish verdict for USDJPY.</p><p>- CB Consumer Confidence / UoM Consumer Sentiment: actual 47.8 vs forecast 51.5 (previous 51.7) — bearish</p><p>- Unemployment Claims (Weekly): actual 206000.0 (previous 207000.0) — bullish</p>",
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "USDCHF": {
       "symbol": "USDCHF",
       "verdict": "Neutral",
       "summary": "USDCHF: Neutral",
       "narrative_html": "<h3>USDCHF</h3><p>The USD reads Neutral, while the CHF reads Neutral.</p><p>Differentiating base-minus-quote yields a Neutral verdict for USDCHF.</p><p>- CB Consumer Confidence / UoM Consumer Sentiment: actual 47.8 vs forecast 51.5 (previous 51.7) — bearish</p><p>- Unemployment Claims (Weekly): actual 206000.0 (previous 207000.0) — bullish</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "USDCAD": {
       "symbol": "USDCAD",
       "verdict": "Bearish",
       "summary": "USDCAD: Bearish",
       "narrative_html": "<h3>USDCAD</h3><p>The USD reads Neutral, while the CAD reads Bullish.</p><p>Differentiating base-minus-quote yields a Bearish verdict for USDCAD.</p><p>- CB Consumer Confidence / UoM Consumer Sentiment: actual 47.8 vs forecast 51.5 (previous 51.7) — bearish</p><p>- Unemployment Claims (Weekly): actual 206000.0 (previous 207000.0) — bullish</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "USDSGD": {
       "symbol": "USDSGD",
       "verdict": "Neutral",
       "summary": "USDSGD: Neutral",
       "narrative_html": "<h3>USDSGD</h3><p>The USD reads Neutral, while the SGD reads Neutral.</p><p>Differentiating base-minus-quote yields a Neutral verdict for USDSGD.</p><p>- CB Consumer Confidence / UoM Consumer Sentiment: actual 47.8 vs forecast 51.5 (previous 51.7) — bearish</p><p>- Unemployment Claims (Weekly): actual 206000.0 (previous 207000.0) — bullish</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "USDCNY": {
       "symbol": "USDCNY",
-      "verdict": "Neutral",
-      "summary": "USDCNY: Neutral",
-      "narrative_html": "<h3>USDCNY</h3><p>The USD reads Neutral, while the CNY reads Neutral.</p><p>Differentiating base-minus-quote yields a Neutral verdict for USDCNY.</p><p>- CB Consumer Confidence / UoM Consumer Sentiment: actual 47.8 vs forecast 51.5 (previous 51.7) — bearish</p><p>- Unemployment Claims (Weekly): actual 206000.0 (previous 207000.0) — bullish</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "verdict": "Bearish",
+      "summary": "USDCNY: Bearish",
+      "narrative_html": "<h3>USDCNY</h3><p>The USD reads Neutral, while the CNY reads Bullish.</p><p>Differentiating base-minus-quote yields a Bearish verdict for USDCNY.</p><p>- CB Consumer Confidence / UoM Consumer Sentiment: actual 47.8 vs forecast 51.5 (previous 51.7) — bearish</p><p>- Unemployment Claims (Weekly): actual 206000.0 (previous 207000.0) — bullish</p>",
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "USDMXN": {
       "symbol": "USDMXN",
       "verdict": "Neutral",
       "summary": "USDMXN: Neutral",
       "narrative_html": "<h3>USDMXN</h3><p>The USD reads Neutral, while the MXN reads Neutral.</p><p>Differentiating base-minus-quote yields a Neutral verdict for USDMXN.</p><p>- CB Consumer Confidence / UoM Consumer Sentiment: actual 47.8 vs forecast 51.5 (previous 51.7) — bearish</p><p>- Unemployment Claims (Weekly): actual 206000.0 (previous 207000.0) — bullish</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "USDBRL": {
       "symbol": "USDBRL",
       "verdict": "Neutral",
       "summary": "USDBRL: Neutral",
       "narrative_html": "<h3>USDBRL</h3><p>The USD reads Neutral, while the BRL reads Neutral.</p><p>Differentiating base-minus-quote yields a Neutral verdict for USDBRL.</p><p>- CB Consumer Confidence / UoM Consumer Sentiment: actual 47.8 vs forecast 51.5 (previous 51.7) — bearish</p><p>- Unemployment Claims (Weekly): actual 206000.0 (previous 207000.0) — bullish</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "USDNOK": {
       "symbol": "USDNOK",
       "verdict": "Neutral",
       "summary": "USDNOK: Neutral",
       "narrative_html": "<h3>USDNOK</h3><p>The USD reads Neutral, while the NOK reads Neutral.</p><p>Differentiating base-minus-quote yields a Neutral verdict for USDNOK.</p><p>- CB Consumer Confidence / UoM Consumer Sentiment: actual 47.8 vs forecast 51.5 (previous 51.7) — bearish</p><p>- Unemployment Claims (Weekly): actual 206000.0 (previous 207000.0) — bullish</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "USDSEK": {
       "symbol": "USDSEK",
       "verdict": "Neutral",
       "summary": "USDSEK: Neutral",
       "narrative_html": "<h3>USDSEK</h3><p>The USD reads Neutral, while the SEK reads Neutral.</p><p>Differentiating base-minus-quote yields a Neutral verdict for USDSEK.</p><p>- CB Consumer Confidence / UoM Consumer Sentiment: actual 47.8 vs forecast 51.5 (previous 51.7) — bearish</p><p>- Unemployment Claims (Weekly): actual 206000.0 (previous 207000.0) — bullish</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "USDPLN": {
       "symbol": "USDPLN",
       "verdict": "Neutral",
       "summary": "USDPLN: Neutral",
       "narrative_html": "<h3>USDPLN</h3><p>The USD reads Neutral, while the PLN reads Neutral.</p><p>Differentiating base-minus-quote yields a Neutral verdict for USDPLN.</p><p>- CB Consumer Confidence / UoM Consumer Sentiment: actual 47.8 vs forecast 51.5 (previous 51.7) — bearish</p><p>- Unemployment Claims (Weekly): actual 206000.0 (previous 207000.0) — bullish</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "USDHUF": {
       "symbol": "USDHUF",
       "verdict": "Neutral",
       "summary": "USDHUF: Neutral",
       "narrative_html": "<h3>USDHUF</h3><p>The USD reads Neutral, while the HUF reads Neutral.</p><p>Differentiating base-minus-quote yields a Neutral verdict for USDHUF.</p><p>- CB Consumer Confidence / UoM Consumer Sentiment: actual 47.8 vs forecast 51.5 (previous 51.7) — bearish</p><p>- Unemployment Claims (Weekly): actual 206000.0 (previous 207000.0) — bullish</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "USDCZK": {
       "symbol": "USDCZK",
       "verdict": "Neutral",
       "summary": "USDCZK: Neutral",
       "narrative_html": "<h3>USDCZK</h3><p>The USD reads Neutral, while the CZK reads Neutral.</p><p>Differentiating base-minus-quote yields a Neutral verdict for USDCZK.</p><p>- CB Consumer Confidence / UoM Consumer Sentiment: actual 47.8 vs forecast 51.5 (previous 51.7) — bearish</p><p>- Unemployment Claims (Weekly): actual 206000.0 (previous 207000.0) — bullish</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "USDDKK": {
       "symbol": "USDDKK",
       "verdict": "Neutral",
       "summary": "USDDKK: Neutral",
       "narrative_html": "<h3>USDDKK</h3><p>The USD reads Neutral, while the DKK reads Neutral.</p><p>Differentiating base-minus-quote yields a Neutral verdict for USDDKK.</p><p>- CB Consumer Confidence / UoM Consumer Sentiment: actual 47.8 vs forecast 51.5 (previous 51.7) — bearish</p><p>- Unemployment Claims (Weekly): actual 206000.0 (previous 207000.0) — bullish</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "AUDUSD": {
       "symbol": "AUDUSD",
-      "verdict": "Neutral",
-      "summary": "AUDUSD: Neutral",
-      "narrative_html": "<h3>AUDUSD</h3><p>The AUD reads Neutral, while the USD reads Neutral.</p><p>Differentiating base-minus-quote yields a Neutral verdict for AUDUSD.</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "verdict": "Bearish",
+      "summary": "AUDUSD: Bearish",
+      "narrative_html": "<h3>AUDUSD</h3><p>The AUD reads Bearish, while the USD reads Neutral.</p><p>Differentiating base-minus-quote yields a Bearish verdict for AUDUSD.</p><p>- Unemployment Rate: actual 4.428344 (previous 4.371348) — bearish</p>",
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "AUDJPY": {
       "symbol": "AUDJPY",
       "verdict": "Neutral",
       "summary": "AUDJPY: Neutral",
-      "narrative_html": "<h3>AUDJPY</h3><p>The AUD reads Neutral, while the JPY reads Neutral.</p><p>Differentiating base-minus-quote yields a Neutral verdict for AUDJPY.</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "narrative_html": "<h3>AUDJPY</h3><p>The AUD reads Bearish, while the JPY reads Bearish.</p><p>Differentiating base-minus-quote yields a Neutral verdict for AUDJPY.</p><p>- Unemployment Rate: actual 4.428344 (previous 4.371348) — bearish</p>",
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "AUDCHF": {
       "symbol": "AUDCHF",
-      "verdict": "Neutral",
-      "summary": "AUDCHF: Neutral",
-      "narrative_html": "<h3>AUDCHF</h3><p>The AUD reads Neutral, while the CHF reads Neutral.</p><p>Differentiating base-minus-quote yields a Neutral verdict for AUDCHF.</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "verdict": "Bearish",
+      "summary": "AUDCHF: Bearish",
+      "narrative_html": "<h3>AUDCHF</h3><p>The AUD reads Bearish, while the CHF reads Neutral.</p><p>Differentiating base-minus-quote yields a Bearish verdict for AUDCHF.</p><p>- Unemployment Rate: actual 4.428344 (previous 4.371348) — bearish</p>",
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "AUDCAD": {
       "symbol": "AUDCAD",
-      "verdict": "Bearish",
-      "summary": "AUDCAD: Bearish",
-      "narrative_html": "<h3>AUDCAD</h3><p>The AUD reads Neutral, while the CAD reads Bullish.</p><p>Differentiating base-minus-quote yields a Bearish verdict for AUDCAD.</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "verdict": "Very Bearish",
+      "summary": "AUDCAD: Very Bearish",
+      "narrative_html": "<h3>AUDCAD</h3><p>The AUD reads Bearish, while the CAD reads Bullish.</p><p>Differentiating base-minus-quote yields a Very Bearish verdict for AUDCAD.</p><p>- Unemployment Rate: actual 4.428344 (previous 4.371348) — bearish</p>",
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "AUDNZD": {
       "symbol": "AUDNZD",
       "verdict": "Neutral",
       "summary": "AUDNZD: Neutral",
-      "narrative_html": "<h3>AUDNZD</h3><p>The AUD reads Neutral, while the NZD reads Neutral.</p><p>Differentiating base-minus-quote yields a Neutral verdict for AUDNZD.</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "narrative_html": "<h3>AUDNZD</h3><p>The AUD reads Bearish, while the NZD reads Bearish.</p><p>Differentiating base-minus-quote yields a Neutral verdict for AUDNZD.</p><p>- Unemployment Rate: actual 4.428344 (previous 4.371348) — bearish</p>",
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "NZDUSD": {
       "symbol": "NZDUSD",
-      "verdict": "Neutral",
-      "summary": "NZDUSD: Neutral",
-      "narrative_html": "<h3>NZDUSD</h3><p>The NZD reads Neutral, while the USD reads Neutral.</p><p>Differentiating base-minus-quote yields a Neutral verdict for NZDUSD.</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "verdict": "Bearish",
+      "summary": "NZDUSD: Bearish",
+      "narrative_html": "<h3>NZDUSD</h3><p>The NZD reads Bearish, while the USD reads Neutral.</p><p>Differentiating base-minus-quote yields a Bearish verdict for NZDUSD.</p><p>- BusinessNZ Manufacturing PMI: actual 53.1 vs forecast 54 (previous 54.3) — bearish</p>",
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "NZDJPY": {
       "symbol": "NZDJPY",
       "verdict": "Neutral",
       "summary": "NZDJPY: Neutral",
-      "narrative_html": "<h3>NZDJPY</h3><p>The NZD reads Neutral, while the JPY reads Neutral.</p><p>Differentiating base-minus-quote yields a Neutral verdict for NZDJPY.</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "narrative_html": "<h3>NZDJPY</h3><p>The NZD reads Bearish, while the JPY reads Bearish.</p><p>Differentiating base-minus-quote yields a Neutral verdict for NZDJPY.</p><p>- BusinessNZ Manufacturing PMI: actual 53.1 vs forecast 54 (previous 54.3) — bearish</p>",
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "NZDCAD": {
       "symbol": "NZDCAD",
-      "verdict": "Bearish",
-      "summary": "NZDCAD: Bearish",
-      "narrative_html": "<h3>NZDCAD</h3><p>The NZD reads Neutral, while the CAD reads Bullish.</p><p>Differentiating base-minus-quote yields a Bearish verdict for NZDCAD.</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "verdict": "Very Bearish",
+      "summary": "NZDCAD: Very Bearish",
+      "narrative_html": "<h3>NZDCAD</h3><p>The NZD reads Bearish, while the CAD reads Bullish.</p><p>Differentiating base-minus-quote yields a Very Bearish verdict for NZDCAD.</p><p>- BusinessNZ Manufacturing PMI: actual 53.1 vs forecast 54 (previous 54.3) — bearish</p>",
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "NZDCHF": {
       "symbol": "NZDCHF",
-      "verdict": "Neutral",
-      "summary": "NZDCHF: Neutral",
-      "narrative_html": "<h3>NZDCHF</h3><p>The NZD reads Neutral, while the CHF reads Neutral.</p><p>Differentiating base-minus-quote yields a Neutral verdict for NZDCHF.</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "verdict": "Bearish",
+      "summary": "NZDCHF: Bearish",
+      "narrative_html": "<h3>NZDCHF</h3><p>The NZD reads Bearish, while the CHF reads Neutral.</p><p>Differentiating base-minus-quote yields a Bearish verdict for NZDCHF.</p><p>- BusinessNZ Manufacturing PMI: actual 53.1 vs forecast 54 (previous 54.3) — bearish</p>",
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "NZDSGD": {
       "symbol": "NZDSGD",
-      "verdict": "Neutral",
-      "summary": "NZDSGD: Neutral",
-      "narrative_html": "<h3>NZDSGD</h3><p>The NZD reads Neutral, while the SGD reads Neutral.</p><p>Differentiating base-minus-quote yields a Neutral verdict for NZDSGD.</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "verdict": "Bearish",
+      "summary": "NZDSGD: Bearish",
+      "narrative_html": "<h3>NZDSGD</h3><p>The NZD reads Bearish, while the SGD reads Neutral.</p><p>Differentiating base-minus-quote yields a Bearish verdict for NZDSGD.</p><p>- BusinessNZ Manufacturing PMI: actual 53.1 vs forecast 54 (previous 54.3) — bearish</p>",
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "CADCHF": {
       "symbol": "CADCHF",
       "verdict": "Bullish",
       "summary": "CADCHF: Bullish",
       "narrative_html": "<h3>CADCHF</h3><p>The CAD reads Bullish, while the CHF reads Neutral.</p><p>Differentiating base-minus-quote yields a Bullish verdict for CADCHF.</p><p>- Unemployment Rate: actual 6.4 (previous 6.5) — bullish</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "CADJPY": {
       "symbol": "CADJPY",
-      "verdict": "Bullish",
-      "summary": "CADJPY: Bullish",
-      "narrative_html": "<h3>CADJPY</h3><p>The CAD reads Bullish, while the JPY reads Neutral.</p><p>Differentiating base-minus-quote yields a Bullish verdict for CADJPY.</p><p>- Unemployment Rate: actual 6.4 (previous 6.5) — bullish</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "verdict": "Very Bullish",
+      "summary": "CADJPY: Very Bullish",
+      "narrative_html": "<h3>CADJPY</h3><p>The CAD reads Bullish, while the JPY reads Bearish.</p><p>Differentiating base-minus-quote yields a Very Bullish verdict for CADJPY.</p><p>- Unemployment Rate: actual 6.4 (previous 6.5) — bullish</p>",
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "CHFJPY": {
       "symbol": "CHFJPY",
-      "verdict": "Neutral",
-      "summary": "CHFJPY: Neutral",
-      "narrative_html": "<h3>CHFJPY</h3><p>The CHF reads Neutral, while the JPY reads Neutral.</p><p>Differentiating base-minus-quote yields a Neutral verdict for CHFJPY.</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "verdict": "Bullish",
+      "summary": "CHFJPY: Bullish",
+      "narrative_html": "<h3>CHFJPY</h3><p>The CHF reads Neutral, while the JPY reads Bearish.</p><p>Differentiating base-minus-quote yields a Bullish verdict for CHFJPY.</p><p>- CPI (m/m, y/y): actual 0.03 — neutral</p>",
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "BTCUSD": {
       "symbol": "BTCUSD",
       "verdict": "Bullish",
       "summary": "BTCUSD: Bullish",
       "narrative_html": "<h3>BTCUSD</h3><p>Bullish — liquidity expanding USD index weak (supportive) proxy-derived signal capped at single step</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "ETHUSD": {
       "symbol": "ETHUSD",
       "verdict": "Bullish",
       "summary": "ETHUSD: Bullish",
       "narrative_html": "<h3>ETHUSD</h3><p>Bullish — liquidity expanding USD index weak (supportive) proxy-derived signal capped at single step</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "LTCUSD": {
       "symbol": "LTCUSD",
       "verdict": "Bullish",
       "summary": "LTCUSD: Bullish",
       "narrative_html": "<h3>LTCUSD</h3><p>Bullish — liquidity expanding USD index weak (supportive) proxy-derived signal capped at single step</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "SOLUSD": {
       "symbol": "SOLUSD",
       "verdict": "Bullish",
       "summary": "SOLUSD: Bullish",
       "narrative_html": "<h3>SOLUSD</h3><p>Bullish — liquidity expanding USD index weak (supportive) proxy-derived signal capped at single step</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "SUIUSD": {
       "symbol": "SUIUSD",
       "verdict": "Bullish",
       "summary": "SUIUSD: Bullish",
       "narrative_html": "<h3>SUIUSD</h3><p>Bullish — liquidity expanding USD index weak (supportive) proxy-derived signal capped at single step</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "XLMUSD": {
       "symbol": "XLMUSD",
       "verdict": "Bullish",
       "summary": "XLMUSD: Bullish",
       "narrative_html": "<h3>XLMUSD</h3><p>Bullish — liquidity expanding USD index weak (supportive) proxy-derived signal capped at single step</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "XRPUSD": {
       "symbol": "XRPUSD",
       "verdict": "Bullish",
       "summary": "XRPUSD: Bullish",
       "narrative_html": "<h3>XRPUSD</h3><p>Bullish — liquidity expanding USD index weak (supportive) proxy-derived signal capped at single step</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "AVAXUSD": {
       "symbol": "AVAXUSD",
       "verdict": "Bullish",
       "summary": "AVAXUSD: Bullish",
       "narrative_html": "<h3>AVAXUSD</h3><p>Bullish — liquidity expanding USD index weak (supportive) proxy-derived signal capped at single step</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "XAUUSD": {
       "symbol": "XAUUSD",
-      "verdict": "Bearish",
-      "summary": "XAUUSD: Bearish",
-      "narrative_html": "<h3>XAUUSD</h3><p>Bearish — positioning tilt contributes real-yield rising (headwind) USD index weak (supportive)</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "verdict": "Bullish",
+      "summary": "XAUUSD: Bullish",
+      "narrative_html": "<h3>XAUUSD</h3><p>Bullish — positioning tilt contributes real-yield rising (headwind) USD index weak (supportive)</p>",
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "XAGUSD": {
       "symbol": "XAGUSD",
-      "verdict": "Bullish",
-      "summary": "XAGUSD: Bullish",
-      "narrative_html": "<h3>XAGUSD</h3><p>Bullish — positioning tilt contributes real-yield rising (headwind) USD index weak (supportive)</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "verdict": "Bearish",
+      "summary": "XAGUSD: Bearish",
+      "narrative_html": "<h3>XAGUSD</h3><p>Bearish — positioning tilt contributes real-yield rising (headwind) USD index weak (supportive)</p>",
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "XPTUSD": {
       "symbol": "XPTUSD",
-      "verdict": "Bearish",
-      "summary": "XPTUSD: Bearish",
-      "narrative_html": "<h3>XPTUSD</h3><p>Bearish — positioning tilt contributes real-yield rising (headwind) USD index weak (supportive)</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "verdict": "Bullish",
+      "summary": "XPTUSD: Bullish",
+      "narrative_html": "<h3>XPTUSD</h3><p>Bullish — positioning tilt contributes real-yield rising (headwind) USD index weak (supportive)</p>",
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "XPDUSD": {
       "symbol": "XPDUSD",
       "verdict": "Bullish",
       "summary": "XPDUSD: Bullish",
       "narrative_html": "<h3>XPDUSD</h3><p>Bullish — positioning tilt contributes real-yield rising (headwind) USD index weak (supportive)</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "OIL": {
       "symbol": "OIL",
-      "verdict": "Bearish",
-      "summary": "OIL: Bearish",
-      "narrative_html": "<h3>OIL</h3><p>Bearish — positioning tilt contributes</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "verdict": "Bullish",
+      "summary": "OIL: Bullish",
+      "narrative_html": "<h3>OIL</h3><p>Bullish — positioning tilt contributes</p>",
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "BRENT": {
       "symbol": "BRENT",
       "verdict": "Bearish",
       "summary": "BRENT: Bearish",
       "narrative_html": "<h3>BRENT</h3><p>Bearish — positioning tilt contributes</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "COPPER": {
       "symbol": "COPPER",
-      "verdict": "Bearish",
-      "summary": "COPPER: Bearish",
-      "narrative_html": "<h3>COPPER</h3><p>Bearish — positioning tilt contributes</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "verdict": "Bullish",
+      "summary": "COPPER: Bullish",
+      "narrative_html": "<h3>COPPER</h3><p>Bullish — positioning tilt contributes</p>",
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "US500": {
       "symbol": "US500",
       "verdict": "Neutral",
       "summary": "US500: Neutral",
       "narrative_html": "<h3>US500</h3><p>Neutral — real-yield rising (headwind)</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "US100": {
       "symbol": "US100",
       "verdict": "Neutral",
       "summary": "US100: Neutral",
       "narrative_html": "<h3>US100</h3><p>Neutral — real-yield rising (headwind)</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "US30": {
       "symbol": "US30",
       "verdict": "Neutral",
       "summary": "US30: Neutral",
       "narrative_html": "<h3>US30</h3><p>Neutral — real-yield rising (headwind)</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "GE40": {
       "symbol": "GE40",
       "verdict": "Neutral",
       "summary": "GE40: Neutral",
       "narrative_html": "<h3>GE40</h3><p>Neutral — real-yield rising (headwind)</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "EU50": {
       "symbol": "EU50",
       "verdict": "Neutral",
       "summary": "EU50: Neutral",
       "narrative_html": "<h3>EU50</h3><p>Neutral — real-yield rising (headwind)</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "GB100": {
       "symbol": "GB100",
       "verdict": "Neutral",
       "summary": "GB100: Neutral",
       "narrative_html": "<h3>GB100</h3><p>Neutral — real-yield rising (headwind)</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "FR40": {
       "symbol": "FR40",
       "verdict": "Neutral",
       "summary": "FR40: Neutral",
       "narrative_html": "<h3>FR40</h3><p>Neutral — real-yield rising (headwind)</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "JP225": {
       "symbol": "JP225",
       "verdict": "Neutral",
       "summary": "JP225: Neutral",
       "narrative_html": "<h3>JP225</h3><p>Neutral — real-yield rising (headwind)</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "HK50": {
       "symbol": "HK50",
       "verdict": "Neutral",
       "summary": "HK50: Neutral",
       "narrative_html": "<h3>HK50</h3><p>Neutral — real-yield rising (headwind)</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "AUS200": {
       "symbol": "AUS200",
       "verdict": "Neutral",
       "summary": "AUS200: Neutral",
       "narrative_html": "<h3>AUS200</h3><p>Neutral — real-yield rising (headwind)</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "CH20": {
       "symbol": "CH20",
       "verdict": "Neutral",
       "summary": "CH20: Neutral",
       "narrative_html": "<h3>CH20</h3><p>Neutral — real-yield rising (headwind)</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "updated": "2026-09-12T14:07:24+00:00"
     },
     "ES35": {
       "symbol": "ES35",
       "verdict": "Neutral",
       "summary": "ES35: Neutral",
       "narrative_html": "<h3>ES35</h3><p>Neutral — real-yield rising (headwind)</p>",
-      "updated": "2026-09-12T12:36:23+00:00"
+      "updated": "2026-09-12T14:07:24+00:00"
     }
   }
 }

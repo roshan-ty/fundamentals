@@ -95,24 +95,49 @@ def fetch_tradingeconomics(http=None):
     return parse_tradingeconomics(html)
 
 
+_COUNTRY_PAGES = ["australia", "new-zealand", "japan", "switzerland", "china",
+                  "canada", "united-kingdom", "germany", "france", "united-states"]
+
+
 def collect_year_calendar(days=365):
-    """Fetch a ~1-year TradingEconomics window so every data point has a recent
-    released predecessor. Saved to data/calendar/year_events.json (used by the
-    verdict engine via build_releases, not displayed directly)."""
+    """Fetch a ~1-year TradingEconomics window + per-country calendar pages so
+    every data point has a recent released predecessor. Actual-bearing rows from
+    per-country pages feed currencies that the main feed misses (AUD/NZD/JPY/
+    CHF/CNY). Saved to data/calendar/year_events.json; the verdict engine
+    consumes it via build_releases (not displayed directly)."""
     from datetime import timedelta
     today = datetime.utcnow()
     start = (today - timedelta(days=days)).strftime("%Y-%m-%d")
     end = today.strftime("%Y-%m-%d")
     http = HttpSession(timeout=60, max_retries=2)
-    events = []
+    seen = {}
+
+    def merge_events(events):
+        for ev in events:
+            key = (ev.get("title"), ev.get("country"), (ev.get("date_utc") or "")[:16])
+            seen[key] = ev
+
     try:
         html = http.get("https://tradingeconomics.com/calendar",
                         params={"from": start, "to": end}, timeout=90).text
-        events = parse_tradingeconomics(html)
-        log(f"Year calendar: {len(events)} events "
-            f"({sum(1 for e in events if e.get('actual'))} released actuals)")
+        merge_events(parse_tradingeconomics(html))
     except Exception as exc:
-        log(f"Year calendar failed: {str(exc)[:100]}", "WARN")
+        log(f"Year calendar fetch failed: {str(exc)[:100]}", "WARN")
+
+    for slug in _COUNTRY_PAGES:
+        try:
+            chtml = http.get(f"https://tradingeconomics.com/{slug}/calendar",
+                             timeout=60).text
+            events = parse_tradingeconomics(chtml)
+            merge_events(events)
+            log(f"Country calendar {slug}: {len(events)} rows "
+                f"({sum(1 for e in events if e.get('actual'))} actuals)")
+        except Exception as exc:
+            log(f"Country calendar {slug} failed: {str(exc)[:80]}", "WARN")
+
+    events = list(seen.values())
+    log(f"Year calendar (all countries): {len(events)} rows "
+        f"({sum(1 for e in events if e.get('actual'))} released actuals)")
     if events:
         save_json(os.path.join(DATA_DIR, "calendar", "year_events.json"), events)
     return events

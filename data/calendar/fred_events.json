@@ -1,5 +1,45 @@
 [
   {
+    "title": "CPI y/y",
+    "country": "CHF",
+    "date_utc": "2025-03-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "0.34",
+    "previous": "",
+    "source_series": "CHECPIALLMINMEI",
+    "period": "2025-03-01"
+  },
+  {
+    "title": "CPI y/y",
+    "country": "CNY",
+    "date_utc": "2025-03-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "-0.1",
+    "previous": "",
+    "source_series": "CHNCPIALLMINMEI",
+    "period": "2025-03-01"
+  },
+  {
+    "title": "CPI y/y",
+    "country": "CHF",
+    "date_utc": "2025-04-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "0.03",
+    "previous": "",
+    "source_series": "CHECPIALLMINMEI",
+    "period": "2025-04-01"
+  },
+  {
+    "title": "CPI y/y",
+    "country": "CNY",
+    "date_utc": "2025-04-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "-0.07",
+    "previous": "",
+    "source_series": "CHNCPIALLMINMEI",
+    "period": "2025-04-01"
+  },
+  {
     "title": "GDP q/q annualized",
     "country": "USD",
     "date_utc": "2026-01-01T00:00:00+00:00",
@@ -7,6 +47,16 @@
     "actual": "2.68",
     "previous": "",
     "source_series": "GDPC1",
+    "period": "2026-01-01"
+  },
+  {
+    "title": "GDP y/y",
+    "country": "JPY",
+    "date_utc": "2026-01-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "1.3",
+    "previous": "",
+    "source_series": "JPNRGDPEXP",
     "period": "2026-01-01"
   },
   {
@@ -40,6 +90,16 @@
     "period": "2026-04-01"
   },
   {
+    "title": "GDP y/y",
+    "country": "JPY",
+    "date_utc": "2026-04-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "1.6",
+    "previous": "",
+    "source_series": "JPNRGDPEXP",
+    "period": "2026-04-01"
+  },
+  {
     "title": "Unemployment Rate",
     "country": "EUR",
     "date_utc": "2026-05-01T00:00:00+00:00",
@@ -57,6 +117,16 @@
     "actual": "2.5",
     "previous": "2.5",
     "source_series": "LRHUTTTTJPM156S",
+    "period": "2026-05-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "AUD",
+    "date_utc": "2026-05-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "4.371348",
+    "previous": "4.490485",
+    "source_series": "LRHUTTTTAUM156S",
     "period": "2026-05-01"
   },
   {
@@ -147,6 +217,16 @@
     "actual": "6.5",
     "previous": "6.6",
     "source_series": "LRHUTTTTCAM156S",
+    "period": "2026-06-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "AUD",
+    "date_utc": "2026-06-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "4.428344",
+    "previous": "4.371348",
+    "source_series": "LRHUTTTTAUM156S",
     "period": "2026-06-01"
   },
   {

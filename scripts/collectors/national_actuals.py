@@ -33,6 +33,10 @@ INTL_INDICATORS = {
     "LRHUTTTTDEM156S": {"country": "EUR", "name": "Unemployment Rate", "kind": "level"},
     "LRHUTTTTJPM156S": {"country": "JPY", "name": "Unemployment Rate", "kind": "level"},
     "LRHUTTTTCAM156S": {"country": "CAD", "name": "Unemployment Rate", "kind": "level"},
+    "LRHUTTTTAUM156S": {"country": "AUD", "name": "Unemployment Rate", "kind": "level"},
+    "CHECPIALLMINMEI": {"country": "CHF", "name": "CPI y/y", "kind": "yoy_pct"},
+    "CHNCPIALLMINMEI": {"country": "CNY", "name": "CPI y/y", "kind": "yoy_pct"},
+    "JPNRGDPEXP": {"country": "JPY", "name": "GDP y/y", "kind": "yoy_pct"},
 }
 
 
@@ -66,6 +70,12 @@ def build_fred_events():
             if kind == "mom_pct":
                 actual = _pct_change(v_prev, v_cur)
                 prev_val = None
+            elif kind == "yoy_pct":
+                if i >= 12:
+                    actual = _pct_change(vals[i - 12][1], v_cur)
+                    prev_val = None
+                else:
+                    continue
             elif kind == "qoq_ann_pct":
                 if i >= 4:
                     actual = _pct_change(vals[i - 4][1], v_cur)

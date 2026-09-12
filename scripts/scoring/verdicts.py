@@ -308,10 +308,12 @@ def instrument_verdict(sym, cfg, releases, context):
     sig = 0
     notes = []
     cot = context.get("cot", {}).get(sym, 0)
+    usd_anchor = context.get("usd_anchor", 0)  # -2..2 from USD currency verdict
 
     if kind in ("metal", "industrial"):
         sig -= context["real_yield_sig"]      # RISING real yields bearish metal
         sig += -1 * context.get("dxy_sig", 0)  # strong USD -> bearish metal
+        sig += -usd_anchor                     # inverse-USD rule
         if kind == "industrial":
             sig += context["china_pmi_sig"]    # Chinese industry drives copper/pt/pd
             notes.append("industrial metal: China PMI contributes")
@@ -324,6 +326,7 @@ def instrument_verdict(sym, cfg, releases, context):
             notes.append("USD index " + ("weak (supportive)" if context["dxy_sig"] < 0 else "strong (headwind)"))
     elif kind == "energy":
         sig += context["china_pmi_sig"]
+        sig += -usd_anchor
         if context["china_pmi_sig"] != 0:
             notes.append("industrial demand PMI " + ("expanding" if context["china_pmi_sig"] > 0 else "contracting"))
         if cot:
@@ -332,15 +335,19 @@ def instrument_verdict(sym, cfg, releases, context):
     elif kind == "index":
         sig -= context["real_yield_sig"]
         sig += -1 * context.get("dxy_sig", 0)
+        sig += int(-0.5 * usd_anchor)
         if context["real_yield_sig"] != 0:
             notes.append("real-yield " + ("easing (risk-on)" if context["real_yield_sig"] < 0 else "rising (headwind)"))
     elif kind == "crypto":
         sig += context["m2_sig"]
         sig += -1 * context.get("dxy_sig", 0)
+        sig += -usd_anchor
         if context["m2_sig"] != 0:
             notes.append("liquidity " + ("expanding" if context["m2_sig"] > 0 else "contracting"))
         if context.get("dxy_sig") != 0:
             notes.append("USD index " + ("weak (supportive)" if context["dxy_sig"] < 0 else "strong (headwind)"))
+    if usd_anchor and kind in ("metal", "industrial", "energy", "crypto"):
+        notes.append("USD " + ("strong — inverse headwind" if usd_anchor > 0 else "weak — inverse supportive"))
     band = _band_from_signal(sig)
     if kind in ("index", "crypto"):
         # proxy-derived instruments stay within single-step verdicts
@@ -479,7 +486,9 @@ def collect():
         "context": {k: v for k, v in context.items() if k != "cot"},
     })
 
-    # instrument verdicts
+    # instrument verdicts (inverse-USD rule driven by the USD currency verdict)
+    usd_v = currency_out.get("USD", {}).get("verdict", "Neutral")
+    context["usd_anchor"] = _ANCHOR.get(usd_v, 0)
     instrument_out = {}
     for sym, cfg in rules_targets(symbols).items():
         instrument_out[sym] = instrument_verdict(sym, cfg, releases, context)

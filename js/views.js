@@ -105,6 +105,30 @@
     head.appendChild(c1);
     root.appendChild(head);
 
+    // ── What drives this ticker (for instruments: inverse-USD breakdown) ──
+    if (inst[sym]) {
+      const usdRec = cur.USD || {};
+      const inverse = (v) => v === "bullish" ? "bearish" : (v === "bearish" ? "bullish" : v);
+      const usdRows = (usdRec.drivers || []).map((d) => `<tr>
+        <td>${esc(d.dataPoint || d.title)}</td><td class="num">${esc((d.period || "").slice(0, 10))}</td>
+        <td class="num">${esc(d.actual || "—")}</td><td class="num">${esc(d.previous || "—")}</td><td class="num">${esc(d.forecast || "—")}</td>
+        <td><span class="${bandClass(d.verdict)}">${esc(d.verdict)}</span></td>
+        <td class="dim">inverse → <strong>${inverse(d.verdict)}</strong> for ${esc(sym)}</td></tr>`).join("");
+      const y10 = (yields.DGS10 ? yields.DGS10.points || [] : []);
+      const ry = (yields.DFII10 ? yields.DFII10.points || [] : []);
+      const ylast = (arr) => (arr.length ? arr[arr.length - 1].value : null);
+      const yrow = (ylast(y10) !== null ? `<tr><td>10Y Treasury Yield (context)</td><td colspan="5" class="num">${ylast(y10)}%</td><td class="dim">rising yields pressure gold</td></tr>` : "") +
+        (ylast(ry) !== null ? `<tr><td>10Y Real Yield (context)</td><td colspan="5" class="num">${ylast(ry)}%</td><td class="dim">rising real yield = metal headwind</td></tr>` : "");
+      const notes = (inst[sym].notes || []).map((n) => `<div class="dim">• ${esc(n)}</div>`).join("");
+      const dp = el("div", "panel");
+      dp.innerHTML = `<h3>What drives ${esc(sym)}</h3>
+        <div class="lbl">USD drives this instrument inversely — USD is ${B.verdictBadge(usdRec.verdict)}</div>
+        ${notes}
+        <table class="data"><thead><tr><th>USD Data Point</th><th>Period</th><th class="num">Actual</th><th class="num">Prev</th><th class="num">Forecast</th><th>USD</th><th>Effect on ${esc(sym)}</th></tr></thead>
+        <tbody>${usdRows || `<tr><td colspan="7" class="dim">No issued USD readings yet.</td></tr>`}${yrow}</tbody></table>`;
+      root.appendChild(dp);
+    }
+
     // Calendar events affecting this instrument
     const evPanel = el("div", "panel");
     const relevant = (Array.isArray(events) ? events : []).filter((e) => e.country === sym || sym.startsWith(e.country));

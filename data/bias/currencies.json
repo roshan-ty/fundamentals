@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-09-12T12:36:23+00:00",
+    "updated": "2026-09-12T14:07:24+00:00",
     "method": "verdict v3 (forecast-first, released-only)"
   },
   "currencies": {
@@ -141,11 +141,22 @@
       "verdict": "Bearish",
       "tally": {
         "bullish": 0.0,
-        "bearish": 2.0,
+        "bearish": 3.0,
         "neutral": 0.0
       },
-      "released_points": 1,
+      "released_points": 2,
       "drivers": [
+        {
+          "dataPoint": "German Industrial Production (m/m)",
+          "title": "Industrial Production MoM JUL",
+          "period": "2026-09-09T10:45+00:00",
+          "actual": "-0.4%",
+          "previous": "-0.1% ",
+          "forecast": "0.4%",
+          "direction": "higher_is_bullish",
+          "verdict": "bearish",
+          "weight": 1.0
+        },
         {
           "dataPoint": "Eurozone Unemployment Rate",
           "title": "Unemployment Rate",
@@ -197,29 +208,53 @@
       "notes": []
     },
     "AUD": {
-      "verdict": "Neutral",
+      "verdict": "Bearish",
       "tally": {
-        "bullish": 0,
-        "bearish": 0,
-        "neutral": 0
+        "bullish": 0.0,
+        "bearish": 2.0,
+        "neutral": 0.0
       },
-      "released_points": 0,
-      "drivers": [],
+      "released_points": 1,
+      "drivers": [
+        {
+          "dataPoint": "Unemployment Rate",
+          "title": "Unemployment Rate",
+          "period": "2026-06-01T00:00:00+00:00",
+          "actual": "4.428344",
+          "previous": "4.371348",
+          "forecast": "",
+          "direction": "lower_is_bullish",
+          "verdict": "bearish",
+          "weight": 2.0
+        }
+      ],
       "notes": [
-        "no released data yet"
+        "limited release evidence; cap at single-step verdict"
       ]
     },
     "NZD": {
-      "verdict": "Neutral",
+      "verdict": "Bearish",
       "tally": {
-        "bullish": 0,
-        "bearish": 0,
-        "neutral": 0
+        "bullish": 0.0,
+        "bearish": 1.0,
+        "neutral": 0.0
       },
-      "released_points": 0,
-      "drivers": [],
+      "released_points": 1,
+      "drivers": [
+        {
+          "dataPoint": "BusinessNZ Manufacturing PMI",
+          "title": "Business NZ PMI AUG",
+          "period": "2026-09-11T02:30+00:00",
+          "actual": "53.1",
+          "previous": "54.3",
+          "forecast": "54",
+          "direction": "higher_is_bullish",
+          "verdict": "bearish",
+          "weight": 1.0
+        }
+      ],
       "notes": [
-        "no released data yet"
+        "limited release evidence; cap at single-step verdict"
       ]
     },
     "CAD": {
@@ -248,42 +283,85 @@
       ]
     },
     "JPY": {
-      "verdict": "Neutral",
+      "verdict": "Bearish",
       "tally": {
-        "bullish": 0,
-        "bearish": 0,
-        "neutral": 0
+        "bullish": 0.0,
+        "bearish": 1.0,
+        "neutral": 2.0
       },
-      "released_points": 0,
-      "drivers": [],
-      "notes": [
-        "no released data yet"
-      ]
+      "released_points": 2,
+      "drivers": [
+        {
+          "dataPoint": "PPI (y/y)",
+          "title": "PPI YoY AUG",
+          "period": "2026-09-11T03:50+00:00",
+          "actual": "7.6%",
+          "previous": "7.7% ",
+          "forecast": "7.8%",
+          "direction": "higher_is_bullish",
+          "verdict": "bearish",
+          "weight": 1.0
+        },
+        {
+          "dataPoint": "GDP (q/q, annualized)",
+          "title": "GDP y/y",
+          "period": "2026-04-01T00:00:00+00:00",
+          "actual": "1.6",
+          "previous": "",
+          "forecast": "",
+          "direction": "higher_is_bullish",
+          "verdict": "neutral",
+          "weight": 2.0
+        }
+      ],
+      "notes": []
     },
     "CHF": {
       "verdict": "Neutral",
       "tally": {
-        "bullish": 0,
-        "bearish": 0,
-        "neutral": 0
+        "bullish": 0.0,
+        "bearish": 0.0,
+        "neutral": 2.0
       },
-      "released_points": 0,
-      "drivers": [],
-      "notes": [
-        "no released data yet"
-      ]
+      "released_points": 1,
+      "drivers": [
+        {
+          "dataPoint": "CPI (m/m, y/y)",
+          "title": "CPI y/y",
+          "period": "2025-04-01T00:00:00+00:00",
+          "actual": "0.03",
+          "previous": "",
+          "forecast": "",
+          "direction": "higher_is_bullish",
+          "verdict": "neutral",
+          "weight": 2.0
+        }
+      ],
+      "notes": []
     },
     "CNY": {
-      "verdict": "Neutral",
+      "verdict": "Bullish",
       "tally": {
-        "bullish": 0,
-        "bearish": 0,
-        "neutral": 0
+        "bullish": 1.0,
+        "bearish": 0.0,
+        "neutral": 0.0
       },
-      "released_points": 0,
-      "drivers": [],
+      "released_points": 1,
+      "drivers": [
+        {
+          "dataPoint": "CPI & PPI (y/y)",
+          "title": "PPI YoY AUG",
+          "period": "2026-09-09T05:30+00:00",
+          "actual": "3.8%",
+          "previous": "3.5%",
+          "forecast": "3.6%",
+          "direction": "higher_is_bullish",
+          "verdict": "bullish",
+          "weight": 1.0
+        }
+      ],
       "notes": [
-        "no released data yet"
+        "limited release evidence; cap at single-step verdict"
       ]
     },
     "MXN": {

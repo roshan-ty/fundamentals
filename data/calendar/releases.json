@@ -1,6 +1,54 @@
 {
-  "updated": "2026-09-12T12:36:23+00:00",
+  "updated": "2026-09-12T14:07:24+00:00",
   "releases": [
+    {
+      "country": "CNY",
+      "dataPointId": "cn_cpi_ppi",
+      "dataPoint": "CPI & PPI (y/y)",
+      "weight": 0.5,
+      "direction": "higher_is_bullish",
+      "period": "2026-09-09T05:30+00:00",
+      "title": "PPI YoY AUG",
+      "actual": "3.8%",
+      "previous": "3.5%",
+      "forecast": "3.6%"
+    },
+    {
+      "country": "EUR",
+      "dataPointId": "eu_de_indprod",
+      "dataPoint": "German Industrial Production (m/m)",
+      "weight": 0.5,
+      "direction": "higher_is_bullish",
+      "period": "2026-09-09T10:45+00:00",
+      "title": "Industrial Production MoM JUL",
+      "actual": "-0.4%",
+      "previous": "-0.1% ",
+      "forecast": "0.4%"
+    },
+    {
+      "country": "NZD",
+      "dataPointId": "nz_pmi",
+      "dataPoint": "BusinessNZ Manufacturing PMI",
+      "weight": 0.5,
+      "direction": "higher_is_bullish",
+      "period": "2026-09-11T02:30+00:00",
+      "title": "Business NZ PMI AUG",
+      "actual": "53.1",
+      "previous": "54.3",
+      "forecast": "54"
+    },
+    {
+      "country": "JPY",
+      "dataPointId": "jp_ppi",
+      "dataPoint": "PPI (y/y)",
+      "weight": 0.5,
+      "direction": "higher_is_bullish",
+      "period": "2026-09-11T03:50+00:00",
+      "title": "PPI YoY AUG",
+      "actual": "7.6%",
+      "previous": "7.7% ",
+      "forecast": "7.8%"
+    },
     {
       "country": "GBP",
       "dataPointId": "gb_gdp",
@@ -26,6 +74,18 @@
       "forecast": "51.5"
     },
     {
+      "country": "CHF",
+      "dataPointId": "ch_cpi",
+      "dataPoint": "CPI (m/m, y/y)",
+      "weight": 1.5,
+      "direction": "higher_is_bullish",
+      "period": "2025-04-01T00:00:00+00:00",
+      "title": "CPI y/y",
+      "actual": "0.03",
+      "previous": "",
+      "forecast": ""
+    },
+    {
       "country": "USD",
       "dataPointId": "us_gdp",
       "dataPoint": "Advance GDP (q/q)",
@@ -34,6 +94,18 @@
       "period": "2026-04-01T00:00:00+00:00",
       "title": "GDP q/q annualized",
       "actual": "2.1",
+      "previous": "",
+      "forecast": ""
+    },
+    {
+      "country": "JPY",
+      "dataPointId": "jp_gdp",
+      "dataPoint": "GDP (q/q, annualized)",
+      "weight": 1.0,
+      "direction": "higher_is_bullish",
+      "period": "2026-04-01T00:00:00+00:00",
+      "title": "GDP y/y",
+      "actual": "1.6",
       "previous": "",
       "forecast": ""
     },
@@ -59,6 +131,18 @@
       "title": "Unemployment Rate",
       "actual": "3.9",
       "previous": "3.8",
+      "forecast": ""
+    },
+    {
+      "country": "AUD",
+      "dataPointId": "au_unemployment",
+      "dataPoint": "Unemployment Rate",
+      "weight": 1.0,
+      "direction": "lower_is_bullish",
+      "period": "2026-06-01T00:00:00+00:00",
+      "title": "Unemployment Rate",
+      "actual": "4.428344",
+      "previous": "4.371348",
       "forecast": ""
     },
     {

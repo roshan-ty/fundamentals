@@ -45,7 +45,7 @@
     "NZD": {
       "dataPoints": {
         "nz_ocr": "Critical", "nz_cpi": "High", "nz_gdp": "High", "nz_employment": "High",
-        "nz_unemployment": "High", "nz_gdt": "Medium"
+        "nz_unemployment": "High", "nz_gdt": "Medium", "nz_pmi": "Medium"
       },
       "specials": ["china_demand"]
     },
@@ -59,7 +59,7 @@
     "JPY": {
       "dataPoints": {
         "jp_boj": "Critical", "jp_core_cpi": "High", "jp_gdp": "High", "jp_trade": "Medium",
-        "jp_cash_earnings": "Medium", "jp_tankan": "Low"
+        "jp_cash_earnings": "Medium", "jp_tankan": "Low", "jp_ppi": "Medium"
       },
       "specials": ["jpy_core_above2"]
     },

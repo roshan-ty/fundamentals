@@ -99,6 +99,26 @@ def test_usd_more_bullish_than_eur_makes_eurusd_bearish():
     assert v.pair_from_matrix("Very Bullish", "Bullish") == "Bullish"
 
 
+def test_inverse_usd_drives_metals():
+    # Same real-yield/DXY context, but a strongly BULLISH USD must flip gold bearish
+    base_ctx = {"real_yield_sig": 0, "dxy_sig": 0, "m2_sig": 0, "china_pmi_sig": 0,
+                "oil_direction": "flat", "risk_mode": "flat", "cot": {"XAUUSD": 0}}
+    cfg = {"kind": "metal"}
+    bull = dict(base_ctx, usd_anchor=2)
+    bear = dict(base_ctx, usd_anchor=-2)
+    assert v.instrument_verdict("XAUUSD", cfg, {}, bull)["verdict"] in ("Bearish", "Very Bearish")
+    assert v.instrument_verdict("XAUUSD", cfg, {}, bear)["verdict"] in ("Bullish", "Very Bullish")
+
+
+def test_crypto_uses_m2_and_usd():
+    cfg = {"kind": "crypto"}
+    ctx = {"real_yield_sig": 0, "dxy_sig": 0, "m2_sig": 0, "china_pmi_sig": 0,
+           "oil_direction": "flat", "risk_mode": "flat", "cot": {}}
+    # proxy-derived signals are capped at single-step verdicts
+    assert v.instrument_verdict("BTCUSD", cfg, {}, dict(ctx, m2_sig=1, usd_anchor=-2))["verdict"] == "Bullish"
+    assert v.instrument_verdict("BTCUSD", cfg, {}, dict(ctx, m2_sig=-1, usd_anchor=2))["verdict"] == "Bearish"
+
+
 def test_band_map():
     assert v._verdict_band(0.7, 0.6) == "Very Bullish"
     assert v._verdict_band(0.6, 0.3) == "Bullish"

@@ -83,7 +83,8 @@
         {"id": "nz_employment", "name": "Employment Change", "direction": "higher_is_bullish", "weight": 1.0, "match": ["Employment Change"]},
         {"id": "nz_unemployment", "name": "Unemployment Rate", "direction": "lower_is_bullish", "weight": 1.0, "match": ["Unemployment Rate"]},
         {"id": "nz_gdp", "name": "GDP (q/q)", "direction": "higher_is_bullish", "weight": 1.0, "match": ["GDP q/q", "GDP y/y", "Gross Domestic Product"]},
-        {"id": "nz_gdt", "name": "GlobalDairyTrade (GDT) Price Index", "direction": "higher_is_bullish", "weight": 0.5, "match": ["GlobalDairyTrade", "GDT"], "note": "Bi-weekly dairy auction; polled when available."}
+        {"id": "nz_gdt", "name": "GlobalDairyTrade (GDT) Price Index", "direction": "higher_is_bullish", "weight": 0.5, "match": ["GlobalDairyTrade", "GDT"], "note": "Bi-weekly dairy auction; polled when available."},
+        {"id": "nz_pmi", "name": "BusinessNZ Manufacturing PMI", "direction": "higher_is_bullish", "weight": 0.5, "match": ["Manufacturing PMI", "PMI"]}
       ]
     },
     "CAD": {
@@ -106,7 +107,8 @@
         {"id": "jp_gdp", "name": "GDP (q/q, annualized)", "direction": "higher_is_bullish", "weight": 1.0, "match": ["GDP q/q", "GDP y/y", "Gross Domestic Product"]},
         {"id": "jp_tankan", "name": "Tankan Large Manufacturers Index", "direction": "higher_is_bullish", "weight": 0.5, "match": ["Tankan"]},
         {"id": "jp_trade", "name": "Trade Balance", "direction": "higher_is_bullish", "weight": 0.5, "match": ["Trade Balance"]},
-        {"id": "jp_cash_earnings", "name": "Average Cash Earnings (y/y)", "direction": "higher_is_bullish", "weight": 0.5, "match": ["Average Cash Earnings"]}
+        {"id": "jp_cash_earnings", "name": "Average Cash Earnings (y/y)", "direction": "higher_is_bullish", "weight": 0.5, "match": ["Average Cash Earnings"]},
+        {"id": "jp_ppi", "name": "PPI (y/y)", "direction": "higher_is_bullish", "weight": 0.5, "match": ["PPI y/y", "PPI YoY"]}
       ]
     },
     "CHF": {
