@@ -6039,6 +6039,16 @@
     "source": "te"
   },
   {
+    "title": "Consumer Confidence SEP",
+    "country": "KRW",
+    "date_utc": "2026-09-23T01:00+00:00",
+    "impact": "",
+    "forecast": "104.3",
+    "previous": "104.5",
+    "actual": "",
+    "source": "te"
+  },
+  {
     "title": "S&P Global Manufacturing PMI Flash SEP",
     "country": "AUD",
     "date_utc": "2026-09-23T03:00+00:00",
@@ -6065,6 +6075,66 @@
     "impact": "",
     "forecast": "52",
     "previous": "52.7",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "HSBC Composite PMI Flash SEP",
+    "country": "IN",
+    "date_utc": "2026-09-23T09:00+00:00",
+    "impact": "",
+    "forecast": "54.5",
+    "previous": "54.3",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "HSBC Manufacturing PMI Flash SEP",
+    "country": "IN",
+    "date_utc": "2026-09-23T09:00+00:00",
+    "impact": "",
+    "forecast": "53.2",
+    "previous": "52.8",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "HSBC Services PMI Flash SEP",
+    "country": "IN",
+    "date_utc": "2026-09-23T09:00+00:00",
+    "impact": "",
+    "forecast": "54.7",
+    "previous": "54.1",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Core Inflation Rate YoY AUG",
+    "country": "SGD",
+    "date_utc": "2026-09-23T09:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "2%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Inflation Rate MoM AUG",
+    "country": "SGD",
+    "date_utc": "2026-09-23T09:00+00:00",
+    "impact": "",
+    "forecast": "0.4%",
+    "previous": "-0.2%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Inflation Rate YoY AUG",
+    "country": "SGD",
+    "date_utc": "2026-09-23T09:00+00:00",
+    "impact": "",
+    "forecast": "2.2%",
+    "previous": "2.2%",
     "actual": "",
     "source": "te"
   },
@@ -6125,6 +6195,116 @@
     "impact": "",
     "forecast": "50.5",
     "previous": "49.7",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Interest Rate Decision",
+    "country": "ID",
+    "date_utc": "2026-09-23T11:30+00:00",
+    "impact": "",
+    "forecast": "5.75%",
+    "previous": "5.75%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Deposit Facility Rate SEP",
+    "country": "ID",
+    "date_utc": "2026-09-23T11:30+00:00",
+    "impact": "",
+    "forecast": "4.75%",
+    "previous": "4.75%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Lending Facility Rate SEP",
+    "country": "ID",
+    "date_utc": "2026-09-23T11:30+00:00",
+    "impact": "",
+    "forecast": "6.5%",
+    "previous": "6.5%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Loan Growth YoY AUG",
+    "country": "ID",
+    "date_utc": "2026-09-23T11:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "13.58%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "S&P Global Composite PMI Flash SEP",
+    "country": "EA",
+    "date_utc": "2026-09-23T12:00+00:00",
+    "impact": "",
+    "forecast": "51.7",
+    "previous": "52.0",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "S&P Global Manufacturing PMI Flash SEP",
+    "country": "EA",
+    "date_utc": "2026-09-23T12:00+00:00",
+    "impact": "",
+    "forecast": "52.7",
+    "previous": "52.7",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "S&P Global Services PMI Flash SEP",
+    "country": "EA",
+    "date_utc": "2026-09-23T12:00+00:00",
+    "impact": "",
+    "forecast": "51.5",
+    "previous": "51.6",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Inflation Rate MoM AUG",
+    "country": "ZAR",
+    "date_utc": "2026-09-23T12:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "0.2%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Inflation Rate YoY AUG",
+    "country": "ZAR",
+    "date_utc": "2026-09-23T12:00+00:00",
+    "impact": "",
+    "forecast": "4.7%",
+    "previous": "4.3%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Core Inflation Rate MoM AUG",
+    "country": "ZAR",
+    "date_utc": "2026-09-23T12:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "0.5%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Core Inflation Rate YoY AUG",
+    "country": "ZAR",
+    "date_utc": "2026-09-23T12:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "4.2%",
     "actual": "",
     "source": "te"
   },
@@ -10405,6 +10585,116 @@
     "impact": "",
     "forecast": "",
     "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "15-Year Mortgage Rate OCT/08",
+    "country": "USD",
+    "date_utc": "2026-10-08T20:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "30-Year Mortgage Rate OCT/08",
+    "country": "USD",
+    "date_utc": "2026-10-08T20:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "30-Year Bond Auction",
+    "country": "USD",
+    "date_utc": "2026-10-08T21:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Fed Balance Sheet OCT/07",
+    "country": "USD",
+    "date_utc": "2026-10-09T00:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Reuters Tankan Index OCT",
+    "country": "JPY",
+    "date_utc": "2026-10-09T03:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "21",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Household Spending MoM AUG",
+    "country": "JPY",
+    "date_utc": "2026-10-09T03:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "0.5%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Household Spending YoY AUG",
+    "country": "JPY",
+    "date_utc": "2026-10-09T03:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "-3.6%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Consumer Inflation Expectations OCT",
+    "country": "AUD",
+    "date_utc": "2026-10-09T04:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "4.9%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "3-Month Bill Auction",
+    "country": "JPY",
+    "date_utc": "2026-10-09T07:35+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Machine Tool Orders YoY SEP",
+    "country": "JPY",
+    "date_utc": "2026-10-09T10:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "64.7%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Consumer Confidence SEP",
+    "country": "CHF",
+    "date_utc": "2026-10-09T11:00+00:00",
+    "impact": "",
+    "forecast": "-32",
+    "previous": "-33",
     "actual": "",
     "source": "te"
   }
