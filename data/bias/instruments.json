@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-09-14T18:22:24+00:00",
+    "updated": "2026-09-14T19:16:27+00:00",
     "method": "verdict v3"
   },
   "instruments": {
@@ -8,7 +8,7 @@
       "verdict": "Bullish",
       "halo": "signal +1",
       "notes": [
-        "positioning tilt contributes",
+        "institutional flow leans supportive",
         "real-yield rising (headwind)",
         "USD index weak (supportive)"
       ],
@@ -18,7 +18,7 @@
       "verdict": "Bearish",
       "halo": "signal -1",
       "notes": [
-        "positioning tilt contributes",
+        "institutional flow leans adverse",
         "real-yield rising (headwind)",
         "USD index weak (supportive)"
       ],
@@ -28,7 +28,7 @@
       "verdict": "Bullish",
       "halo": "signal +1",
       "notes": [
-        "positioning tilt contributes",
+        "institutional flow leans supportive",
         "real-yield rising (headwind)",
         "USD index weak (supportive)"
       ],
@@ -38,7 +38,7 @@
       "verdict": "Bullish",
       "halo": "signal +1",
       "notes": [
-        "positioning tilt contributes",
+        "institutional flow leans supportive",
         "real-yield rising (headwind)",
         "USD index weak (supportive)"
       ],
@@ -48,7 +48,7 @@
       "verdict": "Bullish",
       "halo": "signal +1",
       "notes": [
-        "positioning tilt contributes"
+        "institutional flow leans supportive"
       ],
       "cot_tilt": 1.0
     },
@@ -56,7 +56,7 @@
       "verdict": "Bearish",
       "halo": "signal -1",
       "notes": [
-        "positioning tilt contributes"
+        "institutional flow leans adverse"
       ],
       "cot_tilt": -1.0
     },
@@ -64,7 +64,7 @@
       "verdict": "Bullish",
       "halo": "signal +1",
       "notes": [
-        "positioning tilt contributes"
+        "institutional flow leans supportive"
       ],
       "cot_tilt": 1.0
     },

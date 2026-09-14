@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-09-14T18:22:24+00:00",
+    "updated": "2026-09-14T19:16:27+00:00",
     "method": "verdict v3 (forecast-first, released-only)"
   },
   "currencies": {
@@ -328,25 +328,15 @@
     "CHF": {
       "verdict": "Neutral",
       "tally": {
-        "bullish": 0.0,
-        "bearish": 0.0,
-        "neutral": 2.0
+        "bullish": 0,
+        "bearish": 0,
+        "neutral": 0
       },
-      "released_points": 1,
-      "drivers": [
-        {
-          "dataPoint": "CPI (m/m, y/y)",
-          "title": "CPI y/y",
-          "period": "2025-04-01T00:00:00+00:00",
-          "actual": "0.03",
-          "previous": "",
-          "forecast": "",
-          "direction": "higher_is_bullish",
-          "verdict": "neutral",
-          "weight": 2.0
-        }
-      ],
-      "notes": []
+      "released_points": 0,
+      "drivers": [],
+      "notes": [
+        "no released data yet"
+      ]
     },
     "CNY": {
       "verdict": "Bullish",
