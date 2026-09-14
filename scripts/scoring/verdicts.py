@@ -319,7 +319,7 @@ def instrument_verdict(sym, cfg, releases, context):
             notes.append("industrial metal: China PMI contributes")
         if cot:
             sig += 1 if cot > 0 else (-1 if cot < 0 else 0)
-            notes.append("positioning tilt contributes")
+            notes.append("institutional flow leans " + ("supportive" if cot > 0 else "adverse"))
         if context["real_yield_sig"] != 0:
             notes.append("real-yield " + ("falling (supportive)" if context["real_yield_sig"] < 0 else "rising (headwind)"))
         if context.get("dxy_sig") != 0:
@@ -331,7 +331,7 @@ def instrument_verdict(sym, cfg, releases, context):
             notes.append("industrial demand PMI " + ("expanding" if context["china_pmi_sig"] > 0 else "contracting"))
         if cot:
             sig += 1 if cot > 0 else (-1 if cot < 0 else 0)
-            notes.append("positioning tilt contributes")
+            notes.append("institutional flow leans " + ("supportive" if cot > 0 else "adverse"))
     elif kind == "index":
         sig -= context["real_yield_sig"]
         sig += -1 * context.get("dxy_sig", 0)

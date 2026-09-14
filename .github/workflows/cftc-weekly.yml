@@ -1,33 +1,30 @@
-name: Daily Data Pipeline
+name: Weekly CFTC Refresh
 on:
   schedule:
-    - cron: '0 13 * * *'    # 18:00 Pakistan time (13:00 UTC) — New York session open
-    - cron: '0 23 * * *'    # 04:00 Pakistan time (23:00 UTC) — Asian session open
+    - cron: '0 1 * * 6'    # Saturday 01:00 UTC — after the Friday 15:30 ET COT release
   workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
-  group: daily-data
+  group: cftc-weekly
   cancel-in-progress: false
 
 jobs:
-  collect:
+  cftc:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
         with:
-          # Fetch full history so the commit-and-push helper can rebase cleanly
           fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
       - name: Install dependencies
         run: pip install -r requirements.txt
-      - name: Run data pipeline
-        id: pipeline
+      - name: Refresh CFTC positioning
         env:
           FRED_KEY: ${{ secrets.FRED_KEY }}
           ALPHAVANTAGE_KEY1: ${{ secrets.ALPHAVANTAGE_KEY1 }}
@@ -38,22 +35,26 @@ jobs:
           NEWSDATA_KEY: ${{ secrets.NEWSDATA_KEY }}
           EODHD_KEY: ${{ secrets.EODHD_KEY }}
           MARKETSTACK_KEY: ${{ secrets.MARKETSTACK_KEY }}
-          MARKETSTACK_FALLBACK: '1'
         run: |
-          python scripts/orchestrator.py all
-          # CFTC refreshes weekly on the Friday evening / Saturday release.
-          if [ "$(date +%u)" = "6" ]; then
-            echo "Saturday — CFTC already refreshed by the weekly workflow; skipping."
-          fi
-      - name: Commit data
+          python - <<'PY'
+          import sys, os
+          sys.path.insert(0, 'scripts')
+          from collectors.cftc import collect as cftc
+          from scoring.cot import collect as cot
+          from scoring import verdicts
+          cftc()
+          cot()
+          verdicts.collect()
+          PY
+      - name: Commit
         run: |
           git config user.name "bbf-bot"
           git config user.email "bbf-bot@users.noreply.github.com"
-          git add data/
+          git add data/cftc/ data/bias/ data/setups/ data/analysis/
           if git diff --cached --quiet; then
-            echo "No data changes — nothing to commit."
+            echo "No changes."
           else
-            git commit -m "chore(data): automated daily refresh [skip ci]"
+            git commit -m "chore(data): weekly CFTC refresh [skip ci]"
             git pull --rebase origin
             git push origin HEAD
           fi

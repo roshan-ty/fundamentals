@@ -12,6 +12,24 @@ from common.utils import load_json, save_json, load_news_rules, log, DATA_DIR, n
 
 NEWS_FEED = os.path.join(DATA_DIR, "news", "feed.json")
 META = os.path.join(DATA_DIR, "meta", "quota.json")
+NEWSDATA_MIN_GAP = 360  # minutes between Newsdata calls (small free quota)
+
+
+def _quota(state):
+    q = load_json(META, default={})
+    last = (q.get("news", {}) or {})
+    if state == "read":
+        return last
+    if state == "time":
+        return last.get("newsdata_at")
+    q["news"] = last
+    return q
+
+
+def _set_newsdata_at():
+    q = _quota("read") or {}
+    q["newsdata_at"] = now_iso()
+    save_json(META, {"news": q})
 
 
 def _clean(s):
@@ -75,11 +93,32 @@ def _tag(headline, snippet, rules):
     return tags
 
 
-def collect(env):
+def collect(env, mode="normal"):
     http = HttpSession(timeout=30, max_retries=2)
     rules = load_news_rules()
     items = []
-    items += fetch_newsdata(http, env.get("NEWSDATA_KEY", ""))
+    fast = mode == "fast"
+    # Newsdata: gated by the small free quota (allow once per gap window)
+    if fast:
+        last = _quota("time")
+        now = datetime.utcnow()
+        ok = True
+        if last:
+            try:
+                ts = datetime.fromisoformat(last.replace("Z", "+00:00"))
+                if ts.tzinfo is not None:
+                    ts = ts.replace(tzinfo=None)
+                if (now - ts).total_seconds() / 60 < NEWSDATA_MIN_GAP:
+                    ok = False
+            except Exception:
+                ok = True
+        if ok:
+            items += fetch_newsdata(http, env.get("NEWSDATA_KEY", ""))
+            _set_newsdata_at()
+        else:
+            log("Newsdata skipped by quota ledger", "INFO")
+    else:
+        items += fetch_newsdata(http, env.get("NEWSDATA_KEY", ""))
     items += fetch_finnhub_news(http, env.get("FINNHUB_KEY", ""))
     # Dedupe by url+headline
     seen = {}

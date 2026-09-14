@@ -103,17 +103,23 @@ main { padding: 16px 22px; flex: 1; }
 
 table.data {
   width: 100%; border-collapse: collapse; font-size: 12.5px;
-  background: var(--panel-2);
+  background: var(--panel-2); table-layout: auto;
 }
 table.data thead th {
-  text-align: left; padding: 7px 10px; color: var(--text-dim);
+  text-align: left; padding: 8px 10px; color: var(--text-dim);
   border-bottom: 2px solid var(--border-strong);
   font-weight: 700; position: sticky; top: 0; background: var(--panel-2);
-  cursor: pointer; user-select: none;
+  cursor: pointer; user-select: none; vertical-align: bottom; white-space: nowrap;
 }
-table.data tbody td { padding: 6px 10px; border-bottom: 1px solid var(--border); }
+table.data tbody td { padding: 7px 10px; border-bottom: 1px solid var(--border); vertical-align: middle; }
+table.data th.num, table.data td.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+table.data tbody td:first-child { white-space: nowrap; }
 table.data tbody tr:hover td { background: rgba(212,175,55,.05); }
-.num { font-family: var(--font-mono); text-align: right; }
+.num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
+/* Alignment helpers — monospace left-aligned timestamps and centered badges */
+.mono { font-family: var(--font-mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+table.data th.c, table.data td.c { text-align: center; white-space: nowrap; }
+table.data tbody td { overflow-wrap: break-word; word-break: normal; }
 .pos { color: var(--up); }
 .neg { color: var(--down); }
 .neutral { color: var(--neutral); }

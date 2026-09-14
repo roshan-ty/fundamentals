@@ -102,15 +102,20 @@ def build_fred_events():
                 "source_series": sid,
                 "period": d_cur,
             })
-    # Keep only the latest 2 releases per (title, country)
+    # Keep releases in the trailing ~400 days so the calendar shows a 300+ day
+    # history of Previous / Actual per data point (2026-09 and older months).
+    import datetime as _dt
+    cutoff = (_dt.datetime.utcnow() - _dt.timedelta(days=400)).strftime("%Y-%m-%d")
     by_key = {}
     for ev in events:
+        if (ev["date_utc"] or "")[:10] < cutoff:
+            continue
         k = (ev["title"], ev["country"])
         by_key.setdefault(k, []).append(ev)
     latest = []
     for evs in by_key.values():
         evs.sort(key=lambda x: x["date_utc"])
-        latest.extend(evs[-2:])
+        latest.extend(evs)
     latest.sort(key=lambda x: x["date_utc"])
     return latest
 

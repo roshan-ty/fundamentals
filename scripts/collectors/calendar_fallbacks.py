@@ -124,6 +124,18 @@ def collect_year_calendar(days=365):
     except Exception as exc:
         log(f"Year calendar fetch failed: {str(exc)[:100]}", "WARN")
 
+    # Future window: 1–2 months of upcoming events (Consensus/Forecast present,
+    # Actual blank) so the Calendar tab shows unresolved data points ahead.
+    try:
+        fend = (today + timedelta(days=60)).strftime("%Y-%m-%d")
+        fhtml = http.get("https://tradingeconomics.com/calendar",
+                         params={"from": today.strftime("%Y-%m-%d"), "to": fend}, timeout=90).text
+        f_events = parse_tradingeconomics(fhtml)
+        merge_events(f_events)
+        log(f"Future calendar window: {sum(1 for e in f_events if not e.get('actual'))} upcoming rows")
+    except Exception as exc:
+        log(f"Future calendar fetch failed: {str(exc)[:100]}", "WARN")
+
     for slug in _COUNTRY_PAGES:
         try:
             chtml = http.get(f"https://tradingeconomics.com/{slug}/calendar",

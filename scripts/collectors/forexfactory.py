@@ -256,31 +256,51 @@ def _fetch_feed(max_attempts=8):
 
 
 def _merge(events):
-    """Merge new events with prior storage, keyed by title+date, keep 45-day window."""
+    """Merge new events with prior storage. Same (currency, month, title-family)
+    events from different sources get FIELD-MERGED so previous/forecast/actual
+    fill from whichever source carries them (never invented). Window: ±360 days."""
     path = os.path.join(DATA_DIR, "calendar", "events_current.json")
     prior = load_json(path, default=[])
-    prior_map = {}
-    for ev in prior:
-        k = (ev.get("title"), ev.get("date_utc"), ev.get("country"))
-        prior_map[k] = ev
-    for ev in events:
-        k = (ev.get("title"), ev.get("date_utc"), ev.get("country"))
-        if k in prior_map:
-            # keep the more informative version (source with actual wins on tie)
-            old = prior_map[k]
-            if not old.get("actual") and ev.get("actual"):
-                prior_map[k] = ev
-        else:
-            prior_map[k] = ev
+
+    def fam(title):
+        t = re.sub(r"[^a-z0-9]", "", (title or "").lower())
+        return t[:32]
+
+    records = {}  # key -> event
+    order = []
+    for ev in (prior + list(events)):
+        # Weekly series (jobless claims) keep per-day granularity so the full
+        # week-by-week history survives the merge; monthly/quarterly events merge
+        # at month level to combine previous/forecast/actual across sources.
+        t = fam(ev.get("title"))
+        gran = (ev.get("date_utc") or "")[:10] if "claim" in (ev.get("title") or "").lower() \
+            else (ev.get("date_utc") or "")[:7]
+        key = (ev.get("country"), t, gran)
+        prev_rec = records.get(key)
+        if prev_rec is None:
+            records[key] = dict(ev)
+            order.append(key)
+            continue
+        merged = dict(prev_rec)
+        for field in ("previous", "forecast", "actual", "revision"):
+            if not merged.get(field) and ev.get(field):
+                merged[field] = ev[field]
+        # prefer the newest date_utc when identical family+month
+        if (ev.get("date_utc") or "") > (merged.get("date_utc") or ""):
+            merged["date_utc"] = ev["date_utc"]
+        if not merged.get("impact") and ev.get("impact"):
+            merged["impact"] = ev["impact"]
+        records[key] = merged
     # keep events within +-360 days (full-year calendar view)
     now = datetime.utcnow()
     window = []
-    for ev in prior_map.values():
+    for key in order:
+        ev = records[key]
         try:
             dt = datetime.fromisoformat((ev.get("date_utc") or "").replace("Z", "+00:00"))
             if dt.tzinfo is None:
                 dt = dt.replace(tzinfo=timezone.utc)
-            if abs((dt.astimezone(timezone.utc).replace(tzinfo=None) - now).days) <= 360:
+            if abs((dt.astimezone(timezone.utc).replace(tzinfo=None) - now).days) <= 400:
                 window.append(ev)
         except Exception:
             window.append(ev)
@@ -331,6 +351,19 @@ def collect():
         merged = _merge(merged + year_evs)
     except Exception as exc:
         log(f"Year-into-calendar merge skipped: {str(exc)[:100]}", "WARN")
+
+    # Merge the FRED release-history rows (300+ days of Previous + Actual for US
+    # and the OECD international series) into the visible calendar store so the
+    # Calendar tab shows the full year of released data points.
+    try:
+        fred_path = os.path.join(DATA_DIR, "calendar", "fred_events.json")
+        fred_evs = load_json(fred_path, default=[])
+        if fred_evs:
+            merged = _merge(merged + fred_evs)
+            log(f"FRED history merged into Calendar tab: {len(fred_evs)} rows")
+    except Exception as exc:
+        log(f"FRED history merge skipped: {str(exc)[:100]}", "WARN")
+
     save_json(os.path.join(DATA_DIR, "calendar", "events_current.json"), merged)
     save_json(SOURCE_META, {"updated": now_iso(), "source": source_used,
                             "events": len(merged), "with_actual": sum(1 for e in merged if e.get("actual"))})

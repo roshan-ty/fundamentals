@@ -49,9 +49,9 @@ def all_pipeline():
     from collectors import fred, forexfactory, national_actuals, calendar_fallbacks, cftc, quotes, news
     stages = {}
     stages["fred"] = run(lambda: fred.collect(e.get("FRED_KEY", "")), "fred")
-    stages["calendar"] = run(lambda: forexfactory.collect(), "calendar")
-    stages["year_calendar"] = run(lambda: calendar_fallbacks.collect_year_calendar(), "year calendar")
     stages["actuals"] = run(lambda: national_actuals.collect(), "actuals")
+    stages["year_calendar"] = run(lambda: calendar_fallbacks.collect_year_calendar(), "year calendar")
+    stages["calendar"] = run(lambda: forexfactory.collect(), "calendar")
     stages["cftc"] = run(lambda: cftc.collect(), "cftc")
     stages["quotes"] = run(lambda: quotes.collect(e, scope="daily"), "quotes")
     stages["news"] = run(lambda: news.collect(e), "news")

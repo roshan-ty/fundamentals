@@ -47,16 +47,58 @@
     root.appendChild(el("h2", "panel-title", "Headline Bias"));
     root.appendChild(grid);
 
-    const qKeys = Object.keys(quotes || {}).filter((k) => quotes[k] && quotes[k].price).slice(0, 14);
-    const qPanel = el("div", "panel");
-    qPanel.innerHTML = `<h3>Markets</h3><table class="data"><thead><tr><th>Instrument</th><th class="num">Last</th><th class="num">Updated (UTC)</th></tr></thead><tbody>` +
-      qKeys.map((k) => `<tr><td>${esc(k)}</td><td class="num">${fmt(quotes[k].price, 4)}</td><td class="num dim">${esc((quotes[k].ts || "").slice(11, 19))}</td></tr>`).join("") +
-      `</tbody></table>`;
-    root.appendChild(qPanel);
+    const DEFAULT_MARKETS = ["XAUUSD", "XAGUSD", "EURUSD", "GBPUSD", "AUDUSD", "US30", "US100", "US500", "BTCUSD", "ETHUSD"];
+  const LS_KEY = "bbf-markets";
+  let extraMarkets = [];
+  try { extraMarkets = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) {}
+  const marketPicks = [...new Set(DEFAULT_MARKETS.concat(extraMarkets))];
+
+  const mPanel = el("div", "panel");
+  mPanel.innerHTML = `<h3>Markets</h3>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px">
+      <select class="instr" id="addMarketSel"></select>
+      <button class="toggle-theme" id="addMarketBtn">Add Pair</button>
+    </div>
+    <table class="data"><thead><tr><th>Instrument</th><th class="num">Last</th><th class="num">Updated (UTC)</th><th></th></tr></thead><tbody id="marketBody"></tbody></table>`;
+  root.appendChild(mPanel);
+  const univ = Object.keys(quotes || {}).filter((k) => quotes[k] && quotes[k].price);
+  const addSel = document.getElementById("addMarketSel");
+  addSel.innerHTML = univ.filter((s) => !marketPicks.includes(s)).map((s) => `<option value="${esc(s)}">${esc(s)}</option>`).join("");
+  function renderMarkets() {
+    const body = document.getElementById("marketBody");
+    body.innerHTML = marketPicks.map((k) => {
+      const q = quotes[k];
+      if (!q || !q.price) return "";
+      return `<tr><td><strong>${esc(k)}</strong></td><td class="num">${fmt(q.price, 4)}</td>
+        <td class="mono dim">${esc((q.ts || "").slice(11, 19))}</td>
+        <td><button class="toggle-theme rm-mkt" data-sym="${esc(k)}" style="padding:1px 7px">✕</button></td></tr>`;
+    }).join("") || '<tr><td colspan="4" class="dim">No market data yet.</td></tr>';
+  }
+  renderMarkets();
+  document.getElementById("addMarketBtn").onclick = () => {
+    const s = addSel.value;
+    if (!s) return;
+    extraMarkets.push(s);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(extraMarkets)); } catch (e) {}
+    marketPicks.push(s);
+    addSel.innerHTML = univ.filter((x) => !marketPicks.includes(x)).map((x) => `<option value="${esc(x)}">${esc(x)}</option>`).join("");
+    if (!addSel.innerHTML) addSel.innerHTML = '<option>All pairs added</option>';
+    renderMarkets();
+  };
+  document.getElementById("marketBody").addEventListener("click", (e) => {
+    const btn = e.target.closest(".rm-mkt");
+    if (!btn) return;
+    const s = btn.dataset.sym;
+    marketPicks.splice(marketPicks.indexOf(s), 1);
+    extraMarkets = extraMarkets.filter((x) => x !== s);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(extraMarkets)); } catch (err) {}
+    addSel.innerHTML = univ.filter((x) => !marketPicks.includes(x)).map((x) => `<option value="${esc(x)}">${esc(x)}</option>`).join("");
+    renderMarkets();
+  });
 
     const nPanel = el("div", "panel");
-    nPanel.innerHTML = `<h3>Markets &amp; World</h3>` + (Array.isArray(news) ? news.slice(0, 6).map((n) =>
-      `<div class="news-item"><span class="hl">${esc(n.headline)}</span><div class="sn dim">${esc((n.snippet || "").slice(0, 140))}</div></div>`).join("") : `<div class="dim">No data.</div>`);
+    nPanel.innerHTML = `<h3>Latest Headlines</h3>` + (Array.isArray(news) ? news.slice(0, 6).map((n) =>
+      `<div class="news-item"><span class="hl">${esc(n.headline)}</span><div class="sn dim">${esc((n.snippet || "").slice(0, 160))}</div></div>`).join("") : `<div class="dim">No data.</div>`);
     root.appendChild(nPanel);
 
     let lastTxt = "";
@@ -133,8 +175,8 @@
     const evPanel = el("div", "panel");
     const relevant = (Array.isArray(events) ? events : []).filter((e) => e.country === sym || sym.startsWith(e.country));
     evPanel.innerHTML = `<h3>Economic Calendar — ${esc(sym)}</h3><table class="data"><thead><tr><th>Time (UTC)</th><th>Event</th><th>Impact</th><th class="num">Previous</th><th class="num">Forecast</th><th class="num">Actual</th></tr></thead><tbody>` +
-      relevant.slice(0, 40).map((e) => `<tr><td class="num">${esc((e.date_utc || "").slice(5, 16))}</td>
-        <td>${esc(e.title)}</td><td>${esc(e.impact || "")}</td>
+      relevant.slice(0, 40).map((e) => `<tr><td class="mono">${esc((e.date_utc || "").slice(5, 16))}</td>
+        <td>${esc(e.title)}</td><td class="c">${esc(e.impact || "")}</td>
         <td class="num">${esc(e.previous || "—")}</td><td class="num">${esc(e.forecast || "—")}</td>
         <td class="num ${e.actual ? "pos" : "dim"}">${esc(e.actual || "Pending")}</td></tr>`).join("") +
       `</tbody></table>`;
@@ -167,7 +209,7 @@
       root.appendChild(cp);
     }
 
-    // Yield context (confirmation, separate)
+    // Yield context (separate panel)
     const ySeries = ["DGS10", "DGS2", "DFII10", "DGS30"];
     const pts = ySeries.map((s) => ({ s, pts: (yields[s] || {}).points || [] }));
     if (pts.some((p) => p.pts.length)) {
@@ -179,7 +221,7 @@
       }));
       const chartEl = el("div", "chart", `<div id="yieldChart" style="height:320px"></div>`);
       root.appendChild(chartEl);
-      setTimeout(() => { try { mkChart("yieldChart", lineOption("Yields (confirmation only)", cats, series)); } catch (e) {} }, 60);
+      setTimeout(() => { try { mkChart("yieldChart", lineOption("Yields", cats, series)); } catch (e) {} }, 60);
     }
 
     // News filtered to this instrument
@@ -236,7 +278,7 @@
         const latest = m.history[m.latest] || {};
         const net = (t.net !== null && t.net !== undefined) ? t.net : (parseNum(latest.noncomm_long) - parseNum(latest.noncomm_short));
         const delta = t.delta;
-        return `<tr><td><strong>${esc(k)}</strong></td><td class="num">${esc(m.latest || "")}</td>
+        return `<tr><td><strong>${esc(k)}</strong></td><td class="mono">${esc(m.latest || "")}</td>
           <td class="num">${fmt(latest.noncomm_long, 0)}</td><td class="num">${fmt(latest.noncomm_short, 0)}</td>
           <td class="num ${net >= 0 ? "pos" : "neg"}">${fmt(net, 0)}</td>
           <td class="num ${(delta || 0) >= 0 ? "pos" : "neg"}">${fmt(delta, 0)}</td>
@@ -308,9 +350,9 @@
         if (day !== lastDay) { lastDay = day; dayRow = `<tr><td colspan="8" class="dim" style="background:var(--panel-2);font-weight:700">${esc(day)}</td></tr>`; }
         const act = e.actual ? `<span class="pos" style="font-weight:700">${esc(e.actual)}</span>` : `<span class="dim">Pending</span>`;
         return `${dayRow}<tr>
-          <td class="num">${esc((e.date_utc || "").slice(11, 16))}</td>
-          <td>${esc(e.country)}</td><td>${esc(e.title)}</td>
-          <td>${e.impact === "High" ? '<span class="pos" style="font-weight:700">High</span>' : esc(e.impact || "")}</td>
+          <td class="mono">${esc((e.date_utc || "").slice(11, 16))}</td>
+          <td class="c">${esc(e.country)}</td><td>${esc(e.title)}</td>
+          <td class="c">${e.impact === "High" ? '<span class="pos" style="font-weight:700">High</span>' : esc(e.impact || "")}</td>
           <td class="num">${esc(e.previous || "—")}</td><td class="num">${esc(e.forecast || "—")}</td>
           <td class="num">${act}</td><td>${verdictBadge(e.verdict)}</td></tr>`;
       }).join("") || `<tr><td colspan="8" class="dim">No matching events.</td></tr>`;

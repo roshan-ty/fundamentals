@@ -1,43 +1,953 @@
 [
   {
-    "title": "CPI y/y",
-    "country": "CHF",
-    "date_utc": "2025-03-01T00:00:00+00:00",
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2025-08-16T00:00:00+00:00",
     "impact": "Medium",
-    "actual": "0.34",
-    "previous": "",
-    "source_series": "CHECPIALLMINMEI",
-    "period": "2025-03-01"
+    "actual": "233000.0",
+    "previous": "224000.0",
+    "source_series": "ICSA",
+    "period": "2025-08-16"
   },
   {
-    "title": "CPI y/y",
-    "country": "CNY",
-    "date_utc": "2025-03-01T00:00:00+00:00",
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2025-08-23T00:00:00+00:00",
     "impact": "Medium",
-    "actual": "-0.1",
-    "previous": "",
-    "source_series": "CHNCPIALLMINMEI",
-    "period": "2025-03-01"
+    "actual": "229000.0",
+    "previous": "233000.0",
+    "source_series": "ICSA",
+    "period": "2025-08-23"
   },
   {
-    "title": "CPI y/y",
-    "country": "CHF",
-    "date_utc": "2025-04-01T00:00:00+00:00",
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2025-08-30T00:00:00+00:00",
     "impact": "Medium",
-    "actual": "0.03",
-    "previous": "",
-    "source_series": "CHECPIALLMINMEI",
-    "period": "2025-04-01"
+    "actual": "236000.0",
+    "previous": "229000.0",
+    "source_series": "ICSA",
+    "period": "2025-08-30"
   },
   {
-    "title": "CPI y/y",
-    "country": "CNY",
-    "date_utc": "2025-04-01T00:00:00+00:00",
-    "impact": "Medium",
-    "actual": "-0.07",
+    "title": "CPI m/m",
+    "country": "USD",
+    "date_utc": "2025-09-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "0.3",
     "previous": "",
-    "source_series": "CHNCPIALLMINMEI",
-    "period": "2025-04-01"
+    "source_series": "CPIAUCSL",
+    "period": "2025-09-01"
+  },
+  {
+    "title": "Core CPI m/m",
+    "country": "USD",
+    "date_utc": "2025-09-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "0.22",
+    "previous": "",
+    "source_series": "CPILFESL",
+    "period": "2025-09-01"
+  },
+  {
+    "title": "PPI m/m",
+    "country": "USD",
+    "date_utc": "2025-09-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "-0.02",
+    "previous": "",
+    "source_series": "PPIACO",
+    "period": "2025-09-01"
+  },
+  {
+    "title": "Core PPI m/m",
+    "country": "USD",
+    "date_utc": "2025-09-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "0.52",
+    "previous": "",
+    "source_series": "PPIFES",
+    "period": "2025-09-01"
+  },
+  {
+    "title": "Core PCE Price Index m/m",
+    "country": "USD",
+    "date_utc": "2025-09-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "0.19",
+    "previous": "",
+    "source_series": "PCEPILFE",
+    "period": "2025-09-01"
+  },
+  {
+    "title": "Non-Farm Employment Change",
+    "country": "USD",
+    "date_utc": "2025-09-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "76.0",
+    "previous": "",
+    "source_series": "PAYEMS",
+    "period": "2025-09-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "USD",
+    "date_utc": "2025-09-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "4.4",
+    "previous": "4.3",
+    "source_series": "UNRATE",
+    "period": "2025-09-01"
+  },
+  {
+    "title": "Retail Sales m/m",
+    "country": "USD",
+    "date_utc": "2025-09-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "0.07",
+    "previous": "",
+    "source_series": "RSAFS",
+    "period": "2025-09-01"
+  },
+  {
+    "title": "Housing Starts",
+    "country": "USD",
+    "date_utc": "2025-09-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "1319.0",
+    "previous": "1291.0",
+    "source_series": "HOUST",
+    "period": "2025-09-01"
+  },
+  {
+    "title": "Building Permits",
+    "country": "USD",
+    "date_utc": "2025-09-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "1444.0",
+    "previous": "1347.0",
+    "source_series": "PERMIT",
+    "period": "2025-09-01"
+  },
+  {
+    "title": "Trade Balance",
+    "country": "USD",
+    "date_utc": "2025-09-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "-59392.0",
+    "previous": "-59642.0",
+    "source_series": "BOPGSTB",
+    "period": "2025-09-01"
+  },
+  {
+    "title": "UoM Consumer Sentiment",
+    "country": "USD",
+    "date_utc": "2025-09-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "55.1",
+    "previous": "58.2",
+    "source_series": "UMCSENT",
+    "period": "2025-09-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "GBP",
+    "date_utc": "2025-09-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "5.1",
+    "previous": "5.0",
+    "source_series": "LRHUTTTTGBM156S",
+    "period": "2025-09-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "EUR",
+    "date_utc": "2025-09-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "3.8",
+    "previous": "3.8",
+    "source_series": "LRHUTTTTDEM156S",
+    "period": "2025-09-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "JPY",
+    "date_utc": "2025-09-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "2.6",
+    "previous": "2.6",
+    "source_series": "LRHUTTTTJPM156S",
+    "period": "2025-09-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "CAD",
+    "date_utc": "2025-09-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "7.1",
+    "previous": "7.1",
+    "source_series": "LRHUTTTTCAM156S",
+    "period": "2025-09-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "AUD",
+    "date_utc": "2025-09-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "4.451847",
+    "previous": "4.248082",
+    "source_series": "LRHUTTTTAUM156S",
+    "period": "2025-09-01"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2025-09-06T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "259000.0",
+    "previous": "236000.0",
+    "source_series": "ICSA",
+    "period": "2025-09-06"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2025-09-13T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "233000.0",
+    "previous": "259000.0",
+    "source_series": "ICSA",
+    "period": "2025-09-13"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2025-09-20T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "219000.0",
+    "previous": "233000.0",
+    "source_series": "ICSA",
+    "period": "2025-09-20"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2025-09-27T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "225000.0",
+    "previous": "219000.0",
+    "source_series": "ICSA",
+    "period": "2025-09-27"
+  },
+  {
+    "title": "PPI m/m",
+    "country": "USD",
+    "date_utc": "2025-10-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "-0.56",
+    "previous": "",
+    "source_series": "PPIACO",
+    "period": "2025-10-01"
+  },
+  {
+    "title": "Core PPI m/m",
+    "country": "USD",
+    "date_utc": "2025-10-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "0.3",
+    "previous": "",
+    "source_series": "PPIFES",
+    "period": "2025-10-01"
+  },
+  {
+    "title": "Core PCE Price Index m/m",
+    "country": "USD",
+    "date_utc": "2025-10-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "0.23",
+    "previous": "",
+    "source_series": "PCEPILFE",
+    "period": "2025-10-01"
+  },
+  {
+    "title": "Non-Farm Employment Change",
+    "country": "USD",
+    "date_utc": "2025-10-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "-140.0",
+    "previous": "",
+    "source_series": "PAYEMS",
+    "period": "2025-10-01"
+  },
+  {
+    "title": "Retail Sales m/m",
+    "country": "USD",
+    "date_utc": "2025-10-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "-0.16",
+    "previous": "",
+    "source_series": "RSAFS",
+    "period": "2025-10-01"
+  },
+  {
+    "title": "GDP q/q annualized",
+    "country": "USD",
+    "date_utc": "2025-10-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "1.99",
+    "previous": "",
+    "source_series": "GDPC1",
+    "period": "2025-10-01"
+  },
+  {
+    "title": "Housing Starts",
+    "country": "USD",
+    "date_utc": "2025-10-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "1273.0",
+    "previous": "1319.0",
+    "source_series": "HOUST",
+    "period": "2025-10-01"
+  },
+  {
+    "title": "Building Permits",
+    "country": "USD",
+    "date_utc": "2025-10-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "1418.0",
+    "previous": "1444.0",
+    "source_series": "PERMIT",
+    "period": "2025-10-01"
+  },
+  {
+    "title": "Trade Balance",
+    "country": "USD",
+    "date_utc": "2025-10-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "-37376.0",
+    "previous": "-59392.0",
+    "source_series": "BOPGSTB",
+    "period": "2025-10-01"
+  },
+  {
+    "title": "UoM Consumer Sentiment",
+    "country": "USD",
+    "date_utc": "2025-10-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "53.6",
+    "previous": "55.1",
+    "source_series": "UMCSENT",
+    "period": "2025-10-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "GBP",
+    "date_utc": "2025-10-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "5.1",
+    "previous": "5.1",
+    "source_series": "LRHUTTTTGBM156S",
+    "period": "2025-10-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "EUR",
+    "date_utc": "2025-10-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "3.9",
+    "previous": "3.8",
+    "source_series": "LRHUTTTTDEM156S",
+    "period": "2025-10-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "JPY",
+    "date_utc": "2025-10-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "2.6",
+    "previous": "2.6",
+    "source_series": "LRHUTTTTJPM156S",
+    "period": "2025-10-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "CAD",
+    "date_utc": "2025-10-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "6.9",
+    "previous": "7.1",
+    "source_series": "LRHUTTTTCAM156S",
+    "period": "2025-10-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "AUD",
+    "date_utc": "2025-10-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "4.333108",
+    "previous": "4.451847",
+    "source_series": "LRHUTTTTAUM156S",
+    "period": "2025-10-01"
+  },
+  {
+    "title": "GDP y/y",
+    "country": "JPY",
+    "date_utc": "2025-10-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "1.7",
+    "previous": "",
+    "source_series": "JPNRGDPEXP",
+    "period": "2025-10-01"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2025-10-04T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "233000.0",
+    "previous": "225000.0",
+    "source_series": "ICSA",
+    "period": "2025-10-04"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2025-10-11T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "222000.0",
+    "previous": "233000.0",
+    "source_series": "ICSA",
+    "period": "2025-10-11"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2025-10-18T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "231000.0",
+    "previous": "222000.0",
+    "source_series": "ICSA",
+    "period": "2025-10-18"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2025-10-25T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "221000.0",
+    "previous": "231000.0",
+    "source_series": "ICSA",
+    "period": "2025-10-25"
+  },
+  {
+    "title": "CPI m/m",
+    "country": "USD",
+    "date_utc": "2025-11-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "0.25",
+    "previous": "",
+    "source_series": "CPIAUCSL",
+    "period": "2025-11-01"
+  },
+  {
+    "title": "Core CPI m/m",
+    "country": "USD",
+    "date_utc": "2025-11-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "0.19",
+    "previous": "",
+    "source_series": "CPILFESL",
+    "period": "2025-11-01"
+  },
+  {
+    "title": "PPI m/m",
+    "country": "USD",
+    "date_utc": "2025-11-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "0.51",
+    "previous": "",
+    "source_series": "PPIACO",
+    "period": "2025-11-01"
+  },
+  {
+    "title": "Core PPI m/m",
+    "country": "USD",
+    "date_utc": "2025-11-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "0.25",
+    "previous": "",
+    "source_series": "PPIFES",
+    "period": "2025-11-01"
+  },
+  {
+    "title": "Core PCE Price Index m/m",
+    "country": "USD",
+    "date_utc": "2025-11-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "0.18",
+    "previous": "",
+    "source_series": "PCEPILFE",
+    "period": "2025-11-01"
+  },
+  {
+    "title": "Non-Farm Employment Change",
+    "country": "USD",
+    "date_utc": "2025-11-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "41.0",
+    "previous": "",
+    "source_series": "PAYEMS",
+    "period": "2025-11-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "USD",
+    "date_utc": "2025-11-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "4.5",
+    "previous": "4.4",
+    "source_series": "UNRATE",
+    "period": "2025-11-01"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2025-11-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "228000.0",
+    "previous": "221000.0",
+    "source_series": "ICSA",
+    "period": "2025-11-01"
+  },
+  {
+    "title": "Retail Sales m/m",
+    "country": "USD",
+    "date_utc": "2025-11-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "0.5",
+    "previous": "",
+    "source_series": "RSAFS",
+    "period": "2025-11-01"
+  },
+  {
+    "title": "Housing Starts",
+    "country": "USD",
+    "date_utc": "2025-11-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "1319.0",
+    "previous": "1273.0",
+    "source_series": "HOUST",
+    "period": "2025-11-01"
+  },
+  {
+    "title": "Building Permits",
+    "country": "USD",
+    "date_utc": "2025-11-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "1414.0",
+    "previous": "1418.0",
+    "source_series": "PERMIT",
+    "period": "2025-11-01"
+  },
+  {
+    "title": "Trade Balance",
+    "country": "USD",
+    "date_utc": "2025-11-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "-63868.0",
+    "previous": "-37376.0",
+    "source_series": "BOPGSTB",
+    "period": "2025-11-01"
+  },
+  {
+    "title": "UoM Consumer Sentiment",
+    "country": "USD",
+    "date_utc": "2025-11-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "51.0",
+    "previous": "53.6",
+    "source_series": "UMCSENT",
+    "period": "2025-11-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "GBP",
+    "date_utc": "2025-11-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "5.2",
+    "previous": "5.1",
+    "source_series": "LRHUTTTTGBM156S",
+    "period": "2025-11-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "EUR",
+    "date_utc": "2025-11-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "3.9",
+    "previous": "3.9",
+    "source_series": "LRHUTTTTDEM156S",
+    "period": "2025-11-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "JPY",
+    "date_utc": "2025-11-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "2.6",
+    "previous": "2.6",
+    "source_series": "LRHUTTTTJPM156S",
+    "period": "2025-11-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "CAD",
+    "date_utc": "2025-11-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "6.6",
+    "previous": "6.9",
+    "source_series": "LRHUTTTTCAM156S",
+    "period": "2025-11-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "AUD",
+    "date_utc": "2025-11-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "4.322608",
+    "previous": "4.333108",
+    "source_series": "LRHUTTTTAUM156S",
+    "period": "2025-11-01"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2025-11-08T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "228000.0",
+    "previous": "228000.0",
+    "source_series": "ICSA",
+    "period": "2025-11-08"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2025-11-15T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "222000.0",
+    "previous": "228000.0",
+    "source_series": "ICSA",
+    "period": "2025-11-15"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2025-11-22T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "218000.0",
+    "previous": "222000.0",
+    "source_series": "ICSA",
+    "period": "2025-11-22"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2025-11-29T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "216000.0",
+    "previous": "218000.0",
+    "source_series": "ICSA",
+    "period": "2025-11-29"
+  },
+  {
+    "title": "CPI m/m",
+    "country": "USD",
+    "date_utc": "2025-12-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "0.3",
+    "previous": "",
+    "source_series": "CPIAUCSL",
+    "period": "2025-12-01"
+  },
+  {
+    "title": "Core CPI m/m",
+    "country": "USD",
+    "date_utc": "2025-12-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "0.23",
+    "previous": "",
+    "source_series": "CPILFESL",
+    "period": "2025-12-01"
+  },
+  {
+    "title": "PPI m/m",
+    "country": "USD",
+    "date_utc": "2025-12-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "-0.22",
+    "previous": "",
+    "source_series": "PPIACO",
+    "period": "2025-12-01"
+  },
+  {
+    "title": "Core PPI m/m",
+    "country": "USD",
+    "date_utc": "2025-12-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "0.51",
+    "previous": "",
+    "source_series": "PPIFES",
+    "period": "2025-12-01"
+  },
+  {
+    "title": "Core PCE Price Index m/m",
+    "country": "USD",
+    "date_utc": "2025-12-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "0.33",
+    "previous": "",
+    "source_series": "PCEPILFE",
+    "period": "2025-12-01"
+  },
+  {
+    "title": "Non-Farm Employment Change",
+    "country": "USD",
+    "date_utc": "2025-12-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "-17.0",
+    "previous": "",
+    "source_series": "PAYEMS",
+    "period": "2025-12-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "USD",
+    "date_utc": "2025-12-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "4.4",
+    "previous": "4.5",
+    "source_series": "UNRATE",
+    "period": "2025-12-01"
+  },
+  {
+    "title": "Retail Sales m/m",
+    "country": "USD",
+    "date_utc": "2025-12-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "-0.0",
+    "previous": "",
+    "source_series": "RSAFS",
+    "period": "2025-12-01"
+  },
+  {
+    "title": "Housing Starts",
+    "country": "USD",
+    "date_utc": "2025-12-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "1378.0",
+    "previous": "1319.0",
+    "source_series": "HOUST",
+    "period": "2025-12-01"
+  },
+  {
+    "title": "Building Permits",
+    "country": "USD",
+    "date_utc": "2025-12-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "1482.0",
+    "previous": "1414.0",
+    "source_series": "PERMIT",
+    "period": "2025-12-01"
+  },
+  {
+    "title": "Trade Balance",
+    "country": "USD",
+    "date_utc": "2025-12-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "-76078.0",
+    "previous": "-63868.0",
+    "source_series": "BOPGSTB",
+    "period": "2025-12-01"
+  },
+  {
+    "title": "UoM Consumer Sentiment",
+    "country": "USD",
+    "date_utc": "2025-12-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "52.9",
+    "previous": "51.0",
+    "source_series": "UMCSENT",
+    "period": "2025-12-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "GBP",
+    "date_utc": "2025-12-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "5.2",
+    "previous": "5.2",
+    "source_series": "LRHUTTTTGBM156S",
+    "period": "2025-12-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "EUR",
+    "date_utc": "2025-12-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "3.9",
+    "previous": "3.9",
+    "source_series": "LRHUTTTTDEM156S",
+    "period": "2025-12-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "JPY",
+    "date_utc": "2025-12-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "2.6",
+    "previous": "2.6",
+    "source_series": "LRHUTTTTJPM156S",
+    "period": "2025-12-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "CAD",
+    "date_utc": "2025-12-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "6.8",
+    "previous": "6.6",
+    "source_series": "LRHUTTTTCAM156S",
+    "period": "2025-12-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "AUD",
+    "date_utc": "2025-12-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "4.116373",
+    "previous": "4.322608",
+    "source_series": "LRHUTTTTAUM156S",
+    "period": "2025-12-01"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2025-12-06T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "235000.0",
+    "previous": "216000.0",
+    "source_series": "ICSA",
+    "period": "2025-12-06"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2025-12-13T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "224000.0",
+    "previous": "235000.0",
+    "source_series": "ICSA",
+    "period": "2025-12-13"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2025-12-20T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "215000.0",
+    "previous": "224000.0",
+    "source_series": "ICSA",
+    "period": "2025-12-20"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2025-12-27T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "203000.0",
+    "previous": "215000.0",
+    "source_series": "ICSA",
+    "period": "2025-12-27"
+  },
+  {
+    "title": "CPI m/m",
+    "country": "USD",
+    "date_utc": "2026-01-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "0.17",
+    "previous": "",
+    "source_series": "CPIAUCSL",
+    "period": "2026-01-01"
+  },
+  {
+    "title": "Core CPI m/m",
+    "country": "USD",
+    "date_utc": "2026-01-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "0.3",
+    "previous": "",
+    "source_series": "CPILFESL",
+    "period": "2026-01-01"
+  },
+  {
+    "title": "PPI m/m",
+    "country": "USD",
+    "date_utc": "2026-01-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "0.87",
+    "previous": "",
+    "source_series": "PPIACO",
+    "period": "2026-01-01"
+  },
+  {
+    "title": "Core PPI m/m",
+    "country": "USD",
+    "date_utc": "2026-01-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "0.83",
+    "previous": "",
+    "source_series": "PPIFES",
+    "period": "2026-01-01"
+  },
+  {
+    "title": "Core PCE Price Index m/m",
+    "country": "USD",
+    "date_utc": "2026-01-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "0.44",
+    "previous": "",
+    "source_series": "PCEPILFE",
+    "period": "2026-01-01"
+  },
+  {
+    "title": "Non-Farm Employment Change",
+    "country": "USD",
+    "date_utc": "2026-01-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "160.0",
+    "previous": "",
+    "source_series": "PAYEMS",
+    "period": "2026-01-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "USD",
+    "date_utc": "2026-01-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "4.3",
+    "previous": "4.4",
+    "source_series": "UNRATE",
+    "period": "2026-01-01"
+  },
+  {
+    "title": "Retail Sales m/m",
+    "country": "USD",
+    "date_utc": "2026-01-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "-0.03",
+    "previous": "",
+    "source_series": "RSAFS",
+    "period": "2026-01-01"
   },
   {
     "title": "GDP q/q annualized",
@@ -47,6 +957,96 @@
     "actual": "2.68",
     "previous": "",
     "source_series": "GDPC1",
+    "period": "2026-01-01"
+  },
+  {
+    "title": "Housing Starts",
+    "country": "USD",
+    "date_utc": "2026-01-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "1385.0",
+    "previous": "1378.0",
+    "source_series": "HOUST",
+    "period": "2026-01-01"
+  },
+  {
+    "title": "Building Permits",
+    "country": "USD",
+    "date_utc": "2026-01-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "1393.0",
+    "previous": "1482.0",
+    "source_series": "PERMIT",
+    "period": "2026-01-01"
+  },
+  {
+    "title": "Trade Balance",
+    "country": "USD",
+    "date_utc": "2026-01-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "-52670.0",
+    "previous": "-76078.0",
+    "source_series": "BOPGSTB",
+    "period": "2026-01-01"
+  },
+  {
+    "title": "UoM Consumer Sentiment",
+    "country": "USD",
+    "date_utc": "2026-01-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "56.4",
+    "previous": "52.9",
+    "source_series": "UMCSENT",
+    "period": "2026-01-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "GBP",
+    "date_utc": "2026-01-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "4.9",
+    "previous": "5.2",
+    "source_series": "LRHUTTTTGBM156S",
+    "period": "2026-01-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "EUR",
+    "date_utc": "2026-01-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "3.9",
+    "previous": "3.9",
+    "source_series": "LRHUTTTTDEM156S",
+    "period": "2026-01-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "JPY",
+    "date_utc": "2026-01-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "2.7",
+    "previous": "2.6",
+    "source_series": "LRHUTTTTJPM156S",
+    "period": "2026-01-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "CAD",
+    "date_utc": "2026-01-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "6.5",
+    "previous": "6.8",
+    "source_series": "LRHUTTTTCAM156S",
+    "period": "2026-01-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "AUD",
+    "date_utc": "2026-01-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "4.079868",
+    "previous": "4.116373",
+    "source_series": "LRHUTTTTAUM156S",
     "period": "2026-01-01"
   },
   {
@@ -60,6 +1060,386 @@
     "period": "2026-01-01"
   },
   {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2026-01-03T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "207000.0",
+    "previous": "203000.0",
+    "source_series": "ICSA",
+    "period": "2026-01-03"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2026-01-10T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "201000.0",
+    "previous": "207000.0",
+    "source_series": "ICSA",
+    "period": "2026-01-10"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2026-01-17T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "210000.0",
+    "previous": "201000.0",
+    "source_series": "ICSA",
+    "period": "2026-01-17"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2026-01-24T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "211000.0",
+    "previous": "210000.0",
+    "source_series": "ICSA",
+    "period": "2026-01-24"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2026-01-31T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "230000.0",
+    "previous": "211000.0",
+    "source_series": "ICSA",
+    "period": "2026-01-31"
+  },
+  {
+    "title": "CPI m/m",
+    "country": "USD",
+    "date_utc": "2026-02-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "0.27",
+    "previous": "",
+    "source_series": "CPIAUCSL",
+    "period": "2026-02-01"
+  },
+  {
+    "title": "Core CPI m/m",
+    "country": "USD",
+    "date_utc": "2026-02-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "0.22",
+    "previous": "",
+    "source_series": "CPILFESL",
+    "period": "2026-02-01"
+  },
+  {
+    "title": "PPI m/m",
+    "country": "USD",
+    "date_utc": "2026-02-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "2.25",
+    "previous": "",
+    "source_series": "PPIACO",
+    "period": "2026-02-01"
+  },
+  {
+    "title": "Core PPI m/m",
+    "country": "USD",
+    "date_utc": "2026-02-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "0.29",
+    "previous": "",
+    "source_series": "PPIFES",
+    "period": "2026-02-01"
+  },
+  {
+    "title": "Core PCE Price Index m/m",
+    "country": "USD",
+    "date_utc": "2026-02-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "0.39",
+    "previous": "",
+    "source_series": "PCEPILFE",
+    "period": "2026-02-01"
+  },
+  {
+    "title": "Non-Farm Employment Change",
+    "country": "USD",
+    "date_utc": "2026-02-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "-156.0",
+    "previous": "",
+    "source_series": "PAYEMS",
+    "period": "2026-02-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "USD",
+    "date_utc": "2026-02-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "4.4",
+    "previous": "4.3",
+    "source_series": "UNRATE",
+    "period": "2026-02-01"
+  },
+  {
+    "title": "Retail Sales m/m",
+    "country": "USD",
+    "date_utc": "2026-02-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "0.92",
+    "previous": "",
+    "source_series": "RSAFS",
+    "period": "2026-02-01"
+  },
+  {
+    "title": "Housing Starts",
+    "country": "USD",
+    "date_utc": "2026-02-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "1346.0",
+    "previous": "1385.0",
+    "source_series": "HOUST",
+    "period": "2026-02-01"
+  },
+  {
+    "title": "Building Permits",
+    "country": "USD",
+    "date_utc": "2026-02-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "1540.0",
+    "previous": "1393.0",
+    "source_series": "PERMIT",
+    "period": "2026-02-01"
+  },
+  {
+    "title": "Trade Balance",
+    "country": "USD",
+    "date_utc": "2026-02-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "-52500.0",
+    "previous": "-52670.0",
+    "source_series": "BOPGSTB",
+    "period": "2026-02-01"
+  },
+  {
+    "title": "UoM Consumer Sentiment",
+    "country": "USD",
+    "date_utc": "2026-02-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "56.6",
+    "previous": "56.4",
+    "source_series": "UMCSENT",
+    "period": "2026-02-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "GBP",
+    "date_utc": "2026-02-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "5.0",
+    "previous": "4.9",
+    "source_series": "LRHUTTTTGBM156S",
+    "period": "2026-02-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "EUR",
+    "date_utc": "2026-02-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "3.8",
+    "previous": "3.9",
+    "source_series": "LRHUTTTTDEM156S",
+    "period": "2026-02-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "JPY",
+    "date_utc": "2026-02-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "2.6",
+    "previous": "2.7",
+    "source_series": "LRHUTTTTJPM156S",
+    "period": "2026-02-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "CAD",
+    "date_utc": "2026-02-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "6.7",
+    "previous": "6.5",
+    "source_series": "LRHUTTTTCAM156S",
+    "period": "2026-02-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "AUD",
+    "date_utc": "2026-02-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "4.301626",
+    "previous": "4.079868",
+    "source_series": "LRHUTTTTAUM156S",
+    "period": "2026-02-01"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2026-02-07T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "230000.0",
+    "previous": "230000.0",
+    "source_series": "ICSA",
+    "period": "2026-02-07"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2026-02-14T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "208000.0",
+    "previous": "230000.0",
+    "source_series": "ICSA",
+    "period": "2026-02-14"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2026-02-21T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "211000.0",
+    "previous": "208000.0",
+    "source_series": "ICSA",
+    "period": "2026-02-21"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2026-02-28T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "214000.0",
+    "previous": "211000.0",
+    "source_series": "ICSA",
+    "period": "2026-02-28"
+  },
+  {
+    "title": "CPI m/m",
+    "country": "USD",
+    "date_utc": "2026-03-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "0.87",
+    "previous": "",
+    "source_series": "CPIAUCSL",
+    "period": "2026-03-01"
+  },
+  {
+    "title": "Core CPI m/m",
+    "country": "USD",
+    "date_utc": "2026-03-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "0.2",
+    "previous": "",
+    "source_series": "CPILFESL",
+    "period": "2026-03-01"
+  },
+  {
+    "title": "PPI m/m",
+    "country": "USD",
+    "date_utc": "2026-03-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "2.44",
+    "previous": "",
+    "source_series": "PPIACO",
+    "period": "2026-03-01"
+  },
+  {
+    "title": "Core PPI m/m",
+    "country": "USD",
+    "date_utc": "2026-03-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "0.29",
+    "previous": "",
+    "source_series": "PPIFES",
+    "period": "2026-03-01"
+  },
+  {
+    "title": "Core PCE Price Index m/m",
+    "country": "USD",
+    "date_utc": "2026-03-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "0.3",
+    "previous": "",
+    "source_series": "PCEPILFE",
+    "period": "2026-03-01"
+  },
+  {
+    "title": "Non-Farm Employment Change",
+    "country": "USD",
+    "date_utc": "2026-03-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "214.0",
+    "previous": "",
+    "source_series": "PAYEMS",
+    "period": "2026-03-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "USD",
+    "date_utc": "2026-03-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "4.3",
+    "previous": "4.4",
+    "source_series": "UNRATE",
+    "period": "2026-03-01"
+  },
+  {
+    "title": "Retail Sales m/m",
+    "country": "USD",
+    "date_utc": "2026-03-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "1.72",
+    "previous": "",
+    "source_series": "RSAFS",
+    "period": "2026-03-01"
+  },
+  {
+    "title": "Housing Starts",
+    "country": "USD",
+    "date_utc": "2026-03-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "1522.0",
+    "previous": "1346.0",
+    "source_series": "HOUST",
+    "period": "2026-03-01"
+  },
+  {
+    "title": "Building Permits",
+    "country": "USD",
+    "date_utc": "2026-03-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "1363.0",
+    "previous": "1540.0",
+    "source_series": "PERMIT",
+    "period": "2026-03-01"
+  },
+  {
+    "title": "Trade Balance",
+    "country": "USD",
+    "date_utc": "2026-03-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "-53657.0",
+    "previous": "-52500.0",
+    "source_series": "BOPGSTB",
+    "period": "2026-03-01"
+  },
+  {
+    "title": "UoM Consumer Sentiment",
+    "country": "USD",
+    "date_utc": "2026-03-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "53.3",
+    "previous": "56.6",
+    "source_series": "UMCSENT",
+    "period": "2026-03-01"
+  },
+  {
     "title": "Unemployment Rate",
     "country": "GBP",
     "date_utc": "2026-03-01T00:00:00+00:00",
@@ -70,6 +1450,166 @@
     "period": "2026-03-01"
   },
   {
+    "title": "Unemployment Rate",
+    "country": "EUR",
+    "date_utc": "2026-03-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "3.8",
+    "previous": "3.8",
+    "source_series": "LRHUTTTTDEM156S",
+    "period": "2026-03-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "JPY",
+    "date_utc": "2026-03-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "2.7",
+    "previous": "2.6",
+    "source_series": "LRHUTTTTJPM156S",
+    "period": "2026-03-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "CAD",
+    "date_utc": "2026-03-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "6.7",
+    "previous": "6.7",
+    "source_series": "LRHUTTTTCAM156S",
+    "period": "2026-03-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "AUD",
+    "date_utc": "2026-03-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "4.278338",
+    "previous": "4.301626",
+    "source_series": "LRHUTTTTAUM156S",
+    "period": "2026-03-01"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2026-03-07T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "213000.0",
+    "previous": "214000.0",
+    "source_series": "ICSA",
+    "period": "2026-03-07"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2026-03-14T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "205000.0",
+    "previous": "213000.0",
+    "source_series": "ICSA",
+    "period": "2026-03-14"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2026-03-21T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "211000.0",
+    "previous": "205000.0",
+    "source_series": "ICSA",
+    "period": "2026-03-21"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2026-03-28T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "203000.0",
+    "previous": "211000.0",
+    "source_series": "ICSA",
+    "period": "2026-03-28"
+  },
+  {
+    "title": "CPI m/m",
+    "country": "USD",
+    "date_utc": "2026-04-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "0.64",
+    "previous": "",
+    "source_series": "CPIAUCSL",
+    "period": "2026-04-01"
+  },
+  {
+    "title": "Core CPI m/m",
+    "country": "USD",
+    "date_utc": "2026-04-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "0.38",
+    "previous": "",
+    "source_series": "CPILFESL",
+    "period": "2026-04-01"
+  },
+  {
+    "title": "PPI m/m",
+    "country": "USD",
+    "date_utc": "2026-04-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "2.4",
+    "previous": "",
+    "source_series": "PPIACO",
+    "period": "2026-04-01"
+  },
+  {
+    "title": "Core PPI m/m",
+    "country": "USD",
+    "date_utc": "2026-04-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "0.74",
+    "previous": "",
+    "source_series": "PPIFES",
+    "period": "2026-04-01"
+  },
+  {
+    "title": "Core PCE Price Index m/m",
+    "country": "USD",
+    "date_utc": "2026-04-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "0.26",
+    "previous": "",
+    "source_series": "PCEPILFE",
+    "period": "2026-04-01"
+  },
+  {
+    "title": "Non-Farm Employment Change",
+    "country": "USD",
+    "date_utc": "2026-04-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "148.0",
+    "previous": "",
+    "source_series": "PAYEMS",
+    "period": "2026-04-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "USD",
+    "date_utc": "2026-04-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "4.3",
+    "previous": "4.3",
+    "source_series": "UNRATE",
+    "period": "2026-04-01"
+  },
+  {
+    "title": "Retail Sales m/m",
+    "country": "USD",
+    "date_utc": "2026-04-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "0.67",
+    "previous": "",
+    "source_series": "RSAFS",
+    "period": "2026-04-01"
+  },
+  {
     "title": "GDP q/q annualized",
     "country": "USD",
     "date_utc": "2026-04-01T00:00:00+00:00",
@@ -77,6 +1617,46 @@
     "actual": "2.1",
     "previous": "",
     "source_series": "GDPC1",
+    "period": "2026-04-01"
+  },
+  {
+    "title": "Housing Starts",
+    "country": "USD",
+    "date_utc": "2026-04-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "1414.0",
+    "previous": "1522.0",
+    "source_series": "HOUST",
+    "period": "2026-04-01"
+  },
+  {
+    "title": "Building Permits",
+    "country": "USD",
+    "date_utc": "2026-04-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "1423.0",
+    "previous": "1363.0",
+    "source_series": "PERMIT",
+    "period": "2026-04-01"
+  },
+  {
+    "title": "Trade Balance",
+    "country": "USD",
+    "date_utc": "2026-04-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "-52883.0",
+    "previous": "-53657.0",
+    "source_series": "BOPGSTB",
+    "period": "2026-04-01"
+  },
+  {
+    "title": "UoM Consumer Sentiment",
+    "country": "USD",
+    "date_utc": "2026-04-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "49.8",
+    "previous": "53.3",
+    "source_series": "UMCSENT",
     "period": "2026-04-01"
   },
   {
@@ -90,6 +1670,46 @@
     "period": "2026-04-01"
   },
   {
+    "title": "Unemployment Rate",
+    "country": "EUR",
+    "date_utc": "2026-04-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "3.8",
+    "previous": "3.8",
+    "source_series": "LRHUTTTTDEM156S",
+    "period": "2026-04-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "JPY",
+    "date_utc": "2026-04-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "2.5",
+    "previous": "2.7",
+    "source_series": "LRHUTTTTJPM156S",
+    "period": "2026-04-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "CAD",
+    "date_utc": "2026-04-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "6.9",
+    "previous": "6.7",
+    "source_series": "LRHUTTTTCAM156S",
+    "period": "2026-04-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "AUD",
+    "date_utc": "2026-04-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "4.490485",
+    "previous": "4.278338",
+    "source_series": "LRHUTTTTAUM156S",
+    "period": "2026-04-01"
+  },
+  {
     "title": "GDP y/y",
     "country": "JPY",
     "date_utc": "2026-04-01T00:00:00+00:00",
@@ -98,6 +1718,166 @@
     "previous": "",
     "source_series": "JPNRGDPEXP",
     "period": "2026-04-01"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2026-04-04T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "218000.0",
+    "previous": "203000.0",
+    "source_series": "ICSA",
+    "period": "2026-04-04"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2026-04-11T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "208000.0",
+    "previous": "218000.0",
+    "source_series": "ICSA",
+    "period": "2026-04-11"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2026-04-18T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "215000.0",
+    "previous": "208000.0",
+    "source_series": "ICSA",
+    "period": "2026-04-18"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2026-04-25T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "190000.0",
+    "previous": "215000.0",
+    "source_series": "ICSA",
+    "period": "2026-04-25"
+  },
+  {
+    "title": "CPI m/m",
+    "country": "USD",
+    "date_utc": "2026-05-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "0.47",
+    "previous": "",
+    "source_series": "CPIAUCSL",
+    "period": "2026-05-01"
+  },
+  {
+    "title": "Core CPI m/m",
+    "country": "USD",
+    "date_utc": "2026-05-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "0.21",
+    "previous": "",
+    "source_series": "CPILFESL",
+    "period": "2026-05-01"
+  },
+  {
+    "title": "PPI m/m",
+    "country": "USD",
+    "date_utc": "2026-05-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "2.65",
+    "previous": "",
+    "source_series": "PPIACO",
+    "period": "2026-05-01"
+  },
+  {
+    "title": "Core PPI m/m",
+    "country": "USD",
+    "date_utc": "2026-05-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "-0.02",
+    "previous": "",
+    "source_series": "PPIFES",
+    "period": "2026-05-01"
+  },
+  {
+    "title": "Core PCE Price Index m/m",
+    "country": "USD",
+    "date_utc": "2026-05-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "0.36",
+    "previous": "",
+    "source_series": "PCEPILFE",
+    "period": "2026-05-01"
+  },
+  {
+    "title": "Non-Farm Employment Change",
+    "country": "USD",
+    "date_utc": "2026-05-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "63.0",
+    "previous": "",
+    "source_series": "PAYEMS",
+    "period": "2026-05-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "USD",
+    "date_utc": "2026-05-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "4.3",
+    "previous": "4.3",
+    "source_series": "UNRATE",
+    "period": "2026-05-01"
+  },
+  {
+    "title": "Retail Sales m/m",
+    "country": "USD",
+    "date_utc": "2026-05-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "0.93",
+    "previous": "",
+    "source_series": "RSAFS",
+    "period": "2026-05-01"
+  },
+  {
+    "title": "Housing Starts",
+    "country": "USD",
+    "date_utc": "2026-05-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "1182.0",
+    "previous": "1414.0",
+    "source_series": "HOUST",
+    "period": "2026-05-01"
+  },
+  {
+    "title": "Building Permits",
+    "country": "USD",
+    "date_utc": "2026-05-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "1410.0",
+    "previous": "1423.0",
+    "source_series": "PERMIT",
+    "period": "2026-05-01"
+  },
+  {
+    "title": "Trade Balance",
+    "country": "USD",
+    "date_utc": "2026-05-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "-75752.0",
+    "previous": "-52883.0",
+    "source_series": "BOPGSTB",
+    "period": "2026-05-01"
+  },
+  {
+    "title": "UoM Consumer Sentiment",
+    "country": "USD",
+    "date_utc": "2026-05-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "44.8",
+    "previous": "49.8",
+    "source_series": "UMCSENT",
+    "period": "2026-05-01"
   },
   {
     "title": "Unemployment Rate",
@@ -121,6 +1901,16 @@
   },
   {
     "title": "Unemployment Rate",
+    "country": "CAD",
+    "date_utc": "2026-05-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "6.6",
+    "previous": "6.9",
+    "source_series": "LRHUTTTTCAM156S",
+    "period": "2026-05-01"
+  },
+  {
+    "title": "Unemployment Rate",
     "country": "AUD",
     "date_utc": "2026-05-01T00:00:00+00:00",
     "impact": "High",
@@ -130,6 +1920,96 @@
     "period": "2026-05-01"
   },
   {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2026-05-02T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "199000.0",
+    "previous": "190000.0",
+    "source_series": "ICSA",
+    "period": "2026-05-02"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2026-05-09T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "212000.0",
+    "previous": "199000.0",
+    "source_series": "ICSA",
+    "period": "2026-05-09"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2026-05-16T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "210000.0",
+    "previous": "212000.0",
+    "source_series": "ICSA",
+    "period": "2026-05-16"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2026-05-23T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "212000.0",
+    "previous": "210000.0",
+    "source_series": "ICSA",
+    "period": "2026-05-23"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2026-05-30T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "225000.0",
+    "previous": "212000.0",
+    "source_series": "ICSA",
+    "period": "2026-05-30"
+  },
+  {
+    "title": "CPI m/m",
+    "country": "USD",
+    "date_utc": "2026-06-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "-0.42",
+    "previous": "",
+    "source_series": "CPIAUCSL",
+    "period": "2026-06-01"
+  },
+  {
+    "title": "Core CPI m/m",
+    "country": "USD",
+    "date_utc": "2026-06-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "-0.02",
+    "previous": "",
+    "source_series": "CPILFESL",
+    "period": "2026-06-01"
+  },
+  {
+    "title": "PPI m/m",
+    "country": "USD",
+    "date_utc": "2026-06-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "-1.44",
+    "previous": "",
+    "source_series": "PPIACO",
+    "period": "2026-06-01"
+  },
+  {
+    "title": "Core PPI m/m",
+    "country": "USD",
+    "date_utc": "2026-06-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "0.4",
+    "previous": "",
+    "source_series": "PPIFES",
+    "period": "2026-06-01"
+  },
+  {
     "title": "Core PCE Price Index m/m",
     "country": "USD",
     "date_utc": "2026-06-01T00:00:00+00:00",
@@ -137,6 +2017,26 @@
     "actual": "0.15",
     "previous": "",
     "source_series": "PCEPILFE",
+    "period": "2026-06-01"
+  },
+  {
+    "title": "Non-Farm Employment Change",
+    "country": "USD",
+    "date_utc": "2026-06-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "31.0",
+    "previous": "",
+    "source_series": "PAYEMS",
+    "period": "2026-06-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "USD",
+    "date_utc": "2026-06-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "4.2",
+    "previous": "4.3",
+    "source_series": "UNRATE",
     "period": "2026-06-01"
   },
   {
@@ -228,6 +2128,46 @@
     "previous": "4.371348",
     "source_series": "LRHUTTTTAUM156S",
     "period": "2026-06-01"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2026-06-06T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "230000.0",
+    "previous": "225000.0",
+    "source_series": "ICSA",
+    "period": "2026-06-06"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2026-06-13T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "227000.0",
+    "previous": "230000.0",
+    "source_series": "ICSA",
+    "period": "2026-06-13"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2026-06-20T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "216000.0",
+    "previous": "227000.0",
+    "source_series": "ICSA",
+    "period": "2026-06-20"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2026-06-27T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "217000.0",
+    "previous": "216000.0",
+    "source_series": "ICSA",
+    "period": "2026-06-27"
   },
   {
     "title": "CPI m/m",
@@ -360,6 +2300,46 @@
     "period": "2026-07-01"
   },
   {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2026-07-04T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "217000.0",
+    "previous": "217000.0",
+    "source_series": "ICSA",
+    "period": "2026-07-04"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2026-07-11T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "209000.0",
+    "previous": "217000.0",
+    "source_series": "ICSA",
+    "period": "2026-07-11"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2026-07-18T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "189000.0",
+    "previous": "209000.0",
+    "source_series": "ICSA",
+    "period": "2026-07-18"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2026-07-25T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "198000.0",
+    "previous": "189000.0",
+    "source_series": "ICSA",
+    "period": "2026-07-25"
+  },
+  {
     "title": "CPI m/m",
     "country": "USD",
     "date_utc": "2026-08-01T00:00:00+00:00",
@@ -418,6 +2398,46 @@
     "previous": "4.1",
     "source_series": "UNRATE",
     "period": "2026-08-01"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2026-08-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "200000.0",
+    "previous": "198000.0",
+    "source_series": "ICSA",
+    "period": "2026-08-01"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2026-08-08T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "212000.0",
+    "previous": "200000.0",
+    "source_series": "ICSA",
+    "period": "2026-08-08"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2026-08-15T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "207000.0",
+    "previous": "212000.0",
+    "source_series": "ICSA",
+    "period": "2026-08-15"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2026-08-22T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "204000.0",
+    "previous": "207000.0",
+    "source_series": "ICSA",
+    "period": "2026-08-22"
   },
   {
     "title": "Initial Jobless Claims",

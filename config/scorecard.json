@@ -243,7 +243,7 @@
     }
   },
   "instruments": {
-    "method": "Each precious metal and energy instrument scores from: inverse USD calendar score + COT positioning component. Real yields / DXY run as confirmation only (never scored).",
+    "method": "Each precious metal and energy instrument scores from: inverse USD calendar score + COT component. Real yields and the USD index run separately as market context.",
     "targets": {
       "XAUUSD": {"kind": "metal", "usd_inverse": 1.0, "cot_weight": 0.5, "name": "Gold"},
       "XAGUSD": {"kind": "metal", "usd_inverse": 1.0, "cot_weight": 0.5, "name": "Silver"},

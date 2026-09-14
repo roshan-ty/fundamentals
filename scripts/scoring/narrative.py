@@ -88,7 +88,7 @@ def analyze_pair(symbol, pair, currencies, instruments, cot, sc):
     rr = ys.get("DFII10", {}).get("points")
     if d10 and d2:
         y10, y2 = d10[-1]["value"], d2[-1]["value"]
-        parts.append(f"Yield context (confirmation only): 10Y {y10}%, 2Y {y2}%, curve {'steep' if y10 - y2 > 0.5 else 'flat'}.")
+        parts.append(f"Yield context: 10Y {y10}%, 2Y {y2}%, curve {'steep' if y10 - y2 > 0.5 else 'flat'}.")
         if rr:
             parts.append(f"Real 10Y yield {rr[-1]['value']}% — " +
                          ("supportive of risk assets if pressured" if rr[-1]['value'] < 2 else "an ongoing headwind for risk assets."))
