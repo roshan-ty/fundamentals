@@ -1490,8 +1490,8 @@
     "date_utc": "2026-09-14T02:30+00:00",
     "impact": "",
     "forecast": "52.3",
-    "previous": "52.6",
-    "actual": "",
+    "previous": "52.5 ",
+    "actual": "52.5",
     "source": "te"
   },
   {
@@ -1501,7 +1501,7 @@
     "impact": "",
     "forecast": "50.5",
     "previous": "50.6",
-    "actual": "",
+    "actual": "51.2",
     "source": "te"
   },
   {
@@ -1522,7 +1522,7 @@
     "impact": "",
     "forecast": "4.0%",
     "previous": "8.1%",
-    "actual": "",
+    "actual": "8.5%",
     "source": "te"
   },
   {
@@ -1617,7 +1617,7 @@
     "impact": "",
     "forecast": "0.1%",
     "previous": "1.9%",
-    "actual": "",
+    "actual": "-0.2%",
     "source": "te"
   },
   {
@@ -1629,6 +1629,28 @@
     "previous": "4.9%",
     "actual": "3.9%",
     "source": "te"
+  },
+  {
+    "title": "M2 Money Supply y/y",
+    "country": "CNY",
+    "date_utc": "2026-09-14T09:01+00:00",
+    "impact": "Low",
+    "forecast": "7.6%",
+    "previous": "7.7%",
+    "actual": "7.5%",
+    "revision": "",
+    "source": "ff-feed"
+  },
+  {
+    "title": "New Loans",
+    "country": "CNY",
+    "date_utc": "2026-09-14T09:01+00:00",
+    "impact": "Low",
+    "forecast": "480B",
+    "previous": "-340B",
+    "actual": "",
+    "revision": "",
+    "source": "ff-feed"
   },
   {
     "title": "M2 Money Supply y/y",
@@ -1699,7 +1721,7 @@
     "impact": "",
     "forecast": "0.2%",
     "previous": "-0.1%",
-    "actual": "",
+    "actual": "0.7%",
     "source": "te"
   },
   {
@@ -1709,7 +1731,7 @@
     "impact": "",
     "forecast": "-1.3%",
     "previous": "-2.1%",
-    "actual": "",
+    "actual": "-0.7%",
     "source": "te"
   },
   {
@@ -1729,8 +1751,8 @@
     "date_utc": "2026-09-14T12:30+00:00",
     "impact": "High",
     "forecast": "2.0%",
-    "previous": "2.0%",
-    "actual": "",
+    "previous": "2%",
+    "actual": "2%",
     "revision": "",
     "source": "ff-feed"
   },
@@ -1752,7 +1774,7 @@
     "impact": "Medium",
     "forecast": "2.7%",
     "previous": "2.7%",
-    "actual": "",
+    "actual": "2.6%",
     "revision": "",
     "source": "ff-feed"
   },
@@ -1774,9 +1796,39 @@
     "impact": "Low",
     "forecast": "-0.2%",
     "previous": "0.1%",
-    "actual": "",
+    "actual": "-0.4%",
     "revision": "",
     "source": "ff-feed"
+  },
+  {
+    "title": "New Yuan Loans AUG",
+    "country": "CNY",
+    "date_utc": "2026-09-14T13:00+00:00",
+    "impact": "",
+    "forecast": "CNY 450.0B",
+    "previous": "CNY-340B",
+    "actual": "CNY60B",
+    "source": "te"
+  },
+  {
+    "title": "Outstanding Loan Growth YoY AUG",
+    "country": "CNY",
+    "date_utc": "2026-09-14T13:00+00:00",
+    "impact": "",
+    "forecast": "5.0%",
+    "previous": "5.1%",
+    "actual": "4.9%",
+    "source": "te"
+  },
+  {
+    "title": "Total Social Financing AUG",
+    "country": "CNY",
+    "date_utc": "2026-09-14T13:00+00:00",
+    "impact": "",
+    "forecast": "CNY2150.0B",
+    "previous": "CNY1410B",
+    "actual": "CNY1660B",
+    "source": "te"
   },
   {
     "title": "ECB Schnabel Speech",
@@ -1795,7 +1847,7 @@
     "impact": "",
     "forecast": "",
     "previous": "2.656%",
-    "actual": "",
+    "actual": "3.065%",
     "source": "te"
   },
   {
@@ -1805,7 +1857,7 @@
     "impact": "",
     "forecast": "",
     "previous": "7.52%",
-    "actual": "",
+    "actual": "7.63%",
     "source": "te"
   },
   {
@@ -1815,7 +1867,7 @@
     "impact": "",
     "forecast": "",
     "previous": "7.73%",
-    "actual": "",
+    "actual": "7.80%",
     "source": "te"
   },
   {
@@ -1825,7 +1877,7 @@
     "impact": "",
     "forecast": "",
     "previous": "7.85%",
-    "actual": "",
+    "actual": "7.91%",
     "source": "te"
   },
   {
@@ -1835,7 +1887,7 @@
     "impact": "",
     "forecast": "",
     "previous": "6.98%",
-    "actual": "",
+    "actual": "6.91%",
     "source": "te"
   },
   {
@@ -1850,13 +1902,23 @@
     "source": "ff-feed"
   },
   {
+    "title": "6-Month Bubill Auction",
+    "country": "EUR",
+    "date_utc": "2026-09-14T13:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "2.502%",
+    "actual": "2.768%",
+    "source": "te"
+  },
+  {
     "title": "Inflation Rate YoY AUG",
     "country": "IN",
     "date_utc": "2026-09-14T14:30+00:00",
     "impact": "",
     "forecast": "4.7%",
-    "previous": "4.45%",
-    "actual": "",
+    "previous": "4.44% ",
+    "actual": "4.82%",
     "source": "te"
   },
   {
@@ -1866,7 +1928,7 @@
     "impact": "",
     "forecast": "0.6%",
     "previous": "0.88%",
-    "actual": "",
+    "actual": "0.73%",
     "source": "te"
   },
   {
@@ -1887,7 +1949,7 @@
     "impact": "",
     "forecast": "3.0%",
     "previous": "3%",
-    "actual": "",
+    "actual": "3%",
     "source": "te"
   },
   {
@@ -1897,7 +1959,7 @@
     "impact": "",
     "forecast": "2.3%",
     "previous": "2.3%",
-    "actual": "",
+    "actual": "2.4%",
     "source": "te"
   },
   {
@@ -1907,7 +1969,7 @@
     "impact": "",
     "forecast": "0.1%",
     "previous": "0.5%",
-    "actual": "",
+    "actual": "-0.1%",
     "source": "te"
   },
   {
@@ -1916,8 +1978,8 @@
     "date_utc": "2026-09-14T16:30+00:00",
     "impact": "",
     "forecast": "82.4%",
-    "previous": "82.3%",
-    "actual": "",
+    "previous": "82.2% ",
+    "actual": "80.7%",
     "source": "te"
   },
   {
@@ -1927,7 +1989,7 @@
     "impact": "",
     "forecast": "0.1%",
     "previous": "0.2%",
-    "actual": "",
+    "actual": "0.1%",
     "source": "te"
   },
   {
@@ -1957,7 +2019,7 @@
     "impact": "",
     "forecast": "1.9%",
     "previous": "1.9%",
-    "actual": "",
+    "actual": "1.9%",
     "source": "te"
   },
   {
@@ -1987,7 +2049,7 @@
     "impact": "",
     "forecast": "",
     "previous": "2.940%",
-    "actual": "",
+    "actual": "3.208%",
     "source": "te"
   },
   {
@@ -1997,7 +2059,7 @@
     "impact": "",
     "forecast": "",
     "previous": "2.540%",
-    "actual": "",
+    "actual": "2.654%",
     "source": "te"
   },
   {
@@ -2007,7 +2069,7 @@
     "impact": "",
     "forecast": "",
     "previous": "2.720%",
-    "actual": "",
+    "actual": "2.868%",
     "source": "te"
   },
   {
@@ -2037,7 +2099,7 @@
     "impact": "",
     "forecast": "3.8999%",
     "previous": "3.800%",
-    "actual": "",
+    "actual": "3.970%",
     "source": "te"
   },
   {
@@ -2047,7 +2109,7 @@
     "impact": "",
     "forecast": "",
     "previous": "3.890%",
-    "actual": "",
+    "actual": "4.060%",
     "source": "te"
   },
   {
@@ -2058,6 +2120,16 @@
     "forecast": "",
     "previous": "",
     "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Business Confidence SEP",
+    "country": "BRL",
+    "date_utc": "2026-09-14T21:30+00:00",
+    "impact": "",
+    "forecast": "45.7",
+    "previous": "46.3",
+    "actual": "44.9",
     "source": "te"
   },
   {
@@ -6718,6 +6790,16 @@
     "source": "te"
   },
   {
+    "title": "Retail Sales YoY JUL",
+    "country": "AR",
+    "date_utc": "2026-09-23T23:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "13.4%",
+    "actual": "",
+    "source": "te"
+  },
+  {
     "title": "S&P Global Manufacturing PMI Flash SEP",
     "country": "JPY",
     "date_utc": "2026-09-24T04:30+00:00",
@@ -6798,6 +6880,76 @@
     "source": "te"
   },
   {
+    "title": "M2 Money Supply YoY AUG",
+    "country": "ID",
+    "date_utc": "2026-09-24T07:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "8.3%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "New Car Registrations YoY AUG",
+    "country": "EUR",
+    "date_utc": "2026-09-24T08:00+00:00",
+    "impact": "",
+    "forecast": "11.0%",
+    "previous": "13.6%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "New Car Registrations YoY JUL",
+    "country": "EUR",
+    "date_utc": "2026-09-24T08:00+00:00",
+    "impact": "",
+    "forecast": "7.5%",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "6-Month T-Bill Auction",
+    "country": "SGD",
+    "date_utc": "2026-09-24T09:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Balance of Trade JUL",
+    "country": "SA",
+    "date_utc": "2026-09-24T10:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "SAR17.3B",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Exports JUL",
+    "country": "SA",
+    "date_utc": "2026-09-24T10:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "SAR87.7B",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Imports JUL",
+    "country": "SA",
+    "date_utc": "2026-09-24T10:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "SAR70.4B",
+    "actual": "",
+    "source": "te"
+  },
+  {
     "title": "Business Confidence SEP",
     "country": "EUR",
     "date_utc": "2026-09-24T10:45+00:00",
@@ -6824,6 +6976,16 @@
     "impact": "",
     "forecast": "97",
     "previous": "98",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "PPI YoY AUG",
+    "country": "EUR",
+    "date_utc": "2026-09-24T11:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "9.2%",
     "actual": "",
     "source": "te"
   },
@@ -10961,6 +11123,26 @@
     "title": "WASDE Report",
     "country": "USD",
     "date_utc": "2026-10-09T20:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Baker Hughes Oil Rig Count OCT/09",
+    "country": "USD",
+    "date_utc": "2026-10-09T21:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Baker Hughes Total Rigs Count OCT/09",
+    "country": "USD",
+    "date_utc": "2026-10-09T21:00+00:00",
     "impact": "",
     "forecast": "",
     "previous": "",

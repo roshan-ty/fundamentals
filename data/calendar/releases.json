@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-14T09:08:17+00:00",
+  "updated": "2026-09-14T18:22:24+00:00",
   "releases": [
     {
       "country": "CNY",
@@ -72,6 +72,18 @@
       "actual": "47.8",
       "previous": "51.7",
       "forecast": "51.5"
+    },
+    {
+      "country": "CAD",
+      "dataPointId": "ca_cpi",
+      "dataPoint": "CPI (m/m, y/y) & Median/Trimmed CPI",
+      "weight": 1.5,
+      "direction": "higher_is_bullish",
+      "period": "2026-09-14T12:30+00:00",
+      "title": "Median CPI y/y",
+      "actual": "2%",
+      "previous": "2%",
+      "forecast": "2.0%"
     },
     {
       "country": "CHF",

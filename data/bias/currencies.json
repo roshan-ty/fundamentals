@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-09-14T09:08:17+00:00",
+    "updated": "2026-09-14T18:22:24+00:00",
     "method": "verdict v3 (forecast-first, released-only)"
   },
   "currencies": {
@@ -262,10 +262,21 @@
       "tally": {
         "bullish": 2.0,
         "bearish": 0.0,
-        "neutral": 0.0
+        "neutral": 2.0
       },
-      "released_points": 1,
+      "released_points": 2,
       "drivers": [
+        {
+          "dataPoint": "CPI (m/m, y/y) & Median/Trimmed CPI",
+          "title": "Median CPI y/y",
+          "period": "2026-09-14T12:30+00:00",
+          "actual": "2%",
+          "previous": "2%",
+          "forecast": "2.0%",
+          "direction": "higher_is_bullish",
+          "verdict": "neutral",
+          "weight": 2.0
+        },
         {
           "dataPoint": "Unemployment Rate",
           "title": "Unemployment Rate",
@@ -278,9 +289,7 @@
           "weight": 2.0
         }
       ],
-      "notes": [
-        "limited release evidence; cap at single-step verdict"
-      ]
+      "notes": []
     },
     "JPY": {
       "verdict": "Bearish",

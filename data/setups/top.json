@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-09-14T09:08:17+00:00"
+    "updated": "2026-09-14T18:22:24+00:00"
   },
   "setups": [
     {
@@ -11,6 +11,15 @@
       "confidence": 0.8,
       "importance": 2,
       "rationale": "Very Bearish — EUR: Bearish · GBP: Bullish"
+    },
+    {
+      "symbol": "EURCAD",
+      "name": "EURCAD",
+      "verdict": "Very Bearish",
+      "direction": "Sell",
+      "confidence": 0.8,
+      "importance": 2,
+      "rationale": "Very Bearish — EUR: Bearish · CAD: Bullish"
     },
     {
       "symbol": "GBPEUR",
@@ -31,13 +40,13 @@
       "rationale": "Very Bullish — GBP: Bullish · JPY: Bearish"
     },
     {
-      "symbol": "EURCAD",
-      "name": "EURCAD",
-      "verdict": "Very Bearish",
-      "direction": "Sell",
-      "confidence": 0.7,
+      "symbol": "CADJPY",
+      "name": "CADJPY",
+      "verdict": "Very Bullish",
+      "direction": "Buy",
+      "confidence": 0.8,
       "importance": 2,
-      "rationale": "Very Bearish — EUR: Bearish · CAD: Bullish"
+      "rationale": "Very Bullish — CAD: Bullish · JPY: Bearish"
     },
     {
       "symbol": "GBPAUD",
@@ -58,20 +67,11 @@
       "rationale": "Very Bullish — GBP: Bullish · NZD: Bearish"
     },
     {
-      "symbol": "CADJPY",
-      "name": "CADJPY",
-      "verdict": "Very Bullish",
-      "direction": "Buy",
-      "confidence": 0.7,
-      "importance": 2,
-      "rationale": "Very Bullish — CAD: Bullish · JPY: Bearish"
-    },
-    {
       "symbol": "AUDCAD",
       "name": "AUDCAD",
       "verdict": "Very Bearish",
       "direction": "Sell",
-      "confidence": 0.6,
+      "confidence": 0.7,
       "importance": 2,
       "rationale": "Very Bearish — AUD: Bearish · CAD: Bullish"
     },
@@ -80,7 +80,7 @@
       "name": "NZDCAD",
       "verdict": "Very Bearish",
       "direction": "Sell",
-      "confidence": 0.6,
+      "confidence": 0.7,
       "importance": 2,
       "rationale": "Very Bearish — NZD: Bearish · CAD: Bullish"
     },
