@@ -405,8 +405,8 @@
     "date_utc": "2026-09-15T01:00+00:00",
     "impact": "",
     "forecast": "52.0%",
-    "previous": "49.1%",
-    "actual": "",
+    "previous": "48.9% ",
+    "actual": "42.4%",
     "source": "te"
   },
   {
@@ -415,8 +415,8 @@
     "date_utc": "2026-09-15T01:00+00:00",
     "impact": "",
     "forecast": "23.0%",
-    "previous": "18.7%",
-    "actual": "",
+    "previous": "18.8% ",
+    "actual": "15.6%",
     "source": "te"
   },
   {
@@ -2620,22 +2620,22 @@
     "source": "te"
   },
   {
-    "title": "Construction Output YoY JUN",
-    "country": "EUR",
-    "date_utc": "2026-09-18T12:00+00:00",
-    "impact": "",
-    "forecast": "-1.2%",
-    "previous": "",
-    "actual": "",
-    "source": "te"
-  },
-  {
     "title": "Construction Output YoY JUL",
     "country": "EUR",
     "date_utc": "2026-09-18T12:00+00:00",
     "impact": "",
     "forecast": "-2.0%",
     "previous": "2.9%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Construction Output YoY JUN",
+    "country": "EUR",
+    "date_utc": "2026-09-18T12:00+00:00",
+    "impact": "",
+    "forecast": "-1.2%",
+    "previous": "",
     "actual": "",
     "source": "te"
   },
@@ -4490,6 +4490,46 @@
     "source": "te"
   },
   {
+    "title": "Economic Activity YoY JUL",
+    "country": "AR",
+    "date_utc": "2026-09-24T23:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "2.7%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Interest Rate Decision",
+    "country": "MXN",
+    "date_utc": "2026-09-24T23:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "6.5%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Fed Balance Sheet SEP/23",
+    "country": "USD",
+    "date_utc": "2026-09-25T00:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "GfK Consumer Confidence SEP",
+    "country": "GBP",
+    "date_utc": "2026-09-25T03:01+00:00",
+    "impact": "",
+    "forecast": "-17",
+    "previous": "-14",
+    "actual": "",
+    "source": "te"
+  },
+  {
     "title": "Household Spending MoM AUG",
     "country": "AUD",
     "date_utc": "2026-09-29T05:30+00:00",
@@ -4875,8 +4915,8 @@
     "date_utc": "2026-09-15T02:45+00:00",
     "impact": "",
     "forecast": "-0.7%",
-    "previous": "1.3%",
-    "actual": "",
+    "previous": "1.2% ",
+    "actual": "-0.9%",
     "source": "te"
   },
   {
@@ -4886,7 +4926,7 @@
     "impact": "",
     "forecast": "3.0%",
     "previous": "3.4%",
-    "actual": "",
+    "actual": "0.2%",
     "source": "te"
   },
   {
@@ -5147,16 +5187,6 @@
     "forecast": "",
     "previous": "",
     "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "3-Month Bill Auction",
-    "country": "JPY",
-    "date_utc": "2026-09-11T07:35+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "1.1076%",
-    "actual": "1.1149%",
     "source": "te"
   },
   {
@@ -5680,16 +5710,6 @@
     "source": "te"
   },
   {
-    "title": "Consumer Confidence AUG",
-    "country": "CHF",
-    "date_utc": "2026-09-11T11:00+00:00",
-    "impact": "",
-    "forecast": "-34",
-    "previous": "-35",
-    "actual": "-33",
-    "source": "te"
-  },
-  {
     "title": "Producer & Import Prices MoM AUG",
     "country": "CHF",
     "date_utc": "2026-09-14T10:30+00:00",
@@ -6110,16 +6130,6 @@
     "source": "te"
   },
   {
-    "title": "GfK Consumer Confidence SEP",
-    "country": "GBP",
-    "date_utc": "2026-09-25T03:01+00:00",
-    "impact": "",
-    "forecast": "-17",
-    "previous": "-14",
-    "actual": "",
-    "source": "te"
-  },
-  {
     "title": "BRC Shop Price Inflation SEP",
     "country": "GBP",
     "date_utc": "2026-09-29T03:01+00:00",
@@ -6397,16 +6407,6 @@
     "forecast": "-25.0%",
     "previous": "-28",
     "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "Current Account JUL",
-    "country": "EUR",
-    "date_utc": "2026-09-11T16:30+00:00",
-    "impact": "",
-    "forecast": "18.7B",
-    "previous": "18.9B ",
-    "actual": "21.2B",
     "source": "te"
   },
   {
@@ -6780,16 +6780,6 @@
     "source": "te"
   },
   {
-    "title": "IEA Oil Market Report",
-    "country": "EUR",
-    "date_utc": "2026-09-11T12:00+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "",
-    "actual": "",
-    "source": "te"
-  },
-  {
     "title": "Non Farm Payrolls QoQ Q2",
     "country": "EUR",
     "date_utc": "2026-09-25T10:45+00:00",
@@ -7066,16 +7056,6 @@
     "impact": "",
     "forecast": "",
     "previous": "61.3B",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "Fed Balance Sheet SEP/23",
-    "country": "USD",
-    "date_utc": "2026-09-25T00:30+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "",
     "actual": "",
     "source": "te"
   },
