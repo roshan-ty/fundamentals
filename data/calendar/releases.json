@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-15T01:16:18+00:00",
+  "updated": "2026-09-15T17:45:51+00:00",
   "releases": [
     {
       "country": "USD",
@@ -127,11 +127,11 @@
       "dataPoint": "Unemployment Rate",
       "weight": 1.0,
       "direction": "lower_is_bullish",
-      "period": "2026-04-01T00:00:00+00:00",
-      "title": "Unemployment Rate",
-      "actual": "4.9",
-      "previous": "4.9",
-      "forecast": ""
+      "period": "2026-09-15T10:00+00:00",
+      "title": "Unemployment Rate JUL",
+      "actual": "4.9%",
+      "previous": "4.9%",
+      "forecast": "5.0%"
     },
     {
       "country": "EUR",
@@ -264,6 +264,90 @@
       "actual": "2%",
       "previous": "2%",
       "forecast": "2.0%"
+    },
+    {
+      "country": "CNY",
+      "dataPointId": "cn_indprod",
+      "dataPoint": "Industrial Production (y/y)",
+      "weight": 0.5,
+      "direction": "higher_is_bullish",
+      "period": "2026-09-15T06:00+00:00",
+      "title": "Industrial Production YoY AUG",
+      "actual": "5.2%",
+      "previous": "4.5%",
+      "forecast": "5.0%"
+    },
+    {
+      "country": "GBP",
+      "dataPointId": "gb_claimants",
+      "dataPoint": "Claimant Count Change",
+      "weight": 1.0,
+      "direction": "lower_is_bullish",
+      "period": "2026-09-15T10:00+00:00",
+      "title": "Claimant Count Change AUG",
+      "actual": "27.8K",
+      "previous": "-11K",
+      "forecast": "-5.0K"
+    },
+    {
+      "country": "SGD",
+      "dataPointId": "sg_rate",
+      "dataPoint": "MAS Monetary Policy",
+      "weight": 2.0,
+      "direction": "higher_is_bullish",
+      "period": "2026-09-22T09:00+00:00",
+      "title": "MAS 12-Week Bill Auction",
+      "actual": "1.74%",
+      "previous": "1.60%",
+      "forecast": ""
+    },
+    {
+      "country": "EUR",
+      "dataPointId": "eu_zew",
+      "dataPoint": "German ZEW Economic Sentiment",
+      "weight": 0.5,
+      "direction": "higher_is_bullish",
+      "period": "2026-09-15T13:00+00:00",
+      "title": "ZEW Economic Sentiment Index SEP",
+      "actual": "34.7",
+      "previous": "34.2",
+      "forecast": "34"
+    },
+    {
+      "country": "GBP",
+      "dataPointId": "gb_average_earnings",
+      "dataPoint": "Average Earnings Index + Bonus (3m/y)",
+      "weight": 1.0,
+      "direction": "higher_is_bullish",
+      "period": "2026-09-15T10:00+00:00",
+      "title": "Average Earnings incl. Bonus (3Mo/Yr) JUL",
+      "actual": "3.9%",
+      "previous": "4.1%",
+      "forecast": "4.0%"
+    },
+    {
+      "country": "GBP",
+      "dataPointId": "gb_employment_change",
+      "dataPoint": "Employment Change (3m/y)",
+      "weight": 1.0,
+      "direction": "higher_is_bullish",
+      "period": "2026-09-15T10:00+00:00",
+      "title": "Employment Change JUL",
+      "actual": "67K",
+      "previous": "83K",
+      "forecast": "70.0K"
+    },
+    {
+      "country": "USD",
+      "dataPointId": "us_adp",
+      "dataPoint": "ADP Non-Farm Employment Change",
+      "weight": 1.0,
+      "direction": "higher_is_bullish",
+      "period": "2026-09-22T16:15+00:00",
+      "title": "ADP Employment Change Weekly",
+      "actual": "16.25K",
+      "previous": "12K",
+      "forecast": ""
     }
   ]
 }

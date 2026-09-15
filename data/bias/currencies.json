@@ -1,18 +1,29 @@
 {
   "meta": {
-    "updated": "2026-09-15T01:16:18+00:00",
+    "updated": "2026-09-15T17:45:51+00:00",
     "method": "verdict v3 (forecast-first, released-only)"
   },
   "currencies": {
     "USD": {
       "verdict": "Neutral",
       "tally": {
-        "bullish": 1.0,
+        "bullish": 2.0,
         "bearish": 1.5,
         "neutral": 12.0
       },
-      "released_points": 11,
+      "released_points": 12,
       "drivers": [
+        {
+          "dataPoint": "ADP Non-Farm Employment Change",
+          "title": "ADP Employment Change Weekly",
+          "period": "2026-09-22T16:15+00:00",
+          "actual": "16.25K",
+          "previous": "12K",
+          "forecast": "",
+          "direction": "higher_is_bullish",
+          "verdict": "bullish",
+          "weight": 1.0
+        },
         {
           "dataPoint": "CB Consumer Confidence / UoM Consumer Sentiment",
           "title": "Michigan Consumer Sentiment Prel SEP",
@@ -140,12 +151,23 @@
     "EUR": {
       "verdict": "Bearish",
       "tally": {
-        "bullish": 0.0,
+        "bullish": 1.0,
         "bearish": 3.0,
         "neutral": 0.0
       },
-      "released_points": 2,
+      "released_points": 3,
       "drivers": [
+        {
+          "dataPoint": "German ZEW Economic Sentiment",
+          "title": "ZEW Economic Sentiment Index SEP",
+          "period": "2026-09-15T13:00+00:00",
+          "actual": "34.7",
+          "previous": "34.2",
+          "forecast": "34",
+          "direction": "higher_is_bullish",
+          "verdict": "bullish",
+          "weight": 1.0
+        },
         {
           "dataPoint": "German Industrial Production (m/m)",
           "title": "Industrial Production MoM JUL",
@@ -169,19 +191,61 @@
           "weight": 2.0
         }
       ],
-      "notes": [
-        "limited release evidence; cap at single-step verdict"
-      ]
+      "notes": []
     },
     "GBP": {
-      "verdict": "Bullish",
+      "verdict": "Neutral",
       "tally": {
-        "bullish": 2.0,
-        "bearish": 0.0,
-        "neutral": 2.0
+        "bullish": 4.0,
+        "bearish": 5.0,
+        "neutral": 0.0
       },
-      "released_points": 2,
+      "released_points": 5,
       "drivers": [
+        {
+          "dataPoint": "Unemployment Rate",
+          "title": "Unemployment Rate JUL",
+          "period": "2026-09-15T10:00+00:00",
+          "actual": "4.9%",
+          "previous": "4.9%",
+          "forecast": "5.0%",
+          "direction": "lower_is_bullish",
+          "verdict": "bullish",
+          "weight": 2.0
+        },
+        {
+          "dataPoint": "Claimant Count Change",
+          "title": "Claimant Count Change AUG",
+          "period": "2026-09-15T10:00+00:00",
+          "actual": "27.8K",
+          "previous": "-11K",
+          "forecast": "-5.0K",
+          "direction": "lower_is_bullish",
+          "verdict": "bearish",
+          "weight": 2.0
+        },
+        {
+          "dataPoint": "Average Earnings Index + Bonus (3m/y)",
+          "title": "Average Earnings incl. Bonus (3Mo/Yr) JUL",
+          "period": "2026-09-15T10:00+00:00",
+          "actual": "3.9%",
+          "previous": "4.1%",
+          "forecast": "4.0%",
+          "direction": "higher_is_bullish",
+          "verdict": "bearish",
+          "weight": 2.0
+        },
+        {
+          "dataPoint": "Employment Change (3m/y)",
+          "title": "Employment Change JUL",
+          "period": "2026-09-15T10:00+00:00",
+          "actual": "67K",
+          "previous": "83K",
+          "forecast": "70.0K",
+          "direction": "higher_is_bullish",
+          "verdict": "bearish",
+          "weight": 1.0
+        },
         {
           "dataPoint": "GDP (m/m, q/q, y/y)",
           "title": "GDP MoM JUL",
@@ -191,17 +255,6 @@
           "forecast": "0.1%",
           "direction": "higher_is_bullish",
           "verdict": "bullish",
-          "weight": 2.0
-        },
-        {
-          "dataPoint": "Unemployment Rate",
-          "title": "Unemployment Rate",
-          "period": "2026-04-01T00:00:00+00:00",
-          "actual": "4.9",
-          "previous": "4.9",
-          "forecast": "",
-          "direction": "lower_is_bullish",
-          "verdict": "neutral",
           "weight": 2.0
         }
       ],
@@ -341,12 +394,23 @@
     "CNY": {
       "verdict": "Bullish",
       "tally": {
-        "bullish": 1.0,
+        "bullish": 2.0,
         "bearish": 0.0,
         "neutral": 0.0
       },
-      "released_points": 1,
+      "released_points": 2,
       "drivers": [
+        {
+          "dataPoint": "Industrial Production (y/y)",
+          "title": "Industrial Production YoY AUG",
+          "period": "2026-09-15T06:00+00:00",
+          "actual": "5.2%",
+          "previous": "4.5%",
+          "forecast": "5.0%",
+          "direction": "higher_is_bullish",
+          "verdict": "bullish",
+          "weight": 1.0
+        },
         {
           "dataPoint": "CPI & PPI (y/y)",
           "title": "PPI YoY AUG",
@@ -494,16 +558,28 @@
       ]
     },
     "SGD": {
-      "verdict": "Neutral",
+      "verdict": "Bullish",
       "tally": {
-        "bullish": 0,
-        "bearish": 0,
-        "neutral": 0
+        "bullish": 3.0,
+        "bearish": 0.0,
+        "neutral": 0.0
       },
-      "released_points": 0,
-      "drivers": [],
+      "released_points": 1,
+      "drivers": [
+        {
+          "dataPoint": "MAS Monetary Policy",
+          "title": "MAS 12-Week Bill Auction",
+          "period": "2026-09-22T09:00+00:00",
+          "actual": "1.74%",
+          "previous": "1.60%",
+          "forecast": "",
+          "direction": "higher_is_bullish",
+          "verdict": "bullish",
+          "weight": 3.0
+        }
+      ],
       "notes": [
-        "no released data yet"
+        "limited release evidence; cap at single-step verdict"
       ]
     },
     "HKD": {
