@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-15T17:45:51+00:00",
+  "updated": "2026-09-16T01:05:17+00:00",
   "releases": [
     {
       "country": "USD",
@@ -139,10 +139,10 @@
       "dataPoint": "Eurozone Unemployment Rate",
       "weight": 1.0,
       "direction": "lower_is_bullish",
-      "period": "2026-06-01T00:00:00+00:00",
+      "period": "2026-07-01T00:00:00+00:00",
       "title": "Unemployment Rate",
-      "actual": "3.9",
-      "previous": "3.8",
+      "actual": "4.0",
+      "previous": "4.0",
       "forecast": ""
     },
     {
@@ -151,10 +151,10 @@
       "dataPoint": "Unemployment Rate",
       "weight": 1.0,
       "direction": "lower_is_bullish",
-      "period": "2026-07-01T00:00:00+00:00",
+      "period": "2026-08-01T00:00:00+00:00",
       "title": "Unemployment Rate",
       "actual": "6.4",
-      "previous": "6.5",
+      "previous": "6.4",
       "forecast": ""
     },
     {
@@ -163,10 +163,10 @@
       "dataPoint": "Unemployment Rate",
       "weight": 1.0,
       "direction": "lower_is_bullish",
-      "period": "2026-06-01T00:00:00+00:00",
+      "period": "2026-07-01T00:00:00+00:00",
       "title": "Unemployment Rate",
-      "actual": "4.428344",
-      "previous": "4.371348",
+      "actual": "4.461825",
+      "previous": "4.431548",
       "forecast": ""
     },
     {

@@ -602,11 +602,11 @@
   {
     "title": "API Crude Oil Stock Change SEP/11",
     "country": "USD",
-    "date_utc": "2026-09-16T00:30+00:00",
+    "date_utc": "2026-09-16T01:00+00:00",
     "impact": "",
     "forecast": "",
     "previous": "-0.3M",
-    "actual": "",
+    "actual": "7.14M",
     "source": "te"
   },
   {
@@ -615,8 +615,8 @@
     "date_utc": "2026-09-16T03:50+00:00",
     "impact": "",
     "forecast": "-850.0B",
-    "previous": "-634.5B",
-    "actual": "",
+    "previous": "-638.3B ",
+    "actual": "-1105.6B",
     "source": "te"
   },
   {
@@ -626,7 +626,7 @@
     "impact": "",
     "forecast": "",
     "previous": "23.2%",
-    "actual": "",
+    "actual": "19.3%",
     "source": "te"
   },
   {
@@ -636,7 +636,7 @@
     "impact": "",
     "forecast": "-3.4%",
     "previous": "9.7%",
-    "actual": "",
+    "actual": "-3.7%",
     "source": "te"
   },
   {
@@ -646,7 +646,7 @@
     "impact": "",
     "forecast": "12.0%",
     "previous": "16.9%",
-    "actual": "",
+    "actual": "11.2%",
     "source": "te"
   },
   {
@@ -655,8 +655,18 @@
     "date_utc": "2026-09-16T03:50+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "27.8%",
-    "actual": "",
+    "previous": "27.9% ",
+    "actual": "28%",
+    "source": "te"
+  },
+  {
+    "title": "Passenger Vehicles Sales YoY AUG",
+    "country": "IN",
+    "date_utc": "2026-09-16T04:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "31.2%",
+    "actual": "33.2%",
     "source": "te"
   },
   {
@@ -666,7 +676,7 @@
     "impact": "",
     "forecast": "0.2%",
     "previous": "0%",
-    "actual": "",
+    "actual": "0%",
     "source": "te"
   },
   {
@@ -2925,7 +2935,7 @@
     "date_utc": "2026-09-23T00:30+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "7.14M",
     "actual": "",
     "source": "te"
   },
@@ -4440,6 +4450,16 @@
     "source": "te"
   },
   {
+    "title": "Fed Hammack Speech",
+    "country": "USD",
+    "date_utc": "2026-09-25T22:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
     "title": "RBA Hunter Speech",
     "country": "AUD",
     "date_utc": "2026-09-14T06:30+00:00",
@@ -4892,11 +4912,11 @@
   {
     "title": "Westpac Consumer Confidence Q3",
     "country": "NZD",
-    "date_utc": "2026-09-16T01:00+00:00",
+    "date_utc": "2026-09-16T01:30+00:00",
     "impact": "",
     "forecast": "82.3",
     "previous": "80.4",
-    "actual": "",
+    "actual": "89.5",
     "source": "te"
   },
   {
@@ -4905,8 +4925,8 @@
     "date_utc": "2026-09-16T02:45+00:00",
     "impact": "",
     "forecast": "NZ$-3.2B",
-    "previous": "NZ$-1.01B",
-    "actual": "",
+    "previous": "NZ$-1.09B ",
+    "actual": "NZ$-1.67B",
     "source": "te"
   },
   {
@@ -7136,36 +7156,6 @@
     "impact": "",
     "forecast": "",
     "previous": "61.3B",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "3-Month Bill Auction",
-    "country": "USD",
-    "date_utc": "2026-09-14T19:30+00:00",
-    "impact": "",
-    "forecast": "3.8999%",
-    "previous": "3.800%",
-    "actual": "3.970%",
-    "source": "te"
-  },
-  {
-    "title": "6-Month Bill Auction",
-    "country": "USD",
-    "date_utc": "2026-09-14T19:30+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "3.890%",
-    "actual": "4.060%",
-    "source": "te"
-  },
-  {
-    "title": "Fed Hammack Speech",
-    "country": "USD",
-    "date_utc": "2026-09-25T22:00+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "",
     "actual": "",
     "source": "te"
   },

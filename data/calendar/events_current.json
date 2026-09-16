@@ -1920,6 +1920,16 @@
     "period": "2026-05-01"
   },
   {
+    "title": "Unemployment Rate",
+    "country": "GBP",
+    "date_utc": "2026-05-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "4.9",
+    "previous": "4.9",
+    "source_series": "LRHUTTTTGBM156S",
+    "period": "2026-05-01"
+  },
+  {
     "title": "Initial Jobless Claims",
     "country": "USD",
     "date_utc": "2026-05-02T00:00:00+00:00",
@@ -2300,6 +2310,36 @@
     "period": "2026-07-01"
   },
   {
+    "title": "Unemployment Rate",
+    "country": "EUR",
+    "date_utc": "2026-07-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "4.0",
+    "previous": "4.0",
+    "source_series": "LRHUTTTTDEM156S",
+    "period": "2026-07-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "JPY",
+    "date_utc": "2026-07-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "2.4",
+    "previous": "2.5",
+    "source_series": "LRHUTTTTJPM156S",
+    "period": "2026-07-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "AUD",
+    "date_utc": "2026-07-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "4.461825",
+    "previous": "4.431548",
+    "source_series": "LRHUTTTTAUM156S",
+    "period": "2026-07-01"
+  },
+  {
     "title": "Initial Jobless Claims",
     "country": "USD",
     "date_utc": "2026-07-04T00:00:00+00:00",
@@ -2407,6 +2447,16 @@
     "actual": "200000.0",
     "previous": "198000.0",
     "source_series": "ICSA",
+    "period": "2026-08-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "CAD",
+    "date_utc": "2026-08-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "6.4",
+    "previous": "6.4",
+    "source_series": "LRHUTTTTCAM156S",
     "period": "2026-08-01"
   },
   {
@@ -4945,7 +4995,7 @@
   {
     "title": "Westpac Consumer Sentiment",
     "country": "NZD",
-    "date_utc": "2026-09-15T21:00+00:00",
+    "date_utc": "2026-09-15T21:04+00:00",
     "impact": "Low",
     "forecast": "",
     "previous": "80.4",
@@ -4987,16 +5037,6 @@
     "source": "ff-feed"
   },
   {
-    "title": "API Crude Oil Stock Change SEP/11",
-    "country": "USD",
-    "date_utc": "2026-09-16T00:30+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "-0.3M",
-    "actual": "",
-    "source": "te"
-  },
-  {
     "title": "MI Leading Index m/m",
     "country": "AUD",
     "date_utc": "2026-09-16T00:30+00:00",
@@ -5008,13 +5048,23 @@
     "source": "ff-feed"
   },
   {
+    "title": "API Crude Oil Stock Change SEP/11",
+    "country": "USD",
+    "date_utc": "2026-09-16T01:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "-0.3M",
+    "actual": "7.14M",
+    "source": "te"
+  },
+  {
     "title": "Westpac Consumer Confidence Q3",
     "country": "NZD",
-    "date_utc": "2026-09-16T01:00+00:00",
+    "date_utc": "2026-09-16T01:30+00:00",
     "impact": "",
     "forecast": "85.9",
     "previous": "80.4",
-    "actual": "",
+    "actual": "89.5",
     "source": "te"
   },
   {
@@ -5024,7 +5074,7 @@
     "impact": "",
     "forecast": "NZ$-3.2B",
     "previous": "NZ$-1.01B",
-    "actual": "",
+    "actual": "NZ$-1.67B",
     "source": "te"
   },
   {
@@ -5034,7 +5084,7 @@
     "impact": "",
     "forecast": "-850.0B",
     "previous": "-634.5B",
-    "actual": "",
+    "actual": "-1105.6B",
     "source": "te"
   },
   {
@@ -5044,7 +5094,7 @@
     "impact": "",
     "forecast": "",
     "previous": "23.2%",
-    "actual": "",
+    "actual": "19.3%",
     "source": "te"
   },
   {
@@ -5054,7 +5104,7 @@
     "impact": "",
     "forecast": "1.0%",
     "previous": "9.7%",
-    "actual": "",
+    "actual": "-3.7%",
     "source": "te"
   },
   {
@@ -5064,7 +5114,7 @@
     "impact": "",
     "forecast": "12.0%",
     "previous": "16.9%",
-    "actual": "",
+    "actual": "11.2%",
     "source": "te"
   },
   {
@@ -5074,7 +5124,17 @@
     "impact": "",
     "forecast": "",
     "previous": "27.8%",
-    "actual": "",
+    "actual": "28%",
+    "source": "te"
+  },
+  {
+    "title": "Passenger Vehicles Sales YoY AUG",
+    "country": "IN",
+    "date_utc": "2026-09-16T04:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "31.2%",
+    "actual": "33.2%",
     "source": "te"
   },
   {
@@ -5084,7 +5144,7 @@
     "impact": "",
     "forecast": "0.2%",
     "previous": "0%",
-    "actual": "",
+    "actual": "0%",
     "source": "te"
   },
   {
@@ -7916,7 +7976,7 @@
     "date_utc": "2026-09-23T00:30+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "7.14M",
     "actual": "",
     "source": "te"
   },

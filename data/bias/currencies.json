@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-09-15T17:45:51+00:00",
+    "updated": "2026-09-16T01:05:17+00:00",
     "method": "verdict v3 (forecast-first, released-only)"
   },
   "currencies": {
@@ -149,11 +149,11 @@
       "notes": []
     },
     "EUR": {
-      "verdict": "Bearish",
+      "verdict": "Neutral",
       "tally": {
         "bullish": 1.0,
-        "bearish": 3.0,
-        "neutral": 0.0
+        "bearish": 1.0,
+        "neutral": 2.0
       },
       "released_points": 3,
       "drivers": [
@@ -182,12 +182,12 @@
         {
           "dataPoint": "Eurozone Unemployment Rate",
           "title": "Unemployment Rate",
-          "period": "2026-06-01T00:00:00+00:00",
-          "actual": "3.9",
-          "previous": "3.8",
+          "period": "2026-07-01T00:00:00+00:00",
+          "actual": "4.0",
+          "previous": "4.0",
           "forecast": "",
           "direction": "lower_is_bullish",
-          "verdict": "bearish",
+          "verdict": "neutral",
           "weight": 2.0
         }
       ],
@@ -272,9 +272,9 @@
         {
           "dataPoint": "Unemployment Rate",
           "title": "Unemployment Rate",
-          "period": "2026-06-01T00:00:00+00:00",
-          "actual": "4.428344",
-          "previous": "4.371348",
+          "period": "2026-07-01T00:00:00+00:00",
+          "actual": "4.461825",
+          "previous": "4.431548",
           "forecast": "",
           "direction": "lower_is_bullish",
           "verdict": "bearish",
@@ -311,11 +311,11 @@
       ]
     },
     "CAD": {
-      "verdict": "Bullish",
+      "verdict": "Neutral",
       "tally": {
-        "bullish": 2.0,
+        "bullish": 0.0,
         "bearish": 0.0,
-        "neutral": 2.0
+        "neutral": 4.0
       },
       "released_points": 2,
       "drivers": [
@@ -333,12 +333,12 @@
         {
           "dataPoint": "Unemployment Rate",
           "title": "Unemployment Rate",
-          "period": "2026-07-01T00:00:00+00:00",
+          "period": "2026-08-01T00:00:00+00:00",
           "actual": "6.4",
-          "previous": "6.5",
+          "previous": "6.4",
           "forecast": "",
           "direction": "lower_is_bullish",
-          "verdict": "bullish",
+          "verdict": "neutral",
           "weight": 2.0
         }
       ],
@@ -603,7 +603,7 @@
     "china_pmi_sig": 0,
     "oil_direction": "flat",
     "risk_mode": "flat",
-    "dxy_level": 99.51,
+    "dxy_level": 99.58,
     "gold_level": 4390.39382
   }
 }
