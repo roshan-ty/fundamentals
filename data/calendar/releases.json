@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-16T01:05:17+00:00",
+  "updated": "2026-09-16T17:45:27+00:00",
   "releases": [
     {
       "country": "USD",
@@ -79,11 +79,11 @@
       "dataPoint": "Retail Sales & Core Retail Sales (m/m)",
       "weight": 1.0,
       "direction": "higher_is_bullish",
-      "period": "2026-07-01T00:00:00+00:00",
-      "title": "Retail Sales m/m",
-      "actual": "-0.58",
-      "previous": "",
-      "forecast": ""
+      "period": "2026-09-16T16:30+00:00",
+      "title": "Retail Sales MoM AUG",
+      "actual": "1.2%",
+      "previous": "-0.6%",
+      "forecast": "0.3%"
     },
     {
       "country": "USD",

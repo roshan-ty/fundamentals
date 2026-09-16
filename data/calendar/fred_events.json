@@ -104,7 +104,7 @@
     "country": "USD",
     "date_utc": "2025-09-01T00:00:00+00:00",
     "impact": "Medium",
-    "actual": "0.07",
+    "actual": "0.3",
     "previous": "",
     "source_series": "RSAFS",
     "period": "2025-09-01"
@@ -2054,7 +2054,7 @@
     "country": "USD",
     "date_utc": "2026-06-01T00:00:00+00:00",
     "impact": "Medium",
-    "actual": "0.25",
+    "actual": "0.31",
     "previous": "",
     "source_series": "RSAFS",
     "period": "2026-06-01"
@@ -2254,7 +2254,7 @@
     "country": "USD",
     "date_utc": "2026-07-01T00:00:00+00:00",
     "impact": "Medium",
-    "actual": "-0.58",
+    "actual": "-0.54",
     "previous": "",
     "source_series": "RSAFS",
     "period": "2026-07-01"
@@ -2447,6 +2447,16 @@
     "actual": "200000.0",
     "previous": "198000.0",
     "source_series": "ICSA",
+    "period": "2026-08-01"
+  },
+  {
+    "title": "Retail Sales m/m",
+    "country": "USD",
+    "date_utc": "2026-08-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "1.24",
+    "previous": "",
+    "source_series": "RSAFS",
     "period": "2026-08-01"
   },
   {

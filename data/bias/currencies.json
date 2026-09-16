@@ -1,15 +1,15 @@
 {
   "meta": {
-    "updated": "2026-09-16T01:05:17+00:00",
+    "updated": "2026-09-16T17:45:27+00:00",
     "method": "verdict v3 (forecast-first, released-only)"
   },
   "currencies": {
     "USD": {
       "verdict": "Neutral",
       "tally": {
-        "bullish": 2.0,
+        "bullish": 3.0,
         "bearish": 1.5,
-        "neutral": 12.0
+        "neutral": 11.0
       },
       "released_points": 12,
       "drivers": [
@@ -20,6 +20,17 @@
           "actual": "16.25K",
           "previous": "12K",
           "forecast": "",
+          "direction": "higher_is_bullish",
+          "verdict": "bullish",
+          "weight": 1.0
+        },
+        {
+          "dataPoint": "Retail Sales & Core Retail Sales (m/m)",
+          "title": "Retail Sales MoM AUG",
+          "period": "2026-09-16T16:30+00:00",
+          "actual": "1.2%",
+          "previous": "-0.6%",
+          "forecast": "0.3%",
           "direction": "higher_is_bullish",
           "verdict": "bullish",
           "weight": 1.0
@@ -100,17 +111,6 @@
           "direction": "higher_is_bullish",
           "verdict": "neutral",
           "weight": 2.0
-        },
-        {
-          "dataPoint": "Retail Sales & Core Retail Sales (m/m)",
-          "title": "Retail Sales m/m",
-          "period": "2026-07-01T00:00:00+00:00",
-          "actual": "-0.58",
-          "previous": "",
-          "forecast": "",
-          "direction": "higher_is_bullish",
-          "verdict": "neutral",
-          "weight": 1.0
         },
         {
           "dataPoint": "Building Permits & Housing Starts",
