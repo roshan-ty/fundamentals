@@ -2064,7 +2064,7 @@
     "country": "USD",
     "date_utc": "2026-06-01T00:00:00+00:00",
     "impact": "Medium",
-    "actual": "1415.0",
+    "actual": "1439.0",
     "previous": "1182.0",
     "source_series": "HOUST",
     "period": "2026-06-01"
@@ -2264,8 +2264,8 @@
     "country": "USD",
     "date_utc": "2026-07-01T00:00:00+00:00",
     "impact": "Medium",
-    "actual": "1239.0",
-    "previous": "1415.0",
+    "actual": "1309.0",
+    "previous": "1439.0",
     "source_series": "HOUST",
     "period": "2026-07-01"
   },
@@ -2460,6 +2460,26 @@
     "period": "2026-08-01"
   },
   {
+    "title": "Housing Starts",
+    "country": "USD",
+    "date_utc": "2026-08-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "1275.0",
+    "previous": "1309.0",
+    "source_series": "HOUST",
+    "period": "2026-08-01"
+  },
+  {
+    "title": "Building Permits",
+    "country": "USD",
+    "date_utc": "2026-08-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "1394.0",
+    "previous": "1433.0",
+    "source_series": "PERMIT",
+    "period": "2026-08-01"
+  },
+  {
     "title": "Unemployment Rate",
     "country": "CAD",
     "date_utc": "2026-08-01T00:00:00+00:00",
@@ -2518,5 +2538,15 @@
     "previous": "207000.0",
     "source_series": "ICSA",
     "period": "2026-09-05"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2026-09-12T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "196000.0",
+    "previous": "206000.0",
+    "source_series": "ICSA",
+    "period": "2026-09-12"
   }
 ]

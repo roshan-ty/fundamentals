@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-09-17T01:10:37+00:00",
+    "updated": "2026-09-17T17:44:48+00:00",
     "method": "verdict v3 (forecast-first, released-only)"
   },
   "currencies": {
@@ -23,6 +23,28 @@
           "direction": "higher_is_bullish",
           "verdict": "bullish",
           "weight": 1.0
+        },
+        {
+          "dataPoint": "Unemployment Claims (Weekly)",
+          "title": "Initial Jobless Claims SEP/12",
+          "period": "2026-09-17T16:30+00:00",
+          "actual": "196K",
+          "previous": "206K",
+          "forecast": "208.0K",
+          "direction": "lower_is_bullish",
+          "verdict": "bullish",
+          "weight": 1.0
+        },
+        {
+          "dataPoint": "Building Permits & Housing Starts",
+          "title": "Building Permits Prel AUG",
+          "period": "2026-09-17T16:30+00:00",
+          "actual": "1.394M",
+          "previous": "1.433M",
+          "forecast": "1.41M",
+          "direction": "higher_is_bullish",
+          "verdict": "bearish",
+          "weight": 0.5
         },
         {
           "dataPoint": "Federal Funds Rate / FOMC Statement / FOMC Press Conference",
@@ -56,17 +78,6 @@
           "direction": "higher_is_bullish",
           "verdict": "bearish",
           "weight": 0.5
-        },
-        {
-          "dataPoint": "Unemployment Claims (Weekly)",
-          "title": "Initial Jobless Claims",
-          "period": "2026-09-05T00:00:00+00:00",
-          "actual": "206000.0",
-          "previous": "207000.0",
-          "forecast": "",
-          "direction": "lower_is_bullish",
-          "verdict": "bullish",
-          "weight": 1.0
         },
         {
           "dataPoint": "CPI & Core CPI (m/m, y/y)",
@@ -122,17 +133,6 @@
           "direction": "higher_is_bullish",
           "verdict": "neutral",
           "weight": 2.0
-        },
-        {
-          "dataPoint": "Building Permits & Housing Starts",
-          "title": "Housing Starts",
-          "period": "2026-07-01T00:00:00+00:00",
-          "actual": "1239.0",
-          "previous": "1415.0",
-          "forecast": "",
-          "direction": "higher_is_bullish",
-          "verdict": "bearish",
-          "weight": 0.5
         },
         {
           "dataPoint": "Trade Balance",
@@ -209,10 +209,21 @@
       "tally": {
         "bullish": 4.0,
         "bearish": 5.0,
-        "neutral": 0.0
+        "neutral": 3.0
       },
-      "released_points": 5,
+      "released_points": 6,
       "drivers": [
+        {
+          "dataPoint": "Official Bank Rate / MPC Rate Statement / MPC Official Bank Rate Votes",
+          "title": "BoE Interest Rate Decision",
+          "period": "2026-09-17T15:00+00:00",
+          "actual": "3.75%",
+          "previous": "3.75%",
+          "forecast": "3.75%",
+          "direction": "higher_is_bullish",
+          "verdict": "neutral",
+          "weight": 3.0
+        },
         {
           "dataPoint": "Unemployment Rate",
           "title": "Unemployment Rate JUL",

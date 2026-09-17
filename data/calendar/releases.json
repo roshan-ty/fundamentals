@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-17T01:10:37+00:00",
+  "updated": "2026-09-17T17:44:48+00:00",
   "releases": [
     {
       "country": "USD",
@@ -7,11 +7,11 @@
       "dataPoint": "Unemployment Claims (Weekly)",
       "weight": 0.5,
       "direction": "lower_is_bullish",
-      "period": "2026-09-05T00:00:00+00:00",
-      "title": "Initial Jobless Claims",
-      "actual": "206000.0",
-      "previous": "207000.0",
-      "forecast": ""
+      "period": "2026-09-17T16:30+00:00",
+      "title": "Initial Jobless Claims SEP/12",
+      "actual": "196K",
+      "previous": "206K",
+      "forecast": "208.0K"
     },
     {
       "country": "USD",
@@ -91,11 +91,11 @@
       "dataPoint": "Building Permits & Housing Starts",
       "weight": 0.5,
       "direction": "higher_is_bullish",
-      "period": "2026-07-01T00:00:00+00:00",
-      "title": "Housing Starts",
-      "actual": "1239.0",
-      "previous": "1415.0",
-      "forecast": ""
+      "period": "2026-09-17T16:30+00:00",
+      "title": "Building Permits Prel AUG",
+      "actual": "1.394M",
+      "previous": "1.433M",
+      "forecast": "1.41M"
     },
     {
       "country": "USD",
@@ -360,6 +360,18 @@
       "actual": "13.75%",
       "previous": "14%",
       "forecast": "13.75%"
+    },
+    {
+      "country": "GBP",
+      "dataPointId": "gb_bank_rate",
+      "dataPoint": "Official Bank Rate / MPC Rate Statement / MPC Official Bank Rate Votes",
+      "weight": 2.0,
+      "direction": "higher_is_bullish",
+      "period": "2026-09-17T15:00+00:00",
+      "title": "BoE Interest Rate Decision",
+      "actual": "3.75%",
+      "previous": "3.75%",
+      "forecast": "3.75%"
     },
     {
       "country": "USD",
