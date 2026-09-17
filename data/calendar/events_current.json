@@ -6053,7 +6053,7 @@
     "impact": "",
     "forecast": "4%",
     "previous": "3.75%",
-    "actual": "",
+    "actual": "4%",
     "source": "te"
   },
   {
@@ -6063,7 +6063,7 @@
     "impact": "",
     "forecast": "",
     "previous": "3.6%",
-    "actual": "",
+    "actual": "4.1%",
     "source": "te"
   },
   {
@@ -6073,7 +6073,7 @@
     "impact": "",
     "forecast": "",
     "previous": "3.4%",
-    "actual": "",
+    "actual": "3.9%",
     "source": "te"
   },
   {
@@ -6083,7 +6083,7 @@
     "impact": "",
     "forecast": "",
     "previous": "3.1%",
-    "actual": "",
+    "actual": "3.6%",
     "source": "te"
   },
   {
@@ -6093,7 +6093,7 @@
     "impact": "",
     "forecast": "",
     "previous": "3.8%",
-    "actual": "",
+    "actual": "4.1%",
     "source": "te"
   },
   {
@@ -6103,7 +6103,17 @@
     "impact": "",
     "forecast": "",
     "previous": "3.1%",
-    "actual": "",
+    "actual": "3.2%",
+    "source": "te"
+  },
+  {
+    "title": "Interest Rate Decision",
+    "country": "SA",
+    "date_utc": "2026-09-16T22:20+00:00",
+    "impact": "",
+    "forecast": "4.5%",
+    "previous": "4.25%",
+    "actual": "4.5%",
     "source": "te"
   },
   {
@@ -6134,7 +6144,7 @@
     "impact": "",
     "forecast": "",
     "previous": "$172.7B",
-    "actual": "",
+    "actual": "$-27.9B",
     "source": "te"
   },
   {
@@ -6144,7 +6154,7 @@
     "impact": "",
     "forecast": "",
     "previous": "$6.8B",
-    "actual": "",
+    "actual": "$-3.6B",
     "source": "te"
   },
   {
@@ -6154,7 +6164,7 @@
     "impact": "",
     "forecast": "",
     "previous": "$133.5B",
-    "actual": "",
+    "actual": "$83.7B",
     "source": "te"
   },
   {
@@ -6164,7 +6174,7 @@
     "impact": "",
     "forecast": "13.75%",
     "previous": "14%",
-    "actual": "",
+    "actual": "13.75%",
     "source": "te"
   },
   {
@@ -6174,7 +6184,7 @@
     "impact": "",
     "forecast": "0.1%",
     "previous": "0.8%",
-    "actual": "",
+    "actual": "0.2%",
     "source": "te"
   },
   {
@@ -6184,7 +6194,7 @@
     "impact": "",
     "forecast": "2.1%",
     "previous": "1.5%",
-    "actual": "",
+    "actual": "2.6%",
     "source": "te"
   },
   {
@@ -6194,7 +6204,7 @@
     "impact": "",
     "forecast": "",
     "previous": "111.9B",
-    "actual": "",
+    "actual": "1082.9B",
     "source": "te"
   },
   {
@@ -6204,7 +6214,7 @@
     "impact": "",
     "forecast": "",
     "previous": "690B",
-    "actual": "",
+    "actual": "-1522.8B",
     "source": "te"
   },
   {
@@ -6214,7 +6224,7 @@
     "impact": "",
     "forecast": "$11.0B",
     "previous": "$10.724B",
-    "actual": "",
+    "actual": "$13.780B",
     "source": "te"
   },
   {
@@ -6224,7 +6234,7 @@
     "impact": "",
     "forecast": "",
     "previous": "-0.3%",
-    "actual": "",
+    "actual": "10.9%",
     "source": "te"
   },
   {
@@ -6234,19 +6244,8 @@
     "impact": "",
     "forecast": "",
     "previous": "24.2%",
-    "actual": "",
+    "actual": "46.2%",
     "source": "te"
-  },
-  {
-    "title": "Foreign Direct Investment ytd/y",
-    "country": "CNY",
-    "date_utc": "2026-09-17T06:02+00:00",
-    "impact": "Low",
-    "forecast": "",
-    "previous": "-6.2%",
-    "actual": "",
-    "revision": "",
-    "source": "ff-feed"
   },
   {
     "title": "Final Core CPI y/y",
@@ -7169,6 +7168,17 @@
     "impact": "Medium",
     "forecast": "-0.2%",
     "previous": "-0.5%",
+    "actual": "",
+    "revision": "",
+    "source": "ff-feed"
+  },
+  {
+    "title": "Foreign Direct Investment ytd/y",
+    "country": "CNY",
+    "date_utc": "2026-09-18T06:02+00:00",
+    "impact": "Low",
+    "forecast": "",
+    "previous": "-6.2%",
     "actual": "",
     "revision": "",
     "source": "ff-feed"
@@ -10996,7 +11006,7 @@
     "date_utc": "2026-10-01T03:50+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "1082.9B",
     "actual": "",
     "source": "te"
   },
@@ -11016,7 +11026,7 @@
     "date_utc": "2026-10-01T03:50+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "-1522.8B",
     "actual": "",
     "source": "te"
   },
@@ -13014,6 +13024,76 @@
     "title": "6-Month BTF Auction",
     "country": "EUR",
     "date_utc": "2026-10-12T17:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Monthly Budget Statement SEP",
+    "country": "USD",
+    "date_utc": "2026-10-12T22:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "BRC Retail Sales Monitor YoY SEP",
+    "country": "GBP",
+    "date_utc": "2026-10-13T03:01+00:00",
+    "impact": "",
+    "forecast": "1.4%",
+    "previous": "0.5%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Bank Lending YoY SEP",
+    "country": "JPY",
+    "date_utc": "2026-10-13T03:50+00:00",
+    "impact": "",
+    "forecast": "5.4%",
+    "previous": "5.4%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "PPI MoM SEP",
+    "country": "JPY",
+    "date_utc": "2026-10-13T03:50+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "-0.2%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "PPI YoY SEP",
+    "country": "JPY",
+    "date_utc": "2026-10-13T03:50+00:00",
+    "impact": "",
+    "forecast": "8%",
+    "previous": "7.6%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "NAB Business Confidence SEP",
+    "country": "AUD",
+    "date_utc": "2026-10-13T04:30+00:00",
+    "impact": "",
+    "forecast": "-9",
+    "previous": "-8",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "RBA Meeting Minutes",
+    "country": "AUD",
+    "date_utc": "2026-10-13T04:30+00:00",
     "impact": "",
     "forecast": "",
     "previous": "",

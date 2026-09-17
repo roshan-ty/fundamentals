@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-16T17:45:27+00:00",
+  "updated": "2026-09-17T01:10:37+00:00",
   "releases": [
     {
       "country": "USD",
@@ -336,6 +336,30 @@
       "actual": "67K",
       "previous": "83K",
       "forecast": "70.0K"
+    },
+    {
+      "country": "USD",
+      "dataPointId": "us_fed_funds",
+      "dataPoint": "Federal Funds Rate / FOMC Statement / FOMC Press Conference",
+      "weight": 2.0,
+      "direction": "higher_is_bullish",
+      "period": "2026-09-16T22:00+00:00",
+      "title": "Fed Interest Rate Decision",
+      "actual": "4%",
+      "previous": "3.75%",
+      "forecast": "4%"
+    },
+    {
+      "country": "BRL",
+      "dataPointId": "br_rate",
+      "dataPoint": "Selic Rate / COPOM Decision",
+      "weight": 2.0,
+      "direction": "higher_is_bullish",
+      "period": "2026-09-17T01:30+00:00",
+      "title": "Interest Rate Decision",
+      "actual": "13.75%",
+      "previous": "14%",
+      "forecast": "13.75%"
     },
     {
       "country": "USD",

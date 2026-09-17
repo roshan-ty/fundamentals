@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-09-16T17:45:27+00:00",
+    "updated": "2026-09-17T01:10:37+00:00",
     "total": 82,
     "scored": 82
   },
@@ -787,32 +787,32 @@
     {
       "symbol": "XAUUSD",
       "class": "metals",
-      "verdict": "Bullish",
-      "base_verdict": "Bullish",
+      "verdict": "Neutral",
+      "base_verdict": "Neutral",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "XAGUSD",
       "class": "metals",
-      "verdict": "Bearish",
-      "base_verdict": "Bearish",
+      "verdict": "Very Bearish",
+      "base_verdict": "Very Bearish",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "XPTUSD",
       "class": "metals",
-      "verdict": "Bullish",
-      "base_verdict": "Bullish",
+      "verdict": "Neutral",
+      "base_verdict": "Neutral",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "XPDUSD",
       "class": "metals",
-      "verdict": "Bullish",
-      "base_verdict": "Bullish",
+      "verdict": "Neutral",
+      "base_verdict": "Neutral",
       "quote_verdict": null,
       "drivers": []
     },
@@ -843,96 +843,96 @@
     {
       "symbol": "US500",
       "class": "indices",
-      "verdict": "Neutral",
-      "base_verdict": "Neutral",
+      "verdict": "Bearish",
+      "base_verdict": "Bearish",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "US100",
       "class": "indices",
-      "verdict": "Neutral",
-      "base_verdict": "Neutral",
+      "verdict": "Bearish",
+      "base_verdict": "Bearish",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "US30",
       "class": "indices",
-      "verdict": "Neutral",
-      "base_verdict": "Neutral",
+      "verdict": "Bearish",
+      "base_verdict": "Bearish",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "GE40",
       "class": "indices",
-      "verdict": "Neutral",
-      "base_verdict": "Neutral",
+      "verdict": "Bearish",
+      "base_verdict": "Bearish",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "EU50",
       "class": "indices",
-      "verdict": "Neutral",
-      "base_verdict": "Neutral",
+      "verdict": "Bearish",
+      "base_verdict": "Bearish",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "GB100",
       "class": "indices",
-      "verdict": "Neutral",
-      "base_verdict": "Neutral",
+      "verdict": "Bearish",
+      "base_verdict": "Bearish",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "FR40",
       "class": "indices",
-      "verdict": "Neutral",
-      "base_verdict": "Neutral",
+      "verdict": "Bearish",
+      "base_verdict": "Bearish",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "JP225",
       "class": "indices",
-      "verdict": "Neutral",
-      "base_verdict": "Neutral",
+      "verdict": "Bearish",
+      "base_verdict": "Bearish",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "HK50",
       "class": "indices",
-      "verdict": "Neutral",
-      "base_verdict": "Neutral",
+      "verdict": "Bearish",
+      "base_verdict": "Bearish",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "AUS200",
       "class": "indices",
-      "verdict": "Neutral",
-      "base_verdict": "Neutral",
+      "verdict": "Bearish",
+      "base_verdict": "Bearish",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "CH20",
       "class": "indices",
-      "verdict": "Neutral",
-      "base_verdict": "Neutral",
+      "verdict": "Bearish",
+      "base_verdict": "Bearish",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "ES35",
       "class": "indices",
-      "verdict": "Neutral",
-      "base_verdict": "Neutral",
+      "verdict": "Bearish",
+      "base_verdict": "Bearish",
       "quote_verdict": null,
       "drivers": []
     }

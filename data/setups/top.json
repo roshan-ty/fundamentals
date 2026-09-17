@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-09-16T17:45:27+00:00"
+    "updated": "2026-09-17T01:10:37+00:00"
   },
   "setups": [
     {
@@ -11,6 +11,15 @@
       "confidence": 0.6,
       "importance": 2,
       "rationale": "Very Bearish — NZD: Bearish · SGD: Bullish"
+    },
+    {
+      "symbol": "XAGUSD",
+      "name": "XAGUSD",
+      "verdict": "Very Bearish",
+      "direction": "Sell",
+      "confidence": 0.4,
+      "importance": 2,
+      "rationale": "Very Bearish"
     },
     {
       "symbol": "GBPJPY",
@@ -101,15 +110,6 @@
       "confidence": 0.8,
       "importance": 1,
       "rationale": "Bullish — EUR: Neutral · AUD: Bearish"
-    },
-    {
-      "symbol": "EURNZD",
-      "name": "EURNZD",
-      "verdict": "Bullish",
-      "direction": "Buy",
-      "confidence": 0.8,
-      "importance": 1,
-      "rationale": "Bullish — EUR: Neutral · NZD: Bearish"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-09-16T17:45:27+00:00",
+    "updated": "2026-09-17T01:10:37+00:00",
     "method": "verdict v3 (forecast-first, released-only)"
   },
   "currencies": {
@@ -9,9 +9,9 @@
       "tally": {
         "bullish": 3.0,
         "bearish": 1.5,
-        "neutral": 11.0
+        "neutral": 14.0
       },
-      "released_points": 12,
+      "released_points": 13,
       "drivers": [
         {
           "dataPoint": "ADP Non-Farm Employment Change",
@@ -23,6 +23,17 @@
           "direction": "higher_is_bullish",
           "verdict": "bullish",
           "weight": 1.0
+        },
+        {
+          "dataPoint": "Federal Funds Rate / FOMC Statement / FOMC Press Conference",
+          "title": "Fed Interest Rate Decision",
+          "period": "2026-09-16T22:00+00:00",
+          "actual": "4%",
+          "previous": "3.75%",
+          "forecast": "4%",
+          "direction": "higher_is_bullish",
+          "verdict": "neutral",
+          "weight": 3.0
         },
         {
           "dataPoint": "Retail Sales & Core Retail Sales (m/m)",
@@ -443,15 +454,25 @@
     "BRL": {
       "verdict": "Neutral",
       "tally": {
-        "bullish": 0,
-        "bearish": 0,
-        "neutral": 0
+        "bullish": 0.0,
+        "bearish": 0.0,
+        "neutral": 3.0
       },
-      "released_points": 0,
-      "drivers": [],
-      "notes": [
-        "no released data yet"
-      ]
+      "released_points": 1,
+      "drivers": [
+        {
+          "dataPoint": "Selic Rate / COPOM Decision",
+          "title": "Interest Rate Decision",
+          "period": "2026-09-17T01:30+00:00",
+          "actual": "13.75%",
+          "previous": "14%",
+          "forecast": "13.75%",
+          "direction": "higher_is_bullish",
+          "verdict": "neutral",
+          "weight": 3.0
+        }
+      ],
+      "notes": []
     },
     "TRY": {
       "verdict": "Neutral",
@@ -598,12 +619,12 @@
   },
   "context": {
     "real_yield_sig": 1,
-    "dxy_sig": -1,
+    "dxy_sig": 0,
     "m2_sig": 1,
     "china_pmi_sig": 0,
     "oil_direction": "flat",
     "risk_mode": "flat",
-    "dxy_level": 99.58,
+    "dxy_level": 100.08,
     "gold_level": 4390.39382
   }
 }
