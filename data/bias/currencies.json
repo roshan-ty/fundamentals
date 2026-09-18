@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-09-18T01:06:44+00:00",
+    "updated": "2026-09-18T17:11:23+00:00",
     "method": "verdict v3 (forecast-first, released-only)"
   },
   "currencies": {
@@ -207,12 +207,23 @@
     "GBP": {
       "verdict": "Neutral",
       "tally": {
-        "bullish": 4.0,
+        "bullish": 4.5,
         "bearish": 5.0,
         "neutral": 3.0
       },
-      "released_points": 6,
+      "released_points": 7,
       "drivers": [
+        {
+          "dataPoint": "Retail Sales (m/m)",
+          "title": "Retail Sales MoM AUG",
+          "period": "2026-09-18T10:00+00:00",
+          "actual": "0.5%",
+          "previous": "-0.5%",
+          "forecast": "-0.1%",
+          "direction": "higher_is_bullish",
+          "verdict": "bullish",
+          "weight": 0.5
+        },
         {
           "dataPoint": "Official Bank Rate / MPC Rate Statement / MPC Official Bank Rate Votes",
           "title": "BoE Interest Rate Decision",
@@ -367,14 +378,25 @@
       "notes": []
     },
     "JPY": {
-      "verdict": "Bearish",
+      "verdict": "Neutral",
       "tally": {
         "bullish": 0.0,
         "bearish": 1.0,
-        "neutral": 2.0
+        "neutral": 5.0
       },
-      "released_points": 2,
+      "released_points": 3,
       "drivers": [
+        {
+          "dataPoint": "BoJ Policy Rate / Monetary Policy Statement / BoJ Press Conference",
+          "title": "BoJ Interest Rate Decision",
+          "period": "2026-09-18T07:00+00:00",
+          "actual": "1.25%",
+          "previous": "1%",
+          "forecast": "1.25%",
+          "direction": "higher_is_bullish",
+          "verdict": "neutral",
+          "weight": 3.0
+        },
         {
           "dataPoint": "PPI (y/y)",
           "title": "PPI YoY AUG",

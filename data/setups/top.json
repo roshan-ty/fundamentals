@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-09-18T01:06:44+00:00"
+    "updated": "2026-09-18T17:11:23+00:00"
   },
   "setups": [
     {
@@ -22,15 +22,6 @@
       "rationale": "Very Bearish"
     },
     {
-      "symbol": "GBPJPY",
-      "name": "GBPJPY",
-      "verdict": "Bullish",
-      "direction": "Buy",
-      "confidence": 1.0,
-      "importance": 1,
-      "rationale": "Bullish — GBP: Neutral · JPY: Bearish"
-    },
-    {
       "symbol": "GBPAUD",
       "name": "GBPAUD",
       "verdict": "Bullish",
@@ -47,15 +38,6 @@
       "confidence": 1.0,
       "importance": 1,
       "rationale": "Bullish — GBP: Neutral · NZD: Bearish"
-    },
-    {
-      "symbol": "USDJPY",
-      "name": "USDJPY",
-      "verdict": "Bullish",
-      "direction": "Buy",
-      "confidence": 1.0,
-      "importance": 1,
-      "rationale": "Bullish — USD: Neutral · JPY: Bearish"
     },
     {
       "symbol": "USDSGD",
@@ -94,15 +76,6 @@
       "rationale": "Bearish — NZD: Bearish · USD: Neutral"
     },
     {
-      "symbol": "EURJPY",
-      "name": "EURJPY",
-      "verdict": "Bullish",
-      "direction": "Buy",
-      "confidence": 0.9,
-      "importance": 1,
-      "rationale": "Bullish — EUR: Neutral · JPY: Bearish"
-    },
-    {
       "symbol": "EURAUD",
       "name": "EURAUD",
       "verdict": "Bullish",
@@ -110,6 +83,33 @@
       "confidence": 0.8,
       "importance": 1,
       "rationale": "Bullish — EUR: Neutral · AUD: Bearish"
+    },
+    {
+      "symbol": "EURNZD",
+      "name": "EURNZD",
+      "verdict": "Bullish",
+      "direction": "Buy",
+      "confidence": 0.8,
+      "importance": 1,
+      "rationale": "Bullish — EUR: Neutral · NZD: Bearish"
+    },
+    {
+      "symbol": "EURSGD",
+      "name": "EURSGD",
+      "verdict": "Bearish",
+      "direction": "Sell",
+      "confidence": 0.8,
+      "importance": 1,
+      "rationale": "Bearish — EUR: Neutral · SGD: Bullish"
+    },
+    {
+      "symbol": "AUDJPY",
+      "name": "AUDJPY",
+      "verdict": "Bearish",
+      "direction": "Sell",
+      "confidence": 0.8,
+      "importance": 1,
+      "rationale": "Bearish — AUD: Bearish · JPY: Neutral"
     }
   ]
 }

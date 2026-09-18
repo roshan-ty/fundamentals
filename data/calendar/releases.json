@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-18T01:06:44+00:00",
+  "updated": "2026-09-18T17:11:23+00:00",
   "releases": [
     {
       "country": "USD",
@@ -372,6 +372,30 @@
       "actual": "3.75%",
       "previous": "3.75%",
       "forecast": "3.75%"
+    },
+    {
+      "country": "GBP",
+      "dataPointId": "gb_retail",
+      "dataPoint": "Retail Sales (m/m)",
+      "weight": 0.5,
+      "direction": "higher_is_bullish",
+      "period": "2026-09-18T10:00+00:00",
+      "title": "Retail Sales MoM AUG",
+      "actual": "0.5%",
+      "previous": "-0.5%",
+      "forecast": "-0.1%"
+    },
+    {
+      "country": "JPY",
+      "dataPointId": "jp_boj",
+      "dataPoint": "BoJ Policy Rate / Monetary Policy Statement / BoJ Press Conference",
+      "weight": 2.0,
+      "direction": "higher_is_bullish",
+      "period": "2026-09-18T07:00+00:00",
+      "title": "BoJ Interest Rate Decision",
+      "actual": "1.25%",
+      "previous": "1%",
+      "forecast": "1.25%"
     },
     {
       "country": "USD",
