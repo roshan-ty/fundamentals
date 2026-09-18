@@ -1,5 +1,66 @@
 [
   {
+    "headline": "World launches self-custodial ‘super app’ World Money",
+    "snippet": "World Money is rolling out across more than 150 countries, combining stablecoin payments, digital asset rewards and trading in a self-custodial app.",
+    "url": "https://cointelegraph.com/news/world-launches-self-custodial-super-app-world-money?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "source": "markets",
+    "published": "2026-09-18T03:40",
+    "tags": [],
+    "kind": "crypto",
+    "collected_at": "2026-09-18T04:05:48+00:00"
+  },
+  {
+    "headline": "investingLive Asia-Pacific market news: BoJ hike and RBA hawkish tilt",
+    "snippet": "<ul><li><a href=\"https://investinglive.com/central-banks/yen-weakens-on-boj-hike-as-two-dissents-temper-hawkish-read-alt-headlines\" rel=\"follow\">Yen weakens on BoJ hike as two dissents temper hawkish read Alt headlines:</a></li><li><a href=\"https://investinglive.com/central-banks/bank-of-japan-boj-r",
+    "url": "https://investinglive.com/news/investinglive-asia-pacific-market-news-boj-hike-and-rba-hawkish-tilt/",
+    "source": "markets",
+    "published": "2026-09-18T03:37",
+    "tags": [
+      "JPY",
+      "AUD"
+    ],
+    "kind": "forex",
+    "collected_at": "2026-09-18T04:05:48+00:00"
+  },
+  {
+    "headline": "Bank of Japan raises interest rates by 25 basis points. Bitcoin tops $77,000",
+    "snippet": "",
+    "url": "https://www.coindesk.com/markets/2026/09/17/boj-rate-hike",
+    "source": "markets",
+    "published": "2026-09-18T03:03",
+    "tags": [
+      "JPY",
+      "BTCUSD"
+    ],
+    "kind": "crypto",
+    "collected_at": "2026-09-18T04:05:48+00:00"
+  },
+  {
+    "headline": "US sanctions Iran’s BitBank, saying it processes ‘Hormuz Safe’ Bitcoin payments",
+    "snippet": "US Treasury says the Iranian exchange processed payments received through Iran’s Strait of Hormuz maritime scheme and helped move hundreds of millions of dollars in Bitcoin to the IRGC.",
+    "url": "https://cointelegraph.com/news/us-sanctions-irans-bitbank-saying-it-processes-hormuz-safe-bitcoin-payments?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "source": "markets",
+    "published": "2026-09-18T01:33",
+    "tags": [
+      "USD",
+      "BTCUSD"
+    ],
+    "kind": "crypto",
+    "collected_at": "2026-09-18T04:05:48+00:00"
+  },
+  {
+    "headline": "US sanctions Iranian crypto exchange BitBank over IRGC Hormuz bitcoin transfers",
+    "snippet": "<p dir=\"ltr\"> The designation adds a fresh layer of scrutiny to crypto's role in Iran sanctions evasion, a theme likely to keep pressure on exchanges and wallets with any exposure to Iranian-linked flows, even indirectly. It also touches the Hormuz corridor story directly, since the sanctioned Hormu",
+    "url": "https://investinglive.com/cryptocurrency/us-sanctions-iranian-crypto-exchange-bitbank-over-irgc-hormuz-bitcoin-transfers/",
+    "source": "markets",
+    "published": "2026-09-18T01:03",
+    "tags": [
+      "BTCUSD"
+    ],
+    "kind": "crypto",
+    "collected_at": "2026-09-18T04:05:48+00:00"
+  },
+  {
     "headline": "North Korea drives onchain malware surge, CoinEx shuts: Asia Express",
     "snippet": "North Korea and Iran account for the majority of onchain malware, while Malaysia has been named among the most crypto curious Islamic nations.",
     "url": "https://cointelegraph.com/magazine/north-korea-drives-onchain-malware-surge-coinex-shuts-asia-express?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -7,7 +68,7 @@
     "published": "2026-09-17T23:49",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-09-18T01:06:43+00:00"
+    "collected_at": "2026-09-18T04:05:48+00:00"
   },
   {
     "headline": "US allies fret over how Trump might play his Taiwan hand with Xi - reuters.com",
@@ -18,16 +79,6 @@
     "tags": [],
     "kind": "general",
     "collected_at": "2026-09-18T00:50:10+00:00"
-  },
-  {
-    "headline": "Impoverished by war in Iran, Afghan migrants return to Taliban rule - Reuters",
-    "snippet": "Impoverished by war in Iran, Afghan migrants return to Taliban rule Reuters",
-    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQbUtnR01KbXZwRU1yS09FNXhXdnFRaXRXR1YyaWwyOWFvYWl1VC1MbVJFb1dvVWgxNGVFR0xKV3pCQkNycmVDaUJpVjFLYmt4MTVhSmR5dXRlVU54MWFRTG9LY2V4a1g3d2cyblNlVkU2MjNUTWJXaEY0MFNpNG9uZ3dWMWFEZ0ZIZ1dGMFdQby1jd1A5RzZ2TXNsQlJzdEFER2ZjRHE2SWstblhoVFRWWVhGcXFMZw?oc=5",
-    "source": "markets",
-    "published": "2026-09-17T23:33",
-    "tags": [],
-    "kind": "general",
-    "collected_at": "2026-09-18T01:06:43+00:00"
   },
   {
     "headline": "Impoverished by war in Iran, Afghan migrants return to Taliban rule - reuters.com",
@@ -59,7 +110,7 @@
     "published": "2026-09-17T23:23",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-09-18T01:06:43+00:00"
+    "collected_at": "2026-09-18T04:05:48+00:00"
   },
   {
     "headline": "JPMorgan says Bitcoin could get more support than gold as ETF hedges unwind",
@@ -88,14 +139,24 @@
     "collected_at": "2026-09-18T00:50:10+00:00"
   },
   {
-    "headline": "UN mission finds grounds to believe US committed war crimes in Iran, and Tehran crimes against humanity - Reuters",
-    "snippet": "UN mission finds grounds to believe US committed war crimes in Iran, and Tehran crimes against humanity Reuters",
-    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPbmJVNS1uc3FDVDUwbUJ5bjJkZzRwbTdzNFZYUW00SEloak4wZl9yeXJhWlQ2bEExbjZBSzh6T2lRVjNjQ2VvR1lNZGNBc3BwLXZ6QXJCTmZ3M3BfQVdURWZaaUVOV2k0VkNOTFMwcnhsdXR1VU5IWFRWYlVYNDgzeGNwTDB6d3FURHV4YnZZdFpibE45Qm1tTVJxMi1QZG9lbFFqVW16M1ZzQzRLQW1PVkhud2RLeWtxUVV6OFJweE0wOXZuVG5RRg?oc=5",
+    "headline": "Real stocks are finally coming on blockchain. Here’s how the SEC wants it to work",
+    "snippet": "",
+    "url": "https://www.coindesk.com/business/2026/09/17/real-stocks-are-finally-coming-on-blockchain-here-s-how-the-sec-wants-it-to-work",
     "source": "markets",
-    "published": "2026-09-17T21:20",
+    "published": "2026-09-17T21:47",
     "tags": [],
-    "kind": "general",
-    "collected_at": "2026-09-18T01:06:43+00:00"
+    "kind": "crypto",
+    "collected_at": "2026-09-18T04:05:48+00:00"
+  },
+  {
+    "headline": "The Ondo Finance succession crisis gets messier as Kathleen Allman’s daughter alleges ‘dementia’, alcoholism and reckless spending",
+    "snippet": "",
+    "url": "https://www.coindesk.com/business/2026/09/17/the-ondo-finance-succession-crisis-gets-messier-as-kathleen-allman-s-daughter-alleges-dementia-alcoholism-and-reckless-spending",
+    "source": "markets",
+    "published": "2026-09-17T21:28",
+    "tags": [],
+    "kind": "crypto",
+    "collected_at": "2026-09-18T04:05:48+00:00"
   },
   {
     "headline": "UN mission finds grounds to believe US committed war crimes in Iran, and Tehran crimes against humanity - reuters.com",
@@ -115,7 +176,7 @@
     "published": "2026-09-17T21:08",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-09-18T01:06:43+00:00"
+    "collected_at": "2026-09-18T04:05:48+00:00"
   },
   {
     "headline": "US to allow Iranian leaders to attend UN General Assembly - reuters.com",
@@ -128,16 +189,6 @@
     "collected_at": "2026-09-18T00:50:10+00:00"
   },
   {
-    "headline": "What will Trump and Xi discuss in Washington next week? - Reuters",
-    "snippet": "What will Trump and Xi discuss in Washington next week? Reuters",
-    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQOHdmMERXdzJrTFFzNkJOSXZhblo3Tkp1YXctZHBVQU9jdHR0TTZhUmFiYjVMRmsxaGhhbHFEMUdMd2daWVJzcnU0NUZGQTd0bGk0WjBIa0xWRkdGaHRWa2doWU11dGlTRW44ZFRhdmhFYm1ad3NDVV9ndTZQd1VoWXdUcXB1N0JZZ1FGWkJ0b2plUHJTVGk3dnowWQ?oc=5",
-    "source": "markets",
-    "published": "2026-09-17T21:05",
-    "tags": [],
-    "kind": "general",
-    "collected_at": "2026-09-18T01:06:43+00:00"
-  },
-  {
     "headline": "What will Trump and Xi discuss in Washington next week? - reuters.com",
     "snippet": "What will Trump and Xi discuss in Washington next week? reuters.com",
     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQOHdmMERXdzJrTFFzNkJOSXZhblo3Tkp1YXctZHBVQU9jdHR0TTZhUmFiYjVMRmsxaGhhbHFEMUdMd2daWVJzcnU0NUZGQTd0bGk0WjBIa0xWRkdGaHRWa2doWU11dGlTRW44ZFRhdmhFYm1ad3NDVV9ndTZQd1VoWXdUcXB1N0JZZ1FGWkJ0b2plUHJTVGk3dnowWQ?oc=5",
@@ -148,6 +199,16 @@
     "collected_at": "2026-09-18T00:50:10+00:00"
   },
   {
+    "headline": "What will Trump and Xi discuss in Washington next week? - Reuters",
+    "snippet": "What will Trump and Xi discuss in Washington next week? Reuters",
+    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQOHdmMERXdzJrTFFzNkJOSXZhblo3Tkp1YXctZHBVQU9jdHR0TTZhUmFiYjVMRmsxaGhhbHFEMUdMd2daWVJzcnU0NUZGQTd0bGk0WjBIa0xWRkdGaHRWa2doWU11dGlTRW44ZFRhdmhFYm1ad3NDVV9ndTZQd1VoWXdUcXB1N0JZZ1FGWkJ0b2plUHJTVGk3dnowWQ?oc=5",
+    "source": "markets",
+    "published": "2026-09-17T21:03",
+    "tags": [],
+    "kind": "general",
+    "collected_at": "2026-09-18T04:05:48+00:00"
+  },
+  {
     "headline": "Ocean container shipping rates could test record highs as Iran war fuel spike drives rise, analysts say - Reuters",
     "snippet": "Ocean container shipping rates could test record highs as Iran war fuel spike drives rise, analysts say Reuters",
     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxONGltbnJEV1l0NXJDNFMxbFBtMUpYQkJWSGFlU2FRaHpNZ0xzNHhDSVJDbWt2Zy13YUNwZEJySUZUWHFEQi1XczZHWlI2dmZNMHZUTHVrR2tJUWpIanZtUFlXVTJEaXFIZTdGWDdQandreldIUm1URGRFZGxuVXhYX1FRcm8teGdSRmpGR1I4QnJ4SGJ6bF9UaGFGdXRadGZlY3o0TDItMm1ac0M4RTZsY2dkY3BQUUgzbzdycktRbmpjTDJy?oc=5",
@@ -155,7 +216,7 @@
     "published": "2026-09-17T20:49",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-09-18T01:06:43+00:00"
+    "collected_at": "2026-09-18T04:05:48+00:00"
   },
   {
     "headline": "Ocean container shipping rates could test record highs as Iran war fuel spike drives rise, analysts say - reuters.com",
@@ -199,7 +260,7 @@
     "published": "2026-09-17T19:32",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-09-18T01:06:43+00:00"
+    "collected_at": "2026-09-18T04:05:48+00:00"
   },
   {
     "headline": "JP Morgan says it has no clear oil market endgame as Iran conflict drags on - reuters.com",
@@ -219,7 +280,7 @@
     "published": "2026-09-17T19:30",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-09-18T01:06:43+00:00"
+    "collected_at": "2026-09-18T04:05:48+00:00"
   },
   {
     "headline": "Intel and Micron lead our portfolio higher, and J&J's strengthens our case for owning it",
@@ -229,7 +290,7 @@
     "published": "2026-09-17T18:55",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-09-18T01:06:43+00:00"
+    "collected_at": "2026-09-18T04:05:48+00:00"
   },
   {
     "headline": "Iranian delegation will be able to attend UN General Assembly, US says - reuters.com",
@@ -252,6 +313,26 @@
     "collected_at": "2026-09-17T20:07:44+00:00"
   },
   {
+    "headline": "Kevin O’Leary says Congress will revisit Clarity early next year as crypto tax bill advances",
+    "snippet": "",
+    "url": "https://www.coindesk.com/policy/2026/09/17/kevin-o-leary-says-congress-will-revisit-clarity-by-second-quarter-as-crypto-tax-bill-advances",
+    "source": "markets",
+    "published": "2026-09-17T18:40",
+    "tags": [],
+    "kind": "crypto",
+    "collected_at": "2026-09-18T04:05:48+00:00"
+  },
+  {
+    "headline": "SEC opens door to tokenized U.S. stock trading. Here’s who could benefit",
+    "snippet": "",
+    "url": "https://www.coindesk.com/business/2026/09/17/sec-opens-door-to-tokenized-u-s-stock-trading-here-s-who-could-benefit",
+    "source": "markets",
+    "published": "2026-09-17T18:38",
+    "tags": [],
+    "kind": "crypto",
+    "collected_at": "2026-09-18T04:05:48+00:00"
+  },
+  {
     "headline": "Lockheed Martin gets first batch of Patriot interceptor parts from General Motors - Reuters",
     "snippet": "Lockheed Martin gets first batch of Patriot interceptor parts from General Motors Reuters",
     "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNNG1NWWFVb3NxMWY1WVJVeXpyRzlOdXdNWklvZER6T19vTWpqOGV4OU8tWE9ZeC1SYzZlYlFtbkxKdEZNTFdVVjY2a3huYnhCSU5EazRYU0hLWlRLckpxaXcwS0VpdE5kRElRcVpWYkc4NWZ3VW5yMnc5SXA0R1k0UjdNWVVfMXZwZjd6RURHUktZUXRjNWNncHBHclI2YW1Rd2paV0ExMmRObE4xRVVoSS1oREpRV3NOUncwMHJaLVNzdk94bmZReWMtT3l1RXZQSFVib0Jn?oc=5",
@@ -259,7 +340,17 @@
     "published": "2026-09-17T18:35",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-09-18T01:06:43+00:00"
+    "collected_at": "2026-09-18T04:05:48+00:00"
+  },
+  {
+    "headline": "US sanctions Iranian financier's crypto exchange, says it processes Hormuz payments - Reuters",
+    "snippet": "US sanctions Iranian financier's crypto exchange, says it processes Hormuz payments Reuters",
+    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPVkZiYmtkenBxVnZPWFRFdjZFMloydkRrX1JGb0JaeUxseGlOUG1RUkdWbzlrazJUQ2FZQmk1YjdoZy1IYWNjMkNYeXBGM21nMXlwM0lzZHZCTlNEcVVwSExkczFTSlE1c0dFV0ZMUC1sZGM5TzZaMDV1Qk1Xal9fa0xYVWpEOFdBdXNVVzJVWGYwZ2RqN2pVZFYxLUdjMGpFelBFUmo1Q0h3NVphbDh2TE1UcVNKNG1vR0duVjRnLVJUcWpx?oc=5",
+    "source": "markets",
+    "published": "2026-09-17T18:03",
+    "tags": [],
+    "kind": "general",
+    "collected_at": "2026-09-18T04:05:48+00:00"
   },
   {
     "headline": "WisdomTree, MoonPay team up to expand US access to tokenized money market fund",
@@ -269,7 +360,7 @@
     "published": "2026-09-17T17:31",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-09-18T01:06:43+00:00"
+    "collected_at": "2026-09-18T04:05:48+00:00"
   },
   {
     "headline": "Stephen Curry says his Li-Ning signature shoe will debut early next year",
@@ -281,7 +372,7 @@
       "XAUUSD"
     ],
     "kind": "general",
-    "collected_at": "2026-09-18T01:06:43+00:00"
+    "collected_at": "2026-09-18T04:05:48+00:00"
   },
   {
     "headline": "Russia, China end mandate for independent monitoring of UN sanctions on Iran - Reuters",
@@ -294,7 +385,7 @@
       "CNY"
     ],
     "kind": "general",
-    "collected_at": "2026-09-18T01:06:43+00:00"
+    "collected_at": "2026-09-18T04:05:48+00:00"
   },
   {
     "headline": "Russia, China end mandate for independent monitoring of UN sanctions on Iran - reuters.com",
@@ -329,17 +420,7 @@
     "published": "2026-09-17T17:08",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-09-18T01:06:43+00:00"
-  },
-  {
-    "headline": "US allies fret over how Trump might play his Taiwan hand with Xi - Reuters",
-    "snippet": "US allies fret over how Trump might play his Taiwan hand with Xi Reuters",
-    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQY3hVM1dFSVFMbUpibXh4OWtYdWFBRnNkN0JhREtSNFZ0R2hVMnN1T0lUTHlneVdReE1kd1YzSENaY2xpWXh5SGVjY09qSXNack9RQkN2VFBYQUxCcE5sUExGNzJxRDJzRXYzX0pZU3NTX3RNOTZ0WEZWZ01oSUp2dHh3SkNZSERMc0tFempuV3RSaXF6OXlGaUhCZGNUZlRvMEhaRWRKcUVMSVN6aVJRcmZ3?oc=5",
-    "source": "markets",
-    "published": "2026-09-17T17:04",
-    "tags": [],
-    "kind": "general",
-    "collected_at": "2026-09-18T01:06:43+00:00"
+    "collected_at": "2026-09-18T04:05:48+00:00"
   },
   {
     "headline": "Is there any chance left to save the CLARITY Act?",
@@ -349,7 +430,7 @@
     "published": "2026-09-17T17:00",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-09-18T01:06:43+00:00"
+    "collected_at": "2026-09-18T04:05:48+00:00"
   },
   {
     "headline": "Stocks stage a comeback after Fed-induced declines — plus, what's ailing Boeing",
@@ -362,7 +443,7 @@
       "GBP"
     ],
     "kind": "general",
-    "collected_at": "2026-09-18T01:06:43+00:00"
+    "collected_at": "2026-09-18T04:05:48+00:00"
   },
   {
     "headline": "Bitcoin coils near $76.5K as US stocks rebound from Fed rate hike",
@@ -376,7 +457,17 @@
       "US500"
     ],
     "kind": "crypto",
-    "collected_at": "2026-09-18T01:06:43+00:00"
+    "collected_at": "2026-09-18T04:05:48+00:00"
+  },
+  {
+    "headline": "Why are world leaders at the UN next week and what will they talk about? - Reuters",
+    "snippet": "Why are world leaders at the UN next week and what will they talk about? Reuters",
+    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZWxWOU16ZUF2MDh5UlVqc2pMM0d1WGFVSGJzdUl6aGZCZ09QeGFNX2pwTkdaNkRuaGJmUGtvUWRqZDlmMTdaZlA1V05WanlTQnlhRXJZQXlGTFE2bVhoT1lJYlZER3pkQ0EzcEdDLTNJVHVUd2RYU0VjUUNoWkplNDNrcGhtX1hrMUVpMG5vQkFKVjRJSkZuZHBGZ3NCbFN0YjJYYmN2aWt5Y0pIeXFZY2pQcWpOUQ?oc=5",
+    "source": "markets",
+    "published": "2026-09-17T16:18",
+    "tags": [],
+    "kind": "general",
+    "collected_at": "2026-09-18T04:05:48+00:00"
   },
   {
     "headline": "Why are world leaders at the UN next week and what will they talk about? - reuters.com",
@@ -389,16 +480,6 @@
     "collected_at": "2026-09-18T01:06:43+00:00"
   },
   {
-    "headline": "Why are world leaders at the UN next week and what will they talk about? - Reuters",
-    "snippet": "Why are world leaders at the UN next week and what will they talk about? Reuters",
-    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZWxWOU16ZUF2MDh5UlVqc2pMM0d1WGFVSGJzdUl6aGZCZ09QeGFNX2pwTkdaNkRuaGJmUGtvUWRqZDlmMTdaZlA1V05WanlTQnlhRXJZQXlGTFE2bVhoT1lJYlZER3pkQ0EzcEdDLTNJVHVUd2RYU0VjUUNoWkplNDNrcGhtX1hrMUVpMG5vQkFKVjRJSkZuZHBGZ3NCbFN0YjJYYmN2aWt5Y0pIeXFZY2pQcWpOUQ?oc=5",
-    "source": "markets",
-    "published": "2026-09-17T16:18",
-    "tags": [],
-    "kind": "general",
-    "collected_at": "2026-09-17T23:29:29+00:00"
-  },
-  {
     "headline": "Zcash miner Fortitude taps former Hut 8 CEO to lead ahead of public listing",
     "snippet": "Former Hut 8 CEO Jaime Leverton will take the helm at Fortitude as the Zcash-focused miner expands its operations and moves toward a planned public listing.",
     "url": "https://cointelegraph.com/news/former-hut-8-ceo-jaime-leverton-to-lead-zcash-miner-fortitude-ahead-of-nasdaq-listing?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -406,7 +487,40 @@
     "published": "2026-09-17T15:58",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-09-18T01:06:43+00:00"
+    "collected_at": "2026-09-18T04:05:48+00:00"
+  },
+  {
+    "headline": "UK signals end of 'light-touch' era with multi-agency raid on peer-to-peer crypto hubs",
+    "snippet": "",
+    "url": "https://www.coindesk.com/policy/2026/09/17/uk-signals-end-of-light-touch-era-with-multi-agency-raid-on-peer-to-peer-crypto-hubs",
+    "source": "markets",
+    "published": "2026-09-17T15:08",
+    "tags": [],
+    "kind": "crypto",
+    "collected_at": "2026-09-18T04:05:48+00:00"
+  },
+  {
+    "headline": "U.S. SEC begins prepping for around-the-clock trading that crypto treats as the norm",
+    "snippet": "",
+    "url": "https://www.coindesk.com/policy/2026/09/17/u-s-sec-begins-prepping-for-round-the-clock-trading-that-crypto-treats-as-the-norm",
+    "source": "markets",
+    "published": "2026-09-17T15:03",
+    "tags": [],
+    "kind": "crypto",
+    "collected_at": "2026-09-18T04:05:48+00:00"
+  },
+  {
+    "headline": "Crypto for Advisors: Beyond bitcoin and ether",
+    "snippet": "",
+    "url": "https://www.coindesk.com/coindesk-indices/2026/09/17/crypto-for-advisors-beyond-bitcoin-and-ether",
+    "source": "markets",
+    "published": "2026-09-17T14:57",
+    "tags": [
+      "BTCUSD",
+      "ETHUSD"
+    ],
+    "kind": "crypto",
+    "collected_at": "2026-09-18T04:05:48+00:00"
   },
   {
     "headline": "Clarity Act failure may hamper U.S. crypto as industry seeks legal clarity elsewhere",
@@ -416,7 +530,7 @@
     "published": "2026-09-17T14:50",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-09-18T01:06:43+00:00"
+    "collected_at": "2026-09-18T04:05:48+00:00"
   },
   {
     "headline": "USDCAD breaks higher after the Fed. Can buyers hold the breakout? Or will sellers take back control?",
@@ -458,7 +572,7 @@
     "published": "2026-09-17T13:35",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-09-18T01:06:43+00:00"
+    "collected_at": "2026-09-18T04:05:48+00:00"
   },
   {
     "headline": "SEC grants temporary exemption for tokenized US stock trading",
@@ -468,7 +582,7 @@
     "published": "2026-09-17T13:34",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-09-18T01:06:43+00:00"
+    "collected_at": "2026-09-18T04:05:48+00:00"
   },
   {
     "headline": "Bitcoin treasury firms can outperform BTC... but is the risk worth taking?",
@@ -482,7 +596,7 @@
       "US30"
     ],
     "kind": "crypto",
-    "collected_at": "2026-09-18T01:06:43+00:00"
+    "collected_at": "2026-09-18T04:05:48+00:00"
   },
   {
     "headline": "Ratings giant S&P Global acquires OpenZeppelin in tokenized finance risk push",
@@ -494,7 +608,7 @@
       "GLOBAL"
     ],
     "kind": "crypto",
-    "collected_at": "2026-09-18T01:06:43+00:00"
+    "collected_at": "2026-09-18T04:05:48+00:00"
   },
   {
     "headline": "US-Iran conflict helps drive wave of supertanker orders - Reuters",
@@ -504,7 +618,7 @@
     "published": "2026-09-17T13:13",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-09-18T01:06:43+00:00"
+    "collected_at": "2026-09-18T04:05:48+00:00"
   },
   {
     "headline": "US-Iran conflict helps drive wave of supertanker orders - reuters.com",
@@ -527,7 +641,7 @@
       "US500"
     ],
     "kind": "general",
-    "collected_at": "2026-09-18T01:06:43+00:00"
+    "collected_at": "2026-09-18T04:05:48+00:00"
   },
   {
     "headline": "Bitcoin buyers defend key support, but the hourly moving averages remain the next hurdle",
@@ -549,7 +663,7 @@
     "published": "2026-09-17T13:00",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-09-18T01:06:43+00:00"
+    "collected_at": "2026-09-18T04:05:48+00:00"
   },
   {
     "headline": "S&P Global to acquire blockchain security platform OpenZeppelin",
@@ -561,7 +675,7 @@
       "GLOBAL"
     ],
     "kind": "crypto",
-    "collected_at": "2026-09-18T01:06:43+00:00"
+    "collected_at": "2026-09-18T04:05:48+00:00"
   },
   {
     "headline": "Lockheed Martin reveals new secret missile, fast tracks production - Reuters",
@@ -571,7 +685,7 @@
     "published": "2026-09-17T12:39",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-09-18T01:06:43+00:00"
+    "collected_at": "2026-09-18T04:05:48+00:00"
   },
   {
     "headline": "Ethereum’s upcoming Glamsterdam upgrade clears rehearsal for a big jump in capacity",
@@ -583,7 +697,7 @@
       "ETHUSD"
     ],
     "kind": "crypto",
-    "collected_at": "2026-09-18T01:06:43+00:00"
+    "collected_at": "2026-09-18T04:05:48+00:00"
   },
   {
     "headline": "Crypto adoption blooming in Germany, while UK is falling ‘behind,’ says CoinShares researcher",
@@ -595,7 +709,7 @@
       "EUR"
     ],
     "kind": "crypto",
-    "collected_at": "2026-09-18T01:06:43+00:00"
+    "collected_at": "2026-09-18T04:05:48+00:00"
   },
   {
     "headline": "EXCLUSIVE: China presses Iran to help rein in Houthis after Saudi appeal, sources say - Reuters",
@@ -608,7 +722,7 @@
       "CNY"
     ],
     "kind": "general",
-    "collected_at": "2026-09-18T01:06:43+00:00"
+    "collected_at": "2026-09-18T04:05:48+00:00"
   },
   {
     "headline": "Zcash miner Fortitude names former Hut 8 chief Jaime Leverton CEO ahead of Nasdaq deal",
@@ -621,7 +735,7 @@
       "US100"
     ],
     "kind": "crypto",
-    "collected_at": "2026-09-18T01:06:43+00:00"
+    "collected_at": "2026-09-18T04:05:48+00:00"
   },
   {
     "headline": "State hackers drive 420% surge in onchain malware, Chainalysis finds",
@@ -633,7 +747,7 @@
       "BTCUSD"
     ],
     "kind": "crypto",
-    "collected_at": "2026-09-18T01:06:43+00:00"
+    "collected_at": "2026-09-18T04:05:48+00:00"
   },
   {
     "headline": "How Circle’s institutional Arc blockchain got taken over by memecoins on day one",
@@ -643,7 +757,7 @@
     "published": "2026-09-17T11:42",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-09-18T01:06:43+00:00"
+    "collected_at": "2026-09-18T04:05:48+00:00"
   },
   {
     "headline": "Charities say gifts by deceased donors are getting held up at financial firms",
@@ -653,7 +767,7 @@
     "published": "2026-09-17T11:31",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-09-18T01:06:43+00:00"
+    "collected_at": "2026-09-18T04:05:48+00:00"
   },
   {
     "headline": "Solana resists bearish pressures coming from failed Clarity Act vote and Fed rate hike. What's next?",
@@ -676,7 +790,7 @@
     "published": "2026-09-17T11:19",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-09-18T01:06:43+00:00"
+    "collected_at": "2026-09-18T04:05:48+00:00"
   },
   {
     "headline": "Live updates: Bitcoin continues near $76,000 as stocks surge following Fed rate hike",
@@ -775,6 +889,16 @@
     "collected_at": "2026-09-18T01:06:43+00:00"
   },
   {
+    "headline": "UN mission finds grounds to believe US committed war crimes in Iran, and Tehran crimes against humanity - Reuters",
+    "snippet": "UN mission finds grounds to believe US committed war crimes in Iran, and Tehran crimes against humanity Reuters",
+    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPbmJVNS1uc3FDVDUwbUJ5bjJkZzRwbTdzNFZYUW00SEloak4wZl9yeXJhWlQ2bEExbjZBSzh6T2lRVjNjQ2VvR1lNZGNBc3BwLXZ6QXJCTmZ3M3BfQVdURWZaaUVOV2k0VkNOTFMwcnhsdXR1VU5IWFRWYlVYNDgzeGNwTDB6d3FURHV4YnZZdFpibE45Qm1tTVJxMi1QZG9lbFFqVW16M1ZzQzRLQW1PVkhud2RLeWtxUVV6OFJweE0wOXZuVG5RRg?oc=5",
+    "source": "markets",
+    "published": "2026-09-17T08:04",
+    "tags": [],
+    "kind": "general",
+    "collected_at": "2026-09-18T04:05:48+00:00"
+  },
+  {
     "headline": "Ripple adds XRP payments to Stripe and Tempo’s AI standard in new developer kit",
     "snippet": "",
     "url": "https://www.coindesk.com/tech/2026/09/17/ripple-adds-xrp-payments-to-stripe-and-tempo-s-ai-standard-in-new-developer-kit",
@@ -807,7 +931,7 @@
     "published": "2026-09-17T06:30",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-09-18T01:06:43+00:00"
+    "collected_at": "2026-09-18T04:05:48+00:00"
   },
   {
     "headline": "BitMEX faces Celsius lawsuit ahead of exchange closure",
@@ -839,7 +963,7 @@
     "published": "2026-09-17T05:22",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-09-18T01:06:43+00:00"
+    "collected_at": "2026-09-18T04:05:48+00:00"
   },
   {
     "headline": "Number of ships transiting Strait of Hormuz falls to three on Wednesday, data shows - reuters.com",
@@ -862,7 +986,7 @@
       "GBP"
     ],
     "kind": "general",
-    "collected_at": "2026-09-18T01:06:43+00:00"
+    "collected_at": "2026-09-18T04:05:48+00:00"
   },
   {
     "headline": "Zcash jumps 23% as bitcoin and major tokens rise despite Fed’s first hike since 2023",
@@ -885,7 +1009,7 @@
     "published": "2026-09-17T04:29",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-09-18T01:06:43+00:00"
+    "collected_at": "2026-09-18T04:05:48+00:00"
   },
   {
     "headline": "Asian LNG demand set to fall for second year as war shrinks supply - reuters.com",
@@ -905,7 +1029,7 @@
     "published": "2026-09-17T04:23",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-09-18T01:06:43+00:00"
+    "collected_at": "2026-09-18T04:05:48+00:00"
   },
   {
     "headline": "Saudis and Houthis exchange strikes, Yemenis flee by boat as Middle East war spreads - reuters.com",
@@ -968,7 +1092,7 @@
       "GLOBAL"
     ],
     "kind": "general",
-    "collected_at": "2026-09-18T01:06:43+00:00"
+    "collected_at": "2026-09-18T04:05:48+00:00"
   },
   {
     "headline": "Turkey approves liquidation of US-sanctioned Golden Global's funds - reuters.com",
@@ -1023,6 +1147,26 @@
     "collected_at": "2026-09-17T16:56:26+00:00"
   },
   {
+    "headline": "US allies fret over how Trump might play his Taiwan hand with Xi - Reuters",
+    "snippet": "US allies fret over how Trump might play his Taiwan hand with Xi Reuters",
+    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQY3hVM1dFSVFMbUpibXh4OWtYdWFBRnNkN0JhREtSNFZ0R2hVMnN1T0lUTHlneVdReE1kd1YzSENaY2xpWXh5SGVjY09qSXNack9RQkN2VFBYQUxCcE5sUExGNzJxRDJzRXYzX0pZU3NTX3RNOTZ0WEZWZ01oSUp2dHh3SkNZSERMc0tFempuV3RSaXF6OXlGaUhCZGNUZlRvMEhaRWRKcUVMSVN6aVJRcmZ3?oc=5",
+    "source": "markets",
+    "published": "2026-09-17T02:18",
+    "tags": [],
+    "kind": "general",
+    "collected_at": "2026-09-18T04:05:48+00:00"
+  },
+  {
+    "headline": "Impoverished by war in Iran, Afghan migrants return to Taliban rule - Reuters",
+    "snippet": "Impoverished by war in Iran, Afghan migrants return to Taliban rule Reuters",
+    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQbUtnR01KbXZwRU1yS09FNXhXdnFRaXRXR1YyaWwyOWFvYWl1VC1MbVJFb1dvVWgxNGVFR0xKV3pCQkNycmVDaUJpVjFLYmt4MTVhSmR5dXRlVU54MWFRTG9LY2V4a1g3d2cyblNlVkU2MjNUTWJXaEY0MFNpNG9uZ3dWMWFEZ0ZIZ1dGMFdQby1jd1A5RzZ2TXNsQlJzdEFER2ZjRHE2SWstblhoVFRWWVhGcXFMZw?oc=5",
+    "source": "markets",
+    "published": "2026-09-17T02:04",
+    "tags": [],
+    "kind": "general",
+    "collected_at": "2026-09-18T04:05:48+00:00"
+  },
+  {
     "headline": "Oil falls 1% as investors watch Middle East supply disruptions - Reuters",
     "snippet": "Oil falls 1% as investors watch Middle East supply disruptions Reuters",
     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQem15UTRSMDAta3NrU2VpWTcxVllaeWVZT2wyc1gwQUs5aER1ZFFtaG8zNmI4UkZGV09BOHV6eGVHdy1RbTZWZXVkdklmSkVnMUtqbk9JZkdPb19FakhJc1RaUFRMUlNxR3F1VUx2TTZRcElaQk9ISmJsaWozRFNETDcxcjZxT0lJTm4zbV9CN1hETXB2SnYzQkhwZVpobENkRTBfYU5UbjZoUVhGXzZtM2xNUDFWdkJqUVE?oc=5",
@@ -1030,7 +1174,7 @@
     "published": "2026-09-17T01:00",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-09-18T01:06:43+00:00"
+    "collected_at": "2026-09-18T04:05:48+00:00"
   },
   {
     "headline": "Oil falls 1% as investors watch Middle East supply disruptions - reuters.com",
@@ -1053,6 +1197,83 @@
     ],
     "kind": "crypto",
     "collected_at": "2026-09-17T16:40:13+00:00"
+  },
+  {
+    "headline": "Drivers warned as busy city road closes every night next week amid resurfacing",
+    "snippet": "Overnight resurfacing works are set to begin on a major route next week.",
+    "url": "",
+    "source": "global",
+    "published": "2026-09-17 16:05:00",
+    "tags": [],
+    "collected_at": "2026-09-18T04:05:48+00:00"
+  },
+  {
+    "headline": "China, US top diplomats discuss 'high-level interactions' in call, Beijing says",
+    "snippet": "The two top diplomats also discussed the situation in the Middle ​East, the ​Chinese foreign ⁠ministry said, a day after Wang hosted Iranian Foreign Minister Abbas Araqchi in Beijing for talks.",
+    "url": "",
+    "source": "global",
+    "published": "2026-09-17 16:05:00",
+    "tags": [
+      "AUD",
+      "CNY"
+    ],
+    "collected_at": "2026-09-18T04:05:48+00:00"
+  },
+  {
+    "headline": "Roxmore Resources Reports Strong Exploration Drill Results and Expanded Resource Potential from the Converse Gold Project in Nevada",
+    "snippet": "Vancouver, British Columbia--(Newsfile Corp. - September 17, 2026) - Roxmore Resources Inc. (TSX: RM) (OTCQX: GARLF) (\"Roxmore\" or the \"Company\") is pleased to report gold and silver assay results from an exploration target at the Company's flagship Converse Gold Project (\"Converse\" or the \"Project\"), located on the Battle Mountain – Eureka Trend in Nevada, USA. The dedicated exploration hole CV26-013C returned 58.2m grading 1.85 g/t Au and 4.43",
+    "url": "",
+    "source": "global",
+    "published": "2026-09-17 16:05:00",
+    "tags": [
+      "XAUUSD",
+      "XAGUSD"
+    ],
+    "collected_at": "2026-09-18T04:05:48+00:00"
+  },
+  {
+    "headline": "Over the Past 90 Days, 38% of Altcoins Outperformed Bitcoin. These 3 Altcoins Need To Be On Your Investment Radar.",
+    "snippet": "Ether, Solana, and Zcash deserve a lot more attention.",
+    "url": "",
+    "source": "global",
+    "published": "2026-09-17 16:05:00",
+    "tags": [
+      "BTCUSD",
+      "ETHUSD",
+      "SOLUSD"
+    ],
+    "collected_at": "2026-09-18T04:05:48+00:00"
+  },
+  {
+    "headline": "Barenaked Ladies, a Labatt beer horn and 'O Canada' will feature at the Bills’ 1st regular-season game at Highmark Stadium",
+    "snippet": "Barenaked Ladies will perform “O Canada” at the Buffalo Bills’ home opener at Highmark Stadium, where Canadian fans make up 10 to 15 per cent of season tickets.",
+    "url": "",
+    "source": "global",
+    "published": "2026-09-17 16:05:00",
+    "tags": [
+      "CAD"
+    ],
+    "collected_at": "2026-09-18T04:05:48+00:00"
+  },
+  {
+    "headline": "Cambridge’s Galt Collegiate Institute sent parent email after unverified firearm report",
+    "snippet": "A report of a student possibly with a firearm near Galt Collegiate Institute prompted an email to parents from principal, although police found no evidence supporting the claim.",
+    "url": "",
+    "source": "global",
+    "published": "2026-09-17 16:05:00",
+    "tags": [],
+    "collected_at": "2026-09-18T04:05:48+00:00"
+  },
+  {
+    "headline": "The Barenaked Ladies, a Labatt beer horn and 'O Canada' will feature at the Bills’ 1st regular-season game at Highmark Stadium",
+    "snippet": "The Barenaked Ladies will perform “O Canada” at the Buffalo Bills’ home opener at Highmark Stadium, where Canadian fans make up 10 to 15 per cent of season tickets.",
+    "url": "",
+    "source": "global",
+    "published": "2026-09-17 16:05:00",
+    "tags": [
+      "CAD"
+    ],
+    "collected_at": "2026-09-18T04:05:48+00:00"
   },
   {
     "headline": "PODGO and Earned Media Productions Form Strategic Partnership to Combine Content Production, Distribution and Monetization",
@@ -1557,7 +1778,7 @@
     "published": "2026-09-16T23:54",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-09-18T01:06:43+00:00"
+    "collected_at": "2026-09-18T04:05:48+00:00"
   },
   {
     "headline": "Trump says 'hopefully we are towards end' of Iran war - reuters.com",
@@ -1577,7 +1798,7 @@
     "published": "2026-09-16T23:13",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-09-18T01:06:43+00:00"
+    "collected_at": "2026-09-18T04:05:48+00:00"
   },
   {
     "headline": "US officials met Iran-backed Houthis in Oman over the weekend, sources say - reuters.com",
@@ -4088,226 +4309,5 @@
     ],
     "kind": "general",
     "collected_at": "2026-09-16T14:46:17+00:00"
-  },
-  {
-    "headline": "Egypt's Sisi and Saudi Crown Prince stress need for security of Red Sea navigation - Reuters",
-    "snippet": "Egypt's Sisi and Saudi Crown Prince stress need for security of Red Sea navigation Reuters",
-    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPdF81Q3pKLVpkdWZZTXUyZnRJNVh3Mks2bmdUMnhIZzlYZVR5TnU2bDFXZnBObWFkeFpNMUVIOTBlMHBVTW9XNU9vdXhWaTRXMUZ4M2U0Y2FDQWRDSTFJTWpSc2ppMXdoQ0RyU29zUEdIOG9hY1FHdHMzR2c1c2RxVTZLbTVMQnp1d3o1OWptZVJ2SHZNZk42QmRrTTlKcElfUFhjdC0tQXVXQk5xaFVxQ09TZmoyVDlHY19qeWdmZ3hFQQ?oc=5",
-    "source": "markets",
-    "published": "2026-09-15T13:01",
-    "tags": [],
-    "kind": "general",
-    "collected_at": "2026-09-16T14:20:37+00:00"
-  },
-  {
-    "headline": "Yemen conflict displaces over 100,000 people, UN says - Reuters",
-    "snippet": "Yemen conflict displaces over 100,000 people, UN says Reuters",
-    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPUWxYZ0FWb0x5YlRhUWNzTnFUdUszVFhWRTZiaDBMbklfeFc0LWVmaE1LTnpfZUZCMzdaWUxpXzl5MWFvbFJxQ3ppanZBRGphc2tmRE8xbS1zcHE1bk9WV2pvQ0FNeVlObHl0c01UU0ZRemdYazRxMGMxanFIMkxUQW52MnhzblFOeHppbUpLYkY1Zm8yZ3Q5RW1NTTJEQTA1bzNBZm1CUVk?oc=5",
-    "source": "markets",
-    "published": "2026-09-15T12:52",
-    "tags": [],
-    "kind": "general",
-    "collected_at": "2026-09-16T09:48:52+00:00"
-  },
-  {
-    "headline": "Canada wholesale trade for the month of July 0.3% versus -0.5% estimate",
-    "snippet": "<p class=\"PDq2pG_selectionAnchorContainer\" dir=\"auto\">Canada’s July wholesale trade:</p><ul><li>Wholesale sales MoM: +0.3% vs -0.5% expected. Prior +2.8%</li><li>Wholesale sales YoY: +7.9%</li><li>Wholesale sales volumes MoM: -0.6%</li><li>Wholesale inventories: Essentially unchanged at C$140.6 bill",
-    "url": "https://investinglive.com/news/canada-wholesale-trade-for-the-month-of-july-0-3-versus-0-5-estimate/",
-    "source": "markets",
-    "published": "2026-09-15T12:34",
-    "tags": [
-      "CAD"
-    ],
-    "kind": "forex",
-    "collected_at": "2026-09-15T13:22:20+00:00"
-  },
-  {
-    "headline": "To ensure permanent economic innovation, we must pass the Clarity Act now",
-    "snippet": "",
-    "url": "https://www.coindesk.com/opinion/2026/09/15/to-ensure-permanent-economic-innovation-we-must-pass-the-clarity-act-now",
-    "source": "markets",
-    "published": "2026-09-15T12:00",
-    "tags": [],
-    "kind": "crypto",
-    "collected_at": "2026-09-16T04:42:47+00:00"
-  },
-  {
-    "headline": "Amazon's AWS is unable to restore access to Bahrain, one UAE cloud data zone after war damage - Reuters",
-    "snippet": "Amazon's AWS is unable to restore access to Bahrain, one UAE cloud data zone after war damage Reuters",
-    "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPcGhFMHZVNGthdVl1bjYza3ZOWVpRY3ZMS1JmZkgxVnJTWGRhZFdFS3JfYk1nX2Y1Nzl3RlZDN21lWFA3b0xUU1E3UkdZR0hPQXNXdG5seEhsQ0hUR1gxVnZCWHFpTXdQdGhGQkFKTFd0cW80QUNBdnpXYzdOX25zZEJpN2lkOW1IWVlnc0RZNDk0cGgzSTlNYXFaMS1EcUJTM0ZUUjlhS0FLV0NrbGtsM3BKOVlFOWdFUi1sbGQtWmRqX3ZsODdPczRYRUw?oc=5",
-    "source": "markets",
-    "published": "2026-09-15T11:58",
-    "tags": [],
-    "kind": "general",
-    "collected_at": "2026-09-16T09:48:52+00:00"
-  },
-  {
-    "headline": "Amazon's AWS is unable to restore access to Bahrain, one UAE cloud data zone after war damage - reuters.com",
-    "snippet": "Amazon's AWS is unable to restore access to Bahrain, one UAE cloud data zone after war damage reuters.com",
-    "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPcGhFMHZVNGthdVl1bjYza3ZOWVpRY3ZMS1JmZkgxVnJTWGRhZFdFS3JfYk1nX2Y1Nzl3RlZDN21lWFA3b0xUU1E3UkdZR0hPQXNXdG5seEhsQ0hUR1gxVnZCWHFpTXdQdGhGQkFKTFd0cW80QUNBdnpXYzdOX25zZEJpN2lkOW1IWVlnc0RZNDk0cGgzSTlNYXFaMS1EcUJTM0ZUUjlhS0FLV0NrbGtsM3BKOVlFOWdFUi1sbGQtWmRqX3ZsODdPczRYRUw?oc=5",
-    "source": "markets",
-    "published": "2026-09-15T11:58",
-    "tags": [],
-    "kind": "general",
-    "collected_at": "2026-09-16T04:42:47+00:00"
-  },
-  {
-    "headline": "Ether, solana, XRP likely to gain if Clarity Act progresses",
-    "snippet": "",
-    "url": "https://www.coindesk.com/daybook-us/2026/09/15/ether-solana-xrp-likely-to-gain-if-clarity-act-progresses",
-    "source": "markets",
-    "published": "2026-09-15T11:15",
-    "tags": [
-      "ETHUSD",
-      "SOLUSD",
-      "XRPUSD"
-    ],
-    "kind": "crypto",
-    "collected_at": "2026-09-16T04:42:47+00:00"
-  },
-  {
-    "headline": "No one and done: The Fed will hike at least two times over the next year, according to CNBC survey",
-    "snippet": "While higher oil is cited as a main reason for the change in view, roughly three quarters of respondents see the inflation problem as broader than just energy prices.",
-    "url": "https://www.cnbc.com/2026/09/15/cnbc-fed-survey-two-rate-hikes-seen-ahead.html",
-    "source": "markets",
-    "published": "2026-09-15T11:10",
-    "tags": [
-      "USD"
-    ],
-    "kind": "general",
-    "collected_at": "2026-09-16T09:48:52+00:00"
-  },
-  {
-    "headline": "U.S. confirms for first time it has weapons deployed in space",
-    "snippet": "U.S. Air Force Secretary Troy Meink said Monday that the U.S. has \"on-orbit space control weapons,\" as he outlined a broader push to modernize the Air Force.",
-    "url": "https://www.cnbc.com/2026/09/15/weapons-in-space-us-air-force-meink.html",
-    "source": "markets",
-    "published": "2026-09-15T11:06",
-    "tags": [],
-    "kind": "general",
-    "collected_at": "2026-09-16T09:48:52+00:00"
-  },
-  {
-    "headline": "Velocity extends Series A to $48M at $200M valuation with backing from Visa, Circle, and Ripple",
-    "snippet": "",
-    "url": "https://www.coindesk.com/business/2026/09/10/velocity-extends-series-a-to-usd48m-at-usd200m-valuation-with-backing-from-visa-circle-and-ripple",
-    "source": "markets",
-    "published": "2026-09-15T11:00",
-    "tags": [
-      "XRPUSD"
-    ],
-    "kind": "crypto",
-    "collected_at": "2026-09-16T04:42:47+00:00"
-  },
-  {
-    "headline": "Why banks should stop worrying and learn to love the Clarity Act",
-    "snippet": "",
-    "url": "https://www.coindesk.com/opinion/2026/09/15/why-banks-should-stop-worrying-and-learn-to-love-the-clarity-act",
-    "source": "markets",
-    "published": "2026-09-15T11:00",
-    "tags": [],
-    "kind": "crypto",
-    "collected_at": "2026-09-16T04:42:47+00:00"
-  },
-  {
-    "headline": "Bitcoin gives back Monday's gain as Clarity Act odds fade on Polymarket",
-    "snippet": "",
-    "url": "https://www.coindesk.com/markets/2026/09/15/bitcoin-gives-back-monday-s-gain-as-clarity-act-odds-fade-on-polymarket",
-    "source": "markets",
-    "published": "2026-09-15T10:41",
-    "tags": [
-      "BTCUSD"
-    ],
-    "kind": "crypto",
-    "collected_at": "2026-09-16T04:42:47+00:00"
-  },
-  {
-    "headline": "How a simple coding mistake let a hacker drain $7.8 million from a crypto wallet",
-    "snippet": "",
-    "url": "https://www.coindesk.com/business/2026/09/15/how-a-simple-coding-mistake-let-a-hacker-drain-usd7-8-million-from-a-crypto-wallet",
-    "source": "markets",
-    "published": "2026-09-15T10:27",
-    "tags": [],
-    "kind": "crypto",
-    "collected_at": "2026-09-16T04:42:47+00:00"
-  },
-  {
-    "headline": "Nigel Farage-backed Stack BTC eyes $16 million gold dealer deal to fund bitcoin buy",
-    "snippet": "",
-    "url": "https://www.coindesk.com/business/2026/09/15/nigel-farage-backed-stack-btc-eyes-usd16-million-gold-dealer-deal-to-fund-bitcoin-buy",
-    "source": "markets",
-    "published": "2026-09-15T10:06",
-    "tags": [
-      "XAUUSD",
-      "BTCUSD"
-    ],
-    "kind": "crypto",
-    "collected_at": "2026-09-16T04:42:47+00:00"
-  },
-  {
-    "headline": "US House crypto tax package omits mining, staking reward deferral",
-    "snippet": "The 114-page bill would change the tax treatment of crypto fees, stablecoins and lending while leaving existing reward-tax timing unchanged.",
-    "url": "https://cointelegraph.com/news/us-house-crypto-tax-bill-mining-staking-reward-deferral?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "source": "markets",
-    "published": "2026-09-15T10:04",
-    "tags": [],
-    "kind": "crypto",
-    "collected_at": "2026-09-16T01:05:17+00:00"
-  },
-  {
-    "headline": "Children's clothing retailer Carter's is rebranding to appeal to a new generation of parents",
-    "snippet": "Children's clothing brand Carter's is announcing a rebrand as it tries to keep up with the modern parent and its core customer base.",
-    "url": "https://www.cnbc.com/2026/09/15/carters-kids-clothing-retailer-rebrands.html",
-    "source": "markets",
-    "published": "2026-09-15T10:00",
-    "tags": [],
-    "kind": "general",
-    "collected_at": "2026-09-16T09:48:52+00:00"
-  },
-  {
-    "headline": "Ethereum, Base wallet standards talks fail, Ethlabs researcher says",
-    "snippet": "Ethereum and Base are pursuing different account abstraction designs after talks failed, according to Ethlabs researcher Derek Chiang.",
-    "url": "https://cointelegraph.com/news/ethereum-base-wallet-standards-collaboration-breaks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "source": "markets",
-    "published": "2026-09-15T09:40",
-    "tags": [
-      "ETHUSD"
-    ],
-    "kind": "crypto",
-    "collected_at": "2026-09-16T01:05:17+00:00"
-  },
-  {
-    "headline": "Zcash outperformed most cryptocurrencies following ETF launch, now focus shifts to Clarity Act and FOMC",
-    "snippet": "<p class=\"MsoNormal\" style=\"margin: 0 0 11px; font-family: Aptos, sans-serif; line-height: 105%; font-size: 15px;\">FUNDAMENTAL OVERVIEW</p><p class=\"MsoNormal\" style=\"margin: 0 0 11px; font-family: Aptos, sans-serif; line-height: normal; font-size: 15px;\">Zcash has been rallying strongly since Augus",
-    "url": "https://investinglive.com/cryptocurrency/zcash-outperformed-most-cryptocurrencies-following-etf-launch-now-focus-shifts-to-clarity-act-and-fomc/",
-    "source": "markets",
-    "published": "2026-09-15T09:38",
-    "tags": [
-      "USD"
-    ],
-    "kind": "crypto",
-    "collected_at": "2026-09-15T15:07:46+00:00"
-  },
-  {
-    "headline": "Hong Kong crypto exchange CoinEx to cease operations after 9 years in business",
-    "snippet": "",
-    "url": "https://www.coindesk.com/business/2026/09/15/hong-kong-crypto-exchange-coinex-to-cease-operations-after-9-years-in-business",
-    "source": "markets",
-    "published": "2026-09-15T09:30",
-    "tags": [],
-    "kind": "crypto",
-    "collected_at": "2026-09-16T01:05:17+00:00"
-  },
-  {
-    "headline": "Bitcoin short-term holders hit 30-day profit streak as bull-market odds improve: CryptoQuant",
-    "snippet": "Bitcoin short-term holders approached a full month in partial profit as analysis saw improving odds of an enduring bullish BTC price reversal.",
-    "url": "https://cointelegraph.com/markets/bitcoin-short-term-holders-hit-30-day-profit-streak-as-bull-market-odds-improve-cryptoquant?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "source": "markets",
-    "published": "2026-09-15T09:30",
-    "tags": [
-      "BTCUSD"
-    ],
-    "kind": "crypto",
-    "collected_at": "2026-09-15T21:58:07+00:00"
   }
 ]
