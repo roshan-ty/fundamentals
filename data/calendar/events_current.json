@@ -6971,7 +6971,7 @@
     "impact": "",
     "forecast": "0.2%",
     "previous": "0.7%",
-    "actual": "",
+    "actual": "-0.6%",
     "source": "te"
   },
   {
@@ -6981,7 +6981,7 @@
     "impact": "",
     "forecast": "1.3%",
     "previous": "2.3%",
-    "actual": "",
+    "actual": "2%",
     "source": "te"
   },
   {
@@ -6991,7 +6991,7 @@
     "impact": "",
     "forecast": "7.8%",
     "previous": "7.8%",
-    "actual": "",
+    "actual": "7.9%",
     "source": "te"
   },
   {
@@ -7034,7 +7034,7 @@
     "impact": "",
     "forecast": "",
     "previous": "$6.741T",
-    "actual": "",
+    "actual": "$6.747T",
     "source": "te"
   },
   {
@@ -7044,7 +7044,7 @@
     "impact": "",
     "forecast": "0.3%",
     "previous": "-0.4%",
-    "actual": "",
+    "actual": "0.2%",
     "source": "te"
   },
   {
@@ -7054,7 +7054,7 @@
     "impact": "",
     "forecast": "8.1%",
     "previous": "7.7%",
-    "actual": "",
+    "actual": "7.9%",
     "source": "te"
   },
   {
@@ -7086,7 +7086,7 @@
     "impact": "",
     "forecast": "NZ$-2.3B",
     "previous": "NZ$-1.95B",
-    "actual": "",
+    "actual": "NZ$-1.349B",
     "source": "te"
   },
   {
@@ -7096,7 +7096,7 @@
     "impact": "",
     "forecast": "NZ$7.4B",
     "previous": "NZ$7.39B",
-    "actual": "",
+    "actual": "NZ$6.66B",
     "source": "te"
   },
   {
@@ -7106,7 +7106,7 @@
     "impact": "",
     "forecast": "2.0%",
     "previous": "1.9%",
-    "actual": "",
+    "actual": "1.9%",
     "source": "te"
   },
   {
@@ -7116,7 +7116,7 @@
     "impact": "",
     "forecast": "NZ$9.7B",
     "previous": "NZ$9.34B",
-    "actual": "",
+    "actual": "NZ$8B",
     "source": "te"
   },
   {
@@ -7126,7 +7126,7 @@
     "impact": "",
     "forecast": "2.1%",
     "previous": "2%",
-    "actual": "",
+    "actual": "1.9%",
     "source": "te"
   },
   {
@@ -7136,7 +7136,7 @@
     "impact": "",
     "forecast": "1.8%",
     "previous": "1.8%",
-    "actual": "",
+    "actual": "1.7%",
     "source": "te"
   },
   {
@@ -7146,7 +7146,7 @@
     "impact": "",
     "forecast": "1.9%",
     "previous": "1.9%",
-    "actual": "",
+    "actual": "1.9%",
     "source": "te"
   },
   {
@@ -7156,7 +7156,7 @@
     "impact": "",
     "forecast": "0.2%",
     "previous": "0.4%",
-    "actual": "",
+    "actual": "0.1%",
     "source": "te"
   },
   {
@@ -9246,7 +9246,7 @@
     "date_utc": "2026-09-25T00:30+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "$6.747T",
     "actual": "",
     "source": "te"
   },
@@ -13287,6 +13287,16 @@
     "impact": "",
     "forecast": "",
     "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Visitor Arrivals YoY AUG",
+    "country": "NZD",
+    "date_utc": "2026-10-14T01:45+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "8.5%",
     "actual": "",
     "source": "te"
   }
