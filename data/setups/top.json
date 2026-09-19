@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-09-18T17:11:23+00:00"
+    "updated": "2026-09-19T00:59:01+00:00"
   },
   "setups": [
     {
@@ -15,6 +15,24 @@
     {
       "symbol": "XAGUSD",
       "name": "XAGUSD",
+      "verdict": "Very Bearish",
+      "direction": "Sell",
+      "confidence": 0.4,
+      "importance": 2,
+      "rationale": "Very Bearish"
+    },
+    {
+      "symbol": "XPTUSD",
+      "name": "XPTUSD",
+      "verdict": "Very Bearish",
+      "direction": "Sell",
+      "confidence": 0.4,
+      "importance": 2,
+      "rationale": "Very Bearish"
+    },
+    {
+      "symbol": "XPDUSD",
+      "name": "XPDUSD",
       "verdict": "Very Bearish",
       "direction": "Sell",
       "confidence": 0.4,
@@ -92,24 +110,6 @@
       "confidence": 0.8,
       "importance": 1,
       "rationale": "Bullish — EUR: Neutral · NZD: Bearish"
-    },
-    {
-      "symbol": "EURSGD",
-      "name": "EURSGD",
-      "verdict": "Bearish",
-      "direction": "Sell",
-      "confidence": 0.8,
-      "importance": 1,
-      "rationale": "Bearish — EUR: Neutral · SGD: Bullish"
-    },
-    {
-      "symbol": "AUDJPY",
-      "name": "AUDJPY",
-      "verdict": "Bearish",
-      "direction": "Sell",
-      "confidence": 0.8,
-      "importance": 1,
-      "rationale": "Bearish — AUD: Bearish · JPY: Neutral"
     }
   ]
 }

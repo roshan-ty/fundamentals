@@ -7153,17 +7153,6 @@
     "source": "ff-feed"
   },
   {
-    "title": "Foreign Direct Investment ytd/y",
-    "country": "CNY",
-    "date_utc": "2026-09-18T06:02+00:00",
-    "impact": "Low",
-    "forecast": "",
-    "previous": "-6.2%",
-    "actual": "",
-    "revision": "",
-    "source": "ff-feed"
-  },
-  {
     "title": "BOJ Press Conference",
     "country": "JPY",
     "date_utc": "2026-09-18T06:30+00:00",
@@ -7192,6 +7181,17 @@
     "forecast": "30.7B",
     "previous": "35.1B",
     "actual": "7384M",
+    "revision": "",
+    "source": "ff-feed"
+  },
+  {
+    "title": "Foreign Direct Investment ytd/y",
+    "country": "CNY",
+    "date_utc": "2026-09-18T09:02+00:00",
+    "impact": "Low",
+    "forecast": "",
+    "previous": "-6.2%",
+    "actual": "",
     "revision": "",
     "source": "ff-feed"
   },
@@ -7577,7 +7577,7 @@
     "impact": "",
     "forecast": "",
     "previous": "450",
-    "actual": "",
+    "actual": "452",
     "source": "te"
   },
   {
@@ -7587,7 +7587,7 @@
     "impact": "",
     "forecast": "",
     "previous": "591",
-    "actual": "",
+    "actual": "595",
     "source": "te"
   },
   {
@@ -7597,7 +7597,7 @@
     "impact": "",
     "forecast": "$2090.0M",
     "previous": "$2115M",
-    "actual": "",
+    "actual": "$2187M",
     "source": "te"
   },
   {
@@ -9587,7 +9587,7 @@
     "date_utc": "2026-09-25T21:00+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "452",
     "actual": "",
     "source": "te"
   },
@@ -9597,7 +9597,7 @@
     "date_utc": "2026-09-25T21:00+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "595",
     "actual": "",
     "source": "te"
   },
@@ -9819,6 +9819,16 @@
     "forecast": "",
     "previous": "3.890%",
     "actual": "4.060%",
+    "source": "te"
+  },
+  {
+    "title": "Business Confidence SEP",
+    "country": "KRW",
+    "date_utc": "2026-09-29T01:00+00:00",
+    "impact": "",
+    "forecast": "84",
+    "previous": "81",
+    "actual": "",
     "source": "te"
   },
   {
@@ -13747,6 +13757,126 @@
     "date_utc": "2026-10-14T19:30+00:00",
     "impact": "",
     "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Fed Beige Book",
+    "country": "USD",
+    "date_utc": "2026-10-14T22:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "API Crude Oil Stock Change OCT/09",
+    "country": "USD",
+    "date_utc": "2026-10-15T00:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Machinery Orders MoM AUG",
+    "country": "JPY",
+    "date_utc": "2026-10-15T03:50+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "-3.7%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Machinery Orders YoY AUG",
+    "country": "JPY",
+    "date_utc": "2026-10-15T03:50+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "11.2%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Foreign Bond Investment OCT/10",
+    "country": "JPY",
+    "date_utc": "2026-10-15T03:50+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Stock Investment by Foreigners OCT/10",
+    "country": "JPY",
+    "date_utc": "2026-10-15T03:50+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Westpac Leading Index MoM SEP",
+    "country": "AUD",
+    "date_utc": "2026-10-15T04:00+00:00",
+    "impact": "",
+    "forecast": "-0.4%",
+    "previous": "0%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Employment Change SEP",
+    "country": "AUD",
+    "date_utc": "2026-10-15T04:30+00:00",
+    "impact": "",
+    "forecast": "9.8K",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Full Time Employment Chg SEP",
+    "country": "AUD",
+    "date_utc": "2026-10-15T04:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Unemployment Rate SEP",
+    "country": "AUD",
+    "date_utc": "2026-10-15T04:30+00:00",
+    "impact": "",
+    "forecast": "4.50%",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Part Time Employment Chg SEP",
+    "country": "AUD",
+    "date_utc": "2026-10-15T04:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Participation Rate SEP",
+    "country": "AUD",
+    "date_utc": "2026-10-15T04:30+00:00",
+    "impact": "",
+    "forecast": "66.5%",
     "previous": "",
     "actual": "",
     "source": "te"

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-09-18T17:11:23+00:00",
+    "updated": "2026-09-19T00:59:01+00:00",
     "total": 82,
     "scored": 82
   },
@@ -803,29 +803,21 @@
     {
       "symbol": "XPTUSD",
       "class": "metals",
-      "verdict": "Neutral",
-      "base_verdict": "Neutral",
+      "verdict": "Very Bearish",
+      "base_verdict": "Very Bearish",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "XPDUSD",
       "class": "metals",
-      "verdict": "Neutral",
-      "base_verdict": "Neutral",
+      "verdict": "Very Bearish",
+      "base_verdict": "Very Bearish",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "OIL",
-      "class": "energy",
-      "verdict": "Bullish",
-      "base_verdict": "Bullish",
-      "quote_verdict": null,
-      "drivers": []
-    },
-    {
-      "symbol": "BRENT",
       "class": "energy",
       "verdict": "Bearish",
       "base_verdict": "Bearish",
@@ -833,10 +825,18 @@
       "drivers": []
     },
     {
-      "symbol": "COPPER",
+      "symbol": "BRENT",
       "class": "energy",
       "verdict": "Bullish",
       "base_verdict": "Bullish",
+      "quote_verdict": null,
+      "drivers": []
+    },
+    {
+      "symbol": "COPPER",
+      "class": "energy",
+      "verdict": "Bearish",
+      "base_verdict": "Bearish",
       "quote_verdict": null,
       "drivers": []
     },
