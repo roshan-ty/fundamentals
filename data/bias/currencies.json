@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-09-19T00:59:01+00:00",
+    "updated": "2026-09-20T16:55:06+00:00",
     "method": "verdict v3 (forecast-first, released-only)"
   },
   "currencies": {
@@ -440,10 +440,21 @@
       "tally": {
         "bullish": 2.0,
         "bearish": 0.0,
-        "neutral": 0.0
+        "neutral": 3.0
       },
-      "released_points": 2,
+      "released_points": 3,
       "drivers": [
+        {
+          "dataPoint": "Loan Prime Rate (1-Year & 5-Year LPR)",
+          "title": "Loan Prime Rate 5Y SEP",
+          "period": "2026-09-21T05:15+00:00",
+          "actual": "3.5%",
+          "previous": "3.5%",
+          "forecast": "3.5%",
+          "direction": "higher_is_bullish",
+          "verdict": "neutral",
+          "weight": 3.0
+        },
         {
           "dataPoint": "Industrial Production (y/y)",
           "title": "Industrial Production YoY AUG",
@@ -467,9 +478,7 @@
           "weight": 1.0
         }
       ],
-      "notes": [
-        "limited release evidence; cap at single-step verdict"
-      ]
+      "notes": []
     },
     "MXN": {
       "verdict": "Neutral",
@@ -622,10 +631,10 @@
       "drivers": [
         {
           "dataPoint": "MAS Monetary Policy",
-          "title": "MAS 12-Week Bill Auction",
-          "period": "2026-09-22T09:00+00:00",
-          "actual": "1.74%",
-          "previous": "1.60%",
+          "title": "MAS 36-Week Bill Auction",
+          "period": "2026-09-29T09:00+00:00",
+          "actual": "1.77%",
+          "previous": "1.65%",
           "forecast": "",
           "direction": "higher_is_bullish",
           "verdict": "bullish",

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-19T00:59:01+00:00",
+  "updated": "2026-09-20T16:55:06+00:00",
   "releases": [
     {
       "country": "USD",
@@ -290,18 +290,6 @@
       "forecast": "-5.0K"
     },
     {
-      "country": "SGD",
-      "dataPointId": "sg_rate",
-      "dataPoint": "MAS Monetary Policy",
-      "weight": 2.0,
-      "direction": "higher_is_bullish",
-      "period": "2026-09-22T09:00+00:00",
-      "title": "MAS 12-Week Bill Auction",
-      "actual": "1.74%",
-      "previous": "1.60%",
-      "forecast": ""
-    },
-    {
       "country": "EUR",
       "dataPointId": "eu_zew",
       "dataPoint": "German ZEW Economic Sentiment",
@@ -398,6 +386,18 @@
       "forecast": "1.25%"
     },
     {
+      "country": "CNY",
+      "dataPointId": "cn_lpr",
+      "dataPoint": "Loan Prime Rate (1-Year & 5-Year LPR)",
+      "weight": 0.5,
+      "direction": "higher_is_bullish",
+      "period": "2026-09-21T05:15+00:00",
+      "title": "Loan Prime Rate 5Y SEP",
+      "actual": "3.5%",
+      "previous": "3.5%",
+      "forecast": "3.5%"
+    },
+    {
       "country": "USD",
       "dataPointId": "us_adp",
       "dataPoint": "ADP Non-Farm Employment Change",
@@ -407,6 +407,18 @@
       "title": "ADP Employment Change Weekly",
       "actual": "16.25K",
       "previous": "12K",
+      "forecast": ""
+    },
+    {
+      "country": "SGD",
+      "dataPointId": "sg_rate",
+      "dataPoint": "MAS Monetary Policy",
+      "weight": 2.0,
+      "direction": "higher_is_bullish",
+      "period": "2026-09-29T09:00+00:00",
+      "title": "MAS 36-Week Bill Auction",
+      "actual": "1.77%",
+      "previous": "1.65%",
       "forecast": ""
     }
   ]
