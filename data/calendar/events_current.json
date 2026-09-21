@@ -7514,7 +7514,7 @@
     "impact": "",
     "forecast": "3.0%",
     "previous": "3.0%",
-    "actual": "",
+    "actual": "3.0%",
     "source": "te"
   },
   {
@@ -12440,12 +12440,72 @@
     "source": "te"
   },
   {
+    "title": "Exports YoY SEP",
+    "country": "KRW",
+    "date_utc": "2026-10-01T04:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "68.7%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Balance of Trade SEP",
+    "country": "KRW",
+    "date_utc": "2026-10-01T04:00+00:00",
+    "impact": "",
+    "forecast": "$ 47.4B",
+    "previous": "$34.75B",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Imports YoY SEP",
+    "country": "KRW",
+    "date_utc": "2026-10-01T04:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "22.5%",
+    "actual": "",
+    "source": "te"
+  },
+  {
     "title": "S&P Global Manufacturing PMI Final SEP",
     "country": "JPY",
     "date_utc": "2026-10-01T04:30+00:00",
     "impact": "",
     "forecast": "55.2",
     "previous": "54.9",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "S&P Global Manufacturing PMI SEP",
+    "country": "ID",
+    "date_utc": "2026-10-01T04:30+00:00",
+    "impact": "",
+    "forecast": "50.3",
+    "previous": "49.8",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "URA Property Index QoQ Prel Q3",
+    "country": "SGD",
+    "date_utc": "2026-10-01T04:30+00:00",
+    "impact": "",
+    "forecast": "0.3%",
+    "previous": "0.5%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "S&P Global Manufacturing PMI SEP",
+    "country": "KRW",
+    "date_utc": "2026-10-01T04:30+00:00",
+    "impact": "",
+    "forecast": "54.9",
+    "previous": "52.3",
     "actual": "",
     "source": "te"
   },
@@ -15726,6 +15786,56 @@
     "impact": "",
     "forecast": "1.3%",
     "previous": "0.9%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Baker Hughes Oil Rig Count OCT/16",
+    "country": "USD",
+    "date_utc": "2026-10-16T21:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Baker Hughes Total Rigs Count OCT/16",
+    "country": "USD",
+    "date_utc": "2026-10-16T21:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Net Long-term TIC Flows AUG",
+    "country": "USD",
+    "date_utc": "2026-10-17T00:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "$-27.9B",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Foreign Bond Investment AUG",
+    "country": "USD",
+    "date_utc": "2026-10-17T00:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "$-3.6B",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Overall Net Capital Flows AUG",
+    "country": "USD",
+    "date_utc": "2026-10-17T00:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "$83.7B",
     "actual": "",
     "source": "te"
   }
