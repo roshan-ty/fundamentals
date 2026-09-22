@@ -7964,17 +7964,6 @@
     "source": "te"
   },
   {
-    "title": "FOMC Member Barkin Speaks",
-    "country": "USD",
-    "date_utc": "2026-09-22T17:00+00:00",
-    "impact": "Low",
-    "forecast": "",
-    "previous": "",
-    "actual": "",
-    "revision": "",
-    "source": "ff-feed"
-  },
-  {
     "title": "Richmond Fed Manufacturing Index SEP",
     "country": "USD",
     "date_utc": "2026-09-22T18:00+00:00",
@@ -9168,6 +9157,17 @@
     "source": "te"
   },
   {
+    "title": "FOMC Member Barkin Speaks",
+    "country": "USD",
+    "date_utc": "2026-09-24T12:30+00:00",
+    "impact": "Low",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "revision": "",
+    "source": "ff-feed"
+  },
+  {
     "title": "Core Retail Sales m/m",
     "country": "CAD",
     "date_utc": "2026-09-24T12:30+00:00",
@@ -9763,7 +9763,7 @@
     "country": "JPY",
     "date_utc": "2026-09-25T05:00+00:00",
     "impact": "Low",
-    "forecast": "",
+    "forecast": "1.5%",
     "previous": "1.6%",
     "actual": "",
     "revision": "",
@@ -13047,6 +13047,26 @@
     "impact": "",
     "forecast": "98",
     "previous": "98.0",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Inflation Rate YoY SEP",
+    "country": "KRW",
+    "date_utc": "2026-10-02T03:00+00:00",
+    "impact": "",
+    "forecast": "3.3%",
+    "previous": "3.1%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Inflation Rate MoM SEP",
+    "country": "KRW",
+    "date_utc": "2026-10-02T03:00+00:00",
+    "impact": "",
+    "forecast": "0.3%",
+    "previous": "0.2%",
     "actual": "",
     "source": "te"
   },

@@ -4450,16 +4450,6 @@
     "source": "te"
   },
   {
-    "title": "Foreign Bond Investment SEP/26",
-    "country": "JPY",
-    "date_utc": "2026-10-01T03:50+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "",
-    "actual": "",
-    "source": "te"
-  },
-  {
     "title": "Foreign Bond Investment SEP/19",
     "country": "JPY",
     "date_utc": "2026-10-01T03:50+00:00",
@@ -4470,12 +4460,12 @@
     "source": "te"
   },
   {
-    "title": "Stock Investment by Foreigners SEP/19",
+    "title": "Foreign Bond Investment SEP/26",
     "country": "JPY",
     "date_utc": "2026-10-01T03:50+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "-1522.8B",
+    "previous": "",
     "actual": "",
     "source": "te"
   },
@@ -4486,6 +4476,16 @@
     "impact": "",
     "forecast": "",
     "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Stock Investment by Foreigners SEP/19",
+    "country": "JPY",
+    "date_utc": "2026-10-01T03:50+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "-1522.8B",
     "actual": "",
     "source": "te"
   },
@@ -5080,6 +5080,96 @@
     "source": "te"
   },
   {
+    "title": "Fed Balance Sheet SEP/30",
+    "country": "USD",
+    "date_utc": "2026-10-02T00:30+00:00",
+    "impact": "",
+    "forecast": "$ 6.7T",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Inflation Rate YoY SEP",
+    "country": "KRW",
+    "date_utc": "2026-10-02T03:00+00:00",
+    "impact": "",
+    "forecast": "3.3%",
+    "previous": "3.1%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Inflation Rate MoM SEP",
+    "country": "KRW",
+    "date_utc": "2026-10-02T03:00+00:00",
+    "impact": "",
+    "forecast": "0.3%",
+    "previous": "0.2%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Unemployment Rate AUG",
+    "country": "JPY",
+    "date_utc": "2026-10-02T03:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "2.4%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Jobs/applications ratio AUG",
+    "country": "JPY",
+    "date_utc": "2026-10-02T03:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "1.18",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Tokyo Core CPI YoY SEP",
+    "country": "JPY",
+    "date_utc": "2026-10-02T03:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "1.8%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Tokyo CPI Ex Food and Energy YoY SEP",
+    "country": "JPY",
+    "date_utc": "2026-10-02T03:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "2.0%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Tokyo CPI YoY SEP",
+    "country": "JPY",
+    "date_utc": "2026-10-02T03:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "1.9%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Monetary Base YoY",
+    "country": "JPY",
+    "date_utc": "2026-10-02T03:50+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
     "title": "S&P Global Composite PMI Final SEP",
     "country": "AUD",
     "date_utc": "2026-10-05T02:00+00:00",
@@ -5516,76 +5606,6 @@
     "impact": "",
     "forecast": "2.6%",
     "previous": "1.9%",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "BoJ Interest Rate Decision",
-    "country": "JPY",
-    "date_utc": "2026-09-18T07:00+00:00",
-    "impact": "",
-    "forecast": "1.25%",
-    "previous": "1%",
-    "actual": "1.25%",
-    "source": "te"
-  },
-  {
-    "title": "Unemployment Rate AUG",
-    "country": "JPY",
-    "date_utc": "2026-10-02T03:30+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "2.4%",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "Jobs/applications ratio AUG",
-    "country": "JPY",
-    "date_utc": "2026-10-02T03:30+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "1.18",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "Tokyo Core CPI YoY SEP",
-    "country": "JPY",
-    "date_utc": "2026-10-02T03:30+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "1.8%",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "Tokyo CPI Ex Food and Energy YoY SEP",
-    "country": "JPY",
-    "date_utc": "2026-10-02T03:30+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "2.0%",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "Tokyo CPI YoY SEP",
-    "country": "JPY",
-    "date_utc": "2026-10-02T03:30+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "1.9%",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "Monetary Base YoY",
-    "country": "JPY",
-    "date_utc": "2026-10-02T03:50+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "",
     "actual": "",
     "source": "te"
   },
@@ -6080,16 +6100,6 @@
     "source": "te"
   },
   {
-    "title": "FDI (YTD) YoY AUG",
-    "country": "CNY",
-    "date_utc": "2026-09-18T13:00+00:00",
-    "impact": "",
-    "forecast": "-5.8%",
-    "previous": "-6.2%",
-    "actual": "-5.3%",
-    "source": "te"
-  },
-  {
     "title": "Loan Prime Rate 1Y",
     "country": "CNY",
     "date_utc": "2026-09-20T05:15+00:00",
@@ -6177,16 +6187,6 @@
     "forecast": "",
     "previous": "CNY809.3B",
     "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "New Housing Price Index MoM AUG",
-    "country": "CAD",
-    "date_utc": "2026-09-18T16:30+00:00",
-    "impact": "",
-    "forecast": "0.0%",
-    "previous": "-0.1%",
-    "actual": "-0.1%",
     "source": "te"
   },
   {
@@ -6700,26 +6700,6 @@
     "source": "te"
   },
   {
-    "title": "PPI YoY AUG",
-    "country": "EUR",
-    "date_utc": "2026-09-18T10:00+00:00",
-    "impact": "",
-    "forecast": "4.0%",
-    "previous": "3%",
-    "actual": "4.6%",
-    "source": "te"
-  },
-  {
-    "title": "PPI MoM AUG",
-    "country": "EUR",
-    "date_utc": "2026-09-18T10:00+00:00",
-    "impact": "",
-    "forecast": "0.5%",
-    "previous": "1.1%",
-    "actual": "1.1%",
-    "source": "te"
-  },
-  {
     "title": "S&P Global Composite PMI Final SEP",
     "country": "EUR",
     "date_utc": "2026-10-05T11:55+00:00",
@@ -7155,16 +7135,6 @@
     "date_utc": "2026-10-15T14:00+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "Fed Balance Sheet SEP/30",
-    "country": "USD",
-    "date_utc": "2026-10-02T00:30+00:00",
-    "impact": "",
-    "forecast": "$ 6.7T",
     "previous": "",
     "actual": "",
     "source": "te"
