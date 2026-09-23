@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-09-23T01:15:13+00:00",
+    "updated": "2026-09-23T17:58:28+00:00",
     "method": "verdict v3 (forecast-first, released-only)"
   },
   "currencies": {
@@ -532,15 +532,25 @@
     "ZAR": {
       "verdict": "Neutral",
       "tally": {
-        "bullish": 0,
-        "bearish": 0,
-        "neutral": 0
+        "bullish": 0.0,
+        "bearish": 0.0,
+        "neutral": 3.0
       },
-      "released_points": 0,
-      "drivers": [],
-      "notes": [
-        "no released data yet"
-      ]
+      "released_points": 1,
+      "drivers": [
+        {
+          "dataPoint": "SARB Repo Rate Decision",
+          "title": "Interest Rate Decision",
+          "period": "2026-09-23T17:00+00:00",
+          "actual": "7.25%",
+          "previous": "7%",
+          "forecast": "7.25%",
+          "direction": "higher_is_bullish",
+          "verdict": "neutral",
+          "weight": 3.0
+        }
+      ],
+      "notes": []
     },
     "PLN": {
       "verdict": "Neutral",
