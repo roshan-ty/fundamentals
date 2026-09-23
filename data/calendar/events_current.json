@@ -8107,11 +8107,11 @@
   {
     "title": "API Crude Oil Stock Change SEP/18",
     "country": "USD",
-    "date_utc": "2026-09-23T00:30+00:00",
+    "date_utc": "2026-09-23T01:00+00:00",
     "impact": "",
     "forecast": "",
     "previous": "7.14M",
-    "actual": "",
+    "actual": "1.786M",
     "source": "te"
   },
   {
@@ -8121,7 +8121,7 @@
     "impact": "",
     "forecast": "104.3",
     "previous": "104.5",
-    "actual": "",
+    "actual": "106.6",
     "source": "te"
   },
   {
@@ -8131,7 +8131,7 @@
     "impact": "",
     "forecast": "51.7",
     "previous": "52.0",
-    "actual": "",
+    "actual": "49.3",
     "source": "te"
   },
   {
@@ -8141,7 +8141,7 @@
     "impact": "",
     "forecast": "52.5",
     "previous": "53.2",
-    "actual": "",
+    "actual": "51.4",
     "source": "te"
   },
   {
@@ -8151,7 +8151,7 @@
     "impact": "",
     "forecast": "52",
     "previous": "52.7",
-    "actual": "",
+    "actual": "50.8",
     "source": "te"
   },
   {
@@ -11046,7 +11046,7 @@
     "date_utc": "2026-09-30T00:30+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "1.786M",
     "actual": "",
     "source": "te"
   },
@@ -13495,7 +13495,7 @@
     "country": "AUD",
     "date_utc": "2026-10-05T02:00+00:00",
     "impact": "",
-    "forecast": "",
+    "forecast": "50.8",
     "previous": "52.7",
     "actual": "",
     "source": "te"
@@ -16337,6 +16337,56 @@
     "impact": "",
     "forecast": "",
     "previous": "$83.7B",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Composite NZ PCI SEP",
+    "country": "NZD",
+    "date_utc": "2026-10-19T01:30+00:00",
+    "impact": "",
+    "forecast": "52.5",
+    "previous": "52.5",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Services NZ PSI SEP",
+    "country": "NZD",
+    "date_utc": "2026-10-19T01:30+00:00",
+    "impact": "",
+    "forecast": "50",
+    "previous": "51.2",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Balance of Trade SEP",
+    "country": "NZD",
+    "date_utc": "2026-10-19T01:45+00:00",
+    "impact": "",
+    "forecast": "NZ$ -1.2B",
+    "previous": "NZ$-1.349B",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Exports SEP",
+    "country": "NZD",
+    "date_utc": "2026-10-19T01:45+00:00",
+    "impact": "",
+    "forecast": "NZ$ 6.5B",
+    "previous": "NZ$6.66B",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Imports SEP",
+    "country": "NZD",
+    "date_utc": "2026-10-19T01:45+00:00",
+    "impact": "",
+    "forecast": "NZ$ 7.6B",
+    "previous": "NZ$8B",
     "actual": "",
     "source": "te"
   }
