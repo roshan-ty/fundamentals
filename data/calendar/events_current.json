@@ -8811,7 +8811,7 @@
     "impact": "",
     "forecast": "11.0%",
     "previous": "13.4%",
-    "actual": "",
+    "actual": "23%",
     "source": "te"
   },
   {
@@ -8821,17 +8821,6 @@
     "impact": "Low",
     "forecast": "55.0",
     "previous": "55.1",
-    "actual": "",
-    "revision": "",
-    "source": "ff-feed"
-  },
-  {
-    "title": "NAB Quarterly Business Confidence",
-    "country": "AUD",
-    "date_utc": "2026-09-24T00:35+00:00",
-    "impact": "Low",
-    "forecast": "",
-    "previous": "-19",
     "actual": "",
     "revision": "",
     "source": "ff-feed"
@@ -8859,13 +8848,24 @@
     "source": "ff-feed"
   },
   {
+    "title": "NAB Quarterly Business Confidence",
+    "country": "AUD",
+    "date_utc": "2026-09-24T02:35+00:00",
+    "impact": "Low",
+    "forecast": "",
+    "previous": "-19",
+    "actual": "",
+    "revision": "",
+    "source": "ff-feed"
+  },
+  {
     "title": "S&P Global Manufacturing PMI Flash SEP",
     "country": "JPY",
     "date_utc": "2026-09-24T04:30+00:00",
     "impact": "",
     "forecast": "54",
     "previous": "54.9",
-    "actual": "",
+    "actual": "54.1",
     "source": "te"
   },
   {
@@ -8875,7 +8875,7 @@
     "impact": "",
     "forecast": "52",
     "previous": "52.5",
-    "actual": "",
+    "actual": "51.6",
     "source": "te"
   },
   {
@@ -8885,7 +8885,7 @@
     "impact": "",
     "forecast": "52.7",
     "previous": "53.5",
-    "actual": "",
+    "actual": "52.5",
     "source": "te"
   },
   {
@@ -13515,7 +13515,7 @@
     "country": "JPY",
     "date_utc": "2026-10-05T04:30+00:00",
     "impact": "",
-    "forecast": "",
+    "forecast": "52.5",
     "previous": "53.5",
     "actual": "",
     "source": "te"
@@ -13525,7 +13525,7 @@
     "country": "JPY",
     "date_utc": "2026-10-05T04:30+00:00",
     "impact": "",
-    "forecast": "",
+    "forecast": "51.6",
     "previous": "52.5",
     "actual": "",
     "source": "te"

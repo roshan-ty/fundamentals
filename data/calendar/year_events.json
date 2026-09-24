@@ -576,7 +576,7 @@
     "impact": "",
     "forecast": "11.0%",
     "previous": "13.4%",
-    "actual": "",
+    "actual": "23%",
     "source": "te"
   },
   {
@@ -586,7 +586,7 @@
     "impact": "",
     "forecast": "55.2",
     "previous": "54.9",
-    "actual": "",
+    "actual": "54.1",
     "source": "te"
   },
   {
@@ -596,7 +596,7 @@
     "impact": "",
     "forecast": "52.7",
     "previous": "52.5",
-    "actual": "",
+    "actual": "51.6",
     "source": "te"
   },
   {
@@ -606,7 +606,7 @@
     "impact": "",
     "forecast": "54",
     "previous": "53.5",
-    "actual": "",
+    "actual": "52.5",
     "source": "te"
   },
   {
@@ -3890,16 +3890,6 @@
     "source": "te"
   },
   {
-    "title": "Foreign Bond Investment SEP/19",
-    "country": "JPY",
-    "date_utc": "2026-10-01T03:50+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "1082.9B",
-    "actual": "",
-    "source": "te"
-  },
-  {
     "title": "Foreign Bond Investment SEP/26",
     "country": "JPY",
     "date_utc": "2026-10-01T03:50+00:00",
@@ -3910,12 +3900,12 @@
     "source": "te"
   },
   {
-    "title": "Stock Investment by Foreigners SEP/26",
+    "title": "Foreign Bond Investment SEP/19",
     "country": "JPY",
     "date_utc": "2026-10-01T03:50+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "1082.9B",
     "actual": "",
     "source": "te"
   },
@@ -3926,6 +3916,16 @@
     "impact": "",
     "forecast": "",
     "previous": "-1522.8B",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Stock Investment by Foreigners SEP/26",
+    "country": "JPY",
+    "date_utc": "2026-10-01T03:50+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
     "actual": "",
     "source": "te"
   },
@@ -5494,7 +5494,7 @@
     "country": "JPY",
     "date_utc": "2026-10-05T04:30+00:00",
     "impact": "",
-    "forecast": "",
+    "forecast": "52.5",
     "previous": "53.5",
     "actual": "",
     "source": "te"
@@ -5504,7 +5504,7 @@
     "country": "JPY",
     "date_utc": "2026-10-05T04:30+00:00",
     "impact": "",
-    "forecast": "",
+    "forecast": "51.6",
     "previous": "52.5",
     "actual": "",
     "source": "te"
@@ -5977,26 +5977,6 @@
     "forecast": "-0.2%",
     "previous": "-0.7%",
     "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "Loan Prime Rate 1Y",
-    "country": "CNY",
-    "date_utc": "2026-09-20T05:15+00:00",
-    "impact": "",
-    "forecast": "3.0%",
-    "previous": "3.0%",
-    "actual": "3.0%",
-    "source": "te"
-  },
-  {
-    "title": "Loan Prime Rate 5Y SEP",
-    "country": "CNY",
-    "date_utc": "2026-09-20T05:15+00:00",
-    "impact": "",
-    "forecast": "3.5%",
-    "previous": "3.5%",
-    "actual": "3.5%",
     "source": "te"
   },
   {
@@ -6477,36 +6457,6 @@
     "forecast": "",
     "previous": "",
     "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "Public Sector Net Borrowing Ex Banks AUG",
-    "country": "GBP",
-    "date_utc": "2026-09-22T10:00+00:00",
-    "impact": "",
-    "forecast": "-12.8B",
-    "previous": "-2.0B ",
-    "actual": "-18.3B",
-    "source": "te"
-  },
-  {
-    "title": "Treasury Gilt 2032 Auction",
-    "country": "GBP",
-    "date_utc": "2026-09-22T13:00+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "4.613%",
-    "actual": "4.843%",
-    "source": "te"
-  },
-  {
-    "title": "CBI Industrial Trends Orders SEP",
-    "country": "GBP",
-    "date_utc": "2026-09-22T14:00+00:00",
-    "impact": "",
-    "forecast": "-40",
-    "previous": "-25",
-    "actual": "-9",
     "source": "te"
   },
   {
@@ -7287,126 +7237,6 @@
     "forecast": "",
     "previous": "",
     "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "ADP Employment Change Weekly",
-    "country": "USD",
-    "date_utc": "2026-09-22T16:15+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "16.25K",
-    "actual": "20K",
-    "source": "te"
-  },
-  {
-    "title": "Redbook YoY SEP/19",
-    "country": "USD",
-    "date_utc": "2026-09-22T16:55+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "8.5%",
-    "actual": "7.6%",
-    "source": "te"
-  },
-  {
-    "title": "Richmond Fed Manufacturing Index SEP",
-    "country": "USD",
-    "date_utc": "2026-09-22T18:00+00:00",
-    "impact": "",
-    "forecast": "3",
-    "previous": "4",
-    "actual": "-2",
-    "source": "te"
-  },
-  {
-    "title": "Richmond Fed Manufacturing Shipments Index SEP",
-    "country": "USD",
-    "date_utc": "2026-09-22T18:00+00:00",
-    "impact": "",
-    "forecast": "9",
-    "previous": "11",
-    "actual": "-5",
-    "source": "te"
-  },
-  {
-    "title": "Richmond Fed Services Revenues Index SEP",
-    "country": "USD",
-    "date_utc": "2026-09-22T18:00+00:00",
-    "impact": "",
-    "forecast": "-6",
-    "previous": "-8",
-    "actual": "0",
-    "source": "te"
-  },
-  {
-    "title": "Fed Williams Speech",
-    "country": "USD",
-    "date_utc": "2026-09-22T18:05+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "Fed Jefferson Speech",
-    "country": "USD",
-    "date_utc": "2026-09-22T18:20+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "6-Week Bill Auction",
-    "country": "USD",
-    "date_utc": "2026-09-22T19:30+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "3.850%",
-    "actual": "3.870%",
-    "source": "te"
-  },
-  {
-    "title": "Fed Barkin Speech",
-    "country": "USD",
-    "date_utc": "2026-09-22T21:00+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "2-Year Note Auction",
-    "country": "USD",
-    "date_utc": "2026-09-22T21:00+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "4.204%",
-    "actual": "4.787%",
-    "source": "te"
-  },
-  {
-    "title": "Money Supply AUG",
-    "country": "USD",
-    "date_utc": "2026-09-22T21:00+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "$23.22T",
-    "actual": "$23.34T",
-    "source": "te"
-  },
-  {
-    "title": "API Crude Oil Stock Change SEP/18",
-    "country": "USD",
-    "date_utc": "2026-09-23T01:00+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "7.14M",
-    "actual": "1.786M",
     "source": "te"
   },
   {
