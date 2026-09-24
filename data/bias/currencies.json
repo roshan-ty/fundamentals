@@ -1,18 +1,40 @@
 {
   "meta": {
-    "updated": "2026-09-24T01:09:54+00:00",
+    "updated": "2026-09-24T18:01:03+00:00",
     "method": "verdict v3 (forecast-first, released-only)"
   },
   "currencies": {
     "USD": {
       "verdict": "Neutral",
       "tally": {
-        "bullish": 3.0,
-        "bearish": 1.5,
+        "bullish": 3.5,
+        "bearish": 1.0,
         "neutral": 14.0
       },
       "released_points": 13,
       "drivers": [
+        {
+          "dataPoint": "Building Permits & Housing Starts",
+          "title": "New Home Sales AUG",
+          "period": "2026-09-24T18:00+00:00",
+          "actual": "0.684M",
+          "previous": "0.607M",
+          "forecast": "0.615M",
+          "direction": "higher_is_bullish",
+          "verdict": "bullish",
+          "weight": 0.5
+        },
+        {
+          "dataPoint": "Unemployment Claims (Weekly)",
+          "title": "Initial Jobless Claims SEP/19",
+          "period": "2026-09-24T16:30+00:00",
+          "actual": "197K",
+          "previous": "196K",
+          "forecast": "201.0K",
+          "direction": "lower_is_bullish",
+          "verdict": "bullish",
+          "weight": 1.0
+        },
         {
           "dataPoint": "ADP Non-Farm Employment Change",
           "title": "ADP Employment Change Weekly",
@@ -23,28 +45,6 @@
           "direction": "higher_is_bullish",
           "verdict": "bullish",
           "weight": 1.0
-        },
-        {
-          "dataPoint": "Unemployment Claims (Weekly)",
-          "title": "Initial Jobless Claims SEP/12",
-          "period": "2026-09-17T16:30+00:00",
-          "actual": "196K",
-          "previous": "206K",
-          "forecast": "208.0K",
-          "direction": "lower_is_bullish",
-          "verdict": "bullish",
-          "weight": 1.0
-        },
-        {
-          "dataPoint": "Building Permits & Housing Starts",
-          "title": "Building Permits Prel AUG",
-          "period": "2026-09-17T16:30+00:00",
-          "actual": "1.394M",
-          "previous": "1.433M",
-          "forecast": "1.41M",
-          "direction": "higher_is_bullish",
-          "verdict": "bearish",
-          "weight": 0.5
         },
         {
           "dataPoint": "Federal Funds Rate / FOMC Statement / FOMC Press Conference",
@@ -160,14 +160,25 @@
       "notes": []
     },
     "EUR": {
-      "verdict": "Neutral",
+      "verdict": "Bullish",
       "tally": {
-        "bullish": 1.0,
+        "bullish": 2.0,
         "bearish": 1.0,
         "neutral": 2.0
       },
-      "released_points": 3,
+      "released_points": 4,
       "drivers": [
+        {
+          "dataPoint": "German IFO Business Climate",
+          "title": "Ifo Business Climate SEP",
+          "period": "2026-09-24T12:00+00:00",
+          "actual": "89.9",
+          "previous": "88.8",
+          "forecast": "84.9",
+          "direction": "higher_is_bullish",
+          "verdict": "bullish",
+          "weight": 1.0
+        },
         {
           "dataPoint": "German ZEW Economic Sentiment",
           "title": "ZEW Economic Sentiment Index SEP",
@@ -294,29 +305,38 @@
       "notes": []
     },
     "AUD": {
-      "verdict": "Bearish",
+      "verdict": "Neutral",
       "tally": {
-        "bullish": 0.0,
+        "bullish": 2.0,
         "bearish": 2.0,
         "neutral": 0.0
       },
-      "released_points": 1,
+      "released_points": 2,
       "drivers": [
         {
           "dataPoint": "Unemployment Rate",
-          "title": "Unemployment Rate",
-          "period": "2026-07-01T00:00:00+00:00",
-          "actual": "4.461825",
-          "previous": "4.431548",
-          "forecast": "",
+          "title": "Unemployment Rate AUG",
+          "period": "2026-09-24T05:30+00:00",
+          "actual": "4.6%",
+          "previous": "4.5%",
+          "forecast": "4.5%",
           "direction": "lower_is_bullish",
           "verdict": "bearish",
           "weight": 2.0
+        },
+        {
+          "dataPoint": "Employment Change",
+          "title": "Employment Change AUG",
+          "period": "2026-09-24T05:30+00:00",
+          "actual": "39.5K",
+          "previous": "-15.8K",
+          "forecast": "15.1K",
+          "direction": "higher_is_bullish",
+          "verdict": "bullish",
+          "weight": 2.0
         }
       ],
-      "notes": [
-        "limited release evidence; cap at single-step verdict"
-      ]
+      "notes": []
     },
     "NZD": {
       "verdict": "Bearish",
@@ -347,11 +367,22 @@
       "verdict": "Neutral",
       "tally": {
         "bullish": 0.0,
-        "bearish": 0.0,
+        "bearish": 0.5,
         "neutral": 4.0
       },
-      "released_points": 2,
+      "released_points": 3,
       "drivers": [
+        {
+          "dataPoint": "Retail Sales & Core Retail Sales (m/m)",
+          "title": "Retail Sales Ex Autos MoM JUL",
+          "period": "2026-09-24T16:30+00:00",
+          "actual": "-0.7%",
+          "previous": "0.5%",
+          "forecast": "-0.6%",
+          "direction": "higher_is_bullish",
+          "verdict": "bearish",
+          "weight": 0.5
+        },
         {
           "dataPoint": "CPI (m/m, y/y) & Median/Trimmed CPI",
           "title": "Median CPI y/y",
@@ -425,15 +456,25 @@
     "CHF": {
       "verdict": "Neutral",
       "tally": {
-        "bullish": 0,
-        "bearish": 0,
-        "neutral": 0
+        "bullish": 0.0,
+        "bearish": 0.0,
+        "neutral": 3.0
       },
-      "released_points": 0,
-      "drivers": [],
-      "notes": [
-        "no released data yet"
-      ]
+      "released_points": 1,
+      "drivers": [
+        {
+          "dataPoint": "SNB Policy Rate / SNB Monetary Policy Assessment",
+          "title": "SNB Interest Rate Decision",
+          "period": "2026-09-24T11:30+00:00",
+          "actual": "0%",
+          "previous": "0%",
+          "forecast": "0%",
+          "direction": "higher_is_bullish",
+          "verdict": "neutral",
+          "weight": 3.0
+        }
+      ],
+      "notes": []
     },
     "CNY": {
       "verdict": "Bullish",
