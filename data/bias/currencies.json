@@ -1,18 +1,29 @@
 {
   "meta": {
-    "updated": "2026-09-25T01:14:53+00:00",
+    "updated": "2026-09-25T18:03:38+00:00",
     "method": "verdict v3 (forecast-first, released-only)"
   },
   "currencies": {
     "USD": {
       "verdict": "Neutral",
       "tally": {
-        "bullish": 3.5,
-        "bearish": 1.0,
+        "bullish": 4.0,
+        "bearish": 0.5,
         "neutral": 14.0
       },
       "released_points": 13,
       "drivers": [
+        {
+          "dataPoint": "CB Consumer Confidence / UoM Consumer Sentiment",
+          "title": "Michigan Consumer Sentiment Final SEP",
+          "period": "2026-09-25T18:00+00:00",
+          "actual": "48.1",
+          "previous": "51.7",
+          "forecast": "47.8",
+          "direction": "higher_is_bullish",
+          "verdict": "bullish",
+          "weight": 0.5
+        },
         {
           "dataPoint": "Building Permits & Housing Starts",
           "title": "New Home Sales AUG",
@@ -67,17 +78,6 @@
           "direction": "higher_is_bullish",
           "verdict": "bullish",
           "weight": 1.0
-        },
-        {
-          "dataPoint": "CB Consumer Confidence / UoM Consumer Sentiment",
-          "title": "Michigan Consumer Sentiment Prel SEP",
-          "period": "2026-09-11T18:00+00:00",
-          "actual": "47.8",
-          "previous": "51.7",
-          "forecast": "51.5",
-          "direction": "higher_is_bullish",
-          "verdict": "bearish",
-          "weight": 0.5
         },
         {
           "dataPoint": "CPI & Core CPI (m/m, y/y)",
@@ -522,14 +522,25 @@
       "notes": []
     },
     "MXN": {
-      "verdict": "Neutral",
+      "verdict": "Bearish",
       "tally": {
         "bullish": 0.0,
-        "bearish": 0.0,
+        "bearish": 1.0,
         "neutral": 3.0
       },
-      "released_points": 1,
+      "released_points": 2,
       "drivers": [
+        {
+          "dataPoint": "Unemployment Rate",
+          "title": "Unemployment Rate AUG",
+          "period": "2026-09-25T16:00+00:00",
+          "actual": "3%",
+          "previous": "2.9%",
+          "forecast": "2.9%",
+          "direction": "lower_is_bullish",
+          "verdict": "bearish",
+          "weight": 1.0
+        },
         {
           "dataPoint": "Banxico Overnight Rate / Rate Decision",
           "title": "Interest Rate Decision",
@@ -545,14 +556,25 @@
       "notes": []
     },
     "BRL": {
-      "verdict": "Neutral",
+      "verdict": "Bullish",
       "tally": {
-        "bullish": 0.0,
+        "bullish": 2.0,
         "bearish": 0.0,
         "neutral": 3.0
       },
-      "released_points": 1,
+      "released_points": 2,
       "drivers": [
+        {
+          "dataPoint": "CPI y/y (IPCA)",
+          "title": "IPCA mid-month CPI MoM SEP",
+          "period": "2026-09-25T16:00+00:00",
+          "actual": "0.7%",
+          "previous": "-0.4%",
+          "forecast": "0.3%",
+          "direction": "higher_is_bullish",
+          "verdict": "bullish",
+          "weight": 2.0
+        },
         {
           "dataPoint": "Selic Rate / COPOM Decision",
           "title": "Interest Rate Decision",

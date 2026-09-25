@@ -2470,6 +2470,16 @@
     "period": "2026-08-01"
   },
   {
+    "title": "UoM Consumer Sentiment",
+    "country": "USD",
+    "date_utc": "2026-08-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "51.7",
+    "previous": "55.2",
+    "source_series": "UMCSENT",
+    "period": "2026-08-01"
+  },
+  {
     "title": "Unemployment Rate",
     "country": "CAD",
     "date_utc": "2026-08-01T00:00:00+00:00",

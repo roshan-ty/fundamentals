@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-25T01:14:53+00:00",
+  "updated": "2026-09-25T18:03:38+00:00",
   "releases": [
     {
       "country": "USD",
@@ -115,11 +115,11 @@
       "dataPoint": "CB Consumer Confidence / UoM Consumer Sentiment",
       "weight": 0.5,
       "direction": "higher_is_bullish",
-      "period": "2026-09-11T18:00+00:00",
-      "title": "Michigan Consumer Sentiment Prel SEP",
-      "actual": "47.8",
+      "period": "2026-09-25T18:00+00:00",
+      "title": "Michigan Consumer Sentiment Final SEP",
+      "actual": "48.1",
       "previous": "51.7",
-      "forecast": "51.5"
+      "forecast": "47.8"
     },
     {
       "country": "GBP",
@@ -480,6 +480,30 @@
       "actual": "6.5%",
       "previous": "6.5%",
       "forecast": "6.5%"
+    },
+    {
+      "country": "BRL",
+      "dataPointId": "br_cpi",
+      "dataPoint": "CPI y/y (IPCA)",
+      "weight": 1.5,
+      "direction": "higher_is_bullish",
+      "period": "2026-09-25T16:00+00:00",
+      "title": "IPCA mid-month CPI MoM SEP",
+      "actual": "0.7%",
+      "previous": "-0.4%",
+      "forecast": "0.3%"
+    },
+    {
+      "country": "MXN",
+      "dataPointId": "mx_unemployment",
+      "dataPoint": "Unemployment Rate",
+      "weight": 0.5,
+      "direction": "lower_is_bullish",
+      "period": "2026-09-25T16:00+00:00",
+      "title": "Unemployment Rate AUG",
+      "actual": "3%",
+      "previous": "2.9%",
+      "forecast": "2.9%"
     },
     {
       "country": "SGD",

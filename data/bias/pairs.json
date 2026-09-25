@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-09-25T01:14:53+00:00",
+    "updated": "2026-09-25T18:03:38+00:00",
     "total": 82,
     "scored": 82
   },
@@ -450,27 +450,27 @@
     {
       "symbol": "USDMXN",
       "class": "fx",
-      "verdict": "Neutral",
+      "verdict": "Bullish",
       "base": "USD",
       "quote": "MXN",
       "base_verdict": "Neutral",
-      "quote_verdict": "Neutral",
+      "quote_verdict": "Bearish",
       "drivers": [
         "USD: Neutral",
-        "MXN: Neutral"
+        "MXN: Bearish"
       ]
     },
     {
       "symbol": "USDBRL",
       "class": "fx",
-      "verdict": "Neutral",
+      "verdict": "Bearish",
       "base": "USD",
       "quote": "BRL",
       "base_verdict": "Neutral",
-      "quote_verdict": "Neutral",
+      "quote_verdict": "Bullish",
       "drivers": [
         "USD: Neutral",
-        "BRL: Neutral"
+        "BRL: Bullish"
       ]
     },
     {
