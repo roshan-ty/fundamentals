@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-09-24T18:01:03+00:00",
+    "updated": "2026-09-25T01:14:53+00:00",
     "method": "verdict v3 (forecast-first, released-only)"
   },
   "currencies": {
@@ -524,15 +524,25 @@
     "MXN": {
       "verdict": "Neutral",
       "tally": {
-        "bullish": 0,
-        "bearish": 0,
-        "neutral": 0
+        "bullish": 0.0,
+        "bearish": 0.0,
+        "neutral": 3.0
       },
-      "released_points": 0,
-      "drivers": [],
-      "notes": [
-        "no released data yet"
-      ]
+      "released_points": 1,
+      "drivers": [
+        {
+          "dataPoint": "Banxico Overnight Rate / Rate Decision",
+          "title": "Interest Rate Decision",
+          "period": "2026-09-24T23:00+00:00",
+          "actual": "6.5%",
+          "previous": "6.5%",
+          "forecast": "6.5%",
+          "direction": "higher_is_bullish",
+          "verdict": "neutral",
+          "weight": 3.0
+        }
+      ],
+      "notes": []
     },
     "BRL": {
       "verdict": "Neutral",
@@ -717,7 +727,7 @@
     "china_pmi_sig": 0,
     "oil_direction": "flat",
     "risk_mode": "flat",
-    "dxy_level": 100.82,
+    "dxy_level": 100.84,
     "gold_level": 4390.39382
   }
 }

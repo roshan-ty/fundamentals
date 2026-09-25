@@ -9318,15 +9318,6 @@
     "source": "ff-feed"
   },
   {
-    "title": "President Trump Speaks",
-    "country": "USD",
-    "date_utc": "2026-09-24T14:15+00:00",
-    "impact": "Medium",
-    "forecast": "",
-    "previous": "",
-    "actual": ""
-  },
-  {
     "title": "Natural Gas Storage",
     "country": "USD",
     "date_utc": "2026-09-24T14:30+00:00",
@@ -9692,7 +9683,7 @@
     "impact": "",
     "forecast": "3.5%",
     "previous": "2.7%",
-    "actual": "",
+    "actual": "-1.4%",
     "source": "te"
   },
   {
@@ -9702,7 +9693,7 @@
     "impact": "",
     "forecast": "6.5%",
     "previous": "6.5%",
-    "actual": "",
+    "actual": "6.5%",
     "source": "te"
   },
   {
@@ -9728,13 +9719,22 @@
     "source": "ff-feed"
   },
   {
+    "title": "President Trump Speaks",
+    "country": "USD",
+    "date_utc": "2026-09-24T23:55+00:00",
+    "impact": "Medium",
+    "forecast": "",
+    "previous": "",
+    "actual": ""
+  },
+  {
     "title": "Fed Balance Sheet SEP/23",
     "country": "USD",
     "date_utc": "2026-09-25T00:30+00:00",
     "impact": "",
     "forecast": "",
     "previous": "$6.747T",
-    "actual": "",
+    "actual": "$6.748T",
     "source": "te"
   },
   {
@@ -9744,7 +9744,7 @@
     "impact": "",
     "forecast": "-19",
     "previous": "-14",
-    "actual": "",
+    "actual": "-13",
     "source": "te"
   },
   {
@@ -13631,6 +13631,16 @@
     "source": "te"
   },
   {
+    "title": "S&P Global PMI SEP",
+    "country": "SGD",
+    "date_utc": "2026-10-05T04:30+00:00",
+    "impact": "",
+    "forecast": "56.4",
+    "previous": "59.4",
+    "actual": "",
+    "source": "te"
+  },
+  {
     "title": "S&P Global Composite PMI Final SEP",
     "country": "EUR",
     "date_utc": "2026-10-05T11:55+00:00",
@@ -16907,6 +16917,46 @@
     "impact": "",
     "forecast": "",
     "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "API Crude Oil Stock Change OCT/16",
+    "country": "USD",
+    "date_utc": "2026-10-21T00:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Balance of Trade SEP",
+    "country": "JPY",
+    "date_utc": "2026-10-21T03:50+00:00",
+    "impact": "",
+    "forecast": " -250B",
+    "previous": "-1105.6B",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Exports YoY SEP",
+    "country": "JPY",
+    "date_utc": "2026-10-21T03:50+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "19.3%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Imports YoY SEP",
+    "country": "JPY",
+    "date_utc": "2026-10-21T03:50+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "28%",
     "actual": "",
     "source": "te"
   }

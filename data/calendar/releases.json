@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-24T18:01:03+00:00",
+  "updated": "2026-09-25T01:14:53+00:00",
   "releases": [
     {
       "country": "USD",
@@ -468,6 +468,18 @@
       "actual": "-0.7%",
       "previous": "0.5%",
       "forecast": "-0.6%"
+    },
+    {
+      "country": "MXN",
+      "dataPointId": "mx_rate",
+      "dataPoint": "Banxico Overnight Rate / Rate Decision",
+      "weight": 2.0,
+      "direction": "higher_is_bullish",
+      "period": "2026-09-24T23:00+00:00",
+      "title": "Interest Rate Decision",
+      "actual": "6.5%",
+      "previous": "6.5%",
+      "forecast": "6.5%"
     },
     {
       "country": "SGD",
