@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-09-25T18:03:38+00:00"
+    "updated": "2026-09-26T01:15:42+00:00"
   },
   "setups": [
     {
@@ -22,17 +22,8 @@
       "rationale": "Very Bearish — NZD: Bearish · SGD: Bullish"
     },
     {
-      "symbol": "XAGUSD",
-      "name": "XAGUSD",
-      "verdict": "Very Bearish",
-      "direction": "Sell",
-      "confidence": 0.4,
-      "importance": 2,
-      "rationale": "Very Bearish"
-    },
-    {
-      "symbol": "XPTUSD",
-      "name": "XPTUSD",
+      "symbol": "XAUUSD",
+      "name": "XAUUSD",
       "verdict": "Very Bearish",
       "direction": "Sell",
       "confidence": 0.4,
@@ -110,6 +101,15 @@
       "confidence": 1.0,
       "importance": 1,
       "rationale": "Bullish — GBP: Neutral · NZD: Bearish"
+    },
+    {
+      "symbol": "USDSGD",
+      "name": "USDSGD",
+      "verdict": "Bearish",
+      "direction": "Sell",
+      "confidence": 1.0,
+      "importance": 1,
+      "rationale": "Bearish — USD: Neutral · SGD: Bullish"
     }
   ]
 }

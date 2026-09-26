@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-09-25T18:03:38+00:00",
+    "updated": "2026-09-26T01:15:42+00:00",
     "total": 82,
     "scored": 82
   },
@@ -787,24 +787,24 @@
     {
       "symbol": "XAUUSD",
       "class": "metals",
-      "verdict": "Neutral",
-      "base_verdict": "Neutral",
+      "verdict": "Very Bearish",
+      "base_verdict": "Very Bearish",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "XAGUSD",
       "class": "metals",
-      "verdict": "Very Bearish",
-      "base_verdict": "Very Bearish",
+      "verdict": "Neutral",
+      "base_verdict": "Neutral",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "XPTUSD",
       "class": "metals",
-      "verdict": "Very Bearish",
-      "base_verdict": "Very Bearish",
+      "verdict": "Neutral",
+      "base_verdict": "Neutral",
       "quote_verdict": null,
       "drivers": []
     },
@@ -819,24 +819,24 @@
     {
       "symbol": "OIL",
       "class": "energy",
-      "verdict": "Bearish",
-      "base_verdict": "Bearish",
-      "quote_verdict": null,
-      "drivers": []
-    },
-    {
-      "symbol": "BRENT",
-      "class": "energy",
       "verdict": "Bullish",
       "base_verdict": "Bullish",
       "quote_verdict": null,
       "drivers": []
     },
     {
-      "symbol": "COPPER",
+      "symbol": "BRENT",
       "class": "energy",
       "verdict": "Bearish",
       "base_verdict": "Bearish",
+      "quote_verdict": null,
+      "drivers": []
+    },
+    {
+      "symbol": "COPPER",
+      "class": "energy",
+      "verdict": "Bullish",
+      "base_verdict": "Bullish",
       "quote_verdict": null,
       "drivers": []
     },

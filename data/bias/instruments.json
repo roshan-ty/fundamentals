@@ -1,10 +1,19 @@
 {
   "meta": {
-    "updated": "2026-09-25T18:03:38+00:00",
+    "updated": "2026-09-26T01:15:42+00:00",
     "method": "verdict v3"
   },
   "instruments": {
     "XAUUSD": {
+      "verdict": "Very Bearish",
+      "halo": "signal -2",
+      "notes": [
+        "institutional flow leans adverse",
+        "real-yield rising (headwind)"
+      ],
+      "cot_tilt": -1.0
+    },
+    "XAGUSD": {
       "verdict": "Neutral",
       "halo": "signal +0",
       "notes": [
@@ -13,23 +22,14 @@
       ],
       "cot_tilt": 1.0
     },
-    "XAGUSD": {
-      "verdict": "Very Bearish",
-      "halo": "signal -2",
-      "notes": [
-        "institutional flow leans adverse",
-        "real-yield rising (headwind)"
-      ],
-      "cot_tilt": -1.0
-    },
     "XPTUSD": {
-      "verdict": "Very Bearish",
-      "halo": "signal -2",
+      "verdict": "Neutral",
+      "halo": "signal +0",
       "notes": [
-        "institutional flow leans adverse",
+        "institutional flow leans supportive",
         "real-yield rising (headwind)"
       ],
-      "cot_tilt": -1.0
+      "cot_tilt": 1.0
     },
     "XPDUSD": {
       "verdict": "Very Bearish",
@@ -41,14 +41,6 @@
       "cot_tilt": -1.0
     },
     "OIL": {
-      "verdict": "Bearish",
-      "halo": "signal -1",
-      "notes": [
-        "institutional flow leans adverse"
-      ],
-      "cot_tilt": -1.0
-    },
-    "BRENT": {
       "verdict": "Bullish",
       "halo": "signal +1",
       "notes": [
@@ -56,13 +48,21 @@
       ],
       "cot_tilt": 1.0
     },
-    "COPPER": {
+    "BRENT": {
       "verdict": "Bearish",
       "halo": "signal -1",
       "notes": [
         "institutional flow leans adverse"
       ],
       "cot_tilt": -1.0
+    },
+    "COPPER": {
+      "verdict": "Bullish",
+      "halo": "signal +1",
+      "notes": [
+        "institutional flow leans supportive"
+      ],
+      "cot_tilt": 1.0
     },
     "US500": {
       "verdict": "Bearish",
