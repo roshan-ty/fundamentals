@@ -33,15 +33,25 @@ def _verdict_band(bshare, bshare_signed):
 
 
 def data_point_verdict(rec):
-    """Forecast-first verdict for one released reading.
-    rec: {actual, previous, forecast, direction}.
-    Forecast present: beats forecast = bullish, misses = bearish, matches = neutral
-    (respecting the data point's directional semantics, e.g. unemployment).
-    No forecast: falls back to actual-vs-previous (unchanged = neutral)."""
-    direction = rec.get("direction", "higher_is_bullish")
+    """Verdict for one released reading.
+    rec: {actual, previous, forecast, direction, level?}.
+    Level rules (PMI-type, rec['level'] = {threshold, higher_is_bullish}) dominate
+    the forecast comparison: a PMI above 50 is an expansion signal even when it
+    misses its forecast. Otherwise forecast-first; fallback actual-vs-previous."""
     actual = norm_num(rec.get("actual"))
     if actual is None:
         return "neutral"
+    lvl = rec.get("level")
+    if lvl:
+        thr = norm_num(lvl.get("threshold"))
+        if thr is not None:
+            hi = lvl.get("higher_is_bullish", True)
+            if actual > thr:
+                return "bullish" if hi else "bearish"
+            if actual < thr:
+                return "bearish" if hi else "bullish"
+            return "neutral"
+    direction = rec.get("direction", "higher_is_bullish")
     forecast = norm_num(rec.get("forecast"))
     if forecast is not None:
         if direction == "lower_is_bullish":
@@ -63,7 +73,11 @@ def _all_events():
 
 def build_releases():
     """Latest RELEASED reading per (currency, scorecard dataPoint).
-    Pending data points simply don't appear; their prior release is retained."""
+    A candidate that carries a forecast (economic-calendar row) is preferred over
+    a FRED-history row that only has actual/previous, so forecast-first judgment
+    applies to every point. Pending rows are skipped; the prior release is kept
+    until the next one publishes. The 2-Year Treasury yield trend (21-day SMA)
+    is injected as a scored market input for USD."""
     sc = load_scorecard()
     releases = {}
     for ev in _all_events():
@@ -76,25 +90,60 @@ def build_releases():
             continue
         dkey = f"{country}|{dp['id']}"
         date_cur = ev.get("date_utc") or ev.get("period", "")
+        rec = {
+            "country": country,
+            "dataPointId": dp["id"],
+            "dataPoint": dp["name"],
+            "weight": dp["weight"],
+            "direction": dp["direction"],
+            "period": date_cur,
+            "title": ev.get("title", ""),
+            "actual": str(actual),
+            "previous": str(ev.get("previous") or ""),
+            "forecast": str(ev.get("forecast") or ""),
+        }
         prev = releases.get(dkey)
-        if prev is None or (prev.get("period") or "") < date_cur:
-            releases[dkey] = {
-                "country": country,
-                "dataPointId": dp["id"],
-                "dataPoint": dp["name"],
-                "weight": dp["weight"],
-                "direction": dp["direction"],
-                "period": date_cur,
-                "title": ev.get("title", ""),
-                "actual": str(actual),
-                "previous": str(ev.get("previous") or ""),
-                "forecast": str(ev.get("forecast") or ""),
+        if prev is None or _candidate_priority(rec, prev):
+            releases[dkey] = rec
+
+    # 2-Year Treasury yield trend (21-day SMA) ? a scored market input.
+    try:
+        fred = load_json(os.path.join(DATA_DIR, "macro", "fred.json"), default={})
+        pts = (fred.get("DGS2", {}) or {}).get("points") or []
+        vals = [p["value"] for p in pts if p.get("value") is not None]
+        if len(vals) >= 21:
+            sma = sum(vals[-21:]) / 21.0
+            last2 = vals[-1]
+            last_d = (pts[-1].get("date") or "")
+            releases["USD|us_yield2y"] = {
+                "country": "USD",
+                "dataPointId": "us_yield2y",
+                "dataPoint": "2-Year Treasury Yield (21-day trend)",
+                "weight": 1.0,
+                "direction": "higher_is_bullish",
+                "period": f"{last_d}T00:00:00+00:00",
+                "title": "2-Year Treasury Yield",
+                "actual": f"{last2:.2f}",
+                "previous": f"{sma:.2f}",
+                "forecast": "",
             }
+    except Exception as exc:
+        log(f"2Y yield release injection skipped: {exc}", "WARN")
     return releases
+
+
+def _candidate_priority(new_rec, old_rec):
+    """Prefer a released reading that carries a forecast, then the newer one."""
+    nf = 1 if str(new_rec.get("forecast") or "").strip() else 0
+    of = 1 if str(old_rec.get("forecast") or "").strip() else 0
+    if nf != of:
+        return nf > of
+    return (new_rec.get("period") or "") > (old_rec.get("period") or "")
 def _tally_for_currency(currency, releases, rules):
     cfg = rules.get("currencies", {}).get(currency, {})
     tiers = cfg.get("dataPoints", {})
     weights = rules.get("weights", {})
+    level_rules = rules.get("levelRules", {})
     bull = bear = neut = 0.0
     drivers = []
     recs = []
@@ -103,6 +152,9 @@ def _tally_for_currency(currency, releases, rules):
             continue
         tier = tiers.get(rec["dataPointId"], "Medium")
         w = weights.get(tier, 1.0)
+        lvl = level_rules.get(rec["dataPointId"])
+        if lvl and "level" not in rec:
+            rec = {**rec, "level": lvl}
         verdict = data_point_verdict(rec)
         if verdict == "bullish":
             bull += w
@@ -133,6 +185,11 @@ def _apply_specials(currency, base_band, bull, bear, releases, rules, context):
     cfg = rules.get("currencies", {}).get(currency, {})
     specials = cfg.get("specials", [])
     release_records = list(releases.values())
+    level_rules = rules.get("levelRules", {})
+    for _r in release_records:
+        _lv = level_rules.get(_r.get("dataPointId"))
+        if _lv and "level" not in _r:
+            _r["level"] = _lv
     for name in specials:
         spec = rules.get("specials", {}).get(name)
         if not spec:
@@ -217,7 +274,7 @@ def currency_verdict(currency, releases, rules, context):
 # ── market context (real yields, DXY level, quotes, M2, COT) ───────────────
 def build_context(releases):
     ctx = {"real_yield_sig": 0, "dxy_sig": 0, "m2_sig": 0, "china_pmi_sig": 0,
-           "oil_direction": "flat", "risk_mode": "flat", "cot": {}}
+           "yield2y_sig": 0, "oil_direction": "flat", "risk_mode": "flat", "cot": {}}
     fred = load_json(os.path.join(DATA_DIR, "macro", "fred.json"), default={})
 
     def latest(series):
@@ -245,6 +302,17 @@ def build_context(releases):
     ry_old = year_ago("DFII10", 6)
     if ry is not None and ry_old is not None:
         ctx["real_yield_sig"] = -1 if ry < ry_old - 0.15 else (1 if ry > ry_old + 0.15 else 0)
+
+    # 2-Year Treasury yield trend vs 21-day SMA (scored market input: rising 2Y
+    # is bullish USD and a headwind for inverse instruments).
+    d2pts = fred.get("DGS2", {}).get("points") or []
+    d2v = [p["value"] for p in d2pts if p.get("value") is not None]
+    if len(d2v) >= 21:
+        sma2 = sum(d2v[-21:]) / 21.0
+        last2 = d2v[-1]
+        ctx["yield2y_level"] = last2
+        ctx["yield2y_sma"] = round(sma2, 3)
+        ctx["yield2y_sig"] = 1 if last2 > sma2 + 0.02 else (-1 if last2 < sma2 - 0.02 else 0)
 
     m2 = latest("M2SL")
     m2_old = year_ago("M2SL", 12)
@@ -313,6 +381,7 @@ def instrument_verdict(sym, cfg, releases, context):
     if kind in ("metal", "industrial"):
         sig -= context["real_yield_sig"]      # RISING real yields bearish metal
         sig += -1 * context.get("dxy_sig", 0)  # strong USD -> bearish metal
+        sig -= context.get("yield2y_sig", 0)   # RISING 2Y yield bearish metal
         sig += -usd_anchor                     # inverse-USD rule
         if kind == "industrial":
             sig += context["china_pmi_sig"]    # Chinese industry drives copper/pt/pd
@@ -324,11 +393,16 @@ def instrument_verdict(sym, cfg, releases, context):
             notes.append("real-yield " + ("falling (supportive)" if context["real_yield_sig"] < 0 else "rising (headwind)"))
         if context.get("dxy_sig") != 0:
             notes.append("USD index " + ("weak (supportive)" if context["dxy_sig"] < 0 else "strong (headwind)"))
+        if context.get("yield2y_sig", 0) != 0:
+            notes.append("2Y yield " + ("rising (headwind)" if context["yield2y_sig"] > 0 else "falling (supportive)"))
     elif kind == "energy":
         sig += context["china_pmi_sig"]
         sig += -usd_anchor
+        sig -= context.get("yield2y_sig", 0)
         if context["china_pmi_sig"] != 0:
             notes.append("industrial demand PMI " + ("expanding" if context["china_pmi_sig"] > 0 else "contracting"))
+        if context.get("yield2y_sig", 0) != 0:
+            notes.append("2Y yield " + ("rising (headwind)" if context["yield2y_sig"] > 0 else "falling (supportive)"))
         if cot:
             sig += 1 if cot > 0 else (-1 if cot < 0 else 0)
             notes.append("institutional flow leans " + ("supportive" if cot > 0 else "adverse"))
@@ -341,9 +415,12 @@ def instrument_verdict(sym, cfg, releases, context):
     elif kind == "crypto":
         sig += context["m2_sig"]
         sig += -1 * context.get("dxy_sig", 0)
+        sig -= context.get("yield2y_sig", 0)
         sig += -usd_anchor
         if context["m2_sig"] != 0:
             notes.append("liquidity " + ("expanding" if context["m2_sig"] > 0 else "contracting"))
+        if context.get("yield2y_sig", 0) != 0:
+            notes.append("2Y yield " + ("rising (headwind)" if context["yield2y_sig"] > 0 else "falling (supportive)"))
         if context.get("dxy_sig") != 0:
             notes.append("USD index " + ("weak (supportive)" if context["dxy_sig"] < 0 else "strong (headwind)"))
     if usd_anchor and kind in ("metal", "industrial", "energy", "crypto"):

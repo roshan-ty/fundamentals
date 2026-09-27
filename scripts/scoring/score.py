@@ -127,18 +127,20 @@ _TITLE_MATCHERS = {
         "us_cpi": ["CPI m/m", "CPI y/y", "Core CPI m/m", "Core CPI y/y", "CPI x"],
         "us_pce": ["Core PCE", "PCE Price"],
         "us_gdp": ["GDP q/q", "GDP y/y", "Advance GDP", "Gross Domestic Product"],
-        "us_ism": ["ISM Manufacturing", "ISM Services"],
+        "us_ism": ["ISM Manufacturing", "ISM Services", "Manufacturing PMI", "Services PMI", "S&P Global Manufact", "S&P Global Services"],
         "us_retail": ["Retail Sales"],
-        "us_adp": ["ADP Non-Farm Employment Change", "ADP Employment", "ADP Nonfarm"],
+        "us_adp": ["ADP Non-Farm Employment Change", "ADP Employment", "ADP Nonfarm", "ADP"],
         "us_claims": ["Initial Jobless Claims", "Jobless Claims", "Unemployment Claims"],
         "us_ppi": ["PPI m/m", "PPI y/y", "Core PPI", "Producer Prices"],
         "us_confidence": ["CB Consumer Confidence", "Michigan Consumer Sentiment", "UoM Consumer Sentiment", "Consumer Confidence"],
         "us_housing": ["Building Permits", "Housing Starts", "New Home Sales", "Existing Home Sales"],
         "us_trade": ["Trade Balance"],
+        "us_jolts": ["JOLTS", "Job Openings"],
+        "us_yield2y": ["2-Year Treasury Yield"],
     },
     "EUR": {
         "eu_ecb_rate": ["ECB Interest Rate", "Main Refinancing", "ECB Press Conference", "ECB Monetary Policy", "ECB Rate", "ECB Statement"],
-        "eu_cpi_flash": ["CPI Flash", "HICP", "Euro Zone CPI", "EU CPI"],
+        "eu_cpi_flash": ["CPI Flash", "HICP", "Euro Zone CPI", "EU CPI", "cpi", "inflation"],
         "eu_de_pmi": ["German Flash Manufacturing PMI", "German Flash Services PMI", "German Manufacturing PMI", "German Services PMI", "German Flash Manufacturing", "German Flash Services"],
         "eu_ifo": ["IFO Business Climate", "IFO"],
         "eu_zew": ["ZEW Economic Sentiment"],
@@ -250,6 +252,11 @@ def _normalize_title(title):
     t = re.sub(r"\bmom\b", "m/m", t)
     t = re.sub(r"\byoy\b", "y/y", t)
     t = re.sub(r"\booq\b", "q/q", t)
+    # Unify provider stylings so scorecard keywords always hit:
+    # "Inflation Rate YoY AUG" -> cpi y/y aug, "Producer Prices" -> ppi
+    t = re.sub(r"\bconsumer price index\b", "cpi", t)
+    t = re.sub(r"\binflation rate\b", "cpi", t)
+    t = re.sub(r"\bproducer prices\b", "ppi", t)
     return t
 
 

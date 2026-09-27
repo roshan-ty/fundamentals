@@ -125,3 +125,76 @@ def test_band_map():
     assert v._verdict_band(0.5, 0.0) == "Neutral"
     assert v._verdict_band(0.2, -0.3) == "Bearish"
     assert v._verdict_band(0.1, -0.7) == "Very Bearish"
+
+# ?? engine v4: level rules, forecast priority, 2Y yield, JOLTS ????????
+def test_pmi_level_threshold_dominates_forecast():
+    r = _release("USD", "us_ism", "ISM Manufacturing PMI", "54.6", forecast="55.2")
+    r["level"] = {"threshold": 50, "higher_is_bullish": True}
+    assert v.data_point_verdict(r) == "bullish"
+    r2 = _release("USD", "us_ism", "ISM Manufacturing PMI", "49.5", forecast="48.5")
+    r2["level"] = {"threshold": 50, "higher_is_bullish": True}
+    assert v.data_point_verdict(r2) == "bearish"
+    r3 = _release("USD", "us_ism", "ISM Manufacturing PMI", "50.0", forecast="49.0")
+    r3["level"] = {"threshold": 50, "higher_is_bullish": True}
+    assert v.data_point_verdict(r3) == "neutral"
+
+
+def test_jolts_and_adp_map_in_scorecard():
+    from scoring.score import match_data_point
+    from common.utils import load_scorecard
+    sc = load_scorecard()
+    dp = match_data_point(sc, "USD", "JOLTS Job Openings")
+    assert dp and dp["id"] == "us_jolts"
+    dp2 = match_data_point(sc, "USD", "ADP Employment Change")
+    assert dp2 and dp2["id"] == "us_adp"
+
+
+def test_candidate_priority_prefers_forecast_then_newer():
+    assert v._candidate_priority({"forecast": "3.4%", "period": "2026-09-01"},
+                                 {"forecast": "", "period": "2026-08-01"}) is True
+    assert v._candidate_priority({"forecast": "", "period": "2026-08-01"},
+                                 {"forecast": "3.4%", "period": "2026-09-01"}) is False
+    assert v._candidate_priority({"forecast": "3.4%", "period": "2026-09-01"},
+                                 {"forecast": "3.5%", "period": "2026-08-01"}) is True
+    assert v._candidate_priority({"forecast": "3.5%", "period": "2026-08-01"},
+                                 {"forecast": "3.5%", "period": "2026-09-01"}) is False
+
+
+def test_usd_14point_scenario_yields_bullish():
+    rules = v.load_config("verdict_rules.json")
+    ctx = {"oil_direction": "flat", "risk_mode": "flat", "cot": {}}
+    rel = {
+        "USD|us_gdp": _release("USD", "us_gdp", "Advance GDP (q/q)", "1.50%", forecast="1.50%"),
+        "USD|us_ism": _release("USD", "us_ism", "Manufacturing PMI", "54.6", forecast="55.2"),
+        "USD|us_retail": _release("USD", "us_retail", "Retail Sales MoM", "1.20%", forecast="0.80%"),
+        "USD|us_confidence": _release("USD", "us_confidence", "Consumer Confidence", "89.4", forecast="90.3"),
+        "USD|us_cpi": _release("USD", "us_cpi", "CPI YoY", "3.4%", forecast="3.4%"),
+        "USD|us_ppi": _release("USD", "us_ppi", "PPI YoY", "5.4%", forecast="5.3%"),
+        "USD|us_pce": _release("USD", "us_pce", "Core PCE YoY", "3.3%", forecast="3.3%"),
+        "USD|us_yield2y": _release("USD", "us_yield2y", "2-Year Treasury Yield (21-day trend)", "4.56", previous="4.38"),
+        "USD|us_nfp": _release("USD", "us_nfp", "Non-Farm Employment Change", "162K", forecast="55K"),
+        "USD|us_unemployment": _release("USD", "us_unemployment", "Unemployment Rate", "4.1%", forecast="4.1%", direction="lower_is_bullish"),
+        "USD|us_claims": _release("USD", "us_claims", "Initial Jobless Claims", "197K", forecast="201K", direction="lower_is_bullish"),
+        "USD|us_adp": _release("USD", "us_adp", "ADP Employment Change", "38K", forecast="47K"),
+        "USD|us_jolts": _release("USD", "us_jolts", "JOLTS Job Openings", "7.27M", forecast="7.33M"),
+    }
+    res = v.currency_verdict("USD", rel, rules, ctx)
+    assert res["verdict"] == "Bullish", res
+    assert res["tally"]["bullish"] > res["tally"]["bearish"]
+
+
+def test_gold_bearish_when_usd_bullish_and_2y_rising():
+    cfg = {"kind": "metal"}
+    base = {"real_yield_sig": 0, "dxy_sig": 0, "m2_sig": 0, "china_pmi_sig": 0,
+            "oil_direction": "flat", "risk_mode": "flat", "cot": {"XAUUSD": 0}}
+    out = v.instrument_verdict("XAUUSD", cfg, {}, dict(base, usd_anchor=1, yield2y_sig=1))
+    assert out["verdict"] in ("Bearish", "Very Bearish"), out
+    assert any("2Y yield" in n for n in out["notes"])
+
+
+def test_yield2y_injected_into_releases():
+    rel = v.build_releases()
+    key = "USD|us_yield2y"
+    assert key in rel, sorted(rel.keys())[:10]
+    assert rel[key]["dataPoint"] == "2-Year Treasury Yield (21-day trend)"
+    assert rel[key]["actual"]
