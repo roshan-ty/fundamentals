@@ -1,226 +1,276 @@
 {
   "meta": {
-    "updated": "2026-09-26T01:15:42+00:00",
+    "updated": "2026-09-27T14:16:12+00:00",
     "method": "verdict v3"
   },
   "instruments": {
     "XAUUSD": {
       "verdict": "Very Bearish",
-      "halo": "signal -2",
+      "halo": "signal -5",
       "notes": [
         "institutional flow leans adverse",
-        "real-yield rising (headwind)"
+        "real-yield rising (headwind)",
+        "2Y yield rising (headwind)",
+        "USD strong — inverse headwind"
       ],
       "cot_tilt": -1.0
     },
     "XAGUSD": {
-      "verdict": "Neutral",
-      "halo": "signal +0",
+      "verdict": "Very Bearish",
+      "halo": "signal -3",
       "notes": [
         "institutional flow leans supportive",
-        "real-yield rising (headwind)"
+        "real-yield rising (headwind)",
+        "2Y yield rising (headwind)",
+        "USD strong — inverse headwind"
       ],
       "cot_tilt": 1.0
     },
     "XPTUSD": {
-      "verdict": "Neutral",
-      "halo": "signal +0",
+      "verdict": "Very Bearish",
+      "halo": "signal -3",
       "notes": [
         "institutional flow leans supportive",
-        "real-yield rising (headwind)"
+        "real-yield rising (headwind)",
+        "2Y yield rising (headwind)",
+        "USD strong — inverse headwind"
       ],
       "cot_tilt": 1.0
     },
     "XPDUSD": {
       "verdict": "Very Bearish",
-      "halo": "signal -2",
+      "halo": "signal -5",
       "notes": [
         "institutional flow leans adverse",
-        "real-yield rising (headwind)"
+        "real-yield rising (headwind)",
+        "2Y yield rising (headwind)",
+        "USD strong — inverse headwind"
       ],
       "cot_tilt": -1.0
     },
     "OIL": {
-      "verdict": "Bullish",
-      "halo": "signal +1",
+      "verdict": "Very Bearish",
+      "halo": "signal -2",
       "notes": [
-        "institutional flow leans supportive"
+        "2Y yield rising (headwind)",
+        "institutional flow leans supportive",
+        "USD strong — inverse headwind"
       ],
       "cot_tilt": 1.0
     },
     "BRENT": {
-      "verdict": "Bearish",
-      "halo": "signal -1",
+      "verdict": "Very Bearish",
+      "halo": "signal -4",
       "notes": [
-        "institutional flow leans adverse"
+        "2Y yield rising (headwind)",
+        "institutional flow leans adverse",
+        "USD strong — inverse headwind"
       ],
       "cot_tilt": -1.0
     },
     "COPPER": {
-      "verdict": "Bullish",
-      "halo": "signal +1",
+      "verdict": "Very Bearish",
+      "halo": "signal -2",
       "notes": [
-        "institutional flow leans supportive"
+        "2Y yield rising (headwind)",
+        "institutional flow leans supportive",
+        "USD strong — inverse headwind"
       ],
       "cot_tilt": 1.0
     },
     "US500": {
       "verdict": "Bearish",
-      "halo": "signal -1",
+      "halo": "signal -2",
       "notes": [
-        "real-yield rising (headwind)"
+        "real-yield rising (headwind)",
+        "proxy-derived signal capped at single step"
       ],
       "cot_tilt": 0
     },
     "US100": {
       "verdict": "Bearish",
-      "halo": "signal -1",
+      "halo": "signal -2",
       "notes": [
-        "real-yield rising (headwind)"
+        "real-yield rising (headwind)",
+        "proxy-derived signal capped at single step"
       ],
       "cot_tilt": 0
     },
     "US30": {
       "verdict": "Bearish",
-      "halo": "signal -1",
+      "halo": "signal -2",
       "notes": [
-        "real-yield rising (headwind)"
+        "real-yield rising (headwind)",
+        "proxy-derived signal capped at single step"
       ],
       "cot_tilt": 0
     },
     "GE40": {
       "verdict": "Bearish",
-      "halo": "signal -1",
+      "halo": "signal -2",
       "notes": [
-        "real-yield rising (headwind)"
+        "real-yield rising (headwind)",
+        "proxy-derived signal capped at single step"
       ],
       "cot_tilt": 0
     },
     "EU50": {
       "verdict": "Bearish",
-      "halo": "signal -1",
+      "halo": "signal -2",
       "notes": [
-        "real-yield rising (headwind)"
+        "real-yield rising (headwind)",
+        "proxy-derived signal capped at single step"
       ],
       "cot_tilt": 0
     },
     "GB100": {
       "verdict": "Bearish",
-      "halo": "signal -1",
+      "halo": "signal -2",
       "notes": [
-        "real-yield rising (headwind)"
+        "real-yield rising (headwind)",
+        "proxy-derived signal capped at single step"
       ],
       "cot_tilt": 0
     },
     "FR40": {
       "verdict": "Bearish",
-      "halo": "signal -1",
+      "halo": "signal -2",
       "notes": [
-        "real-yield rising (headwind)"
+        "real-yield rising (headwind)",
+        "proxy-derived signal capped at single step"
       ],
       "cot_tilt": 0
     },
     "JP225": {
       "verdict": "Bearish",
-      "halo": "signal -1",
+      "halo": "signal -2",
       "notes": [
-        "real-yield rising (headwind)"
+        "real-yield rising (headwind)",
+        "proxy-derived signal capped at single step"
       ],
       "cot_tilt": -1.0
     },
     "HK50": {
       "verdict": "Bearish",
-      "halo": "signal -1",
+      "halo": "signal -2",
       "notes": [
-        "real-yield rising (headwind)"
+        "real-yield rising (headwind)",
+        "proxy-derived signal capped at single step"
       ],
       "cot_tilt": 0
     },
     "AUS200": {
       "verdict": "Bearish",
-      "halo": "signal -1",
+      "halo": "signal -2",
       "notes": [
-        "real-yield rising (headwind)"
+        "real-yield rising (headwind)",
+        "proxy-derived signal capped at single step"
       ],
       "cot_tilt": 0
     },
     "CH20": {
       "verdict": "Bearish",
-      "halo": "signal -1",
+      "halo": "signal -2",
       "notes": [
-        "real-yield rising (headwind)"
+        "real-yield rising (headwind)",
+        "proxy-derived signal capped at single step"
       ],
       "cot_tilt": 0
     },
     "ES35": {
       "verdict": "Bearish",
-      "halo": "signal -1",
+      "halo": "signal -2",
       "notes": [
-        "real-yield rising (headwind)"
+        "real-yield rising (headwind)",
+        "proxy-derived signal capped at single step"
       ],
       "cot_tilt": 0
     },
     "BTCUSD": {
-      "verdict": "Bullish",
-      "halo": "signal +1",
+      "verdict": "Bearish",
+      "halo": "signal -2",
       "notes": [
-        "liquidity expanding"
+        "liquidity expanding",
+        "2Y yield rising (headwind)",
+        "USD strong — inverse headwind",
+        "proxy-derived signal capped at single step"
       ],
       "cot_tilt": 0
     },
     "ETHUSD": {
-      "verdict": "Bullish",
-      "halo": "signal +1",
+      "verdict": "Bearish",
+      "halo": "signal -2",
       "notes": [
-        "liquidity expanding"
+        "liquidity expanding",
+        "2Y yield rising (headwind)",
+        "USD strong — inverse headwind",
+        "proxy-derived signal capped at single step"
       ],
       "cot_tilt": 0
     },
     "LTCUSD": {
-      "verdict": "Bullish",
-      "halo": "signal +1",
+      "verdict": "Bearish",
+      "halo": "signal -2",
       "notes": [
-        "liquidity expanding"
+        "liquidity expanding",
+        "2Y yield rising (headwind)",
+        "USD strong — inverse headwind",
+        "proxy-derived signal capped at single step"
       ],
       "cot_tilt": 0
     },
     "SOLUSD": {
-      "verdict": "Bullish",
-      "halo": "signal +1",
+      "verdict": "Bearish",
+      "halo": "signal -2",
       "notes": [
-        "liquidity expanding"
+        "liquidity expanding",
+        "2Y yield rising (headwind)",
+        "USD strong — inverse headwind",
+        "proxy-derived signal capped at single step"
       ],
       "cot_tilt": 0
     },
     "SUIUSD": {
-      "verdict": "Bullish",
-      "halo": "signal +1",
+      "verdict": "Bearish",
+      "halo": "signal -2",
       "notes": [
-        "liquidity expanding"
+        "liquidity expanding",
+        "2Y yield rising (headwind)",
+        "USD strong — inverse headwind",
+        "proxy-derived signal capped at single step"
       ],
       "cot_tilt": 0
     },
     "XLMUSD": {
-      "verdict": "Bullish",
-      "halo": "signal +1",
+      "verdict": "Bearish",
+      "halo": "signal -2",
       "notes": [
-        "liquidity expanding"
+        "liquidity expanding",
+        "2Y yield rising (headwind)",
+        "USD strong — inverse headwind",
+        "proxy-derived signal capped at single step"
       ],
       "cot_tilt": 0
     },
     "XRPUSD": {
-      "verdict": "Bullish",
-      "halo": "signal +1",
+      "verdict": "Bearish",
+      "halo": "signal -2",
       "notes": [
-        "liquidity expanding"
+        "liquidity expanding",
+        "2Y yield rising (headwind)",
+        "USD strong — inverse headwind",
+        "proxy-derived signal capped at single step"
       ],
       "cot_tilt": 0
     },
     "AVAXUSD": {
-      "verdict": "Bullish",
-      "halo": "signal +1",
+      "verdict": "Bearish",
+      "halo": "signal -2",
       "notes": [
-        "liquidity expanding"
+        "liquidity expanding",
+        "2Y yield rising (headwind)",
+        "USD strong — inverse headwind",
+        "proxy-derived signal capped at single step"
       ],
       "cot_tilt": 0
     }

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-26T01:15:42+00:00",
+  "updated": "2026-09-27T14:16:12+00:00",
   "releases": [
     {
       "country": "USD",
@@ -19,11 +19,11 @@
       "dataPoint": "CPI & Core CPI (m/m, y/y)",
       "weight": 1.5,
       "direction": "higher_is_bullish",
-      "period": "2026-08-01T00:00:00+00:00",
-      "title": "CPI m/m",
-      "actual": "0.4",
-      "previous": "",
-      "forecast": ""
+      "period": "2026-09-11T16:30+00:00",
+      "title": "Core Inflation Rate MoM AUG",
+      "actual": "0.3%",
+      "previous": "0.2%",
+      "forecast": "0.2%"
     },
     {
       "country": "USD",
@@ -200,10 +200,10 @@
       "weight": 0.5,
       "direction": "higher_is_bullish",
       "period": "2026-09-09T05:30+00:00",
-      "title": "PPI YoY AUG",
-      "actual": "3.8%",
-      "previous": "3.5%",
-      "forecast": "3.6%"
+      "title": "Inflation Rate YoY AUG",
+      "actual": "0.8%",
+      "previous": "0.5%",
+      "forecast": "0.7%"
     },
     {
       "country": "EUR",
@@ -254,16 +254,28 @@
       "forecast": "0.1%"
     },
     {
+      "country": "BRL",
+      "dataPointId": "br_cpi",
+      "dataPoint": "CPI y/y (IPCA)",
+      "weight": 1.5,
+      "direction": "higher_is_bullish",
+      "period": "2026-09-25T16:00+00:00",
+      "title": "IPCA mid-month CPI MoM SEP",
+      "actual": "0.7%",
+      "previous": "-0.4%",
+      "forecast": "0.3%"
+    },
+    {
       "country": "CAD",
       "dataPointId": "ca_cpi",
       "dataPoint": "CPI (m/m, y/y) & Median/Trimmed CPI",
       "weight": 1.5,
       "direction": "higher_is_bullish",
-      "period": "2026-09-14T12:30+00:00",
-      "title": "Median CPI y/y",
-      "actual": "2%",
-      "previous": "2%",
-      "forecast": "2.0%"
+      "period": "2026-09-14T16:30+00:00",
+      "title": "Inflation Rate YoY AUG",
+      "actual": "3%",
+      "previous": "3%",
+      "forecast": "3.0%"
     },
     {
       "country": "CNY",
@@ -326,6 +338,30 @@
       "forecast": "70.0K"
     },
     {
+      "country": "EUR",
+      "dataPointId": "eu_cpi_flash",
+      "dataPoint": "CPI Flash Estimate (y/y) & Core CPI Flash Estimate",
+      "weight": 1.5,
+      "direction": "higher_is_bullish",
+      "period": "2026-09-16T12:00+00:00",
+      "title": "Harmonised Inflation Rate MoM Final AUG",
+      "actual": "0.2%",
+      "previous": "0.9%",
+      "forecast": "0.2%"
+    },
+    {
+      "country": "GBP",
+      "dataPointId": "gb_cpi",
+      "dataPoint": "CPI (y/y) & Core CPI (y/y)",
+      "weight": 1.5,
+      "direction": "higher_is_bullish",
+      "period": "2026-09-16T10:00+00:00",
+      "title": "Inflation Rate YoY AUG",
+      "actual": "3.1%",
+      "previous": "2.9%",
+      "forecast": "3.1%"
+    },
+    {
       "country": "USD",
       "dataPointId": "us_fed_funds",
       "dataPoint": "Federal Funds Rate / FOMC Statement / FOMC Press Conference",
@@ -360,6 +396,18 @@
       "actual": "3.75%",
       "previous": "3.75%",
       "forecast": "3.75%"
+    },
+    {
+      "country": "JPY",
+      "dataPointId": "jp_core_cpi",
+      "dataPoint": "National Core CPI (y/y) & Tokyo Core CPI (y/y)",
+      "weight": 1.5,
+      "direction": "higher_is_bullish",
+      "period": "2026-09-18T03:30+00:00",
+      "title": "Core Inflation Rate YoY AUG",
+      "actual": "1.7%",
+      "previous": "1.8%",
+      "forecast": "1.8%"
     },
     {
       "country": "GBP",
@@ -410,6 +458,30 @@
       "forecast": ""
     },
     {
+      "country": "SGD",
+      "dataPointId": "sg_cpi",
+      "dataPoint": "CPI y/y",
+      "weight": 1.5,
+      "direction": "higher_is_bullish",
+      "period": "2026-09-23T09:00+00:00",
+      "title": "Core Inflation Rate YoY AUG",
+      "actual": "2.2%",
+      "previous": "2%",
+      "forecast": "2.1%"
+    },
+    {
+      "country": "ZAR",
+      "dataPointId": "za_cpi",
+      "dataPoint": "CPI y/y",
+      "weight": 1.5,
+      "direction": "higher_is_bullish",
+      "period": "2026-09-23T12:00+00:00",
+      "title": "Inflation Rate MoM AUG",
+      "actual": "0%",
+      "previous": "0.2%",
+      "forecast": "0.4%"
+    },
+    {
       "country": "ZAR",
       "dataPointId": "za_rate",
       "dataPoint": "SARB Repo Rate Decision",
@@ -420,6 +492,18 @@
       "actual": "7.25%",
       "previous": "7%",
       "forecast": "7.25%"
+    },
+    {
+      "country": "USD",
+      "dataPointId": "us_ism",
+      "dataPoint": "ISM Manufacturing PMI & ISM Services PMI",
+      "weight": 1.0,
+      "direction": "higher_is_bullish",
+      "period": "2026-09-23T17:45+00:00",
+      "title": "S&P Global Manufacturing PMI Flash SEP",
+      "actual": "57",
+      "previous": "53.9",
+      "forecast": "53"
     },
     {
       "country": "AUD",
@@ -471,6 +555,18 @@
     },
     {
       "country": "MXN",
+      "dataPointId": "mx_cpi",
+      "dataPoint": "CPI y/y",
+      "weight": 1.5,
+      "direction": "higher_is_bullish",
+      "period": "2026-09-24T16:00+00:00",
+      "title": "Mid-month Core Inflation Rate MoM SEP",
+      "actual": "0.17%",
+      "previous": "0.08%",
+      "forecast": "0.1%"
+    },
+    {
+      "country": "MXN",
       "dataPointId": "mx_rate",
       "dataPoint": "Banxico Overnight Rate / Rate Decision",
       "weight": 2.0,
@@ -480,18 +576,6 @@
       "actual": "6.5%",
       "previous": "6.5%",
       "forecast": "6.5%"
-    },
-    {
-      "country": "BRL",
-      "dataPointId": "br_cpi",
-      "dataPoint": "CPI y/y (IPCA)",
-      "weight": 1.5,
-      "direction": "higher_is_bullish",
-      "period": "2026-09-25T16:00+00:00",
-      "title": "IPCA mid-month CPI MoM SEP",
-      "actual": "0.7%",
-      "previous": "-0.4%",
-      "forecast": "0.3%"
     },
     {
       "country": "MXN",
@@ -515,6 +599,18 @@
       "title": "MAS 36-Week Bill Auction",
       "actual": "1.77%",
       "previous": "1.65%",
+      "forecast": ""
+    },
+    {
+      "country": "USD",
+      "dataPointId": "us_yield2y",
+      "dataPoint": "2-Year Treasury Yield (21-day trend)",
+      "weight": 1.0,
+      "direction": "higher_is_bullish",
+      "period": "2026-09-24T00:00:00+00:00",
+      "title": "2-Year Treasury Yield",
+      "actual": "4.87",
+      "previous": "4.54",
       "forecast": ""
     }
   ]

@@ -156,11 +156,14 @@ def _tally_for_currency(currency, releases, rules):
         if lvl and "level" not in rec:
             rec = {**rec, "level": lvl}
         verdict = data_point_verdict(rec)
+        # A reading with no forecast AND no previous cannot be judged (nothing to
+        # compare) - it is listed as a driver but does not dilute the tally.
+        has_ref = bool(str(rec.get("forecast") or "").strip()) or             bool(str(rec.get("previous") or "").strip()) or bool(rec.get("level"))
         if verdict == "bullish":
             bull += w
         elif verdict == "bearish":
             bear += w
-        else:
+        elif verdict == "neutral" and has_ref:
             neut += w
         drivers.append({
             "dataPoint": rec["dataPoint"],
@@ -172,6 +175,7 @@ def _tally_for_currency(currency, releases, rules):
             "direction": rec.get("direction", ""),
             "verdict": verdict,
             "weight": w,
+            "note": "" if has_ref else "no reference (forecast/previous) - not scored",
         })
         recs.append(rec)
     drivers.sort(key=lambda x: x.get("period") or "", reverse=True)

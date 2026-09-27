@@ -1,115 +1,115 @@
 {
   "meta": {
-    "updated": "2026-09-26T01:15:42+00:00"
+    "updated": "2026-09-27T14:16:12+00:00"
   },
   "setups": [
     {
-      "symbol": "EURNZD",
-      "name": "EURNZD",
-      "verdict": "Very Bullish",
-      "direction": "Buy",
-      "confidence": 0.9,
-      "importance": 2,
-      "rationale": "Very Bullish — EUR: Bullish · NZD: Bearish"
-    },
-    {
-      "symbol": "NZDSGD",
-      "name": "NZDSGD",
-      "verdict": "Very Bearish",
-      "direction": "Sell",
-      "confidence": 0.6,
-      "importance": 2,
-      "rationale": "Very Bearish — NZD: Bearish · SGD: Bullish"
-    },
-    {
-      "symbol": "XAUUSD",
-      "name": "XAUUSD",
-      "verdict": "Very Bearish",
-      "direction": "Sell",
-      "confidence": 0.4,
-      "importance": 2,
-      "rationale": "Very Bearish"
-    },
-    {
-      "symbol": "XPDUSD",
-      "name": "XPDUSD",
-      "verdict": "Very Bearish",
-      "direction": "Sell",
-      "confidence": 0.4,
-      "importance": 2,
-      "rationale": "Very Bearish"
-    },
-    {
       "symbol": "EURUSD",
       "name": "EURUSD",
-      "verdict": "Bullish",
-      "direction": "Buy",
-      "confidence": 1.0,
-      "importance": 1,
-      "rationale": "Bullish — EUR: Bullish · USD: Neutral"
-    },
-    {
-      "symbol": "EURGBP",
-      "name": "EURGBP",
-      "verdict": "Bullish",
-      "direction": "Buy",
-      "confidence": 1.0,
-      "importance": 1,
-      "rationale": "Bullish — EUR: Bullish · GBP: Neutral"
-    },
-    {
-      "symbol": "EURJPY",
-      "name": "EURJPY",
-      "verdict": "Bullish",
-      "direction": "Buy",
-      "confidence": 1.0,
-      "importance": 1,
-      "rationale": "Bullish — EUR: Bullish · JPY: Neutral"
-    },
-    {
-      "symbol": "EURAUD",
-      "name": "EURAUD",
-      "verdict": "Bullish",
-      "direction": "Buy",
-      "confidence": 1.0,
-      "importance": 1,
-      "rationale": "Bullish — EUR: Bullish · AUD: Neutral"
-    },
-    {
-      "symbol": "EURCAD",
-      "name": "EURCAD",
-      "verdict": "Bullish",
-      "direction": "Buy",
-      "confidence": 1.0,
-      "importance": 1,
-      "rationale": "Bullish — EUR: Bullish · CAD: Neutral"
-    },
-    {
-      "symbol": "GBPEUR",
-      "name": "GBPEUR",
-      "verdict": "Bearish",
+      "verdict": "Very Bearish",
       "direction": "Sell",
       "confidence": 1.0,
-      "importance": 1,
-      "rationale": "Bearish — GBP: Neutral · EUR: Bullish"
+      "importance": 2,
+      "rationale": "Very Bearish — EUR: Neutral · USD: Very Bullish"
     },
     {
-      "symbol": "GBPNZD",
-      "name": "GBPNZD",
-      "verdict": "Bullish",
-      "direction": "Buy",
-      "confidence": 1.0,
-      "importance": 1,
-      "rationale": "Bullish — GBP: Neutral · NZD: Bearish"
-    },
-    {
-      "symbol": "USDSGD",
-      "name": "USDSGD",
-      "verdict": "Bearish",
+      "symbol": "GBPUSD",
+      "name": "GBPUSD",
+      "verdict": "Very Bearish",
       "direction": "Sell",
       "confidence": 1.0,
-      "importance": 1,
-      "rationale": "Bearish — USD: Neutral · SGD: Bullish"
+      "importance": 2,
+      "rationale": "Very Bearish — GBP: Neutral · USD: Very Bullish"
+    },
+    {
+      "symbol": "USDJPY",
+      "name": "USDJPY",
+      "verdict": "Very Bullish",
+      "direction": "Buy",
+      "confidence": 1.0,
+      "importance": 2,
+      "rationale": "Very Bullish — USD: Very Bullish · JPY: Bearish"
+    },
+    {
+      "symbol": "USDCHF",
+      "name": "USDCHF",
+      "verdict": "Very Bullish",
+      "direction": "Buy",
+      "confidence": 1.0,
+      "importance": 2,
+      "rationale": "Very Bullish — USD: Very Bullish · CHF: Neutral"
+    },
+    {
+      "symbol": "USDCAD",
+      "name": "USDCAD",
+      "verdict": "Very Bullish",
+      "direction": "Buy",
+      "confidence": 1.0,
+      "importance": 2,
+      "rationale": "Very Bullish — USD: Very Bullish · CAD: Neutral"
+    },
+    {
+      "symbol": "USDMXN",
+      "name": "USDMXN",
+      "verdict": "Very Bullish",
+      "direction": "Buy",
+      "confidence": 1.0,
+      "importance": 2,
+      "rationale": "Very Bullish — USD: Very Bullish · MXN: Neutral"
+    },
+    {
+      "symbol": "USDNOK",
+      "name": "USDNOK",
+      "verdict": "Very Bullish",
+      "direction": "Buy",
+      "confidence": 1.0,
+      "importance": 2,
+      "rationale": "Very Bullish — USD: Very Bullish · NOK: Neutral"
+    },
+    {
+      "symbol": "USDSEK",
+      "name": "USDSEK",
+      "verdict": "Very Bullish",
+      "direction": "Buy",
+      "confidence": 1.0,
+      "importance": 2,
+      "rationale": "Very Bullish — USD: Very Bullish · SEK: Neutral"
+    },
+    {
+      "symbol": "USDPLN",
+      "name": "USDPLN",
+      "verdict": "Very Bullish",
+      "direction": "Buy",
+      "confidence": 1.0,
+      "importance": 2,
+      "rationale": "Very Bullish — USD: Very Bullish · PLN: Neutral"
+    },
+    {
+      "symbol": "USDHUF",
+      "name": "USDHUF",
+      "verdict": "Very Bullish",
+      "direction": "Buy",
+      "confidence": 1.0,
+      "importance": 2,
+      "rationale": "Very Bullish — USD: Very Bullish · HUF: Neutral"
+    },
+    {
+      "symbol": "USDCZK",
+      "name": "USDCZK",
+      "verdict": "Very Bullish",
+      "direction": "Buy",
+      "confidence": 1.0,
+      "importance": 2,
+      "rationale": "Very Bullish — USD: Very Bullish · CZK: Neutral"
+    },
+    {
+      "symbol": "USDDKK",
+      "name": "USDDKK",
+      "verdict": "Very Bullish",
+      "direction": "Buy",
+      "confidence": 1.0,
+      "importance": 2,
+      "rationale": "Very Bullish — USD: Very Bullish · DKK: Neutral"
     }
   ]
 }
