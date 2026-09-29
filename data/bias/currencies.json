@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-09-28T20:16:20+00:00",
+    "updated": "2026-09-29T02:36:13+00:00",
     "method": "verdict v3 (forecast-first, released-only)"
   },
   "currencies": {
@@ -26,6 +26,18 @@
           "note": ""
         },
         {
+          "dataPoint": "2-Year Treasury Yield (21-day trend)",
+          "title": "2-Year Treasury Yield",
+          "period": "2026-09-25T00:00:00+00:00",
+          "actual": "4.81",
+          "previous": "4.57",
+          "forecast": "",
+          "direction": "higher_is_bullish",
+          "verdict": "bullish",
+          "weight": 1.0,
+          "note": ""
+        },
+        {
           "dataPoint": "Building Permits & Housing Starts",
           "title": "New Home Sales AUG",
           "period": "2026-09-24T18:00+00:00",
@@ -45,18 +57,6 @@
           "previous": "196K",
           "forecast": "201.0K",
           "direction": "lower_is_bullish",
-          "verdict": "bullish",
-          "weight": 1.0,
-          "note": ""
-        },
-        {
-          "dataPoint": "2-Year Treasury Yield (21-day trend)",
-          "title": "2-Year Treasury Yield",
-          "period": "2026-09-24T00:00:00+00:00",
-          "actual": "4.87",
-          "previous": "4.54",
-          "forecast": "",
-          "direction": "higher_is_bullish",
           "verdict": "bullish",
           "weight": 1.0,
           "note": ""
@@ -889,9 +889,9 @@
     "yield2y_sig": 1,
     "oil_direction": "flat",
     "risk_mode": "flat",
-    "yield2y_level": 4.87,
-    "yield2y_sma": 4.536,
-    "dxy_level": 100.92,
+    "yield2y_level": 4.81,
+    "yield2y_sma": 4.565,
+    "dxy_level": 100.96,
     "gold_level": 4390.39382
   }
 }

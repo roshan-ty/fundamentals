@@ -296,7 +296,7 @@
     "impact": "",
     "forecast": "84",
     "previous": "81",
-    "actual": "",
+    "actual": "79",
     "source": "te"
   },
   {
@@ -306,7 +306,7 @@
     "impact": "",
     "forecast": "1.7%",
     "previous": "1.5%",
-    "actual": "",
+    "actual": "1.4%",
     "source": "te"
   },
   {
@@ -316,7 +316,7 @@
     "impact": "",
     "forecast": "0.3%",
     "previous": "1.1%",
-    "actual": "",
+    "actual": "0.0%",
     "source": "te"
   },
   {
@@ -326,7 +326,7 @@
     "impact": "",
     "forecast": "6.4%",
     "previous": "7.0%",
-    "actual": "",
+    "actual": "6.8%",
     "source": "te"
   },
   {
@@ -5750,6 +5750,36 @@
     "source": "te"
   },
   {
+    "title": "Fed Balance Sheet OCT/07",
+    "country": "USD",
+    "date_utc": "2026-10-09T00:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Household Spending MoM AUG",
+    "country": "JPY",
+    "date_utc": "2026-10-09T03:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "0.5%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Household Spending YoY AUG",
+    "country": "JPY",
+    "date_utc": "2026-10-09T03:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "-3.6%",
+    "actual": "",
+    "source": "te"
+  },
+  {
     "title": "NAB Business Confidence SEP",
     "country": "AUD",
     "date_utc": "2026-10-13T04:30+00:00",
@@ -6160,42 +6190,12 @@
     "source": "te"
   },
   {
-    "title": "3-Month Bill Auction",
-    "country": "JPY",
-    "date_utc": "2026-09-25T07:35+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "1.2067%",
-    "actual": "1.2555%",
-    "source": "te"
-  },
-  {
     "title": "BoJ Monetary Policy Meeting Minutes",
     "country": "JPY",
     "date_utc": "2026-09-28T03:50+00:00",
     "impact": "",
     "forecast": "",
     "previous": "",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "Household Spending MoM AUG",
-    "country": "JPY",
-    "date_utc": "2026-10-09T03:30+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "0.5%",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "Household Spending YoY AUG",
-    "country": "JPY",
-    "date_utc": "2026-10-09T03:30+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "-3.6%",
     "actual": "",
     "source": "te"
   },
@@ -6837,26 +6837,6 @@
     "forecast": "",
     "previous": "3.5%",
     "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "Wholesale Sales MoM Prel AUG",
-    "country": "CAD",
-    "date_utc": "2026-09-25T16:30+00:00",
-    "impact": "",
-    "forecast": "0.2%",
-    "previous": "0.3%",
-    "actual": "-1.5%",
-    "source": "te"
-  },
-  {
-    "title": "Budget Balance JUL",
-    "country": "CAD",
-    "date_utc": "2026-09-25T19:00+00:00",
-    "impact": "",
-    "forecast": "C$-2.4B",
-    "previous": "C$0.99B",
-    "actual": "C$-4.77B",
     "source": "te"
   },
   {
@@ -7690,16 +7670,6 @@
     "source": "te"
   },
   {
-    "title": "GfK Consumer Confidence OCT",
-    "country": "EUR",
-    "date_utc": "2026-09-25T10:00+00:00",
-    "impact": "",
-    "forecast": "-27.4",
-    "previous": "-26.8 ",
-    "actual": "-30.6",
-    "source": "te"
-  },
-  {
     "title": "12-Month Bubill Auction",
     "country": "EUR",
     "date_utc": "2026-10-12T13:30+00:00",
@@ -7877,16 +7847,6 @@
     "forecast": "",
     "previous": "",
     "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "Private Non Farm Payrolls QoQ Final Q2",
-    "country": "EUR",
-    "date_utc": "2026-09-25T10:45+00:00",
-    "impact": "",
-    "forecast": "-0.1%",
-    "previous": "0%",
-    "actual": "-0.1%",
     "source": "te"
   },
   {
@@ -8073,16 +8033,6 @@
     "title": "S&P Global Services PMI Flash OCT",
     "country": "EUR",
     "date_utc": "2026-10-23T11:15+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "Fed Balance Sheet OCT/07",
-    "country": "USD",
-    "date_utc": "2026-10-09T00:30+00:00",
     "impact": "",
     "forecast": "",
     "previous": "",
