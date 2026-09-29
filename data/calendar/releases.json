@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-29T02:36:13+00:00",
+  "updated": "2026-09-29T18:43:48+00:00",
   "releases": [
     {
       "country": "USD",
@@ -115,11 +115,11 @@
       "dataPoint": "CB Consumer Confidence / UoM Consumer Sentiment",
       "weight": 0.5,
       "direction": "higher_is_bullish",
-      "period": "2026-09-25T18:00+00:00",
-      "title": "Michigan Consumer Sentiment Final SEP",
-      "actual": "48.1",
-      "previous": "51.7",
-      "forecast": "47.8"
+      "period": "2026-09-29T18:00+00:00",
+      "title": "CB Consumer Confidence SEP",
+      "actual": "81.9",
+      "previous": "89.4",
+      "forecast": "89"
     },
     {
       "country": "GBP",
@@ -343,11 +343,11 @@
       "dataPoint": "CPI Flash Estimate (y/y) & Core CPI Flash Estimate",
       "weight": 1.5,
       "direction": "higher_is_bullish",
-      "period": "2026-09-16T12:00+00:00",
-      "title": "Harmonised Inflation Rate MoM Final AUG",
-      "actual": "0.2%",
-      "previous": "0.9%",
-      "forecast": "0.2%"
+      "period": "2026-09-30T16:00+00:00",
+      "title": "Inflation Rate YoY Prel SEP",
+      "actual": "4.9%",
+      "previous": "2.9%",
+      "forecast": "2.8%"
     },
     {
       "country": "GBP",
@@ -590,6 +590,18 @@
       "forecast": "2.9%"
     },
     {
+      "country": "AUD",
+      "dataPointId": "au_cash_rate",
+      "dataPoint": "Official Cash Rate / RBA Rate Statement / RBA Monetary Policy Statement",
+      "weight": 2.0,
+      "direction": "higher_is_bullish",
+      "period": "2026-09-29T08:30+00:00",
+      "title": "RBA Interest Rate Decision",
+      "actual": "4.6%",
+      "previous": "4.35%",
+      "forecast": "4.35%"
+    },
+    {
       "country": "SGD",
       "dataPointId": "sg_rate",
       "dataPoint": "MAS Monetary Policy",
@@ -600,6 +612,66 @@
       "actual": "1.77%",
       "previous": "1.65%",
       "forecast": ""
+    },
+    {
+      "country": "CHF",
+      "dataPointId": "ch_kof",
+      "dataPoint": "KOF Economic Barometer",
+      "weight": 0.5,
+      "direction": "higher_is_bullish",
+      "period": "2026-09-29T11:00+00:00",
+      "title": "KOF Leading Indicators SEP",
+      "actual": "109.1",
+      "previous": "106.7",
+      "forecast": "105.8"
+    },
+    {
+      "country": "CAD",
+      "dataPointId": "ca_gdp",
+      "dataPoint": "GDP (m/m)",
+      "weight": 1.0,
+      "direction": "higher_is_bullish",
+      "period": "2026-09-29T16:30+00:00",
+      "title": "GDP MoM JUL",
+      "actual": "0%",
+      "previous": "0.3%",
+      "forecast": "0.0%"
+    },
+    {
+      "country": "USD",
+      "dataPointId": "us_jolts",
+      "dataPoint": "JOLTS Job Openings",
+      "weight": 0.5,
+      "direction": "higher_is_bullish",
+      "period": "2026-09-29T18:00+00:00",
+      "title": "JOLTs Job Openings AUG",
+      "actual": "7.079M",
+      "previous": "7.271M",
+      "forecast": "7.2M"
+    },
+    {
+      "country": "BRL",
+      "dataPointId": "br_unemployment",
+      "dataPoint": "Unemployment Rate",
+      "weight": 0.5,
+      "direction": "lower_is_bullish",
+      "period": "2026-09-29T16:00+00:00",
+      "title": "Unemployment Rate AUG",
+      "actual": "5.3%",
+      "previous": "5.3%",
+      "forecast": "5.3%"
+    },
+    {
+      "country": "EUR",
+      "dataPointId": "eu_retail",
+      "dataPoint": "Eurozone Retail Sales (m/m)",
+      "weight": 0.5,
+      "direction": "higher_is_bullish",
+      "period": "2026-09-30T10:00+00:00",
+      "title": "Retail Sales MoM AUG",
+      "actual": "0.3%",
+      "previous": "-3.4%",
+      "forecast": "1.5%"
     },
     {
       "country": "USD",
