@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-29T18:43:48+00:00",
+  "updated": "2026-09-30T01:56:38+00:00",
   "releases": [
     {
       "country": "USD",
@@ -595,11 +595,11 @@
       "dataPoint": "Official Cash Rate / RBA Rate Statement / RBA Monetary Policy Statement",
       "weight": 2.0,
       "direction": "higher_is_bullish",
-      "period": "2026-09-29T08:30+00:00",
-      "title": "RBA Interest Rate Decision",
-      "actual": "4.6%",
-      "previous": "4.35%",
-      "forecast": "4.35%"
+      "period": "2026-09-30T05:30+00:00",
+      "title": "RBA Trimmed Mean CPI MoM AUG",
+      "actual": "0.2%",
+      "previous": "0.5%",
+      "forecast": "0.4%"
     },
     {
       "country": "SGD",
@@ -662,6 +662,30 @@
       "forecast": "5.3%"
     },
     {
+      "country": "AUD",
+      "dataPointId": "au_cpi",
+      "dataPoint": "CPI (q/q, y/y) & Trimmed Mean CPI",
+      "weight": 1.5,
+      "direction": "higher_is_bullish",
+      "period": "2026-09-30T05:30+00:00",
+      "title": "Inflation Rate YoY AUG",
+      "actual": "4.0%",
+      "previous": "3.5%",
+      "forecast": "3.9%"
+    },
+    {
+      "country": "CNY",
+      "dataPointId": "cn_pmi",
+      "dataPoint": "NBS Manufacturing PMI & Caixin Manufacturing PMI",
+      "weight": 1.0,
+      "direction": "higher_is_bullish",
+      "period": "2026-09-30T05:30+00:00",
+      "title": "NBS Manufacturing PMI SEP",
+      "actual": "50.1",
+      "previous": "49.8",
+      "forecast": "50"
+    },
+    {
       "country": "EUR",
       "dataPointId": "eu_retail",
       "dataPoint": "Eurozone Retail Sales (m/m)",
@@ -679,10 +703,10 @@
       "dataPoint": "2-Year Treasury Yield (21-day trend)",
       "weight": 1.0,
       "direction": "higher_is_bullish",
-      "period": "2026-09-25T00:00:00+00:00",
+      "period": "2026-09-28T00:00:00+00:00",
       "title": "2-Year Treasury Yield",
-      "actual": "4.81",
-      "previous": "4.57",
+      "actual": "4.92",
+      "previous": "4.60",
       "forecast": ""
     }
   ]

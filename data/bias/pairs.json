@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-09-29T18:43:48+00:00",
+    "updated": "2026-09-30T01:56:38+00:00",
     "total": 82,
     "scored": 82
   },
@@ -437,14 +437,14 @@
     {
       "symbol": "USDCNY",
       "class": "fx",
-      "verdict": "Neutral",
+      "verdict": "Bearish",
       "base": "USD",
       "quote": "CNY",
       "base_verdict": "Bullish",
-      "quote_verdict": "Bullish",
+      "quote_verdict": "Very Bullish",
       "drivers": [
         "USD: Bullish",
-        "CNY: Bullish"
+        "CNY: Very Bullish"
       ]
     },
     {
@@ -819,8 +819,8 @@
     {
       "symbol": "OIL",
       "class": "energy",
-      "verdict": "Bearish",
-      "base_verdict": "Bearish",
+      "verdict": "Neutral",
+      "base_verdict": "Neutral",
       "quote_verdict": null,
       "drivers": []
     },
@@ -835,8 +835,8 @@
     {
       "symbol": "COPPER",
       "class": "energy",
-      "verdict": "Bearish",
-      "base_verdict": "Bearish",
+      "verdict": "Neutral",
+      "base_verdict": "Neutral",
       "quote_verdict": null,
       "drivers": []
     },
