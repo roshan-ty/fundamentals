@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-30T01:56:38+00:00",
+  "updated": "2026-09-30T18:31:28+00:00",
   "releases": [
     {
       "country": "USD",
@@ -43,11 +43,11 @@
       "dataPoint": "Core PCE Price Index (m/m, y/y)",
       "weight": 1.5,
       "direction": "higher_is_bullish",
-      "period": "2026-07-01T00:00:00+00:00",
-      "title": "Core PCE Price Index m/m",
-      "actual": "0.25",
-      "previous": "",
-      "forecast": ""
+      "period": "2026-09-30T16:30+00:00",
+      "title": "Core PCE Price Index MoM AUG",
+      "actual": "0.2%",
+      "previous": "0.2%",
+      "forecast": "0.3%"
     },
     {
       "country": "USD",
@@ -103,11 +103,11 @@
       "dataPoint": "Trade Balance",
       "weight": 0.5,
       "direction": "higher_is_bullish",
-      "period": "2026-07-01T00:00:00+00:00",
-      "title": "Trade Balance",
-      "actual": "-88576.0",
-      "previous": "-71182.0",
-      "forecast": ""
+      "period": "2026-09-30T16:30+00:00",
+      "title": "Goods Trade Balance Adv AUG",
+      "actual": "$-132.6B",
+      "previous": "$-118.8B",
+      "forecast": "$-90.0B"
     },
     {
       "country": "USD",
@@ -139,11 +139,11 @@
       "dataPoint": "Eurozone Unemployment Rate",
       "weight": 1.0,
       "direction": "lower_is_bullish",
-      "period": "2026-07-01T00:00:00+00:00",
-      "title": "Unemployment Rate",
-      "actual": "4.0",
-      "previous": "4.0",
-      "forecast": ""
+      "period": "2026-09-30T11:55+00:00",
+      "title": "Unemployment Rate SEP",
+      "actual": "6.4%",
+      "previous": "6.4%",
+      "forecast": "6.4%"
     },
     {
       "country": "CAD",
@@ -451,11 +451,11 @@
       "dataPoint": "ADP Non-Farm Employment Change",
       "weight": 1.0,
       "direction": "higher_is_bullish",
-      "period": "2026-09-22T16:15+00:00",
-      "title": "ADP Employment Change Weekly",
-      "actual": "16.25K",
-      "previous": "12K",
-      "forecast": ""
+      "period": "2026-09-30T16:15+00:00",
+      "title": "ADP Employment Change SEP",
+      "actual": "90K",
+      "previous": "38K",
+      "forecast": "75K"
     },
     {
       "country": "SGD",
@@ -662,6 +662,18 @@
       "forecast": "5.3%"
     },
     {
+      "country": "CNY",
+      "dataPointId": "cn_pmi",
+      "dataPoint": "NBS Manufacturing PMI & Caixin Manufacturing PMI",
+      "weight": 1.0,
+      "direction": "higher_is_bullish",
+      "period": "2026-09-30T05:45+00:00",
+      "title": "RatingDog Manufacturing PMI SEP",
+      "actual": "52.1",
+      "previous": "51.5",
+      "forecast": "51.5"
+    },
+    {
       "country": "AUD",
       "dataPointId": "au_cpi",
       "dataPoint": "CPI (q/q, y/y) & Trimmed Mean CPI",
@@ -674,18 +686,6 @@
       "forecast": "3.9%"
     },
     {
-      "country": "CNY",
-      "dataPointId": "cn_pmi",
-      "dataPoint": "NBS Manufacturing PMI & Caixin Manufacturing PMI",
-      "weight": 1.0,
-      "direction": "higher_is_bullish",
-      "period": "2026-09-30T05:30+00:00",
-      "title": "NBS Manufacturing PMI SEP",
-      "actual": "50.1",
-      "previous": "49.8",
-      "forecast": "50"
-    },
-    {
       "country": "EUR",
       "dataPointId": "eu_retail",
       "dataPoint": "Eurozone Retail Sales (m/m)",
@@ -696,6 +696,18 @@
       "actual": "0.3%",
       "previous": "-3.4%",
       "forecast": "1.5%"
+    },
+    {
+      "country": "EUR",
+      "dataPointId": "eu_employment_change",
+      "dataPoint": "Eurozone Employment Change",
+      "weight": 1.0,
+      "direction": "higher_is_bullish",
+      "period": "2026-09-30T11:55+00:00",
+      "title": "Unemployment Change SEP",
+      "actual": "12K",
+      "previous": "4K",
+      "forecast": "5.0K"
     },
     {
       "country": "USD",

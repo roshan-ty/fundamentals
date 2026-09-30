@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-09-30T01:56:38+00:00",
+    "updated": "2026-09-30T18:31:28+00:00",
     "method": "verdict v3 (forecast-first, released-only)"
   },
   "currencies": {
@@ -8,11 +8,47 @@
       "verdict": "Bullish",
       "tally": {
         "bullish": 7.5,
-        "bearish": 2.0,
+        "bearish": 4.0,
         "neutral": 5.0
       },
       "released_points": 16,
       "drivers": [
+        {
+          "dataPoint": "Core PCE Price Index (m/m, y/y)",
+          "title": "Core PCE Price Index MoM AUG",
+          "period": "2026-09-30T16:30+00:00",
+          "actual": "0.2%",
+          "previous": "0.2%",
+          "forecast": "0.3%",
+          "direction": "higher_is_bullish",
+          "verdict": "bearish",
+          "weight": 2.0,
+          "note": ""
+        },
+        {
+          "dataPoint": "Trade Balance",
+          "title": "Goods Trade Balance Adv AUG",
+          "period": "2026-09-30T16:30+00:00",
+          "actual": "$-132.6B",
+          "previous": "$-118.8B",
+          "forecast": "$-90.0B",
+          "direction": "higher_is_bullish",
+          "verdict": "bearish",
+          "weight": 0.5,
+          "note": ""
+        },
+        {
+          "dataPoint": "ADP Non-Farm Employment Change",
+          "title": "ADP Employment Change SEP",
+          "period": "2026-09-30T16:15+00:00",
+          "actual": "90K",
+          "previous": "38K",
+          "forecast": "75K",
+          "direction": "higher_is_bullish",
+          "verdict": "bullish",
+          "weight": 1.0,
+          "note": ""
+        },
         {
           "dataPoint": "CB Consumer Confidence / UoM Consumer Sentiment",
           "title": "CB Consumer Confidence SEP",
@@ -80,18 +116,6 @@
           "actual": "57",
           "previous": "53.9",
           "forecast": "53",
-          "direction": "higher_is_bullish",
-          "verdict": "bullish",
-          "weight": 1.0,
-          "note": ""
-        },
-        {
-          "dataPoint": "ADP Non-Farm Employment Change",
-          "title": "ADP Employment Change Weekly",
-          "period": "2026-09-22T16:15+00:00",
-          "actual": "16.25K",
-          "previous": "12K",
-          "forecast": "",
           "direction": "higher_is_bullish",
           "verdict": "bullish",
           "weight": 1.0,
@@ -170,30 +194,6 @@
           "note": ""
         },
         {
-          "dataPoint": "Core PCE Price Index (m/m, y/y)",
-          "title": "Core PCE Price Index m/m",
-          "period": "2026-07-01T00:00:00+00:00",
-          "actual": "0.25",
-          "previous": "",
-          "forecast": "",
-          "direction": "higher_is_bullish",
-          "verdict": "neutral",
-          "weight": 2.0,
-          "note": "no reference (forecast/previous) - not scored"
-        },
-        {
-          "dataPoint": "Trade Balance",
-          "title": "Trade Balance",
-          "period": "2026-07-01T00:00:00+00:00",
-          "actual": "-88576.0",
-          "previous": "-71182.0",
-          "forecast": "",
-          "direction": "higher_is_bullish",
-          "verdict": "bearish",
-          "weight": 0.5,
-          "note": ""
-        },
-        {
           "dataPoint": "Advance GDP (q/q)",
           "title": "GDP q/q annualized",
           "period": "2026-04-01T00:00:00+00:00",
@@ -211,11 +211,11 @@
     "EUR": {
       "verdict": "Bullish",
       "tally": {
-        "bullish": 4.0,
+        "bullish": 5.0,
         "bearish": 1.5,
         "neutral": 2.0
       },
-      "released_points": 6,
+      "released_points": 7,
       "drivers": [
         {
           "dataPoint": "CPI Flash Estimate (y/y) & Core CPI Flash Estimate",
@@ -227,6 +227,30 @@
           "direction": "higher_is_bullish",
           "verdict": "bullish",
           "weight": 2.0,
+          "note": ""
+        },
+        {
+          "dataPoint": "Eurozone Unemployment Rate",
+          "title": "Unemployment Rate SEP",
+          "period": "2026-09-30T11:55+00:00",
+          "actual": "6.4%",
+          "previous": "6.4%",
+          "forecast": "6.4%",
+          "direction": "lower_is_bullish",
+          "verdict": "neutral",
+          "weight": 2.0,
+          "note": ""
+        },
+        {
+          "dataPoint": "Eurozone Employment Change",
+          "title": "Unemployment Change SEP",
+          "period": "2026-09-30T11:55+00:00",
+          "actual": "12K",
+          "previous": "4K",
+          "forecast": "5.0K",
+          "direction": "higher_is_bullish",
+          "verdict": "bullish",
+          "weight": 1.0,
           "note": ""
         },
         {
@@ -275,18 +299,6 @@
           "direction": "higher_is_bullish",
           "verdict": "bearish",
           "weight": 1.0,
-          "note": ""
-        },
-        {
-          "dataPoint": "Eurozone Unemployment Rate",
-          "title": "Unemployment Rate",
-          "period": "2026-07-01T00:00:00+00:00",
-          "actual": "4.0",
-          "previous": "4.0",
-          "forecast": "",
-          "direction": "lower_is_bullish",
-          "verdict": "neutral",
-          "weight": 2.0,
           "note": ""
         }
       ],
@@ -655,11 +667,11 @@
       "drivers": [
         {
           "dataPoint": "NBS Manufacturing PMI & Caixin Manufacturing PMI",
-          "title": "NBS Manufacturing PMI SEP",
-          "period": "2026-09-30T05:30+00:00",
-          "actual": "50.1",
-          "previous": "49.8",
-          "forecast": "50",
+          "title": "RatingDog Manufacturing PMI SEP",
+          "period": "2026-09-30T05:45+00:00",
+          "actual": "52.1",
+          "previous": "51.5",
+          "forecast": "51.5",
           "direction": "higher_is_bullish",
           "verdict": "bullish",
           "weight": 2.0,

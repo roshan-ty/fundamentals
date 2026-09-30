@@ -54,7 +54,7 @@
     "country": "USD",
     "date_utc": "2025-09-01T00:00:00+00:00",
     "impact": "Medium",
-    "actual": "0.19",
+    "actual": "0.23",
     "previous": "",
     "source_series": "PCEPILFE",
     "period": "2025-09-01"
@@ -244,7 +244,7 @@
     "country": "USD",
     "date_utc": "2025-10-01T00:00:00+00:00",
     "impact": "Medium",
-    "actual": "0.23",
+    "actual": "0.18",
     "previous": "",
     "source_series": "PCEPILFE",
     "period": "2025-10-01"
@@ -274,7 +274,7 @@
     "country": "USD",
     "date_utc": "2025-10-01T00:00:00+00:00",
     "impact": "High",
-    "actual": "1.99",
+    "actual": "2.05",
     "previous": "",
     "source_series": "GDPC1",
     "period": "2025-10-01"
@@ -464,7 +464,7 @@
     "country": "USD",
     "date_utc": "2025-11-01T00:00:00+00:00",
     "impact": "Medium",
-    "actual": "0.18",
+    "actual": "0.16",
     "previous": "",
     "source_series": "PCEPILFE",
     "period": "2025-11-01"
@@ -684,7 +684,7 @@
     "country": "USD",
     "date_utc": "2025-12-01T00:00:00+00:00",
     "impact": "Medium",
-    "actual": "0.33",
+    "actual": "0.32",
     "previous": "",
     "source_series": "PCEPILFE",
     "period": "2025-12-01"
@@ -894,7 +894,7 @@
     "country": "USD",
     "date_utc": "2026-01-01T00:00:00+00:00",
     "impact": "Medium",
-    "actual": "0.44",
+    "actual": "0.4",
     "previous": "",
     "source_series": "PCEPILFE",
     "period": "2026-01-01"
@@ -934,7 +934,7 @@
     "country": "USD",
     "date_utc": "2026-01-01T00:00:00+00:00",
     "impact": "High",
-    "actual": "2.68",
+    "actual": "2.64",
     "previous": "",
     "source_series": "GDPC1",
     "period": "2026-01-01"
@@ -1134,7 +1134,7 @@
     "country": "USD",
     "date_utc": "2026-02-01T00:00:00+00:00",
     "impact": "Medium",
-    "actual": "0.39",
+    "actual": "0.34",
     "previous": "",
     "source_series": "PCEPILFE",
     "period": "2026-02-01"
@@ -1344,7 +1344,7 @@
     "country": "USD",
     "date_utc": "2026-03-01T00:00:00+00:00",
     "impact": "Medium",
-    "actual": "0.3",
+    "actual": "0.26",
     "previous": "",
     "source_series": "PCEPILFE",
     "period": "2026-03-01"
@@ -1554,7 +1554,7 @@
     "country": "USD",
     "date_utc": "2026-04-01T00:00:00+00:00",
     "impact": "Medium",
-    "actual": "0.26",
+    "actual": "0.28",
     "previous": "",
     "source_series": "PCEPILFE",
     "period": "2026-04-01"
@@ -1594,7 +1594,7 @@
     "country": "USD",
     "date_utc": "2026-04-01T00:00:00+00:00",
     "impact": "High",
-    "actual": "2.1",
+    "actual": "2.19",
     "previous": "",
     "source_series": "GDPC1",
     "period": "2026-04-01"
@@ -1784,7 +1784,7 @@
     "country": "USD",
     "date_utc": "2026-05-01T00:00:00+00:00",
     "impact": "Medium",
-    "actual": "0.36",
+    "actual": "0.31",
     "previous": "",
     "source_series": "PCEPILFE",
     "period": "2026-05-01"
@@ -2004,7 +2004,7 @@
     "country": "USD",
     "date_utc": "2026-06-01T00:00:00+00:00",
     "impact": "Medium",
-    "actual": "0.15",
+    "actual": "0.13",
     "previous": "",
     "source_series": "PCEPILFE",
     "period": "2026-06-01"
@@ -2204,7 +2204,7 @@
     "country": "USD",
     "date_utc": "2026-07-01T00:00:00+00:00",
     "impact": "Medium",
-    "actual": "0.25",
+    "actual": "0.13",
     "previous": "",
     "source_series": "PCEPILFE",
     "period": "2026-07-01"
@@ -2397,6 +2397,16 @@
     "actual": "0.16",
     "previous": "",
     "source_series": "PPIFES",
+    "period": "2026-08-01"
+  },
+  {
+    "title": "Core PCE Price Index m/m",
+    "country": "USD",
+    "date_utc": "2026-08-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "0.25",
+    "previous": "",
+    "source_series": "PCEPILFE",
     "period": "2026-08-01"
   },
   {
