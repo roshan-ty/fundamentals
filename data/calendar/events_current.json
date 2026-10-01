@@ -13346,7 +13346,7 @@
     "impact": "",
     "forecast": "1.9%",
     "previous": "-4.3%",
-    "actual": "",
+    "actual": "5.6%",
     "source": "te"
   },
   {
@@ -13366,7 +13366,7 @@
     "impact": "",
     "forecast": "51.7",
     "previous": "52.0",
-    "actual": "",
+    "actual": "49.6",
     "source": "te"
   },
   {
@@ -13376,7 +13376,7 @@
     "impact": "",
     "forecast": "23",
     "previous": "22",
-    "actual": "",
+    "actual": "24",
     "source": "te"
   },
   {
@@ -13396,7 +13396,7 @@
     "impact": "",
     "forecast": "",
     "previous": "1082.9B",
-    "actual": "",
+    "actual": "-1904.9B",
     "source": "te"
   },
   {
@@ -13406,7 +13406,7 @@
     "impact": "",
     "forecast": "",
     "previous": "",
-    "actual": "",
+    "actual": "-684.5B",
     "source": "te"
   },
   {
@@ -13416,7 +13416,7 @@
     "impact": "",
     "forecast": "",
     "previous": "-1522.8B",
-    "actual": "",
+    "actual": "-4942.5B",
     "source": "te"
   },
   {
@@ -13426,7 +13426,7 @@
     "impact": "",
     "forecast": "",
     "previous": "",
-    "actual": "",
+    "actual": "-362B",
     "source": "te"
   },
   {
@@ -13436,7 +13436,7 @@
     "impact": "",
     "forecast": "5.0%",
     "previous": "11.5%",
-    "actual": "",
+    "actual": "11.3%",
     "source": "te"
   },
   {
@@ -13446,7 +13446,7 @@
     "impact": "",
     "forecast": "18",
     "previous": "17",
-    "actual": "",
+    "actual": "21",
     "source": "te"
   },
   {
@@ -13456,7 +13456,7 @@
     "impact": "",
     "forecast": "35",
     "previous": "37",
-    "actual": "",
+    "actual": "35",
     "source": "te"
   },
   {
@@ -13466,7 +13466,7 @@
     "impact": "",
     "forecast": "23",
     "previous": "28",
-    "actual": "",
+    "actual": "30",
     "source": "te"
   },
   {
@@ -13476,7 +13476,7 @@
     "impact": "",
     "forecast": "10",
     "previous": "9",
-    "actual": "",
+    "actual": "14",
     "source": "te"
   },
   {
@@ -13486,7 +13486,7 @@
     "impact": "",
     "forecast": "",
     "previous": "68.7%",
-    "actual": "",
+    "actual": "83.5%",
     "source": "te"
   },
   {
@@ -13496,7 +13496,7 @@
     "impact": "",
     "forecast": "$ 47.4B",
     "previous": "$34.75B",
-    "actual": "",
+    "actual": "$49.85B",
     "source": "te"
   },
   {
@@ -13506,7 +13506,7 @@
     "impact": "",
     "forecast": "",
     "previous": "22.5%",
-    "actual": "",
+    "actual": "26%",
     "source": "te"
   },
   {
@@ -13516,7 +13516,7 @@
     "impact": "",
     "forecast": "55.2",
     "previous": "54.9",
-    "actual": "",
+    "actual": "54.1",
     "source": "te"
   },
   {
@@ -13526,7 +13526,7 @@
     "impact": "",
     "forecast": "50.3",
     "previous": "49.8",
-    "actual": "",
+    "actual": "52.4",
     "source": "te"
   },
   {
@@ -13536,7 +13536,7 @@
     "impact": "",
     "forecast": "0.3%",
     "previous": "0.5%",
-    "actual": "",
+    "actual": "1.4%",
     "source": "te"
   },
   {
@@ -13546,7 +13546,7 @@
     "impact": "",
     "forecast": "54.9",
     "previous": "52.3",
-    "actual": "",
+    "actual": "53.9",
     "source": "te"
   },
   {
@@ -13556,7 +13556,7 @@
     "impact": "",
     "forecast": "A$1.5B",
     "previous": "A$1.923B",
-    "actual": "",
+    "actual": "A$0.495B",
     "source": "te"
   },
   {
@@ -13566,7 +13566,7 @@
     "impact": "",
     "forecast": "",
     "previous": "-3.3%",
-    "actual": "",
+    "actual": "3.7%",
     "source": "te"
   },
   {
@@ -13576,7 +13576,7 @@
     "impact": "",
     "forecast": "",
     "previous": "-2.5%",
-    "actual": "",
+    "actual": "5.8%",
     "source": "te"
   },
   {
@@ -16646,7 +16646,7 @@
     "date_utc": "2026-10-08T03:50+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "-684.5B",
     "actual": "",
     "source": "te"
   },
@@ -16656,7 +16656,7 @@
     "date_utc": "2026-10-08T03:50+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "-362B",
     "actual": "",
     "source": "te"
   },
@@ -18981,36 +18981,6 @@
     "source": "te"
   },
   {
-    "title": "1-Year Bill Auction",
-    "country": "NZD",
-    "date_utc": "2026-10-20T05:35+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "3.6930%",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "3-Month Bill Auction",
-    "country": "NZD",
-    "date_utc": "2026-10-20T05:35+00:00",
-    "impact": "",
-    "forecast": "3.0999%",
-    "previous": "3.0838%",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "6-Month Bill Auction",
-    "country": "NZD",
-    "date_utc": "2026-10-20T05:35+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "3.1905%",
-    "actual": "",
-    "source": "te"
-  },
-  {
     "title": "20-Year JGB Auction",
     "country": "JPY",
     "date_utc": "2026-10-20T07:35+00:00",
@@ -20377,6 +20347,56 @@
     "impact": "",
     "forecast": "",
     "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "BRC Shop Price Inflation OCT",
+    "country": "GBP",
+    "date_utc": "2026-10-27T04:01+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "1.4%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Industrial Profits (YTD) YoY SEP",
+    "country": "CNY",
+    "date_utc": "2026-10-27T05:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "15.7%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "1-Year Bill Auction",
+    "country": "NZD",
+    "date_utc": "2026-10-27T05:35+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "3.6930%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "3-Month Bill Auction",
+    "country": "NZD",
+    "date_utc": "2026-10-27T05:35+00:00",
+    "impact": "",
+    "forecast": "3.0999%",
+    "previous": "3.0838%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "6-Month Bill Auction",
+    "country": "NZD",
+    "date_utc": "2026-10-27T05:35+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "3.1905%",
     "actual": "",
     "source": "te"
   }

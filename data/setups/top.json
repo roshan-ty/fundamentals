@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-09-30T18:31:28+00:00"
+    "updated": "2026-10-01T01:54:13+00:00"
   },
   "setups": [
     {
@@ -40,6 +40,15 @@
       "rationale": "Very Bullish — AUD: Bullish · JPY: Bearish"
     },
     {
+      "symbol": "NZDJPY",
+      "name": "NZDJPY",
+      "verdict": "Very Bullish",
+      "direction": "Buy",
+      "confidence": 1.0,
+      "importance": 2,
+      "rationale": "Very Bullish — NZD: Bullish · JPY: Bearish"
+    },
+    {
       "symbol": "CHFJPY",
       "name": "CHFJPY",
       "verdict": "Very Bullish",
@@ -47,15 +56,6 @@
       "confidence": 1.0,
       "importance": 2,
       "rationale": "Very Bullish — CHF: Bullish · JPY: Bearish"
-    },
-    {
-      "symbol": "NZDJPY",
-      "name": "NZDJPY",
-      "verdict": "Very Bullish",
-      "direction": "Buy",
-      "confidence": 0.9,
-      "importance": 2,
-      "rationale": "Very Bullish — NZD: Bullish · JPY: Bearish"
     },
     {
       "symbol": "XAUUSD",

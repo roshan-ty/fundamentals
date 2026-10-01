@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-09-30T18:31:28+00:00",
+    "updated": "2026-10-01T01:54:13+00:00",
     "method": "verdict v3 (forecast-first, released-only)"
   },
   "currencies": {
@@ -76,9 +76,9 @@
         {
           "dataPoint": "2-Year Treasury Yield (21-day trend)",
           "title": "2-Year Treasury Yield",
-          "period": "2026-09-28T00:00:00+00:00",
-          "actual": "4.92",
-          "previous": "4.60",
+          "period": "2026-09-29T00:00:00+00:00",
+          "actual": "4.89",
+          "previous": "4.63",
           "forecast": "",
           "direction": "higher_is_bullish",
           "verdict": "bullish",
@@ -563,12 +563,24 @@
     "JPY": {
       "verdict": "Bearish",
       "tally": {
-        "bullish": 0.0,
+        "bullish": 0.5,
         "bearish": 3.0,
         "neutral": 3.0
       },
-      "released_points": 4,
+      "released_points": 5,
       "drivers": [
+        {
+          "dataPoint": "Tankan Large Manufacturers Index",
+          "title": "Tankan Large Manufacturers Index Q3",
+          "period": "2026-10-01T03:50+00:00",
+          "actual": "24",
+          "previous": "22",
+          "forecast": "23",
+          "direction": "higher_is_bullish",
+          "verdict": "bullish",
+          "weight": 0.5,
+          "note": ""
+        },
         {
           "dataPoint": "BoJ Policy Rate / Monetary Policy Statement / BoJ Press Conference",
           "title": "BoJ Interest Rate Decision",
@@ -999,9 +1011,9 @@
     "yield2y_sig": 1,
     "oil_direction": "flat",
     "risk_mode": "flat",
-    "yield2y_level": 4.92,
-    "yield2y_sma": 4.6,
-    "dxy_level": 100.95,
+    "yield2y_level": 4.89,
+    "yield2y_sma": 4.626,
+    "dxy_level": 101.06,
     "gold_level": 4390.39382
   }
 }
