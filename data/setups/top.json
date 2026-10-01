@@ -1,34 +1,43 @@
 {
   "meta": {
-    "updated": "2026-10-01T01:54:13+00:00"
+    "updated": "2026-10-01T18:57:14+00:00"
   },
   "setups": [
     {
-      "symbol": "EURJPY",
-      "name": "EURJPY",
-      "verdict": "Very Bullish",
-      "direction": "Buy",
+      "symbol": "EURCHF",
+      "name": "EURCHF",
+      "verdict": "Very Bearish",
+      "direction": "Sell",
       "confidence": 1.0,
       "importance": 2,
-      "rationale": "Very Bullish — EUR: Bullish · JPY: Bearish"
+      "rationale": "Very Bearish — EUR: Neutral · CHF: Very Bullish"
     },
     {
-      "symbol": "EURZAR",
-      "name": "EURZAR",
-      "verdict": "Very Bullish",
-      "direction": "Buy",
+      "symbol": "GBPCHF",
+      "name": "GBPCHF",
+      "verdict": "Very Bearish",
+      "direction": "Sell",
       "confidence": 1.0,
       "importance": 2,
-      "rationale": "Very Bullish — EUR: Bullish · ZAR: Bearish"
+      "rationale": "Very Bearish — GBP: Neutral · CHF: Very Bullish"
     },
     {
-      "symbol": "USDJPY",
-      "name": "USDJPY",
-      "verdict": "Very Bullish",
-      "direction": "Buy",
+      "symbol": "USDCHF",
+      "name": "USDCHF",
+      "verdict": "Very Bearish",
+      "direction": "Sell",
       "confidence": 1.0,
       "importance": 2,
-      "rationale": "Very Bullish — USD: Bullish · JPY: Bearish"
+      "rationale": "Very Bearish — USD: Neutral · CHF: Very Bullish"
+    },
+    {
+      "symbol": "USDCNY",
+      "name": "USDCNY",
+      "verdict": "Very Bearish",
+      "direction": "Sell",
+      "confidence": 1.0,
+      "importance": 2,
+      "rationale": "Very Bearish — USD: Neutral · CNY: Very Bullish"
     },
     {
       "symbol": "AUDJPY",
@@ -49,35 +58,26 @@
       "rationale": "Very Bullish — NZD: Bullish · JPY: Bearish"
     },
     {
+      "symbol": "CADCHF",
+      "name": "CADCHF",
+      "verdict": "Very Bearish",
+      "direction": "Sell",
+      "confidence": 1.0,
+      "importance": 2,
+      "rationale": "Very Bearish — CAD: Neutral · CHF: Very Bullish"
+    },
+    {
       "symbol": "CHFJPY",
       "name": "CHFJPY",
       "verdict": "Very Bullish",
       "direction": "Buy",
       "confidence": 1.0,
       "importance": 2,
-      "rationale": "Very Bullish — CHF: Bullish · JPY: Bearish"
+      "rationale": "Very Bullish — CHF: Very Bullish · JPY: Bearish"
     },
     {
       "symbol": "XAUUSD",
       "name": "XAUUSD",
-      "verdict": "Very Bearish",
-      "direction": "Sell",
-      "confidence": 0.4,
-      "importance": 2,
-      "rationale": "Very Bearish"
-    },
-    {
-      "symbol": "XAGUSD",
-      "name": "XAGUSD",
-      "verdict": "Very Bearish",
-      "direction": "Sell",
-      "confidence": 0.4,
-      "importance": 2,
-      "rationale": "Very Bearish"
-    },
-    {
-      "symbol": "XPTUSD",
-      "name": "XPTUSD",
       "verdict": "Very Bearish",
       "direction": "Sell",
       "confidence": 0.4,
@@ -94,22 +94,22 @@
       "rationale": "Very Bearish"
     },
     {
-      "symbol": "BRENT",
-      "name": "BRENT",
-      "verdict": "Very Bearish",
-      "direction": "Sell",
-      "confidence": 0.4,
-      "importance": 2,
-      "rationale": "Very Bearish"
-    },
-    {
-      "symbol": "EURGBP",
-      "name": "EURGBP",
+      "symbol": "EURJPY",
+      "name": "EURJPY",
       "verdict": "Bullish",
       "direction": "Buy",
       "confidence": 1.0,
       "importance": 1,
-      "rationale": "Bullish — EUR: Bullish · GBP: Neutral"
+      "rationale": "Bullish — EUR: Neutral · JPY: Bearish"
+    },
+    {
+      "symbol": "EURAUD",
+      "name": "EURAUD",
+      "verdict": "Bearish",
+      "direction": "Sell",
+      "confidence": 1.0,
+      "importance": 1,
+      "rationale": "Bearish — EUR: Neutral · AUD: Bullish"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-01T01:54:13+00:00",
+  "updated": "2026-10-01T18:57:14+00:00",
   "releases": [
     {
       "country": "USD",
@@ -7,11 +7,11 @@
       "dataPoint": "Unemployment Claims (Weekly)",
       "weight": 0.5,
       "direction": "lower_is_bullish",
-      "period": "2026-09-24T16:30+00:00",
-      "title": "Initial Jobless Claims SEP/19",
+      "period": "2026-10-01T16:30+00:00",
+      "title": "Initial Jobless Claims SEP/26",
       "actual": "197K",
-      "previous": "196K",
-      "forecast": "201.0K"
+      "previous": "197K",
+      "forecast": "195.0K"
     },
     {
       "country": "USD",
@@ -139,11 +139,11 @@
       "dataPoint": "Eurozone Unemployment Rate",
       "weight": 1.0,
       "direction": "lower_is_bullish",
-      "period": "2026-09-30T11:55+00:00",
-      "title": "Unemployment Rate SEP",
-      "actual": "6.4%",
-      "previous": "6.4%",
-      "forecast": "6.4%"
+      "period": "2026-10-01T12:00+00:00",
+      "title": "Unemployment Rate AUG",
+      "actual": "6.2%",
+      "previous": "5.8%",
+      "forecast": "5.9%"
     },
     {
       "country": "CAD",
@@ -499,11 +499,11 @@
       "dataPoint": "ISM Manufacturing PMI & ISM Services PMI",
       "weight": 1.0,
       "direction": "higher_is_bullish",
-      "period": "2026-09-23T17:45+00:00",
-      "title": "S&P Global Manufacturing PMI Flash SEP",
-      "actual": "57",
-      "previous": "53.9",
-      "forecast": "53"
+      "period": "2026-10-01T18:00+00:00",
+      "title": "ISM Manufacturing PMI SEP",
+      "actual": "54.5",
+      "previous": "54.6",
+      "forecast": "54"
     },
     {
       "country": "AUD",
@@ -720,6 +720,30 @@
       "actual": "24",
       "previous": "22",
       "forecast": "23"
+    },
+    {
+      "country": "CHF",
+      "dataPointId": "ch_cpi",
+      "dataPoint": "CPI (m/m, y/y)",
+      "weight": 1.5,
+      "direction": "higher_is_bullish",
+      "period": "2026-10-01T10:30+00:00",
+      "title": "Inflation Rate YoY SEP",
+      "actual": "1%",
+      "previous": "0.8%",
+      "forecast": "0.8%"
+    },
+    {
+      "country": "CHF",
+      "dataPointId": "ch_pmi",
+      "dataPoint": "Procure.ch Manufacturing PMI",
+      "weight": 0.5,
+      "direction": "higher_is_bullish",
+      "period": "2026-10-01T11:30+00:00",
+      "title": "procure.ch Manufacturing PMI SEP",
+      "actual": "55.3",
+      "previous": "57.1",
+      "forecast": "52.8"
     },
     {
       "country": "USD",

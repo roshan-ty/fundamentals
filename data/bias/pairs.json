@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-10-01T01:54:13+00:00",
+    "updated": "2026-10-01T18:57:14+00:00",
     "total": 82,
     "scored": 82
   },
@@ -11,219 +11,219 @@
       "verdict": "Neutral",
       "base": "EUR",
       "quote": "USD",
-      "base_verdict": "Bullish",
-      "quote_verdict": "Bullish",
+      "base_verdict": "Neutral",
+      "quote_verdict": "Neutral",
       "drivers": [
-        "EUR: Bullish",
-        "USD: Bullish"
+        "EUR: Neutral",
+        "USD: Neutral"
       ]
     },
     {
       "symbol": "EURGBP",
       "class": "fx",
-      "verdict": "Bullish",
+      "verdict": "Neutral",
       "base": "EUR",
       "quote": "GBP",
-      "base_verdict": "Bullish",
+      "base_verdict": "Neutral",
       "quote_verdict": "Neutral",
       "drivers": [
-        "EUR: Bullish",
+        "EUR: Neutral",
         "GBP: Neutral"
       ]
     },
     {
       "symbol": "EURJPY",
       "class": "fx",
-      "verdict": "Very Bullish",
+      "verdict": "Bullish",
       "base": "EUR",
       "quote": "JPY",
-      "base_verdict": "Bullish",
+      "base_verdict": "Neutral",
       "quote_verdict": "Bearish",
       "drivers": [
-        "EUR: Bullish",
+        "EUR: Neutral",
         "JPY: Bearish"
       ]
     },
     {
       "symbol": "EURCHF",
       "class": "fx",
-      "verdict": "Neutral",
+      "verdict": "Very Bearish",
       "base": "EUR",
       "quote": "CHF",
-      "base_verdict": "Bullish",
-      "quote_verdict": "Bullish",
+      "base_verdict": "Neutral",
+      "quote_verdict": "Very Bullish",
       "drivers": [
-        "EUR: Bullish",
-        "CHF: Bullish"
+        "EUR: Neutral",
+        "CHF: Very Bullish"
       ]
     },
     {
       "symbol": "EURAUD",
       "class": "fx",
-      "verdict": "Neutral",
+      "verdict": "Bearish",
       "base": "EUR",
       "quote": "AUD",
-      "base_verdict": "Bullish",
+      "base_verdict": "Neutral",
       "quote_verdict": "Bullish",
       "drivers": [
-        "EUR: Bullish",
+        "EUR: Neutral",
         "AUD: Bullish"
       ]
     },
     {
       "symbol": "EURCAD",
       "class": "fx",
-      "verdict": "Bullish",
+      "verdict": "Neutral",
       "base": "EUR",
       "quote": "CAD",
-      "base_verdict": "Bullish",
+      "base_verdict": "Neutral",
       "quote_verdict": "Neutral",
       "drivers": [
-        "EUR: Bullish",
+        "EUR: Neutral",
         "CAD: Neutral"
       ]
     },
     {
       "symbol": "EURNZD",
       "class": "fx",
-      "verdict": "Neutral",
+      "verdict": "Bearish",
       "base": "EUR",
       "quote": "NZD",
-      "base_verdict": "Bullish",
+      "base_verdict": "Neutral",
       "quote_verdict": "Bullish",
       "drivers": [
-        "EUR: Bullish",
+        "EUR: Neutral",
         "NZD: Bullish"
       ]
     },
     {
       "symbol": "EURNOK",
       "class": "fx",
-      "verdict": "Bullish",
+      "verdict": "Neutral",
       "base": "EUR",
       "quote": "NOK",
-      "base_verdict": "Bullish",
+      "base_verdict": "Neutral",
       "quote_verdict": "Neutral",
       "drivers": [
-        "EUR: Bullish",
+        "EUR: Neutral",
         "NOK: Neutral"
       ]
     },
     {
       "symbol": "EURSEK",
       "class": "fx",
-      "verdict": "Bullish",
+      "verdict": "Neutral",
       "base": "EUR",
       "quote": "SEK",
-      "base_verdict": "Bullish",
+      "base_verdict": "Neutral",
       "quote_verdict": "Neutral",
       "drivers": [
-        "EUR: Bullish",
+        "EUR: Neutral",
         "SEK: Neutral"
       ]
     },
     {
       "symbol": "EURPLN",
       "class": "fx",
-      "verdict": "Bullish",
+      "verdict": "Neutral",
       "base": "EUR",
       "quote": "PLN",
-      "base_verdict": "Bullish",
+      "base_verdict": "Neutral",
       "quote_verdict": "Neutral",
       "drivers": [
-        "EUR: Bullish",
+        "EUR: Neutral",
         "PLN: Neutral"
       ]
     },
     {
       "symbol": "EURHUF",
       "class": "fx",
-      "verdict": "Bullish",
+      "verdict": "Neutral",
       "base": "EUR",
       "quote": "HUF",
-      "base_verdict": "Bullish",
+      "base_verdict": "Neutral",
       "quote_verdict": "Neutral",
       "drivers": [
-        "EUR: Bullish",
+        "EUR: Neutral",
         "HUF: Neutral"
       ]
     },
     {
       "symbol": "EURSGD",
       "class": "fx",
-      "verdict": "Neutral",
+      "verdict": "Bearish",
       "base": "EUR",
       "quote": "SGD",
-      "base_verdict": "Bullish",
+      "base_verdict": "Neutral",
       "quote_verdict": "Bullish",
       "drivers": [
-        "EUR: Bullish",
+        "EUR: Neutral",
         "SGD: Bullish"
       ]
     },
     {
       "symbol": "EURTRY",
       "class": "fx",
-      "verdict": "Bullish",
+      "verdict": "Neutral",
       "base": "EUR",
       "quote": "TRY",
-      "base_verdict": "Bullish",
+      "base_verdict": "Neutral",
       "quote_verdict": "Neutral",
       "drivers": [
-        "EUR: Bullish",
+        "EUR: Neutral",
         "TRY: Neutral"
       ]
     },
     {
       "symbol": "EURZAR",
       "class": "fx",
-      "verdict": "Very Bullish",
+      "verdict": "Bullish",
       "base": "EUR",
       "quote": "ZAR",
-      "base_verdict": "Bullish",
+      "base_verdict": "Neutral",
       "quote_verdict": "Bearish",
       "drivers": [
-        "EUR: Bullish",
+        "EUR: Neutral",
         "ZAR: Bearish"
       ]
     },
     {
       "symbol": "EURHKD",
       "class": "fx",
-      "verdict": "Bullish",
+      "verdict": "Neutral",
       "base": "EUR",
       "quote": "HKD",
-      "base_verdict": "Bullish",
+      "base_verdict": "Neutral",
       "quote_verdict": "Neutral",
       "drivers": [
-        "EUR: Bullish",
+        "EUR: Neutral",
         "HKD: Neutral"
       ]
     },
     {
       "symbol": "GBPUSD",
       "class": "fx",
-      "verdict": "Bearish",
+      "verdict": "Neutral",
       "base": "GBP",
       "quote": "USD",
       "base_verdict": "Neutral",
-      "quote_verdict": "Bullish",
+      "quote_verdict": "Neutral",
       "drivers": [
         "GBP: Neutral",
-        "USD: Bullish"
+        "USD: Neutral"
       ]
     },
     {
       "symbol": "GBPEUR",
       "class": "fx",
-      "verdict": "Bearish",
+      "verdict": "Neutral",
       "base": "GBP",
       "quote": "EUR",
       "base_verdict": "Neutral",
-      "quote_verdict": "Bullish",
+      "quote_verdict": "Neutral",
       "drivers": [
         "GBP: Neutral",
-        "EUR: Bullish"
+        "EUR: Neutral"
       ]
     },
     {
@@ -242,14 +242,14 @@
     {
       "symbol": "GBPCHF",
       "class": "fx",
-      "verdict": "Bearish",
+      "verdict": "Very Bearish",
       "base": "GBP",
       "quote": "CHF",
       "base_verdict": "Neutral",
-      "quote_verdict": "Bullish",
+      "quote_verdict": "Very Bullish",
       "drivers": [
         "GBP: Neutral",
-        "CHF: Bullish"
+        "CHF: Very Bullish"
       ]
     },
     {
@@ -385,183 +385,183 @@
     {
       "symbol": "USDJPY",
       "class": "fx",
-      "verdict": "Very Bullish",
+      "verdict": "Bullish",
       "base": "USD",
       "quote": "JPY",
-      "base_verdict": "Bullish",
+      "base_verdict": "Neutral",
       "quote_verdict": "Bearish",
       "drivers": [
-        "USD: Bullish",
+        "USD: Neutral",
         "JPY: Bearish"
       ]
     },
     {
       "symbol": "USDCHF",
       "class": "fx",
-      "verdict": "Neutral",
+      "verdict": "Very Bearish",
       "base": "USD",
       "quote": "CHF",
-      "base_verdict": "Bullish",
-      "quote_verdict": "Bullish",
+      "base_verdict": "Neutral",
+      "quote_verdict": "Very Bullish",
       "drivers": [
-        "USD: Bullish",
-        "CHF: Bullish"
+        "USD: Neutral",
+        "CHF: Very Bullish"
       ]
     },
     {
       "symbol": "USDCAD",
       "class": "fx",
-      "verdict": "Bullish",
+      "verdict": "Neutral",
       "base": "USD",
       "quote": "CAD",
-      "base_verdict": "Bullish",
+      "base_verdict": "Neutral",
       "quote_verdict": "Neutral",
       "drivers": [
-        "USD: Bullish",
+        "USD: Neutral",
         "CAD: Neutral"
       ]
     },
     {
       "symbol": "USDSGD",
       "class": "fx",
-      "verdict": "Neutral",
+      "verdict": "Bearish",
       "base": "USD",
       "quote": "SGD",
-      "base_verdict": "Bullish",
+      "base_verdict": "Neutral",
       "quote_verdict": "Bullish",
       "drivers": [
-        "USD: Bullish",
+        "USD: Neutral",
         "SGD: Bullish"
       ]
     },
     {
       "symbol": "USDCNY",
       "class": "fx",
-      "verdict": "Bearish",
+      "verdict": "Very Bearish",
       "base": "USD",
       "quote": "CNY",
-      "base_verdict": "Bullish",
+      "base_verdict": "Neutral",
       "quote_verdict": "Very Bullish",
       "drivers": [
-        "USD: Bullish",
+        "USD: Neutral",
         "CNY: Very Bullish"
       ]
     },
     {
       "symbol": "USDMXN",
       "class": "fx",
-      "verdict": "Bullish",
+      "verdict": "Neutral",
       "base": "USD",
       "quote": "MXN",
-      "base_verdict": "Bullish",
+      "base_verdict": "Neutral",
       "quote_verdict": "Neutral",
       "drivers": [
-        "USD: Bullish",
+        "USD: Neutral",
         "MXN: Neutral"
       ]
     },
     {
       "symbol": "USDBRL",
       "class": "fx",
-      "verdict": "Neutral",
+      "verdict": "Bearish",
       "base": "USD",
       "quote": "BRL",
-      "base_verdict": "Bullish",
+      "base_verdict": "Neutral",
       "quote_verdict": "Bullish",
       "drivers": [
-        "USD: Bullish",
+        "USD: Neutral",
         "BRL: Bullish"
       ]
     },
     {
       "symbol": "USDNOK",
       "class": "fx",
-      "verdict": "Bullish",
+      "verdict": "Neutral",
       "base": "USD",
       "quote": "NOK",
-      "base_verdict": "Bullish",
+      "base_verdict": "Neutral",
       "quote_verdict": "Neutral",
       "drivers": [
-        "USD: Bullish",
+        "USD: Neutral",
         "NOK: Neutral"
       ]
     },
     {
       "symbol": "USDSEK",
       "class": "fx",
-      "verdict": "Bullish",
+      "verdict": "Neutral",
       "base": "USD",
       "quote": "SEK",
-      "base_verdict": "Bullish",
+      "base_verdict": "Neutral",
       "quote_verdict": "Neutral",
       "drivers": [
-        "USD: Bullish",
+        "USD: Neutral",
         "SEK: Neutral"
       ]
     },
     {
       "symbol": "USDPLN",
       "class": "fx",
-      "verdict": "Bullish",
+      "verdict": "Neutral",
       "base": "USD",
       "quote": "PLN",
-      "base_verdict": "Bullish",
+      "base_verdict": "Neutral",
       "quote_verdict": "Neutral",
       "drivers": [
-        "USD: Bullish",
+        "USD: Neutral",
         "PLN: Neutral"
       ]
     },
     {
       "symbol": "USDHUF",
       "class": "fx",
-      "verdict": "Bullish",
+      "verdict": "Neutral",
       "base": "USD",
       "quote": "HUF",
-      "base_verdict": "Bullish",
+      "base_verdict": "Neutral",
       "quote_verdict": "Neutral",
       "drivers": [
-        "USD: Bullish",
+        "USD: Neutral",
         "HUF: Neutral"
       ]
     },
     {
       "symbol": "USDCZK",
       "class": "fx",
-      "verdict": "Bullish",
+      "verdict": "Neutral",
       "base": "USD",
       "quote": "CZK",
-      "base_verdict": "Bullish",
+      "base_verdict": "Neutral",
       "quote_verdict": "Neutral",
       "drivers": [
-        "USD: Bullish",
+        "USD: Neutral",
         "CZK: Neutral"
       ]
     },
     {
       "symbol": "USDDKK",
       "class": "fx",
-      "verdict": "Bullish",
+      "verdict": "Neutral",
       "base": "USD",
       "quote": "DKK",
-      "base_verdict": "Bullish",
+      "base_verdict": "Neutral",
       "quote_verdict": "Neutral",
       "drivers": [
-        "USD: Bullish",
+        "USD: Neutral",
         "DKK: Neutral"
       ]
     },
     {
       "symbol": "AUDUSD",
       "class": "fx",
-      "verdict": "Neutral",
+      "verdict": "Bullish",
       "base": "AUD",
       "quote": "USD",
       "base_verdict": "Bullish",
-      "quote_verdict": "Bullish",
+      "quote_verdict": "Neutral",
       "drivers": [
         "AUD: Bullish",
-        "USD: Bullish"
+        "USD: Neutral"
       ]
     },
     {
@@ -580,14 +580,14 @@
     {
       "symbol": "AUDCHF",
       "class": "fx",
-      "verdict": "Neutral",
+      "verdict": "Bearish",
       "base": "AUD",
       "quote": "CHF",
       "base_verdict": "Bullish",
-      "quote_verdict": "Bullish",
+      "quote_verdict": "Very Bullish",
       "drivers": [
         "AUD: Bullish",
-        "CHF: Bullish"
+        "CHF: Very Bullish"
       ]
     },
     {
@@ -619,14 +619,14 @@
     {
       "symbol": "NZDUSD",
       "class": "fx",
-      "verdict": "Neutral",
+      "verdict": "Bullish",
       "base": "NZD",
       "quote": "USD",
       "base_verdict": "Bullish",
-      "quote_verdict": "Bullish",
+      "quote_verdict": "Neutral",
       "drivers": [
         "NZD: Bullish",
-        "USD: Bullish"
+        "USD: Neutral"
       ]
     },
     {
@@ -658,14 +658,14 @@
     {
       "symbol": "NZDCHF",
       "class": "fx",
-      "verdict": "Neutral",
+      "verdict": "Bearish",
       "base": "NZD",
       "quote": "CHF",
       "base_verdict": "Bullish",
-      "quote_verdict": "Bullish",
+      "quote_verdict": "Very Bullish",
       "drivers": [
         "NZD: Bullish",
-        "CHF: Bullish"
+        "CHF: Very Bullish"
       ]
     },
     {
@@ -684,14 +684,14 @@
     {
       "symbol": "CADCHF",
       "class": "fx",
-      "verdict": "Bearish",
+      "verdict": "Very Bearish",
       "base": "CAD",
       "quote": "CHF",
       "base_verdict": "Neutral",
-      "quote_verdict": "Bullish",
+      "quote_verdict": "Very Bullish",
       "drivers": [
         "CAD: Neutral",
-        "CHF: Bullish"
+        "CHF: Very Bullish"
       ]
     },
     {
@@ -713,74 +713,74 @@
       "verdict": "Very Bullish",
       "base": "CHF",
       "quote": "JPY",
-      "base_verdict": "Bullish",
+      "base_verdict": "Very Bullish",
       "quote_verdict": "Bearish",
       "drivers": [
-        "CHF: Bullish",
+        "CHF: Very Bullish",
         "JPY: Bearish"
       ]
     },
     {
       "symbol": "BTCUSD",
       "class": "crypto",
-      "verdict": "Bearish",
-      "base_verdict": "Bearish",
+      "verdict": "Neutral",
+      "base_verdict": "Neutral",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "ETHUSD",
       "class": "crypto",
-      "verdict": "Bearish",
-      "base_verdict": "Bearish",
+      "verdict": "Neutral",
+      "base_verdict": "Neutral",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "LTCUSD",
       "class": "crypto",
-      "verdict": "Bearish",
-      "base_verdict": "Bearish",
+      "verdict": "Neutral",
+      "base_verdict": "Neutral",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "SOLUSD",
       "class": "crypto",
-      "verdict": "Bearish",
-      "base_verdict": "Bearish",
+      "verdict": "Neutral",
+      "base_verdict": "Neutral",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "SUIUSD",
       "class": "crypto",
-      "verdict": "Bearish",
-      "base_verdict": "Bearish",
+      "verdict": "Neutral",
+      "base_verdict": "Neutral",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "XLMUSD",
       "class": "crypto",
-      "verdict": "Bearish",
-      "base_verdict": "Bearish",
+      "verdict": "Neutral",
+      "base_verdict": "Neutral",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "XRPUSD",
       "class": "crypto",
-      "verdict": "Bearish",
-      "base_verdict": "Bearish",
+      "verdict": "Neutral",
+      "base_verdict": "Neutral",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "AVAXUSD",
       "class": "crypto",
-      "verdict": "Bearish",
-      "base_verdict": "Bearish",
+      "verdict": "Neutral",
+      "base_verdict": "Neutral",
       "quote_verdict": null,
       "drivers": []
     },
@@ -795,16 +795,16 @@
     {
       "symbol": "XAGUSD",
       "class": "metals",
-      "verdict": "Very Bearish",
-      "base_verdict": "Very Bearish",
+      "verdict": "Bearish",
+      "base_verdict": "Bearish",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "XPTUSD",
       "class": "metals",
-      "verdict": "Very Bearish",
-      "base_verdict": "Very Bearish",
+      "verdict": "Bearish",
+      "base_verdict": "Bearish",
       "quote_verdict": null,
       "drivers": []
     },
@@ -819,24 +819,24 @@
     {
       "symbol": "OIL",
       "class": "energy",
-      "verdict": "Neutral",
-      "base_verdict": "Neutral",
+      "verdict": "Bullish",
+      "base_verdict": "Bullish",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "BRENT",
       "class": "energy",
-      "verdict": "Very Bearish",
-      "base_verdict": "Very Bearish",
+      "verdict": "Bearish",
+      "base_verdict": "Bearish",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "COPPER",
       "class": "energy",
-      "verdict": "Neutral",
-      "base_verdict": "Neutral",
+      "verdict": "Bullish",
+      "base_verdict": "Bullish",
       "quote_verdict": null,
       "drivers": []
     },
