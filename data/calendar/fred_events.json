@@ -2214,7 +2214,7 @@
     "country": "USD",
     "date_utc": "2026-07-01T00:00:00+00:00",
     "impact": "High",
-    "actual": "21.0",
+    "actual": "-10.0",
     "previous": "",
     "source_series": "PAYEMS",
     "period": "2026-07-01"
@@ -2414,7 +2414,7 @@
     "country": "USD",
     "date_utc": "2026-08-01T00:00:00+00:00",
     "impact": "High",
-    "actual": "162.0",
+    "actual": "133.0",
     "previous": "",
     "source_series": "PAYEMS",
     "period": "2026-08-01"
@@ -2528,6 +2528,26 @@
     "previous": "204000.0",
     "source_series": "ICSA",
     "period": "2026-08-29"
+  },
+  {
+    "title": "Non-Farm Employment Change",
+    "country": "USD",
+    "date_utc": "2026-09-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "29.0",
+    "previous": "",
+    "source_series": "PAYEMS",
+    "period": "2026-09-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "USD",
+    "date_utc": "2026-09-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "4.2",
+    "previous": "4.1",
+    "source_series": "UNRATE",
+    "period": "2026-09-01"
   },
   {
     "title": "Initial Jobless Claims",

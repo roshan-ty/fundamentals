@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-02T02:04:43+00:00",
+  "updated": "2026-10-02T18:29:56+00:00",
   "releases": [
     {
       "country": "USD",
@@ -55,11 +55,11 @@
       "dataPoint": "Non-Farm Employment Change (NFP)",
       "weight": 1.5,
       "direction": "higher_is_bullish",
-      "period": "2026-08-01T00:00:00+00:00",
-      "title": "Non-Farm Employment Change",
-      "actual": "162.0",
-      "previous": "",
-      "forecast": ""
+      "period": "2026-10-02T16:30+00:00",
+      "title": "Nonfarm Payrolls Private SEP",
+      "actual": "46K",
+      "previous": "127K",
+      "forecast": "95.0K"
     },
     {
       "country": "USD",
@@ -67,11 +67,11 @@
       "dataPoint": "Unemployment Rate",
       "weight": 1.0,
       "direction": "lower_is_bullish",
-      "period": "2026-08-01T00:00:00+00:00",
-      "title": "Unemployment Rate",
-      "actual": "4.1",
-      "previous": "4.1",
-      "forecast": ""
+      "period": "2026-10-02T16:30+00:00",
+      "title": "Unemployment Rate SEP",
+      "actual": "4.2%",
+      "previous": "4.1%",
+      "forecast": "4.30%"
     },
     {
       "country": "USD",
@@ -691,11 +691,11 @@
       "dataPoint": "Eurozone Retail Sales (m/m)",
       "weight": 0.5,
       "direction": "higher_is_bullish",
-      "period": "2026-09-30T10:00+00:00",
+      "period": "2026-10-02T12:00+00:00",
       "title": "Retail Sales MoM AUG",
       "actual": "0.3%",
-      "previous": "-3.4%",
-      "forecast": "1.5%"
+      "previous": "-0.4%",
+      "forecast": "0.1%"
     },
     {
       "country": "EUR",
@@ -703,11 +703,11 @@
       "dataPoint": "Eurozone Employment Change",
       "weight": 1.0,
       "direction": "higher_is_bullish",
-      "period": "2026-09-30T11:55+00:00",
+      "period": "2026-10-02T11:00+00:00",
       "title": "Unemployment Change SEP",
-      "actual": "12K",
-      "previous": "4K",
-      "forecast": "5.0K"
+      "actual": "23.587K",
+      "previous": "44.419K",
+      "forecast": "19K"
     },
     {
       "country": "JPY",
@@ -744,6 +744,18 @@
       "actual": "55.3",
       "previous": "57.1",
       "forecast": "52.8"
+    },
+    {
+      "country": "USD",
+      "dataPointId": "us_ahe",
+      "dataPoint": "Average Hourly Earnings (m/m, y/y)",
+      "weight": 1.0,
+      "direction": "higher_is_bullish",
+      "period": "2026-10-02T16:30+00:00",
+      "title": "Average Hourly Earnings MoM SEP",
+      "actual": "0.1%",
+      "previous": "0.3%",
+      "forecast": "0.2%"
     },
     {
       "country": "USD",
