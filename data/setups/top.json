@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-10-01T18:57:14+00:00"
+    "updated": "2026-10-02T02:04:43+00:00"
   },
   "setups": [
     {
@@ -40,24 +40,6 @@
       "rationale": "Very Bearish — USD: Neutral · CNY: Very Bullish"
     },
     {
-      "symbol": "AUDJPY",
-      "name": "AUDJPY",
-      "verdict": "Very Bullish",
-      "direction": "Buy",
-      "confidence": 1.0,
-      "importance": 2,
-      "rationale": "Very Bullish — AUD: Bullish · JPY: Bearish"
-    },
-    {
-      "symbol": "NZDJPY",
-      "name": "NZDJPY",
-      "verdict": "Very Bullish",
-      "direction": "Buy",
-      "confidence": 1.0,
-      "importance": 2,
-      "rationale": "Very Bullish — NZD: Bullish · JPY: Bearish"
-    },
-    {
       "symbol": "CADCHF",
       "name": "CADCHF",
       "verdict": "Very Bearish",
@@ -65,15 +47,6 @@
       "confidence": 1.0,
       "importance": 2,
       "rationale": "Very Bearish — CAD: Neutral · CHF: Very Bullish"
-    },
-    {
-      "symbol": "CHFJPY",
-      "name": "CHFJPY",
-      "verdict": "Very Bullish",
-      "direction": "Buy",
-      "confidence": 1.0,
-      "importance": 2,
-      "rationale": "Very Bullish — CHF: Very Bullish · JPY: Bearish"
     },
     {
       "symbol": "XAUUSD",
@@ -96,11 +69,11 @@
     {
       "symbol": "EURJPY",
       "name": "EURJPY",
-      "verdict": "Bullish",
-      "direction": "Buy",
+      "verdict": "Bearish",
+      "direction": "Sell",
       "confidence": 1.0,
       "importance": 1,
-      "rationale": "Bullish — EUR: Neutral · JPY: Bearish"
+      "rationale": "Bearish — EUR: Neutral · JPY: Bullish"
     },
     {
       "symbol": "EURAUD",
@@ -110,6 +83,33 @@
       "confidence": 1.0,
       "importance": 1,
       "rationale": "Bearish — EUR: Neutral · AUD: Bullish"
+    },
+    {
+      "symbol": "EURNZD",
+      "name": "EURNZD",
+      "verdict": "Bearish",
+      "direction": "Sell",
+      "confidence": 1.0,
+      "importance": 1,
+      "rationale": "Bearish — EUR: Neutral · NZD: Bullish"
+    },
+    {
+      "symbol": "EURSGD",
+      "name": "EURSGD",
+      "verdict": "Bearish",
+      "direction": "Sell",
+      "confidence": 1.0,
+      "importance": 1,
+      "rationale": "Bearish — EUR: Neutral · SGD: Bullish"
+    },
+    {
+      "symbol": "EURZAR",
+      "name": "EURZAR",
+      "verdict": "Bullish",
+      "direction": "Buy",
+      "confidence": 1.0,
+      "importance": 1,
+      "rationale": "Bullish — EUR: Neutral · ZAR: Bearish"
     }
   ]
 }
