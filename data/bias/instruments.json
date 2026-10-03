@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-10-02T18:29:56+00:00",
+    "updated": "2026-10-03T01:46:16+00:00",
     "method": "verdict v3"
   },
   "instruments": {
@@ -15,24 +15,24 @@
       "cot_tilt": -1.0
     },
     "XAGUSD": {
-      "verdict": "Bearish",
-      "halo": "signal -1",
+      "verdict": "Very Bearish",
+      "halo": "signal -3",
       "notes": [
-        "institutional flow leans supportive",
+        "institutional flow leans adverse",
         "real-yield rising (headwind)",
         "2Y yield rising (headwind)"
       ],
-      "cot_tilt": 1.0
+      "cot_tilt": -1.0
     },
     "XPTUSD": {
-      "verdict": "Bearish",
-      "halo": "signal -1",
+      "verdict": "Very Bearish",
+      "halo": "signal -3",
       "notes": [
-        "institutional flow leans supportive",
+        "institutional flow leans adverse",
         "real-yield rising (headwind)",
         "2Y yield rising (headwind)"
       ],
-      "cot_tilt": 1.0
+      "cot_tilt": -1.0
     },
     "XPDUSD": {
       "verdict": "Very Bearish",
@@ -55,16 +55,6 @@
       "cot_tilt": 1.0
     },
     "BRENT": {
-      "verdict": "Bearish",
-      "halo": "signal -1",
-      "notes": [
-        "industrial demand PMI expanding",
-        "2Y yield rising (headwind)",
-        "institutional flow leans adverse"
-      ],
-      "cot_tilt": -1.0
-    },
-    "COPPER": {
       "verdict": "Bullish",
       "halo": "signal +1",
       "notes": [
@@ -73,6 +63,16 @@
         "institutional flow leans supportive"
       ],
       "cot_tilt": 1.0
+    },
+    "COPPER": {
+      "verdict": "Bearish",
+      "halo": "signal -1",
+      "notes": [
+        "industrial demand PMI expanding",
+        "2Y yield rising (headwind)",
+        "institutional flow leans adverse"
+      ],
+      "cot_tilt": -1.0
     },
     "US500": {
       "verdict": "Bearish",

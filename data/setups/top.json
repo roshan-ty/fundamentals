@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-10-02T18:29:56+00:00"
+    "updated": "2026-10-03T01:46:16+00:00"
   },
   "setups": [
     {
@@ -58,6 +58,24 @@
       "rationale": "Very Bearish"
     },
     {
+      "symbol": "XAGUSD",
+      "name": "XAGUSD",
+      "verdict": "Very Bearish",
+      "direction": "Sell",
+      "confidence": 0.4,
+      "importance": 2,
+      "rationale": "Very Bearish"
+    },
+    {
+      "symbol": "XPTUSD",
+      "name": "XPTUSD",
+      "verdict": "Very Bearish",
+      "direction": "Sell",
+      "confidence": 0.4,
+      "importance": 2,
+      "rationale": "Very Bearish"
+    },
+    {
       "symbol": "XPDUSD",
       "name": "XPDUSD",
       "verdict": "Very Bearish",
@@ -92,24 +110,6 @@
       "confidence": 1.0,
       "importance": 1,
       "rationale": "Bearish — EUR: Bullish · CHF: Very Bullish"
-    },
-    {
-      "symbol": "EURCAD",
-      "name": "EURCAD",
-      "verdict": "Bullish",
-      "direction": "Buy",
-      "confidence": 1.0,
-      "importance": 1,
-      "rationale": "Bullish — EUR: Bullish · CAD: Neutral"
-    },
-    {
-      "symbol": "EURNOK",
-      "name": "EURNOK",
-      "verdict": "Bullish",
-      "direction": "Buy",
-      "confidence": 1.0,
-      "importance": 1,
-      "rationale": "Bullish — EUR: Bullish · NOK: Neutral"
     }
   ]
 }

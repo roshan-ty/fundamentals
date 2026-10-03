@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-10-02T18:29:56+00:00",
+    "updated": "2026-10-03T01:46:16+00:00",
     "method": "verdict v3 (forecast-first, released-only)"
   },
   "currencies": {
@@ -74,6 +74,18 @@
           "note": ""
         },
         {
+          "dataPoint": "2-Year Treasury Yield (21-day trend)",
+          "title": "2-Year Treasury Yield",
+          "period": "2026-10-01T00:00:00+00:00",
+          "actual": "4.78",
+          "previous": "4.67",
+          "forecast": "",
+          "direction": "higher_is_bullish",
+          "verdict": "bullish",
+          "weight": 1.0,
+          "note": ""
+        },
+        {
           "dataPoint": "Core PCE Price Index (m/m, y/y)",
           "title": "Core PCE Price Index MoM AUG",
           "period": "2026-09-30T16:30+00:00",
@@ -104,18 +116,6 @@
           "actual": "90K",
           "previous": "38K",
           "forecast": "75K",
-          "direction": "higher_is_bullish",
-          "verdict": "bullish",
-          "weight": 1.0,
-          "note": ""
-        },
-        {
-          "dataPoint": "2-Year Treasury Yield (21-day trend)",
-          "title": "2-Year Treasury Yield",
-          "period": "2026-09-30T00:00:00+00:00",
-          "actual": "4.88",
-          "previous": "4.65",
-          "forecast": "",
           "direction": "higher_is_bullish",
           "verdict": "bullish",
           "weight": 1.0,
@@ -1047,8 +1047,8 @@
     "yield2y_sig": 1,
     "oil_direction": "flat",
     "risk_mode": "flat",
-    "yield2y_level": 4.88,
-    "yield2y_sma": 4.651,
+    "yield2y_level": 4.78,
+    "yield2y_sma": 4.67,
     "dxy_level": 101.11,
     "gold_level": 4390.39382
   }

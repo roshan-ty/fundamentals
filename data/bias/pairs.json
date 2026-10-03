@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-10-02T18:29:56+00:00",
+    "updated": "2026-10-03T01:46:16+00:00",
     "total": 82,
     "scored": 82
   },
@@ -795,16 +795,16 @@
     {
       "symbol": "XAGUSD",
       "class": "metals",
-      "verdict": "Bearish",
-      "base_verdict": "Bearish",
+      "verdict": "Very Bearish",
+      "base_verdict": "Very Bearish",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "XPTUSD",
       "class": "metals",
-      "verdict": "Bearish",
-      "base_verdict": "Bearish",
+      "verdict": "Very Bearish",
+      "base_verdict": "Very Bearish",
       "quote_verdict": null,
       "drivers": []
     },
@@ -827,16 +827,16 @@
     {
       "symbol": "BRENT",
       "class": "energy",
-      "verdict": "Bearish",
-      "base_verdict": "Bearish",
+      "verdict": "Bullish",
+      "base_verdict": "Bullish",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "COPPER",
       "class": "energy",
-      "verdict": "Bullish",
-      "base_verdict": "Bullish",
+      "verdict": "Bearish",
+      "base_verdict": "Bearish",
       "quote_verdict": null,
       "drivers": []
     },
