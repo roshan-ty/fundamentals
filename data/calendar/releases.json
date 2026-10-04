@@ -1,18 +1,6 @@
 {
-  "updated": "2026-10-03T01:46:16+00:00",
+  "updated": "2026-10-04T02:26:19+00:00",
   "releases": [
-    {
-      "country": "USD",
-      "dataPointId": "us_claims",
-      "dataPoint": "Unemployment Claims (Weekly)",
-      "weight": 0.5,
-      "direction": "lower_is_bullish",
-      "period": "2026-10-01T16:30+00:00",
-      "title": "Initial Jobless Claims SEP/26",
-      "actual": "197K",
-      "previous": "197K",
-      "forecast": "195.0K"
-    },
     {
       "country": "USD",
       "dataPointId": "us_cpi",
@@ -168,6 +156,18 @@
       "actual": "4.6%",
       "previous": "4.5%",
       "forecast": "4.5%"
+    },
+    {
+      "country": "USD",
+      "dataPointId": "us_claims",
+      "dataPoint": "Unemployment Claims (Weekly)",
+      "weight": 0.5,
+      "direction": "lower_is_bullish",
+      "period": "2026-10-01T16:30+00:00",
+      "title": "Initial Jobless Claims SEP/26",
+      "actual": "197K",
+      "previous": "197K",
+      "forecast": "195.0K"
     },
     {
       "country": "USD",
