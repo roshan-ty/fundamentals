@@ -15172,9 +15172,9 @@
     "country": "AUD",
     "date_utc": "2026-10-05T00:00+00:00",
     "impact": "Low",
-    "forecast": "",
+    "forecast": "0.5%",
     "previous": "0.5%",
-    "actual": "",
+    "actual": "0.3%",
     "revision": "",
     "source": "ff-feed"
   },
@@ -15196,7 +15196,7 @@
     "impact": "",
     "forecast": "50.8",
     "previous": "52.7",
-    "actual": "",
+    "actual": "51.3",
     "source": "te"
   },
   {
@@ -15206,7 +15206,7 @@
     "impact": "",
     "forecast": "51.4",
     "previous": "53.2",
-    "actual": "",
+    "actual": "51.9",
     "source": "te"
   },
   {
@@ -15216,7 +15216,7 @@
     "impact": "",
     "forecast": "52.5",
     "previous": "53.5",
-    "actual": "",
+    "actual": "52.30",
     "source": "te"
   },
   {
@@ -15226,7 +15226,7 @@
     "impact": "",
     "forecast": "51.6",
     "previous": "52.5",
-    "actual": "",
+    "actual": "51.3",
     "source": "te"
   },
   {
@@ -15236,7 +15236,7 @@
     "impact": "",
     "forecast": "56.4",
     "previous": "59.4",
-    "actual": "",
+    "actual": "58.1",
     "source": "te"
   },
   {
@@ -15832,7 +15832,7 @@
     "impact": "",
     "forecast": "0.4%",
     "previous": "0.5%",
-    "actual": "",
+    "actual": "0.3%",
     "source": "te"
   },
   {
@@ -20957,7 +20957,7 @@
     "date_utc": "2026-10-23T02:00+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "51.3",
     "actual": "",
     "source": "te"
   },
@@ -21027,7 +21027,7 @@
     "date_utc": "2026-10-23T04:30+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "51.3",
     "actual": "",
     "source": "te"
   },
@@ -21037,7 +21037,7 @@
     "date_utc": "2026-10-23T04:30+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "52.3",
     "actual": "",
     "source": "te"
   },
@@ -23258,6 +23258,26 @@
     "impact": "",
     "forecast": "",
     "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Retail Sales YoY SEP",
+    "country": "JPY",
+    "date_utc": "2026-10-31T03:50+00:00",
+    "impact": "",
+    "forecast": "5.8%",
+    "previous": "2.7%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Retail Sales MoM SEP",
+    "country": "JPY",
+    "date_utc": "2026-10-31T03:50+00:00",
+    "impact": "",
+    "forecast": "0.6%",
+    "previous": "-1.2%",
     "actual": "",
     "source": "te"
   }
