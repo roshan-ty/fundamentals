@@ -1,8 +1,17 @@
 {
   "meta": {
-    "updated": "2026-10-05T01:36:24+00:00"
+    "updated": "2026-10-05T21:21:52+00:00"
   },
   "setups": [
+    {
+      "symbol": "EURTRY",
+      "name": "EURTRY",
+      "verdict": "Very Bullish",
+      "direction": "Buy",
+      "confidence": 1.0,
+      "importance": 2,
+      "rationale": "Very Bullish — EUR: Bullish · TRY: Bearish"
+    },
     {
       "symbol": "EURZAR",
       "name": "EURZAR",
@@ -101,15 +110,6 @@
       "confidence": 1.0,
       "importance": 1,
       "rationale": "Bullish — EUR: Bullish · GBP: Neutral"
-    },
-    {
-      "symbol": "EURCHF",
-      "name": "EURCHF",
-      "verdict": "Bearish",
-      "direction": "Sell",
-      "confidence": 1.0,
-      "importance": 1,
-      "rationale": "Bearish — EUR: Bullish · CHF: Very Bullish"
     }
   ]
 }

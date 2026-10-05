@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-05T01:36:24+00:00",
+  "updated": "2026-10-05T21:21:52+00:00",
   "releases": [
     {
       "country": "USD",
@@ -499,10 +499,10 @@
       "dataPoint": "ISM Manufacturing PMI & ISM Services PMI",
       "weight": 1.0,
       "direction": "higher_is_bullish",
-      "period": "2026-10-01T18:00+00:00",
-      "title": "ISM Manufacturing PMI SEP",
-      "actual": "54.5",
-      "previous": "54.6",
+      "period": "2026-10-05T18:00+00:00",
+      "title": "ISM Services PMI SEP",
+      "actual": "54.9",
+      "previous": "55.4",
       "forecast": "54"
     },
     {
@@ -758,15 +758,27 @@
       "forecast": "0.2%"
     },
     {
+      "country": "TRY",
+      "dataPointId": "tr_cpi",
+      "dataPoint": "CPI y/y",
+      "weight": 1.5,
+      "direction": "higher_is_bullish",
+      "period": "2026-10-05T11:00+00:00",
+      "title": "Inflation Rate MoM SEP",
+      "actual": "1.84%",
+      "previous": "1.84%",
+      "forecast": "3.0%"
+    },
+    {
       "country": "USD",
       "dataPointId": "us_yield2y",
       "dataPoint": "2-Year Treasury Yield (21-day trend)",
       "weight": 1.0,
       "direction": "higher_is_bullish",
-      "period": "2026-10-01T00:00:00+00:00",
+      "period": "2026-10-02T00:00:00+00:00",
       "title": "2-Year Treasury Yield",
-      "actual": "4.78",
-      "previous": "4.67",
+      "actual": "4.83",
+      "previous": "4.69",
       "forecast": ""
     }
   ]
