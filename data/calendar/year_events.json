@@ -606,7 +606,7 @@
     "impact": "",
     "forecast": "-1.2%",
     "previous": "-5.2%",
-    "actual": "",
+    "actual": "-4.7%",
     "source": "te"
   },
   {
@@ -616,7 +616,7 @@
     "impact": "",
     "forecast": "83.4",
     "previous": "84.4",
-    "actual": "",
+    "actual": "80.4",
     "source": "te"
   },
   {
@@ -625,8 +625,8 @@
     "date_utc": "2026-10-06T04:30+00:00",
     "impact": "",
     "forecast": "-1.3%",
-    "previous": "2.5%",
-    "actual": "",
+    "previous": "2.6% ",
+    "actual": "2.2%",
     "source": "te"
   },
   {
@@ -636,7 +636,7 @@
     "impact": "",
     "forecast": "",
     "previous": "3.779%",
-    "actual": "",
+    "actual": "3.895%",
     "source": "te"
   },
   {
@@ -4350,6 +4350,56 @@
     "source": "te"
   },
   {
+    "title": "Unemployment Rate SEP",
+    "country": "KRW",
+    "date_utc": "2026-10-16T03:00+00:00",
+    "impact": "",
+    "forecast": "2.90%",
+    "previous": "2.7%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Balance of Trade SEP",
+    "country": "SGD",
+    "date_utc": "2026-10-16T04:30+00:00",
+    "impact": "",
+    "forecast": "$ 8.5B",
+    "previous": "$13.780B",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Non-Oil Exports MoM SEP",
+    "country": "SGD",
+    "date_utc": "2026-10-16T04:30+00:00",
+    "impact": "",
+    "forecast": "5.2%",
+    "previous": "10.9%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Non-Oil Exports YoY SEP",
+    "country": "SGD",
+    "date_utc": "2026-10-16T04:30+00:00",
+    "impact": "",
+    "forecast": "41.9%",
+    "previous": "46.2%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "50-Year KTB Auction",
+    "country": "KRW",
+    "date_utc": "2026-10-16T06:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "4.720%",
+    "actual": "",
+    "source": "te"
+  },
+  {
     "title": "S&P Global Composite PMI Final SEP",
     "country": "AUD",
     "date_utc": "2026-10-05T02:00+00:00",
@@ -4606,7 +4656,7 @@
     "impact": "",
     "forecast": "",
     "previous": "3.6930%",
-    "actual": "",
+    "actual": "3.6176%",
     "source": "te"
   },
   {
@@ -4616,7 +4666,7 @@
     "impact": "",
     "forecast": "3.0999%",
     "previous": "3.0838%",
-    "actual": "",
+    "actual": "3.06%",
     "source": "te"
   },
   {
@@ -4626,7 +4676,7 @@
     "impact": "",
     "forecast": "",
     "previous": "3.1905%",
-    "actual": "",
+    "actual": "3.2022%",
     "source": "te"
   },
   {
@@ -4635,7 +4685,7 @@
     "date_utc": "2026-10-13T05:35+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "3.6176%",
     "actual": "",
     "source": "te"
   },
@@ -4644,8 +4694,8 @@
     "country": "NZD",
     "date_utc": "2026-10-13T05:35+00:00",
     "impact": "",
-    "forecast": "",
-    "previous": "",
+    "forecast": "3.0999%",
+    "previous": "3.06%",
     "actual": "",
     "source": "te"
   },
@@ -4655,7 +4705,7 @@
     "date_utc": "2026-10-13T05:35+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "3.2022%",
     "actual": "",
     "source": "te"
   },
@@ -4877,16 +4927,6 @@
     "forecast": "",
     "previous": "97.6",
     "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "3-Month Bill Auction",
-    "country": "JPY",
-    "date_utc": "2026-10-02T07:35+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "1.2555%",
-    "actual": "1.2793%",
     "source": "te"
   },
   {
@@ -6697,16 +6737,6 @@
     "forecast": "",
     "previous": "",
     "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "New Car Registrations YoY SEP",
-    "country": "EUR",
-    "date_utc": "2026-10-02T12:45+00:00",
-    "impact": "",
-    "forecast": "2.9%",
-    "previous": "7.4%",
-    "actual": "11.6%",
     "source": "te"
   },
   {

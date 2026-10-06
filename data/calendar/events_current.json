@@ -1,175 +1,5 @@
 [
   {
-    "title": "CPI m/m",
-    "country": "USD",
-    "date_utc": "2025-09-01T00:00:00+00:00",
-    "impact": "High",
-    "actual": "0.3",
-    "previous": "",
-    "source_series": "CPIAUCSL",
-    "period": "2025-09-01"
-  },
-  {
-    "title": "Core CPI m/m",
-    "country": "USD",
-    "date_utc": "2025-09-01T00:00:00+00:00",
-    "impact": "High",
-    "actual": "0.22",
-    "previous": "",
-    "source_series": "CPILFESL",
-    "period": "2025-09-01"
-  },
-  {
-    "title": "PPI m/m",
-    "country": "USD",
-    "date_utc": "2025-09-01T00:00:00+00:00",
-    "impact": "Medium",
-    "actual": "-0.02",
-    "previous": "",
-    "source_series": "PPIACO",
-    "period": "2025-09-01"
-  },
-  {
-    "title": "Core PPI m/m",
-    "country": "USD",
-    "date_utc": "2025-09-01T00:00:00+00:00",
-    "impact": "Medium",
-    "actual": "0.52",
-    "previous": "",
-    "source_series": "PPIFES",
-    "period": "2025-09-01"
-  },
-  {
-    "title": "Core PCE Price Index m/m",
-    "country": "USD",
-    "date_utc": "2025-09-01T00:00:00+00:00",
-    "impact": "Medium",
-    "actual": "0.19",
-    "previous": "",
-    "source_series": "PCEPILFE",
-    "period": "2025-09-01"
-  },
-  {
-    "title": "Non-Farm Employment Change",
-    "country": "USD",
-    "date_utc": "2025-09-01T00:00:00+00:00",
-    "impact": "High",
-    "actual": "76.0",
-    "previous": "",
-    "source_series": "PAYEMS",
-    "period": "2025-09-01"
-  },
-  {
-    "title": "Unemployment Rate",
-    "country": "USD",
-    "date_utc": "2025-09-01T00:00:00+00:00",
-    "impact": "High",
-    "actual": "4.4",
-    "previous": "4.3",
-    "source_series": "UNRATE",
-    "period": "2025-09-01"
-  },
-  {
-    "title": "Retail Sales m/m",
-    "country": "USD",
-    "date_utc": "2025-09-01T00:00:00+00:00",
-    "impact": "Medium",
-    "actual": "0.07",
-    "previous": "",
-    "source_series": "RSAFS",
-    "period": "2025-09-01"
-  },
-  {
-    "title": "Housing Starts",
-    "country": "USD",
-    "date_utc": "2025-09-01T00:00:00+00:00",
-    "impact": "Medium",
-    "actual": "1319.0",
-    "previous": "1291.0",
-    "source_series": "HOUST",
-    "period": "2025-09-01"
-  },
-  {
-    "title": "Building Permits",
-    "country": "USD",
-    "date_utc": "2025-09-01T00:00:00+00:00",
-    "impact": "Medium",
-    "actual": "1444.0",
-    "previous": "1347.0",
-    "source_series": "PERMIT",
-    "period": "2025-09-01"
-  },
-  {
-    "title": "Trade Balance",
-    "country": "USD",
-    "date_utc": "2025-09-01T00:00:00+00:00",
-    "impact": "Medium",
-    "actual": "-59392.0",
-    "previous": "-59642.0",
-    "source_series": "BOPGSTB",
-    "period": "2025-09-01"
-  },
-  {
-    "title": "UoM Consumer Sentiment",
-    "country": "USD",
-    "date_utc": "2025-09-01T00:00:00+00:00",
-    "impact": "Medium",
-    "actual": "55.1",
-    "previous": "58.2",
-    "source_series": "UMCSENT",
-    "period": "2025-09-01"
-  },
-  {
-    "title": "Unemployment Rate",
-    "country": "GBP",
-    "date_utc": "2025-09-01T00:00:00+00:00",
-    "impact": "High",
-    "actual": "5.1",
-    "previous": "5.0",
-    "source_series": "LRHUTTTTGBM156S",
-    "period": "2025-09-01"
-  },
-  {
-    "title": "Unemployment Rate",
-    "country": "EUR",
-    "date_utc": "2025-09-01T00:00:00+00:00",
-    "impact": "High",
-    "actual": "3.8",
-    "previous": "3.8",
-    "source_series": "LRHUTTTTDEM156S",
-    "period": "2025-09-01"
-  },
-  {
-    "title": "Unemployment Rate",
-    "country": "JPY",
-    "date_utc": "2025-09-01T00:00:00+00:00",
-    "impact": "High",
-    "actual": "2.6",
-    "previous": "2.6",
-    "source_series": "LRHUTTTTJPM156S",
-    "period": "2025-09-01"
-  },
-  {
-    "title": "Unemployment Rate",
-    "country": "CAD",
-    "date_utc": "2025-09-01T00:00:00+00:00",
-    "impact": "High",
-    "actual": "7.1",
-    "previous": "7.1",
-    "source_series": "LRHUTTTTCAM156S",
-    "period": "2025-09-01"
-  },
-  {
-    "title": "Unemployment Rate",
-    "country": "AUD",
-    "date_utc": "2025-09-01T00:00:00+00:00",
-    "impact": "High",
-    "actual": "4.451847",
-    "previous": "4.248082",
-    "source_series": "LRHUTTTTAUM156S",
-    "period": "2025-09-01"
-  },
-  {
     "title": "Initial Jobless Claims",
     "country": "USD",
     "date_utc": "2025-09-06T00:00:00+00:00",
@@ -15788,7 +15618,7 @@
     "impact": "",
     "forecast": "-1.2%",
     "previous": "-5.2%",
-    "actual": "",
+    "actual": "-4.7%",
     "source": "te"
   },
   {
@@ -15798,7 +15628,7 @@
     "impact": "",
     "forecast": "83.4",
     "previous": "84.4",
-    "actual": "",
+    "actual": "80.4",
     "source": "te"
   },
   {
@@ -15829,7 +15659,7 @@
     "impact": "",
     "forecast": "-1.3%",
     "previous": "2.5%",
-    "actual": "",
+    "actual": "2.2%",
     "source": "te"
   },
   {
@@ -15850,7 +15680,7 @@
     "impact": "",
     "forecast": "",
     "previous": "3.779%",
-    "actual": "",
+    "actual": "3.895%",
     "source": "te"
   },
   {
@@ -19892,6 +19722,56 @@
     "source": "te"
   },
   {
+    "title": "Unemployment Rate SEP",
+    "country": "KRW",
+    "date_utc": "2026-10-16T03:00+00:00",
+    "impact": "",
+    "forecast": "2.90%",
+    "previous": "2.7%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Balance of Trade SEP",
+    "country": "SGD",
+    "date_utc": "2026-10-16T04:30+00:00",
+    "impact": "",
+    "forecast": "$ 8.5B",
+    "previous": "$13.780B",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Non-Oil Exports MoM SEP",
+    "country": "SGD",
+    "date_utc": "2026-10-16T04:30+00:00",
+    "impact": "",
+    "forecast": "5.2%",
+    "previous": "10.9%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Non-Oil Exports YoY SEP",
+    "country": "SGD",
+    "date_utc": "2026-10-16T04:30+00:00",
+    "impact": "",
+    "forecast": "41.9%",
+    "previous": "46.2%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "50-Year KTB Auction",
+    "country": "KRW",
+    "date_utc": "2026-10-16T06:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "4.720%",
+    "actual": "",
+    "source": "te"
+  },
+  {
     "title": "CFIB Business Barometer OCT",
     "country": "CAD",
     "date_utc": "2026-10-16T15:00+00:00",
@@ -21638,7 +21518,7 @@
     "impact": "",
     "forecast": "",
     "previous": "3.6930%",
-    "actual": "",
+    "actual": "3.6176%",
     "source": "te"
   },
   {
@@ -21648,7 +21528,7 @@
     "impact": "",
     "forecast": "3.0999%",
     "previous": "3.0838%",
-    "actual": "",
+    "actual": "3.06%",
     "source": "te"
   },
   {
@@ -21658,7 +21538,7 @@
     "impact": "",
     "forecast": "",
     "previous": "3.1905%",
-    "actual": "",
+    "actual": "3.2022%",
     "source": "te"
   },
   {
