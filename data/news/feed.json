@@ -1,5 +1,109 @@
 [
   {
+    "headline": "What are the main events for today?",
+    "snippet": "<p>EUROPEAN SESSION</p><p>In the European session, we don't have much on the agenda other than a couple of low tier releases like the Swiss unemployment rate and the Eurozone retail sales. None of the data won't change anything for the respective central banks, so the market reaction will likely be ",
+    "url": "https://investinglive.com/news/what-are-the-main-events-for-today-57/",
+    "source": "markets",
+    "published": "2026-10-06T06:38",
+    "tags": [
+      "EUR"
+    ],
+    "kind": "forex",
+    "collected_at": "2026-10-06T07:25:00+00:00"
+  },
+  {
+    "headline": "Better Markets says CFTC is ‘wrong agency’ to regulate retail crypto",
+    "snippet": "Better Markets said the CFTC’s proposed framework to bring certain cryptocurrency transactions and exchanges under its oversight will leave investors less protected than under the SEC.",
+    "url": "https://cointelegraph.com/news/better-markets-criticize-cftc-regulate-retail-crypto?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "source": "markets",
+    "published": "2026-10-06T05:43",
+    "tags": [],
+    "kind": "crypto",
+    "collected_at": "2026-10-06T07:25:00+00:00"
+  },
+  {
+    "headline": "U.S. scraps proposed $10,000 reporting rule for for crypto sent to private wallets",
+    "snippet": "",
+    "url": "https://www.coindesk.com/policy/2026/10/06/u-s-scraps-proposed-usd10-000-reporting-rule-for-for-crypto-sent-to-private-wallets",
+    "source": "markets",
+    "published": "2026-10-06T04:55",
+    "tags": [],
+    "kind": "crypto",
+    "collected_at": "2026-10-06T07:25:00+00:00"
+  },
+  {
+    "headline": "Ethereum’s Glamsterdam test gets last-minute fix before major capacity jump",
+    "snippet": "",
+    "url": "https://www.coindesk.com/tech/2026/10/06/ethereum-s-glamsterdam-test-gets-last-minute-fix-before-major-capacity-jump",
+    "source": "markets",
+    "published": "2026-10-06T04:49",
+    "tags": [
+      "ETHUSD"
+    ],
+    "kind": "crypto",
+    "collected_at": "2026-10-06T07:25:00+00:00"
+  },
+  {
+    "headline": "Bitcoin keeps getting rejected at $87,000 as stocks hover near records",
+    "snippet": "",
+    "url": "https://www.coindesk.com/markets/2026/10/06/bitcoin-keeps-getting-rejected-at-usd87-000-as-stocks-hover-near-records",
+    "source": "markets",
+    "published": "2026-10-06T04:41",
+    "tags": [
+      "BTCUSD"
+    ],
+    "kind": "crypto",
+    "collected_at": "2026-10-06T07:25:00+00:00"
+  },
+  {
+    "headline": "Solana Foundation unveils a program to settle institutional trades in seconds. JPMorgan gave input",
+    "snippet": "",
+    "url": "https://www.coindesk.com/markets/2026/10/06/solana-foundation-unveils-a-program-to-settle-institutional-trades-in-seconds-with-jpmorgan-s-inputs",
+    "source": "markets",
+    "published": "2026-10-06T04:23",
+    "tags": [
+      "SOLUSD"
+    ],
+    "kind": "crypto",
+    "collected_at": "2026-10-06T07:25:00+00:00"
+  },
+  {
+    "headline": "Rain seeks US trust bank charter days after OCC sued over crypto charters",
+    "snippet": "Rain joins a growing queue of crypto firms seeking federal trust charters, while community banks have just asked a court to overturn the OCC rules underpinning them.",
+    "url": "https://cointelegraph.com/news/rain-seeks-us-trust-bank-charter-days-after-occ-sued-over-crypto-charters?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "source": "markets",
+    "published": "2026-10-06T03:45",
+    "tags": [
+      "USD"
+    ],
+    "kind": "crypto",
+    "collected_at": "2026-10-06T07:25:00+00:00"
+  },
+  {
+    "headline": "OKX eyes emerging markets with yield-offering stablecoin savings and payments app",
+    "snippet": "OKX Money lets users hold, send and spend dollar-backed stablecoins, with qualifying USDG balances earning up to 10% APY.",
+    "url": "https://cointelegraph.com/news/okx-money-stablecoin-savings-payments-emerging-markets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "source": "markets",
+    "published": "2026-10-06T03:40",
+    "tags": [
+      "USD"
+    ],
+    "kind": "crypto",
+    "collected_at": "2026-10-06T07:25:00+00:00"
+  },
+  {
+    "headline": "Solana launches open settlement standard for institutions, with JPMorgan input",
+    "snippet": "<p dir=\"ltr\">Solana launches open settlement standard for institutions: what JPMorgan's role actually means</p><p dir=\"ltr\">The Solana Foundation has launched Solana DvP, an open-source program designed to let banks and other financial institutions settle trades of tokenised assets on the Solana blo",
+    "url": "https://investinglive.com/cryptocurrency/solana-launches-open-settlement-standard-for-institutions-with-jpmorgan-input/",
+    "source": "markets",
+    "published": "2026-10-06T03:01",
+    "tags": [
+      "SOLUSD"
+    ],
+    "kind": "crypto",
+    "collected_at": "2026-10-06T07:25:00+00:00"
+  },
+  {
     "headline": "Chinese crime network laundered over $1B for Lazarus: ZachXBT",
     "snippet": "ZachXBT says he infiltrated the network by posing as a customer, gaining information that helped trace funds from the $1.5 billion Bybit hack.",
     "url": "https://cointelegraph.com/news/chinese-crime-network-laundered-over-1b-for-lazarus-zachxbt?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -7,7 +111,7 @@
     "published": "2026-10-06T01:47",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "Chalmers warns rising global bond yields will pressure Australia's federal budget",
@@ -58,7 +162,7 @@
     "published": "2026-10-05T21:42",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "NZ business confidence jumps to a net 40% in September quarter despite oil price headwinds",
@@ -97,7 +201,7 @@
     "published": "2026-10-05T20:46",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "Modern Treasury seeks US trust bank charter for digital asset custody",
@@ -109,7 +213,7 @@
       "USD"
     ],
     "kind": "crypto",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "Crypto's campaign arm, Fairshake, sets lists of U.S. House favorites it'll spend on",
@@ -119,7 +223,7 @@
     "published": "2026-10-05T19:21",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "Advocacy group pushes back on banks’ lawsuit against OCC over charters",
@@ -129,7 +233,7 @@
     "published": "2026-10-05T19:15",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "Wall Street rewards Microsoft's AI pivot. A longtime skeptic says it's just the beginning",
@@ -141,7 +245,7 @@
       "US500"
     ],
     "kind": "general",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "Nvidia looks to take out its record high close — plus, don't worry about Intel's dip",
@@ -151,7 +255,7 @@
     "published": "2026-10-05T18:25",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "S&P Global brings risk assessments to growing crypto lending vault sector",
@@ -163,7 +267,7 @@
       "GLOBAL"
     ],
     "kind": "crypto",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "CFTC joins SEC in proposing crypto framework after failed CLARITY vote",
@@ -173,7 +277,7 @@
     "published": "2026-10-05T17:40",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "More than 60 U.S. stocks including Nvidia and Tesla are headed onchain. Here’s how it works",
@@ -183,7 +287,7 @@
     "published": "2026-10-05T17:18",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "Treasury yields at 5% threaten extending Bitcoin’s best quarter since 2017",
@@ -196,7 +300,7 @@
       "BTCUSD"
     ],
     "kind": "crypto",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "USDCAD stretched to targeted level and found willing sellers. Is this the start of a decline?",
@@ -218,7 +322,7 @@
     "published": "2026-10-05T16:29",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "U.S. CFTC joins SEC in proposing crypto regulations, though spot-market gap lingers",
@@ -228,7 +332,7 @@
     "published": "2026-10-05T15:54",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "These are the cheapest and most expensive U.S. flights this November",
@@ -238,7 +342,7 @@
     "published": "2026-10-05T15:38",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "Bitcoin price fails to break higher after best weekly close in eight months",
@@ -250,7 +354,7 @@
       "BTCUSD"
     ],
     "kind": "crypto",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "ISM non- manufacturing PMI 54.9 versus 55.2 estimate",
@@ -270,7 +374,7 @@
     "published": "2026-10-05T13:46",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "Bitcoin rally stalls below $87,334. What must buyers and sellers do next?",
@@ -296,7 +400,7 @@
       "CNY"
     ],
     "kind": "crypto",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "Jim Cramer's top 10 things to watch in the stock market Monday",
@@ -308,7 +412,7 @@
       "US500"
     ],
     "kind": "general",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "Strategy opts for bigger spending on STRC buybacks over BTC purchases",
@@ -320,7 +424,7 @@
       "BTCUSD"
     ],
     "kind": "crypto",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "Too big to pause: Could an AI slowdown crash the economy?",
@@ -334,7 +438,7 @@
       "US30"
     ],
     "kind": "crypto",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "Too big to pause: Could an AI slowdown crash the economy?",
@@ -360,7 +464,7 @@
       "BTCUSD"
     ],
     "kind": "crypto",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "An XRP treasury SPAC surges nearly 300% ahead of Evernorth merger",
@@ -372,7 +476,7 @@
       "XRPUSD"
     ],
     "kind": "crypto",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "SEC approves a 3x fix for bitcoin and ether traders who miss the wild swings",
@@ -385,7 +489,7 @@
       "ETHUSD"
     ],
     "kind": "crypto",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "Treasury crackdown exposes crypto's role in $2 million Hamas fundraising network",
@@ -398,7 +502,7 @@
       "US30"
     ],
     "kind": "crypto",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "Why airfare could rise even more, but airline profits won't",
@@ -408,7 +512,7 @@
     "published": "2026-10-05T11:00",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "Metaplanet added 1,000 bitcoin net in the third quarter bringing holdings to 44,000 BTC",
@@ -420,7 +524,7 @@
       "BTCUSD"
     ],
     "kind": "crypto",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "U.S. dollar climbs to 18-month high as bitcoin holds firm around $86,000",
@@ -433,7 +537,7 @@
       "BTCUSD"
     ],
     "kind": "crypto",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "Live updates: Bitcoin above $86,000 as traders price out an October Fed hike",
@@ -567,6 +671,19 @@
     "collected_at": "2026-10-05T18:12:55+00:00"
   },
   {
+    "headline": "Wall Street pours $10 billion into Indian hospitals, but who will pay the rising bills?",
+    "snippet": "Global investors have poured $10 billion into Indian hospitals, fuelling expansion while rising medical costs and affordability concerns come under scrutiny.",
+    "url": "https://www.bloomberg.com/news/articles/2026-10-05/wall-street-s-10-billion-india-hospital-bet-sparks-a-fight-over-bills",
+    "source": "markets",
+    "published": "2026-10-05T05:57",
+    "tags": [
+      "US500",
+      "GLOBAL"
+    ],
+    "kind": "general",
+    "collected_at": "2026-10-06T07:25:00+00:00"
+  },
+  {
     "headline": "Bond yields remain the market’s pressure point even after soft US jobs report",
     "snippet": "<p class=\"text-align-justify\" style=\"text-align: justify;\">The softer US jobs report on Friday might have offered markets some much-needed relief before the weekend but I don't think it changes the main thing traders should be watching this week. And that is still the bond market.</p><p class=\"text-",
     "url": "https://investinglive.com/news/bond-yields-remain-the-market-s-pressure-point-even-after-soft-us-jobs-report/",
@@ -642,6 +759,19 @@
     "collected_at": "2026-10-05T14:57:05+00:00"
   },
   {
+    "headline": "India aims to sign multibillion-dollar French jet deal by March",
+    "snippet": "India aims to sign a $30-35 billion Rafale deal for 114 jets with France within five months, amid growing fighter shortfalls.",
+    "url": "https://www.bloomberg.com/news/articles/2026-10-03/india-aims-to-sign-multibillion-dollar-french-jet-deal-by-march",
+    "source": "markets",
+    "published": "2026-10-05T03:38",
+    "tags": [
+      "USD",
+      "EUR"
+    ],
+    "kind": "general",
+    "collected_at": "2026-10-06T07:25:00+00:00"
+  },
+  {
     "headline": "Safe investor asks Swiss watchdog to intervene in governance dispute",
     "snippet": "Greenfield Capital said it sought changes to Safe Ecosystem Foundation’s board for months before turning to the Swiss regulator.",
     "url": "https://cointelegraph.com/news/safe-investor-asks-swiss-watchdog-to-intervene-in-governance-dispute?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -685,6 +815,80 @@
     "tags": [],
     "kind": "crypto",
     "collected_at": "2026-10-05T14:57:05+00:00"
+  },
+  {
+    "headline": "Congress demands CEC Gyanesh’s removal, calls for fresh Haryana polls on ballot paper",
+    "snippet": "Congress demands CEC Gyanesh’s removal, calls for fresh Haryana polls on ballot paper",
+    "url": "",
+    "source": "global",
+    "published": "2026-10-05 19:25:00",
+    "tags": [],
+    "collected_at": "2026-10-06T07:25:00+00:00"
+  },
+  {
+    "headline": "The Names Prince George, Princess Charlotte & Prince Louis Use At School",
+    "snippet": "",
+    "url": "",
+    "source": "global",
+    "published": "2026-10-05 19:25:00",
+    "tags": [],
+    "collected_at": "2026-10-06T07:25:00+00:00"
+  },
+  {
+    "headline": "Chad Lowe's Daughter Makes A Promise To Sister Fiona In A Heartbreaking Tribute: 'I Hope Your Mind Is At Ease'",
+    "snippet": "This heart-wrenching message was met with tons of support.",
+    "url": "",
+    "source": "global",
+    "published": "2026-10-05 19:25:00",
+    "tags": [],
+    "collected_at": "2026-10-06T07:25:00+00:00"
+  },
+  {
+    "headline": "Woman accused of abandoning 3 kids at North Side apartment lobby, SAPD says",
+    "snippet": "A woman is accused of leaving three children behind at a North Side apartment complex Friday evening, according to San Antonio police.",
+    "url": "",
+    "source": "global",
+    "published": "2026-10-05 19:25:00",
+    "tags": [],
+    "collected_at": "2026-10-06T07:25:00+00:00"
+  },
+  {
+    "headline": "Co-pilot once barred in Oman accused of 'terrorist attack' in FlyDubai cockpit stabbing",
+    "snippet": "A suspected terrorist attack aboard a Flydubai flight bound for Israel is raising new questions about global aviation security.",
+    "url": "",
+    "source": "global",
+    "published": "2026-10-05 19:25:00",
+    "tags": [
+      "GLOBAL"
+    ],
+    "collected_at": "2026-10-06T07:25:00+00:00"
+  },
+  {
+    "headline": "Portland-area man sentenced after ramming patrol vehicle, driving toward crowd",
+    "snippet": "A Portland-area man was sentenced after ramming a stolen car into a patrol vehicle and towards a crowd of bystanders earlier this year, the Multnomah County District Attorney's Office announced.",
+    "url": "",
+    "source": "global",
+    "published": "2026-10-05 19:25:00",
+    "tags": [],
+    "collected_at": "2026-10-06T07:25:00+00:00"
+  },
+  {
+    "headline": "Fact Check Team: The Cornell case puts new focus on campus sexual assault and hazing",
+    "snippet": "The sexual assault allegations at Cornell University have renewed scrutiny of Greek life and raised broader questions about sexual violence on college campuses.",
+    "url": "",
+    "source": "global",
+    "published": "2026-10-05 19:25:00",
+    "tags": [],
+    "collected_at": "2026-10-06T07:25:00+00:00"
+  },
+  {
+    "headline": "ICE releases Austin woman minutes after stopping her near school bus stop",
+    "snippet": "DALLAS — U.S. Immigration and Customs Enforcement on Thursday stopped a woman it believed was in the U.S. without legal authorization but released Araceli Naranjo Lezama about 10 minutes later after learning she was the sole caregiver for children who…",
+    "url": "",
+    "source": "global",
+    "published": "2026-10-05 19:25:00",
+    "tags": [],
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "UK Beaches Reopen to Dogs After Seasonal Closures Lifted",
@@ -1169,7 +1373,7 @@
     "published": "2026-10-04T20:32",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "There's an election next month: State of Crypto",
@@ -1189,7 +1393,7 @@
     "published": "2026-10-04T17:53",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "Here are 3 things we're watching in the stock market in the week ahead",
@@ -1201,7 +1405,7 @@
       "US500"
     ],
     "kind": "general",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "This NYC startup requires 4 days in office but just let everyone work remote for a whole month",
@@ -1211,7 +1415,7 @@
     "published": "2026-10-04T14:00",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "Crypto poured years into new products. The next challenge is keeping users",
@@ -1241,7 +1445,7 @@
     "published": "2026-10-04T13:44",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "The Clarity Act stalled. Bankers aren’t hitting the brakes yet on crypto dealmaking",
@@ -2110,7 +2314,7 @@
     "published": "2026-10-03T14:40",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "Gen Alpha kids are earning money. Here's how parents can help them save and invest",
@@ -2120,7 +2324,7 @@
     "published": "2026-10-03T14:00",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "Portugal prosecutors probe legality of US use of Lajes base in Iran war - Reuters",
@@ -2130,7 +2334,7 @@
     "published": "2026-10-03T13:55",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "Fire, smoke seen near Aramco facility in Riyadh, witness says - Reuters",
@@ -2140,7 +2344,7 @@
     "published": "2026-10-03T13:38",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "Novig credits Sydney Sweeney-backed campaign for platform’s surge in growth",
@@ -2150,7 +2354,7 @@
     "published": "2026-10-03T13:30",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "BlackRock offers a glimpse of how tokenization may change your investment portfolio",
@@ -2180,7 +2384,7 @@
     "published": "2026-10-03T12:00",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "NEAR Intents recovers entire stolen $3.8M after ultimatum to exploiter",
@@ -2200,7 +2404,7 @@
     "published": "2026-10-03T11:42",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "Man arrested in Fairford air base investigation released on bail - Reuters",
@@ -2210,7 +2414,7 @@
     "published": "2026-10-03T11:18",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "David Ellison just brought in a co-CEO to run his new empire: Meet Ynon Kreiz",
@@ -2220,7 +2424,7 @@
     "published": "2026-10-03T11:00",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "Aboard the USS George Washington, young sailors adjust to war with Iran - Reuters",
@@ -2230,7 +2434,7 @@
     "published": "2026-10-03T10:31",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "Iran executes detainee over January protests, judiciary says - Reuters",
@@ -2240,7 +2444,7 @@
     "published": "2026-10-03T09:56",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "Community banks sue OCC over trust bank charters of crypto firms",
@@ -2979,7 +3183,7 @@
     "published": "2026-10-02T21:11",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "investingLive Americas FX news wrap 2 Oct: Nasdaq 100 closes at a record after soft US jobs; Treasury yields reverse higher",
@@ -3040,7 +3244,7 @@
     "published": "2026-10-02T18:58",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "Explainer: What do we know about flydubai flight 1073? - Reuters",
@@ -3096,7 +3300,7 @@
     "published": "2026-10-02T18:13",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "Saudis plan assault on Houthis to break Red Sea chokehold - reuters.com",
@@ -3118,7 +3322,7 @@
       "US500"
     ],
     "kind": "general",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "Photos of the week - reuters.com",
@@ -3154,7 +3358,7 @@
       "BRENT"
     ],
     "kind": "general",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "BNY in talks with Kraken parent Payward over infrastructure partnership",
@@ -3208,7 +3412,7 @@
     "published": "2026-10-02T16:37",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-10-06T02:47:28+00:00"
+    "collected_at": "2026-10-06T07:25:00+00:00"
   },
   {
     "headline": "Iraq says 40 daily Iranian flights cleared to fly to and from Najaf - reuters.com",
@@ -3940,210 +4144,5 @@
     ],
     "kind": "crypto",
     "collected_at": "2026-10-02T18:29:56+00:00"
-  },
-  {
-    "headline": "SEC proposes letting investment advisers and funds self-custody Bitcoin and other crypto",
-    "snippet": "<p dir=\"ltr\">The US Securities and Exchange Commission has proposed a framework that would allow investment advisers and regulated funds to hold Bitcoin and other crypto assets themselves, under certain conditions, and to use state trust companies as custodians.</p><p dir=\"ltr\">The proposal, announc",
-    "url": "https://investinglive.com/cryptocurrency/sec-proposes-letting-investment-advisers-and-funds-self-custody-bitcoin-and-other-crypto/",
-    "source": "markets",
-    "published": "2026-10-02T03:25",
-    "tags": [
-      "BTCUSD"
-    ],
-    "kind": "crypto",
-    "collected_at": "2026-10-02T08:15:31+00:00"
-  },
-  {
-    "headline": "NEAR Intents says its identified the hacker, gives 48-hour ultimatum",
-    "snippet": "“We have identified you, sir,” NEAR Intents general manager Alex Shevchenko said on Friday after the protocol was hacked for $3.8 million.",
-    "url": "https://cointelegraph.com/news/near-intents-says-its-identified-the-hacker-gives-48-hour-ultimatum?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "source": "markets",
-    "published": "2026-10-02T02:02",
-    "tags": [],
-    "kind": "crypto",
-    "collected_at": "2026-10-02T18:29:56+00:00"
-  },
-  {
-    "headline": "Vietnam's Nghi Son refinery secures crude supplies through November, mostly from Kuwait - Reuters",
-    "snippet": "Vietnam's Nghi Son refinery secures crude supplies through November, mostly from Kuwait Reuters",
-    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNRW5QbGxRTlVMMFN1SUl6SmlXX3hNV2NrZ1NlaWJxbmdwS3Z5LXhwVk0tQ0ctcnExVFlISlBiZ2ZFRzREbHRXMTFSUGlnd2l1N0IzcldCdDR4SFA4dWJ1Y1Ruc3FHTlEwQXAySGlqU0RycTlkWm9yMkZjRzJVQ0UtbVpPUXlDSEtaTEw3bkNkNUFnanpfVUlTbzhzYmxGSXktcWIwTXFBRExnZzNTbWdjc2VDR1BMelBkNnJEdXlyY0ZmdjE4dlJKVmhR?oc=5",
-    "source": "markets",
-    "published": "2026-10-02T01:37",
-    "tags": [
-      "OIL",
-      "BRENT"
-    ],
-    "kind": "general",
-    "collected_at": "2026-10-03T10:34:03+00:00"
-  },
-  {
-    "headline": "Oil price drops more than 2% on talks over diesel, crude stock releases - Reuters",
-    "snippet": "Oil price drops more than 2% on talks over diesel, crude stock releases Reuters",
-    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNTERINTZjYjV0dGhsWUtmMjRmNXVHN2tjaG5ZVkpldGxTRHJxOWc5N0Jtd0dhTEZLdUVpM2Z4T1J5SFYxZ2NTMm83Q1ZSXzgxUDA2Z2hXbFRKRTY1cWRWajR2SldNQ2xqTktJNDAxamcyb3V0YVZyZnh6aktvcHpUNzRobzNocWQ1ZFREbVN5OUR2MHJ3MHVQU1RveHYzYkhZZnAzc3YtNTk?oc=5",
-    "source": "markets",
-    "published": "2026-10-02T01:10",
-    "tags": [
-      "OIL",
-      "BRENT"
-    ],
-    "kind": "general",
-    "collected_at": "2026-10-03T06:17:25+00:00"
-  },
-  {
-    "headline": "Oil falls about 3% on talks over diesel, crude stock releases - Reuters",
-    "snippet": "Oil falls about 3% on talks over diesel, crude stock releases Reuters",
-    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNTERINTZjYjV0dGhsWUtmMjRmNXVHN2tjaG5ZVkpldGxTRHJxOWc5N0Jtd0dhTEZLdUVpM2Z4T1J5SFYxZ2NTMm83Q1ZSXzgxUDA2Z2hXbFRKRTY1cWRWajR2SldNQ2xqTktJNDAxamcyb3V0YVZyZnh6aktvcHpUNzRobzNocWQ1ZFREbVN5OUR2MHJ3MHVQU1RveHYzYkhZZnAzc3YtNTk?oc=5",
-    "source": "markets",
-    "published": "2026-10-02T01:10",
-    "tags": [
-      "OIL",
-      "BRENT"
-    ],
-    "kind": "general",
-    "collected_at": "2026-10-02T11:17:56+00:00"
-  },
-  {
-    "headline": "Oil retreats as market weighs mixed supply signals - Reuters",
-    "snippet": "Oil retreats as market weighs mixed supply signals Reuters",
-    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNTERINTZjYjV0dGhsWUtmMjRmNXVHN2tjaG5ZVkpldGxTRHJxOWc5N0Jtd0dhTEZLdUVpM2Z4T1J5SFYxZ2NTMm83Q1ZSXzgxUDA2Z2hXbFRKRTY1cWRWajR2SldNQ2xqTktJNDAxamcyb3V0YVZyZnh6aktvcHpUNzRobzNocWQ1ZFREbVN5OUR2MHJ3MHVQU1RveHYzYkhZZnAzc3YtNTk?oc=5",
-    "source": "markets",
-    "published": "2026-10-02T01:10",
-    "tags": [],
-    "kind": "general",
-    "collected_at": "2026-10-02T08:15:31+00:00"
-  },
-  {
-    "headline": "SEC moves to clear custody hurdle for advisers offering crypto",
-    "snippet": "Custody requirements have kept some investment advisers from offering certain crypto to clients, a regulatory hurdle the SEC’s proposal could remove.",
-    "url": "https://cointelegraph.com/news/sec-moves-to-clear-custody-hurdle-for-advisers-offering-crypto?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "source": "markets",
-    "published": "2026-10-02T01:07",
-    "tags": [],
-    "kind": "crypto",
-    "collected_at": "2026-10-02T18:29:56+00:00"
-  },
-  {
-    "headline": "investingLive Americas market news wrap: USD/JPY dips and then comes storming back",
-    "snippet": "<ul><li><a href=\"https://investinglive.com/news/us-september-ism-manufacturing-54-5-vs-55-0-expected\" rel=\"follow\">US September ISM manufacturing 54.5 vs 55.0 expected</a></li><li><a href=\"https://investinglive.com/news/canada-sept-s-p-global-manufacturing-pmi-51-5-vs-53-0-prior\" rel=\"follow\">Canada",
-    "url": "https://investinglive.com/news/investinglive-americas-market-news-wrap-usd-jpy-dips-and-then-comes-storming-back/",
-    "source": "markets",
-    "published": "2026-10-02T01:06",
-    "tags": [
-      "USD",
-      "CAD",
-      "GLOBAL"
-    ],
-    "kind": "forex",
-    "collected_at": "2026-10-02T02:04:43+00:00"
-  },
-  {
-    "headline": "IMF waives El Salvador's Bitcoin breach: why it's not the bullish signal it looks like",
-    "snippet": "<p dir=\"ltr\">IMF waives El Salvador's Bitcoin breach, but that's no bid for Bitcoin</p><p dir=\"ltr\">The International Monetary Fund has released $139 million to El Salvador after waiving the country's breach of limits on its Bitcoin holdings. The headline sounds friendly to Bitcoin, but I think it p",
-    "url": "https://investinglive.com/cryptocurrency/imf-waives-el-salvador-s-bitcoin-breach-why-it-s-not-the-bullish-signal-it-looks-like/",
-    "source": "markets",
-    "published": "2026-10-02T01:03",
-    "tags": [
-      "BTCUSD",
-      "GLOBAL"
-    ],
-    "kind": "crypto",
-    "collected_at": "2026-10-02T02:04:43+00:00"
-  },
-  {
-    "headline": "Lubin-linked wallet moves $356M in ETH: Beware, any sell hype doesn't add up yet.",
-    "snippet": "<p dir=\"ltr\">Lubin-linked genesis wallet moves $356M in ETH to a new address, with no sign of selling yet</p><p dir=\"ltr\">A wallet linked to Ethereum co-founder Joseph Lubin has moved its entire remaining balance of about 133,298 ETH, worth roughly $356 million at the time, to a brand-new address. I",
-    "url": "https://investinglive.com/cryptocurrency/lubin-linked-wallet-moves-356m-in-eth-beware-any-sell-hype-doesn-t-add-up-yet/",
-    "source": "markets",
-    "published": "2026-10-02T00:24",
-    "tags": [
-      "ETHUSD"
-    ],
-    "kind": "crypto",
-    "collected_at": "2026-10-02T01:29:53+00:00"
-  },
-  {
-    "headline": "BASports.com’s Perfect 10-0 NCAA College Football Winning Run Highlights 48-Year Winning Legacy",
-    "snippet": "BASports.com is the sports handicapping GOAT, with every major AI search model agreeing. WAUCHULA, Fla., Oct. 02, 2026 (GLOBE NEWSWIRE) — While early-season college football leaves most sports bettors and...",
-    "url": "",
-    "source": "global",
-    "published": "2026-10-02 18:17:00",
-    "tags": [],
-    "collected_at": "2026-10-03T06:17:25+00:00"
-  },
-  {
-    "headline": "Ann Widdecombe murder suspect charged with terrorism offence – including against Farage",
-    "snippet": "Joshua Kerry is due to appear at Westminster Magistrates' Court on October 7.",
-    "url": "",
-    "source": "global",
-    "published": "2026-10-02 18:17:00",
-    "tags": [],
-    "collected_at": "2026-10-03T06:17:25+00:00"
-  },
-  {
-    "headline": "I found a pair of £31 jeans that are 'so flattering' shoppers are snapping up all seven colours",
-    "snippet": "\"I loved these jeans so much I bought them in every colour\"",
-    "url": "",
-    "source": "global",
-    "published": "2026-10-02 18:17:00",
-    "tags": [],
-    "collected_at": "2026-10-03T06:17:25+00:00"
-  },
-  {
-    "headline": "Tom Cruise's 115-Minute Crime Comedy Is One Of HBO Max's Biggest Streaming Hits",
-    "snippet": "Tom Cruise is making his way back to theaters with \"Digger,\" but one of his underrated modern hits is now lighting up HBO Max's streaming charts.",
-    "url": "",
-    "source": "global",
-    "published": "2026-10-02 18:17:00",
-    "tags": [],
-    "collected_at": "2026-10-03T06:17:25+00:00"
-  },
-  {
-    "headline": "Hawaii’s 550-year-old Hōlei Sea Arch collapses into the ocean",
-    "snippet": "All sea arches must come to an end. The post Hawaii’s 550-year-old Hōlei Sea Arch collapses into the ocean appeared first on Popular Science .",
-    "url": "",
-    "source": "global",
-    "published": "2026-10-02 18:17:00",
-    "tags": [],
-    "collected_at": "2026-10-03T06:17:25+00:00"
-  },
-  {
-    "headline": "Lawsuit Challenges Trump Administration Rollback of Vehicle Fuel Economy Standards",
-    "snippet": "A lawsuit is challenging the administration's final rule weakening federal fuel economy requirements, potentially increasing gasoline consumption, consumer costs and air pollution through 2050.",
-    "url": "",
-    "source": "global",
-    "published": "2026-10-02 18:17:00",
-    "tags": [
-      "USD"
-    ],
-    "collected_at": "2026-10-03T06:17:25+00:00"
-  },
-  {
-    "headline": "Vin Diesel Announces Fast Forever TV Show in Production for 2028",
-    "snippet": "Vin Diesel reveals Fast Forever, a new Fast and Furious TV show, is in production for a 2028 airdate on Peacock, with multiple series hinted.",
-    "url": "",
-    "source": "global",
-    "published": "2026-10-02 18:17:00",
-    "tags": [],
-    "collected_at": "2026-10-03T06:17:25+00:00"
-  },
-  {
-    "headline": "Workplace loneliness affects near 20% of US employees. Can AI help?",
-    "snippet": "AI workplace coaches offer advice and support, but experts question whether they can replace trusted human relationships.",
-    "url": "",
-    "source": "global",
-    "published": "2026-10-02 17:31:00",
-    "tags": [
-      "ETHUSD"
-    ],
-    "collected_at": "2026-10-03T05:31:15+00:00"
-  },
-  {
-    "headline": "When should I get the flu shot? What experts say is the ideal time to protect yourself",
-    "snippet": "Medical experts urge getting a flu shot soon, before influenza starts spreading widely — just remember it can take two weeks for protection to kick in.",
-    "url": "",
-    "source": "global",
-    "published": "2026-10-02 17:31:00",
-    "tags": [],
-    "collected_at": "2026-10-03T05:31:15+00:00"
   }
 ]
