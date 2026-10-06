@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-06T02:47:28+00:00",
+  "updated": "2026-10-06T19:02:45+00:00",
   "releases": [
     {
       "country": "USD",
@@ -91,11 +91,11 @@
       "dataPoint": "Trade Balance",
       "weight": 0.5,
       "direction": "higher_is_bullish",
-      "period": "2026-09-30T16:30+00:00",
-      "title": "Goods Trade Balance Adv AUG",
-      "actual": "$-132.6B",
-      "previous": "$-118.8B",
-      "forecast": "$-90.0B"
+      "period": "2026-10-06T12:30+00:00",
+      "title": "Trade Balance",
+      "actual": "$-105.6B",
+      "previous": "-88.6B",
+      "forecast": "-95.2B"
     },
     {
       "country": "USD",
@@ -211,11 +211,11 @@
       "dataPoint": "German Industrial Production (m/m)",
       "weight": 0.5,
       "direction": "higher_is_bullish",
-      "period": "2026-09-09T10:45+00:00",
-      "title": "Industrial Production MoM JUL",
-      "actual": "-0.4%",
-      "previous": "-0.1% ",
-      "forecast": "0.4%"
+      "period": "2026-10-09T12:00+00:00",
+      "title": "Industrial Production MoM AUG",
+      "actual": "-0.3%",
+      "previous": "-0.4%",
+      "forecast": "1.5%"
     },
     {
       "country": "NZD",
@@ -607,10 +607,10 @@
       "dataPoint": "MAS Monetary Policy",
       "weight": 2.0,
       "direction": "higher_is_bullish",
-      "period": "2026-09-29T09:00+00:00",
-      "title": "MAS 36-Week Bill Auction",
-      "actual": "1.77%",
-      "previous": "1.65%",
+      "period": "2026-10-13T09:00+00:00",
+      "title": "MAS 12-Week Bill Auction",
+      "actual": "1.85%",
+      "previous": "1.88%",
       "forecast": ""
     },
     {
@@ -768,6 +768,18 @@
       "actual": "1.84%",
       "previous": "1.84%",
       "forecast": "3.0%"
+    },
+    {
+      "country": "CAD",
+      "dataPointId": "ca_trade",
+      "dataPoint": "Trade Balance",
+      "weight": 0.5,
+      "direction": "higher_is_bullish",
+      "period": "2026-10-06T12:30+00:00",
+      "title": "Trade Balance",
+      "actual": "C$4.2B",
+      "previous": "0.8B",
+      "forecast": "1.3B"
     },
     {
       "country": "USD",

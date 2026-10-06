@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-10-06T02:47:28+00:00",
+    "updated": "2026-10-06T19:02:45+00:00",
     "method": "verdict v3 (forecast-first, released-only)"
   },
   "currencies": {
@@ -13,6 +13,18 @@
       },
       "released_points": 17,
       "drivers": [
+        {
+          "dataPoint": "Trade Balance",
+          "title": "Trade Balance",
+          "period": "2026-10-06T12:30+00:00",
+          "actual": "$-105.6B",
+          "previous": "-88.6B",
+          "forecast": "-95.2B",
+          "direction": "higher_is_bullish",
+          "verdict": "bearish",
+          "weight": 0.5,
+          "note": ""
+        },
         {
           "dataPoint": "ISM Manufacturing PMI & ISM Services PMI",
           "title": "ISM Services PMI SEP",
@@ -95,18 +107,6 @@
           "direction": "higher_is_bullish",
           "verdict": "bearish",
           "weight": 2.0,
-          "note": ""
-        },
-        {
-          "dataPoint": "Trade Balance",
-          "title": "Goods Trade Balance Adv AUG",
-          "period": "2026-09-30T16:30+00:00",
-          "actual": "$-132.6B",
-          "previous": "$-118.8B",
-          "forecast": "$-90.0B",
-          "direction": "higher_is_bullish",
-          "verdict": "bearish",
-          "weight": 0.5,
           "note": ""
         },
         {
@@ -230,6 +230,18 @@
       "released_points": 7,
       "drivers": [
         {
+          "dataPoint": "German Industrial Production (m/m)",
+          "title": "Industrial Production MoM AUG",
+          "period": "2026-10-09T12:00+00:00",
+          "actual": "-0.3%",
+          "previous": "-0.4%",
+          "forecast": "1.5%",
+          "direction": "higher_is_bullish",
+          "verdict": "bearish",
+          "weight": 1.0,
+          "note": ""
+        },
+        {
           "dataPoint": "Eurozone Retail Sales (m/m)",
           "title": "Retail Sales MoM AUG",
           "period": "2026-10-02T12:00+00:00",
@@ -298,18 +310,6 @@
           "forecast": "34",
           "direction": "higher_is_bullish",
           "verdict": "bullish",
-          "weight": 1.0,
-          "note": ""
-        },
-        {
-          "dataPoint": "German Industrial Production (m/m)",
-          "title": "Industrial Production MoM JUL",
-          "period": "2026-09-09T10:45+00:00",
-          "actual": "-0.4%",
-          "previous": "-0.1% ",
-          "forecast": "0.4%",
-          "direction": "higher_is_bullish",
-          "verdict": "bearish",
           "weight": 1.0,
           "note": ""
         }
@@ -515,12 +515,24 @@
     "CAD": {
       "verdict": "Neutral",
       "tally": {
-        "bullish": 0.0,
+        "bullish": 1.0,
         "bearish": 0.5,
         "neutral": 6.0
       },
-      "released_points": 4,
+      "released_points": 5,
       "drivers": [
+        {
+          "dataPoint": "Trade Balance",
+          "title": "Trade Balance",
+          "period": "2026-10-06T12:30+00:00",
+          "actual": "C$4.2B",
+          "previous": "0.8B",
+          "forecast": "1.3B",
+          "direction": "higher_is_bullish",
+          "verdict": "bullish",
+          "weight": 1.0,
+          "note": ""
+        },
         {
           "dataPoint": "GDP (m/m)",
           "title": "GDP MoM JUL",
@@ -1001,23 +1013,23 @@
       ]
     },
     "SGD": {
-      "verdict": "Bullish",
+      "verdict": "Bearish",
       "tally": {
-        "bullish": 5.0,
-        "bearish": 0.0,
+        "bullish": 2.0,
+        "bearish": 3.0,
         "neutral": 0.0
       },
       "released_points": 2,
       "drivers": [
         {
           "dataPoint": "MAS Monetary Policy",
-          "title": "MAS 36-Week Bill Auction",
-          "period": "2026-09-29T09:00+00:00",
-          "actual": "1.77%",
-          "previous": "1.65%",
+          "title": "MAS 12-Week Bill Auction",
+          "period": "2026-10-13T09:00+00:00",
+          "actual": "1.85%",
+          "previous": "1.88%",
           "forecast": "",
           "direction": "higher_is_bullish",
-          "verdict": "bullish",
+          "verdict": "bearish",
           "weight": 3.0,
           "note": ""
         },
@@ -1034,9 +1046,7 @@
           "note": ""
         }
       ],
-      "notes": [
-        "limited release evidence; cap at single-step verdict"
-      ]
+      "notes": []
     },
     "HKD": {
       "verdict": "Neutral",

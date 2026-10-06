@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-10-06T02:47:28+00:00",
+    "updated": "2026-10-06T19:02:45+00:00",
     "total": 82,
     "scored": 82
   },
@@ -151,14 +151,14 @@
     {
       "symbol": "EURSGD",
       "class": "fx",
-      "verdict": "Neutral",
+      "verdict": "Very Bullish",
       "base": "EUR",
       "quote": "SGD",
       "base_verdict": "Bullish",
-      "quote_verdict": "Bullish",
+      "quote_verdict": "Bearish",
       "drivers": [
         "EUR: Bullish",
-        "SGD: Bullish"
+        "SGD: Bearish"
       ]
     },
     {
@@ -424,14 +424,14 @@
     {
       "symbol": "USDSGD",
       "class": "fx",
-      "verdict": "Bearish",
+      "verdict": "Bullish",
       "base": "USD",
       "quote": "SGD",
       "base_verdict": "Neutral",
-      "quote_verdict": "Bullish",
+      "quote_verdict": "Bearish",
       "drivers": [
         "USD: Neutral",
-        "SGD: Bullish"
+        "SGD: Bearish"
       ]
     },
     {
@@ -671,14 +671,14 @@
     {
       "symbol": "NZDSGD",
       "class": "fx",
-      "verdict": "Neutral",
+      "verdict": "Very Bullish",
       "base": "NZD",
       "quote": "SGD",
       "base_verdict": "Bullish",
-      "quote_verdict": "Bullish",
+      "quote_verdict": "Bearish",
       "drivers": [
         "NZD: Bullish",
-        "SGD: Bullish"
+        "SGD: Bearish"
       ]
     },
     {

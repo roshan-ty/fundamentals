@@ -1,8 +1,17 @@
 {
   "meta": {
-    "updated": "2026-10-06T02:47:28+00:00"
+    "updated": "2026-10-06T19:02:45+00:00"
   },
   "setups": [
+    {
+      "symbol": "EURSGD",
+      "name": "EURSGD",
+      "verdict": "Very Bullish",
+      "direction": "Buy",
+      "confidence": 1.0,
+      "importance": 2,
+      "rationale": "Very Bullish — EUR: Bullish · SGD: Bearish"
+    },
     {
       "symbol": "EURTRY",
       "name": "EURTRY",
@@ -58,6 +67,15 @@
       "rationale": "Very Bearish — CAD: Neutral · CHF: Very Bullish"
     },
     {
+      "symbol": "NZDSGD",
+      "name": "NZDSGD",
+      "verdict": "Very Bullish",
+      "direction": "Buy",
+      "confidence": 0.7,
+      "importance": 2,
+      "rationale": "Very Bullish — NZD: Bullish · SGD: Bearish"
+    },
+    {
       "symbol": "XAUUSD",
       "name": "XAUUSD",
       "verdict": "Very Bearish",
@@ -92,24 +110,6 @@
       "confidence": 0.4,
       "importance": 2,
       "rationale": "Very Bearish"
-    },
-    {
-      "symbol": "EURUSD",
-      "name": "EURUSD",
-      "verdict": "Bullish",
-      "direction": "Buy",
-      "confidence": 1.0,
-      "importance": 1,
-      "rationale": "Bullish — EUR: Bullish · USD: Neutral"
-    },
-    {
-      "symbol": "EURGBP",
-      "name": "EURGBP",
-      "verdict": "Bullish",
-      "direction": "Buy",
-      "confidence": 1.0,
-      "importance": 1,
-      "rationale": "Bullish — EUR: Bullish · GBP: Neutral"
     }
   ]
 }
