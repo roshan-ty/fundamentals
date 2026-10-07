@@ -16305,11 +16305,21 @@
   {
     "title": "API Crude Oil Stock Change OCT/02",
     "country": "USD",
-    "date_utc": "2026-10-07T00:30+00:00",
+    "date_utc": "2026-10-07T01:00+00:00",
     "impact": "",
     "forecast": "",
     "previous": "1.019M",
-    "actual": "",
+    "actual": "-2.09M",
+    "source": "te"
+  },
+  {
+    "title": "Fiscal Balance AUG",
+    "country": "MXN",
+    "date_utc": "2026-10-07T01:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "MXN-731.7B",
+    "actual": "MXN-737.3B",
     "source": "te"
   },
   {
@@ -16319,7 +16329,7 @@
     "impact": "",
     "forecast": "-4",
     "previous": "-3.5",
-    "actual": "",
+    "actual": "-24.2",
     "source": "te"
   },
   {
@@ -16329,7 +16339,7 @@
     "impact": "",
     "forecast": "-7",
     "previous": "-6.9",
-    "actual": "",
+    "actual": "-34.5",
     "source": "te"
   },
   {
@@ -16339,7 +16349,7 @@
     "impact": "",
     "forecast": "-16",
     "previous": "-16.6",
-    "actual": "",
+    "actual": "-8.7",
     "source": "te"
   },
   {
@@ -16359,7 +16369,7 @@
     "impact": "",
     "forecast": "4.9%",
     "previous": "4.7%",
-    "actual": "",
+    "actual": "3.8%",
     "source": "te"
   },
   {
@@ -16369,7 +16379,7 @@
     "impact": "",
     "forecast": "3.3%",
     "previous": "3.1%",
-    "actual": "",
+    "actual": "5.2%",
     "source": "te"
   },
   {
@@ -16379,7 +16389,7 @@
     "impact": "",
     "forecast": "",
     "previous": "$1207.5B",
-    "actual": "",
+    "actual": "$1178.4B",
     "source": "te"
   },
   {
@@ -16389,7 +16399,7 @@
     "impact": "",
     "forecast": "-6.1%",
     "previous": "-3.6%",
-    "actual": "",
+    "actual": "-6.1%",
     "source": "te"
   },
   {
@@ -16399,7 +16409,7 @@
     "impact": "",
     "forecast": "10.3%",
     "previous": "9%",
-    "actual": "",
+    "actual": "10.3%",
     "source": "te"
   },
   {
@@ -16409,7 +16419,7 @@
     "impact": "",
     "forecast": "3.7%",
     "previous": "-4.2%",
-    "actual": "",
+    "actual": "3.7%",
     "source": "te"
   },
   {
@@ -17629,7 +17639,7 @@
     "impact": "",
     "forecast": "23",
     "previous": "21",
-    "actual": "",
+    "actual": "22",
     "source": "te"
   },
   {
@@ -18857,7 +18867,7 @@
     "date_utc": "2026-10-15T00:30+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "-2.09M",
     "actual": "",
     "source": "te"
   },
@@ -23538,6 +23548,66 @@
     "impact": "",
     "forecast": "",
     "previous": "50.7",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "S&P Global Manufacturing PMI Final OCT",
+    "country": "AUD",
+    "date_utc": "2026-11-02T03:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "49.6",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Building Permits MoM Prel SEP",
+    "country": "AUD",
+    "date_utc": "2026-11-02T05:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "-6.1%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "ANZ-Indeed Job Ads MoM OCT",
+    "country": "AUD",
+    "date_utc": "2026-11-02T05:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "2.2%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Building Permits YoY Prel SEP",
+    "country": "AUD",
+    "date_utc": "2026-11-02T05:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Private House Approvals MoM Prel SEP",
+    "country": "AUD",
+    "date_utc": "2026-11-02T05:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "3.7%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "RatingDog Manufacturing PMI OCT",
+    "country": "CNY",
+    "date_utc": "2026-11-02T06:45+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "52.1",
     "actual": "",
     "source": "te"
   }

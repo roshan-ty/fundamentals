@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-06T19:02:45+00:00",
+  "updated": "2026-10-07T02:08:42+00:00",
   "releases": [
     {
       "country": "USD",
@@ -715,10 +715,10 @@
       "dataPoint": "Tankan Large Manufacturers Index",
       "weight": 0.5,
       "direction": "higher_is_bullish",
-      "period": "2026-10-01T03:50+00:00",
-      "title": "Tankan Large Manufacturers Index Q3",
-      "actual": "24",
-      "previous": "22",
+      "period": "2026-10-09T03:00+00:00",
+      "title": "Reuters Tankan Index OCT",
+      "actual": "22",
+      "previous": "21",
       "forecast": "23"
     },
     {
@@ -782,15 +782,27 @@
       "forecast": "1.3B"
     },
     {
+      "country": "JPY",
+      "dataPointId": "jp_cash_earnings",
+      "dataPoint": "Average Cash Earnings (y/y)",
+      "weight": 0.5,
+      "direction": "higher_is_bullish",
+      "period": "2026-10-07T03:30+00:00",
+      "title": "Average Cash Earnings YoY AUG",
+      "actual": "3.8%",
+      "previous": "4.7%",
+      "forecast": "4.9%"
+    },
+    {
       "country": "USD",
       "dataPointId": "us_yield2y",
       "dataPoint": "2-Year Treasury Yield (21-day trend)",
       "weight": 1.0,
       "direction": "higher_is_bullish",
-      "period": "2026-10-02T00:00:00+00:00",
+      "period": "2026-10-05T00:00:00+00:00",
       "title": "2-Year Treasury Yield",
-      "actual": "4.83",
-      "previous": "4.69",
+      "actual": "4.84",
+      "previous": "4.71",
       "forecast": ""
     }
   ]

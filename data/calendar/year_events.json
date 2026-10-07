@@ -510,13 +510,23 @@
     "source": "te"
   },
   {
+    "title": "Fiscal Balance AUG",
+    "country": "MXN",
+    "date_utc": "2026-10-07T01:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "MXN-731.7B",
+    "actual": "MXN-737.3B",
+    "source": "te"
+  },
+  {
     "title": "API Crude Oil Stock Change OCT/02",
     "country": "USD",
-    "date_utc": "2026-10-07T00:30+00:00",
+    "date_utc": "2026-10-07T01:00+00:00",
     "impact": "",
     "forecast": "",
     "previous": "1.019M",
-    "actual": "",
+    "actual": "-2.09M",
     "source": "te"
   },
   {
@@ -525,8 +535,8 @@
     "date_utc": "2026-10-07T02:00+00:00",
     "impact": "",
     "forecast": "-4",
-    "previous": "-3.5",
-    "actual": "",
+    "previous": "-1.6 ",
+    "actual": "-24.2",
     "source": "te"
   },
   {
@@ -535,8 +545,8 @@
     "date_utc": "2026-10-07T02:00+00:00",
     "impact": "",
     "forecast": "-7",
-    "previous": "-6.9",
-    "actual": "",
+    "previous": "-4.7 ",
+    "actual": "-34.5",
     "source": "te"
   },
   {
@@ -545,8 +555,8 @@
     "date_utc": "2026-10-07T02:00+00:00",
     "impact": "",
     "forecast": "-16",
-    "previous": "-16.6",
-    "actual": "",
+    "previous": "-14.9 ",
+    "actual": "-8.7",
     "source": "te"
   },
   {
@@ -556,7 +566,7 @@
     "impact": "",
     "forecast": "23",
     "previous": "21",
-    "actual": "",
+    "actual": "22",
     "source": "te"
   },
   {
@@ -575,8 +585,8 @@
     "date_utc": "2026-10-07T03:30+00:00",
     "impact": "",
     "forecast": "4.9%",
-    "previous": "4.7%",
-    "actual": "",
+    "previous": "4.3% ",
+    "actual": "3.8%",
     "source": "te"
   },
   {
@@ -585,8 +595,8 @@
     "date_utc": "2026-10-07T03:30+00:00",
     "impact": "",
     "forecast": "3.3%",
-    "previous": "3.1%",
-    "actual": "",
+    "previous": "4.5% ",
+    "actual": "5.2%",
     "source": "te"
   },
   {
@@ -596,7 +606,7 @@
     "impact": "",
     "forecast": "",
     "previous": "$1207.5B",
-    "actual": "",
+    "actual": "$1178.4B",
     "source": "te"
   },
   {
@@ -606,7 +616,7 @@
     "impact": "",
     "forecast": "-6.1%",
     "previous": "-1.9%",
-    "actual": "",
+    "actual": "-6.1%",
     "source": "te"
   },
   {
@@ -616,7 +626,7 @@
     "impact": "",
     "forecast": "10.3%",
     "previous": "10.9%",
-    "actual": "",
+    "actual": "10.3%",
     "source": "te"
   },
   {
@@ -626,7 +636,7 @@
     "impact": "",
     "forecast": "3.7%",
     "previous": "-1.9%",
-    "actual": "",
+    "actual": "3.7%",
     "source": "te"
   },
   {
@@ -2915,7 +2925,7 @@
     "date_utc": "2026-10-15T00:30+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "-2.09M",
     "actual": "",
     "source": "te"
   },
@@ -4210,6 +4220,36 @@
     "source": "te"
   },
   {
+    "title": "Net Long-term TIC Flows AUG",
+    "country": "USD",
+    "date_utc": "2026-10-17T00:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "$-27.9B",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Foreign Bond Investment AUG",
+    "country": "USD",
+    "date_utc": "2026-10-17T00:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "$-3.6B",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Overall Net Capital Flows AUG",
+    "country": "USD",
+    "date_utc": "2026-10-17T00:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "$83.7B",
+    "actual": "",
+    "source": "te"
+  },
+  {
     "title": "S&P Global Composite PMI Final SEP",
     "country": "AUD",
     "date_utc": "2026-10-05T02:00+00:00",
@@ -4466,6 +4506,56 @@
     "impact": "",
     "forecast": "8.3%",
     "previous": "8.4%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "S&P Global Manufacturing PMI Final OCT",
+    "country": "AUD",
+    "date_utc": "2026-11-02T03:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "49.6",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Building Permits MoM Prel SEP",
+    "country": "AUD",
+    "date_utc": "2026-11-02T05:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "-6.1%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "ANZ-Indeed Job Ads MoM OCT",
+    "country": "AUD",
+    "date_utc": "2026-11-02T05:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "2.2%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Building Permits YoY Prel SEP",
+    "country": "AUD",
+    "date_utc": "2026-11-02T05:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Private House Approvals MoM Prel SEP",
+    "country": "AUD",
+    "date_utc": "2026-11-02T05:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "3.7%",
     "actual": "",
     "source": "te"
   },
@@ -5450,6 +5540,16 @@
     "source": "te"
   },
   {
+    "title": "RatingDog Manufacturing PMI OCT",
+    "country": "CNY",
+    "date_utc": "2026-11-02T06:45+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "52.1",
+    "actual": "",
+    "source": "te"
+  },
+  {
     "title": "S&P Global Composite PMI SEP",
     "country": "CAD",
     "date_utc": "2026-10-05T17:30+00:00",
@@ -5757,26 +5857,6 @@
     "forecast": "",
     "previous": "",
     "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "S&P Global Composite PMI Final SEP",
-    "country": "GBP",
-    "date_utc": "2026-10-05T12:30+00:00",
-    "impact": "",
-    "forecast": "51.7",
-    "previous": "52.5",
-    "actual": "52.0",
-    "source": "te"
-  },
-  {
-    "title": "S&P Global Services PMI Final SEP",
-    "country": "GBP",
-    "date_utc": "2026-10-05T12:30+00:00",
-    "impact": "",
-    "forecast": "51.7",
-    "previous": "52.5",
-    "actual": "52.1",
     "source": "te"
   },
   {
@@ -6916,136 +6996,6 @@
     "impact": "",
     "forecast": "",
     "previous": "-0.1%",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "NY Fed Bill Purchases 4 to 12 months",
-    "country": "USD",
-    "date_utc": "2026-10-05T17:20+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "S&P Global Composite PMI Final SEP",
-    "country": "USD",
-    "date_utc": "2026-10-05T17:45+00:00",
-    "impact": "",
-    "forecast": "58.4",
-    "previous": "56.0",
-    "actual": "58.4",
-    "source": "te"
-  },
-  {
-    "title": "S&P Global Services PMI Final SEP",
-    "country": "USD",
-    "date_utc": "2026-10-05T17:45+00:00",
-    "impact": "",
-    "forecast": "58.7",
-    "previous": "56.5",
-    "actual": "58.8",
-    "source": "te"
-  },
-  {
-    "title": "ISM Services PMI SEP",
-    "country": "USD",
-    "date_utc": "2026-10-05T18:00+00:00",
-    "impact": "",
-    "forecast": "55",
-    "previous": "55.4",
-    "actual": "54.9",
-    "source": "te"
-  },
-  {
-    "title": "ISM Services Business Activity SEP",
-    "country": "USD",
-    "date_utc": "2026-10-05T18:00+00:00",
-    "impact": "",
-    "forecast": "61.5",
-    "previous": "61.7",
-    "actual": "56.5",
-    "source": "te"
-  },
-  {
-    "title": "ISM Services Employment SEP",
-    "country": "USD",
-    "date_utc": "2026-10-05T18:00+00:00",
-    "impact": "",
-    "forecast": "48",
-    "previous": "47.8",
-    "actual": "50.1",
-    "source": "te"
-  },
-  {
-    "title": "ISM Services New Orders SEP",
-    "country": "USD",
-    "date_utc": "2026-10-05T18:00+00:00",
-    "impact": "",
-    "forecast": "60.3",
-    "previous": "60.9",
-    "actual": "59.8",
-    "source": "te"
-  },
-  {
-    "title": "ISM Services Prices SEP",
-    "country": "USD",
-    "date_utc": "2026-10-05T18:00+00:00",
-    "impact": "",
-    "forecast": "72.9",
-    "previous": "72.6",
-    "actual": "74.0",
-    "source": "te"
-  },
-  {
-    "title": "3-Month Bill Auction",
-    "country": "USD",
-    "date_utc": "2026-10-05T19:30+00:00",
-    "impact": "",
-    "forecast": "4.1999%",
-    "previous": "4.110%",
-    "actual": "4.050%",
-    "source": "te"
-  },
-  {
-    "title": "6-Month Bill Auction",
-    "country": "USD",
-    "date_utc": "2026-10-05T19:30+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "4.285%",
-    "actual": "4.165%",
-    "source": "te"
-  },
-  {
-    "title": "Net Long-term TIC Flows AUG",
-    "country": "USD",
-    "date_utc": "2026-10-17T00:00+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "$-27.9B",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "Foreign Bond Investment AUG",
-    "country": "USD",
-    "date_utc": "2026-10-17T00:00+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "$-3.6B",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "Overall Net Capital Flows AUG",
-    "country": "USD",
-    "date_utc": "2026-10-17T00:00+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "$83.7B",
     "actual": "",
     "source": "te"
   },
