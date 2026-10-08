@@ -1,18 +1,30 @@
 {
   "meta": {
-    "updated": "2026-10-08T02:33:59+00:00",
+    "updated": "2026-10-08T19:23:46+00:00",
     "method": "verdict v3 (forecast-first, released-only)"
   },
   "currencies": {
     "USD": {
       "verdict": "Neutral",
       "tally": {
-        "bullish": 8.5,
-        "bearish": 8.0,
+        "bullish": 9.5,
+        "bearish": 7.0,
         "neutral": 3.0
       },
       "released_points": 17,
       "drivers": [
+        {
+          "dataPoint": "Unemployment Claims (Weekly)",
+          "title": "Initial Jobless Claims OCT/03",
+          "period": "2026-10-08T16:30+00:00",
+          "actual": "197K",
+          "previous": "197K",
+          "forecast": "220K",
+          "direction": "lower_is_bullish",
+          "verdict": "bullish",
+          "weight": 1.0,
+          "note": ""
+        },
         {
           "dataPoint": "Trade Balance",
           "title": "Trade Balance",
@@ -81,18 +93,6 @@
           "previous": "0.3%",
           "forecast": "0.2%",
           "direction": "higher_is_bullish",
-          "verdict": "bearish",
-          "weight": 1.0,
-          "note": ""
-        },
-        {
-          "dataPoint": "Unemployment Claims (Weekly)",
-          "title": "Initial Jobless Claims SEP/26",
-          "period": "2026-10-01T16:30+00:00",
-          "actual": "197K",
-          "previous": "197K",
-          "forecast": "195.0K",
-          "direction": "lower_is_bullish",
           "verdict": "bearish",
           "weight": 1.0,
           "note": ""
@@ -800,6 +800,18 @@
       "released_points": 3,
       "drivers": [
         {
+          "dataPoint": "CPI y/y",
+          "title": "Inflation Rate MoM SEP",
+          "period": "2026-10-08T16:00+00:00",
+          "actual": "0.42%",
+          "previous": "0.2%",
+          "forecast": "0.3%",
+          "direction": "higher_is_bullish",
+          "verdict": "bullish",
+          "weight": 2.0,
+          "note": ""
+        },
+        {
           "dataPoint": "Unemployment Rate",
           "title": "Unemployment Rate AUG",
           "period": "2026-09-25T16:00+00:00",
@@ -821,18 +833,6 @@
           "direction": "higher_is_bullish",
           "verdict": "neutral",
           "weight": 3.0,
-          "note": ""
-        },
-        {
-          "dataPoint": "CPI y/y",
-          "title": "Mid-month Core Inflation Rate MoM SEP",
-          "period": "2026-09-24T16:00+00:00",
-          "actual": "0.17%",
-          "previous": "0.08%",
-          "forecast": "0.1%",
-          "direction": "higher_is_bullish",
-          "verdict": "bullish",
-          "weight": 2.0,
           "note": ""
         }
       ],

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-08T02:33:59+00:00",
+  "updated": "2026-10-08T19:23:46+00:00",
   "releases": [
     {
       "country": "USD",
@@ -7,11 +7,11 @@
       "dataPoint": "Unemployment Claims (Weekly)",
       "weight": 0.5,
       "direction": "lower_is_bullish",
-      "period": "2026-10-01T16:30+00:00",
-      "title": "Initial Jobless Claims SEP/26",
+      "period": "2026-10-08T16:30+00:00",
+      "title": "Initial Jobless Claims OCT/03",
       "actual": "197K",
       "previous": "197K",
-      "forecast": "195.0K"
+      "forecast": "220K"
     },
     {
       "country": "USD",
@@ -559,11 +559,11 @@
       "dataPoint": "CPI y/y",
       "weight": 1.5,
       "direction": "higher_is_bullish",
-      "period": "2026-09-24T16:00+00:00",
-      "title": "Mid-month Core Inflation Rate MoM SEP",
-      "actual": "0.17%",
-      "previous": "0.08%",
-      "forecast": "0.1%"
+      "period": "2026-10-08T16:00+00:00",
+      "title": "Inflation Rate MoM SEP",
+      "actual": "0.42%",
+      "previous": "0.2%",
+      "forecast": "0.3%"
     },
     {
       "country": "MXN",
