@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-10-07T19:27:57+00:00",
+    "updated": "2026-10-08T02:33:59+00:00",
     "method": "verdict v3 (forecast-first, released-only)"
   },
   "currencies": {
@@ -26,24 +26,24 @@
           "note": ""
         },
         {
-          "dataPoint": "ISM Manufacturing PMI & ISM Services PMI",
-          "title": "ISM Services PMI SEP",
-          "period": "2026-10-05T18:00+00:00",
-          "actual": "54.9",
-          "previous": "55.4",
-          "forecast": "54",
+          "dataPoint": "2-Year Treasury Yield (21-day trend)",
+          "title": "2-Year Treasury Yield",
+          "period": "2026-10-06T00:00:00+00:00",
+          "actual": "4.79",
+          "previous": "4.73",
+          "forecast": "",
           "direction": "higher_is_bullish",
           "verdict": "bullish",
           "weight": 1.0,
           "note": ""
         },
         {
-          "dataPoint": "2-Year Treasury Yield (21-day trend)",
-          "title": "2-Year Treasury Yield",
-          "period": "2026-10-05T00:00:00+00:00",
-          "actual": "4.84",
-          "previous": "4.71",
-          "forecast": "",
+          "dataPoint": "ISM Manufacturing PMI & ISM Services PMI",
+          "title": "ISM Services PMI SEP",
+          "period": "2026-10-05T18:00+00:00",
+          "actual": "54.9",
+          "previous": "55.4",
+          "forecast": "54",
           "direction": "higher_is_bullish",
           "verdict": "bullish",
           "weight": 1.0,
@@ -1084,8 +1084,8 @@
     "yield2y_sig": 1,
     "oil_direction": "flat",
     "risk_mode": "flat",
-    "yield2y_level": 4.84,
-    "yield2y_sma": 4.715,
+    "yield2y_level": 4.79,
+    "yield2y_sma": 4.735,
     "dxy_level": 101.14,
     "gold_level": 4390.39382
   }

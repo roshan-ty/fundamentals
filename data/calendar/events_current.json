@@ -16819,26 +16819,6 @@
     "source": "te"
   },
   {
-    "title": "Car Production MoM SEP",
-    "country": "BRL",
-    "date_utc": "2026-10-07T17:00+00:00",
-    "impact": "",
-    "forecast": "-3.0%",
-    "previous": "6.8%",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "New Car Registrations MoM SEP",
-    "country": "BRL",
-    "date_utc": "2026-10-07T17:00+00:00",
-    "impact": "",
-    "forecast": "-2.0%",
-    "previous": "-1.6%",
-    "actual": "",
-    "source": "te"
-  },
-  {
     "title": "Foreign Exchange Reserves SEP",
     "country": "RU",
     "date_utc": "2026-10-07T17:00+00:00",
@@ -17066,13 +17046,33 @@
     "source": "ff-feed"
   },
   {
+    "title": "Car Production MoM SEP",
+    "country": "BRL",
+    "date_utc": "2026-10-08T01:00+00:00",
+    "impact": "",
+    "forecast": "-3.0%",
+    "previous": "6.8%",
+    "actual": "-1.1%",
+    "source": "te"
+  },
+  {
+    "title": "New Car Registrations MoM SEP",
+    "country": "BRL",
+    "date_utc": "2026-10-08T01:00+00:00",
+    "impact": "",
+    "forecast": "-2.0%",
+    "previous": "-1.6%",
+    "actual": "2.3%",
+    "source": "te"
+  },
+  {
     "title": "Current Account AUG",
     "country": "KRW",
     "date_utc": "2026-10-08T03:00+00:00",
     "impact": "",
     "forecast": "$45.0B",
     "previous": "$42.08B",
-    "actual": "",
+    "actual": "$46.11B",
     "source": "te"
   },
   {
@@ -17082,7 +17082,7 @@
     "impact": "",
     "forecast": "-25.0%",
     "previous": "-28",
-    "actual": "",
+    "actual": "-32%",
     "source": "te"
   },
   {
@@ -17103,7 +17103,7 @@
     "impact": "",
     "forecast": "2910.0B",
     "previous": "2989B",
-    "actual": "",
+    "actual": "4062B",
     "source": "te"
   },
   {
@@ -17113,7 +17113,7 @@
     "impact": "",
     "forecast": "",
     "previous": "-684.5B",
-    "actual": "",
+    "actual": "-347.6B",
     "source": "te"
   },
   {
@@ -17123,7 +17123,7 @@
     "impact": "",
     "forecast": "",
     "previous": "-362B",
-    "actual": "",
+    "actual": "2191.9B",
     "source": "te"
   },
   {
@@ -17136,6 +17136,16 @@
     "actual": "",
     "revision": "",
     "source": "ff-feed"
+  },
+  {
+    "title": "Car Sales YoY SEP",
+    "country": "ID",
+    "date_utc": "2026-10-08T05:45+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "32.4%",
+    "actual": "28.1%",
+    "source": "te"
   },
   {
     "title": "German Trade Balance",
@@ -17710,7 +17720,7 @@
     "impact": "",
     "forecast": "5.0%",
     "previous": "4.9%",
-    "actual": "",
+    "actual": "5.3%",
     "source": "te"
   },
   {
@@ -18958,7 +18968,7 @@
     "date_utc": "2026-10-15T03:50+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "-347.6B",
     "actual": "",
     "source": "te"
   },
@@ -18968,7 +18978,7 @@
     "date_utc": "2026-10-15T03:50+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "2191.9B",
     "actual": "",
     "source": "te"
   },
@@ -23906,6 +23916,66 @@
     "title": "6-Month Bill Auction",
     "country": "USD",
     "date_utc": "2026-11-02T20:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Treasury Refunding Financing Estimates",
+    "country": "USD",
+    "date_utc": "2026-11-03T01:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Building Permits MoM SEP",
+    "country": "NZD",
+    "date_utc": "2026-11-03T02:45+00:00",
+    "impact": "",
+    "forecast": "-4%",
+    "previous": "5.6%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "TD-MI Inflation Gauge MoM OCT",
+    "country": "AUD",
+    "date_utc": "2026-11-03T05:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "0.3%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "1-Year Bill Auction",
+    "country": "NZD",
+    "date_utc": "2026-11-03T06:35+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "3-Month Bill Auction",
+    "country": "NZD",
+    "date_utc": "2026-11-03T06:35+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "6-Month Bill Auction",
+    "country": "NZD",
+    "date_utc": "2026-11-03T06:35+00:00",
     "impact": "",
     "forecast": "",
     "previous": "",
