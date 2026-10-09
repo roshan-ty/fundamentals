@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-09T02:51:30+00:00",
+  "updated": "2026-10-09T18:54:19+00:00",
   "releases": [
     {
       "country": "USD",
@@ -103,11 +103,11 @@
       "dataPoint": "CB Consumer Confidence / UoM Consumer Sentiment",
       "weight": 0.5,
       "direction": "higher_is_bullish",
-      "period": "2026-09-29T18:00+00:00",
-      "title": "CB Consumer Confidence SEP",
-      "actual": "81.9",
-      "previous": "89.4",
-      "forecast": "89"
+      "period": "2026-10-09T18:00+00:00",
+      "title": "Michigan Consumer Sentiment Prel OCT",
+      "actual": "46.3",
+      "previous": "48.1",
+      "forecast": "48.6"
     },
     {
       "country": "GBP",
@@ -139,11 +139,11 @@
       "dataPoint": "Unemployment Rate",
       "weight": 1.0,
       "direction": "lower_is_bullish",
-      "period": "2026-08-01T00:00:00+00:00",
-      "title": "Unemployment Rate",
-      "actual": "6.4",
-      "previous": "6.4",
-      "forecast": ""
+      "period": "2026-10-09T16:30+00:00",
+      "title": "Unemployment Rate SEP",
+      "actual": "6.5%",
+      "previous": "6.4%",
+      "forecast": "6.5%"
     },
     {
       "country": "AUD",
@@ -259,11 +259,11 @@
       "dataPoint": "CPI y/y (IPCA)",
       "weight": 1.5,
       "direction": "higher_is_bullish",
-      "period": "2026-09-25T16:00+00:00",
-      "title": "IPCA mid-month CPI MoM SEP",
-      "actual": "0.7%",
-      "previous": "-0.4%",
-      "forecast": "0.3%"
+      "period": "2026-10-09T16:00+00:00",
+      "title": "Inflation Rate YoY SEP",
+      "actual": "4.58%",
+      "previous": "4.22%",
+      "forecast": "4.4%"
     },
     {
       "country": "CAD",
@@ -792,6 +792,18 @@
       "actual": "3.8%",
       "previous": "4.7%",
       "forecast": "4.9%"
+    },
+    {
+      "country": "CAD",
+      "dataPointId": "ca_employment",
+      "dataPoint": "Employment Change",
+      "weight": 1.0,
+      "direction": "higher_is_bullish",
+      "period": "2026-10-09T16:30+00:00",
+      "title": "Employment Change SEP",
+      "actual": "-68.3K",
+      "previous": "-41.7K",
+      "forecast": "65K"
     },
     {
       "country": "USD",

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-10-09T02:51:30+00:00",
+    "updated": "2026-10-09T18:54:19+00:00",
     "method": "verdict v3 (forecast-first, released-only)"
   },
   "currencies": {
@@ -13,6 +13,18 @@
       },
       "released_points": 17,
       "drivers": [
+        {
+          "dataPoint": "CB Consumer Confidence / UoM Consumer Sentiment",
+          "title": "Michigan Consumer Sentiment Prel OCT",
+          "period": "2026-10-09T18:00+00:00",
+          "actual": "46.3",
+          "previous": "48.1",
+          "forecast": "48.6",
+          "direction": "higher_is_bullish",
+          "verdict": "bearish",
+          "weight": 0.5,
+          "note": ""
+        },
         {
           "dataPoint": "Unemployment Claims (Weekly)",
           "title": "Initial Jobless Claims OCT/03",
@@ -119,18 +131,6 @@
           "direction": "higher_is_bullish",
           "verdict": "bullish",
           "weight": 1.0,
-          "note": ""
-        },
-        {
-          "dataPoint": "CB Consumer Confidence / UoM Consumer Sentiment",
-          "title": "CB Consumer Confidence SEP",
-          "period": "2026-09-29T18:00+00:00",
-          "actual": "81.9",
-          "previous": "89.4",
-          "forecast": "89",
-          "direction": "higher_is_bullish",
-          "verdict": "bearish",
-          "weight": 0.5,
           "note": ""
         },
         {
@@ -516,11 +516,35 @@
       "verdict": "Neutral",
       "tally": {
         "bullish": 1.0,
-        "bearish": 0.5,
+        "bearish": 2.5,
         "neutral": 6.0
       },
-      "released_points": 5,
+      "released_points": 6,
       "drivers": [
+        {
+          "dataPoint": "Unemployment Rate",
+          "title": "Unemployment Rate SEP",
+          "period": "2026-10-09T16:30+00:00",
+          "actual": "6.5%",
+          "previous": "6.4%",
+          "forecast": "6.5%",
+          "direction": "lower_is_bullish",
+          "verdict": "neutral",
+          "weight": 2.0,
+          "note": ""
+        },
+        {
+          "dataPoint": "Employment Change",
+          "title": "Employment Change SEP",
+          "period": "2026-10-09T16:30+00:00",
+          "actual": "-68.3K",
+          "previous": "-41.7K",
+          "forecast": "65K",
+          "direction": "higher_is_bullish",
+          "verdict": "bearish",
+          "weight": 2.0,
+          "note": ""
+        },
         {
           "dataPoint": "Trade Balance",
           "title": "Trade Balance",
@@ -565,18 +589,6 @@
           "previous": "3%",
           "forecast": "3.0%",
           "direction": "higher_is_bullish",
-          "verdict": "neutral",
-          "weight": 2.0,
-          "note": ""
-        },
-        {
-          "dataPoint": "Unemployment Rate",
-          "title": "Unemployment Rate",
-          "period": "2026-08-01T00:00:00+00:00",
-          "actual": "6.4",
-          "previous": "6.4",
-          "forecast": "",
-          "direction": "lower_is_bullish",
           "verdict": "neutral",
           "weight": 2.0,
           "note": ""
@@ -848,6 +860,18 @@
       "released_points": 3,
       "drivers": [
         {
+          "dataPoint": "CPI y/y (IPCA)",
+          "title": "Inflation Rate YoY SEP",
+          "period": "2026-10-09T16:00+00:00",
+          "actual": "4.58%",
+          "previous": "4.22%",
+          "forecast": "4.4%",
+          "direction": "higher_is_bullish",
+          "verdict": "bullish",
+          "weight": 2.0,
+          "note": ""
+        },
+        {
           "dataPoint": "Unemployment Rate",
           "title": "Unemployment Rate AUG",
           "period": "2026-09-29T16:00+00:00",
@@ -857,18 +881,6 @@
           "direction": "lower_is_bullish",
           "verdict": "neutral",
           "weight": 1.0,
-          "note": ""
-        },
-        {
-          "dataPoint": "CPI y/y (IPCA)",
-          "title": "IPCA mid-month CPI MoM SEP",
-          "period": "2026-09-25T16:00+00:00",
-          "actual": "0.7%",
-          "previous": "-0.4%",
-          "forecast": "0.3%",
-          "direction": "higher_is_bullish",
-          "verdict": "bullish",
-          "weight": 2.0,
           "note": ""
         },
         {
