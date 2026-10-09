@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-08T19:23:46+00:00",
+  "updated": "2026-10-09T02:51:30+00:00",
   "releases": [
     {
       "country": "USD",
@@ -343,11 +343,11 @@
       "dataPoint": "CPI Flash Estimate (y/y) & Core CPI Flash Estimate",
       "weight": 1.5,
       "direction": "higher_is_bullish",
-      "period": "2026-09-30T16:00+00:00",
-      "title": "Inflation Rate YoY Prel SEP",
-      "actual": "4.9%",
-      "previous": "2.9%",
-      "forecast": "2.8%"
+      "period": "2026-10-16T13:00+00:00",
+      "title": "Harmonised Inflation Rate MoM Final SEP",
+      "actual": "0.2%",
+      "previous": "0.2%",
+      "forecast": "0.6%"
     },
     {
       "country": "GBP",
@@ -799,10 +799,10 @@
       "dataPoint": "2-Year Treasury Yield (21-day trend)",
       "weight": 1.0,
       "direction": "higher_is_bullish",
-      "period": "2026-10-06T00:00:00+00:00",
+      "period": "2026-10-07T00:00:00+00:00",
       "title": "2-Year Treasury Yield",
-      "actual": "4.79",
-      "previous": "4.73",
+      "actual": "4.77",
+      "previous": "4.75",
       "forecast": ""
     }
   ]

@@ -1,75 +1,68 @@
 {
   "meta": {
-    "updated": "2026-10-08T19:23:46+00:00",
+    "updated": "2026-10-09T02:51:30+00:00",
     "method": "verdict v3"
   },
   "instruments": {
     "XAUUSD": {
       "verdict": "Very Bearish",
-      "halo": "signal -3",
+      "halo": "signal -2",
       "notes": [
         "institutional flow leans adverse",
-        "real-yield rising (headwind)",
-        "2Y yield rising (headwind)"
+        "real-yield rising (headwind)"
       ],
       "cot_tilt": -1.0
     },
     "XAGUSD": {
       "verdict": "Very Bearish",
-      "halo": "signal -3",
+      "halo": "signal -2",
       "notes": [
         "institutional flow leans adverse",
-        "real-yield rising (headwind)",
-        "2Y yield rising (headwind)"
+        "real-yield rising (headwind)"
       ],
       "cot_tilt": -1.0
     },
     "XPTUSD": {
       "verdict": "Very Bearish",
-      "halo": "signal -3",
+      "halo": "signal -2",
       "notes": [
         "institutional flow leans adverse",
-        "real-yield rising (headwind)",
-        "2Y yield rising (headwind)"
+        "real-yield rising (headwind)"
       ],
       "cot_tilt": -1.0
     },
     "XPDUSD": {
       "verdict": "Very Bearish",
-      "halo": "signal -3",
+      "halo": "signal -2",
       "notes": [
         "institutional flow leans adverse",
-        "real-yield rising (headwind)",
-        "2Y yield rising (headwind)"
+        "real-yield rising (headwind)"
       ],
       "cot_tilt": -1.0
     },
     "OIL": {
-      "verdict": "Bullish",
-      "halo": "signal +1",
+      "verdict": "Very Bullish",
+      "halo": "signal +2",
       "notes": [
         "industrial demand PMI expanding",
-        "2Y yield rising (headwind)",
         "institutional flow leans supportive"
       ],
       "cot_tilt": 1.0
     },
     "BRENT": {
-      "verdict": "Bullish",
-      "halo": "signal +1",
+      "verdict": "Very Bullish",
+      "halo": "signal +2",
       "notes": [
         "industrial demand PMI expanding",
-        "2Y yield rising (headwind)",
         "institutional flow leans supportive"
       ],
       "cot_tilt": 1.0
     },
     "COPPER": {
-      "verdict": "Bearish",
-      "halo": "signal -1",
+      "verdict": "Neutral",
+      "halo": "signal +0",
       "notes": [
         "industrial demand PMI expanding",
-        "2Y yield rising (headwind)",
         "institutional flow leans adverse"
       ],
       "cot_tilt": -1.0
@@ -171,74 +164,66 @@
       "cot_tilt": 0
     },
     "BTCUSD": {
-      "verdict": "Neutral",
-      "halo": "signal +0",
+      "verdict": "Bullish",
+      "halo": "signal +1",
       "notes": [
-        "liquidity expanding",
-        "2Y yield rising (headwind)"
+        "liquidity expanding"
       ],
       "cot_tilt": 0
     },
     "ETHUSD": {
-      "verdict": "Neutral",
-      "halo": "signal +0",
+      "verdict": "Bullish",
+      "halo": "signal +1",
       "notes": [
-        "liquidity expanding",
-        "2Y yield rising (headwind)"
+        "liquidity expanding"
       ],
       "cot_tilt": 0
     },
     "LTCUSD": {
-      "verdict": "Neutral",
-      "halo": "signal +0",
+      "verdict": "Bullish",
+      "halo": "signal +1",
       "notes": [
-        "liquidity expanding",
-        "2Y yield rising (headwind)"
+        "liquidity expanding"
       ],
       "cot_tilt": 0
     },
     "SOLUSD": {
-      "verdict": "Neutral",
-      "halo": "signal +0",
+      "verdict": "Bullish",
+      "halo": "signal +1",
       "notes": [
-        "liquidity expanding",
-        "2Y yield rising (headwind)"
+        "liquidity expanding"
       ],
       "cot_tilt": 0
     },
     "SUIUSD": {
-      "verdict": "Neutral",
-      "halo": "signal +0",
+      "verdict": "Bullish",
+      "halo": "signal +1",
       "notes": [
-        "liquidity expanding",
-        "2Y yield rising (headwind)"
+        "liquidity expanding"
       ],
       "cot_tilt": 0
     },
     "XLMUSD": {
-      "verdict": "Neutral",
-      "halo": "signal +0",
+      "verdict": "Bullish",
+      "halo": "signal +1",
       "notes": [
-        "liquidity expanding",
-        "2Y yield rising (headwind)"
+        "liquidity expanding"
       ],
       "cot_tilt": 0
     },
     "XRPUSD": {
-      "verdict": "Neutral",
-      "halo": "signal +0",
+      "verdict": "Bullish",
+      "halo": "signal +1",
       "notes": [
-        "liquidity expanding",
-        "2Y yield rising (headwind)"
+        "liquidity expanding"
       ],
       "cot_tilt": 0
     },
     "AVAXUSD": {
-      "verdict": "Neutral",
-      "halo": "signal +0",
+      "verdict": "Bullish",
+      "halo": "signal +1",
       "notes": [
-        "liquidity expanding",
-        "2Y yield rising (headwind)"
+        "liquidity expanding"
       ],
       "cot_tilt": 0
     }

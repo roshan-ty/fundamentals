@@ -1,34 +1,16 @@
 {
   "meta": {
-    "updated": "2026-10-08T19:23:46+00:00"
+    "updated": "2026-10-09T02:51:30+00:00"
   },
   "setups": [
     {
-      "symbol": "EURSGD",
-      "name": "EURSGD",
-      "verdict": "Very Bullish",
-      "direction": "Buy",
+      "symbol": "EURCHF",
+      "name": "EURCHF",
+      "verdict": "Very Bearish",
+      "direction": "Sell",
       "confidence": 1.0,
       "importance": 2,
-      "rationale": "Very Bullish — EUR: Bullish · SGD: Bearish"
-    },
-    {
-      "symbol": "EURTRY",
-      "name": "EURTRY",
-      "verdict": "Very Bullish",
-      "direction": "Buy",
-      "confidence": 1.0,
-      "importance": 2,
-      "rationale": "Very Bullish — EUR: Bullish · TRY: Bearish"
-    },
-    {
-      "symbol": "EURZAR",
-      "name": "EURZAR",
-      "verdict": "Very Bullish",
-      "direction": "Buy",
-      "confidence": 1.0,
-      "importance": 2,
-      "rationale": "Very Bullish — EUR: Bullish · ZAR: Bearish"
+      "rationale": "Very Bearish — EUR: Neutral · CHF: Very Bullish"
     },
     {
       "symbol": "GBPCHF",
@@ -110,6 +92,24 @@
       "confidence": 0.4,
       "importance": 2,
       "rationale": "Very Bearish"
+    },
+    {
+      "symbol": "OIL",
+      "name": "OIL",
+      "verdict": "Very Bullish",
+      "direction": "Buy",
+      "confidence": 0.4,
+      "importance": 2,
+      "rationale": "Very Bullish"
+    },
+    {
+      "symbol": "BRENT",
+      "name": "BRENT",
+      "verdict": "Very Bullish",
+      "direction": "Buy",
+      "confidence": 0.4,
+      "importance": 2,
+      "rationale": "Very Bullish"
     }
   ]
 }
