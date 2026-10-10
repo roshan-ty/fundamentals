@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-10-09T18:54:19+00:00",
+    "updated": "2026-10-10T02:11:14+00:00",
     "method": "verdict v3"
   },
   "instruments": {
@@ -14,22 +14,22 @@
       "cot_tilt": -1.0
     },
     "XAGUSD": {
-      "verdict": "Very Bearish",
-      "halo": "signal -2",
+      "verdict": "Neutral",
+      "halo": "signal +0",
       "notes": [
-        "institutional flow leans adverse",
+        "institutional flow leans supportive",
         "real-yield rising (headwind)"
       ],
-      "cot_tilt": -1.0
+      "cot_tilt": 1.0
     },
     "XPTUSD": {
-      "verdict": "Very Bearish",
-      "halo": "signal -2",
+      "verdict": "Neutral",
+      "halo": "signal +0",
       "notes": [
-        "institutional flow leans adverse",
+        "institutional flow leans supportive",
         "real-yield rising (headwind)"
       ],
-      "cot_tilt": -1.0
+      "cot_tilt": 1.0
     },
     "XPDUSD": {
       "verdict": "Very Bearish",
@@ -41,13 +41,13 @@
       "cot_tilt": -1.0
     },
     "OIL": {
-      "verdict": "Very Bullish",
-      "halo": "signal +2",
+      "verdict": "Neutral",
+      "halo": "signal +0",
       "notes": [
         "industrial demand PMI expanding",
-        "institutional flow leans supportive"
+        "institutional flow leans adverse"
       ],
-      "cot_tilt": 1.0
+      "cot_tilt": -1.0
     },
     "BRENT": {
       "verdict": "Very Bullish",

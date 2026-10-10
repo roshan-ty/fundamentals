@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-10-09T18:54:19+00:00"
+    "updated": "2026-10-10T02:11:14+00:00"
   },
   "setups": [
     {
@@ -67,24 +67,6 @@
       "rationale": "Very Bearish"
     },
     {
-      "symbol": "XAGUSD",
-      "name": "XAGUSD",
-      "verdict": "Very Bearish",
-      "direction": "Sell",
-      "confidence": 0.4,
-      "importance": 2,
-      "rationale": "Very Bearish"
-    },
-    {
-      "symbol": "XPTUSD",
-      "name": "XPTUSD",
-      "verdict": "Very Bearish",
-      "direction": "Sell",
-      "confidence": 0.4,
-      "importance": 2,
-      "rationale": "Very Bearish"
-    },
-    {
       "symbol": "XPDUSD",
       "name": "XPDUSD",
       "verdict": "Very Bearish",
@@ -94,15 +76,6 @@
       "rationale": "Very Bearish"
     },
     {
-      "symbol": "OIL",
-      "name": "OIL",
-      "verdict": "Very Bullish",
-      "direction": "Buy",
-      "confidence": 0.4,
-      "importance": 2,
-      "rationale": "Very Bullish"
-    },
-    {
       "symbol": "BRENT",
       "name": "BRENT",
       "verdict": "Very Bullish",
@@ -110,6 +83,33 @@
       "confidence": 0.4,
       "importance": 2,
       "rationale": "Very Bullish"
+    },
+    {
+      "symbol": "EURJPY",
+      "name": "EURJPY",
+      "verdict": "Bearish",
+      "direction": "Sell",
+      "confidence": 1.0,
+      "importance": 1,
+      "rationale": "Bearish — EUR: Neutral · JPY: Bullish"
+    },
+    {
+      "symbol": "EURAUD",
+      "name": "EURAUD",
+      "verdict": "Bearish",
+      "direction": "Sell",
+      "confidence": 1.0,
+      "importance": 1,
+      "rationale": "Bearish — EUR: Neutral · AUD: Bullish"
+    },
+    {
+      "symbol": "EURNZD",
+      "name": "EURNZD",
+      "verdict": "Bearish",
+      "direction": "Sell",
+      "confidence": 1.0,
+      "importance": 1,
+      "rationale": "Bearish — EUR: Neutral · NZD: Bullish"
     }
   ]
 }

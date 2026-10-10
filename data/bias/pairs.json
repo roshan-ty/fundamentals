@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-10-09T18:54:19+00:00",
+    "updated": "2026-10-10T02:11:14+00:00",
     "total": 82,
     "scored": 82
   },
@@ -795,16 +795,16 @@
     {
       "symbol": "XAGUSD",
       "class": "metals",
-      "verdict": "Very Bearish",
-      "base_verdict": "Very Bearish",
+      "verdict": "Neutral",
+      "base_verdict": "Neutral",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "XPTUSD",
       "class": "metals",
-      "verdict": "Very Bearish",
-      "base_verdict": "Very Bearish",
+      "verdict": "Neutral",
+      "base_verdict": "Neutral",
       "quote_verdict": null,
       "drivers": []
     },
@@ -819,8 +819,8 @@
     {
       "symbol": "OIL",
       "class": "energy",
-      "verdict": "Very Bullish",
-      "base_verdict": "Very Bullish",
+      "verdict": "Neutral",
+      "base_verdict": "Neutral",
       "quote_verdict": null,
       "drivers": []
     },

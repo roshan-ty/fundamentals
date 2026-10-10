@@ -1,14 +1,14 @@
 {
   "meta": {
-    "updated": "2026-10-09T18:54:19+00:00",
+    "updated": "2026-10-10T02:11:14+00:00",
     "method": "verdict v3 (forecast-first, released-only)"
   },
   "currencies": {
     "USD": {
       "verdict": "Neutral",
       "tally": {
-        "bullish": 9.5,
-        "bearish": 7.0,
+        "bullish": 8.5,
+        "bearish": 8.0,
         "neutral": 3.0
       },
       "released_points": 17,
@@ -40,12 +40,12 @@
         {
           "dataPoint": "2-Year Treasury Yield (21-day trend)",
           "title": "2-Year Treasury Yield",
-          "period": "2026-10-07T00:00:00+00:00",
-          "actual": "4.77",
-          "previous": "4.75",
+          "period": "2026-10-08T00:00:00+00:00",
+          "actual": "4.75",
+          "previous": "4.77",
           "forecast": "",
           "direction": "higher_is_bullish",
-          "verdict": "bullish",
+          "verdict": "bearish",
           "weight": 1.0,
           "note": ""
         },
@@ -1096,8 +1096,8 @@
     "yield2y_sig": 0,
     "oil_direction": "flat",
     "risk_mode": "flat",
-    "yield2y_level": 4.77,
-    "yield2y_sma": 4.753,
+    "yield2y_level": 4.75,
+    "yield2y_sma": 4.768,
     "dxy_level": 101.09,
     "gold_level": 4390.39382
   }
