@@ -2,16 +2,6 @@
   {
     "title": "Initial Jobless Claims",
     "country": "USD",
-    "date_utc": "2025-09-06T00:00:00+00:00",
-    "impact": "Medium",
-    "actual": "259000.0",
-    "previous": "236000.0",
-    "source_series": "ICSA",
-    "period": "2025-09-06"
-  },
-  {
-    "title": "Initial Jobless Claims",
-    "country": "USD",
     "date_utc": "2025-09-13T00:00:00+00:00",
     "impact": "Medium",
     "actual": "233000.0",
@@ -22493,6 +22483,26 @@
     "source": "te"
   },
   {
+    "title": "PPI MoM SEP",
+    "country": "KRW",
+    "date_utc": "2026-10-21T01:00+00:00",
+    "impact": "",
+    "forecast": "0.2%",
+    "previous": "0.2%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "PPI YoY SEP",
+    "country": "KRW",
+    "date_utc": "2026-10-21T01:00+00:00",
+    "impact": "",
+    "forecast": "7.5%",
+    "previous": "7.9%",
+    "actual": "",
+    "source": "te"
+  },
+  {
     "title": "Balance of Trade SEP",
     "country": "JPY",
     "date_utc": "2026-10-21T03:50+00:00",
@@ -26789,6 +26799,66 @@
     "impact": "",
     "forecast": "",
     "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Fed Balance Sheet NOV/04",
+    "country": "USD",
+    "date_utc": "2026-11-06T02:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Reserve Balances with Fed Banks 20261104",
+    "country": "USD",
+    "date_utc": "2026-11-06T02:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Average Cash Earnings YoY SEP",
+    "country": "JPY",
+    "date_utc": "2026-11-06T04:30+00:00",
+    "impact": "",
+    "forecast": "4%",
+    "previous": "3.8%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Overtime Pay YoY SEP",
+    "country": "JPY",
+    "date_utc": "2026-11-06T04:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "5.2%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "S&P Global Composite PMI Final OCT",
+    "country": "JPY",
+    "date_utc": "2026-11-06T05:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "52.30",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "S&P Global Services PMI Final OCT",
+    "country": "JPY",
+    "date_utc": "2026-11-06T05:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "51.3",
     "actual": "",
     "source": "te"
   }
