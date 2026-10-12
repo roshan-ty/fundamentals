@@ -114,7 +114,7 @@
     "country": "IN",
     "date_utc": "2026-10-12T14:30+00:00",
     "impact": "",
-    "forecast": "4.9%",
+    "forecast": "5.3%",
     "previous": "4.82%",
     "actual": "",
     "source": "te"
@@ -2524,7 +2524,7 @@
     "country": "BRL",
     "date_utc": "2026-10-16T16:00+00:00",
     "impact": "",
-    "forecast": "0.5%",
+    "forecast": "0.4%",
     "previous": "-0.2%",
     "actual": "",
     "source": "te"
@@ -3970,13 +3970,43 @@
     "source": "te"
   },
   {
-    "title": "Consumer Inflation Expectations OCT",
-    "country": "AUD",
-    "date_utc": "2026-10-08T04:00+00:00",
+    "title": "Economic Activity YoY AUG",
+    "country": "AR",
+    "date_utc": "2026-10-21T23:00+00:00",
     "impact": "",
-    "forecast": "5.0%",
-    "previous": "4.9%",
-    "actual": "5.3%",
+    "forecast": "-0.9%",
+    "previous": "-1.4%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Foreign Bond Investment OCT/17",
+    "country": "JPY",
+    "date_utc": "2026-10-22T03:50+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Stock Investment by Foreigners OCT/17",
+    "country": "JPY",
+    "date_utc": "2026-10-22T03:50+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Interest Rate Decision",
+    "country": "KRW",
+    "date_utc": "2026-10-22T05:00+00:00",
+    "impact": "",
+    "forecast": "3.25%",
+    "previous": "3%",
+    "actual": "",
     "source": "te"
   },
   {
@@ -4720,66 +4750,6 @@
     "source": "te"
   },
   {
-    "title": "30-Year JGB Auction",
-    "country": "JPY",
-    "date_utc": "2026-10-08T07:35+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "4.100%",
-    "actual": "4.109%",
-    "source": "te"
-  },
-  {
-    "title": "6-Month Bill Auction",
-    "country": "JPY",
-    "date_utc": "2026-10-08T07:35+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "1.2887%",
-    "actual": "1.4051%",
-    "source": "te"
-  },
-  {
-    "title": "Eco Watchers Survey Current SEP",
-    "country": "JPY",
-    "date_utc": "2026-10-08T09:00+00:00",
-    "impact": "",
-    "forecast": "46.1",
-    "previous": "46.4",
-    "actual": "47.0",
-    "source": "te"
-  },
-  {
-    "title": "Eco Watchers Survey Outlook SEP",
-    "country": "JPY",
-    "date_utc": "2026-10-08T09:00+00:00",
-    "impact": "",
-    "forecast": "48",
-    "previous": "48.3",
-    "actual": "47.4",
-    "source": "te"
-  },
-  {
-    "title": "Household Spending MoM AUG",
-    "country": "JPY",
-    "date_utc": "2026-10-09T03:30+00:00",
-    "impact": "",
-    "forecast": "0.3%",
-    "previous": "0.5%",
-    "actual": "0.1%",
-    "source": "te"
-  },
-  {
-    "title": "Household Spending YoY AUG",
-    "country": "JPY",
-    "date_utc": "2026-10-09T03:30+00:00",
-    "impact": "",
-    "forecast": "-2.0%",
-    "previous": "-3.6%",
-    "actual": "-3.1%",
-    "source": "te"
-  },
-  {
     "title": "3-Month Bill Auction",
     "country": "JPY",
     "date_utc": "2026-10-09T07:35+00:00",
@@ -4797,26 +4767,6 @@
     "forecast": "61.0%",
     "previous": "64.7%",
     "actual": "60.4%",
-    "source": "te"
-  },
-  {
-    "title": "Foreign Bond Investment OCT/17",
-    "country": "JPY",
-    "date_utc": "2026-10-22T03:50+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "Stock Investment by Foreigners OCT/17",
-    "country": "JPY",
-    "date_utc": "2026-10-22T03:50+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "",
-    "actual": "",
     "source": "te"
   },
   {
@@ -6247,46 +6197,6 @@
     "forecast": "",
     "previous": "6.58%",
     "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "Balance of Trade AUG",
-    "country": "EUR",
-    "date_utc": "2026-10-08T10:00+00:00",
-    "impact": "",
-    "forecast": "19.5B",
-    "previous": "21.6B ",
-    "actual": "19.5B",
-    "source": "te"
-  },
-  {
-    "title": "Exports MoM AUG",
-    "country": "EUR",
-    "date_utc": "2026-10-08T10:00+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "-0.5% ",
-    "actual": "-0.8%",
-    "source": "te"
-  },
-  {
-    "title": "Imports MoM AUG",
-    "country": "EUR",
-    "date_utc": "2026-10-08T10:00+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "-5.5% ",
-    "actual": "0.9%",
-    "source": "te"
-  },
-  {
-    "title": "New Car Registrations YoY SEP",
-    "country": "EUR",
-    "date_utc": "2026-10-08T13:40+00:00",
-    "impact": "",
-    "forecast": "4.0%",
-    "previous": "2.6%",
-    "actual": "9.0%",
     "source": "te"
   },
   {
@@ -8896,6 +8806,36 @@
     "impact": "",
     "forecast": "",
     "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Baker Hughes Oil Rig Count NOV/06",
+    "country": "USD",
+    "date_utc": "2026-11-06T23:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Baker Hughes Total Rigs Count NOV/06",
+    "country": "USD",
+    "date_utc": "2026-11-06T23:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Consumer Credit Change SEP",
+    "country": "USD",
+    "date_utc": "2026-11-07T01:00+00:00",
+    "impact": "",
+    "forecast": "$ 5B",
+    "previous": "$8.28B",
     "actual": "",
     "source": "te"
   }
