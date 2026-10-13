@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-10-12T21:51:10+00:00",
+    "updated": "2026-10-13T20:01:26+00:00",
     "method": "verdict v3 (forecast-first, released-only)"
   },
   "currencies": {
@@ -13,6 +13,18 @@
       },
       "released_points": 17,
       "drivers": [
+        {
+          "dataPoint": "Building Permits & Housing Starts",
+          "title": "Existing Home Sales SEP",
+          "period": "2026-10-13T18:00+00:00",
+          "actual": "3.99M",
+          "previous": "3.98M",
+          "forecast": "3.97M",
+          "direction": "higher_is_bullish",
+          "verdict": "bullish",
+          "weight": 0.5,
+          "note": ""
+        },
         {
           "dataPoint": "CB Consumer Confidence / UoM Consumer Sentiment",
           "title": "Michigan Consumer Sentiment Prel OCT",
@@ -143,18 +155,6 @@
           "direction": "higher_is_bullish",
           "verdict": "bearish",
           "weight": 1.0,
-          "note": ""
-        },
-        {
-          "dataPoint": "Building Permits & Housing Starts",
-          "title": "New Home Sales AUG",
-          "period": "2026-09-24T18:00+00:00",
-          "actual": "0.684M",
-          "previous": "0.607M",
-          "forecast": "0.615M",
-          "direction": "higher_is_bullish",
-          "verdict": "bullish",
-          "weight": 0.5,
           "note": ""
         },
         {
@@ -319,21 +319,21 @@
     "GBP": {
       "verdict": "Neutral",
       "tally": {
-        "bullish": 4.5,
-        "bearish": 5.0,
+        "bullish": 4.0,
+        "bearish": 5.5,
         "neutral": 5.0
       },
       "released_points": 8,
       "drivers": [
         {
           "dataPoint": "Retail Sales (m/m)",
-          "title": "Retail Sales MoM AUG",
-          "period": "2026-09-18T10:00+00:00",
-          "actual": "0.5%",
-          "previous": "-0.5%",
-          "forecast": "-0.1%",
+          "title": "BRC Retail Sales Monitor YoY SEP",
+          "period": "2026-10-13T03:01+00:00",
+          "actual": "1%",
+          "previous": "0.5%",
+          "forecast": "1.4%",
           "direction": "higher_is_bullish",
-          "verdict": "bullish",
+          "verdict": "bearish",
           "weight": 0.5,
           "note": ""
         },
@@ -606,6 +606,18 @@
       "released_points": 6,
       "drivers": [
         {
+          "dataPoint": "PPI (y/y)",
+          "title": "PPI YoY SEP",
+          "period": "2026-10-13T03:50+00:00",
+          "actual": "6.8%",
+          "previous": "7.6%",
+          "forecast": "8%",
+          "direction": "higher_is_bullish",
+          "verdict": "bearish",
+          "weight": 1.0,
+          "note": ""
+        },
+        {
           "dataPoint": "Tankan Large Manufacturers Index",
           "title": "Reuters Tankan Index OCT",
           "period": "2026-10-09T03:00+00:00",
@@ -651,18 +663,6 @@
           "direction": "higher_is_bullish",
           "verdict": "neutral",
           "weight": 3.0,
-          "note": ""
-        },
-        {
-          "dataPoint": "PPI (y/y)",
-          "title": "PPI YoY AUG",
-          "period": "2026-09-11T03:50+00:00",
-          "actual": "7.6%",
-          "previous": "7.7% ",
-          "forecast": "7.8%",
-          "direction": "higher_is_bullish",
-          "verdict": "bearish",
-          "weight": 1.0,
           "note": ""
         },
         {
@@ -1098,7 +1098,7 @@
     "risk_mode": "flat",
     "yield2y_level": 4.75,
     "yield2y_sma": 4.768,
-    "dxy_level": 101.12,
+    "dxy_level": 101.2,
     "gold_level": 4390.39382
   }
 }

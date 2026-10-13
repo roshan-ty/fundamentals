@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-12T21:51:10+00:00",
+  "updated": "2026-10-13T20:01:26+00:00",
   "releases": [
     {
       "country": "USD",
@@ -79,11 +79,11 @@
       "dataPoint": "Building Permits & Housing Starts",
       "weight": 0.5,
       "direction": "higher_is_bullish",
-      "period": "2026-09-24T18:00+00:00",
-      "title": "New Home Sales AUG",
-      "actual": "0.684M",
-      "previous": "0.607M",
-      "forecast": "0.615M"
+      "period": "2026-10-13T18:00+00:00",
+      "title": "Existing Home Sales SEP",
+      "actual": "3.99M",
+      "previous": "3.98M",
+      "forecast": "3.97M"
     },
     {
       "country": "USD",
@@ -235,11 +235,11 @@
       "dataPoint": "PPI (y/y)",
       "weight": 0.5,
       "direction": "higher_is_bullish",
-      "period": "2026-09-11T03:50+00:00",
-      "title": "PPI YoY AUG",
-      "actual": "7.6%",
-      "previous": "7.7% ",
-      "forecast": "7.8%"
+      "period": "2026-10-13T03:50+00:00",
+      "title": "PPI YoY SEP",
+      "actual": "6.8%",
+      "previous": "7.6%",
+      "forecast": "8%"
     },
     {
       "country": "GBP",
@@ -415,11 +415,11 @@
       "dataPoint": "Retail Sales (m/m)",
       "weight": 0.5,
       "direction": "higher_is_bullish",
-      "period": "2026-09-18T10:00+00:00",
-      "title": "Retail Sales MoM AUG",
-      "actual": "0.5%",
-      "previous": "-0.5%",
-      "forecast": "-0.1%"
+      "period": "2026-10-13T03:01+00:00",
+      "title": "BRC Retail Sales Monitor YoY SEP",
+      "actual": "1%",
+      "previous": "0.5%",
+      "forecast": "1.4%"
     },
     {
       "country": "JPY",
