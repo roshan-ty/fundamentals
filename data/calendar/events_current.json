@@ -14787,17 +14787,6 @@
     "source": "te"
   },
   {
-    "title": "FOMC Member Goolsbee Speaks",
-    "country": "USD",
-    "date_utc": "2026-10-02T17:00+00:00",
-    "impact": "Low",
-    "forecast": "",
-    "previous": "",
-    "actual": "",
-    "revision": "",
-    "source": "ff-feed"
-  },
-  {
     "title": "Factory Orders MoM AUG",
     "country": "USD",
     "date_utc": "2026-10-02T18:00+00:00",
@@ -19251,7 +19240,7 @@
     "impact": "",
     "forecast": "2%",
     "previous": "1.7%",
-    "actual": "",
+    "actual": "1.9%",
     "source": "te"
   },
   {
@@ -19325,7 +19314,7 @@
     "impact": "",
     "forecast": "4.3%",
     "previous": "8.5%",
-    "actual": "",
+    "actual": "8%",
     "source": "te"
   },
   {
@@ -19357,7 +19346,7 @@
     "impact": "",
     "forecast": "1%",
     "previous": "1.4%",
-    "actual": "",
+    "actual": "1.1%",
     "source": "te"
   },
   {
@@ -19367,7 +19356,7 @@
     "impact": "",
     "forecast": "5.3%",
     "previous": "5.9%",
-    "actual": "",
+    "actual": "5.4%",
     "source": "te"
   },
   {
@@ -20124,6 +20113,17 @@
     "source": "ff-feed"
   },
   {
+    "title": "FOMC Member Goolsbee Speaks",
+    "country": "USD",
+    "date_utc": "2026-10-14T19:00+00:00",
+    "impact": "Low",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "revision": "",
+    "source": "ff-feed"
+  },
+  {
     "title": "30-Year Bond Auction",
     "country": "CAD",
     "date_utc": "2026-10-14T20:00+00:00",
@@ -20296,7 +20296,7 @@
     "impact": "",
     "forecast": "-0.4%",
     "previous": "0%",
-    "actual": "",
+    "actual": "-0.1%",
     "source": "te"
   },
   {
@@ -28655,6 +28655,36 @@
     "impact": "",
     "forecast": "",
     "previous": "0%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Building Permits MoM Final SEP",
+    "country": "AUD",
+    "date_utc": "2026-11-09T05:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "-6.1%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Building Permits YoY Final SEP",
+    "country": "AUD",
+    "date_utc": "2026-11-09T05:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "10.3%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Private House Approvals MoM Final SEP",
+    "country": "AUD",
+    "date_utc": "2026-11-09T05:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "3.7%",
     "actual": "",
     "source": "te"
   }

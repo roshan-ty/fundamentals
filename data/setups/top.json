@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-10-13T20:01:26+00:00"
+    "updated": "2026-10-14T01:40:46+00:00"
   },
   "setups": [
     {
@@ -76,15 +76,6 @@
       "rationale": "Very Bearish"
     },
     {
-      "symbol": "BRENT",
-      "name": "BRENT",
-      "verdict": "Very Bullish",
-      "direction": "Buy",
-      "confidence": 0.4,
-      "importance": 2,
-      "rationale": "Very Bullish"
-    },
-    {
       "symbol": "EURJPY",
       "name": "EURJPY",
       "verdict": "Bearish",
@@ -110,6 +101,15 @@
       "confidence": 1.0,
       "importance": 1,
       "rationale": "Bearish — EUR: Neutral · NZD: Bullish"
+    },
+    {
+      "symbol": "EURSGD",
+      "name": "EURSGD",
+      "verdict": "Bullish",
+      "direction": "Buy",
+      "confidence": 1.0,
+      "importance": 1,
+      "rationale": "Bullish — EUR: Neutral · SGD: Bearish"
     }
   ]
 }

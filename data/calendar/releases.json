@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-13T20:01:26+00:00",
+  "updated": "2026-10-14T01:40:46+00:00",
   "releases": [
     {
       "country": "USD",
@@ -811,10 +811,10 @@
       "dataPoint": "2-Year Treasury Yield (21-day trend)",
       "weight": 1.0,
       "direction": "higher_is_bullish",
-      "period": "2026-10-08T00:00:00+00:00",
+      "period": "2026-10-09T00:00:00+00:00",
       "title": "2-Year Treasury Yield",
-      "actual": "4.75",
-      "previous": "4.77",
+      "actual": "4.80",
+      "previous": "4.78",
       "forecast": ""
     }
   ]
