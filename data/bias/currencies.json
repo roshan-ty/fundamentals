@@ -1,18 +1,30 @@
 {
   "meta": {
-    "updated": "2026-10-14T01:40:46+00:00",
+    "updated": "2026-10-14T18:04:22+00:00",
     "method": "verdict v3 (forecast-first, released-only)"
   },
   "currencies": {
     "USD": {
       "verdict": "Neutral",
       "tally": {
-        "bullish": 9.5,
+        "bullish": 7.5,
         "bearish": 7.0,
-        "neutral": 3.0
+        "neutral": 5.0
       },
       "released_points": 17,
       "drivers": [
+        {
+          "dataPoint": "CPI & Core CPI (m/m, y/y)",
+          "title": "Core Inflation Rate MoM SEP",
+          "period": "2026-10-14T16:30+00:00",
+          "actual": "0.3%",
+          "previous": "0.3%",
+          "forecast": "0.3%",
+          "direction": "higher_is_bullish",
+          "verdict": "neutral",
+          "weight": 2.0,
+          "note": ""
+        },
         {
           "dataPoint": "Building Permits & Housing Starts",
           "title": "Existing Home Sales SEP",
@@ -179,18 +191,6 @@
           "direction": "higher_is_bullish",
           "verdict": "bullish",
           "weight": 1.0,
-          "note": ""
-        },
-        {
-          "dataPoint": "CPI & Core CPI (m/m, y/y)",
-          "title": "Core Inflation Rate MoM AUG",
-          "period": "2026-09-11T16:30+00:00",
-          "actual": "0.3%",
-          "previous": "0.2%",
-          "forecast": "0.2%",
-          "direction": "higher_is_bullish",
-          "verdict": "bullish",
-          "weight": 2.0,
           "note": ""
         },
         {
@@ -743,14 +743,38 @@
       "notes": []
     },
     "CNY": {
-      "verdict": "Very Bullish",
+      "verdict": "Neutral",
       "tally": {
-        "bullish": 4.0,
-        "bearish": 0.0,
+        "bullish": 3.0,
+        "bearish": 2.0,
         "neutral": 3.0
       },
-      "released_points": 4,
+      "released_points": 5,
       "drivers": [
+        {
+          "dataPoint": "CPI & PPI (y/y)",
+          "title": "Inflation Rate YoY SEP",
+          "period": "2026-10-14T05:30+00:00",
+          "actual": "0.9%",
+          "previous": "0.8%",
+          "forecast": "1%",
+          "direction": "higher_is_bullish",
+          "verdict": "bearish",
+          "weight": 1.0,
+          "note": ""
+        },
+        {
+          "dataPoint": "Trade Balance & Exports/Imports (y/y)",
+          "title": "Trade Balance",
+          "period": "2026-10-14T02:31+00:00",
+          "actual": "$133.53B",
+          "previous": "809B",
+          "forecast": "805B",
+          "direction": "higher_is_bullish",
+          "verdict": "bearish",
+          "weight": 1.0,
+          "note": ""
+        },
         {
           "dataPoint": "NBS Manufacturing PMI & Caixin Manufacturing PMI",
           "title": "RatingDog Manufacturing PMI SEP",
@@ -782,18 +806,6 @@
           "actual": "5.2%",
           "previous": "4.5%",
           "forecast": "5.0%",
-          "direction": "higher_is_bullish",
-          "verdict": "bullish",
-          "weight": 1.0,
-          "note": ""
-        },
-        {
-          "dataPoint": "CPI & PPI (y/y)",
-          "title": "Inflation Rate YoY AUG",
-          "period": "2026-09-09T05:30+00:00",
-          "actual": "0.8%",
-          "previous": "0.5%",
-          "forecast": "0.7%",
           "direction": "higher_is_bullish",
           "verdict": "bullish",
           "weight": 1.0,

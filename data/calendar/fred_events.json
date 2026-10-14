@@ -2350,6 +2350,26 @@
     "period": "2026-08-29"
   },
   {
+    "title": "CPI m/m",
+    "country": "USD",
+    "date_utc": "2026-09-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "0.65",
+    "previous": "",
+    "source_series": "CPIAUCSL",
+    "period": "2026-09-01"
+  },
+  {
+    "title": "Core CPI m/m",
+    "country": "USD",
+    "date_utc": "2026-09-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "0.33",
+    "previous": "",
+    "source_series": "CPILFESL",
+    "period": "2026-09-01"
+  },
+  {
     "title": "Non-Farm Employment Change",
     "country": "USD",
     "date_utc": "2026-09-01T00:00:00+00:00",

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-10-14T01:40:46+00:00"
+    "updated": "2026-10-14T18:04:22+00:00"
   },
   "setups": [
     {
@@ -29,15 +29,6 @@
       "confidence": 1.0,
       "importance": 2,
       "rationale": "Very Bearish — USD: Neutral · CHF: Very Bullish"
-    },
-    {
-      "symbol": "USDCNY",
-      "name": "USDCNY",
-      "verdict": "Very Bearish",
-      "direction": "Sell",
-      "confidence": 1.0,
-      "importance": 2,
-      "rationale": "Very Bearish — USD: Neutral · CNY: Very Bullish"
     },
     {
       "symbol": "CADCHF",
@@ -110,6 +101,15 @@
       "confidence": 1.0,
       "importance": 1,
       "rationale": "Bullish — EUR: Neutral · SGD: Bearish"
+    },
+    {
+      "symbol": "EURTRY",
+      "name": "EURTRY",
+      "verdict": "Bullish",
+      "direction": "Buy",
+      "confidence": 1.0,
+      "importance": 1,
+      "rationale": "Bullish — EUR: Neutral · TRY: Bearish"
     }
   ]
 }
