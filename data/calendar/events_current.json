@@ -19224,16 +19224,6 @@
     "source": "ff-feed"
   },
   {
-    "title": "Monthly Budget Statement SEP",
-    "country": "USD",
-    "date_utc": "2026-10-13T22:00+00:00",
-    "impact": "",
-    "forecast": "$210.0B",
-    "previous": "$-167B",
-    "actual": "",
-    "source": "te"
-  },
-  {
     "title": "Inflation Rate MoM SEP",
     "country": "AR",
     "date_utc": "2026-10-13T23:00+00:00",
@@ -20236,23 +20226,13 @@
     "source": "ff-feed"
   },
   {
-    "title": "API Crude Oil Stock Change OCT/09",
-    "country": "USD",
-    "date_utc": "2026-10-15T00:30+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "-2.09M",
-    "actual": "",
-    "source": "te"
-  },
-  {
     "title": "Employment Change",
     "country": "AUD",
     "date_utc": "2026-10-15T00:30+00:00",
     "impact": "High",
     "forecast": "20.0K",
     "previous": "39.5K",
-    "actual": "",
+    "actual": "-39.3K",
     "revision": "",
     "source": "ff-feed"
   },
@@ -20263,9 +20243,19 @@
     "impact": "High",
     "forecast": "4.6%",
     "previous": "4.6%",
-    "actual": "",
+    "actual": "4.7%",
     "revision": "",
     "source": "ff-feed"
+  },
+  {
+    "title": "API Crude Oil Stock Change OCT/09",
+    "country": "USD",
+    "date_utc": "2026-10-15T01:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "-2.09M",
+    "actual": "-11.1M",
+    "source": "te"
   },
   {
     "title": "FOMC Member Bowman Speaks",
@@ -20296,7 +20286,7 @@
     "impact": "",
     "forecast": "2.5%",
     "previous": "-3.7%",
-    "actual": "",
+    "actual": "5.2%",
     "source": "te"
   },
   {
@@ -20306,27 +20296,7 @@
     "impact": "",
     "forecast": "8.9%",
     "previous": "11.2%",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "Foreign Bond Investment OCT/10",
-    "country": "JPY",
-    "date_utc": "2026-10-15T03:50+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "-347.6B",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "Stock Investment by Foreigners OCT/10",
-    "country": "JPY",
-    "date_utc": "2026-10-15T03:50+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "2191.9B",
-    "actual": "",
+    "actual": "18.6%",
     "source": "te"
   },
   {
@@ -20368,7 +20338,7 @@
     "impact": "",
     "forecast": "9.8K",
     "previous": "39.5K",
-    "actual": "",
+    "actual": "-39.3K",
     "source": "te"
   },
   {
@@ -20378,7 +20348,7 @@
     "impact": "",
     "forecast": "",
     "previous": "-6.3K",
-    "actual": "",
+    "actual": "34.4K",
     "source": "te"
   },
   {
@@ -20388,7 +20358,7 @@
     "impact": "",
     "forecast": "4.50%",
     "previous": "4.6%",
-    "actual": "",
+    "actual": "4.7%",
     "source": "te"
   },
   {
@@ -20398,7 +20368,7 @@
     "impact": "",
     "forecast": "",
     "previous": "45.8K",
-    "actual": "",
+    "actual": "-73.7K",
     "source": "te"
   },
   {
@@ -20408,7 +20378,7 @@
     "impact": "",
     "forecast": "66.5%",
     "previous": "67.1%",
-    "actual": "",
+    "actual": "66.8%",
     "source": "te"
   },
   {
@@ -21962,6 +21932,26 @@
     "source": "ff-feed"
   },
   {
+    "title": "Foreign Bond Investment OCT/10",
+    "country": "JPY",
+    "date_utc": "2026-10-16T03:50+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "-347.6B",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Stock Investment by Foreigners OCT/10",
+    "country": "JPY",
+    "date_utc": "2026-10-16T03:50+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "2191.9B",
+    "actual": "",
+    "source": "te"
+  },
+  {
     "title": "BOC Gov Macklem Speaks",
     "country": "CAD",
     "date_utc": "2026-10-16T04:15+00:00",
@@ -22601,6 +22591,16 @@
     "impact": "",
     "forecast": "",
     "previous": "603",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Monthly Budget Statement SEP",
+    "country": "USD",
+    "date_utc": "2026-10-16T22:00+00:00",
+    "impact": "",
+    "forecast": "$210.0B",
+    "previous": "$-167B",
     "actual": "",
     "source": "te"
   },
@@ -23374,7 +23374,7 @@
     "date_utc": "2026-10-21T00:30+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "-11.1M",
     "actual": "",
     "source": "te"
   },
@@ -28845,6 +28845,76 @@
     "impact": "",
     "forecast": "",
     "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "3-Year Note Auction",
+    "country": "USD",
+    "date_utc": "2026-11-09T23:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "4.932%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Household Spending MoM SEP",
+    "country": "JPY",
+    "date_utc": "2026-11-10T04:30+00:00",
+    "impact": "",
+    "forecast": "0.3%",
+    "previous": "0.1%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Household Spending YoY SEP",
+    "country": "JPY",
+    "date_utc": "2026-11-10T04:30+00:00",
+    "impact": "",
+    "forecast": "0.1%",
+    "previous": "-3.1%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "BoJ Summary of Opinions",
+    "country": "JPY",
+    "date_utc": "2026-11-10T04:50+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Current Account SEP",
+    "country": "JPY",
+    "date_utc": "2026-11-10T04:50+00:00",
+    "impact": "",
+    "forecast": " 1500B",
+    "previous": "4062B",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Bank Lending YoY OCT",
+    "country": "JPY",
+    "date_utc": "2026-11-10T04:50+00:00",
+    "impact": "",
+    "forecast": "5.4%",
+    "previous": "5.3%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "BRC Retail Sales Monitor YoY OCT",
+    "country": "GBP",
+    "date_utc": "2026-11-10T05:01+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "1%",
     "actual": "",
     "source": "te"
   }
