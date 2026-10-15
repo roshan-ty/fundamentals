@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-10-15T01:17:54+00:00"
+    "updated": "2026-10-15T17:53:05+00:00"
   },
   "setups": [
     {
@@ -13,13 +13,31 @@
       "rationale": "Very Bearish — EUR: Neutral · CHF: Very Bullish"
     },
     {
+      "symbol": "GBPJPY",
+      "name": "GBPJPY",
+      "verdict": "Very Bearish",
+      "direction": "Sell",
+      "confidence": 1.0,
+      "importance": 2,
+      "rationale": "Very Bearish — GBP: Bearish · JPY: Bullish"
+    },
+    {
       "symbol": "GBPCHF",
       "name": "GBPCHF",
       "verdict": "Very Bearish",
       "direction": "Sell",
       "confidence": 1.0,
       "importance": 2,
-      "rationale": "Very Bearish — GBP: Neutral · CHF: Very Bullish"
+      "rationale": "Very Bearish — GBP: Bearish · CHF: Very Bullish"
+    },
+    {
+      "symbol": "GBPNZD",
+      "name": "GBPNZD",
+      "verdict": "Very Bearish",
+      "direction": "Sell",
+      "confidence": 1.0,
+      "importance": 2,
+      "rationale": "Very Bearish — GBP: Bearish · NZD: Bullish"
     },
     {
       "symbol": "USDCHF",
@@ -92,24 +110,6 @@
       "confidence": 0.4,
       "importance": 2,
       "rationale": "Very Bearish"
-    },
-    {
-      "symbol": "BRENT",
-      "name": "BRENT",
-      "verdict": "Very Bullish",
-      "direction": "Buy",
-      "confidence": 0.4,
-      "importance": 2,
-      "rationale": "Very Bullish"
-    },
-    {
-      "symbol": "EURJPY",
-      "name": "EURJPY",
-      "verdict": "Bearish",
-      "direction": "Sell",
-      "confidence": 1.0,
-      "importance": 1,
-      "rationale": "Bearish — EUR: Neutral · JPY: Bullish"
     }
   ]
 }
