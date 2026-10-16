@@ -1930,6 +1930,16 @@
     "period": "2026-06-01"
   },
   {
+    "title": "Unemployment Rate",
+    "country": "GBP",
+    "date_utc": "2026-06-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "4.9",
+    "previous": "4.9",
+    "source_series": "LRHUTTTTGBM156S",
+    "period": "2026-06-01"
+  },
+  {
     "title": "Initial Jobless Claims",
     "country": "USD",
     "date_utc": "2026-06-06T00:00:00+00:00",
@@ -2307,6 +2317,36 @@
     "actual": "-105572.0",
     "previous": "-92826.0",
     "source_series": "BOPGSTB",
+    "period": "2026-08-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "EUR",
+    "date_utc": "2026-08-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "4.0",
+    "previous": "4.0",
+    "source_series": "LRHUTTTTDEM156S",
+    "period": "2026-08-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "JPY",
+    "date_utc": "2026-08-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "2.5",
+    "previous": "2.4",
+    "source_series": "LRHUTTTTJPM156S",
+    "period": "2026-08-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "AUD",
+    "date_utc": "2026-08-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "4.646296",
+    "previous": "4.484476",
+    "source_series": "LRHUTTTTAUM156S",
     "period": "2026-08-01"
   },
   {
@@ -21887,7 +21927,7 @@
     "impact": "",
     "forecast": "",
     "previous": "$6.748T",
-    "actual": "",
+    "actual": "$6.756T",
     "source": "te"
   },
   {
@@ -21907,7 +21947,7 @@
     "impact": "",
     "forecast": "45.0%",
     "previous": "42.4%",
-    "actual": "",
+    "actual": "40.9%",
     "source": "te"
   },
   {
@@ -21917,7 +21957,7 @@
     "impact": "",
     "forecast": "15.3%",
     "previous": "15.6%",
-    "actual": "",
+    "actual": "17.6%",
     "source": "te"
   },
   {
@@ -21927,7 +21967,7 @@
     "impact": "",
     "forecast": "54",
     "previous": "53.1",
-    "actual": "",
+    "actual": "56.5",
     "source": "te"
   },
   {
@@ -21937,7 +21977,7 @@
     "impact": "",
     "forecast": "-0.6%",
     "previous": "-0.9%",
-    "actual": "",
+    "actual": "-0.4%",
     "source": "te"
   },
   {
@@ -21947,7 +21987,7 @@
     "impact": "",
     "forecast": "-0.4%",
     "previous": "0.2%",
-    "actual": "",
+    "actual": "0.9%",
     "source": "te"
   },
   {
@@ -21957,7 +21997,7 @@
     "impact": "",
     "forecast": "2.6%",
     "previous": "1.9%",
-    "actual": "",
+    "actual": "2.4%",
     "source": "te"
   },
   {
@@ -21967,7 +22007,7 @@
     "impact": "",
     "forecast": "2.90%",
     "previous": "2.7%",
-    "actual": "",
+    "actual": "2.6%",
     "source": "te"
   },
   {
@@ -21988,7 +22028,7 @@
     "impact": "",
     "forecast": "",
     "previous": "-347.6B",
-    "actual": "",
+    "actual": "-339.7B",
     "source": "te"
   },
   {
@@ -21998,7 +22038,7 @@
     "impact": "",
     "forecast": "",
     "previous": "2191.9B",
-    "actual": "",
+    "actual": "3521.5B",
     "source": "te"
   },
   {
@@ -22013,23 +22053,13 @@
     "source": "ff-feed"
   },
   {
-    "title": "Balance of Trade SEP",
-    "country": "SGD",
-    "date_utc": "2026-10-16T04:30+00:00",
-    "impact": "",
-    "forecast": "$ 8.5B",
-    "previous": "$13.780B",
-    "actual": "",
-    "source": "te"
-  },
-  {
     "title": "Non-Oil Exports MoM SEP",
     "country": "SGD",
     "date_utc": "2026-10-16T04:30+00:00",
     "impact": "",
     "forecast": "5.2%",
     "previous": "10.9%",
-    "actual": "",
+    "actual": "25.5%",
     "source": "te"
   },
   {
@@ -22039,7 +22069,17 @@
     "impact": "",
     "forecast": "41.9%",
     "previous": "46.2%",
-    "actual": "",
+    "actual": "68.4%",
+    "source": "te"
+  },
+  {
+    "title": "Balance of Trade SEP",
+    "country": "SGD",
+    "date_utc": "2026-10-16T05:00+00:00",
+    "impact": "",
+    "forecast": "$ 8.5B",
+    "previous": "$13.780B",
+    "actual": "$9.038B",
     "source": "te"
   },
   {
@@ -24024,7 +24064,7 @@
     "date_utc": "2026-10-22T03:50+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "-339.7B",
     "actual": "",
     "source": "te"
   },
@@ -24034,7 +24074,7 @@
     "date_utc": "2026-10-22T03:50+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "3521.5B",
     "actual": "",
     "source": "te"
   },
@@ -24404,7 +24444,7 @@
     "date_utc": "2026-10-23T00:30+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "$6.756T",
     "actual": "",
     "source": "te"
   },
@@ -26315,7 +26355,7 @@
     "impact": "",
     "forecast": "",
     "previous": "$3.022T",
-    "actual": "",
+    "actual": "$3.031T",
     "source": "te"
   },
   {
@@ -29195,6 +29235,96 @@
     "impact": "",
     "forecast": "",
     "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "10-Year Note Auction",
+    "country": "USD",
+    "date_utc": "2026-11-10T23:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "5.300%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "RBNZ Financial Stability Report",
+    "country": "NZD",
+    "date_utc": "2026-11-11T01:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "API Crude Oil Stock Change NOV/06",
+    "country": "USD",
+    "date_utc": "2026-11-11T02:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Westpac Consumer Confidence Change NOV",
+    "country": "AUD",
+    "date_utc": "2026-11-11T04:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "-4.7%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Westpac Consumer Confidence Index NOV",
+    "country": "AUD",
+    "date_utc": "2026-11-11T04:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "80.4",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "RBNZ Press Conference",
+    "country": "NZD",
+    "date_utc": "2026-11-11T05:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "NAB Business Confidence OCT",
+    "country": "AUD",
+    "date_utc": "2026-11-11T05:30+00:00",
+    "impact": "",
+    "forecast": "-12",
+    "previous": "-13",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Home Loans QoQ Q3",
+    "country": "AUD",
+    "date_utc": "2026-11-11T05:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "-1.9%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Investment Lending for Homes Q3",
+    "country": "AUD",
+    "date_utc": "2026-11-11T05:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "-10.2%",
     "actual": "",
     "source": "te"
   }

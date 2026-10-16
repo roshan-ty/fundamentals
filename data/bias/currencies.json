@@ -1,15 +1,15 @@
 {
   "meta": {
-    "updated": "2026-10-15T17:53:05+00:00",
+    "updated": "2026-10-16T01:05:35+00:00",
     "method": "verdict v3 (forecast-first, released-only)"
   },
   "currencies": {
     "USD": {
       "verdict": "Neutral",
       "tally": {
-        "bullish": 7.5,
+        "bullish": 8.5,
         "bearish": 7.0,
-        "neutral": 6.0
+        "neutral": 5.0
       },
       "released_points": 17,
       "drivers": [
@@ -62,6 +62,18 @@
           "note": ""
         },
         {
+          "dataPoint": "2-Year Treasury Yield (21-day trend)",
+          "title": "2-Year Treasury Yield",
+          "period": "2026-10-14T00:00:00+00:00",
+          "actual": "4.82",
+          "previous": "4.80",
+          "forecast": "",
+          "direction": "higher_is_bullish",
+          "verdict": "bullish",
+          "weight": 1.0,
+          "note": ""
+        },
+        {
           "dataPoint": "Building Permits & Housing Starts",
           "title": "Existing Home Sales SEP",
           "period": "2026-10-13T18:00+00:00",
@@ -71,18 +83,6 @@
           "direction": "higher_is_bullish",
           "verdict": "bullish",
           "weight": 0.5,
-          "note": ""
-        },
-        {
-          "dataPoint": "2-Year Treasury Yield (21-day trend)",
-          "title": "2-Year Treasury Yield",
-          "period": "2026-10-13T00:00:00+00:00",
-          "actual": "4.79",
-          "previous": "4.79",
-          "forecast": "",
-          "direction": "higher_is_bullish",
-          "verdict": "neutral",
-          "weight": 1.0,
           "note": ""
         },
         {
@@ -497,10 +497,10 @@
       "drivers": [
         {
           "dataPoint": "BusinessNZ Manufacturing PMI",
-          "title": "Business NZ PMI AUG",
-          "period": "2026-09-11T02:30+00:00",
-          "actual": "53.1",
-          "previous": "54.3",
+          "title": "Business NZ PMI SEP",
+          "period": "2026-10-16T01:30+00:00",
+          "actual": "56.5",
+          "previous": "53.1",
           "forecast": "54",
           "direction": "higher_is_bullish",
           "verdict": "bullish",
@@ -1105,12 +1105,12 @@
     "dxy_sig": 0,
     "m2_sig": 1,
     "china_pmi_sig": 1,
-    "yield2y_sig": 0,
+    "yield2y_sig": 1,
     "oil_direction": "flat",
     "risk_mode": "flat",
-    "yield2y_level": 4.79,
-    "yield2y_sma": 4.787,
-    "dxy_level": 101.12,
+    "yield2y_level": 4.82,
+    "yield2y_sma": 4.795,
+    "dxy_level": 101.07,
     "gold_level": 4390.39382
   }
 }

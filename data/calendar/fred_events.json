@@ -174,8 +174,8 @@
     "country": "AUD",
     "date_utc": "2025-10-01T00:00:00+00:00",
     "impact": "High",
-    "actual": "4.331548",
-    "previous": "4.437698",
+    "actual": "4.321709",
+    "previous": "4.423778",
     "source_series": "LRHUTTTTAUM156S",
     "period": "2025-10-01"
   },
@@ -404,8 +404,8 @@
     "country": "AUD",
     "date_utc": "2025-11-01T00:00:00+00:00",
     "impact": "High",
-    "actual": "4.322312",
-    "previous": "4.331548",
+    "actual": "4.317245",
+    "previous": "4.321709",
     "source_series": "LRHUTTTTAUM156S",
     "period": "2025-11-01"
   },
@@ -614,8 +614,8 @@
     "country": "AUD",
     "date_utc": "2025-12-01T00:00:00+00:00",
     "impact": "High",
-    "actual": "4.11812",
-    "previous": "4.322312",
+    "actual": "4.117109",
+    "previous": "4.317245",
     "source_series": "LRHUTTTTAUM156S",
     "period": "2025-12-01"
   },
@@ -834,8 +834,8 @@
     "country": "AUD",
     "date_utc": "2026-01-01T00:00:00+00:00",
     "impact": "High",
-    "actual": "4.082335",
-    "previous": "4.11812",
+    "actual": "4.083125",
+    "previous": "4.117109",
     "source_series": "LRHUTTTTAUM156S",
     "period": "2026-01-01"
   },
@@ -1064,8 +1064,8 @@
     "country": "AUD",
     "date_utc": "2026-02-01T00:00:00+00:00",
     "impact": "High",
-    "actual": "4.305017",
-    "previous": "4.082335",
+    "actual": "4.307355",
+    "previous": "4.083125",
     "source_series": "LRHUTTTTAUM156S",
     "period": "2026-02-01"
   },
@@ -1274,8 +1274,8 @@
     "country": "AUD",
     "date_utc": "2026-03-01T00:00:00+00:00",
     "impact": "High",
-    "actual": "4.284076",
-    "previous": "4.305017",
+    "actual": "4.290726",
+    "previous": "4.307355",
     "source_series": "LRHUTTTTAUM156S",
     "period": "2026-03-01"
   },
@@ -1494,8 +1494,8 @@
     "country": "AUD",
     "date_utc": "2026-04-01T00:00:00+00:00",
     "impact": "High",
-    "actual": "4.49108",
-    "previous": "4.284076",
+    "actual": "4.500124",
+    "previous": "4.290726",
     "source_series": "LRHUTTTTAUM156S",
     "period": "2026-04-01"
   },
@@ -1714,8 +1714,8 @@
     "country": "AUD",
     "date_utc": "2026-05-01T00:00:00+00:00",
     "impact": "High",
-    "actual": "4.379606",
-    "previous": "4.49108",
+    "actual": "4.392409",
+    "previous": "4.500124",
     "source_series": "LRHUTTTTAUM156S",
     "period": "2026-05-01"
   },
@@ -1891,6 +1891,16 @@
   },
   {
     "title": "Unemployment Rate",
+    "country": "GBP",
+    "date_utc": "2026-06-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "4.9",
+    "previous": "4.9",
+    "source_series": "LRHUTTTTGBM156S",
+    "period": "2026-06-01"
+  },
+  {
+    "title": "Unemployment Rate",
     "country": "EUR",
     "date_utc": "2026-06-01T00:00:00+00:00",
     "impact": "High",
@@ -1924,8 +1934,8 @@
     "country": "AUD",
     "date_utc": "2026-06-01T00:00:00+00:00",
     "impact": "High",
-    "actual": "4.431548",
-    "previous": "4.379606",
+    "actual": "4.449973",
+    "previous": "4.392409",
     "source_series": "LRHUTTTTAUM156S",
     "period": "2026-06-01"
   },
@@ -2124,8 +2134,8 @@
     "country": "AUD",
     "date_utc": "2026-07-01T00:00:00+00:00",
     "impact": "High",
-    "actual": "4.461825",
-    "previous": "4.431548",
+    "actual": "4.484476",
+    "previous": "4.449973",
     "source_series": "LRHUTTTTAUM156S",
     "period": "2026-07-01"
   },
@@ -2301,12 +2311,42 @@
   },
   {
     "title": "Unemployment Rate",
+    "country": "EUR",
+    "date_utc": "2026-08-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "4.0",
+    "previous": "4.0",
+    "source_series": "LRHUTTTTDEM156S",
+    "period": "2026-08-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "JPY",
+    "date_utc": "2026-08-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "2.5",
+    "previous": "2.4",
+    "source_series": "LRHUTTTTJPM156S",
+    "period": "2026-08-01"
+  },
+  {
+    "title": "Unemployment Rate",
     "country": "CAD",
     "date_utc": "2026-08-01T00:00:00+00:00",
     "impact": "High",
     "actual": "6.4",
     "previous": "6.4",
     "source_series": "LRHUTTTTCAM156S",
+    "period": "2026-08-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "AUD",
+    "date_utc": "2026-08-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "4.646296",
+    "previous": "4.484476",
+    "source_series": "LRHUTTTTAUM156S",
     "period": "2026-08-01"
   },
   {
