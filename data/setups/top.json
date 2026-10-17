@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-10-16T17:26:52+00:00"
+    "updated": "2026-10-17T01:06:12+00:00"
   },
   "setups": [
     {
@@ -94,22 +94,22 @@
       "rationale": "Very Bullish — NZD: Bullish · SGD: Bearish"
     },
     {
-      "symbol": "XAUUSD",
-      "name": "XAUUSD",
-      "verdict": "Very Bearish",
-      "direction": "Sell",
-      "confidence": 0.4,
-      "importance": 2,
-      "rationale": "Very Bearish"
+      "symbol": "EURGBP",
+      "name": "EURGBP",
+      "verdict": "Bullish",
+      "direction": "Buy",
+      "confidence": 1.0,
+      "importance": 1,
+      "rationale": "Bullish — EUR: Neutral · GBP: Bearish"
     },
     {
-      "symbol": "XPDUSD",
-      "name": "XPDUSD",
-      "verdict": "Very Bearish",
+      "symbol": "EURJPY",
+      "name": "EURJPY",
+      "verdict": "Bearish",
       "direction": "Sell",
-      "confidence": 0.4,
-      "importance": 2,
-      "rationale": "Very Bearish"
+      "confidence": 1.0,
+      "importance": 1,
+      "rationale": "Bearish — EUR: Neutral · JPY: Bullish"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-10-16T17:26:52+00:00",
+    "updated": "2026-10-17T01:06:12+00:00",
     "total": 82,
     "scored": 82
   },
@@ -723,72 +723,72 @@
     {
       "symbol": "BTCUSD",
       "class": "crypto",
-      "verdict": "Neutral",
-      "base_verdict": "Neutral",
+      "verdict": "Bullish",
+      "base_verdict": "Bullish",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "ETHUSD",
       "class": "crypto",
-      "verdict": "Neutral",
-      "base_verdict": "Neutral",
+      "verdict": "Bullish",
+      "base_verdict": "Bullish",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "LTCUSD",
       "class": "crypto",
-      "verdict": "Neutral",
-      "base_verdict": "Neutral",
+      "verdict": "Bullish",
+      "base_verdict": "Bullish",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "SOLUSD",
       "class": "crypto",
-      "verdict": "Neutral",
-      "base_verdict": "Neutral",
+      "verdict": "Bullish",
+      "base_verdict": "Bullish",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "SUIUSD",
       "class": "crypto",
-      "verdict": "Neutral",
-      "base_verdict": "Neutral",
+      "verdict": "Bullish",
+      "base_verdict": "Bullish",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "XLMUSD",
       "class": "crypto",
-      "verdict": "Neutral",
-      "base_verdict": "Neutral",
+      "verdict": "Bullish",
+      "base_verdict": "Bullish",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "XRPUSD",
       "class": "crypto",
-      "verdict": "Neutral",
-      "base_verdict": "Neutral",
+      "verdict": "Bullish",
+      "base_verdict": "Bullish",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "AVAXUSD",
       "class": "crypto",
-      "verdict": "Neutral",
-      "base_verdict": "Neutral",
+      "verdict": "Bullish",
+      "base_verdict": "Bullish",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "XAUUSD",
       "class": "metals",
-      "verdict": "Very Bearish",
-      "base_verdict": "Very Bearish",
+      "verdict": "Bearish",
+      "base_verdict": "Bearish",
       "quote_verdict": null,
       "drivers": []
     },
@@ -811,16 +811,16 @@
     {
       "symbol": "XPDUSD",
       "class": "metals",
-      "verdict": "Very Bearish",
-      "base_verdict": "Very Bearish",
+      "verdict": "Bearish",
+      "base_verdict": "Bearish",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "OIL",
       "class": "energy",
-      "verdict": "Bearish",
-      "base_verdict": "Bearish",
+      "verdict": "Bullish",
+      "base_verdict": "Bullish",
       "quote_verdict": null,
       "drivers": []
     },
@@ -835,8 +835,8 @@
     {
       "symbol": "COPPER",
       "class": "energy",
-      "verdict": "Bearish",
-      "base_verdict": "Bearish",
+      "verdict": "Bullish",
+      "base_verdict": "Bullish",
       "quote_verdict": null,
       "drivers": []
     },

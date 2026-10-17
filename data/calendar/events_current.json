@@ -22555,7 +22555,7 @@
   {
     "title": "Federal Budget Balance",
     "country": "USD",
-    "date_utc": "2026-10-16T18:00+00:00",
+    "date_utc": "2026-10-16T18:05+00:00",
     "impact": "Low",
     "forecast": "75.3B",
     "previous": "-166.8B",
@@ -22621,7 +22621,7 @@
     "impact": "",
     "forecast": "$210.0B",
     "previous": "$-167B",
-    "actual": "",
+    "actual": "$-27B",
     "source": "te"
   },
   {
@@ -22631,7 +22631,7 @@
     "impact": "",
     "forecast": "",
     "previous": "$-27.9B",
-    "actual": "",
+    "actual": "$279.2B",
     "source": "te"
   },
   {
@@ -22641,7 +22641,7 @@
     "impact": "",
     "forecast": "",
     "previous": "$-3.6B",
-    "actual": "",
+    "actual": "$108.9B",
     "source": "te"
   },
   {
@@ -22651,7 +22651,7 @@
     "impact": "",
     "forecast": "",
     "previous": "$83.7B",
-    "actual": "",
+    "actual": "$199.8B",
     "source": "te"
   },
   {
@@ -25335,6 +25335,36 @@
     "impact": "",
     "forecast": "",
     "previous": "4.787%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Consumer Confidence OCT",
+    "country": "KRW",
+    "date_utc": "2026-10-27T01:00+00:00",
+    "impact": "",
+    "forecast": "107.0",
+    "previous": "106.6",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "GDP Growth Rate QoQ Adv Q3",
+    "country": "KRW",
+    "date_utc": "2026-10-27T03:00+00:00",
+    "impact": "",
+    "forecast": "1%",
+    "previous": "0.6%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "GDP Growth Rate YoY Adv Q3",
+    "country": "KRW",
+    "date_utc": "2026-10-27T03:00+00:00",
+    "impact": "",
+    "forecast": "3.8%",
+    "previous": "3.7%",
     "actual": "",
     "source": "te"
   },
@@ -29645,6 +29675,96 @@
     "impact": "",
     "forecast": "",
     "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Monthly Budget Statement OCT",
+    "country": "USD",
+    "date_utc": "2026-11-12T00:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "$-27B",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Electronic Retail Card Spending MoM OCT",
+    "country": "NZD",
+    "date_utc": "2026-11-12T02:45+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "-0.4%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Electronic Retail Card Spending YoY OCT",
+    "country": "NZD",
+    "date_utc": "2026-11-12T02:45+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "0.9%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Visitor Arrivals YoY SEP",
+    "country": "NZD",
+    "date_utc": "2026-11-12T02:45+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "8%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Foreign Bond Investment NOV/07",
+    "country": "JPY",
+    "date_utc": "2026-11-12T04:50+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "PPI MoM OCT",
+    "country": "JPY",
+    "date_utc": "2026-11-12T04:50+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "-0.3%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "PPI YoY OCT",
+    "country": "JPY",
+    "date_utc": "2026-11-12T04:50+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "6.8%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Stock Investment by Foreigners NOV/07",
+    "country": "JPY",
+    "date_utc": "2026-11-12T04:50+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "RICS House Price Balance OCT",
+    "country": "GBP",
+    "date_utc": "2026-11-12T05:01+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "-32%",
     "actual": "",
     "source": "te"
   }
