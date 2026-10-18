@@ -2,16 +2,6 @@
   {
     "title": "Initial Jobless Claims",
     "country": "USD",
-    "date_utc": "2025-09-13T00:00:00+00:00",
-    "impact": "Medium",
-    "actual": "233000.0",
-    "previous": "259000.0",
-    "source_series": "ICSA",
-    "period": "2025-09-13"
-  },
-  {
-    "title": "Initial Jobless Claims",
-    "country": "USD",
     "date_utc": "2025-09-20T00:00:00+00:00",
     "impact": "Medium",
     "actual": "219000.0",
@@ -28249,16 +28239,6 @@
     "source": "te"
   },
   {
-    "title": "EIA Distillate Fuel Production Change OCT/30",
-    "country": "USD",
-    "date_utc": "2026-11-04T19:30+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "",
-    "actual": "",
-    "source": "te"
-  },
-  {
     "title": "EIA Distillate Stocks Change OCT/30",
     "country": "USD",
     "date_utc": "2026-11-04T19:30+00:00",
@@ -28315,16 +28295,6 @@
     "impact": "",
     "forecast": "",
     "previous": "58.8",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "17-Week Bill Auction",
-    "country": "USD",
-    "date_utc": "2026-11-04T21:30+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "",
     "actual": "",
     "source": "te"
   },
@@ -28629,26 +28599,6 @@
     "source": "te"
   },
   {
-    "title": "4-Week Bill Auction",
-    "country": "USD",
-    "date_utc": "2026-11-05T21:30+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "8-Week Bill Auction",
-    "country": "USD",
-    "date_utc": "2026-11-05T21:30+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "",
-    "actual": "",
-    "source": "te"
-  },
-  {
     "title": "15-Year Mortgage Rate NOV/05",
     "country": "USD",
     "date_utc": "2026-11-05T22:00+00:00",
@@ -28670,16 +28620,6 @@
   },
   {
     "title": "Fed Balance Sheet NOV/04",
-    "country": "USD",
-    "date_utc": "2026-11-06T02:30+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "Reserve Balances with Fed Banks 20261104",
     "country": "USD",
     "date_utc": "2026-11-06T02:30+00:00",
     "impact": "",
@@ -30175,6 +30115,216 @@
     "impact": "",
     "forecast": "",
     "previous": "1.5%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "17-Week Bill Auction",
+    "country": "USD",
+    "date_utc": "2026-11-12T21:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "4-Week Bill Auction",
+    "country": "USD",
+    "date_utc": "2026-11-12T21:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "8-Week Bill Auction",
+    "country": "USD",
+    "date_utc": "2026-11-12T21:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "EIA Distillate Fuel Production Change OCT/30",
+    "country": "USD",
+    "date_utc": "2026-11-12T22:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "2-Year Bond Auction",
+    "country": "CAD",
+    "date_utc": "2026-11-12T22:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "EIA Crude Oil Stocks Change NOV/06",
+    "country": "USD",
+    "date_utc": "2026-11-12T22:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "EIA Gasoline Stocks Change NOV/06",
+    "country": "USD",
+    "date_utc": "2026-11-12T22:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "15-Year Mortgage Rate NOV/12",
+    "country": "USD",
+    "date_utc": "2026-11-12T22:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "30-Year Mortgage Rate NOV/12",
+    "country": "USD",
+    "date_utc": "2026-11-12T22:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "EIA Crude Oil Imports Change NOV/06",
+    "country": "USD",
+    "date_utc": "2026-11-12T22:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "EIA Cushing Crude Oil Stocks Change NOV/06",
+    "country": "USD",
+    "date_utc": "2026-11-12T22:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "EIA Distillate Stocks Change NOV/06",
+    "country": "USD",
+    "date_utc": "2026-11-12T22:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "EIA Gasoline Production Change NOV/06",
+    "country": "USD",
+    "date_utc": "2026-11-12T22:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "EIA Heating Oil Stocks Change NOV/06",
+    "country": "USD",
+    "date_utc": "2026-11-12T22:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "EIA Refinery Crude Runs Change NOV/06",
+    "country": "USD",
+    "date_utc": "2026-11-12T22:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "30-Year Bond Auction",
+    "country": "USD",
+    "date_utc": "2026-11-12T23:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "5.618%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Reserve Balances with Fed Banks 20261104",
+    "country": "USD",
+    "date_utc": "2026-11-13T02:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Business NZ PMI OCT",
+    "country": "NZD",
+    "date_utc": "2026-11-13T02:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "56.5",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Fed Balance Sheet NOV/11",
+    "country": "USD",
+    "date_utc": "2026-11-13T02:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Reuters Tankan Index NOV",
+    "country": "JPY",
+    "date_utc": "2026-11-13T04:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "22",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Consumer Inflation Expectations NOV",
+    "country": "AUD",
+    "date_utc": "2026-11-13T05:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "5.3%",
     "actual": "",
     "source": "te"
   }
