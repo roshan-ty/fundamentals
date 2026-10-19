@@ -22590,7 +22590,7 @@
     "impact": "",
     "forecast": "52.5",
     "previous": "52.5",
-    "actual": "",
+    "actual": "53.4",
     "source": "te"
   },
   {
@@ -22600,7 +22600,7 @@
     "impact": "",
     "forecast": "50",
     "previous": "51.2",
-    "actual": "",
+    "actual": "50.9",
     "source": "te"
   },
   {
@@ -22621,7 +22621,7 @@
     "impact": "",
     "forecast": "NZ$ -1.2B",
     "previous": "NZ$-1.349B",
-    "actual": "",
+    "actual": "NZ$-1.971B",
     "source": "te"
   },
   {
@@ -22631,7 +22631,7 @@
     "impact": "",
     "forecast": "NZ$ 6.5B",
     "previous": "NZ$6.66B",
-    "actual": "",
+    "actual": "NZ$6.47B",
     "source": "te"
   },
   {
@@ -22641,7 +22641,7 @@
     "impact": "",
     "forecast": "NZ$ 7.6B",
     "previous": "NZ$8B",
-    "actual": "",
+    "actual": "NZ$8.44B",
     "source": "te"
   },
   {
@@ -27624,6 +27624,16 @@
     "source": "te"
   },
   {
+    "title": "Business Confidence OCT",
+    "country": "KRW",
+    "date_utc": "2026-10-29T01:00+00:00",
+    "impact": "",
+    "forecast": "79.2",
+    "previous": "79",
+    "actual": "",
+    "source": "te"
+  },
+  {
     "title": "Foreign Bond Investment OCT/24",
     "country": "JPY",
     "date_utc": "2026-10-29T03:50+00:00",
@@ -31827,6 +31837,26 @@
     "title": "EIA Natural Gas Stocks Change NOV/06",
     "country": "USD",
     "date_utc": "2026-11-13T20:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Baker Hughes Oil Rig Count NOV/13",
+    "country": "USD",
+    "date_utc": "2026-11-13T23:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Baker Hughes Total Rigs Count NOV/13",
+    "country": "USD",
+    "date_utc": "2026-11-13T23:00+00:00",
     "impact": "",
     "forecast": "",
     "previous": "",
