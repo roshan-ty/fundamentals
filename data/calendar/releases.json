@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-20T01:35:10+00:00",
+  "updated": "2026-10-20T18:02:59+00:00",
   "releases": [
     {
       "country": "USD",
@@ -79,11 +79,11 @@
       "dataPoint": "Building Permits & Housing Starts",
       "weight": 0.5,
       "direction": "higher_is_bullish",
-      "period": "2026-10-13T18:00+00:00",
-      "title": "Existing Home Sales SEP",
-      "actual": "3.99M",
-      "previous": "3.98M",
-      "forecast": "3.97M"
+      "period": "2026-10-20T16:30+00:00",
+      "title": "Building Permits Prel SEP",
+      "actual": "1.4M",
+      "previous": "1.403M",
+      "forecast": "1.36M"
     },
     {
       "country": "USD",
@@ -115,11 +115,11 @@
       "dataPoint": "Unemployment Rate",
       "weight": 1.0,
       "direction": "lower_is_bullish",
-      "period": "2026-09-15T10:00+00:00",
-      "title": "Unemployment Rate JUL",
-      "actual": "4.9%",
+      "period": "2026-10-20T10:00+00:00",
+      "title": "Unemployment Rate AUG",
+      "actual": "4.7%",
       "previous": "4.9%",
-      "forecast": "5.0%"
+      "forecast": "4.9%"
     },
     {
       "country": "EUR",
@@ -295,11 +295,11 @@
       "dataPoint": "Claimant Count Change",
       "weight": 1.0,
       "direction": "lower_is_bullish",
-      "period": "2026-09-15T10:00+00:00",
-      "title": "Claimant Count Change AUG",
-      "actual": "27.8K",
-      "previous": "-11K",
-      "forecast": "-5.0K"
+      "period": "2026-10-20T10:00+00:00",
+      "title": "Claimant Count Change SEP",
+      "actual": "30.3K",
+      "previous": "27.8K",
+      "forecast": "20K"
     },
     {
       "country": "EUR",
@@ -307,11 +307,11 @@
       "dataPoint": "German ZEW Economic Sentiment",
       "weight": 0.5,
       "direction": "higher_is_bullish",
-      "period": "2026-09-15T13:00+00:00",
-      "title": "ZEW Economic Sentiment Index SEP",
-      "actual": "34.7",
-      "previous": "34.2",
-      "forecast": "34"
+      "period": "2026-10-20T13:00+00:00",
+      "title": "ZEW Economic Sentiment Index OCT",
+      "actual": "28.1",
+      "previous": "34.7",
+      "forecast": "19"
     },
     {
       "country": "GBP",
@@ -319,11 +319,11 @@
       "dataPoint": "Average Earnings Index + Bonus (3m/y)",
       "weight": 1.0,
       "direction": "higher_is_bullish",
-      "period": "2026-09-15T10:00+00:00",
-      "title": "Average Earnings incl. Bonus (3Mo/Yr) JUL",
-      "actual": "3.9%",
-      "previous": "4.1%",
-      "forecast": "4.0%"
+      "period": "2026-10-20T10:00+00:00",
+      "title": "Average Earnings incl. Bonus (3Mo/Yr) AUG",
+      "actual": "3.7%",
+      "previous": "3.9%",
+      "forecast": "3.8%"
     },
     {
       "country": "GBP",
@@ -331,11 +331,11 @@
       "dataPoint": "Employment Change (3m/y)",
       "weight": 1.0,
       "direction": "higher_is_bullish",
-      "period": "2026-09-15T10:00+00:00",
-      "title": "Employment Change JUL",
-      "actual": "67K",
-      "previous": "83K",
-      "forecast": "70.0K"
+      "period": "2026-10-20T10:00+00:00",
+      "title": "Employment Change AUG",
+      "actual": "102K",
+      "previous": "67K",
+      "forecast": "60.0K"
     },
     {
       "country": "EUR",

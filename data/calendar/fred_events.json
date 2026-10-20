@@ -2054,7 +2054,7 @@
     "country": "USD",
     "date_utc": "2026-07-01T00:00:00+00:00",
     "impact": "Medium",
-    "actual": "1309.0",
+    "actual": "1369.0",
     "previous": "1439.0",
     "source_series": "HOUST",
     "period": "2026-07-01"
@@ -2264,8 +2264,8 @@
     "country": "USD",
     "date_utc": "2026-08-01T00:00:00+00:00",
     "impact": "Medium",
-    "actual": "1275.0",
-    "previous": "1309.0",
+    "actual": "1288.0",
+    "previous": "1369.0",
     "source_series": "HOUST",
     "period": "2026-08-01"
   },
@@ -2447,6 +2447,26 @@
     "actual": "0.77",
     "previous": "",
     "source_series": "RSAFS",
+    "period": "2026-09-01"
+  },
+  {
+    "title": "Housing Starts",
+    "country": "USD",
+    "date_utc": "2026-09-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "1221.0",
+    "previous": "1288.0",
+    "source_series": "HOUST",
+    "period": "2026-09-01"
+  },
+  {
+    "title": "Building Permits",
+    "country": "USD",
+    "date_utc": "2026-09-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "1400.0",
+    "previous": "1403.0",
+    "source_series": "PERMIT",
     "period": "2026-09-01"
   },
   {

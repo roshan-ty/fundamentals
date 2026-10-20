@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-10-20T01:35:10+00:00"
+    "updated": "2026-10-20T18:02:59+00:00"
   },
   "setups": [
     {
@@ -13,31 +13,13 @@
       "rationale": "Very Bearish — EUR: Neutral · CHF: Very Bullish"
     },
     {
-      "symbol": "GBPJPY",
-      "name": "GBPJPY",
-      "verdict": "Very Bearish",
-      "direction": "Sell",
-      "confidence": 1.0,
-      "importance": 2,
-      "rationale": "Very Bearish — GBP: Bearish · JPY: Bullish"
-    },
-    {
       "symbol": "GBPCHF",
       "name": "GBPCHF",
       "verdict": "Very Bearish",
       "direction": "Sell",
       "confidence": 1.0,
       "importance": 2,
-      "rationale": "Very Bearish — GBP: Bearish · CHF: Very Bullish"
-    },
-    {
-      "symbol": "GBPNZD",
-      "name": "GBPNZD",
-      "verdict": "Very Bearish",
-      "direction": "Sell",
-      "confidence": 1.0,
-      "importance": 2,
-      "rationale": "Very Bearish — GBP: Bearish · NZD: Bullish"
+      "rationale": "Very Bearish — GBP: Neutral · CHF: Very Bullish"
     },
     {
       "symbol": "USDCHF",
@@ -110,6 +92,24 @@
       "confidence": 0.7,
       "importance": 2,
       "rationale": "Very Bullish — NZD: Bullish · SGD: Bearish"
+    },
+    {
+      "symbol": "EURJPY",
+      "name": "EURJPY",
+      "verdict": "Bearish",
+      "direction": "Sell",
+      "confidence": 1.0,
+      "importance": 1,
+      "rationale": "Bearish — EUR: Neutral · JPY: Bullish"
+    },
+    {
+      "symbol": "EURAUD",
+      "name": "EURAUD",
+      "verdict": "Bullish",
+      "direction": "Buy",
+      "confidence": 1.0,
+      "importance": 1,
+      "rationale": "Bullish — EUR: Neutral · AUD: Bearish"
     }
   ]
 }

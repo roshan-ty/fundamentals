@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-10-20T01:35:10+00:00",
+    "updated": "2026-10-20T18:02:59+00:00",
     "method": "verdict v3 (forecast-first, released-only)"
   },
   "currencies": {
@@ -13,6 +13,18 @@
       },
       "released_points": 17,
       "drivers": [
+        {
+          "dataPoint": "Building Permits & Housing Starts",
+          "title": "Building Permits Prel SEP",
+          "period": "2026-10-20T16:30+00:00",
+          "actual": "1.4M",
+          "previous": "1.403M",
+          "forecast": "1.36M",
+          "direction": "higher_is_bullish",
+          "verdict": "bullish",
+          "weight": 0.5,
+          "note": ""
+        },
         {
           "dataPoint": "2-Year Treasury Yield (21-day trend)",
           "title": "2-Year Treasury Yield",
@@ -71,18 +83,6 @@
           "direction": "higher_is_bullish",
           "verdict": "neutral",
           "weight": 2.0,
-          "note": ""
-        },
-        {
-          "dataPoint": "Building Permits & Housing Starts",
-          "title": "Existing Home Sales SEP",
-          "period": "2026-10-13T18:00+00:00",
-          "actual": "3.99M",
-          "previous": "3.98M",
-          "forecast": "3.97M",
-          "direction": "higher_is_bullish",
-          "verdict": "bullish",
-          "weight": 0.5,
           "note": ""
         },
         {
@@ -230,6 +230,18 @@
       "released_points": 7,
       "drivers": [
         {
+          "dataPoint": "German ZEW Economic Sentiment",
+          "title": "ZEW Economic Sentiment Index OCT",
+          "period": "2026-10-20T13:00+00:00",
+          "actual": "28.1",
+          "previous": "34.7",
+          "forecast": "19",
+          "direction": "higher_is_bullish",
+          "verdict": "bullish",
+          "weight": 1.0,
+          "note": ""
+        },
+        {
           "dataPoint": "CPI Flash Estimate (y/y) & Core CPI Flash Estimate",
           "title": "Harmonised Inflation Rate MoM Final SEP",
           "period": "2026-10-16T13:00+00:00",
@@ -300,31 +312,67 @@
           "verdict": "bullish",
           "weight": 1.0,
           "note": ""
-        },
-        {
-          "dataPoint": "German ZEW Economic Sentiment",
-          "title": "ZEW Economic Sentiment Index SEP",
-          "period": "2026-09-15T13:00+00:00",
-          "actual": "34.7",
-          "previous": "34.2",
-          "forecast": "34",
-          "direction": "higher_is_bullish",
-          "verdict": "bullish",
-          "weight": 1.0,
-          "note": ""
         }
       ],
       "notes": []
     },
     "GBP": {
-      "verdict": "Bearish",
+      "verdict": "Neutral",
       "tally": {
-        "bullish": 2.0,
-        "bearish": 5.5,
+        "bullish": 3.0,
+        "bearish": 4.5,
         "neutral": 7.0
       },
       "released_points": 8,
       "drivers": [
+        {
+          "dataPoint": "Unemployment Rate",
+          "title": "Unemployment Rate AUG",
+          "period": "2026-10-20T10:00+00:00",
+          "actual": "4.7%",
+          "previous": "4.9%",
+          "forecast": "4.9%",
+          "direction": "lower_is_bullish",
+          "verdict": "bullish",
+          "weight": 2.0,
+          "note": ""
+        },
+        {
+          "dataPoint": "Claimant Count Change",
+          "title": "Claimant Count Change SEP",
+          "period": "2026-10-20T10:00+00:00",
+          "actual": "30.3K",
+          "previous": "27.8K",
+          "forecast": "20K",
+          "direction": "lower_is_bullish",
+          "verdict": "bearish",
+          "weight": 2.0,
+          "note": ""
+        },
+        {
+          "dataPoint": "Average Earnings Index + Bonus (3m/y)",
+          "title": "Average Earnings incl. Bonus (3Mo/Yr) AUG",
+          "period": "2026-10-20T10:00+00:00",
+          "actual": "3.7%",
+          "previous": "3.9%",
+          "forecast": "3.8%",
+          "direction": "higher_is_bullish",
+          "verdict": "bearish",
+          "weight": 2.0,
+          "note": ""
+        },
+        {
+          "dataPoint": "Employment Change (3m/y)",
+          "title": "Employment Change AUG",
+          "period": "2026-10-20T10:00+00:00",
+          "actual": "102K",
+          "previous": "67K",
+          "forecast": "60.0K",
+          "direction": "higher_is_bullish",
+          "verdict": "bullish",
+          "weight": 1.0,
+          "note": ""
+        },
         {
           "dataPoint": "GDP (m/m, q/q, y/y)",
           "title": "GDP MoM AUG",
@@ -371,54 +419,6 @@
           "direction": "higher_is_bullish",
           "verdict": "neutral",
           "weight": 2.0,
-          "note": ""
-        },
-        {
-          "dataPoint": "Unemployment Rate",
-          "title": "Unemployment Rate JUL",
-          "period": "2026-09-15T10:00+00:00",
-          "actual": "4.9%",
-          "previous": "4.9%",
-          "forecast": "5.0%",
-          "direction": "lower_is_bullish",
-          "verdict": "bullish",
-          "weight": 2.0,
-          "note": ""
-        },
-        {
-          "dataPoint": "Claimant Count Change",
-          "title": "Claimant Count Change AUG",
-          "period": "2026-09-15T10:00+00:00",
-          "actual": "27.8K",
-          "previous": "-11K",
-          "forecast": "-5.0K",
-          "direction": "lower_is_bullish",
-          "verdict": "bearish",
-          "weight": 2.0,
-          "note": ""
-        },
-        {
-          "dataPoint": "Average Earnings Index + Bonus (3m/y)",
-          "title": "Average Earnings incl. Bonus (3Mo/Yr) JUL",
-          "period": "2026-09-15T10:00+00:00",
-          "actual": "3.9%",
-          "previous": "4.1%",
-          "forecast": "4.0%",
-          "direction": "higher_is_bullish",
-          "verdict": "bearish",
-          "weight": 2.0,
-          "note": ""
-        },
-        {
-          "dataPoint": "Employment Change (3m/y)",
-          "title": "Employment Change JUL",
-          "period": "2026-09-15T10:00+00:00",
-          "actual": "67K",
-          "previous": "83K",
-          "forecast": "70.0K",
-          "direction": "higher_is_bullish",
-          "verdict": "bearish",
-          "weight": 1.0,
           "note": ""
         }
       ],
