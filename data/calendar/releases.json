@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-19T00:48:41+00:00",
+  "updated": "2026-10-20T01:35:10+00:00",
   "releases": [
     {
       "country": "USD",
@@ -271,11 +271,11 @@
       "dataPoint": "CPI (m/m, y/y) & Median/Trimmed CPI",
       "weight": 1.5,
       "direction": "higher_is_bullish",
-      "period": "2026-09-14T16:30+00:00",
-      "title": "Inflation Rate YoY AUG",
-      "actual": "3%",
+      "period": "2026-10-19T16:30+00:00",
+      "title": "Inflation Rate YoY SEP",
+      "actual": "3.1%",
       "previous": "3%",
-      "forecast": "3.0%"
+      "forecast": "3.2%"
     },
     {
       "country": "CNY",
@@ -283,11 +283,11 @@
       "dataPoint": "Industrial Production (y/y)",
       "weight": 0.5,
       "direction": "higher_is_bullish",
-      "period": "2026-09-15T06:00+00:00",
-      "title": "Industrial Production YoY AUG",
-      "actual": "5.2%",
-      "previous": "4.5%",
-      "forecast": "5.0%"
+      "period": "2026-10-19T06:00+00:00",
+      "title": "Industrial Production YoY SEP",
+      "actual": "5.5%",
+      "previous": "5.2%",
+      "forecast": "4.8%"
     },
     {
       "country": "GBP",
@@ -439,7 +439,7 @@
       "dataPoint": "Loan Prime Rate (1-Year & 5-Year LPR)",
       "weight": 0.5,
       "direction": "higher_is_bullish",
-      "period": "2026-09-21T05:15+00:00",
+      "period": "2026-10-20T05:15+00:00",
       "title": "Loan Prime Rate 1Y",
       "actual": "3.0%",
       "previous": "3.0%",
@@ -823,9 +823,9 @@
       "dataPoint": "2-Year Treasury Yield (21-day trend)",
       "weight": 1.0,
       "direction": "higher_is_bullish",
-      "period": "2026-10-15T00:00:00+00:00",
+      "period": "2026-10-16T00:00:00+00:00",
       "title": "2-Year Treasury Yield",
-      "actual": "4.77",
+      "actual": "4.74",
       "previous": "4.80",
       "forecast": ""
     }
