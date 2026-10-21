@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-21T01:20:17+00:00",
+  "updated": "2026-10-21T18:09:09+00:00",
   "releases": [
     {
       "country": "USD",
@@ -355,11 +355,11 @@
       "dataPoint": "CPI (y/y) & Core CPI (y/y)",
       "weight": 1.5,
       "direction": "higher_is_bullish",
-      "period": "2026-09-16T10:00+00:00",
-      "title": "Inflation Rate YoY AUG",
-      "actual": "3.1%",
-      "previous": "2.9%",
-      "forecast": "3.1%"
+      "period": "2026-10-21T10:00+00:00",
+      "title": "Inflation Rate YoY SEP",
+      "actual": "3.5%",
+      "previous": "3.1%",
+      "forecast": "3.4%"
     },
     {
       "country": "USD",
@@ -475,11 +475,11 @@
       "dataPoint": "CPI y/y",
       "weight": 1.5,
       "direction": "higher_is_bullish",
-      "period": "2026-09-23T12:00+00:00",
-      "title": "Inflation Rate MoM AUG",
-      "actual": "0%",
-      "previous": "0.2%",
-      "forecast": "0.4%"
+      "period": "2026-10-21T12:00+00:00",
+      "title": "Inflation Rate MoM SEP",
+      "actual": "0.4%",
+      "previous": "0%",
+      "forecast": "0.3%"
     },
     {
       "country": "ZAR",

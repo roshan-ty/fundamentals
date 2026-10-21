@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-10-21T01:20:17+00:00",
+    "updated": "2026-10-21T18:09:09+00:00",
     "total": 82,
     "scored": 82
   },
@@ -177,14 +177,14 @@
     {
       "symbol": "EURZAR",
       "class": "fx",
-      "verdict": "Bullish",
+      "verdict": "Bearish",
       "base": "EUR",
       "quote": "ZAR",
       "base_verdict": "Neutral",
-      "quote_verdict": "Bearish",
+      "quote_verdict": "Bullish",
       "drivers": [
         "EUR: Neutral",
-        "ZAR: Bearish"
+        "ZAR: Bullish"
       ]
     },
     {
@@ -359,14 +359,14 @@
     {
       "symbol": "GBPZAR",
       "class": "fx",
-      "verdict": "Bullish",
+      "verdict": "Bearish",
       "base": "GBP",
       "quote": "ZAR",
       "base_verdict": "Neutral",
-      "quote_verdict": "Bearish",
+      "quote_verdict": "Bullish",
       "drivers": [
         "GBP: Neutral",
-        "ZAR: Bearish"
+        "ZAR: Bullish"
       ]
     },
     {

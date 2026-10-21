@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-10-21T01:20:17+00:00",
+    "updated": "2026-10-21T18:09:09+00:00",
     "method": "verdict v3 (forecast-first, released-only)"
   },
   "currencies": {
@@ -319,12 +319,24 @@
     "GBP": {
       "verdict": "Neutral",
       "tally": {
-        "bullish": 3.0,
+        "bullish": 5.0,
         "bearish": 4.5,
-        "neutral": 7.0
+        "neutral": 5.0
       },
       "released_points": 8,
       "drivers": [
+        {
+          "dataPoint": "CPI (y/y) & Core CPI (y/y)",
+          "title": "Inflation Rate YoY SEP",
+          "period": "2026-10-21T10:00+00:00",
+          "actual": "3.5%",
+          "previous": "3.1%",
+          "forecast": "3.4%",
+          "direction": "higher_is_bullish",
+          "verdict": "bullish",
+          "weight": 2.0,
+          "note": ""
+        },
         {
           "dataPoint": "Unemployment Rate",
           "title": "Unemployment Rate AUG",
@@ -407,18 +419,6 @@
           "direction": "higher_is_bullish",
           "verdict": "neutral",
           "weight": 3.0,
-          "note": ""
-        },
-        {
-          "dataPoint": "CPI (y/y) & Core CPI (y/y)",
-          "title": "Inflation Rate YoY AUG",
-          "period": "2026-09-16T10:00+00:00",
-          "actual": "3.1%",
-          "previous": "2.9%",
-          "forecast": "3.1%",
-          "direction": "higher_is_bullish",
-          "verdict": "neutral",
-          "weight": 2.0,
           "note": ""
         }
       ],
@@ -937,14 +937,26 @@
       ]
     },
     "ZAR": {
-      "verdict": "Bearish",
+      "verdict": "Bullish",
       "tally": {
-        "bullish": 0.0,
-        "bearish": 2.0,
+        "bullish": 2.0,
+        "bearish": 0.0,
         "neutral": 3.0
       },
       "released_points": 2,
       "drivers": [
+        {
+          "dataPoint": "CPI y/y",
+          "title": "Inflation Rate MoM SEP",
+          "period": "2026-10-21T12:00+00:00",
+          "actual": "0.4%",
+          "previous": "0%",
+          "forecast": "0.3%",
+          "direction": "higher_is_bullish",
+          "verdict": "bullish",
+          "weight": 2.0,
+          "note": ""
+        },
         {
           "dataPoint": "SARB Repo Rate Decision",
           "title": "Interest Rate Decision",
@@ -955,18 +967,6 @@
           "direction": "higher_is_bullish",
           "verdict": "neutral",
           "weight": 3.0,
-          "note": ""
-        },
-        {
-          "dataPoint": "CPI y/y",
-          "title": "Inflation Rate MoM AUG",
-          "period": "2026-09-23T12:00+00:00",
-          "actual": "0%",
-          "previous": "0.2%",
-          "forecast": "0.4%",
-          "direction": "higher_is_bullish",
-          "verdict": "bearish",
-          "weight": 2.0,
           "note": ""
         }
       ],
