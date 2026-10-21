@@ -23743,7 +23743,7 @@
     "impact": "",
     "forecast": "",
     "previous": "-11.1M",
-    "actual": "",
+    "actual": "-4.93M",
     "source": "te"
   },
   {
@@ -23753,7 +23753,7 @@
     "impact": "",
     "forecast": "0.2%",
     "previous": "0.2%",
-    "actual": "",
+    "actual": "0.2%",
     "source": "te"
   },
   {
@@ -23763,7 +23763,7 @@
     "impact": "",
     "forecast": "7.5%",
     "previous": "7.9%",
-    "actual": "",
+    "actual": "7.7%",
     "source": "te"
   },
   {
@@ -23794,7 +23794,7 @@
     "impact": "",
     "forecast": " -250B",
     "previous": "-1105.6B",
-    "actual": "",
+    "actual": "-536.6B",
     "source": "te"
   },
   {
@@ -23804,7 +23804,7 @@
     "impact": "",
     "forecast": "",
     "previous": "19.3%",
-    "actual": "",
+    "actual": "16.7%",
     "source": "te"
   },
   {
@@ -23814,7 +23814,7 @@
     "impact": "",
     "forecast": "",
     "previous": "28%",
-    "actual": "",
+    "actual": "18.9%",
     "source": "te"
   },
   {
@@ -26989,7 +26989,7 @@
     "date_utc": "2026-10-28T00:30+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "-4.93M",
     "actual": "",
     "source": "te"
   },
@@ -32380,6 +32380,86 @@
     "impact": "",
     "forecast": "",
     "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Composite NZ PCI OCT",
+    "country": "NZD",
+    "date_utc": "2026-11-16T02:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "53.4",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Services NZ PSI OCT",
+    "country": "NZD",
+    "date_utc": "2026-11-16T02:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "50.9",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "GDP Growth Rate QoQ Prel Q3",
+    "country": "JPY",
+    "date_utc": "2026-11-16T04:50+00:00",
+    "impact": "",
+    "forecast": "0.1%",
+    "previous": "0.4%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "GDP Growth Annualized Prel Q3",
+    "country": "JPY",
+    "date_utc": "2026-11-16T04:50+00:00",
+    "impact": "",
+    "forecast": "0.6%",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "GDP Capital Expenditure QoQ Prel Q3",
+    "country": "JPY",
+    "date_utc": "2026-11-16T04:50+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "-0.9%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "GDP External Demand QoQ Prel Q3",
+    "country": "JPY",
+    "date_utc": "2026-11-16T04:50+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "0.5%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "GDP Price Index YoY Prel Q3",
+    "country": "JPY",
+    "date_utc": "2026-11-16T04:50+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "2.6%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "GDP Private Consumption QoQ Prel Q3",
+    "country": "JPY",
+    "date_utc": "2026-11-16T04:50+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "0.0%",
     "actual": "",
     "source": "te"
   }

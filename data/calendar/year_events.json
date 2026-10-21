@@ -425,8 +425,8 @@
     "date_utc": "2026-10-21T00:30+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "-11.1M",
-    "actual": "",
+    "previous": "-11.12M ",
+    "actual": "-4.93M",
     "source": "te"
   },
   {
@@ -435,8 +435,8 @@
     "date_utc": "2026-10-21T01:00+00:00",
     "impact": "",
     "forecast": "0.2%",
-    "previous": "0.2%",
-    "actual": "",
+    "previous": "0.1% ",
+    "actual": "0.2%",
     "source": "te"
   },
   {
@@ -446,7 +446,7 @@
     "impact": "",
     "forecast": "7.5%",
     "previous": "7.9%",
-    "actual": "",
+    "actual": "7.7%",
     "source": "te"
   },
   {
@@ -465,8 +465,8 @@
     "date_utc": "2026-10-21T03:50+00:00",
     "impact": "",
     "forecast": " -270.0B",
-    "previous": "-1105.6B",
-    "actual": "",
+    "previous": "-1111.9B ",
+    "actual": "-536.6B",
     "source": "te"
   },
   {
@@ -476,7 +476,7 @@
     "impact": "",
     "forecast": "",
     "previous": "19.3%",
-    "actual": "",
+    "actual": "16.7%",
     "source": "te"
   },
   {
@@ -486,7 +486,7 @@
     "impact": "",
     "forecast": "",
     "previous": "28%",
-    "actual": "",
+    "actual": "18.9%",
     "source": "te"
   },
   {
@@ -2965,7 +2965,7 @@
     "date_utc": "2026-10-28T00:30+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "-4.93M",
     "actual": "",
     "source": "te"
   },
@@ -5880,6 +5880,26 @@
     "source": "te"
   },
   {
+    "title": "Composite NZ PCI OCT",
+    "country": "NZD",
+    "date_utc": "2026-11-16T02:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "53.4",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Services NZ PSI OCT",
+    "country": "NZD",
+    "date_utc": "2026-11-16T02:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "50.9",
+    "actual": "",
+    "source": "te"
+  },
+  {
     "title": "52-Week Bill Auction",
     "country": "JPY",
     "date_utc": "2026-10-19T07:35+00:00",
@@ -6206,6 +6226,66 @@
     "impact": "",
     "forecast": "",
     "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "GDP Growth Rate QoQ Prel Q3",
+    "country": "JPY",
+    "date_utc": "2026-11-16T04:50+00:00",
+    "impact": "",
+    "forecast": "0.1%",
+    "previous": "0.4%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "GDP Growth Annualized Prel Q3",
+    "country": "JPY",
+    "date_utc": "2026-11-16T04:50+00:00",
+    "impact": "",
+    "forecast": "0.6%",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "GDP Capital Expenditure QoQ Prel Q3",
+    "country": "JPY",
+    "date_utc": "2026-11-16T04:50+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "-0.9%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "GDP External Demand QoQ Prel Q3",
+    "country": "JPY",
+    "date_utc": "2026-11-16T04:50+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "0.5%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "GDP Price Index YoY Prel Q3",
+    "country": "JPY",
+    "date_utc": "2026-11-16T04:50+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "2.6%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "GDP Private Consumption QoQ Prel Q3",
+    "country": "JPY",
+    "date_utc": "2026-11-16T04:50+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "0.0%",
     "actual": "",
     "source": "te"
   },
@@ -7230,16 +7310,6 @@
     "source": "te"
   },
   {
-    "title": "Bundesbank President Nagel Speech",
-    "country": "EUR",
-    "date_utc": "2026-10-17T08:45+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "",
-    "actual": "",
-    "source": "te"
-  },
-  {
     "title": "11-Month Bubill Auction",
     "country": "EUR",
     "date_utc": "2026-10-19T13:30+00:00",
@@ -7757,36 +7827,6 @@
     "forecast": "",
     "previous": "",
     "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "NAHB Housing Market Index OCT",
-    "country": "USD",
-    "date_utc": "2026-10-19T18:00+00:00",
-    "impact": "",
-    "forecast": "31",
-    "previous": "32",
-    "actual": "29",
-    "source": "te"
-  },
-  {
-    "title": "3-Month Bill Auction",
-    "country": "USD",
-    "date_utc": "2026-10-19T19:30+00:00",
-    "impact": "",
-    "forecast": "4.0999%",
-    "previous": "4.085%",
-    "actual": "4.095%",
-    "source": "te"
-  },
-  {
-    "title": "6-Month Bill Auction",
-    "country": "USD",
-    "date_utc": "2026-10-19T19:30+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "4.200%",
-    "actual": "4.220%",
     "source": "te"
   },
   {
