@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-21T18:09:09+00:00",
+  "updated": "2026-10-22T01:17:16+00:00",
   "releases": [
     {
       "country": "USD",
@@ -816,6 +816,18 @@
       "actual": "$133.53B",
       "previous": "809B",
       "forecast": "805B"
+    },
+    {
+      "country": "NZD",
+      "dataPointId": "nz_cpi",
+      "dataPoint": "CPI (q/q, y/y)",
+      "weight": 1.5,
+      "direction": "higher_is_bullish",
+      "period": "2026-10-22T01:45+00:00",
+      "title": "Inflation Rate QoQ Q3",
+      "actual": "0.7%",
+      "previous": "1.5%",
+      "forecast": "0.7%"
     },
     {
       "country": "USD",

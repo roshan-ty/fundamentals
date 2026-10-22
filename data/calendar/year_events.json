@@ -540,13 +540,33 @@
     "source": "te"
   },
   {
+    "title": "20-Year Bond Auction",
+    "country": "USD",
+    "date_utc": "2026-10-21T21:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "5.420%",
+    "actual": "5.469%",
+    "source": "te"
+  },
+  {
     "title": "Economic Activity YoY AUG",
     "country": "AR",
     "date_utc": "2026-10-21T23:00+00:00",
     "impact": "",
     "forecast": "-0.9%",
     "previous": "-1.4%",
-    "actual": "",
+    "actual": "-1.7%",
+    "source": "te"
+  },
+  {
+    "title": "Leading Indicator MoM SEP",
+    "country": "AR",
+    "date_utc": "2026-10-21T23:00+00:00",
+    "impact": "",
+    "forecast": "-0.3%",
+    "previous": "-0.27%",
+    "actual": "-0.25%",
     "source": "te"
   },
   {
@@ -555,8 +575,8 @@
     "date_utc": "2026-10-22T03:50+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "-339.7B",
-    "actual": "",
+    "previous": "-339.9B ",
+    "actual": "-161.6B",
     "source": "te"
   },
   {
@@ -565,8 +585,8 @@
     "date_utc": "2026-10-22T03:50+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "3521.5B",
-    "actual": "",
+    "previous": "3545.5B ",
+    "actual": "-66.5B",
     "source": "te"
   },
   {
@@ -576,7 +596,7 @@
     "impact": "",
     "forecast": "3.0%",
     "previous": "3%",
-    "actual": "",
+    "actual": "3%",
     "source": "te"
   },
   {
@@ -3085,7 +3105,7 @@
     "date_utc": "2026-10-29T03:50+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "-161.6B",
     "actual": "",
     "source": "te"
   },
@@ -3095,7 +3115,7 @@
     "date_utc": "2026-10-29T03:50+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "-66.5B",
     "actual": "",
     "source": "te"
   },
@@ -4770,22 +4790,32 @@
     "source": "te"
   },
   {
-    "title": "RBA Kent Speech",
-    "country": "AUD",
-    "date_utc": "2026-10-18T04:00+00:00",
+    "title": "Exports YoY OCT",
+    "country": "KRW",
+    "date_utc": "2026-11-01T04:00+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "83.5%",
     "actual": "",
     "source": "te"
   },
   {
-    "title": "RBA Kent Speech",
-    "country": "AUD",
-    "date_utc": "2026-10-19T03:05+00:00",
+    "title": "Balance of Trade OCT",
+    "country": "KRW",
+    "date_utc": "2026-11-01T04:00+00:00",
+    "impact": "",
+    "forecast": "$50.2B",
+    "previous": "$49.85B",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Imports YoY OCT",
+    "country": "KRW",
+    "date_utc": "2026-11-01T04:00+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "26%",
     "actual": "",
     "source": "te"
   },
@@ -5090,53 +5120,13 @@
     "source": "te"
   },
   {
-    "title": "Composite NZ PCI SEP",
-    "country": "NZD",
-    "date_utc": "2026-10-19T01:30+00:00",
+    "title": "RBA Meeting Minutes",
+    "country": "AUD",
+    "date_utc": "2026-11-17T05:30+00:00",
     "impact": "",
-    "forecast": "52.5",
-    "previous": "52.4 ",
-    "actual": "53.4",
-    "source": "te"
-  },
-  {
-    "title": "Services NZ PSI SEP",
-    "country": "NZD",
-    "date_utc": "2026-10-19T01:30+00:00",
-    "impact": "",
-    "forecast": "50",
-    "previous": "51 ",
-    "actual": "50.9",
-    "source": "te"
-  },
-  {
-    "title": "Balance of Trade SEP",
-    "country": "NZD",
-    "date_utc": "2026-10-19T01:45+00:00",
-    "impact": "",
-    "forecast": "NZ$ -1.2B",
-    "previous": "NZ$-1.536B ",
-    "actual": "NZ$-1.971B",
-    "source": "te"
-  },
-  {
-    "title": "Exports SEP",
-    "country": "NZD",
-    "date_utc": "2026-10-19T01:45+00:00",
-    "impact": "",
-    "forecast": "NZ$ 6.5B",
-    "previous": "NZ$6.48B ",
-    "actual": "NZ$6.47B",
-    "source": "te"
-  },
-  {
-    "title": "Imports SEP",
-    "country": "NZD",
-    "date_utc": "2026-10-19T01:45+00:00",
-    "impact": "",
-    "forecast": "NZ$ 7.6B",
-    "previous": "NZ$8.02B ",
-    "actual": "NZ$8.44B",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
     "source": "te"
   },
   {
@@ -5196,7 +5186,7 @@
     "impact": "",
     "forecast": "0.7%",
     "previous": "1.5%",
-    "actual": "",
+    "actual": "0.7%",
     "source": "te"
   },
   {
@@ -5206,7 +5196,7 @@
     "impact": "",
     "forecast": "3.7%",
     "previous": "4.1%",
-    "actual": "",
+    "actual": "3.7%",
     "source": "te"
   },
   {
@@ -5466,6 +5456,16 @@
     "impact": "",
     "forecast": "50.7",
     "previous": "50.9",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Food Inflation YoY OCT",
+    "country": "NZD",
+    "date_utc": "2026-11-17T02:45+00:00",
+    "impact": "",
+    "forecast": "2.6%",
+    "previous": "2.4%",
     "actual": "",
     "source": "te"
   },
@@ -6720,96 +6720,6 @@
     "source": "te"
   },
   {
-    "title": "Unemployment Rate AUG",
-    "country": "GBP",
-    "date_utc": "2026-10-20T10:00+00:00",
-    "impact": "",
-    "forecast": "4.9%",
-    "previous": "4.9%",
-    "actual": "4.7%",
-    "source": "te"
-  },
-  {
-    "title": "Average Earnings incl. Bonus (3Mo/Yr) AUG",
-    "country": "GBP",
-    "date_utc": "2026-10-20T10:00+00:00",
-    "impact": "",
-    "forecast": "3.8%",
-    "previous": "3.9%",
-    "actual": "3.7%",
-    "source": "te"
-  },
-  {
-    "title": "Employment Change AUG",
-    "country": "GBP",
-    "date_utc": "2026-10-20T10:00+00:00",
-    "impact": "",
-    "forecast": "40.0K",
-    "previous": "67K",
-    "actual": "102K",
-    "source": "te"
-  },
-  {
-    "title": "Average Earnings excl. Bonus (3Mo/Yr) AUG",
-    "country": "GBP",
-    "date_utc": "2026-10-20T10:00+00:00",
-    "impact": "",
-    "forecast": "3.4%",
-    "previous": "3.6% ",
-    "actual": "3.7%",
-    "source": "te"
-  },
-  {
-    "title": "Claimant Count Change SEP",
-    "country": "GBP",
-    "date_utc": "2026-10-20T10:00+00:00",
-    "impact": "",
-    "forecast": "20K",
-    "previous": "7K ",
-    "actual": "30.3K",
-    "source": "te"
-  },
-  {
-    "title": "HMRC Payrolls Change SEP",
-    "country": "GBP",
-    "date_utc": "2026-10-20T10:00+00:00",
-    "impact": "",
-    "forecast": "-15.0K",
-    "previous": "1K ",
-    "actual": "13K",
-    "source": "te"
-  },
-  {
-    "title": "Treasury Gilt 2036 Auction",
-    "country": "GBP",
-    "date_utc": "2026-10-20T13:00+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "5.383%",
-    "actual": "5.418%",
-    "source": "te"
-  },
-  {
-    "title": "BoE Mills Speech",
-    "country": "GBP",
-    "date_utc": "2026-10-20T16:30+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "BoE Greene Speech",
-    "country": "GBP",
-    "date_utc": "2026-10-20T21:00+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "",
-    "actual": "",
-    "source": "te"
-  },
-  {
     "title": "S&P Global Manufacturing PMI Final OCT",
     "country": "GBP",
     "date_utc": "2026-11-02T14:30+00:00",
@@ -7787,116 +7697,6 @@
     "forecast": "",
     "previous": "",
     "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "ADP Employment Change Weekly",
-    "country": "USD",
-    "date_utc": "2026-10-20T16:15+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "24.75K",
-    "actual": "18.5K",
-    "source": "te"
-  },
-  {
-    "title": "Building Permits Prel SEP",
-    "country": "USD",
-    "date_utc": "2026-10-20T16:30+00:00",
-    "impact": "",
-    "forecast": "1.39M",
-    "previous": "1.403M",
-    "actual": "1.4M",
-    "source": "te"
-  },
-  {
-    "title": "Housing Starts SEP",
-    "country": "USD",
-    "date_utc": "2026-10-20T16:30+00:00",
-    "impact": "",
-    "forecast": "1.3M",
-    "previous": "1.288M ",
-    "actual": "1.221M",
-    "source": "te"
-  },
-  {
-    "title": "Building Permits MoM Prel SEP",
-    "country": "USD",
-    "date_utc": "2026-10-20T16:30+00:00",
-    "impact": "",
-    "forecast": "-0.7%",
-    "previous": "-2.1%",
-    "actual": "-0.2%",
-    "source": "te"
-  },
-  {
-    "title": "Housing Starts MoM SEP",
-    "country": "USD",
-    "date_utc": "2026-10-20T16:30+00:00",
-    "impact": "",
-    "forecast": "1.9%",
-    "previous": "-5.9% ",
-    "actual": "-5.2%",
-    "source": "te"
-  },
-  {
-    "title": "Redbook YoY OCT/17",
-    "country": "USD",
-    "date_utc": "2026-10-20T16:55+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "10.4%",
-    "actual": "9%",
-    "source": "te"
-  },
-  {
-    "title": "Pending Home Sales MoM SEP",
-    "country": "USD",
-    "date_utc": "2026-10-20T18:00+00:00",
-    "impact": "",
-    "forecast": "0.2%",
-    "previous": "0.3%",
-    "actual": "-7.3%",
-    "source": "te"
-  },
-  {
-    "title": "Pending Home Sales YoY SEP",
-    "country": "USD",
-    "date_utc": "2026-10-20T18:00+00:00",
-    "impact": "",
-    "forecast": "1.0%",
-    "previous": "-4.7%",
-    "actual": "-11.3%",
-    "source": "te"
-  },
-  {
-    "title": "Atlanta Fed GDPNow Q3",
-    "country": "USD",
-    "date_utc": "2026-10-20T19:00+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "3.6%",
-    "actual": "3.5%",
-    "source": "te"
-  },
-  {
-    "title": "6-Week Bill Auction",
-    "country": "USD",
-    "date_utc": "2026-10-20T19:30+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "3.980%",
-    "actual": "3.975%",
-    "source": "te"
-  },
-  {
-    "title": "API Crude Oil Stock Change OCT/16",
-    "country": "USD",
-    "date_utc": "2026-10-21T00:30+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "-11.12M ",
-    "actual": "-4.93M",
     "source": "te"
   },
   {

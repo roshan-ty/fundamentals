@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-10-21T18:09:09+00:00",
+    "updated": "2026-10-22T01:17:16+00:00",
     "method": "verdict v3 (forecast-first, released-only)"
   },
   "currencies": {
@@ -491,10 +491,22 @@
       "tally": {
         "bullish": 1.0,
         "bearish": 0.0,
-        "neutral": 0.0
+        "neutral": 2.0
       },
-      "released_points": 1,
+      "released_points": 2,
       "drivers": [
+        {
+          "dataPoint": "CPI (q/q, y/y)",
+          "title": "Inflation Rate QoQ Q3",
+          "period": "2026-10-22T01:45+00:00",
+          "actual": "0.7%",
+          "previous": "1.5%",
+          "forecast": "0.7%",
+          "direction": "higher_is_bullish",
+          "verdict": "neutral",
+          "weight": 2.0,
+          "note": ""
+        },
         {
           "dataPoint": "BusinessNZ Manufacturing PMI",
           "title": "Business NZ PMI SEP",
@@ -508,9 +520,7 @@
           "note": ""
         }
       ],
-      "notes": [
-        "limited release evidence; cap at single-step verdict"
-      ]
+      "notes": []
     },
     "CAD": {
       "verdict": "Bearish",
@@ -1110,7 +1120,7 @@
     "risk_mode": "flat",
     "yield2y_level": 4.77,
     "yield2y_sma": 4.805,
-    "dxy_level": 101.06,
+    "dxy_level": 100.95,
     "gold_level": 4390.39382
   }
 }

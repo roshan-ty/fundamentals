@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-10-21T18:09:09+00:00"
+    "updated": "2026-10-22T01:17:16+00:00"
   },
   "setups": [
     {
@@ -49,6 +49,15 @@
       "rationale": "Very Bearish — AUD: Bearish · CHF: Very Bullish"
     },
     {
+      "symbol": "AUDNZD",
+      "name": "AUDNZD",
+      "verdict": "Very Bearish",
+      "direction": "Sell",
+      "confidence": 1.0,
+      "importance": 2,
+      "rationale": "Very Bearish — AUD: Bearish · NZD: Bullish"
+    },
+    {
       "symbol": "NZDCAD",
       "name": "NZDCAD",
       "verdict": "Very Bullish",
@@ -76,20 +85,11 @@
       "rationale": "Very Bearish — CAD: Bearish · JPY: Bullish"
     },
     {
-      "symbol": "AUDNZD",
-      "name": "AUDNZD",
-      "verdict": "Very Bearish",
-      "direction": "Sell",
-      "confidence": 0.9,
-      "importance": 2,
-      "rationale": "Very Bearish — AUD: Bearish · NZD: Bullish"
-    },
-    {
       "symbol": "NZDSGD",
       "name": "NZDSGD",
       "verdict": "Very Bullish",
       "direction": "Buy",
-      "confidence": 0.7,
+      "confidence": 0.8,
       "importance": 2,
       "rationale": "Very Bullish — NZD: Bullish · SGD: Bearish"
     },

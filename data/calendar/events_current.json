@@ -24475,7 +24475,7 @@
     "impact": "",
     "forecast": "",
     "previous": "5.420%",
-    "actual": "",
+    "actual": "5.469%",
     "source": "te"
   },
   {
@@ -24496,7 +24496,17 @@
     "impact": "",
     "forecast": "-0.9%",
     "previous": "-1.4%",
-    "actual": "",
+    "actual": "-1.7%",
+    "source": "te"
+  },
+  {
+    "title": "Leading Indicator MoM SEP",
+    "country": "AR",
+    "date_utc": "2026-10-21T23:00+00:00",
+    "impact": "",
+    "forecast": "-0.3%",
+    "previous": "-0.27%",
+    "actual": "-0.25%",
     "source": "te"
   },
   {
@@ -24506,7 +24516,7 @@
     "impact": "",
     "forecast": "0.7%",
     "previous": "1.5%",
-    "actual": "",
+    "actual": "0.7%",
     "source": "te"
   },
   {
@@ -24516,7 +24526,7 @@
     "impact": "",
     "forecast": "3.7%",
     "previous": "4.1%",
-    "actual": "",
+    "actual": "3.7%",
     "source": "te"
   },
   {
@@ -24526,7 +24536,7 @@
     "impact": "",
     "forecast": "",
     "previous": "-339.7B",
-    "actual": "",
+    "actual": "-161.6B",
     "source": "te"
   },
   {
@@ -24536,7 +24546,7 @@
     "impact": "",
     "forecast": "",
     "previous": "3521.5B",
-    "actual": "",
+    "actual": "-66.5B",
     "source": "te"
   },
   {
@@ -24546,7 +24556,7 @@
     "impact": "",
     "forecast": "3.25%",
     "previous": "3%",
-    "actual": "",
+    "actual": "3%",
     "source": "te"
   },
   {
@@ -27649,7 +27659,7 @@
     "date_utc": "2026-10-29T03:50+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "-161.6B",
     "actual": "",
     "source": "te"
   },
@@ -27659,7 +27669,7 @@
     "date_utc": "2026-10-29T03:50+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "-66.5B",
     "actual": "",
     "source": "te"
   },
@@ -29260,6 +29270,36 @@
     "impact": "",
     "forecast": "51",
     "previous": "50.7",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Exports YoY OCT",
+    "country": "KRW",
+    "date_utc": "2026-11-01T04:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "83.5%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Balance of Trade OCT",
+    "country": "KRW",
+    "date_utc": "2026-11-01T04:00+00:00",
+    "impact": "",
+    "forecast": "$50.2B",
+    "previous": "$49.85B",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Imports YoY OCT",
+    "country": "KRW",
+    "date_utc": "2026-11-01T04:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "26%",
     "actual": "",
     "source": "te"
   },
@@ -32667,6 +32707,26 @@
     "title": "NOPA Crush Report",
     "country": "USD",
     "date_utc": "2026-11-16T22:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Food Inflation YoY OCT",
+    "country": "NZD",
+    "date_utc": "2026-11-17T02:45+00:00",
+    "impact": "",
+    "forecast": "2.6%",
+    "previous": "2.4%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "RBA Meeting Minutes",
+    "country": "AUD",
+    "date_utc": "2026-11-17T05:30+00:00",
     "impact": "",
     "forecast": "",
     "previous": "",
