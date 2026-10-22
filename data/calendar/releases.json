@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-22T01:17:16+00:00",
+  "updated": "2026-10-22T18:06:09+00:00",
   "releases": [
     {
       "country": "USD",
@@ -7,11 +7,11 @@
       "dataPoint": "Unemployment Claims (Weekly)",
       "weight": 0.5,
       "direction": "lower_is_bullish",
-      "period": "2026-10-15T16:30+00:00",
-      "title": "Initial Jobless Claims OCT/10",
-      "actual": "199K",
-      "previous": "197K",
-      "forecast": "201.0K"
+      "period": "2026-10-22T16:30+00:00",
+      "title": "Initial Jobless Claims OCT/17",
+      "actual": "194K",
+      "previous": "199K",
+      "forecast": "200.0K"
     },
     {
       "country": "USD",
@@ -559,11 +559,11 @@
       "dataPoint": "CPI y/y",
       "weight": 1.5,
       "direction": "higher_is_bullish",
-      "period": "2026-10-08T16:00+00:00",
-      "title": "Inflation Rate MoM SEP",
-      "actual": "0.42%",
-      "previous": "0.2%",
-      "forecast": "0.3%"
+      "period": "2026-10-22T16:00+00:00",
+      "title": "Mid-month Core Inflation Rate MoM OCT",
+      "actual": "0.25%",
+      "previous": "0.17%",
+      "forecast": "0.2%"
     },
     {
       "country": "MXN",
@@ -583,11 +583,11 @@
       "dataPoint": "Unemployment Rate",
       "weight": 0.5,
       "direction": "lower_is_bullish",
-      "period": "2026-09-25T16:00+00:00",
-      "title": "Unemployment Rate AUG",
-      "actual": "3%",
-      "previous": "2.9%",
-      "forecast": "2.9%"
+      "period": "2026-10-22T16:00+00:00",
+      "title": "Unemployment Rate SEP",
+      "actual": "2.8%",
+      "previous": "3%",
+      "forecast": "3.0%"
     },
     {
       "country": "AUD",
@@ -830,15 +830,27 @@
       "forecast": "0.7%"
     },
     {
+      "country": "TRY",
+      "dataPointId": "tr_rate",
+      "dataPoint": "CBRT Interest Rate Decision",
+      "weight": 2.0,
+      "direction": "higher_is_bullish",
+      "period": "2026-10-22T15:00+00:00",
+      "title": "TCMB Interest Rate Decision",
+      "actual": "36%",
+      "previous": "37%",
+      "forecast": "37.0%"
+    },
+    {
       "country": "USD",
       "dataPointId": "us_yield2y",
       "dataPoint": "2-Year Treasury Yield (21-day trend)",
       "weight": 1.0,
       "direction": "higher_is_bullish",
-      "period": "2026-10-19T00:00:00+00:00",
+      "period": "2026-10-20T00:00:00+00:00",
       "title": "2-Year Treasury Yield",
-      "actual": "4.77",
-      "previous": "4.80",
+      "actual": "4.79",
+      "previous": "4.81",
       "forecast": ""
     }
   ]

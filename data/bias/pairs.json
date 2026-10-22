@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-10-22T01:17:16+00:00",
+    "updated": "2026-10-22T18:06:09+00:00",
     "total": 82,
     "scored": 82
   },
@@ -450,14 +450,14 @@
     {
       "symbol": "USDMXN",
       "class": "fx",
-      "verdict": "Neutral",
+      "verdict": "Bearish",
       "base": "USD",
       "quote": "MXN",
       "base_verdict": "Neutral",
-      "quote_verdict": "Neutral",
+      "quote_verdict": "Bullish",
       "drivers": [
         "USD: Neutral",
-        "MXN: Neutral"
+        "MXN: Bullish"
       ]
     },
     {
@@ -787,56 +787,56 @@
     {
       "symbol": "XAUUSD",
       "class": "metals",
-      "verdict": "Bearish",
-      "base_verdict": "Bearish",
+      "verdict": "Very Bearish",
+      "base_verdict": "Very Bearish",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "XAGUSD",
       "class": "metals",
-      "verdict": "Bearish",
-      "base_verdict": "Bearish",
+      "verdict": "Very Bearish",
+      "base_verdict": "Very Bearish",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "XPTUSD",
       "class": "metals",
-      "verdict": "Bearish",
-      "base_verdict": "Bearish",
+      "verdict": "Very Bearish",
+      "base_verdict": "Very Bearish",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "XPDUSD",
       "class": "metals",
-      "verdict": "Bearish",
-      "base_verdict": "Bearish",
+      "verdict": "Very Bearish",
+      "base_verdict": "Very Bearish",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "OIL",
       "class": "energy",
-      "verdict": "Bullish",
-      "base_verdict": "Bullish",
+      "verdict": "Neutral",
+      "base_verdict": "Neutral",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "BRENT",
       "class": "energy",
-      "verdict": "Bullish",
-      "base_verdict": "Bullish",
+      "verdict": "Neutral",
+      "base_verdict": "Neutral",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "COPPER",
       "class": "energy",
-      "verdict": "Bullish",
-      "base_verdict": "Bullish",
+      "verdict": "Neutral",
+      "base_verdict": "Neutral",
       "quote_verdict": null,
       "drivers": []
     },

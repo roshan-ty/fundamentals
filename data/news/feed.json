@@ -1,5 +1,172 @@
 [
   {
+    "headline": "We're dipping back into the AI trade with our first data center buy in weeks",
+    "snippet": "The stock is also getting an upgrade, with the expectation of a bounce ahead.",
+    "url": "https://www.cnbc.com/investingclub/2026/10/22/were-dipping-back-into-the-data-center-trade-with-small-buy.html",
+    "source": "markets",
+    "published": "2026-10-22T17:28",
+    "tags": [],
+    "kind": "general",
+    "collected_at": "2026-10-22T18:06:09+00:00"
+  },
+  {
+    "headline": "Underdog taps zerohash to bring crypto deposits to prediction markets",
+    "snippet": "The new funding option, expected to launch later this year, will allow eligible Underdog users to deposit digital assets around the clock.",
+    "url": "https://cointelegraph.com/news/underdog-taps-zerohash-to-bring-crypto-deposits-to-prediction-markets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "source": "markets",
+    "published": "2026-10-22T17:24",
+    "tags": [],
+    "kind": "crypto",
+    "collected_at": "2026-10-22T18:06:09+00:00"
+  },
+  {
+    "headline": "Bitcoin hashrate hits seven-month high as AI shift fails to ease mining competition",
+    "snippet": "According to BlocksBridge, Bitcoin’s mining difficulty is rising despite the industry’s AI transition, with smaller operators potentially absorbing equipment abandoned by larger competitors.",
+    "url": "https://cointelegraph.com/news/bitcoin-mining-difficulty-hashrate-recovery-ai-shift?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "source": "markets",
+    "published": "2026-10-22T16:50",
+    "tags": [
+      "BTCUSD"
+    ],
+    "kind": "crypto",
+    "collected_at": "2026-10-22T18:06:09+00:00"
+  },
+  {
+    "headline": "Irish cenbank fines Coinbase arm $3.6M for oversight, safeguard failures",
+    "snippet": "According to the Central Bank of Ireland, Coinbase Ireland had agreed with the facts around the enforcement action and will be subject to fines and sanctions upon approval by a high court.",
+    "url": "https://cointelegraph.com/news/ireland-central-bank-coinbase-oversight-safeguard-failure?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "source": "markets",
+    "published": "2026-10-22T16:48",
+    "tags": [],
+    "kind": "crypto",
+    "collected_at": "2026-10-22T18:06:09+00:00"
+  },
+  {
+    "headline": "Bitcoin circles $81.5K ETF cost basis as Trump Iran comments send stocks lower",
+    "snippet": "Bitcoin extended daily losses to 3% as US stocks came under pressure from President Donald Trump’s comments on Iran military action.",
+    "url": "https://cointelegraph.com/markets/bitcoin-circles-815k-etf-cost-basis-as-trump-iran-comments-send-stocks-lower?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "source": "markets",
+    "published": "2026-10-22T16:20",
+    "tags": [
+      "BTCUSD",
+      "US500"
+    ],
+    "kind": "crypto",
+    "collected_at": "2026-10-22T18:06:09+00:00"
+  },
+  {
+    "headline": "Pepsi renews contract with Taco Bell days after KFC switches to Coke in the U.S.",
+    "snippet": "Taco Bell is sticking with longtime beverage supplier PepsiCo, even though sister chain KFC defected to Coca-Cola.",
+    "url": "https://www.cnbc.com/2026/10/22/pepsico-taco-bell-beverage-deal.html",
+    "source": "markets",
+    "published": "2026-10-22T15:52",
+    "tags": [],
+    "kind": "general",
+    "collected_at": "2026-10-22T18:06:09+00:00"
+  },
+  {
+    "headline": "AI stocks tumble as the defensives rise. What it says about this uneasy market",
+    "snippet": "The Investing Club holds its \"Morning Meeting\" every weekday at 10:20 a.m. ET.",
+    "url": "https://www.cnbc.com/investingclub/2026/10/22/ai-stocks-tumble-as-the-defensives-rise-what-it-says-about-this-uneasy-market.html",
+    "source": "markets",
+    "published": "2026-10-22T15:45",
+    "tags": [],
+    "kind": "general",
+    "collected_at": "2026-10-22T18:06:09+00:00"
+  },
+  {
+    "headline": "Irish central bank fines Coinbase Ireland $3.6 million over fund safeguarding failures",
+    "snippet": "",
+    "url": "https://www.coindesk.com/policy/2026/10/22/irish-central-bank-fines-coinbase-ireland-usd3-6-million-over-fund-safeguarding-failures",
+    "source": "markets",
+    "published": "2026-10-22T15:40",
+    "tags": [],
+    "kind": "crypto",
+    "collected_at": "2026-10-22T18:06:09+00:00"
+  },
+  {
+    "headline": "Cruise lines chase luxury travelers with suites for up to $25,000 a night",
+    "snippet": "CNBC got a tour of the Regent Suite, a top-of-the-line offering on Regent's Seven Seas Splendor that goes for $15,000 a night.",
+    "url": "https://www.cnbc.com/2026/10/22/luxury-cruise-suites-regent-seven-seas.html",
+    "source": "markets",
+    "published": "2026-10-22T15:16",
+    "tags": [],
+    "kind": "general",
+    "collected_at": "2026-10-22T18:06:09+00:00"
+  },
+  {
+    "headline": "As Trump's support slips, white evangelicals remain his Republican bedrock - Reuters",
+    "snippet": "As Trump's support slips, white evangelicals remain his Republican bedrock Reuters",
+    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQRnNVTGtmN2VWX3RIWkxlUEx6d2hVV1djTnhWellIdWZMM1JMa1RrbTVKMlIycEI0em5CcHYtMXhucUFOdk5vZW9LZHVLRzNNWExIcHZqeVFtRFFxTlY3MDNka0l1VjE4T2NnOExIWFBlWXI1V1ZSVXRaRXVIVFB0UTFCcGpGZjZYUk9SekxGNE9GUWg0V3p4VW14MHVEUkY3MWNPQzdGMzRJVTZRVmIzZDRkS2Y?oc=5",
+    "source": "markets",
+    "published": "2026-10-22T15:07",
+    "tags": [],
+    "kind": "general",
+    "collected_at": "2026-10-22T18:06:09+00:00"
+  },
+  {
+    "headline": "Crypto for Advisors: Stablecoins are ready for prime time",
+    "snippet": "",
+    "url": "https://www.coindesk.com/coindesk-indices/2026/10/22/crypto-for-advisors-stablecoins-are-ready-for-prime-time",
+    "source": "markets",
+    "published": "2026-10-22T14:58",
+    "tags": [],
+    "kind": "crypto",
+    "collected_at": "2026-10-22T18:06:09+00:00"
+  },
+  {
+    "headline": "Fireblocks disputes report of $2.5B Visa acquisition talks",
+    "snippet": "Fireblocks told Cointelegraph that reports of a potential $2.5 billion acquisition by Visa are “not true at present time,” while Visa declined to comment on the reported talks.",
+    "url": "https://cointelegraph.com/news/fireblocks-disputes-report-of-25b-visa-acquisition-talks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "source": "markets",
+    "published": "2026-10-22T14:39",
+    "tags": [],
+    "kind": "crypto",
+    "collected_at": "2026-10-22T18:06:09+00:00"
+  },
+  {
+    "headline": "Citi sees oil risks skewed to upside despite recovery in Gulf exports - Reuters",
+    "snippet": "Citi sees oil risks skewed to upside despite recovery in Gulf exports Reuters",
+    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOakVZV3hhS1BtQ2puTC1WcVZBYXo2bEI3bE0xaS1keVpmVkduLTBFT2tvSkRiSUk3RTA2dDBXd3o5TDk1VjFJNFpWN2xXdmZGby1UWWl2MkFxMDZJd056WnpmRU1IUXhWaXZiR2JzWkQwaFBvcC04MGZjUUd6THZTd0c2TmZ4YjlwUHVxeWR6bzRnSDV6VW5jNDlDRDgyaTFoclFnQi02aXZUZnJKa1Q1OTlkaVdlQQ?oc=5",
+    "source": "markets",
+    "published": "2026-10-22T14:37",
+    "tags": [],
+    "kind": "general",
+    "collected_at": "2026-10-22T18:06:09+00:00"
+  },
+  {
+    "headline": "Crypto custody specialist Fireblocks denies it's in talks to be acquired by Visa",
+    "snippet": "",
+    "url": "https://www.coindesk.com/business/2026/10/22/crypto-custody-specialist-fireblocks-denies-its-in-talks-to-be-acquired-by-visa",
+    "source": "markets",
+    "published": "2026-10-22T14:37",
+    "tags": [],
+    "kind": "crypto",
+    "collected_at": "2026-10-22T18:06:09+00:00"
+  },
+  {
+    "headline": "Gulf markets fall as fresh Houthi strikes on Saudi Arabia raise regional risk - Reuters",
+    "snippet": "Gulf markets fall as fresh Houthi strikes on Saudi Arabia raise regional risk Reuters",
+    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOQS1ESU5ra242UzdCbkxuVkNzUkV2NWZVTGlRcDZnSzJBeE5KTkFyMEZvaTd0ZEl4LWduc0lmbGZkRnV6REF1dV9VUkRESHpVM3lLUkt0SmtfQzJDLXdnZ0l6akwwOWZpS1lza2tSbHczcnlpU2JPSXo5eHNrY0c4aWNpWjNJSlFYa2M2UEhDNnVsUnQySGF6MVJSY1FPam1LSlliSkJUTzFKck9tZ2J6S2xlUnVSam1TTllJbUxQWmtTcjQ?oc=5",
+    "source": "markets",
+    "published": "2026-10-22T13:44",
+    "tags": [],
+    "kind": "general",
+    "collected_at": "2026-10-22T18:06:09+00:00"
+  },
+  {
+    "headline": "CryptoQuant CEO calls rising Bitcoin hashrate ‘indirect bullish signal’ from institutions",
+    "snippet": "Public miners backed by major TradFi players are coming back online, boosting Bitcoin’s hashrate, a positive sign for BTC’s fundamentals, according to CryptoQuant’s Ki Young Ju.",
+    "url": "https://cointelegraph.com/markets/cryptoquant-rising-bitcoin-hashrate-indirect-bullish-signal?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "source": "markets",
+    "published": "2026-10-22T13:42",
+    "tags": [
+      "BTCUSD"
+    ],
+    "kind": "crypto",
+    "collected_at": "2026-10-22T18:06:09+00:00"
+  },
+  {
     "headline": "Jobless claims near the lowest since the 1960s as low-fire trend continues",
     "snippet": "Initial filings for unemployment insurance slipped to a seasonally adjusted 194,000.",
     "url": "https://www.cnbc.com/2026/10/22/jobless-claims-record-low-weekly.html",
@@ -7,7 +174,19 @@
     "published": "2026-10-22T13:21",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-10-22T13:42:21+00:00"
+    "collected_at": "2026-10-22T18:06:09+00:00"
+  },
+  {
+    "headline": "Thailand SEC says several companies eye crypto ETFs, none has applied",
+    "snippet": "Thailand’s SEC says several asset managers have sought consultations on spot crypto ETFs, but it cannot confirm whether the first funds will launch in 2026.",
+    "url": "https://cointelegraph.com/news/thailand-sec-crypto-etf-applications?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "source": "markets",
+    "published": "2026-10-22T13:20",
+    "tags": [
+      "ETHUSD"
+    ],
+    "kind": "crypto",
+    "collected_at": "2026-10-22T18:06:09+00:00"
   },
   {
     "headline": "SoFi unveils bank-issued tokenized deposit for yield-bearing crypto funds",
@@ -17,7 +196,7 @@
     "published": "2026-10-22T13:13",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-10-22T13:42:21+00:00"
+    "collected_at": "2026-10-22T18:06:09+00:00"
   },
   {
     "headline": "Bitcoin ETF buyers are trend followers, not setters, DWF Labs says",
@@ -29,7 +208,7 @@
       "BTCUSD"
     ],
     "kind": "crypto",
-    "collected_at": "2026-10-22T13:42:21+00:00"
+    "collected_at": "2026-10-22T18:06:09+00:00"
   },
   {
     "headline": "Crypto is making a splash in U.S. elections — but chiefly in jabs about industry influence",
@@ -39,7 +218,29 @@
     "published": "2026-10-22T13:00",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-10-22T13:42:21+00:00"
+    "collected_at": "2026-10-22T18:06:09+00:00"
+  },
+  {
+    "headline": "Saudi Aramco tells staff to evacuate Dhahran headquarters, sources say - Reuters",
+    "snippet": "Saudi Aramco tells staff to evacuate Dhahran headquarters, sources say Reuters",
+    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNNDNYdWIxY2pGbkhqRTlJNmJRMUE4N1RsclJwWklRYzdQUy04Wi1ObjlQNm1JaER4QVpRREs1NkdOeVNzYi1wd3lURFQ0S29OYkdJOERlQUdlSlBQMU1Mb2VzRDVaZlpUbWt0UGdpODc3a0FjWkVoUDIyWEZCeHlSd2JfZkIzLVNNVV9LSFcyVGpNaFU0S3JOV19wc29qWU90SGJrV04xRlQ5cjlBMUp0dFZ5UlgzR3F0MEdJXw?oc=5",
+    "source": "markets",
+    "published": "2026-10-22T12:51",
+    "tags": [],
+    "kind": "general",
+    "collected_at": "2026-10-22T18:06:09+00:00"
+  },
+  {
+    "headline": "Our top 10 things to watch in the stock market Thursday",
+    "snippet": "Meta and Tesla are falling after earnings.",
+    "url": "https://www.cnbc.com/investingclub/2026/10/22/our-top-10-things-to-watch-in-the-stock-market-thursday.html",
+    "source": "markets",
+    "published": "2026-10-22T12:51",
+    "tags": [
+      "US500"
+    ],
+    "kind": "general",
+    "collected_at": "2026-10-22T18:06:09+00:00"
   },
   {
     "headline": "Canada September PPI +2.0% m/m vs +1.3% prior",
@@ -51,7 +252,7 @@
       "CAD"
     ],
     "kind": "forex",
-    "collected_at": "2026-10-22T13:42:21+00:00"
+    "collected_at": "2026-10-22T18:06:09+00:00"
   },
   {
     "headline": "Ethereum’s four-minute settlement plan could lower the cost of moving crypto",
@@ -63,7 +264,7 @@
       "ETHUSD"
     ],
     "kind": "crypto",
-    "collected_at": "2026-10-22T13:42:21+00:00"
+    "collected_at": "2026-10-22T18:06:09+00:00"
   },
   {
     "headline": "American Express brings Airbnb bookings and rewards to Amex Travel platform",
@@ -73,7 +274,7 @@
     "published": "2026-10-22T12:00",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-10-22T13:42:21+00:00"
+    "collected_at": "2026-10-22T18:06:09+00:00"
   },
   {
     "headline": "The UK needs a workable route to regulated DeFi access",
@@ -85,7 +286,7 @@
       "EUR"
     ],
     "kind": "crypto",
-    "collected_at": "2026-10-22T13:42:21+00:00"
+    "collected_at": "2026-10-22T18:06:09+00:00"
   },
   {
     "headline": "Israeli settlers steal Palestinians' olives as attacks on harvest grow more violent - Reuters",
@@ -95,7 +296,7 @@
     "published": "2026-10-22T11:49",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-10-22T13:42:21+00:00"
+    "collected_at": "2026-10-22T18:06:09+00:00"
   },
   {
     "headline": "Comcast beats earnings expectations as media revenue offsets weakness in connectivity",
@@ -105,7 +306,7 @@
     "published": "2026-10-22T11:42",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-10-22T13:42:21+00:00"
+    "collected_at": "2026-10-22T18:06:09+00:00"
   },
   {
     "headline": "Trump's approval rating on economy hits all-time low as midterm looms: CNBC survey",
@@ -115,17 +316,7 @@
     "published": "2026-10-22T11:40",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-10-22T13:42:21+00:00"
-  },
-  {
-    "headline": "Saudi Aramco tells staff to evacuate Dhahran headquarters, sources say - Reuters",
-    "snippet": "Saudi Aramco tells staff to evacuate Dhahran headquarters, sources say Reuters",
-    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNNDNYdWIxY2pGbkhqRTlJNmJRMUE4N1RsclJwWklRYzdQUy04Wi1ObjlQNm1JaER4QVpRREs1NkdOeVNzYi1wd3lURFQ0S29OYkdJOERlQUdlSlBQMU1Mb2VzRDVaZlpUbWt0UGdpODc3a0FjWkVoUDIyWEZCeHlSd2JfZkIzLVNNVV9LSFcyVGpNaFU0S3JOV19wc29qWU90SGJrV04xRlQ5cjlBMUp0dFZ5UlgzR3F0MEdJXw?oc=5",
-    "source": "markets",
-    "published": "2026-10-22T11:28",
-    "tags": [],
-    "kind": "general",
-    "collected_at": "2026-10-22T13:42:21+00:00"
+    "collected_at": "2026-10-22T18:06:09+00:00"
   },
   {
     "headline": "Procter & Gamble earnings beat as sales rise 4%, boosted by laundry and home products",
@@ -137,7 +328,7 @@
       "US500"
     ],
     "kind": "general",
-    "collected_at": "2026-10-22T13:42:21+00:00"
+    "collected_at": "2026-10-22T18:06:09+00:00"
   },
   {
     "headline": "Crypto traders seek shelter in bitcoin as altcoins slide and ETF flows wobble",
@@ -149,17 +340,7 @@
       "BTCUSD"
     ],
     "kind": "crypto",
-    "collected_at": "2026-10-22T13:42:21+00:00"
-  },
-  {
-    "headline": "As Trump's support slips, white evangelicals remain his Republican bedrock - Reuters",
-    "snippet": "As Trump's support slips, white evangelicals remain his Republican bedrock Reuters",
-    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQRnNVTGtmN2VWX3RIWkxlUEx6d2hVV1djTnhWellIdWZMM1JMa1RrbTVKMlIycEI0em5CcHYtMXhucUFOdk5vZW9LZHVLRzNNWExIcHZqeVFtRFFxTlY3MDNka0l1VjE4T2NnOExIWFBlWXI1V1ZSVXRaRXVIVFB0UTFCcGpGZjZYUk9SekxGNE9GUWg0V3p4VW14MHVEUkY3MWNPQzdGMzRJVTZRVmIzZDRkS2Y?oc=5",
-    "source": "markets",
-    "published": "2026-10-22T11:06",
-    "tags": [],
-    "kind": "general",
-    "collected_at": "2026-10-22T13:42:21+00:00"
+    "collected_at": "2026-10-22T18:06:09+00:00"
   },
   {
     "headline": "CoinDCX pledges no user losses after $16M transfers draw scrutiny",
@@ -169,17 +350,7 @@
     "published": "2026-10-22T10:53",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-10-22T13:42:21+00:00"
-  },
-  {
-    "headline": "COMMENTARY: Asia buys more LNG despite surging prices, El Nino clouds outlook - Reuters",
-    "snippet": "COMMENTARY: Asia buys more LNG despite surging prices, El Nino clouds outlook Reuters",
-    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOZEd6MUJ0RzZBWktFMGFuNkUzNVZKejZBX3EtdmdGUW5SQWpmM18yNEpWb212MzA5dENESGNJcHVWaXNBdTFNc2oyM1FNS2l5bmJLaWNCb3cwaG1WX3FYUXItdHo4cDhsV1Q1ZXNpVXZaVE1ReTVpY0hXN0V3NDFpYVJpWWY0OTk0MV85VHFJSmVNa001SVdnOF9EUkhieURyQjlfX1NzTGY2WmZZcVQxenhkZVBIMVVQdTBHTVZucWpONFdWOXBQQnRudFpEdw?oc=5",
-    "source": "markets",
-    "published": "2026-10-22T10:51",
-    "tags": [],
-    "kind": "general",
-    "collected_at": "2026-10-22T13:42:21+00:00"
+    "collected_at": "2026-10-22T18:06:09+00:00"
   },
   {
     "headline": "Bitcoin slides below $82,000 as AI doubts return, with DeFi tokens leading declines",
@@ -191,7 +362,7 @@
       "BTCUSD"
     ],
     "kind": "crypto",
-    "collected_at": "2026-10-22T13:42:21+00:00"
+    "collected_at": "2026-10-22T18:06:09+00:00"
   },
   {
     "headline": "Bitcoin corrects below $82K after Tesla Q3 results, KOSPI falls",
@@ -203,7 +374,7 @@
       "BTCUSD"
     ],
     "kind": "crypto",
-    "collected_at": "2026-10-22T13:42:21+00:00"
+    "collected_at": "2026-10-22T18:06:09+00:00"
   },
   {
     "headline": "Crypto traders price India telecoms company Reliance Jio's IPO at about $110 billion",
@@ -213,7 +384,7 @@
     "published": "2026-10-22T10:18",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-10-22T13:42:21+00:00"
+    "collected_at": "2026-10-22T18:06:09+00:00"
   },
   {
     "headline": "Solana plunges as geopolitical tensions overshadow Alpenglow upgrade amid macroeconomic concerns",
@@ -228,7 +399,7 @@
       "GLOBAL"
     ],
     "kind": "crypto",
-    "collected_at": "2026-10-22T13:42:21+00:00"
+    "collected_at": "2026-10-22T18:06:09+00:00"
   },
   {
     "headline": "Live updates: Bitcoin’s round trip to $85,000 burns traders on both sides",
@@ -240,7 +411,7 @@
       "BTCUSD"
     ],
     "kind": "crypto",
-    "collected_at": "2026-10-22T13:42:21+00:00"
+    "collected_at": "2026-10-22T18:06:09+00:00"
   },
   {
     "headline": "Turkey says it is waiting for sale contract from Qatar for Eurofighter Typhoon jet procurement - Reuters",
@@ -252,7 +423,7 @@
       "EUR"
     ],
     "kind": "general",
-    "collected_at": "2026-10-22T13:42:21+00:00"
+    "collected_at": "2026-10-22T18:06:09+00:00"
   },
   {
     "headline": "Starknet voters back research into life beyond Ethereum",
@@ -264,7 +435,7 @@
       "ETHUSD"
     ],
     "kind": "crypto",
-    "collected_at": "2026-10-22T13:42:21+00:00"
+    "collected_at": "2026-10-22T18:06:09+00:00"
   },
   {
     "headline": "Greece says it is implementing sanctions linked to Iran - Reuters",
@@ -274,7 +445,7 @@
     "published": "2026-10-22T09:14",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-10-22T13:42:21+00:00"
+    "collected_at": "2026-10-22T18:06:09+00:00"
   },
   {
     "headline": "Turkey to host regional and European foreign ministers for talks on regional conflicts, source says - Reuters",
@@ -286,7 +457,7 @@
       "EUR"
     ],
     "kind": "general",
-    "collected_at": "2026-10-22T13:42:21+00:00"
+    "collected_at": "2026-10-22T18:06:09+00:00"
   },
   {
     "headline": "PHP flaw draws millions of exploit attempts, Cloudflare CEO warns",
@@ -296,7 +467,7 @@
     "published": "2026-10-22T09:06",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-10-22T13:42:21+00:00"
+    "collected_at": "2026-10-22T18:06:09+00:00"
   },
   {
     "headline": "Asian stocks tumble, bitcoin retreats as China enters bear market",
@@ -310,17 +481,7 @@
       "BTCUSD"
     ],
     "kind": "crypto",
-    "collected_at": "2026-10-22T13:42:21+00:00"
-  },
-  {
-    "headline": "Gulf markets fall as fresh Houthi strikes on Saudi Arabia raise regional risk - Reuters",
-    "snippet": "Gulf markets fall as fresh Houthi strikes on Saudi Arabia raise regional risk Reuters",
-    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOQS1ESU5ra242UzdCbkxuVkNzUkV2NWZVTGlRcDZnSzJBeE5KTkFyMEZvaTd0ZEl4LWduc0lmbGZkRnV6REF1dV9VUkRESHpVM3lLUkt0SmtfQzJDLXdnZ0l6akwwOWZpS1lza2tSbHczcnlpU2JPSXo5eHNrY0c4aWNpWjNJSlFYa2M2UEhDNnVsUnQySGF6MVJSY1FPam1LSlliSkJUTzFKck9tZ2J6S2xlUnVSam1TTllJbUxQWmtTcjQ?oc=5",
-    "source": "markets",
-    "published": "2026-10-22T07:59",
-    "tags": [],
-    "kind": "general",
-    "collected_at": "2026-10-22T13:42:21+00:00"
+    "collected_at": "2026-10-22T18:06:09+00:00"
   },
   {
     "headline": "Bitcoin ETFs bag another $528M, taking 3-day haul past $1B",
@@ -332,7 +493,7 @@
       "BTCUSD"
     ],
     "kind": "crypto",
-    "collected_at": "2026-10-22T13:42:21+00:00"
+    "collected_at": "2026-10-22T18:06:09+00:00"
   },
   {
     "headline": "France business confidence improves in October but cracks remain beneath the surface",
@@ -358,7 +519,7 @@
       "BTCUSD"
     ],
     "kind": "crypto",
-    "collected_at": "2026-10-22T13:42:21+00:00"
+    "collected_at": "2026-10-22T18:06:09+00:00"
   },
   {
     "headline": "COMMENTARY: China uses crude stockpiles, but rising oil imports may curtail draws - Reuters",
@@ -385,7 +546,7 @@
       "GLOBAL"
     ],
     "kind": "general",
-    "collected_at": "2026-10-22T13:42:21+00:00"
+    "collected_at": "2026-10-22T18:06:09+00:00"
   },
   {
     "headline": "IMF sees 1.3% contraction in Middle East, North Africa and Pakistan in 2026 - Reuters",
@@ -407,7 +568,7 @@
     "published": "2026-10-22T06:02",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-10-22T13:42:21+00:00"
+    "collected_at": "2026-10-22T18:06:09+00:00"
   },
   {
     "headline": "COMMENTARY: Don't mistake Mideast oil rebound for normality - Reuters",
@@ -417,7 +578,7 @@
     "published": "2026-10-22T06:00",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-10-22T13:42:21+00:00"
+    "collected_at": "2026-10-22T18:06:09+00:00"
   },
   {
     "headline": "German regulator revokes license of Bank Saderat Iran in Hamburg - Reuters",
@@ -427,7 +588,7 @@
     "published": "2026-10-22T05:39",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-10-22T13:42:21+00:00"
+    "collected_at": "2026-10-22T18:06:09+00:00"
   },
   {
     "headline": "Move over memecoins: Crypto ‘meme games’ coming, bagholders and all",
@@ -437,7 +598,7 @@
     "published": "2026-10-22T05:35",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-10-22T13:42:21+00:00"
+    "collected_at": "2026-10-22T18:06:09+00:00"
   },
   {
     "headline": "Solana completes Alpenglow upgrade. Here’s what it means for users",
@@ -449,7 +610,7 @@
       "SOLUSD"
     ],
     "kind": "crypto",
-    "collected_at": "2026-10-22T13:42:21+00:00"
+    "collected_at": "2026-10-22T18:06:09+00:00"
   },
   {
     "headline": "Chart of the day: Gold price falls below $4,100 as sellers threaten another breakdown",
@@ -475,7 +636,7 @@
       "BTCUSD"
     ],
     "kind": "crypto",
-    "collected_at": "2026-10-22T13:42:21+00:00"
+    "collected_at": "2026-10-22T18:06:09+00:00"
   },
   {
     "headline": "Iran's IRGC Navy says seven vessels hit, warns US of wider response - Reuters",
@@ -485,7 +646,7 @@
     "published": "2026-10-22T04:40",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-10-22T13:42:21+00:00"
+    "collected_at": "2026-10-22T18:06:09+00:00"
   },
   {
     "headline": "XRP Ledger bug fix moved to November after validator support dipped for two hours",
@@ -509,7 +670,7 @@
       "EUR"
     ],
     "kind": "general",
-    "collected_at": "2026-10-22T13:42:21+00:00"
+    "collected_at": "2026-10-22T18:06:09+00:00"
   },
   {
     "headline": "Bitcoin gives back its run at $85,000 as Tesla and Meta fail to calm AI nerves",
@@ -531,7 +692,7 @@
     "published": "2026-10-22T02:46",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-10-22T13:42:21+00:00"
+    "collected_at": "2026-10-22T18:06:09+00:00"
   },
   {
     "headline": "Dip in the dollar takes a breather with Fed in focus - Reuters",
@@ -543,7 +704,7 @@
       "USD"
     ],
     "kind": "general",
-    "collected_at": "2026-10-22T13:42:21+00:00"
+    "collected_at": "2026-10-22T18:06:09+00:00"
   },
   {
     "headline": "Bank of Korea holds rates as expected after back-to-back hikes - Reuters",
@@ -553,7 +714,7 @@
     "published": "2026-10-22T00:54",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-10-22T13:42:21+00:00"
+    "collected_at": "2026-10-22T18:06:09+00:00"
   },
   {
     "headline": "Bitmine’s 5% hard cap leaves Ether’s biggest corporate buyer weeks from the exit",
@@ -566,6 +727,16 @@
     ],
     "kind": "crypto",
     "collected_at": "2026-10-22T07:59:32+00:00"
+  },
+  {
+    "headline": "Oil hits five-month high as Houthi attacks stoke supply fears - Reuters",
+    "snippet": "Oil hits five-month high as Houthi attacks stoke supply fears Reuters",
+    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOYzBEdGVKYmZ3VVpJajg0TW5DN2VHVEM2aDVTcFJKQVduMnVMTU5NbVcyMGxBanBHY3VvMzJQR1VrQWM4b0hLeG1YaTFWcldTeU9yTlBXc3FiR1FtcUp0SmxhRkJkWmpmZ2x6X3VGZHZEUDNLTE9LTFZNSlBWWjNJVGtaV3YwWkc4QVhxbHozYkx5THpZMVlYVDAtd0dqbUMyOUcyVk91NEYxaFFCZklRWWhjQm5qN2NvVHdWdnZIQVJSMk0?oc=5",
+    "source": "markets",
+    "published": "2026-10-22T00:46",
+    "tags": [],
+    "kind": "general",
+    "collected_at": "2026-10-22T18:06:09+00:00"
   },
   {
     "headline": "Oil jumps on escalating Middle East conflict - Reuters",
@@ -606,6 +777,85 @@
     "tags": [],
     "kind": "crypto",
     "collected_at": "2026-10-22T13:42:21+00:00"
+  },
+  {
+    "headline": "COMMENTARY: Asia buys more LNG despite surging prices, El Nino clouds outlook - Reuters",
+    "snippet": "COMMENTARY: Asia buys more LNG despite surging prices, El Nino clouds outlook Reuters",
+    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOZEd6MUJ0RzZBWktFMGFuNkUzNVZKejZBX3EtdmdGUW5SQWpmM18yNEpWb212MzA5dENESGNJcHVWaXNBdTFNc2oyM1FNS2l5bmJLaWNCb3cwaG1WX3FYUXItdHo4cDhsV1Q1ZXNpVXZaVE1ReTVpY0hXN0V3NDFpYVJpWWY0OTk0MV85VHFJSmVNa001SVdnOF9EUkhieURyQjlfX1NzTGY2WmZZcVQxenhkZVBIMVVQdTBHTVZucWpONFdWOXBQQnRudFpEdw?oc=5",
+    "source": "markets",
+    "published": "2026-10-22T00:19",
+    "tags": [],
+    "kind": "general",
+    "collected_at": "2026-10-22T18:06:09+00:00"
+  },
+  {
+    "headline": "IQM Quantum Computers Plc: IQM Quantum Computers Announces Conference Call to Report Third Quarter 2026 Financial Results on November 5, 2026",
+    "snippet": "As published previously, IQM Quantum Computers Plc (Nasdaq: IQMX) (\"IQM\" or the \"Company\"), a global leader in superconducting quantum computers, will report financial results for the third quarte...",
+    "url": "",
+    "source": "global",
+    "published": "2026-10-22 06:06:00",
+    "tags": [
+      "US500",
+      "US100",
+      "GLOBAL"
+    ],
+    "collected_at": "2026-10-22T18:06:09+00:00"
+  },
+  {
+    "headline": "TRADING UPDATE - October 2026",
+    "snippet": "Regulatory News: 7.00am BST 22 October 2026 RELX, the global provider of information-based analytics and decision tools, reports strong underlying revenue growth for the first nine months of 2026 ...",
+    "url": "",
+    "source": "global",
+    "published": "2026-10-22 06:06:00",
+    "tags": [
+      "GLOBAL"
+    ],
+    "collected_at": "2026-10-22T18:06:09+00:00"
+  },
+  {
+    "headline": "Sartorius 9-month Profit Climbs; Confirms FY26 Outlook",
+    "snippet": "WASHINGTON (dpa-AFX) - Sartorius AG (SARTF, SRT.DE), a German pharmaceutical and lab equipment company, reported Thursday higher profit in the first nine months of fiscal 2026, driven by sales gro...",
+    "url": "",
+    "source": "global",
+    "published": "2026-10-22 06:06:00",
+    "tags": [],
+    "collected_at": "2026-10-22T18:06:09+00:00"
+  },
+  {
+    "headline": "Putin agrees to resume US-mediated peace talks with Ukraine",
+    "snippet": "The Kremlin says talks could resume in November after Putin met US envoy Steve Witkoff, as Russia released American Stephen Hubbard.",
+    "url": "",
+    "source": "global",
+    "published": "2026-10-22 06:06:00",
+    "tags": [],
+    "collected_at": "2026-10-22T18:06:09+00:00"
+  },
+  {
+    "headline": "3rd Quarter Results",
+    "snippet": "",
+    "url": "",
+    "source": "global",
+    "published": "2026-10-22 06:06:00",
+    "tags": [],
+    "collected_at": "2026-10-22T18:06:09+00:00"
+  },
+  {
+    "headline": "Thai agencies warn alligator gar eggs remain poisonous after cooking",
+    "snippet": "The public is advised to avoid the eggs and go to hospital immediately if symptoms develop after eating them, informing doctors what they consumed.",
+    "url": "",
+    "source": "global",
+    "published": "2026-10-22 06:06:00",
+    "tags": [],
+    "collected_at": "2026-10-22T18:06:09+00:00"
+  },
+  {
+    "headline": "Castelnau Group Limited - Q3 2026 NET ASSET VALUE AND INVESTMENT REPORT",
+    "snippet": "Castelnau Group Limited - Q3 2026 NET ASSET VALUE AND INVESTMENT REPORTPR NewswireLONDON, United Kingdom, October 22 NOT FOR RELEASE, PUBLICATION OR DISTRIBUTION, DIRECTLY OR INDIRECTLY, IN WHOLE O...",
+    "url": "",
+    "source": "global",
+    "published": "2026-10-22 06:06:00",
+    "tags": [],
+    "collected_at": "2026-10-22T18:06:09+00:00"
   },
   {
     "headline": "'It's quite beneath you': El-Sayed response to Rogers' attack about Muslim Brotherhood",
@@ -692,7 +942,7 @@
       "CNY"
     ],
     "kind": "general",
-    "collected_at": "2026-10-22T13:42:21+00:00"
+    "collected_at": "2026-10-22T18:06:09+00:00"
   },
   {
     "headline": "New Zealand inflation slows to 3.7% in Q3, below forecasts, keeping RBNZ hike on track",
@@ -4025,240 +4275,5 @@
     "published": "2026-10-20 13:20:00",
     "tags": [],
     "collected_at": "2026-10-21T01:20:16+00:00"
-  },
-  {
-    "headline": "DDB Capital Invites Partners to Grow Its Southeast Residential Land Platform",
-    "snippet": "Firm seeks relationships with capital partners, landowners and homebuilders who share a disciplined approach to development ALPHARETTA, Ga., Oct. 20, 2026 /PRNewswire/ -- DDB Capital is inviting capital partners, landowners and homebuilders to explore opportunities to grow alongside its...",
-    "url": "",
-    "source": "global",
-    "published": "2026-10-20 13:20:00",
-    "tags": [
-      "US500",
-      "US30"
-    ],
-    "collected_at": "2026-10-21T01:20:16+00:00"
-  },
-  {
-    "headline": "Google's UK Cloud suffers failures, financial services impacted",
-    "snippet": "Google Cloud services experienced serious network disruptions at its European data center based in London on Tuesday, according to the tech giant's service health website. Digital...",
-    "url": "",
-    "source": "global",
-    "published": "2026-10-20 10:16:00",
-    "tags": [
-      "EUR"
-    ],
-    "collected_at": "2026-10-20T22:16:54+00:00"
-  },
-  {
-    "headline": "Prices of bread, milk and meat to rise on back of heatwaves and war, ECB warns",
-    "snippet": "ECB economists say drought and energy price shocks are starting to bite, with food prices set to rise throughout the next year",
-    "url": "",
-    "source": "global",
-    "published": "2026-10-20 10:16:00",
-    "tags": [
-      "EUR"
-    ],
-    "collected_at": "2026-10-20T22:16:54+00:00"
-  },
-  {
-    "headline": "Ashland BZA public hearing today",
-    "snippet": "ASHLAND The Ashland Board of Zoning Adjustment will conduct a public hearing today at 5:30 p.m. in the city commission chambers after an applicant has requested a conditional use permit for a data center facility at the former AK Steel…",
-    "url": "",
-    "source": "global",
-    "published": "2026-10-20 10:16:00",
-    "tags": [],
-    "collected_at": "2026-10-20T22:16:54+00:00"
-  },
-  {
-    "headline": "TV review: The Book that Changed my Life and Being Muslim after 9/11",
-    "snippet": "THE Department for Education has designated 2026 as the National Year of Reading, an initiative intended to reignite the nation’s enthusiasm (Leader comment, 24 October 2025). Campaigns to encourage reading are perennial, but, in the smartphone er...",
-    "url": "",
-    "source": "global",
-    "published": "2026-10-20 10:16:00",
-    "tags": [],
-    "collected_at": "2026-10-20T22:16:54+00:00"
-  },
-  {
-    "headline": "Can a Simple App Really Fix PC Game Stutters?",
-    "snippet": "Shader compilation stutter has plagued PC gaming for years, causing frustrating hitches even on powerful hardware. The SCSKiller app promises to do something about it, but does it work? Read Entire Article",
-    "url": "",
-    "source": "global",
-    "published": "2026-10-20 10:16:00",
-    "tags": [
-      "ETHUSD"
-    ],
-    "collected_at": "2026-10-20T22:16:54+00:00"
-  },
-  {
-    "headline": "Sterling rises as strong labour market data reinforces rate hike bets",
-    "snippet": "",
-    "url": "",
-    "source": "global",
-    "published": "2026-10-20 10:15:58",
-    "tags": [
-      "GBP"
-    ],
-    "collected_at": "2026-10-20T22:16:54+00:00"
-  },
-  {
-    "headline": "Zolanye McCulley-Bachicha, Pueblo County coroner candidate, on issues",
-    "snippet": "Zolanye McCulley-Bachicha is the Democratic candidate for Pueblo County coroner. Here's where she stands on the issues.",
-    "url": "",
-    "source": "global",
-    "published": "2026-10-20 10:15:58",
-    "tags": [],
-    "collected_at": "2026-10-20T22:16:54+00:00"
-  },
-  {
-    "headline": "A rumpled Democrat may ride anti-Trumpism back to Senate",
-    "snippet": "ZANESVILLE, Ohio — Before the interstate high-way system enabled drivers to enjoy efficiency by forgoing interesting experiences, traffic to and from the East and Midwest on Route 40, \"the National Road,\" flowed through, rather than around, cities. At this one,…",
-    "url": "",
-    "source": "global",
-    "published": "2026-10-20 10:15:58",
-    "tags": [],
-    "collected_at": "2026-10-20T22:16:54+00:00"
-  },
-  {
-    "headline": "The Return of US Inflationary Pressures",
-    "snippet": "Market Analysis by covering: Alphabet Inc Class A, Amazon.com Inc, United States 10-Year. Read 's Market Analysis on Investing.com",
-    "url": "",
-    "source": "global",
-    "published": "2026-10-20 07:07:00",
-    "tags": [
-      "USD"
-    ],
-    "collected_at": "2026-10-20T19:07:16+00:00"
-  },
-  {
-    "headline": "Horror as woman dragged into orchard with husband and gang-raped",
-    "snippet": "DISTRESSING CONTENT WARNING: They had their phones stolen, and the perpetrators recorded the rape, it is alleged.",
-    "url": "",
-    "source": "global",
-    "published": "2026-10-20 07:07:00",
-    "tags": [],
-    "collected_at": "2026-10-20T19:07:16+00:00"
-  },
-  {
-    "headline": "La Grande overpowers Riverhawks, 54-6",
-    "snippet": "",
-    "url": "",
-    "source": "global",
-    "published": "2026-10-20 07:07:00",
-    "tags": [],
-    "collected_at": "2026-10-20T19:07:16+00:00"
-  },
-  {
-    "headline": "Emmerdale spoilers: Thea stabbed, baby kidnapping horror and a murder mystery",
-    "snippet": "Emmerdale spoilers for next week tease high drama, as Thea Ramsden and Kim Tate battle it out with deadly consequences, while there's a kidnapping and a murder mystery",
-    "url": "",
-    "source": "global",
-    "published": "2026-10-20 07:07:00",
-    "tags": [],
-    "collected_at": "2026-10-20T19:07:16+00:00"
-  },
-  {
-    "headline": "Families demand answers over 3 custodial deaths",
-    "snippet": "The families of R Richard, G Murthy and MM Muniandy are calling for immediate inquests, citing unanswered questions surrounding the three deaths.",
-    "url": "",
-    "source": "global",
-    "published": "2026-10-20 07:07:00",
-    "tags": [],
-    "collected_at": "2026-10-20T19:07:16+00:00"
-  },
-  {
-    "headline": "Larry Page could dodge nearly $15 billion in taxes after leaving California for Miami - Fortune",
-    "snippet": "Larry Page could dodge nearly $15 billion in taxes after leaving California for Miami Fortune 'They’ve awakened him’: How a wealth tax fight made Brin a political force Politico The Fight to Tax Billionaires, and Why NDAs Are Everywhere Now The New York Times Larry Page could dodge nearly $15 billion in taxes after leaving California and spending $173 million on a Miami compound Yahoo Finance We must tax the wealth of billionaires, not just income. California can lead the way | Ro Khanna The Guardian",
-    "url": "",
-    "source": "global",
-    "published": "2026-10-20 07:07:00",
-    "tags": [],
-    "collected_at": "2026-10-20T19:07:16+00:00"
-  },
-  {
-    "headline": "Altrova Health to Host Investor Q&A Session on Tuesday, October 20 at 10:00 A.M. ET",
-    "snippet": "Toronto, Ontario--(Newsfile Corp. - October 20, 2026) - Altrova Health Inc. (CSE: ROVA) (OTCQB: ATVHF) (FSE: WF8) (\"Altrova Health\" or the \"Company\") today reminds shareholders and investors that it will host a live question-and-answer (Q&A) session on Tuesday, October 20, 2026 at 10:00 a.m. ET. Further to the Company's news release dated October 19, 2026, announcing the first U.S. sale of 2,000 units of its O-Spray™ product, management will discuss the an",
-    "url": "",
-    "source": "global",
-    "published": "2026-10-20 07:07:00",
-    "tags": [],
-    "collected_at": "2026-10-20T19:07:16+00:00"
-  },
-  {
-    "headline": "Larry Page could dodge nearly $15 billion in taxes after leaving California and spending $173 million on a Miami compound",
-    "snippet": "The Google cofounder started cutting ties with the state last year. Californians vote Nov. 3 on whether to tax their billionaires.",
-    "url": "",
-    "source": "global",
-    "published": "2026-10-20 07:07:00",
-    "tags": [
-      "ETHUSD"
-    ],
-    "collected_at": "2026-10-20T19:07:16+00:00"
-  },
-  {
-    "headline": "Why Choose Wattanosoth Hospital for Your Cancer Treatment Journey in Thailand?",
-    "snippet": "Wattanosoth Hospital supports patients beyond treatment through its Care Beyond Cure philosophy as a cancer hospital in Thailand focused on quality of life.",
-    "url": "",
-    "source": "global",
-    "published": "2026-10-20 06:02:00",
-    "tags": [],
-    "collected_at": "2026-10-20T18:02:59+00:00"
-  },
-  {
-    "headline": "InterContinental Hotels Group PLC Announces Transaction in Own Shares - October 20",
-    "snippet": "LONDON, UK / ACCESS Newswire / October 20, 2026 / The Company announces that on 19 October 2026 it purchased the following number of its ordinary shares of 20340/399pence each through Goldman Sachs...",
-    "url": "",
-    "source": "global",
-    "published": "2026-10-20 06:02:00",
-    "tags": [
-      "XAUUSD"
-    ],
-    "collected_at": "2026-10-20T18:02:59+00:00"
-  },
-  {
-    "headline": "Alberta voters reject a move toward independence in referendum backing Canadian unity",
-    "snippet": "Voters in Canada's oil-rich province of Alberta have rejected a proposal to begin a process toward independence, results showed early Tuesday, delivering a victory for supporters of Canadian unity.",
-    "url": "",
-    "source": "global",
-    "published": "2026-10-20 06:02:00",
-    "tags": [
-      "CAD"
-    ],
-    "collected_at": "2026-10-20T18:02:59+00:00"
-  },
-  {
-    "headline": "CASABOT appoints Rewire International as official UAE distributor for its on-device AI Home",
-    "snippet": "The Dubai-based distributor will supply CASABOT hardware to integrators, giving them a local source for the intelligence platform that keeps data in the home.",
-    "url": "",
-    "source": "global",
-    "published": "2026-10-20 06:02:00",
-    "tags": [],
-    "collected_at": "2026-10-20T18:02:59+00:00"
-  },
-  {
-    "headline": "Lab-grown brains can now read Braille and guide robot dogs",
-    "snippet": "Guided by millions of years of evolution, our own brain cells know a thing or two about moving through a chaotic world where learning the right move …",
-    "url": "",
-    "source": "global",
-    "published": "2026-10-20 06:02:00",
-    "tags": [],
-    "collected_at": "2026-10-20T18:02:59+00:00"
-  },
-  {
-    "headline": "United Kingdom ILO Unemployment Rate (3M) came in at 4.7% below forecasts (4.9%) in August",
-    "snippet": "United Kingdom ILO Unemployment Rate (3M) came in at 4.7% below forecasts (4.9%) in August",
-    "url": "",
-    "source": "global",
-    "published": "2026-10-20 06:01:59",
-    "tags": [],
-    "collected_at": "2026-10-20T18:02:59+00:00"
-  },
-  {
-    "headline": "Seventh day of violent clashes between Albanian protesters and police",
-    "snippet": "Protesters in Albania have fought with riot police on the seventh consecutive day of violent clashes. The protesters, many of them high school and university students, are trying to oust embattled Prime Minister Edi Rama. Official figures said 295 people have been injured, 186 of whom are police officers, before Monday’s violence. “The moment the [...] The post Seventh day of violent clashes between Albanian protesters and police appeared first on Kahawatungu.",
-    "url": "",
-    "source": "global",
-    "published": "2026-10-20 06:01:58",
-    "tags": [],
-    "collected_at": "2026-10-20T18:02:59+00:00"
   }
 ]
