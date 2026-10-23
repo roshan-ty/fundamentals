@@ -1,18 +1,42 @@
 {
   "meta": {
-    "updated": "2026-10-23T01:17:49+00:00",
+    "updated": "2026-10-23T18:01:25+00:00",
     "method": "verdict v3 (forecast-first, released-only)"
   },
   "currencies": {
     "USD": {
       "verdict": "Neutral",
       "tally": {
-        "bullish": 7.5,
-        "bearish": 7.0,
+        "bullish": 8.0,
+        "bearish": 6.5,
         "neutral": 6.0
       },
       "released_points": 17,
       "drivers": [
+        {
+          "dataPoint": "CB Consumer Confidence / UoM Consumer Sentiment",
+          "title": "Michigan Consumer Sentiment Final OCT",
+          "period": "2026-10-23T18:00+00:00",
+          "actual": "48.0",
+          "previous": "48.1",
+          "forecast": "46.3",
+          "direction": "higher_is_bullish",
+          "verdict": "bullish",
+          "weight": 0.5,
+          "note": ""
+        },
+        {
+          "dataPoint": "ISM Manufacturing PMI & ISM Services PMI",
+          "title": "S&P Global Manufacturing PMI Flash OCT",
+          "period": "2026-10-23T17:45+00:00",
+          "actual": "56.0",
+          "previous": "55.9",
+          "forecast": "55",
+          "direction": "higher_is_bullish",
+          "verdict": "bullish",
+          "weight": 1.0,
+          "note": ""
+        },
         {
           "dataPoint": "Unemployment Claims (Weekly)",
           "title": "Initial Jobless Claims OCT/17",
@@ -86,18 +110,6 @@
           "note": ""
         },
         {
-          "dataPoint": "CB Consumer Confidence / UoM Consumer Sentiment",
-          "title": "Michigan Consumer Sentiment Prel OCT",
-          "period": "2026-10-09T18:00+00:00",
-          "actual": "46.3",
-          "previous": "48.1",
-          "forecast": "48.6",
-          "direction": "higher_is_bullish",
-          "verdict": "bearish",
-          "weight": 0.5,
-          "note": ""
-        },
-        {
           "dataPoint": "Trade Balance",
           "title": "Trade Balance",
           "period": "2026-10-06T12:30+00:00",
@@ -107,18 +119,6 @@
           "direction": "higher_is_bullish",
           "verdict": "bearish",
           "weight": 0.5,
-          "note": ""
-        },
-        {
-          "dataPoint": "ISM Manufacturing PMI & ISM Services PMI",
-          "title": "ISM Services PMI SEP",
-          "period": "2026-10-05T18:00+00:00",
-          "actual": "54.9",
-          "previous": "55.4",
-          "forecast": "54",
-          "direction": "higher_is_bullish",
-          "verdict": "bullish",
-          "weight": 1.0,
           "note": ""
         },
         {
@@ -326,6 +326,18 @@
       "released_points": 8,
       "drivers": [
         {
+          "dataPoint": "Retail Sales (m/m)",
+          "title": "Retail Sales MoM SEP",
+          "period": "2026-10-23T10:00+00:00",
+          "actual": "-0.4%",
+          "previous": "0.5%",
+          "forecast": "0.5%",
+          "direction": "higher_is_bullish",
+          "verdict": "bearish",
+          "weight": 0.5,
+          "note": ""
+        },
+        {
           "dataPoint": "CPI (y/y) & Core CPI (y/y)",
           "title": "Inflation Rate YoY SEP",
           "period": "2026-10-21T10:00+00:00",
@@ -395,18 +407,6 @@
           "direction": "higher_is_bullish",
           "verdict": "neutral",
           "weight": 2.0,
-          "note": ""
-        },
-        {
-          "dataPoint": "Retail Sales (m/m)",
-          "title": "BRC Retail Sales Monitor YoY SEP",
-          "period": "2026-10-13T03:01+00:00",
-          "actual": "1%",
-          "previous": "0.5%",
-          "forecast": "1.4%",
-          "direction": "higher_is_bullish",
-          "verdict": "bearish",
-          "weight": 0.5,
           "note": ""
         },
         {
@@ -525,12 +525,24 @@
     "CAD": {
       "verdict": "Bearish",
       "tally": {
-        "bullish": 1.0,
-        "bearish": 4.5,
+        "bullish": 1.5,
+        "bearish": 4.0,
         "neutral": 4.0
       },
       "released_points": 6,
       "drivers": [
+        {
+          "dataPoint": "Retail Sales & Core Retail Sales (m/m)",
+          "title": "Retail Sales Ex Autos MoM AUG",
+          "period": "2026-10-23T16:30+00:00",
+          "actual": "1.2%",
+          "previous": "-0.7%",
+          "forecast": "0.9%",
+          "direction": "higher_is_bullish",
+          "verdict": "bullish",
+          "weight": 0.5,
+          "note": ""
+        },
         {
           "dataPoint": "CPI (m/m, y/y) & Median/Trimmed CPI",
           "title": "Inflation Rate YoY SEP",
@@ -589,18 +601,6 @@
           "direction": "higher_is_bullish",
           "verdict": "neutral",
           "weight": 2.0,
-          "note": ""
-        },
-        {
-          "dataPoint": "Retail Sales & Core Retail Sales (m/m)",
-          "title": "Retail Sales Ex Autos MoM JUL",
-          "period": "2026-09-24T16:30+00:00",
-          "actual": "-0.7%",
-          "previous": "0.5%",
-          "forecast": "-0.6%",
-          "direction": "higher_is_bullish",
-          "verdict": "bearish",
-          "weight": 0.5,
           "note": ""
         }
       ],
@@ -873,23 +873,23 @@
       "notes": []
     },
     "BRL": {
-      "verdict": "Bullish",
+      "verdict": "Bearish",
       "tally": {
-        "bullish": 2.0,
-        "bearish": 0.0,
+        "bullish": 0.0,
+        "bearish": 2.0,
         "neutral": 4.0
       },
       "released_points": 3,
       "drivers": [
         {
           "dataPoint": "CPI y/y (IPCA)",
-          "title": "Inflation Rate YoY SEP",
-          "period": "2026-10-09T16:00+00:00",
-          "actual": "4.58%",
-          "previous": "4.22%",
-          "forecast": "4.4%",
+          "title": "IPCA mid-month CPI MoM OCT",
+          "period": "2026-10-23T16:00+00:00",
+          "actual": "0.32%",
+          "previous": "0.7%",
+          "forecast": "0.4%",
           "direction": "higher_is_bullish",
-          "verdict": "bullish",
+          "verdict": "bearish",
           "weight": 2.0,
           "note": ""
         },
@@ -1095,11 +1095,11 @@
         },
         {
           "dataPoint": "CPI y/y",
-          "title": "Core Inflation Rate YoY AUG",
-          "period": "2026-09-23T09:00+00:00",
-          "actual": "2.2%",
-          "previous": "2%",
-          "forecast": "2.1%",
+          "title": "Core Inflation Rate YoY SEP",
+          "period": "2026-10-23T09:00+00:00",
+          "actual": "2%",
+          "previous": "2.2%",
+          "forecast": "1.7%",
           "direction": "higher_is_bullish",
           "verdict": "bullish",
           "weight": 2.0,

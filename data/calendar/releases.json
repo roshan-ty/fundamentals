@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-23T01:17:49+00:00",
+  "updated": "2026-10-23T18:01:25+00:00",
   "releases": [
     {
       "country": "USD",
@@ -103,11 +103,11 @@
       "dataPoint": "CB Consumer Confidence / UoM Consumer Sentiment",
       "weight": 0.5,
       "direction": "higher_is_bullish",
-      "period": "2026-10-09T18:00+00:00",
-      "title": "Michigan Consumer Sentiment Prel OCT",
-      "actual": "46.3",
+      "period": "2026-10-23T18:00+00:00",
+      "title": "Michigan Consumer Sentiment Final OCT",
+      "actual": "48.0",
       "previous": "48.1",
-      "forecast": "48.6"
+      "forecast": "46.3"
     },
     {
       "country": "GBP",
@@ -259,11 +259,11 @@
       "dataPoint": "CPI y/y (IPCA)",
       "weight": 1.5,
       "direction": "higher_is_bullish",
-      "period": "2026-10-09T16:00+00:00",
-      "title": "Inflation Rate YoY SEP",
-      "actual": "4.58%",
-      "previous": "4.22%",
-      "forecast": "4.4%"
+      "period": "2026-10-23T16:00+00:00",
+      "title": "IPCA mid-month CPI MoM OCT",
+      "actual": "0.32%",
+      "previous": "0.7%",
+      "forecast": "0.4%"
     },
     {
       "country": "CAD",
@@ -415,11 +415,11 @@
       "dataPoint": "Retail Sales (m/m)",
       "weight": 0.5,
       "direction": "higher_is_bullish",
-      "period": "2026-10-13T03:01+00:00",
-      "title": "BRC Retail Sales Monitor YoY SEP",
-      "actual": "1%",
+      "period": "2026-10-23T10:00+00:00",
+      "title": "Retail Sales MoM SEP",
+      "actual": "-0.4%",
       "previous": "0.5%",
-      "forecast": "1.4%"
+      "forecast": "0.5%"
     },
     {
       "country": "JPY",
@@ -463,11 +463,11 @@
       "dataPoint": "CPI y/y",
       "weight": 1.5,
       "direction": "higher_is_bullish",
-      "period": "2026-09-23T09:00+00:00",
-      "title": "Core Inflation Rate YoY AUG",
-      "actual": "2.2%",
-      "previous": "2%",
-      "forecast": "2.1%"
+      "period": "2026-10-23T09:00+00:00",
+      "title": "Core Inflation Rate YoY SEP",
+      "actual": "2%",
+      "previous": "2.2%",
+      "forecast": "1.7%"
     },
     {
       "country": "ZAR",
@@ -499,11 +499,11 @@
       "dataPoint": "ISM Manufacturing PMI & ISM Services PMI",
       "weight": 1.0,
       "direction": "higher_is_bullish",
-      "period": "2026-10-05T18:00+00:00",
-      "title": "ISM Services PMI SEP",
-      "actual": "54.9",
-      "previous": "55.4",
-      "forecast": "54"
+      "period": "2026-10-23T17:45+00:00",
+      "title": "S&P Global Manufacturing PMI Flash OCT",
+      "actual": "56.0",
+      "previous": "55.9",
+      "forecast": "55"
     },
     {
       "country": "AUD",
@@ -547,11 +547,11 @@
       "dataPoint": "Retail Sales & Core Retail Sales (m/m)",
       "weight": 0.5,
       "direction": "higher_is_bullish",
-      "period": "2026-09-24T16:30+00:00",
-      "title": "Retail Sales Ex Autos MoM JUL",
-      "actual": "-0.7%",
-      "previous": "0.5%",
-      "forecast": "-0.6%"
+      "period": "2026-10-23T16:30+00:00",
+      "title": "Retail Sales Ex Autos MoM AUG",
+      "actual": "1.2%",
+      "previous": "-0.7%",
+      "forecast": "0.9%"
     },
     {
       "country": "MXN",

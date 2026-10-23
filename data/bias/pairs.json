@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-10-23T01:17:49+00:00",
+    "updated": "2026-10-23T18:01:25+00:00",
     "total": 82,
     "scored": 82
   },
@@ -463,14 +463,14 @@
     {
       "symbol": "USDBRL",
       "class": "fx",
-      "verdict": "Bearish",
+      "verdict": "Bullish",
       "base": "USD",
       "quote": "BRL",
       "base_verdict": "Neutral",
-      "quote_verdict": "Bullish",
+      "quote_verdict": "Bearish",
       "drivers": [
         "USD: Neutral",
-        "BRL: Bullish"
+        "BRL: Bearish"
       ]
     },
     {

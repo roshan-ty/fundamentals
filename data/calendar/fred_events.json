@@ -2470,6 +2470,16 @@
     "period": "2026-09-01"
   },
   {
+    "title": "UoM Consumer Sentiment",
+    "country": "USD",
+    "date_utc": "2026-09-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "48.1",
+    "previous": "51.7",
+    "source_series": "UMCSENT",
+    "period": "2026-09-01"
+  },
+  {
     "title": "Initial Jobless Claims",
     "country": "USD",
     "date_utc": "2026-09-05T00:00:00+00:00",
