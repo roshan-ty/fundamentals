@@ -25158,7 +25158,7 @@
     "impact": "",
     "forecast": "27.0%",
     "previous": "23%",
-    "actual": "",
+    "actual": "24.3%",
     "source": "te"
   },
   {
@@ -25194,16 +25194,6 @@
     "source": "te"
   },
   {
-    "title": "Fed Balance Sheet OCT/21",
-    "country": "USD",
-    "date_utc": "2026-10-23T00:30+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "$6.756T",
-    "actual": "",
-    "source": "te"
-  },
-  {
     "title": "Flash Manufacturing PMI",
     "country": "JPY",
     "date_utc": "2026-10-23T00:30+00:00",
@@ -25215,13 +25205,23 @@
     "source": "ff-feed"
   },
   {
+    "title": "Fed Balance Sheet OCT/21",
+    "country": "USD",
+    "date_utc": "2026-10-23T00:35+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "$6.756T",
+    "actual": "$6.754T",
+    "source": "te"
+  },
+  {
     "title": "S&P Global Manufacturing PMI Flash OCT",
     "country": "AUD",
     "date_utc": "2026-10-23T02:00+00:00",
     "impact": "",
     "forecast": "49.4",
     "previous": "49.6",
-    "actual": "",
+    "actual": "49.7",
     "source": "te"
   },
   {
@@ -25231,7 +25231,7 @@
     "impact": "",
     "forecast": "51.1",
     "previous": "51.9",
-    "actual": "",
+    "actual": "47.8",
     "source": "te"
   },
   {
@@ -25241,7 +25241,7 @@
     "impact": "",
     "forecast": "50.5",
     "previous": "51.3",
-    "actual": "",
+    "actual": "47.7",
     "source": "te"
   },
   {
@@ -25251,7 +25251,7 @@
     "impact": "",
     "forecast": "-14",
     "previous": "-13",
-    "actual": "",
+    "actual": "-24",
     "source": "te"
   },
   {
@@ -25261,7 +25261,7 @@
     "impact": "",
     "forecast": "1.8%",
     "previous": "1.9%",
-    "actual": "",
+    "actual": "2.1%",
     "source": "te"
   },
   {
@@ -25271,7 +25271,7 @@
     "impact": "",
     "forecast": "1.9%",
     "previous": "1.7%",
-    "actual": "",
+    "actual": "2.1%",
     "source": "te"
   },
   {
@@ -25281,7 +25281,7 @@
     "impact": "",
     "forecast": "2%",
     "previous": "1.9%",
-    "actual": "",
+    "actual": "2.4%",
     "source": "te"
   },
   {
@@ -25291,7 +25291,7 @@
     "impact": "",
     "forecast": "0.2%",
     "previous": "0.1%",
-    "actual": "",
+    "actual": "0.0%",
     "source": "te"
   },
   {
@@ -25301,7 +25301,7 @@
     "impact": "",
     "forecast": "43.8",
     "previous": "54.1",
-    "actual": "",
+    "actual": "53.3",
     "source": "te"
   },
   {
@@ -25311,7 +25311,7 @@
     "impact": "",
     "forecast": "51.3",
     "previous": "51.3",
-    "actual": "",
+    "actual": "52.0",
     "source": "te"
   },
   {
@@ -25321,17 +25321,17 @@
     "impact": "",
     "forecast": "51.9",
     "previous": "52.3",
-    "actual": "",
+    "actual": "52.30",
     "source": "te"
   },
   {
     "title": "URA Property Index QoQ Final Q3",
     "country": "SGD",
-    "date_utc": "2026-10-23T04:30+00:00",
+    "date_utc": "2026-10-23T04:45+00:00",
     "impact": "",
     "forecast": "1.4%",
     "previous": "0.5%",
-    "actual": "",
+    "actual": "1.4%",
     "source": "te"
   },
   {
@@ -28369,7 +28369,7 @@
     "date_utc": "2026-10-30T00:30+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "$6.754T",
     "actual": "",
     "source": "te"
   },
@@ -29430,6 +29430,26 @@
     "impact": "",
     "forecast": "-1.2%",
     "previous": "3.7%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "S&P Global Manufacturing PMI OCT",
+    "country": "ID",
+    "date_utc": "2026-11-02T05:30+00:00",
+    "impact": "",
+    "forecast": "51.9",
+    "previous": "52.4",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "S&P Global Manufacturing PMI OCT",
+    "country": "KRW",
+    "date_utc": "2026-11-02T05:30+00:00",
+    "impact": "",
+    "forecast": "54.2",
+    "previous": "53.9",
     "actual": "",
     "source": "te"
   },
@@ -33170,6 +33190,86 @@
     "impact": "",
     "forecast": "",
     "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "API Crude Oil Stock Change NOV/13",
+    "country": "USD",
+    "date_utc": "2026-11-18T02:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "PPI Input QoQ Q3",
+    "country": "NZD",
+    "date_utc": "2026-11-18T02:45+00:00",
+    "impact": "",
+    "forecast": "2.2%",
+    "previous": "2.9%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "PPI Output QoQ Q3",
+    "country": "NZD",
+    "date_utc": "2026-11-18T02:45+00:00",
+    "impact": "",
+    "forecast": "1.2%",
+    "previous": "1.6%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Balance of Trade OCT",
+    "country": "JPY",
+    "date_utc": "2026-11-18T04:50+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "-536.6B",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Exports YoY OCT",
+    "country": "JPY",
+    "date_utc": "2026-11-18T04:50+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "16.7%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Imports YoY OCT",
+    "country": "JPY",
+    "date_utc": "2026-11-18T04:50+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "18.9%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Wage Price Index QoQ Q3",
+    "country": "AUD",
+    "date_utc": "2026-11-18T05:30+00:00",
+    "impact": "",
+    "forecast": "1.0%",
+    "previous": "0.8%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Wage Price Index YoY Q3",
+    "country": "AUD",
+    "date_utc": "2026-11-18T05:30+00:00",
+    "impact": "",
+    "forecast": "3.4%",
+    "previous": "3.2%",
     "actual": "",
     "source": "te"
   }
