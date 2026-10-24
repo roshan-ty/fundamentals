@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-10-23T18:01:25+00:00",
+    "updated": "2026-10-24T01:26:49+00:00",
     "method": "verdict v3 (forecast-first, released-only)"
   },
   "currencies": {
@@ -8,8 +8,8 @@
       "verdict": "Neutral",
       "tally": {
         "bullish": 8.0,
-        "bearish": 6.5,
-        "neutral": 6.0
+        "bearish": 7.5,
+        "neutral": 5.0
       },
       "released_points": 17,
       "drivers": [
@@ -52,12 +52,12 @@
         {
           "dataPoint": "2-Year Treasury Yield (21-day trend)",
           "title": "2-Year Treasury Yield",
-          "period": "2026-10-21T00:00:00+00:00",
-          "actual": "4.81",
+          "period": "2026-10-22T00:00:00+00:00",
+          "actual": "4.65",
           "previous": "4.81",
           "forecast": "",
           "direction": "higher_is_bullish",
-          "verdict": "neutral",
+          "verdict": "bearish",
           "weight": 1.0,
           "note": ""
         },
@@ -1127,11 +1127,11 @@
     "dxy_sig": 0,
     "m2_sig": 1,
     "china_pmi_sig": 1,
-    "yield2y_sig": 0,
+    "yield2y_sig": -1,
     "oil_direction": "flat",
     "risk_mode": "flat",
-    "yield2y_level": 4.81,
-    "yield2y_sma": 4.809,
+    "yield2y_level": 4.65,
+    "yield2y_sma": 4.806,
     "dxy_level": 100.95,
     "gold_level": 4390.39382
   }

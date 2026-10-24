@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-10-23T18:01:25+00:00"
+    "updated": "2026-10-24T01:26:49+00:00"
   },
   "setups": [
     {
@@ -94,22 +94,22 @@
       "rationale": "Very Bullish — NZD: Bullish · SGD: Bearish"
     },
     {
-      "symbol": "XAUUSD",
-      "name": "XAUUSD",
-      "verdict": "Very Bearish",
-      "direction": "Sell",
+      "symbol": "OIL",
+      "name": "OIL",
+      "verdict": "Very Bullish",
+      "direction": "Buy",
       "confidence": 0.4,
       "importance": 2,
-      "rationale": "Very Bearish"
+      "rationale": "Very Bullish"
     },
     {
-      "symbol": "XAGUSD",
-      "name": "XAGUSD",
-      "verdict": "Very Bearish",
-      "direction": "Sell",
+      "symbol": "BRENT",
+      "name": "BRENT",
+      "verdict": "Very Bullish",
+      "direction": "Buy",
       "confidence": 0.4,
       "importance": 2,
-      "rationale": "Very Bearish"
+      "rationale": "Very Bullish"
     }
   ]
 }
