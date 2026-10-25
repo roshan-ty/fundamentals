@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-10-25T00:53:05+00:00",
+    "updated": "2026-10-25T17:11:39+00:00",
     "method": "verdict v3 (forecast-first, released-only)"
   },
   "currencies": {
@@ -221,14 +221,26 @@
       "notes": []
     },
     "EUR": {
-      "verdict": "Neutral",
+      "verdict": "Bullish",
       "tally": {
-        "bullish": 3.5,
-        "bearish": 5.0,
+        "bullish": 5.5,
+        "bearish": 3.0,
         "neutral": 0.0
       },
       "released_points": 7,
       "drivers": [
+        {
+          "dataPoint": "Eurozone Unemployment Rate",
+          "title": "Unemployment Rate",
+          "period": "2026-10-30T10:00+00:00",
+          "actual": "6.2%",
+          "previous": "6.4%",
+          "forecast": "6.4%",
+          "direction": "lower_is_bullish",
+          "verdict": "bullish",
+          "weight": 2.0,
+          "note": ""
+        },
         {
           "dataPoint": "German ZEW Economic Sentiment",
           "title": "ZEW Economic Sentiment Index OCT",
@@ -287,18 +299,6 @@
           "direction": "higher_is_bullish",
           "verdict": "bullish",
           "weight": 1.0,
-          "note": ""
-        },
-        {
-          "dataPoint": "Eurozone Unemployment Rate",
-          "title": "Unemployment Rate AUG",
-          "period": "2026-10-01T12:00+00:00",
-          "actual": "6.2%",
-          "previous": "5.8%",
-          "forecast": "5.9%",
-          "direction": "lower_is_bullish",
-          "verdict": "bearish",
-          "weight": 2.0,
           "note": ""
         },
         {

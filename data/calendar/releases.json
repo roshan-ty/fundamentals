@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-25T00:53:05+00:00",
+  "updated": "2026-10-25T17:11:39+00:00",
   "releases": [
     {
       "country": "USD",
@@ -127,11 +127,11 @@
       "dataPoint": "Eurozone Unemployment Rate",
       "weight": 1.0,
       "direction": "lower_is_bullish",
-      "period": "2026-10-01T12:00+00:00",
-      "title": "Unemployment Rate AUG",
+      "period": "2026-10-30T10:00+00:00",
+      "title": "Unemployment Rate",
       "actual": "6.2%",
-      "previous": "5.8%",
-      "forecast": "5.9%"
+      "previous": "6.4%",
+      "forecast": "6.4%"
     },
     {
       "country": "CAD",
