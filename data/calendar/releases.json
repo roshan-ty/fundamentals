@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-26T01:03:53+00:00",
+  "updated": "2026-10-26T19:16:56+00:00",
   "releases": [
     {
       "country": "USD",
@@ -535,11 +535,11 @@
       "dataPoint": "German IFO Business Climate",
       "weight": 0.5,
       "direction": "higher_is_bullish",
-      "period": "2026-09-24T12:00+00:00",
-      "title": "Ifo Business Climate SEP",
-      "actual": "89.9",
-      "previous": "88.8",
-      "forecast": "84.9"
+      "period": "2026-10-26T13:00+00:00",
+      "title": "Ifo Business Climate OCT",
+      "actual": "90.2",
+      "previous": "89.9",
+      "forecast": "90"
     },
     {
       "country": "CAD",

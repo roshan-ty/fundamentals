@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-10-26T01:03:53+00:00",
+    "updated": "2026-10-26T19:16:56+00:00",
     "method": "verdict v3 (forecast-first, released-only)"
   },
   "currencies": {
@@ -242,6 +242,18 @@
           "note": ""
         },
         {
+          "dataPoint": "German IFO Business Climate",
+          "title": "Ifo Business Climate OCT",
+          "period": "2026-10-26T13:00+00:00",
+          "actual": "90.2",
+          "previous": "89.9",
+          "forecast": "90",
+          "direction": "higher_is_bullish",
+          "verdict": "bullish",
+          "weight": 1.0,
+          "note": ""
+        },
+        {
           "dataPoint": "German ZEW Economic Sentiment",
           "title": "ZEW Economic Sentiment Index OCT",
           "period": "2026-10-20T13:00+00:00",
@@ -296,18 +308,6 @@
           "actual": "23.587K",
           "previous": "44.419K",
           "forecast": "19K",
-          "direction": "higher_is_bullish",
-          "verdict": "bullish",
-          "weight": 1.0,
-          "note": ""
-        },
-        {
-          "dataPoint": "German IFO Business Climate",
-          "title": "Ifo Business Climate SEP",
-          "period": "2026-09-24T12:00+00:00",
-          "actual": "89.9",
-          "previous": "88.8",
-          "forecast": "84.9",
           "direction": "higher_is_bullish",
           "verdict": "bullish",
           "weight": 1.0,
