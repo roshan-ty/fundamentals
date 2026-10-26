@@ -4810,33 +4810,63 @@
     "source": "te"
   },
   {
-    "title": "S&P Global Manufacturing PMI Flash OCT",
-    "country": "AUD",
-    "date_utc": "2026-10-23T02:00+00:00",
+    "title": "5-Year Bond Auction",
+    "country": "CAD",
+    "date_utc": "2026-11-04T22:00+00:00",
     "impact": "",
-    "forecast": "49.4",
-    "previous": "49.6",
-    "actual": "49.7",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
     "source": "te"
   },
   {
-    "title": "S&P Global Services PMI Flash OCT",
-    "country": "AUD",
-    "date_utc": "2026-10-23T02:00+00:00",
+    "title": "Interest Rate Decision",
+    "country": "BRL",
+    "date_utc": "2026-11-05T02:30+00:00",
     "impact": "",
-    "forecast": "51.1",
-    "previous": "51.9",
-    "actual": "47.8",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
     "source": "te"
   },
   {
-    "title": "S&P Global Composite PMI Flash OCT",
-    "country": "AUD",
-    "date_utc": "2026-10-23T02:00+00:00",
+    "title": "Current Account SEP",
+    "country": "KRW",
+    "date_utc": "2026-11-05T04:00+00:00",
     "impact": "",
-    "forecast": "50.5",
-    "previous": "51.3",
-    "actual": "47.7",
+    "forecast": "$ 40B",
+    "previous": "$46.11B",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "BoJ Monetary Policy Meeting Minutes",
+    "country": "JPY",
+    "date_utc": "2026-11-05T04:50+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Foreign Bond Investment OCT/31",
+    "country": "JPY",
+    "date_utc": "2026-11-05T04:50+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Stock Investment by Foreigners OCT/31",
+    "country": "JPY",
+    "date_utc": "2026-11-05T04:50+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
     "source": "te"
   },
   {
@@ -4866,6 +4896,16 @@
     "impact": "",
     "forecast": "",
     "previous": "5.8%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "S&P Global Manufacturing PMI Final OCT",
+    "country": "JPY",
+    "date_utc": "2026-11-05T05:30+00:00",
+    "impact": "",
+    "forecast": "53.3",
+    "previous": "54.1",
     "actual": "",
     "source": "te"
   },
@@ -5430,46 +5470,6 @@
     "source": "te"
   },
   {
-    "title": "Inflation Rate YoY SEP",
-    "country": "JPY",
-    "date_utc": "2026-10-23T03:30+00:00",
-    "impact": "",
-    "forecast": "2.3%",
-    "previous": "1.9%",
-    "actual": "2.1%",
-    "source": "te"
-  },
-  {
-    "title": "Core Inflation Rate YoY SEP",
-    "country": "JPY",
-    "date_utc": "2026-10-23T03:30+00:00",
-    "impact": "",
-    "forecast": "2.0%",
-    "previous": "1.7%",
-    "actual": "2.1%",
-    "source": "te"
-  },
-  {
-    "title": "Inflation Rate Ex-Food and Energy YoY SEP",
-    "country": "JPY",
-    "date_utc": "2026-10-23T03:30+00:00",
-    "impact": "",
-    "forecast": "2.0%",
-    "previous": "1.9%",
-    "actual": "2.4%",
-    "source": "te"
-  },
-  {
-    "title": "Inflation Rate MoM SEP",
-    "country": "JPY",
-    "date_utc": "2026-10-23T03:30+00:00",
-    "impact": "",
-    "forecast": "0.4%",
-    "previous": "0.1%",
-    "actual": "0.0%",
-    "source": "te"
-  },
-  {
     "title": "S&P Global Manufacturing PMI Flash OCT",
     "country": "JPY",
     "date_utc": "2026-10-23T04:30+00:00",
@@ -5507,46 +5507,6 @@
     "forecast": "",
     "previous": "1.2803%",
     "actual": "1.2680%",
-    "source": "te"
-  },
-  {
-    "title": "BoJ Monetary Policy Meeting Minutes",
-    "country": "JPY",
-    "date_utc": "2026-11-05T04:50+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "Foreign Bond Investment OCT/31",
-    "country": "JPY",
-    "date_utc": "2026-11-05T04:50+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "Stock Investment by Foreigners OCT/31",
-    "country": "JPY",
-    "date_utc": "2026-11-05T04:50+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "S&P Global Manufacturing PMI Final OCT",
-    "country": "JPY",
-    "date_utc": "2026-11-05T05:30+00:00",
-    "impact": "",
-    "forecast": "53.3",
-    "previous": "54.1",
-    "actual": "",
     "source": "te"
   },
   {
@@ -6010,12 +5970,42 @@
     "source": "te"
   },
   {
-    "title": "SNB Monetary Policy Meeting Minutes",
-    "country": "CHF",
-    "date_utc": "2026-10-22T11:30+00:00",
+    "title": "Inflation Rate YoY OCT",
+    "country": "JPY",
+    "date_utc": "2026-11-21T04:30+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "2.1%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Core Inflation Rate YoY OCT",
+    "country": "JPY",
+    "date_utc": "2026-11-21T04:30+00:00",
+    "impact": "",
+    "forecast": "2.1%",
+    "previous": "2.1%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Inflation Rate Ex-Food and Energy YoY OCT",
+    "country": "JPY",
+    "date_utc": "2026-11-21T04:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "2.4%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Inflation Rate MoM OCT",
+    "country": "JPY",
+    "date_utc": "2026-11-21T04:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "0.0%",
     "actual": "",
     "source": "te"
   },
@@ -6190,16 +6180,6 @@
     "source": "te"
   },
   {
-    "title": "FDI (YTD) YoY SEPT",
-    "country": "CNY",
-    "date_utc": "2026-10-22T12:30+00:00",
-    "impact": "",
-    "forecast": "-4.8%",
-    "previous": "-5.3%",
-    "actual": "-4.3%",
-    "source": "te"
-  },
-  {
     "title": "Inflation Rate YoY OCT",
     "country": "CNY",
     "date_utc": "2026-11-09T06:30+00:00",
@@ -6350,76 +6330,6 @@
     "source": "te"
   },
   {
-    "title": "CFIB Business Barometer OCT",
-    "country": "CAD",
-    "date_utc": "2026-10-22T16:00+00:00",
-    "impact": "",
-    "forecast": "47",
-    "previous": "48.5 ",
-    "actual": "50.0",
-    "source": "te"
-  },
-  {
-    "title": "New Housing Price Index MoM SEP",
-    "country": "CAD",
-    "date_utc": "2026-10-22T16:30+00:00",
-    "impact": "",
-    "forecast": "0.4%",
-    "previous": "-0.1%",
-    "actual": "-0.2%",
-    "source": "te"
-  },
-  {
-    "title": "PPI MoM SEP",
-    "country": "CAD",
-    "date_utc": "2026-10-22T16:30+00:00",
-    "impact": "",
-    "forecast": "1.3%",
-    "previous": "1.2% ",
-    "actual": "2%",
-    "source": "te"
-  },
-  {
-    "title": "PPI YoY SEP",
-    "country": "CAD",
-    "date_utc": "2026-10-22T16:30+00:00",
-    "impact": "",
-    "forecast": "14.1%",
-    "previous": "13.2% ",
-    "actual": "14.5%",
-    "source": "te"
-  },
-  {
-    "title": "Raw Materials Prices MoM SEP",
-    "country": "CAD",
-    "date_utc": "2026-10-22T16:30+00:00",
-    "impact": "",
-    "forecast": "2.9%",
-    "previous": "3.3% ",
-    "actual": "4.8%",
-    "source": "te"
-  },
-  {
-    "title": "Raw Materials Prices YoY SEP",
-    "country": "CAD",
-    "date_utc": "2026-10-22T16:30+00:00",
-    "impact": "",
-    "forecast": "24.0%",
-    "previous": "22.9% ",
-    "actual": "27%",
-    "source": "te"
-  },
-  {
-    "title": "2-Year Bond Auction",
-    "country": "CAD",
-    "date_utc": "2026-10-22T20:00+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "3.321%",
-    "actual": "3.310%",
-    "source": "te"
-  },
-  {
     "title": "Retail Sales Ex Autos MoM AUG",
     "country": "CAD",
     "date_utc": "2026-10-23T16:30+00:00",
@@ -6467,16 +6377,6 @@
     "forecast": "4.9%",
     "previous": "5.1%",
     "actual": "5.4%",
-    "source": "te"
-  },
-  {
-    "title": "5-Year Bond Auction",
-    "country": "CAD",
-    "date_utc": "2026-11-04T22:00+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "",
-    "actual": "",
     "source": "te"
   },
   {
@@ -7707,26 +7607,6 @@
     "forecast": "0.5%",
     "previous": "1.9%",
     "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "Business Confidence OCT",
-    "country": "EUR",
-    "date_utc": "2026-10-22T10:45+00:00",
-    "impact": "",
-    "forecast": "100",
-    "previous": "101",
-    "actual": "105",
-    "source": "te"
-  },
-  {
-    "title": "Business Climate Indicator OCT",
-    "country": "EUR",
-    "date_utc": "2026-10-22T10:45+00:00",
-    "impact": "",
-    "forecast": "96",
-    "previous": "96",
-    "actual": "97",
     "source": "te"
   },
   {
@@ -9686,6 +9566,26 @@
     "impact": "",
     "forecast": "",
     "previous": "4.7%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Baker Hughes Oil Rig Count NOV/20",
+    "country": "USD",
+    "date_utc": "2026-11-20T23:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Baker Hughes Total Rigs Count NOV/20",
+    "country": "USD",
+    "date_utc": "2026-11-20T23:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
     "actual": "",
     "source": "te"
   }
