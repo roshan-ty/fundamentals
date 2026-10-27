@@ -356,7 +356,7 @@
     "impact": "",
     "forecast": "107.0",
     "previous": "106.6",
-    "actual": "",
+    "actual": "105.4",
     "source": "te"
   },
   {
@@ -366,7 +366,7 @@
     "impact": "",
     "forecast": "0.9%",
     "previous": "0.6%",
-    "actual": "",
+    "actual": "1%",
     "source": "te"
   },
   {
@@ -376,7 +376,7 @@
     "impact": "",
     "forecast": "3.2%",
     "previous": "3.7%",
-    "actual": "",
+    "actual": "3.4%",
     "source": "te"
   },
   {
@@ -385,8 +385,8 @@
     "date_utc": "2026-10-27T03:50+00:00",
     "impact": "",
     "forecast": "3.7%",
-    "previous": "3.7%",
-    "actual": "",
+    "previous": "3.5% ",
+    "actual": "3.7%",
     "source": "te"
   },
   {
@@ -396,7 +396,7 @@
     "impact": "",
     "forecast": "1.6%",
     "previous": "1.4%",
-    "actual": "",
+    "actual": "2.1%",
     "source": "te"
   },
   {
@@ -406,7 +406,7 @@
     "impact": "",
     "forecast": "15.2%",
     "previous": "15.7%",
-    "actual": "",
+    "actual": "15.5%",
     "source": "te"
   },
   {
@@ -5460,6 +5460,66 @@
     "source": "te"
   },
   {
+    "title": "Fed Balance Sheet NOV/04",
+    "country": "USD",
+    "date_utc": "2026-11-06T02:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Reserve Balances with Fed Banks 20261104",
+    "country": "USD",
+    "date_utc": "2026-11-06T02:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Average Cash Earnings YoY SEP",
+    "country": "JPY",
+    "date_utc": "2026-11-06T04:30+00:00",
+    "impact": "",
+    "forecast": "4%",
+    "previous": "3.8%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Overtime Pay YoY SEP",
+    "country": "JPY",
+    "date_utc": "2026-11-06T04:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "5.2%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "S&P Global Composite PMI Final OCT",
+    "country": "JPY",
+    "date_utc": "2026-11-06T05:30+00:00",
+    "impact": "",
+    "forecast": "52.3",
+    "previous": "52.3",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "S&P Global Services PMI Final OCT",
+    "country": "JPY",
+    "date_utc": "2026-11-06T05:30+00:00",
+    "impact": "",
+    "forecast": "52.0",
+    "previous": "51.3",
+    "actual": "",
+    "source": "te"
+  },
+  {
     "title": "RBA Jones Speech",
     "country": "AUD",
     "date_utc": "2026-10-26T01:10+00:00",
@@ -5650,23 +5710,13 @@
     "source": "te"
   },
   {
-    "title": "1-Year Bill Auction",
-    "country": "NZD",
-    "date_utc": "2026-10-27T05:35+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "3.7075%",
-    "actual": "",
-    "source": "te"
-  },
-  {
     "title": "3-Month Bill Auction",
     "country": "NZD",
     "date_utc": "2026-10-27T05:35+00:00",
     "impact": "",
     "forecast": "3.1999%",
     "previous": "3.1333%",
-    "actual": "",
+    "actual": "3.1919%",
     "source": "te"
   },
   {
@@ -5676,7 +5726,7 @@
     "impact": "",
     "forecast": "",
     "previous": "3.2834%",
-    "actual": "",
+    "actual": "3.3615%",
     "source": "te"
   },
   {
@@ -5745,7 +5795,7 @@
     "date_utc": "2026-11-03T06:35+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "3.7075%",
     "actual": "",
     "source": "te"
   },
@@ -5754,8 +5804,8 @@
     "country": "NZD",
     "date_utc": "2026-11-03T06:35+00:00",
     "impact": "",
-    "forecast": "",
-    "previous": "",
+    "forecast": "3.1999%",
+    "previous": "3.1919%",
     "actual": "",
     "source": "te"
   },
@@ -5765,7 +5815,7 @@
     "date_utc": "2026-11-03T06:35+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "3.3615%",
     "actual": "",
     "source": "te"
   },
@@ -6036,86 +6086,6 @@
     "impact": "",
     "forecast": "6.4%",
     "previous": "6.9%",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "S&P Global Manufacturing PMI Flash OCT",
-    "country": "JPY",
-    "date_utc": "2026-10-23T04:30+00:00",
-    "impact": "",
-    "forecast": "53.8",
-    "previous": "54.1",
-    "actual": "53.3",
-    "source": "te"
-  },
-  {
-    "title": "S&P Global Services PMI Flash OCT",
-    "country": "JPY",
-    "date_utc": "2026-10-23T04:30+00:00",
-    "impact": "",
-    "forecast": "51.3",
-    "previous": "51.3",
-    "actual": "52.0",
-    "source": "te"
-  },
-  {
-    "title": "S&P Global Composite PMI Flash OCT",
-    "country": "JPY",
-    "date_utc": "2026-10-23T04:30+00:00",
-    "impact": "",
-    "forecast": "51.9",
-    "previous": "52.3",
-    "actual": "52.30",
-    "source": "te"
-  },
-  {
-    "title": "3-Month Bill Auction",
-    "country": "JPY",
-    "date_utc": "2026-10-23T07:35+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "1.2803%",
-    "actual": "1.2680%",
-    "source": "te"
-  },
-  {
-    "title": "Average Cash Earnings YoY SEP",
-    "country": "JPY",
-    "date_utc": "2026-11-06T04:30+00:00",
-    "impact": "",
-    "forecast": "4%",
-    "previous": "3.8%",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "Overtime Pay YoY SEP",
-    "country": "JPY",
-    "date_utc": "2026-11-06T04:30+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "5.2%",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "S&P Global Composite PMI Final OCT",
-    "country": "JPY",
-    "date_utc": "2026-11-06T05:30+00:00",
-    "impact": "",
-    "forecast": "52.3",
-    "previous": "52.3",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "S&P Global Services PMI Final OCT",
-    "country": "JPY",
-    "date_utc": "2026-11-06T05:30+00:00",
-    "impact": "",
-    "forecast": "52.0",
-    "previous": "51.3",
     "actual": "",
     "source": "te"
   },
@@ -6887,56 +6857,6 @@
     "forecast": "",
     "previous": "3.0%",
     "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "Retail Sales Ex Autos MoM AUG",
-    "country": "CAD",
-    "date_utc": "2026-10-23T16:30+00:00",
-    "impact": "",
-    "forecast": "0.9%",
-    "previous": "-0.8% ",
-    "actual": "1.2%",
-    "source": "te"
-  },
-  {
-    "title": "Retail Sales MoM Final AUG",
-    "country": "CAD",
-    "date_utc": "2026-10-23T16:30+00:00",
-    "impact": "",
-    "forecast": "1.3%",
-    "previous": "-0.8% ",
-    "actual": "1.2%",
-    "source": "te"
-  },
-  {
-    "title": "Retail Sales MoM Prel SEP",
-    "country": "CAD",
-    "date_utc": "2026-10-23T16:30+00:00",
-    "impact": "",
-    "forecast": "0.3%",
-    "previous": "1.2% ",
-    "actual": "0.7%",
-    "source": "te"
-  },
-  {
-    "title": "Manufacturing Sales MoM Prel SEP",
-    "country": "CAD",
-    "date_utc": "2026-10-23T16:30+00:00",
-    "impact": "",
-    "forecast": "-0.5%",
-    "previous": "1.5% ",
-    "actual": "0.1%",
-    "source": "te"
-  },
-  {
-    "title": "Retail Sales YoY AUG",
-    "country": "CAD",
-    "date_utc": "2026-10-23T16:30+00:00",
-    "impact": "",
-    "forecast": "4.9%",
-    "previous": "5.1%",
-    "actual": "5.4%",
     "source": "te"
   },
   {
@@ -7830,36 +7750,6 @@
     "source": "te"
   },
   {
-    "title": "S&P Global Manufacturing PMI Flash OCT",
-    "country": "EUR",
-    "date_utc": "2026-10-23T11:30+00:00",
-    "impact": "",
-    "forecast": "53.2",
-    "previous": "53.9",
-    "actual": "54.2",
-    "source": "te"
-  },
-  {
-    "title": "S&P Global Composite PMI Flash OCT",
-    "country": "EUR",
-    "date_utc": "2026-10-23T11:30+00:00",
-    "impact": "",
-    "forecast": "53",
-    "previous": "53.8",
-    "actual": "52.8",
-    "source": "te"
-  },
-  {
-    "title": "S&P Global Services PMI Flash OCT",
-    "country": "EUR",
-    "date_utc": "2026-10-23T11:30+00:00",
-    "impact": "",
-    "forecast": "52.5",
-    "previous": "52.9",
-    "actual": "51.7",
-    "source": "te"
-  },
-  {
     "title": "Industrial Production MoM SEP",
     "country": "EUR",
     "date_utc": "2026-11-06T12:00+00:00",
@@ -8057,36 +7947,6 @@
     "forecast": "0.5%",
     "previous": "1.9%",
     "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "S&P Global Composite PMI Flash OCT",
-    "country": "EUR",
-    "date_utc": "2026-10-23T11:15+00:00",
-    "impact": "",
-    "forecast": "50.1",
-    "previous": "51.1",
-    "actual": "48.4",
-    "source": "te"
-  },
-  {
-    "title": "S&P Global Manufacturing PMI Flash OCT",
-    "country": "EUR",
-    "date_utc": "2026-10-23T11:15+00:00",
-    "impact": "",
-    "forecast": "50.0",
-    "previous": "50.6",
-    "actual": "49.3",
-    "source": "te"
-  },
-  {
-    "title": "S&P Global Services PMI Flash OCT",
-    "country": "EUR",
-    "date_utc": "2026-10-23T11:15+00:00",
-    "impact": "",
-    "forecast": "50.2",
-    "previous": "51.2",
-    "actual": "48.4",
     "source": "te"
   },
   {
@@ -8306,26 +8166,6 @@
     "impact": "",
     "forecast": "96",
     "previous": "98",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "Fed Balance Sheet NOV/04",
-    "country": "USD",
-    "date_utc": "2026-11-06T02:30+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "Reserve Balances with Fed Banks 20261104",
-    "country": "USD",
-    "date_utc": "2026-11-06T02:30+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "",
     "actual": "",
     "source": "te"
   },

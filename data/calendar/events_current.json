@@ -26325,7 +26325,7 @@
     "impact": "",
     "forecast": "107.0",
     "previous": "106.6",
-    "actual": "",
+    "actual": "105.4",
     "source": "te"
   },
   {
@@ -26335,7 +26335,7 @@
     "impact": "",
     "forecast": "1%",
     "previous": "0.6%",
-    "actual": "",
+    "actual": "1%",
     "source": "te"
   },
   {
@@ -26345,7 +26345,7 @@
     "impact": "",
     "forecast": "3.8%",
     "previous": "3.7%",
-    "actual": "",
+    "actual": "3.4%",
     "source": "te"
   },
   {
@@ -26355,7 +26355,7 @@
     "impact": "",
     "forecast": "3.7%",
     "previous": "3.7%",
-    "actual": "",
+    "actual": "3.7%",
     "source": "te"
   },
   {
@@ -26365,7 +26365,7 @@
     "impact": "",
     "forecast": "1.6%",
     "previous": "1.4%",
-    "actual": "",
+    "actual": "2.1%",
     "source": "te"
   },
   {
@@ -26386,7 +26386,7 @@
     "impact": "",
     "forecast": "15.2%",
     "previous": "15.7%",
-    "actual": "",
+    "actual": "15.5%",
     "source": "te"
   },
   {
@@ -28225,7 +28225,7 @@
     "date_utc": "2026-10-29T09:33+00:00",
     "impact": "Low",
     "forecast": "",
-    "previous": "",
+    "previous": "4.58|1.6",
     "actual": "",
     "revision": "",
     "source": "ff-feed"
@@ -29274,17 +29274,6 @@
     "source": "te"
   },
   {
-    "title": "German Prelim CPI m/m",
-    "country": "EUR",
-    "date_utc": "2026-10-30T06:29+00:00",
-    "impact": "Medium",
-    "forecast": "0.1%",
-    "previous": "0.6%",
-    "actual": "",
-    "revision": "",
-    "source": "ff-feed"
-  },
-  {
     "title": "French Consumer Spending m/m",
     "country": "EUR",
     "date_utc": "2026-10-30T06:30+00:00",
@@ -29357,6 +29346,17 @@
     "previous": "",
     "actual": "",
     "source": "te"
+  },
+  {
+    "title": "German Prelim CPI m/m",
+    "country": "EUR",
+    "date_utc": "2026-10-30T07:29+00:00",
+    "impact": "Medium",
+    "forecast": "0.1%",
+    "previous": "0.6%",
+    "actual": "",
+    "revision": "",
+    "source": "ff-feed"
   },
   {
     "title": "French Prelim CPI m/m",
@@ -34493,7 +34493,7 @@
     "date_utc": "2026-11-17T06:35+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "3.7075%",
     "actual": "",
     "source": "te"
   },
@@ -34502,8 +34502,8 @@
     "country": "NZD",
     "date_utc": "2026-11-17T06:35+00:00",
     "impact": "",
-    "forecast": "",
-    "previous": "",
+    "forecast": "3.1999%",
+    "previous": "3.1919%",
     "actual": "",
     "source": "te"
   },
@@ -34513,7 +34513,7 @@
     "date_utc": "2026-11-17T06:35+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "3.3615%",
     "actual": "",
     "source": "te"
   },
