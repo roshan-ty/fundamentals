@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-27T01:55:36+00:00",
+  "updated": "2026-10-27T18:49:56+00:00",
   "releases": [
     {
       "country": "USD",
@@ -79,11 +79,11 @@
       "dataPoint": "Building Permits & Housing Starts",
       "weight": 0.5,
       "direction": "higher_is_bullish",
-      "period": "2026-10-20T16:30+00:00",
-      "title": "Building Permits Prel SEP",
-      "actual": "1.4M",
-      "previous": "1.403M",
-      "forecast": "1.36M"
+      "period": "2026-10-27T18:00+00:00",
+      "title": "New Home Sales SEP",
+      "actual": "0.676M",
+      "previous": "0.684M",
+      "forecast": "0.66M"
     },
     {
       "country": "USD",
@@ -103,11 +103,11 @@
       "dataPoint": "CB Consumer Confidence / UoM Consumer Sentiment",
       "weight": 0.5,
       "direction": "higher_is_bullish",
-      "period": "2026-10-23T18:00+00:00",
-      "title": "Michigan Consumer Sentiment Final OCT",
-      "actual": "48.0",
-      "previous": "48.1",
-      "forecast": "46.3"
+      "period": "2026-10-27T18:00+00:00",
+      "title": "CB Consumer Confidence OCT",
+      "actual": "91.7",
+      "previous": "81.9",
+      "forecast": "80"
     },
     {
       "country": "GBP",
