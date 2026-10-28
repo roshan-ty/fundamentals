@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-10-27T18:49:56+00:00",
+    "updated": "2026-10-28T18:54:55+00:00",
     "total": 82,
     "scored": 82
   },
@@ -60,27 +60,27 @@
     {
       "symbol": "EURAUD",
       "class": "fx",
-      "verdict": "Very Bullish",
+      "verdict": "Bullish",
       "base": "EUR",
       "quote": "AUD",
       "base_verdict": "Bullish",
-      "quote_verdict": "Bearish",
+      "quote_verdict": "Neutral",
       "drivers": [
         "EUR: Bullish",
-        "AUD: Bearish"
+        "AUD: Neutral"
       ]
     },
     {
       "symbol": "EURCAD",
       "class": "fx",
-      "verdict": "Very Bullish",
+      "verdict": "Bullish",
       "base": "EUR",
       "quote": "CAD",
       "base_verdict": "Bullish",
-      "quote_verdict": "Bearish",
+      "quote_verdict": "Neutral",
       "drivers": [
         "EUR: Bullish",
-        "CAD: Bearish"
+        "CAD: Neutral"
       ]
     },
     {
@@ -255,27 +255,27 @@
     {
       "symbol": "GBPAUD",
       "class": "fx",
-      "verdict": "Bullish",
+      "verdict": "Neutral",
       "base": "GBP",
       "quote": "AUD",
       "base_verdict": "Neutral",
-      "quote_verdict": "Bearish",
+      "quote_verdict": "Neutral",
       "drivers": [
         "GBP: Neutral",
-        "AUD: Bearish"
+        "AUD: Neutral"
       ]
     },
     {
       "symbol": "GBPCAD",
       "class": "fx",
-      "verdict": "Bullish",
+      "verdict": "Neutral",
       "base": "GBP",
       "quote": "CAD",
       "base_verdict": "Neutral",
-      "quote_verdict": "Bearish",
+      "quote_verdict": "Neutral",
       "drivers": [
         "GBP: Neutral",
-        "CAD: Bearish"
+        "CAD: Neutral"
       ]
     },
     {
@@ -411,14 +411,14 @@
     {
       "symbol": "USDCAD",
       "class": "fx",
-      "verdict": "Bullish",
+      "verdict": "Neutral",
       "base": "USD",
       "quote": "CAD",
       "base_verdict": "Neutral",
-      "quote_verdict": "Bearish",
+      "quote_verdict": "Neutral",
       "drivers": [
         "USD: Neutral",
-        "CAD: Bearish"
+        "CAD: Neutral"
       ]
     },
     {
@@ -554,26 +554,26 @@
     {
       "symbol": "AUDUSD",
       "class": "fx",
-      "verdict": "Bearish",
+      "verdict": "Neutral",
       "base": "AUD",
       "quote": "USD",
-      "base_verdict": "Bearish",
+      "base_verdict": "Neutral",
       "quote_verdict": "Neutral",
       "drivers": [
-        "AUD: Bearish",
+        "AUD: Neutral",
         "USD: Neutral"
       ]
     },
     {
       "symbol": "AUDJPY",
       "class": "fx",
-      "verdict": "Very Bearish",
+      "verdict": "Bearish",
       "base": "AUD",
       "quote": "JPY",
-      "base_verdict": "Bearish",
+      "base_verdict": "Neutral",
       "quote_verdict": "Bullish",
       "drivers": [
-        "AUD: Bearish",
+        "AUD: Neutral",
         "JPY: Bullish"
       ]
     },
@@ -583,10 +583,10 @@
       "verdict": "Very Bearish",
       "base": "AUD",
       "quote": "CHF",
-      "base_verdict": "Bearish",
+      "base_verdict": "Neutral",
       "quote_verdict": "Very Bullish",
       "drivers": [
-        "AUD: Bearish",
+        "AUD: Neutral",
         "CHF: Very Bullish"
       ]
     },
@@ -596,23 +596,23 @@
       "verdict": "Neutral",
       "base": "AUD",
       "quote": "CAD",
-      "base_verdict": "Bearish",
-      "quote_verdict": "Bearish",
+      "base_verdict": "Neutral",
+      "quote_verdict": "Neutral",
       "drivers": [
-        "AUD: Bearish",
-        "CAD: Bearish"
+        "AUD: Neutral",
+        "CAD: Neutral"
       ]
     },
     {
       "symbol": "AUDNZD",
       "class": "fx",
-      "verdict": "Very Bearish",
+      "verdict": "Bearish",
       "base": "AUD",
       "quote": "NZD",
-      "base_verdict": "Bearish",
+      "base_verdict": "Neutral",
       "quote_verdict": "Bullish",
       "drivers": [
-        "AUD: Bearish",
+        "AUD: Neutral",
         "NZD: Bullish"
       ]
     },
@@ -645,14 +645,14 @@
     {
       "symbol": "NZDCAD",
       "class": "fx",
-      "verdict": "Very Bullish",
+      "verdict": "Bullish",
       "base": "NZD",
       "quote": "CAD",
       "base_verdict": "Bullish",
-      "quote_verdict": "Bearish",
+      "quote_verdict": "Neutral",
       "drivers": [
         "NZD: Bullish",
-        "CAD: Bearish"
+        "CAD: Neutral"
       ]
     },
     {
@@ -687,23 +687,23 @@
       "verdict": "Very Bearish",
       "base": "CAD",
       "quote": "CHF",
-      "base_verdict": "Bearish",
+      "base_verdict": "Neutral",
       "quote_verdict": "Very Bullish",
       "drivers": [
-        "CAD: Bearish",
+        "CAD: Neutral",
         "CHF: Very Bullish"
       ]
     },
     {
       "symbol": "CADJPY",
       "class": "fx",
-      "verdict": "Very Bearish",
+      "verdict": "Bearish",
       "base": "CAD",
       "quote": "JPY",
-      "base_verdict": "Bearish",
+      "base_verdict": "Neutral",
       "quote_verdict": "Bullish",
       "drivers": [
-        "CAD: Bearish",
+        "CAD: Neutral",
         "JPY: Bullish"
       ]
     },
