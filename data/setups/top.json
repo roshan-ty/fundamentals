@@ -1,25 +1,16 @@
 {
   "meta": {
-    "updated": "2026-10-29T02:12:57+00:00"
+    "updated": "2026-10-29T19:02:51+00:00"
   },
   "setups": [
     {
-      "symbol": "EURSGD",
-      "name": "EURSGD",
-      "verdict": "Very Bullish",
-      "direction": "Buy",
+      "symbol": "EURCHF",
+      "name": "EURCHF",
+      "verdict": "Very Bearish",
+      "direction": "Sell",
       "confidence": 1.0,
       "importance": 2,
-      "rationale": "Very Bullish — EUR: Bullish · SGD: Bearish"
-    },
-    {
-      "symbol": "EURTRY",
-      "name": "EURTRY",
-      "verdict": "Very Bullish",
-      "direction": "Buy",
-      "confidence": 1.0,
-      "importance": 2,
-      "rationale": "Very Bullish — EUR: Bullish · TRY: Bearish"
+      "rationale": "Very Bearish — EUR: Neutral · CHF: Very Bullish"
     },
     {
       "symbol": "GBPCHF",
@@ -31,13 +22,22 @@
       "rationale": "Very Bearish — GBP: Neutral · CHF: Very Bullish"
     },
     {
-      "symbol": "USDCHF",
-      "name": "USDCHF",
-      "verdict": "Very Bearish",
-      "direction": "Sell",
+      "symbol": "USDSGD",
+      "name": "USDSGD",
+      "verdict": "Very Bullish",
+      "direction": "Buy",
       "confidence": 1.0,
       "importance": 2,
-      "rationale": "Very Bearish — USD: Neutral · CHF: Very Bullish"
+      "rationale": "Very Bullish — USD: Bullish · SGD: Bearish"
+    },
+    {
+      "symbol": "USDBRL",
+      "name": "USDBRL",
+      "verdict": "Very Bullish",
+      "direction": "Buy",
+      "confidence": 1.0,
+      "importance": 2,
+      "rationale": "Very Bullish — USD: Bullish · BRL: Bearish"
     },
     {
       "symbol": "AUDCHF",
@@ -67,6 +67,33 @@
       "rationale": "Very Bullish — NZD: Bullish · SGD: Bearish"
     },
     {
+      "symbol": "XAGUSD",
+      "name": "XAGUSD",
+      "verdict": "Very Bearish",
+      "direction": "Sell",
+      "confidence": 0.4,
+      "importance": 2,
+      "rationale": "Very Bearish"
+    },
+    {
+      "symbol": "XPTUSD",
+      "name": "XPTUSD",
+      "verdict": "Very Bearish",
+      "direction": "Sell",
+      "confidence": 0.4,
+      "importance": 2,
+      "rationale": "Very Bearish"
+    },
+    {
+      "symbol": "XPDUSD",
+      "name": "XPDUSD",
+      "verdict": "Very Bearish",
+      "direction": "Sell",
+      "confidence": 0.4,
+      "importance": 2,
+      "rationale": "Very Bearish"
+    },
+    {
       "symbol": "OIL",
       "name": "OIL",
       "verdict": "Very Bullish",
@@ -83,33 +110,6 @@
       "confidence": 0.4,
       "importance": 2,
       "rationale": "Very Bullish"
-    },
-    {
-      "symbol": "EURUSD",
-      "name": "EURUSD",
-      "verdict": "Bullish",
-      "direction": "Buy",
-      "confidence": 1.0,
-      "importance": 1,
-      "rationale": "Bullish — EUR: Bullish · USD: Neutral"
-    },
-    {
-      "symbol": "EURGBP",
-      "name": "EURGBP",
-      "verdict": "Bullish",
-      "direction": "Buy",
-      "confidence": 1.0,
-      "importance": 1,
-      "rationale": "Bullish — EUR: Bullish · GBP: Neutral"
-    },
-    {
-      "symbol": "EURCHF",
-      "name": "EURCHF",
-      "verdict": "Bearish",
-      "direction": "Sell",
-      "confidence": 1.0,
-      "importance": 1,
-      "rationale": "Bearish — EUR: Bullish · CHF: Very Bullish"
     }
   ]
 }

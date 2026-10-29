@@ -1,76 +1,83 @@
 {
   "meta": {
-    "updated": "2026-10-29T02:12:57+00:00",
+    "updated": "2026-10-29T19:02:51+00:00",
     "method": "verdict v3"
   },
   "instruments": {
     "XAUUSD": {
-      "verdict": "Bullish",
-      "halo": "signal +1",
+      "verdict": "Neutral",
+      "halo": "signal +0",
       "notes": [
         "institutional flow leans supportive",
         "real-yield rising (headwind)",
-        "2Y yield falling (supportive)"
+        "2Y yield falling (supportive)",
+        "USD strong — inverse headwind"
       ],
       "cot_tilt": 1.0
     },
     "XAGUSD": {
-      "verdict": "Bearish",
-      "halo": "signal -1",
+      "verdict": "Very Bearish",
+      "halo": "signal -2",
       "notes": [
         "institutional flow leans adverse",
         "real-yield rising (headwind)",
-        "2Y yield falling (supportive)"
+        "2Y yield falling (supportive)",
+        "USD strong — inverse headwind"
       ],
       "cot_tilt": -1.0
     },
     "XPTUSD": {
-      "verdict": "Bearish",
-      "halo": "signal -1",
+      "verdict": "Very Bearish",
+      "halo": "signal -2",
       "notes": [
         "institutional flow leans adverse",
         "real-yield rising (headwind)",
-        "2Y yield falling (supportive)"
+        "2Y yield falling (supportive)",
+        "USD strong — inverse headwind"
       ],
       "cot_tilt": -1.0
     },
     "XPDUSD": {
-      "verdict": "Bearish",
-      "halo": "signal -1",
+      "verdict": "Very Bearish",
+      "halo": "signal -2",
       "notes": [
         "institutional flow leans adverse",
         "real-yield rising (headwind)",
-        "2Y yield falling (supportive)"
+        "2Y yield falling (supportive)",
+        "USD strong — inverse headwind"
       ],
       "cot_tilt": -1.0
     },
     "OIL": {
       "verdict": "Very Bullish",
-      "halo": "signal +3",
+      "halo": "signal +2",
       "notes": [
         "industrial demand PMI expanding",
         "2Y yield falling (supportive)",
-        "institutional flow leans supportive"
+        "institutional flow leans supportive",
+        "USD strong — inverse headwind"
       ],
       "cot_tilt": 1.0
     },
     "BRENT": {
       "verdict": "Very Bullish",
-      "halo": "signal +3",
+      "halo": "signal +2",
       "notes": [
         "industrial demand PMI expanding",
         "2Y yield falling (supportive)",
-        "institutional flow leans supportive"
+        "institutional flow leans supportive",
+        "USD strong — inverse headwind"
       ],
       "cot_tilt": 1.0
     },
     "COPPER": {
-      "verdict": "Bullish",
-      "halo": "signal +1",
+      "verdict": "Neutral",
+      "halo": "signal +0",
       "notes": [
         "industrial demand PMI expanding",
         "2Y yield falling (supportive)",
-        "institutional flow leans adverse"
+        "institutional flow leans adverse",
+        "USD strong — inverse headwind"
       ],
       "cot_tilt": -1.0
     },
@@ -172,81 +179,81 @@
     },
     "BTCUSD": {
       "verdict": "Bullish",
-      "halo": "signal +2",
+      "halo": "signal +1",
       "notes": [
         "liquidity expanding",
         "2Y yield falling (supportive)",
-        "proxy-derived signal capped at single step"
+        "USD strong — inverse headwind"
       ],
       "cot_tilt": 0
     },
     "ETHUSD": {
       "verdict": "Bullish",
-      "halo": "signal +2",
+      "halo": "signal +1",
       "notes": [
         "liquidity expanding",
         "2Y yield falling (supportive)",
-        "proxy-derived signal capped at single step"
+        "USD strong — inverse headwind"
       ],
       "cot_tilt": 0
     },
     "LTCUSD": {
       "verdict": "Bullish",
-      "halo": "signal +2",
+      "halo": "signal +1",
       "notes": [
         "liquidity expanding",
         "2Y yield falling (supportive)",
-        "proxy-derived signal capped at single step"
+        "USD strong — inverse headwind"
       ],
       "cot_tilt": 0
     },
     "SOLUSD": {
       "verdict": "Bullish",
-      "halo": "signal +2",
+      "halo": "signal +1",
       "notes": [
         "liquidity expanding",
         "2Y yield falling (supportive)",
-        "proxy-derived signal capped at single step"
+        "USD strong — inverse headwind"
       ],
       "cot_tilt": 0
     },
     "SUIUSD": {
       "verdict": "Bullish",
-      "halo": "signal +2",
+      "halo": "signal +1",
       "notes": [
         "liquidity expanding",
         "2Y yield falling (supportive)",
-        "proxy-derived signal capped at single step"
+        "USD strong — inverse headwind"
       ],
       "cot_tilt": 0
     },
     "XLMUSD": {
       "verdict": "Bullish",
-      "halo": "signal +2",
+      "halo": "signal +1",
       "notes": [
         "liquidity expanding",
         "2Y yield falling (supportive)",
-        "proxy-derived signal capped at single step"
+        "USD strong — inverse headwind"
       ],
       "cot_tilt": 0
     },
     "XRPUSD": {
       "verdict": "Bullish",
-      "halo": "signal +2",
+      "halo": "signal +1",
       "notes": [
         "liquidity expanding",
         "2Y yield falling (supportive)",
-        "proxy-derived signal capped at single step"
+        "USD strong — inverse headwind"
       ],
       "cot_tilt": 0
     },
     "AVAXUSD": {
       "verdict": "Bullish",
-      "halo": "signal +2",
+      "halo": "signal +1",
       "notes": [
         "liquidity expanding",
         "2Y yield falling (supportive)",
-        "proxy-derived signal capped at single step"
+        "USD strong — inverse headwind"
       ],
       "cot_tilt": 0
     }

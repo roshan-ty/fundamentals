@@ -1,685 +1,5 @@
 [
   {
-    "title": "RBA Senate Appearance",
-    "country": "AUD",
-    "date_utc": "2026-10-28T04:15+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "Inflation Rate MoM SEP",
-    "country": "AUD",
-    "date_utc": "2026-10-28T04:30+00:00",
-    "impact": "",
-    "forecast": "0.6%",
-    "previous": "0.4%",
-    "actual": "0.8%",
-    "source": "te"
-  },
-  {
-    "title": "Inflation Rate YoY SEP",
-    "country": "AUD",
-    "date_utc": "2026-10-28T04:30+00:00",
-    "impact": "",
-    "forecast": "4.1%",
-    "previous": "4.0%",
-    "actual": "4.3%",
-    "source": "te"
-  },
-  {
-    "title": "RBA Trimmed Mean CPI MoM SEP",
-    "country": "AUD",
-    "date_utc": "2026-10-28T04:30+00:00",
-    "impact": "",
-    "forecast": "0.3%",
-    "previous": "0.2%",
-    "actual": "0.3%",
-    "source": "te"
-  },
-  {
-    "title": "RBA Trimmed Mean CPI YoY SEP",
-    "country": "AUD",
-    "date_utc": "2026-10-28T04:30+00:00",
-    "impact": "",
-    "forecast": "3.6%",
-    "previous": "3.5%",
-    "actual": "3.6%",
-    "source": "te"
-  },
-  {
-    "title": "CPI SEP",
-    "country": "AUD",
-    "date_utc": "2026-10-28T04:30+00:00",
-    "impact": "",
-    "forecast": "104.1",
-    "previous": "103.50",
-    "actual": "104.34",
-    "source": "te"
-  },
-  {
-    "title": "Quarterly Inflation Rate QoQ Q3",
-    "country": "AUD",
-    "date_utc": "2026-10-28T04:30+00:00",
-    "impact": "",
-    "forecast": "1.3%",
-    "previous": "0.6%",
-    "actual": "1.3%",
-    "source": "te"
-  },
-  {
-    "title": "Quarterly Inflation Rate YoY Q3",
-    "country": "AUD",
-    "date_utc": "2026-10-28T04:30+00:00",
-    "impact": "",
-    "forecast": "3.9%",
-    "previous": "3.9%",
-    "actual": "3.9%",
-    "source": "te"
-  },
-  {
-    "title": "Quarterly RBA Trimmed Mean CPI QoQ Q3",
-    "country": "AUD",
-    "date_utc": "2026-10-28T04:30+00:00",
-    "impact": "",
-    "forecast": "0.9%",
-    "previous": "0.8%",
-    "actual": "1%",
-    "source": "te"
-  },
-  {
-    "title": "Quarterly RBA Trimmed Mean CPI YoY Q3",
-    "country": "AUD",
-    "date_utc": "2026-10-28T04:30+00:00",
-    "impact": "",
-    "forecast": "3.5%",
-    "previous": "3.6%",
-    "actual": "3.7%",
-    "source": "te"
-  },
-  {
-    "title": "RBA Weighted Median CPI MoM SEP",
-    "country": "AUD",
-    "date_utc": "2026-10-28T04:30+00:00",
-    "impact": "",
-    "forecast": "0.3%",
-    "previous": "0.3%",
-    "actual": "0.2%",
-    "source": "te"
-  },
-  {
-    "title": "RBA Weighted Median CPI YoY SEP",
-    "country": "AUD",
-    "date_utc": "2026-10-28T04:30+00:00",
-    "impact": "",
-    "forecast": "3.6%",
-    "previous": "3.6%",
-    "actual": "3.4%",
-    "source": "te"
-  },
-  {
-    "title": "BoJ JGB Purchase",
-    "country": "JPY",
-    "date_utc": "2026-10-28T07:35+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "5-Year Bond Auction",
-    "country": "SGD",
-    "date_utc": "2026-10-28T09:00+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "1.75%",
-    "actual": "2.09%",
-    "source": "te"
-  },
-  {
-    "title": "GfK Consumer Confidence NOV",
-    "country": "EUR",
-    "date_utc": "2026-10-28T11:00+00:00",
-    "impact": "",
-    "forecast": "-32",
-    "previous": "-30.6",
-    "actual": "-30.8",
-    "source": "te"
-  },
-  {
-    "title": "Balance of Trade Final SEP",
-    "country": "TRY",
-    "date_utc": "2026-10-28T11:00+00:00",
-    "impact": "",
-    "forecast": "$-5.23B",
-    "previous": "$-5.25B ",
-    "actual": "$-5.16B",
-    "source": "te"
-  },
-  {
-    "title": "Exports Final SEP",
-    "country": "TRY",
-    "date_utc": "2026-10-28T11:00+00:00",
-    "impact": "",
-    "forecast": "$25.98B",
-    "previous": "$23.45B ",
-    "actual": "$25.97B",
-    "source": "te"
-  },
-  {
-    "title": "Imports Final SEP",
-    "country": "TRY",
-    "date_utc": "2026-10-28T11:00+00:00",
-    "impact": "",
-    "forecast": "$31.21B",
-    "previous": "$28.71B",
-    "actual": "$31.13B",
-    "source": "te"
-  },
-  {
-    "title": "Industrial Sales MoM AUG",
-    "country": "EUR",
-    "date_utc": "2026-10-28T13:00+00:00",
-    "impact": "",
-    "forecast": "-0.8%",
-    "previous": "1.7%",
-    "actual": "-0.9%",
-    "source": "te"
-  },
-  {
-    "title": "Industrial Sales YoY AUG",
-    "country": "EUR",
-    "date_utc": "2026-10-28T13:00+00:00",
-    "impact": "",
-    "forecast": "4.0%",
-    "previous": "4.9% ",
-    "actual": "4.2%",
-    "source": "te"
-  },
-  {
-    "title": "PPI MoM SEP",
-    "country": "EUR",
-    "date_utc": "2026-10-28T14:00+00:00",
-    "impact": "",
-    "forecast": "0.5%",
-    "previous": "2.4%",
-    "actual": "2.9%",
-    "source": "te"
-  },
-  {
-    "title": "PPI YoY SEP",
-    "country": "EUR",
-    "date_utc": "2026-10-28T14:00+00:00",
-    "impact": "",
-    "forecast": "11.2%",
-    "previous": "10.9%",
-    "actual": "13.8%",
-    "source": "te"
-  },
-  {
-    "title": "6-Month BOT Auction",
-    "country": "EUR",
-    "date_utc": "2026-10-28T14:10+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "2.873%",
-    "actual": "2.853%",
-    "source": "te"
-  },
-  {
-    "title": "10-Year Bund Auction",
-    "country": "EUR",
-    "date_utc": "2026-10-28T14:30+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "3.58%",
-    "actual": "3.37%",
-    "source": "te"
-  },
-  {
-    "title": "Industrial Production YoY SEP",
-    "country": "IN",
-    "date_utc": "2026-10-28T14:30+00:00",
-    "impact": "",
-    "forecast": "7.4%",
-    "previous": "7.8% ",
-    "actual": "6.7%",
-    "source": "te"
-  },
-  {
-    "title": "Manufacturing Production YoY SEP",
-    "country": "IN",
-    "date_utc": "2026-10-28T14:30+00:00",
-    "impact": "",
-    "forecast": "8.6%",
-    "previous": "8.6% ",
-    "actual": "7.6%",
-    "source": "te"
-  },
-  {
-    "title": "Unemployment Benefit Claims SEP",
-    "country": "EUR",
-    "date_utc": "2026-10-28T15:00+00:00",
-    "impact": "",
-    "forecast": "5K",
-    "previous": "-61.3K",
-    "actual": "110.8K",
-    "source": "te"
-  },
-  {
-    "title": "Jobseekers Total SEP",
-    "country": "EUR",
-    "date_utc": "2026-10-28T15:00+00:00",
-    "impact": "",
-    "forecast": "3086.7K",
-    "previous": "3081.7K",
-    "actual": "3192.5K",
-    "source": "te"
-  },
-  {
-    "title": "MBA 30-Year Mortgage Rate OCT/23",
-    "country": "USD",
-    "date_utc": "2026-10-28T15:00+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "7.41%",
-    "actual": "7.37%",
-    "source": "te"
-  },
-  {
-    "title": "MBA Mortgage Applications OCT/23",
-    "country": "USD",
-    "date_utc": "2026-10-28T15:00+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "-5.3%",
-    "actual": "3.4%",
-    "source": "te"
-  },
-  {
-    "title": "MBA Mortgage Market Index OCT/23",
-    "country": "USD",
-    "date_utc": "2026-10-28T15:00+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "188.6",
-    "actual": "195.0",
-    "source": "te"
-  },
-  {
-    "title": "MBA Mortgage Refinance Index OCT/23",
-    "country": "USD",
-    "date_utc": "2026-10-28T15:00+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "503.1",
-    "actual": "516.8",
-    "source": "te"
-  },
-  {
-    "title": "MBA Purchase Index OCT/23",
-    "country": "USD",
-    "date_utc": "2026-10-28T15:00+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "129.2",
-    "actual": "134.1",
-    "source": "te"
-  },
-  {
-    "title": "Autumn Budget",
-    "country": "GBP",
-    "date_utc": "2026-10-28T16:30+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "Autumn Forecast Statement",
-    "country": "GBP",
-    "date_utc": "2026-10-28T16:30+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "Goods Trade Balance Adv SEP",
-    "country": "USD",
-    "date_utc": "2026-10-28T16:30+00:00",
-    "impact": "",
-    "forecast": "$-108.0B",
-    "previous": "$-132.07B ",
-    "actual": "$-134.9B",
-    "source": "te"
-  },
-  {
-    "title": "Retail Inventories Ex Autos MoM Adv SEP",
-    "country": "USD",
-    "date_utc": "2026-10-28T16:30+00:00",
-    "impact": "",
-    "forecast": "-0.1%",
-    "previous": "0.1% ",
-    "actual": "0.4%",
-    "source": "te"
-  },
-  {
-    "title": "Wholesale Inventories MoM Adv SEP",
-    "country": "USD",
-    "date_utc": "2026-10-28T16:30+00:00",
-    "impact": "",
-    "forecast": "0.3%",
-    "previous": "0.5%",
-    "actual": "0.6%",
-    "source": "te"
-  },
-  {
-    "title": "BoC Interest Rate Decision",
-    "country": "CAD",
-    "date_utc": "2026-10-28T17:45+00:00",
-    "impact": "",
-    "forecast": "2.5%",
-    "previous": "2.25%",
-    "actual": "2.5%",
-    "source": "te"
-  },
-  {
-    "title": "BoC Monetary Policy Report",
-    "country": "CAD",
-    "date_utc": "2026-10-28T17:45+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "BoC Rate Statement",
-    "country": "CAD",
-    "date_utc": "2026-10-28T17:45+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "BoC Press Conference",
-    "country": "CAD",
-    "date_utc": "2026-10-28T18:30+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "EIA Crude Oil Stocks Change OCT/23",
-    "country": "USD",
-    "date_utc": "2026-10-28T18:30+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "-3.061M",
-    "actual": "-1.892M",
-    "source": "te"
-  },
-  {
-    "title": "EIA Gasoline Stocks Change OCT/23",
-    "country": "USD",
-    "date_utc": "2026-10-28T18:30+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "-2.952M",
-    "actual": "3.87M",
-    "source": "te"
-  },
-  {
-    "title": "EIA Crude Oil Imports Change OCT/23",
-    "country": "USD",
-    "date_utc": "2026-10-28T18:30+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "0.837M",
-    "actual": "-0.796M",
-    "source": "te"
-  },
-  {
-    "title": "EIA Cushing Crude Oil Stocks Change OCT/23",
-    "country": "USD",
-    "date_utc": "2026-10-28T18:30+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "0.987M",
-    "actual": "-0.624M",
-    "source": "te"
-  },
-  {
-    "title": "EIA Distillate Fuel Production Change OCT/23",
-    "country": "USD",
-    "date_utc": "2026-10-28T18:30+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "0.043M",
-    "actual": "-0.071M",
-    "source": "te"
-  },
-  {
-    "title": "EIA Distillate Stocks Change OCT/23",
-    "country": "USD",
-    "date_utc": "2026-10-28T18:30+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "1.675M",
-    "actual": "-1.462M",
-    "source": "te"
-  },
-  {
-    "title": "EIA Gasoline Production Change OCT/23",
-    "country": "USD",
-    "date_utc": "2026-10-28T18:30+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "0.518M",
-    "actual": "-0.509M",
-    "source": "te"
-  },
-  {
-    "title": "EIA Heating Oil Stocks Change OCT/23",
-    "country": "USD",
-    "date_utc": "2026-10-28T18:30+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "0.652M",
-    "actual": "0.164M",
-    "source": "te"
-  },
-  {
-    "title": "EIA Refinery Crude Runs Change OCT/23",
-    "country": "USD",
-    "date_utc": "2026-10-28T18:30+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "0.034M",
-    "actual": "-0.123M",
-    "source": "te"
-  },
-  {
-    "title": "Atlanta Fed GDPNow Q3",
-    "country": "USD",
-    "date_utc": "2026-10-28T18:50+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "3.4%",
-    "actual": "3.3%",
-    "source": "te"
-  },
-  {
-    "title": "17-Week Bill Auction",
-    "country": "USD",
-    "date_utc": "2026-10-28T19:30+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "4.155%",
-    "actual": "4.140%",
-    "source": "te"
-  },
-  {
-    "title": "2-Year FRN Auction",
-    "country": "USD",
-    "date_utc": "2026-10-28T19:30+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "0.040%",
-    "actual": "0.038%",
-    "source": "te"
-  },
-  {
-    "title": "M2 Money Supply YoY SEP",
-    "country": "RU",
-    "date_utc": "2026-10-28T19:45+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "12.8%",
-    "actual": "13.3%",
-    "source": "te"
-  },
-  {
-    "title": "Unemployment Rate SEP",
-    "country": "RU",
-    "date_utc": "2026-10-28T20:00+00:00",
-    "impact": "",
-    "forecast": "2.20%",
-    "previous": "2.2%",
-    "actual": "2.2%",
-    "source": "te"
-  },
-  {
-    "title": "Business Confidence OCT",
-    "country": "RU",
-    "date_utc": "2026-10-28T20:00+00:00",
-    "impact": "",
-    "forecast": "-0.8",
-    "previous": "-0.4 ",
-    "actual": "-0.2",
-    "source": "te"
-  },
-  {
-    "title": "Corporate Profits AUG",
-    "country": "RU",
-    "date_utc": "2026-10-28T20:00+00:00",
-    "impact": "",
-    "forecast": "RUB 15.4T",
-    "previous": "RUB13T",
-    "actual": "RUB 15.7T",
-    "source": "te"
-  },
-  {
-    "title": "GDP YoY SEP",
-    "country": "RU",
-    "date_utc": "2026-10-28T20:00+00:00",
-    "impact": "",
-    "forecast": "1%",
-    "previous": "0.8%",
-    "actual": "0.5%",
-    "source": "te"
-  },
-  {
-    "title": "Industrial Production YoY SEP",
-    "country": "RU",
-    "date_utc": "2026-10-28T20:00+00:00",
-    "impact": "",
-    "forecast": "-0.3%",
-    "previous": "-0.6%",
-    "actual": "1.8%",
-    "source": "te"
-  },
-  {
-    "title": "Real Wage Growth YoY AUG",
-    "country": "RU",
-    "date_utc": "2026-10-28T20:00+00:00",
-    "impact": "",
-    "forecast": "3.0%",
-    "previous": "3.3%",
-    "actual": "3.3%",
-    "source": "te"
-  },
-  {
-    "title": "Retail Sales YoY SEP",
-    "country": "RU",
-    "date_utc": "2026-10-28T20:00+00:00",
-    "impact": "",
-    "forecast": "4.0%",
-    "previous": "3.3%",
-    "actual": "3.9%",
-    "source": "te"
-  },
-  {
-    "title": "Fed Interest Rate Decision",
-    "country": "USD",
-    "date_utc": "2026-10-28T22:00+00:00",
-    "impact": "",
-    "forecast": "4.0%",
-    "previous": "4%",
-    "actual": "4%",
-    "source": "te"
-  },
-  {
-    "title": "FOMC Statement",
-    "country": "USD",
-    "date_utc": "2026-10-28T22:00+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "Fed Press Conference",
-    "country": "USD",
-    "date_utc": "2026-10-28T22:30+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "Business Confidence OCT",
-    "country": "KRW",
-    "date_utc": "2026-10-29T01:00+00:00",
-    "impact": "",
-    "forecast": "79.2",
-    "previous": "79",
-    "actual": "78",
-    "source": "te"
-  },
-  {
-    "title": "Foreign Bond Investment OCT/24",
-    "country": "JPY",
-    "date_utc": "2026-10-29T03:50+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "-160.5B ",
-    "actual": "-92.6B",
-    "source": "te"
-  },
-  {
-    "title": "Stock Investment by Foreigners OCT/24",
-    "country": "JPY",
-    "date_utc": "2026-10-29T03:50+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "-67.5B ",
-    "actual": "1180.9B",
-    "source": "te"
-  },
-  {
     "title": "Car Production YoY SEP",
     "country": "GBP",
     "date_utc": "2026-10-29T04:01+00:00",
@@ -716,7 +36,7 @@
     "impact": "",
     "forecast": "10%",
     "previous": "15.2%",
-    "actual": "",
+    "actual": "19.4%",
     "source": "te"
   },
   {
@@ -725,8 +45,8 @@
     "date_utc": "2026-10-29T07:30+00:00",
     "impact": "",
     "forecast": "16%",
-    "previous": "15.6%",
-    "actual": "",
+    "previous": "15.5% ",
+    "actual": "19.9%",
     "source": "te"
   },
   {
@@ -736,7 +56,7 @@
     "impact": "",
     "forecast": "25%",
     "previous": "38.8%",
-    "actual": "",
+    "actual": "48%",
     "source": "te"
   },
   {
@@ -746,7 +66,7 @@
     "impact": "",
     "forecast": "",
     "previous": "1.964%",
-    "actual": "",
+    "actual": "1.905%",
     "source": "te"
   },
   {
@@ -756,7 +76,7 @@
     "impact": "",
     "forecast": "",
     "previous": "1.2680%",
-    "actual": "",
+    "actual": "1.2706%",
     "source": "te"
   },
   {
@@ -766,7 +86,7 @@
     "impact": "",
     "forecast": "35.6",
     "previous": "35.4",
-    "actual": "",
+    "actual": "35.0",
     "source": "te"
   },
   {
@@ -776,7 +96,7 @@
     "impact": "",
     "forecast": "",
     "previous": "8.89%",
-    "actual": "",
+    "actual": "7.93%",
     "source": "te"
   },
   {
@@ -786,7 +106,7 @@
     "impact": "",
     "forecast": "7.5%",
     "previous": "7.47%",
-    "actual": "",
+    "actual": "6.23%",
     "source": "te"
   },
   {
@@ -795,8 +115,8 @@
     "date_utc": "2026-10-29T12:00+00:00",
     "impact": "",
     "forecast": "0.4%",
-    "previous": "0.3%",
-    "actual": "",
+    "previous": "0.2% ",
+    "actual": "-0.4%",
     "source": "te"
   },
   {
@@ -805,8 +125,8 @@
     "date_utc": "2026-10-29T12:00+00:00",
     "impact": "",
     "forecast": "-0.5%",
-    "previous": "-0.4%",
-    "actual": "",
+    "previous": "-0.5% ",
+    "actual": "-1.4%",
     "source": "te"
   },
   {
@@ -815,8 +135,8 @@
     "date_utc": "2026-10-29T13:00+00:00",
     "impact": "",
     "forecast": "6.2%",
-    "previous": "6.2%",
-    "actual": "",
+    "previous": "6.2% ",
+    "actual": "6.3%",
     "source": "te"
   },
   {
@@ -826,7 +146,7 @@
     "impact": "",
     "forecast": "0.5%",
     "previous": "-0.4%",
-    "actual": "",
+    "actual": "1%",
     "source": "te"
   },
   {
@@ -836,7 +156,7 @@
     "impact": "",
     "forecast": "6.5%",
     "previous": "5%",
-    "actual": "",
+    "actual": "6.2%",
     "source": "te"
   },
   {
@@ -845,8 +165,8 @@
     "date_utc": "2026-10-29T13:30+00:00",
     "impact": "",
     "forecast": "2.2B",
-    "previous": "2.464B",
-    "actual": "",
+    "previous": "2.683B ",
+    "actual": "1.914B",
     "source": "te"
   },
   {
@@ -855,8 +175,8 @@
     "date_utc": "2026-10-29T13:30+00:00",
     "impact": "",
     "forecast": "54.5K",
-    "previous": "54.92K",
-    "actual": "",
+    "previous": "54.81K ",
+    "actual": "53.44K",
     "source": "te"
   },
   {
@@ -865,8 +185,8 @@
     "date_utc": "2026-10-29T13:30+00:00",
     "impact": "",
     "forecast": "4.5B",
-    "previous": "4.41B",
-    "actual": "",
+    "previous": "4.17B ",
+    "actual": "3.87B",
     "source": "te"
   },
   {
@@ -876,7 +196,7 @@
     "impact": "",
     "forecast": "0.3%",
     "previous": "0.4%",
-    "actual": "",
+    "actual": "0.1%",
     "source": "te"
   },
   {
@@ -885,8 +205,8 @@
     "date_utc": "2026-10-29T13:30+00:00",
     "impact": "",
     "forecast": "6.8B",
-    "previous": "6.874B",
-    "actual": "",
+    "previous": "6.9B ",
+    "actual": "5.8B",
     "source": "te"
   },
   {
@@ -895,8 +215,8 @@
     "date_utc": "2026-10-29T14:00+00:00",
     "impact": "",
     "forecast": "97.2",
-    "previous": "97.9",
-    "actual": "",
+    "previous": "97.5 ",
+    "actual": "96.9",
     "source": "te"
   },
   {
@@ -905,8 +225,8 @@
     "date_utc": "2026-10-29T14:00+00:00",
     "impact": "",
     "forecast": "-17.9",
-    "previous": "-16.5",
-    "actual": "",
+    "previous": "-16.8",
+    "actual": "-17.9",
     "source": "te"
   },
   {
@@ -915,8 +235,8 @@
     "date_utc": "2026-10-29T14:00+00:00",
     "impact": "",
     "forecast": "38",
-    "previous": "35.2",
-    "actual": "",
+    "previous": "34.7 ",
+    "actual": "33.9",
     "source": "te"
   },
   {
@@ -925,8 +245,8 @@
     "date_utc": "2026-10-29T14:00+00:00",
     "impact": "",
     "forecast": "-4",
-    "previous": "-3.8",
-    "actual": "",
+    "previous": "-3.9 ",
+    "actual": "-3.4",
     "source": "te"
   },
   {
@@ -935,8 +255,8 @@
     "date_utc": "2026-10-29T14:00+00:00",
     "impact": "",
     "forecast": "22",
-    "previous": "20.3",
-    "actual": "",
+    "previous": "20.8 ",
+    "actual": "24.8",
     "source": "te"
   },
   {
@@ -945,18 +265,18 @@
     "date_utc": "2026-10-29T14:00+00:00",
     "impact": "",
     "forecast": "5.5",
-    "previous": "6.1",
-    "actual": "",
+    "previous": "5.9 ",
+    "actual": "5.3",
     "source": "te"
   },
   {
-    "title": "Conventional/Index-linked Gilt Tender",
+    "title": "Treasury Gilt 2031 Auction",
     "country": "GBP",
     "date_utc": "2026-10-29T14:00+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
-    "actual": "",
+    "previous": "4.842%",
+    "actual": "4.847%",
     "source": "te"
   },
   {
@@ -966,7 +286,7 @@
     "impact": "",
     "forecast": "",
     "previous": "4.58%",
-    "actual": "",
+    "actual": "4.49%",
     "source": "te"
   },
   {
@@ -976,7 +296,7 @@
     "impact": "",
     "forecast": "",
     "previous": "4.08%",
-    "actual": "",
+    "actual": "4.02%",
     "source": "te"
   },
   {
@@ -986,7 +306,7 @@
     "impact": "",
     "forecast": "",
     "previous": "4.24%",
-    "actual": "",
+    "actual": "3.90%",
     "source": "te"
   },
   {
@@ -996,7 +316,7 @@
     "impact": "",
     "forecast": "1.7%",
     "previous": "1.57%",
-    "actual": "",
+    "actual": "1.47%",
     "source": "te"
   },
   {
@@ -1005,8 +325,8 @@
     "date_utc": "2026-10-29T15:00+00:00",
     "impact": "",
     "forecast": "-2",
-    "previous": "-1.6",
-    "actual": "",
+    "previous": "-1.5 ",
+    "actual": "-0.7",
     "source": "te"
   },
   {
@@ -1016,7 +336,7 @@
     "impact": "",
     "forecast": "89.1",
     "previous": "91.2",
-    "actual": "",
+    "actual": "90.3",
     "source": "te"
   },
   {
@@ -1026,7 +346,7 @@
     "impact": "",
     "forecast": "1.0%",
     "previous": "0.5%",
-    "actual": "",
+    "actual": "0.4%",
     "source": "te"
   },
   {
@@ -1036,7 +356,7 @@
     "impact": "",
     "forecast": "3.2%",
     "previous": "3.2%",
-    "actual": "",
+    "actual": "3.7%",
     "source": "te"
   },
   {
@@ -1045,8 +365,8 @@
     "date_utc": "2026-10-29T16:30+00:00",
     "impact": "",
     "forecast": "0.3%",
-    "previous": "0.2%",
-    "actual": "",
+    "previous": "0.3% ",
+    "actual": "0.3%",
     "source": "te"
   },
   {
@@ -1056,7 +376,7 @@
     "impact": "",
     "forecast": "3.1%",
     "previous": "2.2%",
-    "actual": "",
+    "actual": "3.4%",
     "source": "te"
   },
   {
@@ -1065,8 +385,8 @@
     "date_utc": "2026-10-29T16:30+00:00",
     "impact": "",
     "forecast": "0.3%",
-    "previous": "0.2%",
-    "actual": "",
+    "previous": "0.3% ",
+    "actual": "0.2%",
     "source": "te"
   },
   {
@@ -1076,7 +396,7 @@
     "impact": "",
     "forecast": "0.3%",
     "previous": "0.9%",
-    "actual": "",
+    "actual": "0.5%",
     "source": "te"
   },
   {
@@ -1086,7 +406,7 @@
     "impact": "",
     "forecast": "3.6%",
     "previous": "6.1%",
-    "actual": "",
+    "actual": "2.2%",
     "source": "te"
   },
   {
@@ -1095,8 +415,8 @@
     "date_utc": "2026-10-29T16:30+00:00",
     "impact": "",
     "forecast": "196.0K",
-    "previous": "194K",
-    "actual": "",
+    "previous": "195K ",
+    "actual": "194K",
     "source": "te"
   },
   {
@@ -1106,7 +426,7 @@
     "impact": "",
     "forecast": "0.5%",
     "previous": "0.3%",
-    "actual": "",
+    "actual": "0.5%",
     "source": "te"
   },
   {
@@ -1116,7 +436,7 @@
     "impact": "",
     "forecast": "3.6%",
     "previous": "3.4%",
-    "actual": "",
+    "actual": "3.6%",
     "source": "te"
   },
   {
@@ -1125,8 +445,8 @@
     "date_utc": "2026-10-29T16:30+00:00",
     "impact": "",
     "forecast": "1729.0K",
-    "previous": "1728K",
-    "actual": "",
+    "previous": "1722K ",
+    "actual": "1701K",
     "source": "te"
   },
   {
@@ -1136,7 +456,7 @@
     "impact": "",
     "forecast": "3.1%",
     "previous": "3%",
-    "actual": "",
+    "actual": "3.1%",
     "source": "te"
   },
   {
@@ -1146,7 +466,7 @@
     "impact": "",
     "forecast": "2.3%",
     "previous": "3.3%",
-    "actual": "",
+    "actual": "2.5%",
     "source": "te"
   },
   {
@@ -1156,7 +476,7 @@
     "impact": "",
     "forecast": "3.5%",
     "previous": "2.8%",
-    "actual": "",
+    "actual": "1.7%",
     "source": "te"
   },
   {
@@ -1165,8 +485,8 @@
     "date_utc": "2026-10-29T16:30+00:00",
     "impact": "",
     "forecast": "197.0K",
-    "previous": "197.75K",
-    "actual": "",
+    "previous": "198K ",
+    "actual": "196.75K",
     "source": "te"
   },
   {
@@ -1176,7 +496,7 @@
     "impact": "",
     "forecast": "2.0%",
     "previous": "5%",
-    "actual": "",
+    "actual": "2.1%",
     "source": "te"
   },
   {
@@ -1186,7 +506,7 @@
     "impact": "",
     "forecast": "3.9%",
     "previous": "3.8%",
-    "actual": "",
+    "actual": "3.8%",
     "source": "te"
   },
   {
@@ -1195,8 +515,8 @@
     "date_utc": "2026-10-29T16:30+00:00",
     "impact": "",
     "forecast": "0.4%",
-    "previous": "0.6%",
-    "actual": "",
+    "previous": "0.5% ",
+    "actual": "0%",
     "source": "te"
   },
   {
@@ -1206,7 +526,7 @@
     "impact": "",
     "forecast": "2.5%",
     "previous": "2.5%",
-    "actual": "",
+    "actual": "2.5%",
     "source": "te"
   },
   {
@@ -1216,7 +536,7 @@
     "impact": "",
     "forecast": "2.65%",
     "previous": "2.65%",
-    "actual": "",
+    "actual": "2.65%",
     "source": "te"
   },
   {
@@ -1236,7 +556,7 @@
     "impact": "",
     "forecast": "2.9%",
     "previous": "2.9%",
-    "actual": "",
+    "actual": "2.9%",
     "source": "te"
   },
   {
@@ -1256,7 +576,17 @@
     "impact": "",
     "forecast": "",
     "previous": "77Bcf",
-    "actual": "",
+    "actual": "80Bcf",
+    "source": "te"
+  },
+  {
+    "title": "Atlanta Fed GDPNow Q4",
+    "country": "USD",
+    "date_utc": "2026-10-29T19:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "3.3%",
+    "actual": "3.2%",
     "source": "te"
   },
   {
@@ -1266,7 +596,7 @@
     "impact": "",
     "forecast": "",
     "previous": "3.945%",
-    "actual": "",
+    "actual": "3.910%",
     "source": "te"
   },
   {
@@ -1276,7 +606,7 @@
     "impact": "",
     "forecast": "",
     "previous": "4.015%",
-    "actual": "",
+    "actual": "4.020%",
     "source": "te"
   },
   {
@@ -1286,7 +616,7 @@
     "impact": "",
     "forecast": "",
     "previous": "3.966%",
-    "actual": "",
+    "actual": "3.887%",
     "source": "te"
   },
   {
@@ -1296,7 +626,7 @@
     "impact": "",
     "forecast": "",
     "previous": "6.68%",
-    "actual": "",
+    "actual": "6.60%",
     "source": "te"
   },
   {
@@ -1306,7 +636,17 @@
     "impact": "",
     "forecast": "",
     "previous": "7.32%",
-    "actual": "",
+    "actual": "7.24%",
+    "source": "te"
+  },
+  {
+    "title": "Gross Debt to GDP SEP",
+    "country": "BRL",
+    "date_utc": "2026-10-29T21:00+00:00",
+    "impact": "",
+    "forecast": "83.5%",
+    "previous": "82.9%",
+    "actual": "82.9%",
     "source": "te"
   },
   {
@@ -1316,7 +656,7 @@
     "impact": "",
     "forecast": "",
     "previous": "5.085%",
-    "actual": "",
+    "actual": "4.894%",
     "source": "te"
   },
   {
@@ -2170,16 +1510,6 @@
     "source": "te"
   },
   {
-    "title": "Gross Debt to GDP SEP",
-    "country": "BRL",
-    "date_utc": "2026-10-30T15:30+00:00",
-    "impact": "",
-    "forecast": "83.5%",
-    "previous": "82.9%",
-    "actual": "",
-    "source": "te"
-  },
-  {
     "title": "Nominal Budget Balance SEP",
     "country": "BRL",
     "date_utc": "2026-10-30T15:30+00:00",
@@ -2585,7 +1915,7 @@
     "date_utc": "2026-11-02T08:35+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "1.941%",
     "actual": "",
     "source": "te"
   },
@@ -2684,7 +2014,7 @@
     "country": "RU",
     "date_utc": "2026-11-02T11:00+00:00",
     "impact": "",
-    "forecast": "",
+    "forecast": "50",
     "previous": "49.8",
     "actual": "",
     "source": "te"
@@ -2714,7 +2044,7 @@
     "country": "TRY",
     "date_utc": "2026-11-02T12:00+00:00",
     "impact": "",
-    "forecast": "",
+    "forecast": "48",
     "previous": "47.9",
     "actual": "",
     "source": "te"
@@ -2855,7 +2185,7 @@
     "date_utc": "2026-11-02T19:00+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "3.365%",
     "actual": "",
     "source": "te"
   },
@@ -2865,7 +2195,7 @@
     "date_utc": "2026-11-02T19:00+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "2.787%",
     "actual": "",
     "source": "te"
   },
@@ -2875,7 +2205,7 @@
     "date_utc": "2026-11-02T19:00+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "3.025%",
     "actual": "",
     "source": "te"
   },
@@ -3064,7 +2394,7 @@
     "country": "TRY",
     "date_utc": "2026-11-03T12:00+00:00",
     "impact": "",
-    "forecast": "",
+    "forecast": "1.8%",
     "previous": "1.84%",
     "actual": "",
     "source": "te"
@@ -3074,7 +2404,7 @@
     "country": "TRY",
     "date_utc": "2026-11-03T12:00+00:00",
     "impact": "",
-    "forecast": "",
+    "forecast": "30.0%",
     "previous": "29.73%",
     "actual": "",
     "source": "te"
@@ -3084,7 +2414,7 @@
     "country": "TRY",
     "date_utc": "2026-11-03T12:00+00:00",
     "impact": "",
-    "forecast": "",
+    "forecast": "1.9%",
     "previous": "2.07%",
     "actual": "",
     "source": "te"
@@ -3094,7 +2424,7 @@
     "country": "TRY",
     "date_utc": "2026-11-03T12:00+00:00",
     "impact": "",
-    "forecast": "",
+    "forecast": "28.0%",
     "previous": "27.38%",
     "actual": "",
     "source": "te"
@@ -3600,16 +2930,6 @@
     "source": "te"
   },
   {
-    "title": "15/20/30-Year Bund Auction",
-    "country": "EUR",
-    "date_utc": "2026-11-04T14:30+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "",
-    "actual": "",
-    "source": "te"
-  },
-  {
     "title": "S&P Global Composite PMI Final OCT",
     "country": "GBP",
     "date_utc": "2026-11-04T14:30+00:00",
@@ -3676,6 +2996,16 @@
     "impact": "",
     "forecast": "",
     "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "15-Year Bund Auction",
+    "country": "EUR",
+    "date_utc": "2026-11-04T15:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "3.50%",
     "actual": "",
     "source": "te"
   },
@@ -4194,7 +3524,7 @@
     "country": "RU",
     "date_utc": "2026-11-05T11:00+00:00",
     "impact": "",
-    "forecast": "",
+    "forecast": "50.7",
     "previous": "50.8",
     "actual": "",
     "source": "te"
@@ -4204,7 +3534,7 @@
     "country": "RU",
     "date_utc": "2026-11-05T11:00+00:00",
     "impact": "",
-    "forecast": "",
+    "forecast": "51.1",
     "previous": "51.3",
     "actual": "",
     "source": "te"
@@ -4274,7 +3604,7 @@
     "country": "GBP",
     "date_utc": "2026-11-05T14:00+00:00",
     "impact": "",
-    "forecast": "",
+    "forecast": "11.0%",
     "previous": "12.1%",
     "actual": "",
     "source": "te"
@@ -4284,7 +3614,7 @@
     "country": "GBP",
     "date_utc": "2026-11-05T14:30+00:00",
     "impact": "",
-    "forecast": "",
+    "forecast": "45.5",
     "previous": "46.1",
     "actual": "",
     "source": "te"
@@ -4494,8 +3824,8 @@
     "country": "USD",
     "date_utc": "2026-11-05T18:30+00:00",
     "impact": "",
-    "forecast": "",
-    "previous": "",
+    "forecast": "195.0K",
+    "previous": "194K",
     "actual": "",
     "source": "te"
   },
@@ -4514,8 +3844,8 @@
     "country": "USD",
     "date_utc": "2026-11-05T18:30+00:00",
     "impact": "",
-    "forecast": "",
-    "previous": "",
+    "forecast": "1704.0K",
+    "previous": "1701K",
     "actual": "",
     "source": "te"
   },
@@ -4524,8 +3854,8 @@
     "country": "USD",
     "date_utc": "2026-11-05T18:30+00:00",
     "impact": "",
-    "forecast": "",
-    "previous": "",
+    "forecast": "196.0K",
+    "previous": "196.75K",
     "actual": "",
     "source": "te"
   },
@@ -4555,7 +3885,7 @@
     "date_utc": "2026-11-05T20:30+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "80Bcf",
     "actual": "",
     "source": "te"
   },
@@ -4565,7 +3895,7 @@
     "date_utc": "2026-11-05T21:30+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "3.910%",
     "actual": "",
     "source": "te"
   },
@@ -4575,7 +3905,7 @@
     "date_utc": "2026-11-05T21:30+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "4.020%",
     "actual": "",
     "source": "te"
   },
@@ -4585,7 +3915,7 @@
     "date_utc": "2026-11-05T22:00+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "6.60%",
     "actual": "",
     "source": "te"
   },
@@ -4595,7 +3925,7 @@
     "date_utc": "2026-11-05T22:00+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "7.24%",
     "actual": "",
     "source": "te"
   },
@@ -4695,7 +4025,7 @@
     "date_utc": "2026-11-06T08:35+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "1.2706%",
     "actual": "",
     "source": "te"
   },
@@ -4724,7 +4054,7 @@
     "country": "GBP",
     "date_utc": "2026-11-06T12:00+00:00",
     "impact": "",
-    "forecast": "",
+    "forecast": "0.2%",
     "previous": "0%",
     "actual": "",
     "source": "te"
@@ -4734,7 +4064,7 @@
     "country": "GBP",
     "date_utc": "2026-11-06T12:00+00:00",
     "impact": "",
-    "forecast": "",
+    "forecast": "-0.2%",
     "previous": "0%",
     "actual": "",
     "source": "te"
@@ -4844,7 +4174,7 @@
     "country": "GBP",
     "date_utc": "2026-11-06T15:00+00:00",
     "impact": "",
-    "forecast": "",
+    "forecast": "6.6%",
     "previous": "6.58%",
     "actual": "",
     "source": "te"
@@ -5147,6 +4477,126 @@
     "forecast": "$ 5B",
     "previous": "$8.28B",
     "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "RBA Senate Appearance",
+    "country": "AUD",
+    "date_utc": "2026-10-28T04:15+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Inflation Rate MoM SEP",
+    "country": "AUD",
+    "date_utc": "2026-10-28T04:30+00:00",
+    "impact": "",
+    "forecast": "0.6%",
+    "previous": "0.4%",
+    "actual": "0.8%",
+    "source": "te"
+  },
+  {
+    "title": "Inflation Rate YoY SEP",
+    "country": "AUD",
+    "date_utc": "2026-10-28T04:30+00:00",
+    "impact": "",
+    "forecast": "4.1%",
+    "previous": "4.0%",
+    "actual": "4.3%",
+    "source": "te"
+  },
+  {
+    "title": "RBA Trimmed Mean CPI MoM SEP",
+    "country": "AUD",
+    "date_utc": "2026-10-28T04:30+00:00",
+    "impact": "",
+    "forecast": "0.3%",
+    "previous": "0.2%",
+    "actual": "0.3%",
+    "source": "te"
+  },
+  {
+    "title": "RBA Trimmed Mean CPI YoY SEP",
+    "country": "AUD",
+    "date_utc": "2026-10-28T04:30+00:00",
+    "impact": "",
+    "forecast": "3.6%",
+    "previous": "3.5%",
+    "actual": "3.6%",
+    "source": "te"
+  },
+  {
+    "title": "CPI SEP",
+    "country": "AUD",
+    "date_utc": "2026-10-28T04:30+00:00",
+    "impact": "",
+    "forecast": "104.1",
+    "previous": "103.50",
+    "actual": "104.34",
+    "source": "te"
+  },
+  {
+    "title": "Quarterly Inflation Rate QoQ Q3",
+    "country": "AUD",
+    "date_utc": "2026-10-28T04:30+00:00",
+    "impact": "",
+    "forecast": "1.3%",
+    "previous": "0.6%",
+    "actual": "1.3%",
+    "source": "te"
+  },
+  {
+    "title": "Quarterly Inflation Rate YoY Q3",
+    "country": "AUD",
+    "date_utc": "2026-10-28T04:30+00:00",
+    "impact": "",
+    "forecast": "3.9%",
+    "previous": "3.9%",
+    "actual": "3.9%",
+    "source": "te"
+  },
+  {
+    "title": "Quarterly RBA Trimmed Mean CPI QoQ Q3",
+    "country": "AUD",
+    "date_utc": "2026-10-28T04:30+00:00",
+    "impact": "",
+    "forecast": "0.9%",
+    "previous": "0.8%",
+    "actual": "1%",
+    "source": "te"
+  },
+  {
+    "title": "Quarterly RBA Trimmed Mean CPI YoY Q3",
+    "country": "AUD",
+    "date_utc": "2026-10-28T04:30+00:00",
+    "impact": "",
+    "forecast": "3.5%",
+    "previous": "3.6%",
+    "actual": "3.7%",
+    "source": "te"
+  },
+  {
+    "title": "RBA Weighted Median CPI MoM SEP",
+    "country": "AUD",
+    "date_utc": "2026-10-28T04:30+00:00",
+    "impact": "",
+    "forecast": "0.3%",
+    "previous": "0.3%",
+    "actual": "0.2%",
+    "source": "te"
+  },
+  {
+    "title": "RBA Weighted Median CPI YoY SEP",
+    "country": "AUD",
+    "date_utc": "2026-10-28T04:30+00:00",
+    "impact": "",
+    "forecast": "3.6%",
+    "previous": "3.6%",
+    "actual": "3.4%",
     "source": "te"
   },
   {
@@ -5817,6 +5267,36 @@
     "forecast": "3.7%",
     "previous": "3.5% ",
     "actual": "3.7%",
+    "source": "te"
+  },
+  {
+    "title": "BoJ JGB Purchase",
+    "country": "JPY",
+    "date_utc": "2026-10-28T07:35+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Foreign Bond Investment OCT/24",
+    "country": "JPY",
+    "date_utc": "2026-10-29T03:50+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "-160.5B ",
+    "actual": "-92.6B",
+    "source": "te"
+  },
+  {
+    "title": "Stock Investment by Foreigners OCT/24",
+    "country": "JPY",
+    "date_utc": "2026-10-29T03:50+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "-67.5B ",
+    "actual": "1180.9B",
     "source": "te"
   },
   {
@@ -6544,7 +6024,7 @@
     "country": "CNY",
     "date_utc": "2026-11-10T08:00+00:00",
     "impact": "",
-    "forecast": "",
+    "forecast": "CNY951.0B",
     "previous": "CNY905.97B",
     "actual": "",
     "source": "te"
@@ -6640,12 +6120,52 @@
     "source": "te"
   },
   {
+    "title": "BoC Interest Rate Decision",
+    "country": "CAD",
+    "date_utc": "2026-10-28T17:45+00:00",
+    "impact": "",
+    "forecast": "2.5%",
+    "previous": "2.25%",
+    "actual": "2.5%",
+    "source": "te"
+  },
+  {
+    "title": "BoC Monetary Policy Report",
+    "country": "CAD",
+    "date_utc": "2026-10-28T17:45+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "BoC Rate Statement",
+    "country": "CAD",
+    "date_utc": "2026-10-28T17:45+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "BoC Press Conference",
+    "country": "CAD",
+    "date_utc": "2026-10-28T18:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
     "title": "10-Year Bond Auction",
     "country": "CAD",
     "date_utc": "2026-11-09T22:00+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "3.887%",
     "actual": "",
     "source": "te"
   },
@@ -6933,6 +6453,26 @@
     "title": "10-Year Bond Auction",
     "country": "CAD",
     "date_utc": "2026-11-23T22:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Autumn Budget",
+    "country": "GBP",
+    "date_utc": "2026-10-28T16:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Autumn Forecast Statement",
+    "country": "GBP",
+    "date_utc": "2026-10-28T16:30+00:00",
     "impact": "",
     "forecast": "",
     "previous": "",
@@ -7510,6 +7050,26 @@
     "source": "te"
   },
   {
+    "title": "GfK Consumer Confidence NOV",
+    "country": "EUR",
+    "date_utc": "2026-10-28T11:00+00:00",
+    "impact": "",
+    "forecast": "-32",
+    "previous": "-30.6",
+    "actual": "-30.8",
+    "source": "te"
+  },
+  {
+    "title": "10-Year Bund Auction",
+    "country": "EUR",
+    "date_utc": "2026-10-28T14:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "3.58%",
+    "actual": "3.37%",
+    "source": "te"
+  },
+  {
     "title": "Balance of Trade SEP",
     "country": "EUR",
     "date_utc": "2026-11-09T12:00+00:00",
@@ -7730,6 +7290,36 @@
     "source": "te"
   },
   {
+    "title": "Ifo Business Climate NOV",
+    "country": "EUR",
+    "date_utc": "2026-11-24T14:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "90.2",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Ifo Current Conditions NOV",
+    "country": "EUR",
+    "date_utc": "2026-11-24T14:00+00:00",
+    "impact": "",
+    "forecast": "88",
+    "previous": "88.8",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Ifo Expectations NOV",
+    "country": "EUR",
+    "date_utc": "2026-11-24T14:00+00:00",
+    "impact": "",
+    "forecast": "91.7",
+    "previous": "91.6",
+    "actual": "",
+    "source": "te"
+  },
+  {
     "title": "12-Month BTF Auction",
     "country": "EUR",
     "date_utc": "2026-10-26T18:00+00:00",
@@ -7770,6 +7360,26 @@
     "source": "te"
   },
   {
+    "title": "Unemployment Benefit Claims SEP",
+    "country": "EUR",
+    "date_utc": "2026-10-28T15:00+00:00",
+    "impact": "",
+    "forecast": "5K",
+    "previous": "-61.3K",
+    "actual": "110.8K",
+    "source": "te"
+  },
+  {
+    "title": "Jobseekers Total SEP",
+    "country": "EUR",
+    "date_utc": "2026-10-28T15:00+00:00",
+    "impact": "",
+    "forecast": "3086.7K",
+    "previous": "3081.7K",
+    "actual": "3192.5K",
+    "source": "te"
+  },
+  {
     "title": "12-Month BTF Auction",
     "country": "EUR",
     "date_utc": "2026-11-09T19:00+00:00",
@@ -7802,7 +7412,7 @@
   {
     "title": "Unemployment Rate Q3",
     "country": "EUR",
-    "date_utc": "2026-11-13T11:30+00:00",
+    "date_utc": "2026-11-10T11:30+00:00",
     "impact": "",
     "forecast": "8.30%",
     "previous": "8.3%",
@@ -7993,6 +7603,236 @@
     "title": "6-Month BTF Auction",
     "country": "EUR",
     "date_utc": "2026-11-23T19:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "MBA 30-Year Mortgage Rate OCT/23",
+    "country": "USD",
+    "date_utc": "2026-10-28T15:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "7.41%",
+    "actual": "7.37%",
+    "source": "te"
+  },
+  {
+    "title": "MBA Mortgage Applications OCT/23",
+    "country": "USD",
+    "date_utc": "2026-10-28T15:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "-5.3%",
+    "actual": "3.4%",
+    "source": "te"
+  },
+  {
+    "title": "MBA Mortgage Market Index OCT/23",
+    "country": "USD",
+    "date_utc": "2026-10-28T15:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "188.6",
+    "actual": "195.0",
+    "source": "te"
+  },
+  {
+    "title": "MBA Mortgage Refinance Index OCT/23",
+    "country": "USD",
+    "date_utc": "2026-10-28T15:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "503.1",
+    "actual": "516.8",
+    "source": "te"
+  },
+  {
+    "title": "MBA Purchase Index OCT/23",
+    "country": "USD",
+    "date_utc": "2026-10-28T15:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "129.2",
+    "actual": "134.1",
+    "source": "te"
+  },
+  {
+    "title": "Goods Trade Balance Adv SEP",
+    "country": "USD",
+    "date_utc": "2026-10-28T16:30+00:00",
+    "impact": "",
+    "forecast": "$-108.0B",
+    "previous": "$-132.07B ",
+    "actual": "$-134.9B",
+    "source": "te"
+  },
+  {
+    "title": "Retail Inventories Ex Autos MoM Adv SEP",
+    "country": "USD",
+    "date_utc": "2026-10-28T16:30+00:00",
+    "impact": "",
+    "forecast": "-0.1%",
+    "previous": "0.1% ",
+    "actual": "0.4%",
+    "source": "te"
+  },
+  {
+    "title": "Wholesale Inventories MoM Adv SEP",
+    "country": "USD",
+    "date_utc": "2026-10-28T16:30+00:00",
+    "impact": "",
+    "forecast": "0.3%",
+    "previous": "0.5%",
+    "actual": "0.6%",
+    "source": "te"
+  },
+  {
+    "title": "EIA Crude Oil Stocks Change OCT/23",
+    "country": "USD",
+    "date_utc": "2026-10-28T18:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "-3.061M",
+    "actual": "-1.892M",
+    "source": "te"
+  },
+  {
+    "title": "EIA Gasoline Stocks Change OCT/23",
+    "country": "USD",
+    "date_utc": "2026-10-28T18:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "-2.952M",
+    "actual": "3.87M",
+    "source": "te"
+  },
+  {
+    "title": "EIA Crude Oil Imports Change OCT/23",
+    "country": "USD",
+    "date_utc": "2026-10-28T18:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "0.837M",
+    "actual": "-0.796M",
+    "source": "te"
+  },
+  {
+    "title": "EIA Cushing Crude Oil Stocks Change OCT/23",
+    "country": "USD",
+    "date_utc": "2026-10-28T18:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "0.987M",
+    "actual": "-0.624M",
+    "source": "te"
+  },
+  {
+    "title": "EIA Distillate Fuel Production Change OCT/23",
+    "country": "USD",
+    "date_utc": "2026-10-28T18:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "0.043M",
+    "actual": "-0.071M",
+    "source": "te"
+  },
+  {
+    "title": "EIA Distillate Stocks Change OCT/23",
+    "country": "USD",
+    "date_utc": "2026-10-28T18:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "1.675M",
+    "actual": "-1.462M",
+    "source": "te"
+  },
+  {
+    "title": "EIA Gasoline Production Change OCT/23",
+    "country": "USD",
+    "date_utc": "2026-10-28T18:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "0.518M",
+    "actual": "-0.509M",
+    "source": "te"
+  },
+  {
+    "title": "EIA Heating Oil Stocks Change OCT/23",
+    "country": "USD",
+    "date_utc": "2026-10-28T18:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "0.652M",
+    "actual": "0.164M",
+    "source": "te"
+  },
+  {
+    "title": "EIA Refinery Crude Runs Change OCT/23",
+    "country": "USD",
+    "date_utc": "2026-10-28T18:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "0.034M",
+    "actual": "-0.123M",
+    "source": "te"
+  },
+  {
+    "title": "Atlanta Fed GDPNow Q3",
+    "country": "USD",
+    "date_utc": "2026-10-28T18:50+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "3.4%",
+    "actual": "3.3%",
+    "source": "te"
+  },
+  {
+    "title": "17-Week Bill Auction",
+    "country": "USD",
+    "date_utc": "2026-10-28T19:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "4.155%",
+    "actual": "4.140%",
+    "source": "te"
+  },
+  {
+    "title": "2-Year FRN Auction",
+    "country": "USD",
+    "date_utc": "2026-10-28T19:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "0.040%",
+    "actual": "0.038%",
+    "source": "te"
+  },
+  {
+    "title": "Fed Interest Rate Decision",
+    "country": "USD",
+    "date_utc": "2026-10-28T22:00+00:00",
+    "impact": "",
+    "forecast": "4.0%",
+    "previous": "4%",
+    "actual": "4%",
+    "source": "te"
+  },
+  {
+    "title": "FOMC Statement",
+    "country": "USD",
+    "date_utc": "2026-10-28T22:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Fed Press Conference",
+    "country": "USD",
+    "date_utc": "2026-10-28T22:30+00:00",
     "impact": "",
     "forecast": "",
     "previous": "",
@@ -9436,6 +9276,166 @@
     "impact": "",
     "forecast": "",
     "previous": "4.708%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "ADP Employment Change Weekly",
+    "country": "USD",
+    "date_utc": "2026-11-24T18:15+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Redbook YoY NOV/21",
+    "country": "USD",
+    "date_utc": "2026-11-24T18:55+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "S&P/Case-Shiller Home Price YoY SEP",
+    "country": "USD",
+    "date_utc": "2026-11-24T19:00+00:00",
+    "impact": "",
+    "forecast": "2.9%",
+    "previous": "2.7%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "House Price Index SEP",
+    "country": "USD",
+    "date_utc": "2026-11-24T19:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "444.6",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "House Price Index MoM SEP",
+    "country": "USD",
+    "date_utc": "2026-11-24T19:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "0.3%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "House Price Index YoY SEP",
+    "country": "USD",
+    "date_utc": "2026-11-24T19:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "2.4%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "S&P/Case-Shiller Home Price MoM SEP",
+    "country": "USD",
+    "date_utc": "2026-11-24T19:00+00:00",
+    "impact": "",
+    "forecast": "-0.3%",
+    "previous": "-0.4%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "CB Consumer Confidence NOV",
+    "country": "USD",
+    "date_utc": "2026-11-24T20:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "91.7",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Richmond Fed Manufacturing Index NOV",
+    "country": "USD",
+    "date_utc": "2026-11-24T20:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "-2",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Richmond Fed Manufacturing Shipments Index NOV",
+    "country": "USD",
+    "date_utc": "2026-11-24T20:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Richmond Fed Services Revenues Index NOV",
+    "country": "USD",
+    "date_utc": "2026-11-24T20:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "2",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "52-Week Bill Auction",
+    "country": "USD",
+    "date_utc": "2026-11-24T21:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "4.290%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "6-Week Bill Auction",
+    "country": "USD",
+    "date_utc": "2026-11-24T21:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "2-Year FRN Auction",
+    "country": "USD",
+    "date_utc": "2026-11-24T23:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "0.038%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "5-Year Note Auction",
+    "country": "USD",
+    "date_utc": "2026-11-24T23:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Money Supply OCT",
+    "country": "USD",
+    "date_utc": "2026-11-24T23:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "$23.41T",
     "actual": "",
     "source": "te"
   }
