@@ -28060,7 +28060,7 @@
     "impact": "Low",
     "forecast": "1.8%",
     "previous": "5.7%",
-    "actual": "",
+    "actual": "-1.1%",
     "revision": "",
     "source": "ff-feed"
   },
@@ -28071,7 +28071,7 @@
     "impact": "",
     "forecast": "79.2",
     "previous": "79",
-    "actual": "",
+    "actual": "78",
     "source": "te"
   },
   {
@@ -28081,7 +28081,7 @@
     "impact": "",
     "forecast": "",
     "previous": "-161.6B",
-    "actual": "",
+    "actual": "-92.6B",
     "source": "te"
   },
   {
@@ -28091,7 +28091,7 @@
     "impact": "",
     "forecast": "",
     "previous": "-66.5B",
-    "actual": "",
+    "actual": "1180.9B",
     "source": "te"
   },
   {
@@ -28101,7 +28101,7 @@
     "impact": "",
     "forecast": "51.5",
     "previous": "51.9",
-    "actual": "",
+    "actual": "52.5",
     "source": "te"
   },
   {
@@ -28111,7 +28111,7 @@
     "impact": "",
     "forecast": "5.0%",
     "previous": "6.1%",
-    "actual": "",
+    "actual": "38.6%",
     "source": "te"
   },
   {
@@ -28121,7 +28121,7 @@
     "impact": "",
     "forecast": "1.3%",
     "previous": "1.1%",
-    "actual": "",
+    "actual": "1.4%",
     "source": "te"
   },
   {
@@ -28131,7 +28131,7 @@
     "impact": "",
     "forecast": "1.4%",
     "previous": "5.7%",
-    "actual": "",
+    "actual": "-1.1%",
     "source": "te"
   },
   {
@@ -31933,7 +31933,7 @@
     "date_utc": "2026-11-05T04:50+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "-92.6B",
     "actual": "",
     "source": "te"
   },
@@ -31943,7 +31943,7 @@
     "date_utc": "2026-11-05T04:50+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "1180.9B",
     "actual": "",
     "source": "te"
   },
@@ -34568,36 +34568,6 @@
     "source": "te"
   },
   {
-    "title": "1-Year Bill Auction",
-    "country": "NZD",
-    "date_utc": "2026-11-17T06:35+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "3.7075%",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "3-Month Bill Auction",
-    "country": "NZD",
-    "date_utc": "2026-11-17T06:35+00:00",
-    "impact": "",
-    "forecast": "3.1999%",
-    "previous": "3.1919%",
-    "actual": "",
-    "source": "te"
-  },
-  {
-    "title": "6-Month Bill Auction",
-    "country": "NZD",
-    "date_utc": "2026-11-17T06:35+00:00",
-    "impact": "",
-    "forecast": "",
-    "previous": "3.3615%",
-    "actual": "",
-    "source": "te"
-  },
-  {
     "title": "Business Inflation Expectations Q4",
     "country": "NZD",
     "date_utc": "2026-11-17T07:00+00:00",
@@ -36454,6 +36424,66 @@
     "impact": "",
     "forecast": "",
     "previous": "4.708%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "S&P Global Manufacturing PMI Flash NOV",
+    "country": "JPY",
+    "date_utc": "2026-11-24T05:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "S&P Global Services PMI Flash NOV",
+    "country": "JPY",
+    "date_utc": "2026-11-24T05:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "S&P Global Composite PMI Flash NOV",
+    "country": "JPY",
+    "date_utc": "2026-11-24T05:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "1-Year Bill Auction",
+    "country": "NZD",
+    "date_utc": "2026-11-24T06:35+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "3.7075%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "3-Month Bill Auction",
+    "country": "NZD",
+    "date_utc": "2026-11-24T06:35+00:00",
+    "impact": "",
+    "forecast": "3.1999%",
+    "previous": "3.1919%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "6-Month Bill Auction",
+    "country": "NZD",
+    "date_utc": "2026-11-24T06:35+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "3.3615%",
     "actual": "",
     "source": "te"
   }
