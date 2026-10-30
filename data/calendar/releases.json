@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-29T19:02:51+00:00",
+  "updated": "2026-10-30T02:27:59+00:00",
   "releases": [
     {
       "country": "USD",
@@ -403,11 +403,11 @@
       "dataPoint": "National Core CPI (y/y) & Tokyo Core CPI (y/y)",
       "weight": 1.5,
       "direction": "higher_is_bullish",
-      "period": "2026-10-23T03:30+00:00",
-      "title": "Core Inflation Rate YoY SEP",
-      "actual": "2.1%",
-      "previous": "1.7%",
-      "forecast": "1.9%"
+      "period": "2026-10-30T03:30+00:00",
+      "title": "Tokyo Core CPI YoY OCT",
+      "actual": "2.6%",
+      "previous": "2.7%",
+      "forecast": "2.5%"
     },
     {
       "country": "GBP",
@@ -871,10 +871,10 @@
       "dataPoint": "2-Year Treasury Yield (21-day trend)",
       "weight": 1.0,
       "direction": "higher_is_bullish",
-      "period": "2026-10-27T00:00:00+00:00",
+      "period": "2026-10-28T00:00:00+00:00",
       "title": "2-Year Treasury Yield",
-      "actual": "4.70",
-      "previous": "4.78",
+      "actual": "4.67",
+      "previous": "4.77",
       "forecast": ""
     }
   ]
