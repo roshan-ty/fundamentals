@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30T02:27:59+00:00",
+  "updated": "2026-10-30T18:40:22+00:00",
   "releases": [
     {
       "country": "USD",
@@ -127,9 +127,9 @@
       "dataPoint": "Eurozone Unemployment Rate",
       "weight": 1.0,
       "direction": "lower_is_bullish",
-      "period": "2026-10-30T10:00+00:00",
-      "title": "Unemployment Rate",
-      "actual": "6.2%",
+      "period": "2026-10-30T12:55+00:00",
+      "title": "Unemployment Rate OCT",
+      "actual": "6.4%",
       "previous": "6.4%",
       "forecast": "6.4%"
     },
@@ -343,11 +343,11 @@
       "dataPoint": "CPI Flash Estimate (y/y) & Core CPI Flash Estimate",
       "weight": 1.5,
       "direction": "higher_is_bullish",
-      "period": "2026-10-16T13:00+00:00",
-      "title": "Harmonised Inflation Rate MoM Final SEP",
-      "actual": "0.2%",
-      "previous": "0.2%",
-      "forecast": "0.6%"
+      "period": "2026-10-30T17:00+00:00",
+      "title": "Inflation Rate YoY Prel OCT",
+      "actual": "3.4%",
+      "previous": "3.3%",
+      "forecast": "3.4%"
     },
     {
       "country": "GBP",
@@ -355,10 +355,10 @@
       "dataPoint": "CPI (y/y) & Core CPI (y/y)",
       "weight": 1.5,
       "direction": "higher_is_bullish",
-      "period": "2026-10-21T10:00+00:00",
-      "title": "Inflation Rate YoY SEP",
-      "actual": "3.5%",
-      "previous": "3.1%",
+      "period": "2026-10-30T13:30+00:00",
+      "title": "DMP 1Y CPI Expectations OCT",
+      "actual": "3.4%",
+      "previous": "3.3%",
       "forecast": "3.4%"
     },
     {
@@ -427,10 +427,10 @@
       "dataPoint": "BoJ Policy Rate / Monetary Policy Statement / BoJ Press Conference",
       "weight": 2.0,
       "direction": "higher_is_bullish",
-      "period": "2026-09-18T07:00+00:00",
+      "period": "2026-10-30T07:00+00:00",
       "title": "BoJ Interest Rate Decision",
       "actual": "1.25%",
-      "previous": "1%",
+      "previous": "1.25%",
       "forecast": "1.25%"
     },
     {
@@ -619,11 +619,11 @@
       "dataPoint": "KOF Economic Barometer",
       "weight": 0.5,
       "direction": "higher_is_bullish",
-      "period": "2026-09-29T11:00+00:00",
-      "title": "KOF Leading Indicators SEP",
-      "actual": "109.1",
-      "previous": "106.7",
-      "forecast": "105.8"
+      "period": "2026-10-30T12:00+00:00",
+      "title": "KOF Leading Indicators OCT",
+      "actual": "107.6",
+      "previous": "109.1",
+      "forecast": "108"
     },
     {
       "country": "CAD",
@@ -631,11 +631,11 @@
       "dataPoint": "GDP (m/m)",
       "weight": 1.0,
       "direction": "higher_is_bullish",
-      "period": "2026-09-29T16:30+00:00",
-      "title": "GDP MoM JUL",
+      "period": "2026-10-30T16:30+00:00",
+      "title": "GDP MoM AUG",
       "actual": "0%",
-      "previous": "0.3%",
-      "forecast": "0.0%"
+      "previous": "0%",
+      "forecast": "0.2%"
     },
     {
       "country": "USD",
@@ -655,11 +655,11 @@
       "dataPoint": "Unemployment Rate",
       "weight": 0.5,
       "direction": "lower_is_bullish",
-      "period": "2026-09-29T16:00+00:00",
-      "title": "Unemployment Rate AUG",
-      "actual": "5.3%",
+      "period": "2026-10-30T16:00+00:00",
+      "title": "Unemployment Rate SEP",
+      "actual": "5.2%",
       "previous": "5.3%",
-      "forecast": "5.3%"
+      "forecast": "5.5%"
     },
     {
       "country": "CNY",
@@ -703,11 +703,11 @@
       "dataPoint": "Eurozone Employment Change",
       "weight": 1.0,
       "direction": "higher_is_bullish",
-      "period": "2026-10-02T11:00+00:00",
-      "title": "Unemployment Change SEP",
-      "actual": "23.587K",
-      "previous": "44.419K",
-      "forecast": "19K"
+      "period": "2026-10-30T12:55+00:00",
+      "title": "Unemployment Change OCT",
+      "actual": "4K",
+      "previous": "12K",
+      "forecast": "5.0K"
     },
     {
       "country": "JPY",

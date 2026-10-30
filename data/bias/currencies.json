@@ -1,11 +1,11 @@
 {
   "meta": {
-    "updated": "2026-10-30T02:27:59+00:00",
+    "updated": "2026-10-30T18:40:22+00:00",
     "method": "verdict v3 (forecast-first, released-only)"
   },
   "currencies": {
     "USD": {
-      "verdict": "Bullish",
+      "verdict": "Neutral",
       "tally": {
         "bullish": 10.0,
         "bearish": 5.5,
@@ -218,27 +218,53 @@
           "note": "no reference (forecast/previous) - not scored"
         }
       ],
-      "notes": []
+      "notes": [
+        "stagflation risk: inflation beats while growth misses"
+      ]
     },
     "EUR": {
-      "verdict": "Neutral",
+      "verdict": "Bearish",
       "tally": {
-        "bullish": 5.0,
-        "bearish": 3.5,
-        "neutral": 0.0
+        "bullish": 2.0,
+        "bearish": 2.5,
+        "neutral": 4.0
       },
       "released_points": 7,
       "drivers": [
         {
+          "dataPoint": "CPI Flash Estimate (y/y) & Core CPI Flash Estimate",
+          "title": "Inflation Rate YoY Prel OCT",
+          "period": "2026-10-30T17:00+00:00",
+          "actual": "3.4%",
+          "previous": "3.3%",
+          "forecast": "3.4%",
+          "direction": "higher_is_bullish",
+          "verdict": "neutral",
+          "weight": 2.0,
+          "note": ""
+        },
+        {
           "dataPoint": "Eurozone Unemployment Rate",
-          "title": "Unemployment Rate",
-          "period": "2026-10-30T10:00+00:00",
-          "actual": "6.2%",
+          "title": "Unemployment Rate OCT",
+          "period": "2026-10-30T12:55+00:00",
+          "actual": "6.4%",
           "previous": "6.4%",
           "forecast": "6.4%",
           "direction": "lower_is_bullish",
-          "verdict": "bullish",
+          "verdict": "neutral",
           "weight": 2.0,
+          "note": ""
+        },
+        {
+          "dataPoint": "Eurozone Employment Change",
+          "title": "Unemployment Change OCT",
+          "period": "2026-10-30T12:55+00:00",
+          "actual": "4K",
+          "previous": "12K",
+          "forecast": "5.0K",
+          "direction": "higher_is_bullish",
+          "verdict": "bearish",
+          "weight": 1.0,
           "note": ""
         },
         {
@@ -278,18 +304,6 @@
           "note": ""
         },
         {
-          "dataPoint": "CPI Flash Estimate (y/y) & Core CPI Flash Estimate",
-          "title": "Harmonised Inflation Rate MoM Final SEP",
-          "period": "2026-10-16T13:00+00:00",
-          "actual": "0.2%",
-          "previous": "0.2%",
-          "forecast": "0.6%",
-          "direction": "higher_is_bullish",
-          "verdict": "bearish",
-          "weight": 2.0,
-          "note": ""
-        },
-        {
           "dataPoint": "German Industrial Production (m/m)",
           "title": "Industrial Production MoM AUG",
           "period": "2026-10-09T12:00+00:00",
@@ -300,31 +314,33 @@
           "verdict": "bearish",
           "weight": 1.0,
           "note": ""
-        },
-        {
-          "dataPoint": "Eurozone Employment Change",
-          "title": "Unemployment Change SEP",
-          "period": "2026-10-02T11:00+00:00",
-          "actual": "23.587K",
-          "previous": "44.419K",
-          "forecast": "19K",
-          "direction": "higher_is_bullish",
-          "verdict": "bullish",
-          "weight": 1.0,
-          "note": ""
         }
       ],
-      "notes": []
+      "notes": [
+        "stagflation risk: inflation beats while growth misses"
+      ]
     },
     "GBP": {
-      "verdict": "Neutral",
+      "verdict": "Bearish",
       "tally": {
-        "bullish": 5.0,
+        "bullish": 3.0,
         "bearish": 4.5,
-        "neutral": 5.0
+        "neutral": 7.0
       },
       "released_points": 8,
       "drivers": [
+        {
+          "dataPoint": "CPI (y/y) & Core CPI (y/y)",
+          "title": "DMP 1Y CPI Expectations OCT",
+          "period": "2026-10-30T13:30+00:00",
+          "actual": "3.4%",
+          "previous": "3.3%",
+          "forecast": "3.4%",
+          "direction": "higher_is_bullish",
+          "verdict": "neutral",
+          "weight": 2.0,
+          "note": ""
+        },
         {
           "dataPoint": "Retail Sales (m/m)",
           "title": "Retail Sales MoM SEP",
@@ -335,18 +351,6 @@
           "direction": "higher_is_bullish",
           "verdict": "bearish",
           "weight": 0.5,
-          "note": ""
-        },
-        {
-          "dataPoint": "CPI (y/y) & Core CPI (y/y)",
-          "title": "Inflation Rate YoY SEP",
-          "period": "2026-10-21T10:00+00:00",
-          "actual": "3.5%",
-          "previous": "3.1%",
-          "forecast": "3.4%",
-          "direction": "higher_is_bullish",
-          "verdict": "bullish",
-          "weight": 2.0,
           "note": ""
         },
         {
@@ -422,7 +426,9 @@
           "note": ""
         }
       ],
-      "notes": []
+      "notes": [
+        "stagflation risk: inflation beats while growth misses"
+      ]
     },
     "AUD": {
       "verdict": "Neutral",
@@ -540,11 +546,23 @@
       "verdict": "Neutral",
       "tally": {
         "bullish": 4.5,
-        "bearish": 4.0,
-        "neutral": 4.0
+        "bearish": 6.0,
+        "neutral": 2.0
       },
       "released_points": 7,
       "drivers": [
+        {
+          "dataPoint": "GDP (m/m)",
+          "title": "GDP MoM AUG",
+          "period": "2026-10-30T16:30+00:00",
+          "actual": "0%",
+          "previous": "0%",
+          "forecast": "0.2%",
+          "direction": "higher_is_bullish",
+          "verdict": "bearish",
+          "weight": 2.0,
+          "note": ""
+        },
         {
           "dataPoint": "Overnight Rate / Bank of Canada Rate Statement / Press Conference",
           "title": "BoC Interest Rate Decision",
@@ -616,18 +634,6 @@
           "verdict": "bullish",
           "weight": 1.0,
           "note": ""
-        },
-        {
-          "dataPoint": "GDP (m/m)",
-          "title": "GDP MoM JUL",
-          "period": "2026-09-29T16:30+00:00",
-          "actual": "0%",
-          "previous": "0.3%",
-          "forecast": "0.0%",
-          "direction": "higher_is_bullish",
-          "verdict": "neutral",
-          "weight": 2.0,
-          "note": ""
         }
       ],
       "notes": []
@@ -641,6 +647,18 @@
       },
       "released_points": 6,
       "drivers": [
+        {
+          "dataPoint": "BoJ Policy Rate / Monetary Policy Statement / BoJ Press Conference",
+          "title": "BoJ Interest Rate Decision",
+          "period": "2026-10-30T07:00+00:00",
+          "actual": "1.25%",
+          "previous": "1.25%",
+          "forecast": "1.25%",
+          "direction": "higher_is_bullish",
+          "verdict": "neutral",
+          "weight": 3.0,
+          "note": ""
+        },
         {
           "dataPoint": "National Core CPI (y/y) & Tokyo Core CPI (y/y)",
           "title": "Tokyo Core CPI YoY OCT",
@@ -690,18 +708,6 @@
           "note": ""
         },
         {
-          "dataPoint": "BoJ Policy Rate / Monetary Policy Statement / BoJ Press Conference",
-          "title": "BoJ Interest Rate Decision",
-          "period": "2026-09-18T07:00+00:00",
-          "actual": "1.25%",
-          "previous": "1%",
-          "forecast": "1.25%",
-          "direction": "higher_is_bullish",
-          "verdict": "neutral",
-          "weight": 3.0,
-          "note": ""
-        },
-        {
           "dataPoint": "GDP (q/q, annualized)",
           "title": "GDP y/y",
           "period": "2026-04-01T00:00:00+00:00",
@@ -719,14 +725,26 @@
       ]
     },
     "CHF": {
-      "verdict": "Very Bullish",
+      "verdict": "Bullish",
       "tally": {
-        "bullish": 4.0,
-        "bearish": 0.0,
+        "bullish": 3.0,
+        "bearish": 1.0,
         "neutral": 3.0
       },
       "released_points": 4,
       "drivers": [
+        {
+          "dataPoint": "KOF Economic Barometer",
+          "title": "KOF Leading Indicators OCT",
+          "period": "2026-10-30T12:00+00:00",
+          "actual": "107.6",
+          "previous": "109.1",
+          "forecast": "108",
+          "direction": "higher_is_bullish",
+          "verdict": "bearish",
+          "weight": 1.0,
+          "note": ""
+        },
         {
           "dataPoint": "Procure.ch Manufacturing PMI",
           "title": "procure.ch Manufacturing PMI SEP",
@@ -749,18 +767,6 @@
           "direction": "higher_is_bullish",
           "verdict": "bullish",
           "weight": 2.0,
-          "note": ""
-        },
-        {
-          "dataPoint": "KOF Economic Barometer",
-          "title": "KOF Leading Indicators SEP",
-          "period": "2026-09-29T11:00+00:00",
-          "actual": "109.1",
-          "previous": "106.7",
-          "forecast": "105.8",
-          "direction": "higher_is_bullish",
-          "verdict": "bullish",
-          "weight": 1.0,
           "note": ""
         },
         {
@@ -899,14 +905,26 @@
       "notes": []
     },
     "BRL": {
-      "verdict": "Bearish",
+      "verdict": "Neutral",
       "tally": {
-        "bullish": 0.0,
+        "bullish": 1.0,
         "bearish": 2.0,
-        "neutral": 4.0
+        "neutral": 3.0
       },
       "released_points": 3,
       "drivers": [
+        {
+          "dataPoint": "Unemployment Rate",
+          "title": "Unemployment Rate SEP",
+          "period": "2026-10-30T16:00+00:00",
+          "actual": "5.2%",
+          "previous": "5.3%",
+          "forecast": "5.5%",
+          "direction": "lower_is_bullish",
+          "verdict": "bullish",
+          "weight": 1.0,
+          "note": ""
+        },
         {
           "dataPoint": "CPI y/y (IPCA)",
           "title": "IPCA mid-month CPI MoM OCT",
@@ -917,18 +935,6 @@
           "direction": "higher_is_bullish",
           "verdict": "bearish",
           "weight": 2.0,
-          "note": ""
-        },
-        {
-          "dataPoint": "Unemployment Rate",
-          "title": "Unemployment Rate AUG",
-          "period": "2026-09-29T16:00+00:00",
-          "actual": "5.3%",
-          "previous": "5.3%",
-          "forecast": "5.3%",
-          "direction": "lower_is_bullish",
-          "verdict": "neutral",
-          "weight": 1.0,
           "note": ""
         },
         {

@@ -1,8 +1,17 @@
 {
   "meta": {
-    "updated": "2026-10-30T02:27:59+00:00"
+    "updated": "2026-10-30T18:40:22+00:00"
   },
   "setups": [
+    {
+      "symbol": "EURJPY",
+      "name": "EURJPY",
+      "verdict": "Very Bearish",
+      "direction": "Sell",
+      "confidence": 1.0,
+      "importance": 2,
+      "rationale": "Very Bearish — EUR: Bearish · JPY: Bullish"
+    },
     {
       "symbol": "EURCHF",
       "name": "EURCHF",
@@ -10,7 +19,34 @@
       "direction": "Sell",
       "confidence": 1.0,
       "importance": 2,
-      "rationale": "Very Bearish — EUR: Neutral · CHF: Very Bullish"
+      "rationale": "Very Bearish — EUR: Bearish · CHF: Bullish"
+    },
+    {
+      "symbol": "EURNZD",
+      "name": "EURNZD",
+      "verdict": "Very Bearish",
+      "direction": "Sell",
+      "confidence": 1.0,
+      "importance": 2,
+      "rationale": "Very Bearish — EUR: Bearish · NZD: Bullish"
+    },
+    {
+      "symbol": "EURZAR",
+      "name": "EURZAR",
+      "verdict": "Very Bearish",
+      "direction": "Sell",
+      "confidence": 1.0,
+      "importance": 2,
+      "rationale": "Very Bearish — EUR: Bearish · ZAR: Bullish"
+    },
+    {
+      "symbol": "GBPJPY",
+      "name": "GBPJPY",
+      "verdict": "Very Bearish",
+      "direction": "Sell",
+      "confidence": 1.0,
+      "importance": 2,
+      "rationale": "Very Bearish — GBP: Bearish · JPY: Bullish"
     },
     {
       "symbol": "GBPCHF",
@@ -19,43 +55,25 @@
       "direction": "Sell",
       "confidence": 1.0,
       "importance": 2,
-      "rationale": "Very Bearish — GBP: Neutral · CHF: Very Bullish"
+      "rationale": "Very Bearish — GBP: Bearish · CHF: Bullish"
     },
     {
-      "symbol": "USDSGD",
-      "name": "USDSGD",
-      "verdict": "Very Bullish",
-      "direction": "Buy",
-      "confidence": 1.0,
-      "importance": 2,
-      "rationale": "Very Bullish — USD: Bullish · SGD: Bearish"
-    },
-    {
-      "symbol": "USDBRL",
-      "name": "USDBRL",
-      "verdict": "Very Bullish",
-      "direction": "Buy",
-      "confidence": 1.0,
-      "importance": 2,
-      "rationale": "Very Bullish — USD: Bullish · BRL: Bearish"
-    },
-    {
-      "symbol": "AUDCHF",
-      "name": "AUDCHF",
+      "symbol": "GBPNZD",
+      "name": "GBPNZD",
       "verdict": "Very Bearish",
       "direction": "Sell",
       "confidence": 1.0,
       "importance": 2,
-      "rationale": "Very Bearish — AUD: Neutral · CHF: Very Bullish"
+      "rationale": "Very Bearish — GBP: Bearish · NZD: Bullish"
     },
     {
-      "symbol": "CADCHF",
-      "name": "CADCHF",
+      "symbol": "GBPZAR",
+      "name": "GBPZAR",
       "verdict": "Very Bearish",
       "direction": "Sell",
       "confidence": 1.0,
       "importance": 2,
-      "rationale": "Very Bearish — CAD: Neutral · CHF: Very Bullish"
+      "rationale": "Very Bearish — GBP: Bearish · ZAR: Bullish"
     },
     {
       "symbol": "NZDSGD",
@@ -65,33 +83,6 @@
       "confidence": 0.9,
       "importance": 2,
       "rationale": "Very Bullish — NZD: Bullish · SGD: Bearish"
-    },
-    {
-      "symbol": "XAGUSD",
-      "name": "XAGUSD",
-      "verdict": "Very Bearish",
-      "direction": "Sell",
-      "confidence": 0.4,
-      "importance": 2,
-      "rationale": "Very Bearish"
-    },
-    {
-      "symbol": "XPTUSD",
-      "name": "XPTUSD",
-      "verdict": "Very Bearish",
-      "direction": "Sell",
-      "confidence": 0.4,
-      "importance": 2,
-      "rationale": "Very Bearish"
-    },
-    {
-      "symbol": "XPDUSD",
-      "name": "XPDUSD",
-      "verdict": "Very Bearish",
-      "direction": "Sell",
-      "confidence": 0.4,
-      "importance": 2,
-      "rationale": "Very Bearish"
     },
     {
       "symbol": "OIL",
@@ -110,6 +101,15 @@
       "confidence": 0.4,
       "importance": 2,
       "rationale": "Very Bullish"
+    },
+    {
+      "symbol": "EURUSD",
+      "name": "EURUSD",
+      "verdict": "Bearish",
+      "direction": "Sell",
+      "confidence": 1.0,
+      "importance": 1,
+      "rationale": "Bearish — EUR: Bearish · USD: Neutral"
     }
   ]
 }
