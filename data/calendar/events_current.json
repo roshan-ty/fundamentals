@@ -30424,7 +30424,7 @@
     "impact": "",
     "forecast": "50.3",
     "previous": "50.1",
-    "actual": "",
+    "actual": "49.3",
     "source": "te"
   },
   {
@@ -30434,7 +30434,7 @@
     "impact": "",
     "forecast": "50.6",
     "previous": "50.2",
-    "actual": "",
+    "actual": "49.7",
     "source": "te"
   },
   {
@@ -30444,7 +30444,7 @@
     "impact": "",
     "forecast": "51",
     "previous": "50.7",
-    "actual": "",
+    "actual": "49.7",
     "source": "te"
   },
   {
@@ -37734,6 +37734,56 @@
     "impact": "",
     "forecast": "",
     "previous": "4.894%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Fed Beige Book",
+    "country": "USD",
+    "date_utc": "2026-11-26T00:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "RBA Bulletin",
+    "country": "AUD",
+    "date_utc": "2026-11-26T05:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Building Capital Expenditure QoQ Q3",
+    "country": "AUD",
+    "date_utc": "2026-11-26T05:30+00:00",
+    "impact": "",
+    "forecast": "1.0%",
+    "previous": "2.1%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Plant Machinery Capital Expenditure QoQ Q3",
+    "country": "AUD",
+    "date_utc": "2026-11-26T05:30+00:00",
+    "impact": "",
+    "forecast": "4.5%",
+    "previous": "-8.9%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Private Capital Expenditure QoQ Q3",
+    "country": "AUD",
+    "date_utc": "2026-11-26T05:30+00:00",
+    "impact": "",
+    "forecast": "2.0%",
+    "previous": "-3.6%",
     "actual": "",
     "source": "te"
   }

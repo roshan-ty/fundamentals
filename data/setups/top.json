@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-10-30T18:40:22+00:00"
+    "updated": "2026-10-31T02:07:24+00:00"
   },
   "setups": [
     {
@@ -20,15 +20,6 @@
       "confidence": 1.0,
       "importance": 2,
       "rationale": "Very Bearish — EUR: Bearish · CHF: Bullish"
-    },
-    {
-      "symbol": "EURNZD",
-      "name": "EURNZD",
-      "verdict": "Very Bearish",
-      "direction": "Sell",
-      "confidence": 1.0,
-      "importance": 2,
-      "rationale": "Very Bearish — EUR: Bearish · NZD: Bullish"
     },
     {
       "symbol": "EURZAR",
@@ -58,15 +49,6 @@
       "rationale": "Very Bearish — GBP: Bearish · CHF: Bullish"
     },
     {
-      "symbol": "GBPNZD",
-      "name": "GBPNZD",
-      "verdict": "Very Bearish",
-      "direction": "Sell",
-      "confidence": 1.0,
-      "importance": 2,
-      "rationale": "Very Bearish — GBP: Bearish · NZD: Bullish"
-    },
-    {
       "symbol": "GBPZAR",
       "name": "GBPZAR",
       "verdict": "Very Bearish",
@@ -76,31 +58,40 @@
       "rationale": "Very Bearish — GBP: Bearish · ZAR: Bullish"
     },
     {
-      "symbol": "NZDSGD",
-      "name": "NZDSGD",
-      "verdict": "Very Bullish",
-      "direction": "Buy",
-      "confidence": 0.9,
+      "symbol": "AUDJPY",
+      "name": "AUDJPY",
+      "verdict": "Very Bearish",
+      "direction": "Sell",
+      "confidence": 1.0,
       "importance": 2,
-      "rationale": "Very Bullish — NZD: Bullish · SGD: Bearish"
+      "rationale": "Very Bearish — AUD: Bearish · JPY: Bullish"
     },
     {
-      "symbol": "OIL",
-      "name": "OIL",
-      "verdict": "Very Bullish",
-      "direction": "Buy",
-      "confidence": 0.4,
+      "symbol": "AUDCHF",
+      "name": "AUDCHF",
+      "verdict": "Very Bearish",
+      "direction": "Sell",
+      "confidence": 1.0,
       "importance": 2,
-      "rationale": "Very Bullish"
+      "rationale": "Very Bearish — AUD: Bearish · CHF: Bullish"
     },
     {
-      "symbol": "BRENT",
-      "name": "BRENT",
-      "verdict": "Very Bullish",
-      "direction": "Buy",
-      "confidence": 0.4,
+      "symbol": "NZDJPY",
+      "name": "NZDJPY",
+      "verdict": "Very Bearish",
+      "direction": "Sell",
+      "confidence": 1.0,
       "importance": 2,
-      "rationale": "Very Bullish"
+      "rationale": "Very Bearish — NZD: Bearish · JPY: Bullish"
+    },
+    {
+      "symbol": "NZDCHF",
+      "name": "NZDCHF",
+      "verdict": "Very Bearish",
+      "direction": "Sell",
+      "confidence": 1.0,
+      "importance": 2,
+      "rationale": "Very Bearish — NZD: Bearish · CHF: Bullish"
     },
     {
       "symbol": "EURUSD",
@@ -110,6 +101,15 @@
       "confidence": 1.0,
       "importance": 1,
       "rationale": "Bearish — EUR: Bearish · USD: Neutral"
+    },
+    {
+      "symbol": "EURCAD",
+      "name": "EURCAD",
+      "verdict": "Bearish",
+      "direction": "Sell",
+      "confidence": 1.0,
+      "importance": 1,
+      "rationale": "Bearish — EUR: Bearish · CAD: Neutral"
     }
   ]
 }

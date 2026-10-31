@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30T18:40:22+00:00",
+  "updated": "2026-10-31T02:07:24+00:00",
   "releases": [
     {
       "country": "USD",
@@ -667,11 +667,11 @@
       "dataPoint": "NBS Manufacturing PMI & Caixin Manufacturing PMI",
       "weight": 1.0,
       "direction": "higher_is_bullish",
-      "period": "2026-09-30T05:45+00:00",
-      "title": "RatingDog Manufacturing PMI SEP",
-      "actual": "52.1",
-      "previous": "51.5",
-      "forecast": "51.5"
+      "period": "2026-10-31T05:30+00:00",
+      "title": "NBS Manufacturing PMI OCT",
+      "actual": "49.3",
+      "previous": "50.1",
+      "forecast": "50.3"
     },
     {
       "country": "AUD",
@@ -871,10 +871,10 @@
       "dataPoint": "2-Year Treasury Yield (21-day trend)",
       "weight": 1.0,
       "direction": "higher_is_bullish",
-      "period": "2026-10-28T00:00:00+00:00",
+      "period": "2026-10-29T00:00:00+00:00",
       "title": "2-Year Treasury Yield",
-      "actual": "4.67",
-      "previous": "4.77",
+      "actual": "4.61",
+      "previous": "4.76",
       "forecast": ""
     }
   ]

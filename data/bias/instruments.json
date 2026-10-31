@@ -1,18 +1,18 @@
 {
   "meta": {
-    "updated": "2026-10-30T18:40:22+00:00",
+    "updated": "2026-10-31T02:07:24+00:00",
     "method": "verdict v3"
   },
   "instruments": {
     "XAUUSD": {
-      "verdict": "Bullish",
-      "halo": "signal +1",
+      "verdict": "Bearish",
+      "halo": "signal -1",
       "notes": [
-        "institutional flow leans supportive",
+        "institutional flow leans adverse",
         "real-yield rising (headwind)",
         "2Y yield falling (supportive)"
       ],
-      "cot_tilt": 1.0
+      "cot_tilt": -1.0
     },
     "XAGUSD": {
       "verdict": "Bearish",
@@ -45,30 +45,30 @@
       "cot_tilt": -1.0
     },
     "OIL": {
-      "verdict": "Very Bullish",
-      "halo": "signal +3",
+      "verdict": "Bearish",
+      "halo": "signal -1",
       "notes": [
-        "industrial demand PMI expanding",
+        "industrial demand PMI contracting",
         "2Y yield falling (supportive)",
-        "institutional flow leans supportive"
+        "institutional flow leans adverse"
       ],
-      "cot_tilt": 1.0
+      "cot_tilt": -1.0
     },
     "BRENT": {
-      "verdict": "Very Bullish",
-      "halo": "signal +3",
+      "verdict": "Bearish",
+      "halo": "signal -1",
       "notes": [
-        "industrial demand PMI expanding",
+        "industrial demand PMI contracting",
         "2Y yield falling (supportive)",
-        "institutional flow leans supportive"
+        "institutional flow leans adverse"
       ],
-      "cot_tilt": 1.0
+      "cot_tilt": -1.0
     },
     "COPPER": {
-      "verdict": "Bullish",
-      "halo": "signal +1",
+      "verdict": "Bearish",
+      "halo": "signal -1",
       "notes": [
-        "industrial demand PMI expanding",
+        "industrial demand PMI contracting",
         "2Y yield falling (supportive)",
         "institutional flow leans adverse"
       ],
@@ -136,7 +136,7 @@
       "notes": [
         "real-yield rising (headwind)"
       ],
-      "cot_tilt": -1.0
+      "cot_tilt": 1.0
     },
     "HK50": {
       "verdict": "Bearish",
