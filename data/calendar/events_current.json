@@ -1,15 +1,5 @@
 [
   {
-    "title": "Initial Jobless Claims",
-    "country": "USD",
-    "date_utc": "2025-09-27T00:00:00+00:00",
-    "impact": "Medium",
-    "actual": "225000.0",
-    "previous": "219000.0",
-    "source_series": "ICSA",
-    "period": "2025-09-27"
-  },
-  {
     "title": "PPI m/m",
     "country": "USD",
     "date_utc": "2025-10-01T00:00:00+00:00",
@@ -30454,7 +30444,7 @@
     "impact": "",
     "forecast": "",
     "previous": "83.5%",
-    "actual": "",
+    "actual": "93.7%",
     "source": "te"
   },
   {
@@ -30464,7 +30454,7 @@
     "impact": "",
     "forecast": "$50.2B",
     "previous": "$49.85B",
-    "actual": "",
+    "actual": "$42.50B",
     "source": "te"
   },
   {
@@ -30474,7 +30464,7 @@
     "impact": "",
     "forecast": "",
     "previous": "26%",
-    "actual": "",
+    "actual": "36%",
     "source": "te"
   },
   {
@@ -34214,6 +34204,16 @@
     "impact": "",
     "forecast": "",
     "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Unemployment Rate OCT",
+    "country": "KRW",
+    "date_utc": "2026-11-11T04:00+00:00",
+    "impact": "",
+    "forecast": "2.8%",
+    "previous": "2.6%",
     "actual": "",
     "source": "te"
   },
@@ -38214,6 +38214,96 @@
     "impact": "",
     "forecast": "",
     "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "ANZ Roy Morgan Consumer Confidence NOV",
+    "country": "NZD",
+    "date_utc": "2026-11-27T02:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Fed Balance Sheet NOV/25",
+    "country": "USD",
+    "date_utc": "2026-11-27T02:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Tokyo Core CPI YoY NOV",
+    "country": "JPY",
+    "date_utc": "2026-11-27T04:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "2.6%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Tokyo CPI Ex Food and Energy YoY NOV",
+    "country": "JPY",
+    "date_utc": "2026-11-27T04:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "2.6%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Tokyo CPI YoY NOV",
+    "country": "JPY",
+    "date_utc": "2026-11-27T04:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "2.8%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Foreign Bond Investment NOV/21",
+    "country": "JPY",
+    "date_utc": "2026-11-27T04:50+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Stock Investment by Foreigners NOV/21",
+    "country": "JPY",
+    "date_utc": "2026-11-27T04:50+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Car Production YoY OCT",
+    "country": "GBP",
+    "date_utc": "2026-11-27T05:01+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Industrial Profits (YTD) YoY OCT",
+    "country": "CNY",
+    "date_utc": "2026-11-27T06:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "15.5%",
     "actual": "",
     "source": "te"
   }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-10-31T17:45:35+00:00",
+    "updated": "2026-11-01T01:51:21+00:00",
     "method": "verdict v3 (forecast-first, released-only)"
   },
   "currencies": {
@@ -14,18 +14,6 @@
       "released_points": 17,
       "drivers": [
         {
-          "dataPoint": "Unemployment Claims (Weekly)",
-          "title": "Initial Jobless Claims OCT/24",
-          "period": "2026-10-29T16:30+00:00",
-          "actual": "194K",
-          "previous": "194K",
-          "forecast": "196.0K",
-          "direction": "lower_is_bullish",
-          "verdict": "bullish",
-          "weight": 1.0,
-          "note": ""
-        },
-        {
           "dataPoint": "Core PCE Price Index (m/m, y/y)",
           "title": "Core PCE Price Index MoM SEP",
           "period": "2026-10-29T16:30+00:00",
@@ -35,6 +23,18 @@
           "direction": "higher_is_bullish",
           "verdict": "bullish",
           "weight": 2.0,
+          "note": ""
+        },
+        {
+          "dataPoint": "Unemployment Claims (Weekly)",
+          "title": "Initial Jobless Claims OCT/24",
+          "period": "2026-10-29T16:30+00:00",
+          "actual": "194K",
+          "previous": "194K",
+          "forecast": "196.0K",
+          "direction": "lower_is_bullish",
+          "verdict": "bullish",
+          "weight": 1.0,
           "note": ""
         },
         {
