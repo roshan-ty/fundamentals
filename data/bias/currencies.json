@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-11-01T18:31:03+00:00",
+    "updated": "2026-11-02T02:10:04+00:00",
     "method": "verdict v3 (forecast-first, released-only)"
   },
   "currencies": {
@@ -431,7 +431,7 @@
       ]
     },
     "AUD": {
-      "verdict": "Bearish",
+      "verdict": "Neutral",
       "tally": {
         "bullish": 2.0,
         "bearish": 4.0,
@@ -488,10 +488,12 @@
           "note": ""
         }
       ],
-      "notes": []
+      "notes": [
+        "Chinese demand signals expansion (China-linked currencies)"
+      ]
     },
     "NZD": {
-      "verdict": "Bearish",
+      "verdict": "Bullish",
       "tally": {
         "bullish": 1.0,
         "bearish": 0.0,
@@ -537,7 +539,7 @@
         }
       ],
       "notes": [
-        "Chinese demand signals slowdown"
+        "Chinese demand signals expansion (China-linked currencies)"
       ]
     },
     "CAD": {
@@ -783,23 +785,23 @@
       "notes": []
     },
     "CNY": {
-      "verdict": "Bearish",
+      "verdict": "Neutral",
       "tally": {
-        "bullish": 1.0,
-        "bearish": 4.0,
+        "bullish": 3.0,
+        "bearish": 2.0,
         "neutral": 3.0
       },
       "released_points": 5,
       "drivers": [
         {
           "dataPoint": "NBS Manufacturing PMI & Caixin Manufacturing PMI",
-          "title": "NBS Manufacturing PMI OCT",
-          "period": "2026-10-31T05:30+00:00",
-          "actual": "49.3",
-          "previous": "50.1",
-          "forecast": "50.3",
+          "title": "RatingDog Manufacturing PMI OCT",
+          "period": "2026-11-02T06:45+00:00",
+          "actual": "52.0",
+          "previous": "52.1",
+          "forecast": "52",
           "direction": "higher_is_bullish",
-          "verdict": "bearish",
+          "verdict": "bullish",
           "weight": 2.0,
           "note": ""
         },
@@ -1156,13 +1158,13 @@
     "real_yield_sig": 1,
     "dxy_sig": 0,
     "m2_sig": 1,
-    "china_pmi_sig": -1,
+    "china_pmi_sig": 0,
     "yield2y_sig": -1,
     "oil_direction": "flat",
     "risk_mode": "flat",
     "yield2y_level": 4.61,
     "yield2y_sma": 4.759,
-    "dxy_level": 100.87,
+    "dxy_level": 100.82,
     "gold_level": 4390.39382
   }
 }

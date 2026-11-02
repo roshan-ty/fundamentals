@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-11-01T18:31:03+00:00",
+    "updated": "2026-11-02T02:10:04+00:00",
     "method": "verdict v3"
   },
   "instruments": {
@@ -45,30 +45,27 @@
       "cot_tilt": -1.0
     },
     "OIL": {
-      "verdict": "Bearish",
-      "halo": "signal -1",
+      "verdict": "Neutral",
+      "halo": "signal +0",
       "notes": [
-        "industrial demand PMI contracting",
         "2Y yield falling (supportive)",
         "institutional flow leans adverse"
       ],
       "cot_tilt": -1.0
     },
     "BRENT": {
-      "verdict": "Bearish",
-      "halo": "signal -1",
+      "verdict": "Neutral",
+      "halo": "signal +0",
       "notes": [
-        "industrial demand PMI contracting",
         "2Y yield falling (supportive)",
         "institutional flow leans adverse"
       ],
       "cot_tilt": -1.0
     },
     "COPPER": {
-      "verdict": "Bearish",
-      "halo": "signal -1",
+      "verdict": "Neutral",
+      "halo": "signal +0",
       "notes": [
-        "industrial demand PMI contracting",
         "2Y yield falling (supportive)",
         "institutional flow leans adverse"
       ],
