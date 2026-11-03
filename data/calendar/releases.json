@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T03:58:26+00:00",
+  "updated": "2026-11-03T20:13:46+00:00",
   "releases": [
     {
       "country": "USD",
@@ -607,10 +607,10 @@
       "dataPoint": "MAS Monetary Policy",
       "weight": 2.0,
       "direction": "higher_is_bullish",
-      "period": "2026-10-27T09:00+00:00",
-      "title": "MAS 36-Week Bill Auction",
-      "actual": "1.88%",
-      "previous": "2%",
+      "period": "2026-11-11T10:00+00:00",
+      "title": "MAS 12-Week Bill Auction",
+      "actual": "1.84%",
+      "previous": "1.87%",
       "forecast": ""
     },
     {
@@ -643,11 +643,11 @@
       "dataPoint": "JOLTS Job Openings",
       "weight": 0.5,
       "direction": "higher_is_bullish",
-      "period": "2026-09-29T18:00+00:00",
-      "title": "JOLTs Job Openings AUG",
-      "actual": "7.079M",
-      "previous": "7.271M",
-      "forecast": "7.2M"
+      "period": "2026-11-03T20:00+00:00",
+      "title": "JOLTs Job Openings SEP",
+      "actual": "7.523M",
+      "previous": "7.079M",
+      "forecast": "7.0M"
     },
     {
       "country": "BRL",
@@ -727,11 +727,11 @@
       "dataPoint": "CPI (m/m, y/y)",
       "weight": 1.5,
       "direction": "higher_is_bullish",
-      "period": "2026-10-01T10:30+00:00",
-      "title": "Inflation Rate YoY SEP",
-      "actual": "1%",
-      "previous": "0.8%",
-      "forecast": "0.8%"
+      "period": "2026-11-03T12:30+00:00",
+      "title": "Inflation Rate YoY OCT",
+      "actual": "1.5%",
+      "previous": "1%",
+      "forecast": "1.2%"
     },
     {
       "country": "CHF",
@@ -763,11 +763,11 @@
       "dataPoint": "CPI y/y",
       "weight": 1.5,
       "direction": "higher_is_bullish",
-      "period": "2026-10-05T11:00+00:00",
-      "title": "Inflation Rate MoM SEP",
-      "actual": "1.84%",
+      "period": "2026-11-03T12:00+00:00",
+      "title": "Inflation Rate MoM OCT",
+      "actual": "2.58%",
       "previous": "1.84%",
-      "forecast": "3.0%"
+      "forecast": "1.8%"
     },
     {
       "country": "CAD",
