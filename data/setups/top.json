@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-11-02T22:27:45+00:00"
+    "updated": "2026-11-03T03:58:26+00:00"
   },
   "setups": [
     {
@@ -20,6 +20,15 @@
       "confidence": 1.0,
       "importance": 2,
       "rationale": "Very Bearish — EUR: Bearish · CHF: Bullish"
+    },
+    {
+      "symbol": "EURAUD",
+      "name": "EURAUD",
+      "verdict": "Very Bearish",
+      "direction": "Sell",
+      "confidence": 1.0,
+      "importance": 2,
+      "rationale": "Very Bearish — EUR: Bearish · AUD: Bullish"
     },
     {
       "symbol": "EURNZD",
@@ -58,6 +67,15 @@
       "rationale": "Very Bearish — GBP: Bearish · CHF: Bullish"
     },
     {
+      "symbol": "GBPAUD",
+      "name": "GBPAUD",
+      "verdict": "Very Bearish",
+      "direction": "Sell",
+      "confidence": 1.0,
+      "importance": 2,
+      "rationale": "Very Bearish — GBP: Bearish · AUD: Bullish"
+    },
+    {
       "symbol": "GBPNZD",
       "name": "GBPNZD",
       "verdict": "Very Bearish",
@@ -92,24 +110,6 @@
       "confidence": 1.0,
       "importance": 1,
       "rationale": "Bearish — EUR: Bearish · USD: Neutral"
-    },
-    {
-      "symbol": "EURAUD",
-      "name": "EURAUD",
-      "verdict": "Bearish",
-      "direction": "Sell",
-      "confidence": 1.0,
-      "importance": 1,
-      "rationale": "Bearish — EUR: Bearish · AUD: Neutral"
-    },
-    {
-      "symbol": "EURCAD",
-      "name": "EURCAD",
-      "verdict": "Bearish",
-      "direction": "Sell",
-      "confidence": 1.0,
-      "importance": 1,
-      "rationale": "Bearish — EUR: Bearish · CAD: Neutral"
     }
   ]
 }
