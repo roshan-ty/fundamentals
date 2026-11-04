@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-11-03T20:13:46+00:00"
+    "updated": "2026-11-04T03:01:36+00:00"
   },
   "setups": [
     {
@@ -29,15 +29,6 @@
       "confidence": 1.0,
       "importance": 2,
       "rationale": "Very Bearish — EUR: Bearish · AUD: Bullish"
-    },
-    {
-      "symbol": "EURNZD",
-      "name": "EURNZD",
-      "verdict": "Very Bearish",
-      "direction": "Sell",
-      "confidence": 1.0,
-      "importance": 2,
-      "rationale": "Very Bearish — EUR: Bearish · NZD: Bullish"
     },
     {
       "symbol": "EURZAR",
@@ -76,15 +67,6 @@
       "rationale": "Very Bearish — GBP: Bearish · AUD: Bullish"
     },
     {
-      "symbol": "GBPNZD",
-      "name": "GBPNZD",
-      "verdict": "Very Bearish",
-      "direction": "Sell",
-      "confidence": 1.0,
-      "importance": 2,
-      "rationale": "Very Bearish — GBP: Bearish · NZD: Bullish"
-    },
-    {
       "symbol": "GBPZAR",
       "name": "GBPZAR",
       "verdict": "Very Bearish",
@@ -94,15 +76,6 @@
       "rationale": "Very Bearish — GBP: Bearish · ZAR: Bullish"
     },
     {
-      "symbol": "NZDSGD",
-      "name": "NZDSGD",
-      "verdict": "Very Bullish",
-      "direction": "Buy",
-      "confidence": 0.9,
-      "importance": 2,
-      "rationale": "Very Bullish — NZD: Bullish · SGD: Bearish"
-    },
-    {
       "symbol": "EURUSD",
       "name": "EURUSD",
       "verdict": "Bearish",
@@ -110,6 +83,33 @@
       "confidence": 1.0,
       "importance": 1,
       "rationale": "Bearish — EUR: Bearish · USD: Neutral"
+    },
+    {
+      "symbol": "EURCAD",
+      "name": "EURCAD",
+      "verdict": "Bearish",
+      "direction": "Sell",
+      "confidence": 1.0,
+      "importance": 1,
+      "rationale": "Bearish — EUR: Bearish · CAD: Neutral"
+    },
+    {
+      "symbol": "EURNZD",
+      "name": "EURNZD",
+      "verdict": "Bearish",
+      "direction": "Sell",
+      "confidence": 1.0,
+      "importance": 1,
+      "rationale": "Bearish — EUR: Bearish · NZD: Neutral"
+    },
+    {
+      "symbol": "EURNOK",
+      "name": "EURNOK",
+      "verdict": "Bearish",
+      "direction": "Sell",
+      "confidence": 1.0,
+      "importance": 1,
+      "rationale": "Bearish — EUR: Bearish · NOK: Neutral"
     }
   ]
 }

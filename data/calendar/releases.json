@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T20:13:46+00:00",
+  "updated": "2026-11-04T03:01:36+00:00",
   "releases": [
     {
       "country": "USD",
@@ -866,15 +866,39 @@
       "forecast": "2.25%"
     },
     {
+      "country": "NZD",
+      "dataPointId": "nz_employment",
+      "dataPoint": "Employment Change",
+      "weight": 1.0,
+      "direction": "higher_is_bullish",
+      "period": "2026-11-04T02:45+00:00",
+      "title": "Employment Change QoQ Q3",
+      "actual": "-0.1%",
+      "previous": "0.5%",
+      "forecast": "0.3%"
+    },
+    {
+      "country": "NZD",
+      "dataPointId": "nz_unemployment",
+      "dataPoint": "Unemployment Rate",
+      "weight": 1.0,
+      "direction": "lower_is_bullish",
+      "period": "2026-11-04T02:45+00:00",
+      "title": "Unemployment Rate Q3",
+      "actual": "5.7%",
+      "previous": "5.6%",
+      "forecast": "5.50%"
+    },
+    {
       "country": "USD",
       "dataPointId": "us_yield2y",
       "dataPoint": "2-Year Treasury Yield (21-day trend)",
       "weight": 1.0,
       "direction": "higher_is_bullish",
-      "period": "2026-10-30T00:00:00+00:00",
+      "period": "2026-11-02T00:00:00+00:00",
       "title": "2-Year Treasury Yield",
-      "actual": "4.56",
-      "previous": "4.74",
+      "actual": "4.59",
+      "previous": "4.73",
       "forecast": ""
     }
   ]

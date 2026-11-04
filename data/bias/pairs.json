@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-11-03T20:13:46+00:00",
+    "updated": "2026-11-04T03:01:36+00:00",
     "total": 82,
     "scored": 82
   },
@@ -86,14 +86,14 @@
     {
       "symbol": "EURNZD",
       "class": "fx",
-      "verdict": "Very Bearish",
+      "verdict": "Bearish",
       "base": "EUR",
       "quote": "NZD",
       "base_verdict": "Bearish",
-      "quote_verdict": "Bullish",
+      "quote_verdict": "Neutral",
       "drivers": [
         "EUR: Bearish",
-        "NZD: Bullish"
+        "NZD: Neutral"
       ]
     },
     {
@@ -281,14 +281,14 @@
     {
       "symbol": "GBPNZD",
       "class": "fx",
-      "verdict": "Very Bearish",
+      "verdict": "Bearish",
       "base": "GBP",
       "quote": "NZD",
       "base_verdict": "Bearish",
-      "quote_verdict": "Bullish",
+      "quote_verdict": "Neutral",
       "drivers": [
         "GBP: Bearish",
-        "NZD: Bullish"
+        "NZD: Neutral"
       ]
     },
     {
@@ -606,78 +606,78 @@
     {
       "symbol": "AUDNZD",
       "class": "fx",
-      "verdict": "Neutral",
+      "verdict": "Bullish",
       "base": "AUD",
       "quote": "NZD",
       "base_verdict": "Bullish",
-      "quote_verdict": "Bullish",
+      "quote_verdict": "Neutral",
       "drivers": [
         "AUD: Bullish",
-        "NZD: Bullish"
+        "NZD: Neutral"
       ]
     },
     {
       "symbol": "NZDUSD",
       "class": "fx",
-      "verdict": "Bullish",
+      "verdict": "Neutral",
       "base": "NZD",
       "quote": "USD",
-      "base_verdict": "Bullish",
+      "base_verdict": "Neutral",
       "quote_verdict": "Neutral",
       "drivers": [
-        "NZD: Bullish",
+        "NZD: Neutral",
         "USD: Neutral"
       ]
     },
     {
       "symbol": "NZDJPY",
       "class": "fx",
-      "verdict": "Neutral",
+      "verdict": "Bearish",
       "base": "NZD",
       "quote": "JPY",
-      "base_verdict": "Bullish",
+      "base_verdict": "Neutral",
       "quote_verdict": "Bullish",
       "drivers": [
-        "NZD: Bullish",
+        "NZD: Neutral",
         "JPY: Bullish"
       ]
     },
     {
       "symbol": "NZDCAD",
       "class": "fx",
-      "verdict": "Bullish",
+      "verdict": "Neutral",
       "base": "NZD",
       "quote": "CAD",
-      "base_verdict": "Bullish",
+      "base_verdict": "Neutral",
       "quote_verdict": "Neutral",
       "drivers": [
-        "NZD: Bullish",
+        "NZD: Neutral",
         "CAD: Neutral"
       ]
     },
     {
       "symbol": "NZDCHF",
       "class": "fx",
-      "verdict": "Neutral",
+      "verdict": "Bearish",
       "base": "NZD",
       "quote": "CHF",
-      "base_verdict": "Bullish",
+      "base_verdict": "Neutral",
       "quote_verdict": "Bullish",
       "drivers": [
-        "NZD: Bullish",
+        "NZD: Neutral",
         "CHF: Bullish"
       ]
     },
     {
       "symbol": "NZDSGD",
       "class": "fx",
-      "verdict": "Very Bullish",
+      "verdict": "Bullish",
       "base": "NZD",
       "quote": "SGD",
-      "base_verdict": "Bullish",
+      "base_verdict": "Neutral",
       "quote_verdict": "Bearish",
       "drivers": [
-        "NZD: Bullish",
+        "NZD: Neutral",
         "SGD: Bearish"
       ]
     },
