@@ -2274,7 +2274,7 @@
     "country": "USD",
     "date_utc": "2026-08-01T00:00:00+00:00",
     "impact": "Medium",
-    "actual": "-105572.0",
+    "actual": "-105737.0",
     "previous": "-92826.0",
     "source_series": "BOPGSTB",
     "period": "2026-08-01"
@@ -2467,6 +2467,16 @@
     "actual": "1398.0",
     "previous": "1403.0",
     "source_series": "PERMIT",
+    "period": "2026-09-01"
+  },
+  {
+    "title": "Trade Balance",
+    "country": "USD",
+    "date_utc": "2026-09-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "-105047.0",
+    "previous": "-105737.0",
+    "source_series": "BOPGSTB",
     "period": "2026-09-01"
   },
   {
