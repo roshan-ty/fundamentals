@@ -1,6 +1,30 @@
 {
-  "updated": "2026-11-04T20:32:22+00:00",
+  "updated": "2026-11-05T03:09:58+00:00",
   "releases": [
+    {
+      "country": "USD",
+      "dataPointId": "us_claims",
+      "dataPoint": "Unemployment Claims (Weekly)",
+      "weight": 0.5,
+      "direction": "lower_is_bullish",
+      "period": "2026-10-29T16:30+00:00",
+      "title": "Initial Jobless Claims OCT/24",
+      "actual": "194K",
+      "previous": "194K",
+      "forecast": "196.0K"
+    },
+    {
+      "country": "USD",
+      "dataPointId": "us_cpi",
+      "dataPoint": "CPI & Core CPI (m/m, y/y)",
+      "weight": 1.5,
+      "direction": "higher_is_bullish",
+      "period": "2026-10-14T16:30+00:00",
+      "title": "Core Inflation Rate MoM SEP",
+      "actual": "0.3%",
+      "previous": "0.3%",
+      "forecast": "0.3%"
+    },
     {
       "country": "USD",
       "dataPointId": "us_ppi",
@@ -39,6 +63,18 @@
     },
     {
       "country": "USD",
+      "dataPointId": "us_unemployment",
+      "dataPoint": "Unemployment Rate",
+      "weight": 1.0,
+      "direction": "lower_is_bullish",
+      "period": "2026-10-02T16:30+00:00",
+      "title": "Unemployment Rate SEP",
+      "actual": "4.2%",
+      "previous": "4.1%",
+      "forecast": "4.30%"
+    },
+    {
+      "country": "USD",
       "dataPointId": "us_retail",
       "dataPoint": "Retail Sales & Core Retail Sales (m/m)",
       "weight": 1.0,
@@ -48,18 +84,6 @@
       "actual": "0.8%",
       "previous": "1.2%",
       "forecast": "0.1%"
-    },
-    {
-      "country": "USD",
-      "dataPointId": "us_gdp",
-      "dataPoint": "Advance GDP (q/q)",
-      "weight": 1.5,
-      "direction": "higher_is_bullish",
-      "period": "2026-07-01T00:00:00+00:00",
-      "title": "GDP q/q annualized",
-      "actual": "2.07",
-      "previous": "",
-      "forecast": ""
     },
     {
       "country": "USD",
@@ -146,6 +170,18 @@
       "forecast": "4.50%"
     },
     {
+      "country": "USD",
+      "dataPointId": "us_gdp",
+      "dataPoint": "Advance GDP (q/q)",
+      "weight": 1.5,
+      "direction": "higher_is_bullish",
+      "period": "2026-07-01T00:00:00+00:00",
+      "title": "GDP q/q annualized",
+      "actual": "2.07",
+      "previous": "",
+      "forecast": ""
+    },
+    {
       "country": "JPY",
       "dataPointId": "jp_gdp",
       "dataPoint": "GDP (q/q, annualized)",
@@ -156,42 +192,6 @@
       "actual": "1.6",
       "previous": "",
       "forecast": ""
-    },
-    {
-      "country": "USD",
-      "dataPointId": "us_claims",
-      "dataPoint": "Unemployment Claims (Weekly)",
-      "weight": 0.5,
-      "direction": "lower_is_bullish",
-      "period": "2026-10-29T16:30+00:00",
-      "title": "Initial Jobless Claims OCT/24",
-      "actual": "194K",
-      "previous": "194K",
-      "forecast": "196.0K"
-    },
-    {
-      "country": "USD",
-      "dataPointId": "us_cpi",
-      "dataPoint": "CPI & Core CPI (m/m, y/y)",
-      "weight": 1.5,
-      "direction": "higher_is_bullish",
-      "period": "2026-10-14T16:30+00:00",
-      "title": "Core Inflation Rate MoM SEP",
-      "actual": "0.3%",
-      "previous": "0.3%",
-      "forecast": "0.3%"
-    },
-    {
-      "country": "USD",
-      "dataPointId": "us_unemployment",
-      "dataPoint": "Unemployment Rate",
-      "weight": 1.0,
-      "direction": "lower_is_bullish",
-      "period": "2026-10-02T16:30+00:00",
-      "title": "Unemployment Rate SEP",
-      "actual": "4.2%",
-      "previous": "4.1%",
-      "forecast": "4.30%"
     },
     {
       "country": "CNY",
@@ -379,10 +379,10 @@
       "dataPoint": "Selic Rate / COPOM Decision",
       "weight": 2.0,
       "direction": "higher_is_bullish",
-      "period": "2026-09-17T01:30+00:00",
+      "period": "2026-11-05T02:30+00:00",
       "title": "Interest Rate Decision",
       "actual": "13.75%",
-      "previous": "14%",
+      "previous": "13.75%",
       "forecast": "13.75%"
     },
     {
@@ -895,10 +895,10 @@
       "dataPoint": "2-Year Treasury Yield (21-day trend)",
       "weight": 1.0,
       "direction": "higher_is_bullish",
-      "period": "2026-11-02T00:00:00+00:00",
+      "period": "2026-11-03T00:00:00+00:00",
       "title": "2-Year Treasury Yield",
-      "actual": "4.59",
-      "previous": "4.73",
+      "actual": "4.61",
+      "previous": "4.72",
       "forecast": ""
     }
   ]
