@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T03:09:58+00:00",
+  "updated": "2026-11-05T20:43:14+00:00",
   "releases": [
     {
       "country": "USD",
@@ -7,11 +7,11 @@
       "dataPoint": "Unemployment Claims (Weekly)",
       "weight": 0.5,
       "direction": "lower_is_bullish",
-      "period": "2026-10-29T16:30+00:00",
-      "title": "Initial Jobless Claims OCT/24",
-      "actual": "194K",
+      "period": "2026-11-05T18:30+00:00",
+      "title": "Initial Jobless Claims OCT/31",
+      "actual": "189K",
       "previous": "194K",
-      "forecast": "196.0K"
+      "forecast": "195.0K"
     },
     {
       "country": "USD",
@@ -55,11 +55,11 @@
       "dataPoint": "Non-Farm Employment Change (NFP)",
       "weight": 1.5,
       "direction": "higher_is_bullish",
-      "period": "2026-10-02T16:30+00:00",
-      "title": "Nonfarm Payrolls Private SEP",
-      "actual": "46K",
-      "previous": "127K",
-      "forecast": "95.0K"
+      "period": "2026-11-05T18:30+00:00",
+      "title": "Nonfarm Productivity QoQ Prel Q3",
+      "actual": "3.6%",
+      "previous": "1.4%",
+      "forecast": "1.1%"
     },
     {
       "country": "USD",
@@ -211,11 +211,11 @@
       "dataPoint": "German Industrial Production (m/m)",
       "weight": 0.5,
       "direction": "higher_is_bullish",
-      "period": "2026-10-09T12:00+00:00",
-      "title": "Industrial Production MoM AUG",
-      "actual": "-0.3%",
-      "previous": "-0.4%",
-      "forecast": "1.5%"
+      "period": "2026-11-11T14:00+00:00",
+      "title": "Industrial Production MoM SEP",
+      "actual": "-0.5%",
+      "previous": "-0.3%",
+      "forecast": "-0.2%"
     },
     {
       "country": "NZD",
@@ -391,11 +391,11 @@
       "dataPoint": "Official Bank Rate / MPC Rate Statement / MPC Official Bank Rate Votes",
       "weight": 2.0,
       "direction": "higher_is_bullish",
-      "period": "2026-09-17T15:00+00:00",
+      "period": "2026-11-05T17:00+00:00",
       "title": "BoE Interest Rate Decision",
-      "actual": "3.75%",
+      "actual": "4%",
       "previous": "3.75%",
-      "forecast": "3.75%"
+      "forecast": "4.0%"
     },
     {
       "country": "JPY",
@@ -571,9 +571,9 @@
       "dataPoint": "Banxico Overnight Rate / Rate Decision",
       "weight": 2.0,
       "direction": "higher_is_bullish",
-      "period": "2026-09-24T23:00+00:00",
+      "period": "2026-11-06T00:00+00:00",
       "title": "Interest Rate Decision",
-      "actual": "6.5%",
+      "actual": "6.25%",
       "previous": "6.5%",
       "forecast": "6.5%"
     },

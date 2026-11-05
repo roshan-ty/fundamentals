@@ -1,8 +1,17 @@
 {
   "meta": {
-    "updated": "2026-11-05T03:09:58+00:00"
+    "updated": "2026-11-05T20:43:14+00:00"
   },
   "setups": [
+    {
+      "symbol": "EURUSD",
+      "name": "EURUSD",
+      "verdict": "Very Bearish",
+      "direction": "Sell",
+      "confidence": 1.0,
+      "importance": 2,
+      "rationale": "Very Bearish — EUR: Bearish · USD: Bullish"
+    },
     {
       "symbol": "EURJPY",
       "name": "EURJPY",
@@ -38,6 +47,15 @@
       "confidence": 1.0,
       "importance": 2,
       "rationale": "Very Bearish — EUR: Bearish · ZAR: Bullish"
+    },
+    {
+      "symbol": "GBPUSD",
+      "name": "GBPUSD",
+      "verdict": "Very Bearish",
+      "direction": "Sell",
+      "confidence": 1.0,
+      "importance": 2,
+      "rationale": "Very Bearish — GBP: Bearish · USD: Bullish"
     },
     {
       "symbol": "GBPJPY",
@@ -76,40 +94,22 @@
       "rationale": "Very Bearish — GBP: Bearish · ZAR: Bullish"
     },
     {
-      "symbol": "EURUSD",
-      "name": "EURUSD",
-      "verdict": "Bearish",
-      "direction": "Sell",
+      "symbol": "USDSGD",
+      "name": "USDSGD",
+      "verdict": "Very Bullish",
+      "direction": "Buy",
       "confidence": 1.0,
-      "importance": 1,
-      "rationale": "Bearish — EUR: Bearish · USD: Neutral"
+      "importance": 2,
+      "rationale": "Very Bullish — USD: Bullish · SGD: Bearish"
     },
     {
-      "symbol": "EURCAD",
-      "name": "EURCAD",
-      "verdict": "Bearish",
+      "symbol": "XAUUSD",
+      "name": "XAUUSD",
+      "verdict": "Very Bearish",
       "direction": "Sell",
-      "confidence": 1.0,
-      "importance": 1,
-      "rationale": "Bearish — EUR: Bearish · CAD: Neutral"
-    },
-    {
-      "symbol": "EURNZD",
-      "name": "EURNZD",
-      "verdict": "Bearish",
-      "direction": "Sell",
-      "confidence": 1.0,
-      "importance": 1,
-      "rationale": "Bearish — EUR: Bearish · NZD: Neutral"
-    },
-    {
-      "symbol": "EURNOK",
-      "name": "EURNOK",
-      "verdict": "Bearish",
-      "direction": "Sell",
-      "confidence": 1.0,
-      "importance": 1,
-      "rationale": "Bearish — EUR: Bearish · NOK: Neutral"
+      "confidence": 0.4,
+      "importance": 2,
+      "rationale": "Very Bearish"
     }
   ]
 }
