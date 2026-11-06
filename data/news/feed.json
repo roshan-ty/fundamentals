@@ -1,5 +1,73 @@
 [
   {
+    "headline": "Zcash NU7 upgrade goes live, leaves 12,224 ZEC stranded in Sprout pool",
+    "snippet": "Zcash’s NU7 upgrade has rendered about $15 million in legacy Sprout funds unspendable, although a future network upgrade could potentially restore access.",
+    "url": "https://cointelegraph.com/news/zcash-nu7-upgrade-15m-sprout-funds-unspendable?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "source": "markets",
+    "published": "2026-11-06T09:00",
+    "tags": [],
+    "kind": "crypto",
+    "collected_at": "2026-11-06T09:53:55+00:00"
+  },
+  {
+    "headline": "Greece approves 10% tax on crypto gains and 15% levy on DeFi income",
+    "snippet": "",
+    "url": "https://www.coindesk.com/policy/2026/11/06/greece-approves-10-tax-on-crypto-gains-and-15-levy-on-defi-income",
+    "source": "markets",
+    "published": "2026-11-06T08:47",
+    "tags": [],
+    "kind": "crypto",
+    "collected_at": "2026-11-06T09:53:55+00:00"
+  },
+  {
+    "headline": "Hyperliquid Strategies seeks futures registration for perps",
+    "snippet": "The HYPE treasury company spent $785 million on tokens during the quarter and wants to bring Hyperliquid-based perpetual futures to the US.",
+    "url": "https://cointelegraph.com/news/nasdaq-hyperliquid-strategies-futures-broker-license-onchain-perps?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "source": "markets",
+    "published": "2026-11-06T08:42",
+    "tags": [],
+    "kind": "crypto",
+    "collected_at": "2026-11-06T09:53:55+00:00"
+  },
+  {
+    "headline": "Bitcoin, Ether ETFs post $530M outflows as election gains evaporate",
+    "snippet": "US spot Bitcoin and Ether ETFs shed a combined $530 million Thursday as Bitcoin fell below $76,000 and US stocks tumbled.",
+    "url": "https://cointelegraph.com/markets/bitcoin-ether-etfs-lose-post-election-gains-erased?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "source": "markets",
+    "published": "2026-11-06T08:19",
+    "tags": [
+      "BTCUSD",
+      "ETHUSD",
+      "US500"
+    ],
+    "kind": "crypto",
+    "collected_at": "2026-11-06T09:53:55+00:00"
+  },
+  {
+    "headline": "investingLive Asia-pacific news wrap: Global tech stocks rout raises growth concerns",
+    "snippet": "<p>US Democrats are reportedly targeting President Trump's tariffs on Canada as the first step towards rolling back parts of his administration's trade policy. Senator Wyden said there is overwhelming support for repealing tariffs on Canadian products. Meanwhile, BoC Governor Macklem said he remains",
+    "url": "https://investinglive.com/news/investinglive-asia-pacific-news-wrap-global-tech-stocks-rout-raises-growth-concerns/",
+    "source": "markets",
+    "published": "2026-11-06T08:05",
+    "tags": [
+      "CAD",
+      "US100",
+      "GLOBAL"
+    ],
+    "kind": "forex",
+    "collected_at": "2026-11-06T09:53:55+00:00"
+  },
+  {
+    "headline": "Trump-backed World Liberty Financial plans token buyback after 66% year-to-date slide",
+    "snippet": "",
+    "url": "https://www.coindesk.com/business/2026/11/06/trump-backed-world-liberty-financial-plans-token-buyback-after-66-year-to-date-slide",
+    "source": "markets",
+    "published": "2026-11-06T08:04",
+    "tags": [],
+    "kind": "crypto",
+    "collected_at": "2026-11-06T09:53:55+00:00"
+  },
+  {
     "headline": "Chainalysis says breach exposed password hashes and live tokens",
     "snippet": "Chainalysis disclosed password hashes and live tokens were exposed after initially reporting only non-sensitive customer data was accessed.",
     "url": "https://cointelegraph.com/news/chainalysis-cyberattack-password-hashes-live-tokens-exposed?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -7,7 +75,7 @@
     "published": "2026-11-06T06:54",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "Zcash’s landmark NU7 upgrade goes live, speeding up private payments",
@@ -17,7 +85,7 @@
     "published": "2026-11-06T05:14",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "Crypto exchanges tout cold storage ratios after Binance attack",
@@ -27,7 +95,7 @@
     "published": "2026-11-06T05:07",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "Oil set for sharp weekly drop but Middle East supply concerns provide floor - Reuters",
@@ -37,7 +105,7 @@
     "published": "2026-11-06T02:49",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "Hyperliquid treasury firm seeking U.S. regulatory nod as a domestic futures platform",
@@ -47,7 +115,7 @@
     "published": "2026-11-06T02:24",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "As high oil prices curb demand, fresh signs of glut appear - Reuters",
@@ -60,7 +128,7 @@
       "BRENT"
     ],
     "kind": "general",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "Bitcoin developer proposes ‘landmines’ to make quantum thieves lose their own BTC",
@@ -72,7 +140,7 @@
       "BTCUSD"
     ],
     "kind": "crypto",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "Core Scientific to quit Bitcoin mining by year-end as AI business surges",
@@ -84,7 +152,7 @@
       "BTCUSD"
     ],
     "kind": "crypto",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "Hegseth vows to keep fighting from Pentagon, defends Iran war - Reuters",
@@ -96,7 +164,7 @@
       "ETHUSD"
     ],
     "kind": "general",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "Midterms upended Congress but Trump still commands foreign policy - Reuters",
@@ -106,7 +174,7 @@
     "published": "2026-11-05T23:07",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "New wave of bomb hoaxes hits dozens of flights across Europe - Reuters",
@@ -118,7 +186,7 @@
       "EUR"
     ],
     "kind": "general",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "American Bitcoin’s $126M profit masks mining pressure as rivals turn to AI",
@@ -130,7 +198,7 @@
       "BTCUSD"
     ],
     "kind": "crypto",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "Asian crypto exchanges batten down the hatches as hacks surge: Asia Express",
@@ -143,7 +211,7 @@
       "US30"
     ],
     "kind": "crypto",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "investingLive Americas FX news wrap 5 Nov: Nasdaq 100 plunges 6.36% as AI selloff spreads",
@@ -169,7 +237,7 @@
       "US100"
     ],
     "kind": "general",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "Crypto ally French Hill wins reelection but set to lose House chair",
@@ -179,7 +247,7 @@
     "published": "2026-11-05T21:39",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "Retail traders dump the most stocks in a single day since Covid sell-off",
@@ -191,7 +259,7 @@
       "US500"
     ],
     "kind": "general",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "Israel's president pledges to pick candidate on Sunday to form government - Reuters",
@@ -201,7 +269,7 @@
     "published": "2026-11-05T20:46",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "Across Tehran, billboards threaten Trump, Israel - Reuters",
@@ -211,7 +279,7 @@
     "published": "2026-11-05T20:38",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "Ukraine expects fresh support after US mid-terms, minister says - Reuters",
@@ -221,7 +289,7 @@
     "published": "2026-11-05T20:23",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "How Wall Street's postelection rally got obliterated — and what's next",
@@ -233,7 +301,7 @@
       "US500"
     ],
     "kind": "general",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "Iran sent nuclear proposal to the US via Qatar, senior Iranian official tells Reuters - Reuters",
@@ -243,7 +311,7 @@
     "published": "2026-11-05T19:48",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "ConocoPhillips boosts dividend after beating estimates on higher oil prices - Reuters",
@@ -256,7 +324,7 @@
       "BRENT"
     ],
     "kind": "general",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "The market is waiting for signals from Donald Trump",
@@ -280,7 +348,7 @@
     "published": "2026-11-05T19:02",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "Iran's security chief discusses regional, bilateral affairs with Putin - Reuters",
@@ -290,7 +358,7 @@
     "published": "2026-11-05T18:59",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "U.S. Justice Department assembles force to shield against foreign AI threats",
@@ -300,7 +368,7 @@
     "published": "2026-11-05T18:59",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "Bitcoin, crypto stocks caught in AI trade meltdown, but Wintermute trader sees 'glass half full'",
@@ -314,7 +382,7 @@
       "US30"
     ],
     "kind": "crypto",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "Fed, OCC check US banks after Binance hack as experts flag security risks",
@@ -326,7 +394,7 @@
       "USD"
     ],
     "kind": "crypto",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "We're dipping into our large cash pile to buy this bank on Thursday's sell-off",
@@ -336,7 +404,7 @@
     "published": "2026-11-05T18:29",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "Europe’s largest asset manager Amundi tokenizes equity index fund on Ethereum",
@@ -349,7 +417,7 @@
       "ETHUSD"
     ],
     "kind": "crypto",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "New wave of bomb hoaxes hits at least 27 passenger flights across Europe - Reuters",
@@ -374,7 +442,7 @@
       "US30"
     ],
     "kind": "crypto",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "Wall Street's fear gauge surges the most since April. Why traders think it should be even higher",
@@ -386,7 +454,7 @@
       "US500"
     ],
     "kind": "general",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "AUDUSD sellers have pushed to the lowest level since mid-October. What next?",
@@ -412,7 +480,7 @@
       "GBP"
     ],
     "kind": "general",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "What is TraderTraitor, the hacking squad behind the $6.3 billion Binance heist",
@@ -422,7 +490,7 @@
     "published": "2026-11-05T16:58",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "Standard Chartered and SBI back crypto insurer Soter as funding reaches $23.5 million",
@@ -432,7 +500,7 @@
     "published": "2026-11-05T16:49",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "Las Vegas Raiders owner Mark Davis says he's 'not a fan' of sports gambling amid prediction market boom",
@@ -442,7 +510,7 @@
     "published": "2026-11-05T16:48",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "Bitcoin crashes 6% to 7-week low as US stocks erase election gains",
@@ -456,7 +524,7 @@
       "US30"
     ],
     "kind": "crypto",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "Tankers hit in Hormuz as Iran keeps up pressure after US vote - Reuters",
@@ -466,7 +534,7 @@
     "published": "2026-11-05T16:47",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "Bitcoin falls with risk off sentiment. The price is testing a key swing area target.",
@@ -478,7 +546,7 @@
       "BTCUSD"
     ],
     "kind": "crypto",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "Investors eye risk of debt-ceiling standoff after Democratic sweep - Reuters",
@@ -488,7 +556,7 @@
     "published": "2026-11-05T16:38",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "We're booking big profits in 2 outperformers in Thursday's terrible market",
@@ -498,7 +566,7 @@
     "published": "2026-11-05T16:22",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "Crypto for Advisors: Where investors stake crypto shapes how much of the reward they keep",
@@ -508,7 +576,7 @@
     "published": "2026-11-05T16:13",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "The market is telling the hyperscalers it's happy about a slower data center buildout",
@@ -538,7 +606,7 @@
     "published": "2026-11-05T15:34",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "New wave of bomb hoaxes hits 27 passenger flights across Europe - Reuters",
@@ -573,7 +641,7 @@
     "published": "2026-11-05T15:16",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "PODCAST: Oil heads for pandemic-era fall - Reuters",
@@ -597,7 +665,7 @@
       "US30"
     ],
     "kind": "general",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "Gate CEO says crypto exchanges must prove they can survive a hack like Binance’s",
@@ -607,7 +675,7 @@
     "published": "2026-11-05T14:21",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "Kraken parent Payward and its clients buy AAVE tokens in DeFi investment push",
@@ -617,7 +685,7 @@
     "published": "2026-11-05T14:00",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "Blockchain is ‘perfect solution’ for AI agent trust, VeChain CEO says",
@@ -627,7 +695,7 @@
     "published": "2026-11-05T13:34",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "Can decentralized phone networks power the AI revolution?",
@@ -637,7 +705,7 @@
     "published": "2026-11-05T13:30",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "Google could take stake in bitcoin miner TeraWulf’s $19 billion AI project if Anthropic defaults",
@@ -649,7 +717,7 @@
       "BTCUSD"
     ],
     "kind": "crypto",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "Jordanian officer killed in Amman stabbing, suspect arrested, security agency says - Reuters",
@@ -659,7 +727,7 @@
     "published": "2026-11-05T13:07",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "Instant view: Bank of England delivers first rate hike in three years, gilt yields rise - Reuters",
@@ -671,7 +739,7 @@
       "GBP"
     ],
     "kind": "general",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "Binance cuts SignalPlus access after security warning, urges users to check accounts",
@@ -713,7 +781,7 @@
     "published": "2026-11-05T12:38",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "Bitcoin is resilient, but leverage is missing and demand still tepid",
@@ -735,7 +803,7 @@
     "published": "2026-11-05T12:13",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "Here's what the Democratic election rout could mean for the U.S. economy",
@@ -745,7 +813,7 @@
     "published": "2026-11-05T12:11",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-11-06T07:50:19+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "Bitcoin miners are oversold following 35% October rout, VanEck says",
@@ -779,7 +847,7 @@
     "published": "2026-11-05T11:33",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-11-06T03:10:10+00:00"
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "Thailand to block Bitget in December over unlicensed crypto trading",
@@ -1251,6 +1319,78 @@
     ],
     "kind": "general",
     "collected_at": "2026-11-05T16:48:23+00:00"
+  },
+  {
+    "headline": "UNUM GROUP INVESTIGATION: UNM Securities Investors Encouraged to Contact Kirby McInerney LLP About Their Rights",
+    "snippet": "NEW YORK, Nov. 05, 2026 (GLOBE NEWSWIRE) -- The law firm of Kirby McInerney LLP is investigating potential claims against Unum Group (“Unum” or the “Company”) (NYSE: UNM). The investigation concerns whether the Company and/or members of its senior management may have violated federal securities laws or engaged in other unlawful business practices. If you purchased or otherwise acquired Unum securities, please contact Lauren Molinaro of Kirby McInerney LLP by email at investigations@kmllp.com, or fill out the contact form below, to learn more about your rights.",
+    "url": "",
+    "source": "global",
+    "published": "2026-11-05 21:53:00",
+    "tags": [
+      "USD",
+      "ETHUSD"
+    ],
+    "collected_at": "2026-11-06T09:53:55+00:00"
+  },
+  {
+    "headline": "Wyoming shoots down property tax ballot initiative",
+    "snippet": "JACKSON — Property taxes were front of mind for Teton County voters as they headed to the polls Tuesday.",
+    "url": "",
+    "source": "global",
+    "published": "2026-11-05 21:53:00",
+    "tags": [
+      "US500",
+      "US30"
+    ],
+    "collected_at": "2026-11-06T09:53:55+00:00"
+  },
+  {
+    "headline": "Google Cloud adds Anthropic-managed Claude deployment",
+    "snippet": "Customers can now choose between tighter compliance controls and faster access to new Claude features on Google Cloud without changing billing.",
+    "url": "",
+    "source": "global",
+    "published": "2026-11-05 21:53:00",
+    "tags": [],
+    "collected_at": "2026-11-06T09:53:55+00:00"
+  },
+  {
+    "headline": "Maldives Beach Sand Hookworm Infection Complicates Breastfeeding Mother's Treatment",
+    "snippet": "For Anna, a vacation on the Maldives began as a typical tropical getaway but ended with a disturbing discovery under her skin: a migrating parasite. The first warning sign appeared four days before her flight back to Moscow-a persistent itch in her toe after walking barefoot on the beach. What initially seemed like a common insect bite soon evolved into a visible, winding red track that lengthened as the days passed. This \"track\" is the hallmark of cutaneous larva migrans, a condition caused by hookworm larvae often found in warm, contaminated sand. These parasites penetrate the skin of the feet, moving through the epidermis and leaving a characteristic serpentine trail of inflammation and redness in their wake. In Anna's case, the diagnosis remained elusive until she sought help from a specialized medical institute upon her return to Russia, where physicians finally identified the migrating larva. The Complexity of Treatment The recovery process was complicated by a specific physiological constraint: Anna is currently breastfeeding. This detail fundamentally altered her clinical path, as many standard antiparasitic medications are contraindicated for nursing mothers. Consequently, her treatment required a more cautious, individualized approach, leading to a slower healing process for the inflammatory wound.",
+    "url": "",
+    "source": "global",
+    "published": "2026-11-05 21:53:00",
+    "tags": [],
+    "collected_at": "2026-11-06T09:53:55+00:00"
+  },
+  {
+    "headline": "North Alabama distribution center expected to close, laying off 593 workers",
+    "snippet": "Almost 600 employees at a North Alabama distribution center received word this week that it plans to close early next year. The Children’s Place in Fort Payne anticipates shutting down its operations on Jan. 5, 2027, according to a letter…",
+    "url": "",
+    "source": "global",
+    "published": "2026-11-05 21:53:00",
+    "tags": [
+      "US500",
+      "US30"
+    ],
+    "collected_at": "2026-11-06T09:53:55+00:00"
+  },
+  {
+    "headline": "Trump threatens veto power as Democrats prepare to lead Congress",
+    "snippet": "President Donald Trump has indicated he will use his veto power to block Democratic legislation as the party prepares to take control of the House and Senate following historic midterm election wins.",
+    "url": "",
+    "source": "global",
+    "published": "2026-11-05 21:53:00",
+    "tags": [],
+    "collected_at": "2026-11-06T09:53:55+00:00"
+  },
+  {
+    "headline": "Peaky Blinders stars' \"captivating\" Birmingham-set drama confirms free UK screenings",
+    "snippet": "Catch an advance screening of I See Buildings Fall Like Lightning.",
+    "url": "",
+    "source": "global",
+    "published": "2026-11-05 21:53:00",
+    "tags": [],
+    "collected_at": "2026-11-06T09:53:55+00:00"
   },
   {
     "headline": "CoorsTek Wins German Federal Patent Court Ruling in Pink Ceramic Hip Component Trademark Dispute",
@@ -4086,149 +4226,5 @@
     "tags": [],
     "kind": "crypto",
     "collected_at": "2026-11-04T07:54:49+00:00"
-  },
-  {
-    "headline": "Tough to buy into the Iran headlines in the context of the election",
-    "snippet": "<p>There are more headlines crossing suggesting positive developments in Iran-US talks, with Al-Arabiya now carrying similar headlines to the earlier ones that weighed on oil.</p><p>In contrast, here is Iran security chief Mohsen Rezaei just now:</p><p>America's response to Iran's rights and demands",
-    "url": "https://investinglive.com/news/tough-to-buy-into-the-iran-headlines-in-the-context-of-the-election/",
-    "source": "markets",
-    "published": "2026-11-03T14:36",
-    "tags": [],
-    "kind": "forex",
-    "collected_at": "2026-11-03T15:48:07+00:00"
-  },
-  {
-    "headline": "PODCAST: Markets await midterms - Reuters",
-    "snippet": "PODCAST: Markets await midterms Reuters",
-    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPVE1vZ3dDOV9HTWNqY2VZdGNQR1NqUFd1T2EyQjFmWGJENzZXcG1jMnROVVloME5rOVN4OG1rOXNOVk5Qa3VKYWdNSGVQa2w3WEZEWGRZM2ZMT21SdklnaTdWQWUzUUxPQ1BCMHZBU1VGVWhvMEg2U0FsVU5OdXREN0FDS3IzMHk3TUNRTXVla2k?oc=5",
-    "source": "markets",
-    "published": "2026-11-03T14:32",
-    "tags": [],
-    "kind": "general",
-    "collected_at": "2026-11-04T08:59:24+00:00"
-  },
-  {
-    "headline": "Syria says it foiled Hezbollah plot to attack Homs oil refinery - Reuters",
-    "snippet": "Syria says it foiled Hezbollah plot to attack Homs oil refinery Reuters",
-    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQa0hXS05BXzBXMWN6UkowWERwWUVYaUhnMzFIYUtvTC14WDJfUjIyWXpfVnV1UGRLT0pqYTVyaXNJSTZ5djYtZ0xpWmtmWG1LODZqUWRBOUNQbjlvLVFxVjF3RGprQmNmdmJLdDdSY2UtTncwUjRVcnR2RXZ2enZzTDQ5QklpOUU4Y0c2MVVmaVdTOW16amNkcVg1WGhEVWFNMkk3dU5wemF2ZVBGZEdDcWU3c3c?oc=5",
-    "source": "markets",
-    "published": "2026-11-03T14:30",
-    "tags": [],
-    "kind": "general",
-    "collected_at": "2026-11-04T08:59:24+00:00"
-  },
-  {
-    "headline": "CZ warns of more AI-driven hacks following Binance’s historic $6.4 billion heist",
-    "snippet": "",
-    "url": "https://www.coindesk.com/business/2026/11/03/cz-warns-of-more-ai-driven-hacks-following-binance-s-historic-usd6-4-billion-heist",
-    "source": "markets",
-    "published": "2026-11-03T14:22",
-    "tags": [],
-    "kind": "crypto",
-    "collected_at": "2026-11-04T07:54:49+00:00"
-  },
-  {
-    "headline": "Jim Cramer's top 10 things to watch in the stock market Tuesday",
-    "snippet": "It's Election Day.",
-    "url": "https://www.cnbc.com/investingclub/2026/11/03/jim-cramers-top-10-things-to-watch-in-the-stock-market-tuesday.html",
-    "source": "markets",
-    "published": "2026-11-03T14:11",
-    "tags": [
-      "US500"
-    ],
-    "kind": "general",
-    "collected_at": "2026-11-04T08:59:24+00:00"
-  },
-  {
-    "headline": "Bitcoin sellers had their shot and missed. Now it is the buyers’ turn.",
-    "snippet": "<p>Sellers could not deliver the downside break</p><p>The bitcoin sellers had their opportunity to take more control. On Friday, Monday and again today, the price traded to (and even below today) its 100 day moving average, currently at $76,654 (purple MA line). Those breaks opened the door for a mo",
-    "url": "https://investinglive.com/cryptocurrency/bitcoin-sellers-had-their-shot-and-missed-now-it-is-the-buyers-turn/",
-    "source": "markets",
-    "published": "2026-11-03T14:06",
-    "tags": [
-      "BTCUSD",
-      "US500",
-      "US30"
-    ],
-    "kind": "crypto",
-    "collected_at": "2026-11-04T03:01:36+00:00"
-  },
-  {
-    "headline": "Thousands of pregnant women at risk in Yemeni city of Taiz, UN agency says - Reuters",
-    "snippet": "Thousands of pregnant women at risk in Yemeni city of Taiz, UN agency says Reuters",
-    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPT2tWaENXWk92cFdGcUlvb25tUk1EV21CQTlPalZfZ0kzeDc3ckdhX0FxcWpnNHBnZWd0NzRNTGZFTHM1X2NwM3V1WGRVRlZiTjVsZHpIRlE4bXB5Q080Si14YlByQmxBdjg1eURoTHEzVnZYNElvRUVITkY2WkxTRjFxbm5OWlNxRjR3Vkx6T0hUcEstNjdIWWFmWi1WYWRFRW0wNHF3UU96TEw5d1pJOTlwRUZjUQ?oc=5",
-    "source": "markets",
-    "published": "2026-11-03T14:05",
-    "tags": [],
-    "kind": "general",
-    "collected_at": "2026-11-04T08:59:24+00:00"
-  },
-  {
-    "headline": "LO:TECH raises $12 million to expand crypto trading into U.S. and Asia",
-    "snippet": "",
-    "url": "https://www.coindesk.com/business/2026/11/03/lo-tech-raises-usd12-million-to-expand-crypto-trading-into-u-s-and-asia",
-    "source": "markets",
-    "published": "2026-11-03T14:00",
-    "tags": [],
-    "kind": "crypto",
-    "collected_at": "2026-11-04T03:01:36+00:00"
-  },
-  {
-    "headline": "What’s at stake for crypto as the US votes in the 2026 midterms?",
-    "snippet": "Crypto groups spent about $176 million ahead of the US midterms, with control of Congress and the future of crypto legislation at stake.",
-    "url": "https://cointelegraph.com/news/us-midterms-2026-stake-crypto-election-day?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "source": "markets",
-    "published": "2026-11-03T13:53",
-    "tags": [],
-    "kind": "crypto",
-    "collected_at": "2026-11-04T03:01:36+00:00"
-  },
-  {
-    "headline": "Wall Street killed Bitcoin’s wild rallies: 10x’s Markus Thielen",
-    "snippet": "Markus Thielen sees Bitcoin reaching $90,000 by year-end, questions institutional ETF demand and says Ethereum must do more for holders.",
-    "url": "https://cointelegraph.com/magazine/wall-street-killed-bitcoins-wild-rallies-markus-thielen?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "source": "markets",
-    "published": "2026-11-03T13:30",
-    "tags": [
-      "BTCUSD",
-      "ETHUSD",
-      "US500"
-    ],
-    "kind": "crypto",
-    "collected_at": "2026-11-04T03:01:36+00:00"
-  },
-  {
-    "headline": "As Americans vote, Trump says US will stop $4 billion in aid to Israel - Reuters",
-    "snippet": "As Americans vote, Trump says US will stop $4 billion in aid to Israel Reuters",
-    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQTnAzZzVDS3N1RTJJdnkxYUJPQkl1X3h4d3hZaC1MX0RwXzRHOGRybmM3QjEzR1kybkJIUmNYcnVPbkNPMkt6TFBnTEdOYWFJemJkelBhVXZsRDQ5VG4wc1lSS0Q2dlRlUmV0VHI2Y3YxNWstRWVPUV95Y2pNUVp5TUlES3pCMC1GUzNTTXVfWWlGd1JlQ3p1XzJUWmJmbzlWUmtYTFlXNDFlZw?oc=5",
-    "source": "markets",
-    "published": "2026-11-03T13:28",
-    "tags": [],
-    "kind": "general",
-    "collected_at": "2026-11-04T08:59:24+00:00"
-  },
-  {
-    "headline": "Moscow Exchange to launch Bitcoin, Ether and USDT trading in December",
-    "snippet": "Moscow Exchange plans to launch crypto trading on Dec. 1 under Russia’s new law, with annual purchase limits for non-qualified investors.",
-    "url": "https://cointelegraph.com/news/moscow-exchange-bitcoin-ether-usdt-trading-december?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "source": "markets",
-    "published": "2026-11-03T13:15",
-    "tags": [
-      "USD",
-      "BTCUSD",
-      "ETHUSD"
-    ],
-    "kind": "crypto",
-    "collected_at": "2026-11-04T03:01:36+00:00"
-  },
-  {
-    "headline": "Binance net outflows reach $5.3 billion after record hack. CEO says recovery underway",
-    "snippet": "",
-    "url": "https://www.coindesk.com/business/2026/11/03/binance-net-outflows-reach-usd5-3b-after-record-hack-though-ceo-cites-recovery",
-    "source": "markets",
-    "published": "2026-11-03T12:57",
-    "tags": [],
-    "kind": "crypto",
-    "collected_at": "2026-11-04T03:01:36+00:00"
   }
 ]
