@@ -33720,7 +33720,7 @@
     "impact": "",
     "forecast": "",
     "previous": "$6.746T",
-    "actual": "",
+    "actual": "$6.748T",
     "source": "te"
   },
   {
@@ -33730,7 +33730,7 @@
     "impact": "",
     "forecast": "",
     "previous": "$2.895T",
-    "actual": "",
+    "actual": "$2.963T",
     "source": "te"
   },
   {
@@ -33750,7 +33750,7 @@
     "impact": "",
     "forecast": "4%",
     "previous": "3.8%",
-    "actual": "",
+    "actual": "4.6%",
     "source": "te"
   },
   {
@@ -33760,7 +33760,7 @@
     "impact": "",
     "forecast": "3.9%",
     "previous": "5.2%",
-    "actual": "",
+    "actual": "3.6%",
     "source": "te"
   },
   {
@@ -33770,7 +33770,7 @@
     "impact": "",
     "forecast": "",
     "previous": "-92.6B",
-    "actual": "",
+    "actual": "1312B",
     "source": "te"
   },
   {
@@ -33780,7 +33780,7 @@
     "impact": "",
     "forecast": "",
     "previous": "1180.9B",
-    "actual": "",
+    "actual": "1129.3B",
     "source": "te"
   },
   {
@@ -35711,7 +35711,7 @@
     "date_utc": "2026-11-12T04:50+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "1312B",
     "actual": "",
     "source": "te"
   },
@@ -35741,7 +35741,7 @@
     "date_utc": "2026-11-12T04:50+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "1129.3B",
     "actual": "",
     "source": "te"
   },
@@ -36301,7 +36301,7 @@
     "date_utc": "2026-11-13T02:30+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "$2.963T",
     "actual": "",
     "source": "te"
   },
@@ -36932,6 +36932,16 @@
     "impact": "",
     "forecast": "",
     "previous": "5.2%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "10-Year KTB Auction",
+    "country": "KRW",
+    "date_utc": "2026-11-16T07:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "4.155%",
     "actual": "",
     "source": "te"
   },
@@ -41162,6 +41172,146 @@
     "impact": "",
     "forecast": "",
     "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "API Crude Oil Stock Change NOV/27",
+    "country": "USD",
+    "date_utc": "2026-12-02T02:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Building Permits MoM OCT",
+    "country": "NZD",
+    "date_utc": "2026-12-02T02:45+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "-7.9%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Export Prices QoQ Q3",
+    "country": "NZD",
+    "date_utc": "2026-12-02T02:45+00:00",
+    "impact": "",
+    "forecast": "1.1%",
+    "previous": "3.5%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Import Prices QoQ Q3",
+    "country": "NZD",
+    "date_utc": "2026-12-02T02:45+00:00",
+    "impact": "",
+    "forecast": "1.5%",
+    "previous": "13.8%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Terms of Trade QoQ Q3",
+    "country": "NZD",
+    "date_utc": "2026-12-02T02:45+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "-9%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Ai Group Industry Index NOV",
+    "country": "AUD",
+    "date_utc": "2026-12-02T03:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "-19.1",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Ai Group Construction Index NOV",
+    "country": "AUD",
+    "date_utc": "2026-12-02T03:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "-26.9",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Ai Group Manufacturing Index NOV",
+    "country": "AUD",
+    "date_utc": "2026-12-02T03:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "-20.1",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Monetary Base YoY",
+    "country": "JPY",
+    "date_utc": "2026-12-02T04:50+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "-13.6%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "GDP Growth Rate QoQ Q3",
+    "country": "AUD",
+    "date_utc": "2026-12-02T05:30+00:00",
+    "impact": "",
+    "forecast": "0.5%",
+    "previous": "0.4%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "GDP Growth Rate YoY Q3",
+    "country": "AUD",
+    "date_utc": "2026-12-02T05:30+00:00",
+    "impact": "",
+    "forecast": "2.1%",
+    "previous": "2.1%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "GDP Capital Expenditure QoQ Q3",
+    "country": "AUD",
+    "date_utc": "2026-12-02T05:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "-0.3%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "GDP Chain Price Index QoQ Q3",
+    "country": "AUD",
+    "date_utc": "2026-12-02T05:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "-0.6%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "GDP Final Consumption QoQ Q3",
+    "country": "AUD",
+    "date_utc": "2026-12-02T05:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "0.5%",
     "actual": "",
     "source": "te"
   }

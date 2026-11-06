@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T20:43:14+00:00",
+  "updated": "2026-11-06T03:10:10+00:00",
   "releases": [
     {
       "country": "USD",
@@ -787,11 +787,11 @@
       "dataPoint": "Average Cash Earnings (y/y)",
       "weight": 0.5,
       "direction": "higher_is_bullish",
-      "period": "2026-10-07T03:30+00:00",
-      "title": "Average Cash Earnings YoY AUG",
-      "actual": "3.8%",
-      "previous": "4.7%",
-      "forecast": "4.9%"
+      "period": "2026-11-06T04:30+00:00",
+      "title": "Average Cash Earnings YoY SEP",
+      "actual": "4.6%",
+      "previous": "3.8%",
+      "forecast": "4%"
     },
     {
       "country": "CAD",
@@ -895,10 +895,10 @@
       "dataPoint": "2-Year Treasury Yield (21-day trend)",
       "weight": 1.0,
       "direction": "higher_is_bullish",
-      "period": "2026-11-03T00:00:00+00:00",
+      "period": "2026-11-04T00:00:00+00:00",
       "title": "2-Year Treasury Yield",
-      "actual": "4.61",
-      "previous": "4.72",
+      "actual": "4.58",
+      "previous": "4.71",
       "forecast": ""
     }
   ]
