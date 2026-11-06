@@ -1,18 +1,66 @@
 {
   "meta": {
-    "updated": "2026-11-06T03:10:10+00:00",
+    "updated": "2026-11-06T20:05:25+00:00",
     "method": "verdict v3 (forecast-first, released-only)"
   },
   "currencies": {
     "USD": {
       "verdict": "Bullish",
       "tally": {
-        "bullish": 13.5,
-        "bearish": 2.0,
+        "bullish": 14.5,
+        "bearish": 1.0,
         "neutral": 5.0
       },
       "released_points": 17,
       "drivers": [
+        {
+          "dataPoint": "CB Consumer Confidence / UoM Consumer Sentiment",
+          "title": "Michigan Consumer Sentiment Prel NOV",
+          "period": "2026-11-06T20:00+00:00",
+          "actual": "51.0",
+          "previous": "48.0",
+          "forecast": "47.0",
+          "direction": "higher_is_bullish",
+          "verdict": "bullish",
+          "weight": 0.5,
+          "note": ""
+        },
+        {
+          "dataPoint": "Non-Farm Employment Change (NFP)",
+          "title": "Nonfarm Payrolls Private OCT",
+          "period": "2026-11-06T18:30+00:00",
+          "actual": "159K",
+          "previous": "46K",
+          "forecast": "35.0K",
+          "direction": "higher_is_bullish",
+          "verdict": "bullish",
+          "weight": 2.0,
+          "note": ""
+        },
+        {
+          "dataPoint": "Unemployment Rate",
+          "title": "Unemployment Rate OCT",
+          "period": "2026-11-06T18:30+00:00",
+          "actual": "4.1%",
+          "previous": "4.2%",
+          "forecast": "4.2%",
+          "direction": "lower_is_bullish",
+          "verdict": "bullish",
+          "weight": 2.0,
+          "note": ""
+        },
+        {
+          "dataPoint": "Average Hourly Earnings (m/m, y/y)",
+          "title": "Average Hourly Earnings MoM OCT",
+          "period": "2026-11-06T18:30+00:00",
+          "actual": "0.4%",
+          "previous": "0.1%",
+          "forecast": "0.2%",
+          "direction": "higher_is_bullish",
+          "verdict": "bullish",
+          "weight": 1.0,
+          "note": ""
+        },
         {
           "dataPoint": "Unemployment Claims (Weekly)",
           "title": "Initial Jobless Claims OCT/31",
@@ -23,18 +71,6 @@
           "direction": "lower_is_bullish",
           "verdict": "bullish",
           "weight": 1.0,
-          "note": ""
-        },
-        {
-          "dataPoint": "Non-Farm Employment Change (NFP)",
-          "title": "Nonfarm Productivity QoQ Prel Q3",
-          "period": "2026-11-05T18:30+00:00",
-          "actual": "3.6%",
-          "previous": "1.4%",
-          "forecast": "1.1%",
-          "direction": "higher_is_bullish",
-          "verdict": "bullish",
-          "weight": 2.0,
           "note": ""
         },
         {
@@ -134,18 +170,6 @@
           "note": ""
         },
         {
-          "dataPoint": "CB Consumer Confidence / UoM Consumer Sentiment",
-          "title": "CB Consumer Confidence OCT",
-          "period": "2026-10-27T18:00+00:00",
-          "actual": "91.7",
-          "previous": "81.9",
-          "forecast": "80",
-          "direction": "higher_is_bullish",
-          "verdict": "bullish",
-          "weight": 0.5,
-          "note": ""
-        },
-        {
           "dataPoint": "Retail Sales & Core Retail Sales (m/m)",
           "title": "Retail Sales MoM SEP",
           "period": "2026-10-15T17:30+00:00",
@@ -179,30 +203,6 @@
           "direction": "higher_is_bullish",
           "verdict": "neutral",
           "weight": 2.0,
-          "note": ""
-        },
-        {
-          "dataPoint": "Unemployment Rate",
-          "title": "Unemployment Rate SEP",
-          "period": "2026-10-02T16:30+00:00",
-          "actual": "4.2%",
-          "previous": "4.1%",
-          "forecast": "4.30%",
-          "direction": "lower_is_bullish",
-          "verdict": "bullish",
-          "weight": 2.0,
-          "note": ""
-        },
-        {
-          "dataPoint": "Average Hourly Earnings (m/m, y/y)",
-          "title": "Average Hourly Earnings MoM SEP",
-          "period": "2026-10-02T16:30+00:00",
-          "actual": "0.1%",
-          "previous": "0.3%",
-          "forecast": "0.2%",
-          "direction": "higher_is_bullish",
-          "verdict": "bearish",
-          "weight": 1.0,
           "note": ""
         },
         {
@@ -567,14 +567,38 @@
       ]
     },
     "CAD": {
-      "verdict": "Neutral",
+      "verdict": "Bearish",
       "tally": {
         "bullish": 4.5,
-        "bearish": 6.0,
-        "neutral": 2.0
+        "bearish": 8.0,
+        "neutral": 0.0
       },
       "released_points": 7,
       "drivers": [
+        {
+          "dataPoint": "Unemployment Rate",
+          "title": "Unemployment Rate OCT",
+          "period": "2026-11-06T18:30+00:00",
+          "actual": "6.7%",
+          "previous": "6.5%",
+          "forecast": "6.5%",
+          "direction": "lower_is_bullish",
+          "verdict": "bearish",
+          "weight": 2.0,
+          "note": ""
+        },
+        {
+          "dataPoint": "Employment Change",
+          "title": "Employment Change OCT",
+          "period": "2026-11-06T18:30+00:00",
+          "actual": "-4.7K",
+          "previous": "-68.3K",
+          "forecast": "14.0K",
+          "direction": "higher_is_bullish",
+          "verdict": "bearish",
+          "weight": 2.0,
+          "note": ""
+        },
         {
           "dataPoint": "Trade Balance",
           "title": "Trade Balance",
@@ -630,30 +654,6 @@
           "actual": "3.1%",
           "previous": "3%",
           "forecast": "3.2%",
-          "direction": "higher_is_bullish",
-          "verdict": "bearish",
-          "weight": 2.0,
-          "note": ""
-        },
-        {
-          "dataPoint": "Unemployment Rate",
-          "title": "Unemployment Rate SEP",
-          "period": "2026-10-09T16:30+00:00",
-          "actual": "6.5%",
-          "previous": "6.4%",
-          "forecast": "6.5%",
-          "direction": "lower_is_bullish",
-          "verdict": "neutral",
-          "weight": 2.0,
-          "note": ""
-        },
-        {
-          "dataPoint": "Employment Change",
-          "title": "Employment Change SEP",
-          "period": "2026-10-09T16:30+00:00",
-          "actual": "-68.3K",
-          "previous": "-41.7K",
-          "forecast": "65K",
           "direction": "higher_is_bullish",
           "verdict": "bearish",
           "weight": 2.0,

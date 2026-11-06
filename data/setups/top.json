@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-11-06T03:10:10+00:00"
+    "updated": "2026-11-06T20:05:25+00:00"
   },
   "setups": [
     {
@@ -94,6 +94,15 @@
       "rationale": "Very Bearish — GBP: Bearish · ZAR: Bullish"
     },
     {
+      "symbol": "USDCAD",
+      "name": "USDCAD",
+      "verdict": "Very Bullish",
+      "direction": "Buy",
+      "confidence": 1.0,
+      "importance": 2,
+      "rationale": "Very Bullish — USD: Bullish · CAD: Bearish"
+    },
+    {
       "symbol": "USDSGD",
       "name": "USDSGD",
       "verdict": "Very Bullish",
@@ -101,15 +110,6 @@
       "confidence": 1.0,
       "importance": 2,
       "rationale": "Very Bullish — USD: Bullish · SGD: Bearish"
-    },
-    {
-      "symbol": "XAUUSD",
-      "name": "XAUUSD",
-      "verdict": "Very Bearish",
-      "direction": "Sell",
-      "confidence": 0.4,
-      "importance": 2,
-      "rationale": "Very Bearish"
     }
   ]
 }
