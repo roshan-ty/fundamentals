@@ -34493,7 +34493,7 @@
     "impact": "",
     "forecast": "$ 5B",
     "previous": "$8.28B",
-    "actual": "",
+    "actual": "$27.84B",
     "source": "te"
   },
   {
@@ -37493,6 +37493,36 @@
     "impact": "",
     "forecast": "",
     "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Balance of Trade OCT",
+    "country": "SGD",
+    "date_utc": "2026-11-17T05:30+00:00",
+    "impact": "",
+    "forecast": "$7.9B",
+    "previous": "$9.038B",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Non-Oil Exports MoM OCT",
+    "country": "SGD",
+    "date_utc": "2026-11-17T05:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "25.5%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Non-Oil Exports YoY OCT",
+    "country": "SGD",
+    "date_utc": "2026-11-17T05:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "68.4%",
     "actual": "",
     "source": "te"
   },
@@ -41893,6 +41923,116 @@
     "impact": "",
     "forecast": "",
     "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "S&P Global Composite PMI Final NOV",
+    "country": "AUD",
+    "date_utc": "2026-12-03T03:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "48.2",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "S&P Global Services PMI Final NOV",
+    "country": "AUD",
+    "date_utc": "2026-12-03T03:00+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "48.5",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Foreign Bond Investment NOV/28",
+    "country": "JPY",
+    "date_utc": "2026-12-03T04:50+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Stock Investment by Foreigners NOV/28",
+    "country": "JPY",
+    "date_utc": "2026-12-03T04:50+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Balance of Trade OCT",
+    "country": "AUD",
+    "date_utc": "2026-12-03T05:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "A$2.826B",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Exports MoM OCT",
+    "country": "AUD",
+    "date_utc": "2026-12-03T05:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "2.3%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "Imports MoM OCT",
+    "country": "AUD",
+    "date_utc": "2026-12-03T05:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "-3.3%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "S&P Global Composite PMI Final NOV",
+    "country": "JPY",
+    "date_utc": "2026-12-03T05:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "52.10",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "S&P Global Services PMI Final NOV",
+    "country": "JPY",
+    "date_utc": "2026-12-03T05:30+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "51.7",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "RatingDog Services PMI NOV",
+    "country": "CNY",
+    "date_utc": "2026-12-03T06:45+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "50.8",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "RatingDog Composite PMI NOV",
+    "country": "CNY",
+    "date_utc": "2026-12-03T06:45+00:00",
+    "impact": "",
+    "forecast": "",
+    "previous": "52.0",
     "actual": "",
     "source": "te"
   }
