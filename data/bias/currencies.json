@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-11-08T02:09:29+00:00",
+    "updated": "2026-11-09T02:25:44+00:00",
     "method": "verdict v3 (forecast-first, released-only)"
   },
   "currencies": {
@@ -816,6 +816,18 @@
       "released_points": 5,
       "drivers": [
         {
+          "dataPoint": "CPI & PPI (y/y)",
+          "title": "Inflation Rate YoY OCT",
+          "period": "2026-11-09T06:30+00:00",
+          "actual": "0.7%",
+          "previous": "0.9%",
+          "forecast": "0.9%",
+          "direction": "higher_is_bullish",
+          "verdict": "bearish",
+          "weight": 1.0,
+          "note": ""
+        },
+        {
           "dataPoint": "NBS Manufacturing PMI & Caixin Manufacturing PMI",
           "title": "RatingDog Manufacturing PMI OCT",
           "period": "2026-11-02T06:45+00:00",
@@ -848,18 +860,6 @@
           "forecast": "4.8%",
           "direction": "higher_is_bullish",
           "verdict": "bullish",
-          "weight": 1.0,
-          "note": ""
-        },
-        {
-          "dataPoint": "CPI & PPI (y/y)",
-          "title": "Inflation Rate YoY SEP",
-          "period": "2026-10-14T05:30+00:00",
-          "actual": "0.9%",
-          "previous": "0.8%",
-          "forecast": "1%",
-          "direction": "higher_is_bullish",
-          "verdict": "bearish",
           "weight": 1.0,
           "note": ""
         },
@@ -1184,7 +1184,7 @@
     "risk_mode": "flat",
     "yield2y_level": 4.46,
     "yield2y_sma": 4.696,
-    "dxy_level": 101.96,
+    "dxy_level": 102.05,
     "gold_level": 4390.39382
   }
 }
