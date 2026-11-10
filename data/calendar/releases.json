@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T23:07:07+00:00",
+  "updated": "2026-11-10T20:33:09+00:00",
   "releases": [
     {
       "country": "USD",
@@ -19,11 +19,11 @@
       "dataPoint": "CPI & Core CPI (m/m, y/y)",
       "weight": 1.5,
       "direction": "higher_is_bullish",
-      "period": "2026-10-14T16:30+00:00",
-      "title": "Core Inflation Rate MoM SEP",
+      "period": "2026-11-10T18:30+00:00",
+      "title": "Core Inflation Rate MoM OCT",
       "actual": "0.3%",
       "previous": "0.3%",
-      "forecast": "0.3%"
+      "forecast": "0.2%"
     },
     {
       "country": "USD",
@@ -139,11 +139,11 @@
       "dataPoint": "Eurozone Unemployment Rate",
       "weight": 1.0,
       "direction": "lower_is_bullish",
-      "period": "2026-10-30T12:55+00:00",
-      "title": "Unemployment Rate OCT",
-      "actual": "6.4%",
-      "previous": "6.4%",
-      "forecast": "6.4%"
+      "period": "2026-11-13T11:30+00:00",
+      "title": "Unemployment Rate Q3",
+      "actual": "8.2%",
+      "previous": "8.3%",
+      "forecast": "8.30%"
     },
     {
       "country": "CAD",
@@ -415,11 +415,11 @@
       "dataPoint": "Retail Sales (m/m)",
       "weight": 0.5,
       "direction": "higher_is_bullish",
-      "period": "2026-10-23T10:00+00:00",
-      "title": "Retail Sales MoM SEP",
-      "actual": "-0.4%",
-      "previous": "0.5%",
-      "forecast": "0.5%"
+      "period": "2026-11-10T05:01+00:00",
+      "title": "BRC Retail Sales Monitor YoY OCT",
+      "actual": "1.1%",
+      "previous": "1%",
+      "forecast": "1.2%"
     },
     {
       "country": "JPY",
@@ -811,11 +811,11 @@
       "dataPoint": "Trade Balance & Exports/Imports (y/y)",
       "weight": 0.5,
       "direction": "higher_is_bullish",
-      "period": "2026-10-14T02:31+00:00",
+      "period": "2026-11-10T03:03+00:00",
       "title": "Trade Balance",
-      "actual": "$133.53B",
-      "previous": "809B",
-      "forecast": "805B"
+      "actual": "$105.28B",
+      "previous": "906B",
+      "forecast": "859B"
     },
     {
       "country": "NZD",
@@ -888,6 +888,18 @@
       "actual": "5.7%",
       "previous": "5.6%",
       "forecast": "5.50%"
+    },
+    {
+      "country": "ZAR",
+      "dataPointId": "za_unemployment",
+      "dataPoint": "Unemployment Rate",
+      "weight": 0.5,
+      "direction": "lower_is_bullish",
+      "period": "2026-11-10T14:30+00:00",
+      "title": "Unemployment Rate Q3",
+      "actual": "33.7%",
+      "previous": "33.6%",
+      "forecast": "32.5%"
     },
     {
       "country": "USD",
