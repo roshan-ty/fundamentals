@@ -35365,17 +35365,6 @@
     "source": "te"
   },
   {
-    "title": "FOMC Member Logan Speaks",
-    "country": "USD",
-    "date_utc": "2026-11-10T15:50+00:00",
-    "impact": "Low",
-    "forecast": "",
-    "previous": "",
-    "actual": "",
-    "revision": "",
-    "source": "ff-feed"
-  },
-  {
     "title": "NFIB Business Optimism Index OCT",
     "country": "USD",
     "date_utc": "2026-11-10T16:00+00:00",
@@ -35795,28 +35784,6 @@
     "source": "ff-feed"
   },
   {
-    "title": "M2 Money Supply y/y",
-    "country": "CNY",
-    "date_utc": "2026-11-11T09:03+00:00",
-    "impact": "Low",
-    "forecast": "7.3%",
-    "previous": "7.2%",
-    "actual": "",
-    "revision": "",
-    "source": "ff-feed"
-  },
-  {
-    "title": "New Loans",
-    "country": "CNY",
-    "date_utc": "2026-11-11T09:03+00:00",
-    "impact": "Low",
-    "forecast": "80B",
-    "previous": "1080B",
-    "actual": "",
-    "revision": "",
-    "source": "ff-feed"
-  },
-  {
     "title": "MAS 36-Week Bill Auction",
     "country": "SGD",
     "date_utc": "2026-11-11T10:00+00:00",
@@ -35829,7 +35796,7 @@
   {
     "title": "German 30-y Bond Auction",
     "country": "EUR",
-    "date_utc": "2026-11-11T10:34+00:00",
+    "date_utc": "2026-11-11T10:35+00:00",
     "impact": "Low",
     "forecast": "",
     "previous": "3.80|1.4",
@@ -36338,6 +36305,28 @@
     "impact": "Low",
     "forecast": "",
     "previous": "",
+    "actual": "",
+    "revision": "",
+    "source": "ff-feed"
+  },
+  {
+    "title": "M2 Money Supply y/y",
+    "country": "CNY",
+    "date_utc": "2026-11-12T09:03+00:00",
+    "impact": "Low",
+    "forecast": "7.3%",
+    "previous": "7.2%",
+    "actual": "",
+    "revision": "",
+    "source": "ff-feed"
+  },
+  {
+    "title": "New Loans",
+    "country": "CNY",
+    "date_utc": "2026-11-12T09:03+00:00",
+    "impact": "Low",
+    "forecast": "80B",
+    "previous": "1080B",
     "actual": "",
     "revision": "",
     "source": "ff-feed"
@@ -37467,6 +37456,17 @@
     "impact": "Low",
     "forecast": "",
     "previous": "-0.1%",
+    "actual": "",
+    "revision": "",
+    "source": "ff-feed"
+  },
+  {
+    "title": "FOMC Member Logan Speaks",
+    "country": "USD",
+    "date_utc": "2026-11-13T14:40+00:00",
+    "impact": "Low",
+    "forecast": "",
+    "previous": "",
     "actual": "",
     "revision": "",
     "source": "ff-feed"
