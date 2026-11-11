@@ -1,5 +1,82 @@
 [
   {
+    "headline": "SEC enforcement actions fall 24%, crypto cases in spotlight",
+    "snippet": "The SEC filed 348 actions in fiscal 2026, down from 456 a year earlier. Cases included alleged Bitcoin mining fraud and an FTX audit settlement.",
+    "url": "https://cointelegraph.com/news/sec-crypto-cases-enforcement-actions-fall-23-2025?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "source": "markets",
+    "published": "2026-11-11T08:43",
+    "tags": [
+      "BTCUSD",
+      "US500",
+      "US30"
+    ],
+    "kind": "crypto",
+    "collected_at": "2026-11-11T09:05:41+00:00"
+  },
+  {
+    "headline": "What are the main events for today?",
+    "snippet": "<p>EUROPEAN SESSION</p><p>In the European session, we don't have anything on the agenda other than the Italian idustrial production report. The data won't change anything for the ECB, so the market reaction will be muted. </p><p>Markets will likely continue to assess the possibility of a 50 bps Fed ",
+    "url": "https://investinglive.com/news/what-are-the-main-events-for-today-83/",
+    "source": "markets",
+    "published": "2026-11-11T07:31",
+    "tags": [
+      "USD",
+      "EUR"
+    ],
+    "kind": "forex",
+    "collected_at": "2026-11-11T09:05:41+00:00"
+  },
+  {
+    "headline": "Iran designates Argentina's navy and air force as 'terrorist organizations' - Reuters",
+    "snippet": "Iran designates Argentina's navy and air force as 'terrorist organizations' Reuters",
+    "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNVGJGbXpBaU9TM2xZZXVhbFN0MFlBdVdhRGFjR1VkaHNnU2F5NXl6WmpmV01CZ2lXd1NiMlVsUDA2ZThZY3RMWHN5TmRKLTRidmdIYnRVQmdmQXBUQUc3MFNIaTJlYS0yMDNFck4xaTBIQXJ4M3RPQ3JhQzVQQUluMXJ2T1Nycm1zZWoxSkkxUTBoZi1ZWFkwQVR3bE1hRUtlWG9IdmhXUEljR2VrMElQNVVrUTJ1Z3c?oc=5",
+    "source": "markets",
+    "published": "2026-11-11T06:10",
+    "tags": [],
+    "kind": "general",
+    "collected_at": "2026-11-11T09:05:41+00:00"
+  },
+  {
+    "headline": "Initia confirms second exploit in 3 weeks, $3.27M stolen in latest attack",
+    "snippet": "Initia said an attacker exploited compromised cloud credentials to move $3.27 million in crypto assets, with about $2.16 million remaining frozen on its halted network.",
+    "url": "https://cointelegraph.com/news/initia-second-crypto-exploit-three-weeks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "source": "markets",
+    "published": "2026-11-11T05:52",
+    "tags": [],
+    "kind": "crypto",
+    "collected_at": "2026-11-11T09:05:41+00:00"
+  },
+  {
+    "headline": "Across Protocol restores website after hackers hijack domain",
+    "snippet": "The cross-chain bridge said a social engineering attack targeting domain registrar Namecheap allowed hackers to redirect users to a phishing site.",
+    "url": "https://cointelegraph.com/news/across-protocol-restores-website-after-hackers-hijack-domain?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "source": "markets",
+    "published": "2026-11-11T04:42",
+    "tags": [],
+    "kind": "crypto",
+    "collected_at": "2026-11-11T09:05:41+00:00"
+  },
+  {
+    "headline": "Crypto ally Tom Emmer elected House GOP minority whip",
+    "snippet": "The Minnesota lawmaker, who helped establish the Congressional Crypto Caucus, will stay on as Republican whip after Democrats won the midterms.",
+    "url": "https://cointelegraph.com/news/crypto-ally-tom-emmer-elected-house-gop-minority-whip?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "source": "markets",
+    "published": "2026-11-11T03:07",
+    "tags": [],
+    "kind": "crypto",
+    "collected_at": "2026-11-11T09:05:41+00:00"
+  },
+  {
+    "headline": "Oil rebounds as Hormuz shipping attacks blunt hopes for Iran truce - Reuters",
+    "snippet": "Oil rebounds as Hormuz shipping attacks blunt hopes for Iran truce Reuters",
+    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNUDdYdlFvTWpsUDJOZkVpN1RNYmM1RlIwZUxzSGhrazVnMTJ1el9lT2lpc08yc2VrUjdyR0tSWjJIRVRMdXh2cmJDam5yY2d1QURuUFdvQkh1ZWJDdHFXbmZCejViSHhTYnl6YU1uMmEtS1NIcFU1dmhPQVZpN2R5Ykc1OVBrUXVhemRVa01TblQ5THN6eDBlOXl3Nm5qTEtKRjNDeVVraW1hRjUwZjQyclBwd1hCTlZvNkdaVVdlUDc?oc=5",
+    "source": "markets",
+    "published": "2026-11-11T02:10",
+    "tags": [],
+    "kind": "general",
+    "collected_at": "2026-11-11T09:05:41+00:00"
+  },
+  {
     "headline": "LNbits rushes emergency patch after reported Bitcoin wallet thefts",
     "snippet": "The project warned that installations running older versions were vulnerable and urged operators to replace potentially exposed credentials even after upgrading.",
     "url": "https://cointelegraph.com/news/lnbits-rushes-emergency-patch-after-reported-bitcoin-wallet-thefts?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -9,7 +86,17 @@
       "BTCUSD"
     ],
     "kind": "crypto",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
+  },
+  {
+    "headline": "US Treasury chief Bessent moved to military base after Iranian threats, sources say - Reuters",
+    "snippet": "US Treasury chief Bessent moved to military base after Iranian threats, sources say Reuters",
+    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPT3lYOEw5X1FaSkpweDhiUmp3d0QybFR3ZU4xRl8wYXRRMS1CbzFFWENqLXNBVDZhOHBvSHdXSFh3NW5oNXEyUjRfWmFMT0g1bkV2NXRWWDc5UUpsaXVWLWxwQ0RLSkRkTW5jSWlkQ1p1dzFRa2pySzFVTklVb0k3TFo1bmZPb0lZTXVId1oyN2hCZGxkRmZua2R1ay1LN3VkNE1zb1FFNHUwNGNwSlBVdE5aMzFocFlGWTNINElWV3BvY21lOWRNTmxaNHB2dw?oc=5",
+    "source": "markets",
+    "published": "2026-11-11T01:00",
+    "tags": [],
+    "kind": "general",
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "US Treasury chief Bessent moved to military base after Iranian threats, NYT reports - Reuters",
@@ -42,7 +129,7 @@
     "published": "2026-11-10T23:49",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "US House blocks path to impeach Defense Secretary Hegseth - Reuters",
@@ -68,7 +155,7 @@
       "GLOBAL"
     ],
     "kind": "crypto",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "Reuters Tankan: Japan manufacturer mood hits +27, highest in over five years on chips",
@@ -83,6 +170,26 @@
     "collected_at": "2026-11-11T01:09:35+00:00"
   },
   {
+    "headline": "Tankers continue to burn in the Middle East despite hopes for de-escalation - Reuters",
+    "snippet": "Tankers continue to burn in the Middle East despite hopes for de-escalation Reuters",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxObk1HVHlrMXF2OXBza19vMDdFUENMek40em9sQmVNLXdWOFduMEJlVU4ycmVzeE1MYWt0YV9FRDR1OTVSc05jWFQ5QnJ1bjlZSGk4bXhwUEk2cGhBeTBlMkI5VEkzbHF4YlNKdkpYdFYzWUtua1RqWEh2VFR2TkppS3hsQlBrb1hHLTJBSzh6ZngyNXc5bk9XTWNJbWlaSWlxZDlwcGl1WTdEWFhOZ2RZSVRxMA?oc=5",
+    "source": "markets",
+    "published": "2026-11-10T22:27",
+    "tags": [],
+    "kind": "general",
+    "collected_at": "2026-11-11T09:05:41+00:00"
+  },
+  {
+    "headline": "Poland's Orlen ends long-term QatarEnergy LNG contract over delivery failure - Reuters",
+    "snippet": "Poland's Orlen ends long-term QatarEnergy LNG contract over delivery failure Reuters",
+    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPWWNsbHZIOFpSN0NER012RTNDdE9jRzFkWXRJZVY1X2hkVTlnUHhDcFNrVDU0Ul9yVXlvcHpfblFEYkYyNW9jRXA2OHNldXhuaEhQQTZYX3V0R1R5dFdVNkRNZFNrVWtWdHI3N0FrYVFFNEx1MlhBYkFJY1c0MEQ3Ym1RRzF0YWY2OWZWZmR0RlFYeU5YOWhlR0UycW9jODJDMjZob2VIR0JNcHd5dkFKSzZYYUpSYUJkcEtwMlRXZ3pPcHN2dWc?oc=5",
+    "source": "markets",
+    "published": "2026-11-10T22:04",
+    "tags": [],
+    "kind": "general",
+    "collected_at": "2026-11-11T09:05:41+00:00"
+  },
+  {
     "headline": "Mississippi Senate: Scott Colom extends tight lead over Hyde-Smith as ballot deadlines hit",
     "snippet": "Tuesday was the deadline for provisional ballots to be resolved in Mississippi, and the deadline for the receipt of mail-in absentee ballots.",
     "url": "https://www.cnbc.com/2026/11/10/mississippi-senate-scott-colom-hyde-smith.html",
@@ -92,7 +199,7 @@
       "CH20"
     ],
     "kind": "general",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "Defiant Hegseth blasts impeachment 'farce' ahead of US House vote - Reuters",
@@ -114,7 +221,7 @@
     "published": "2026-11-10T21:34",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "investingLive Americas FX news wrap 10 Nov: It’s a Wrap. Hot US CPI puts a bigger Fed hike in play",
@@ -139,7 +246,7 @@
       "USD"
     ],
     "kind": "general",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "Iran-backed militant helped plot attack on UK's Fairford base from US jail, Justice Department says - Reuters",
@@ -149,7 +256,7 @@
     "published": "2026-11-10T21:24",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "Across Protocol warns users to avoid app amid reports of drained wallets",
@@ -159,7 +266,7 @@
     "published": "2026-11-10T21:24",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "Fire contained at Iran's South Pars gas platform, Fars says - Reuters",
@@ -169,7 +276,7 @@
     "published": "2026-11-10T21:22",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "Iraq bars plane carrying Iran's soccer team from landing in Basra over US sanctions, officials say - Reuters",
@@ -189,7 +296,7 @@
     "published": "2026-11-10T21:07",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "Fed officials open door to a half-percentage-point rate hike as inflation worsens - Reuters",
@@ -201,7 +308,7 @@
       "USD"
     ],
     "kind": "general",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "Warren: What is White House doing to prevent a repeat of teleprompter's Trump bets?",
@@ -211,7 +318,7 @@
     "published": "2026-11-10T20:36",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "Sniper rifles and ziplines: Iranian women train for combat in Tehran - Reuters",
@@ -221,7 +328,7 @@
     "published": "2026-11-10T20:32",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "PODCAST: Hegseth, FBI Nvidia probe, Anthropic valuation (Updated) - Reuters",
@@ -233,7 +340,7 @@
       "ETHUSD"
     ],
     "kind": "general",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "Kimber Digital Securities gains broker-dealer status for tokenized assets",
@@ -245,7 +352,7 @@
       "US500"
     ],
     "kind": "crypto",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "Former NYSE president says stock issuers hold the key to tokenization as Bullish builds its platform",
@@ -255,7 +362,7 @@
     "published": "2026-11-10T20:15",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "US Army member arrested in UK for suspected 'espionage' for Russia - Reuters",
@@ -265,7 +372,7 @@
     "published": "2026-11-10T20:04",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "GE Vernova sellers have it all wrong — plus, why Fed rate hike odds are soaring",
@@ -277,7 +384,7 @@
       "USD"
     ],
     "kind": "general",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "Traders bet on a pop for Anthropic's historic IPO",
@@ -287,7 +394,7 @@
     "published": "2026-11-10T19:51",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "Wall St retreats as hot inflation data, Fed comments fuel rate worries - Reuters",
@@ -309,7 +416,7 @@
     "published": "2026-11-10T19:35",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "Fed officials open door to a half-point hike after inflation beats expectations - Reuters",
@@ -333,7 +440,7 @@
       "BTCUSD"
     ],
     "kind": "crypto",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "Israeli fire kills seven, including a father and son, in Gaza, medics say - Reuters",
@@ -343,7 +450,7 @@
     "published": "2026-11-10T18:09",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "U.S. Treasury sells $42 billion of 10 year notes at a high yield of 5.02%",
@@ -377,7 +484,7 @@
       "XAUUSD"
     ],
     "kind": "crypto",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "Hot US inflation raises odds of half-point Fed hike in December",
@@ -389,7 +496,7 @@
       "USD"
     ],
     "kind": "crypto",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "COMMENTARY: China's crude oil imports recover, fuel exports not so much - Reuters",
@@ -414,7 +521,7 @@
     "published": "2026-11-10T17:07",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "Crypto is now teamed up with U.S. government in two legal battles over perps",
@@ -424,7 +531,7 @@
     "published": "2026-11-10T17:07",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "Iran's top security official says no talks underway with US - Reuters",
@@ -434,7 +541,7 @@
     "published": "2026-11-10T16:59",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "Vanishing vessels and missing sailors: The Iran war's human cost at sea - Reuters",
@@ -466,7 +573,7 @@
     "published": "2026-11-10T16:38",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "Ex-Google recruiter: You're answering 'Tell me about yourself?' all wrong, and other job interview mistakes—do this instead",
@@ -476,7 +583,7 @@
     "published": "2026-11-10T16:30",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "U.S. gas prices fall below $4 for the first time since July",
@@ -486,7 +593,7 @@
     "published": "2026-11-10T16:29",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "Most Americans want new Democratic Congress to end Trump's Iran war, Reuters/Ipsos poll finds - Reuters",
@@ -496,7 +603,7 @@
     "published": "2026-11-10T16:27",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "Bitcoin nears 11-week low after ‘discouraging’ US CPI inflation beat",
@@ -510,7 +617,7 @@
       "US500"
     ],
     "kind": "crypto",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "Bitcoin tests its 200 day moving average after hotter US CPI data",
@@ -524,7 +631,7 @@
       "US30"
     ],
     "kind": "crypto",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "Fed's Logan calls for two more rate hikes, possibly rapidly - Reuters",
@@ -536,7 +643,7 @@
       "USD"
     ],
     "kind": "general",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "Plume affiliate lands broker-dealer license to bring real U.S. assets onchain",
@@ -546,7 +653,7 @@
     "published": "2026-11-10T15:51",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "Wall St falls as hot inflation data fuels rate-hike jitters - Reuters",
@@ -568,7 +675,7 @@
       "ETHUSD"
     ],
     "kind": "general",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "Instant view: Hot October inflation report rattles markets - Reuters",
@@ -578,7 +685,7 @@
     "published": "2026-11-10T14:51",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "PODCAST: Oil's well that ends well - Reuters",
@@ -588,7 +695,7 @@
     "published": "2026-11-10T14:36",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "Fed to raise rates once more in December as inflation risks stay high: Reuters poll - Reuters",
@@ -600,7 +707,7 @@
       "USD"
     ],
     "kind": "general",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "Does anyone feel safe from layoffs right now?",
@@ -610,7 +717,7 @@
     "published": "2026-11-10T14:30",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "Jim Cramer's top 10 things to watch in the stock market Tuesday",
@@ -623,7 +730,7 @@
       "US30"
     ],
     "kind": "general",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "Will stablecoins survive once the banks catch up?",
@@ -633,7 +740,7 @@
     "published": "2026-11-10T14:00",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "Sterling nudges lower as Waller comments, US data underpin dollar - Reuters",
@@ -646,7 +753,7 @@
       "GBP"
     ],
     "kind": "general",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "Poland’s lower house backs sanctions bill covering crypto freezes",
@@ -656,7 +763,7 @@
     "published": "2026-11-10T13:40",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "U.S. CPI rose stronger than expected 0.4% in October; core rate rose 0.3%",
@@ -666,7 +773,7 @@
     "published": "2026-11-10T13:32",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "Bitcoin’s ‘best buying opportunity ever’ has arrived: Mark Moss",
@@ -678,7 +785,7 @@
       "BTCUSD"
     ],
     "kind": "crypto",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "France summons Iran envoy over supermarket fridge hack, warns of response - Reuters",
@@ -716,7 +823,7 @@
       "GLOBAL"
     ],
     "kind": "crypto",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "Gulf stocks close higher as Trump dials back Iran strike talk - Reuters",
@@ -740,7 +847,7 @@
       "US30"
     ],
     "kind": "crypto",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "Bitcoin breaks with stocks, declines as ETF outflows mount, MARA reduces holdings",
@@ -752,7 +859,7 @@
       "BTCUSD"
     ],
     "kind": "crypto",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "UAE selling Saudi oil from supertanker attacked in Gulf - Reuters",
@@ -774,7 +881,7 @@
       "ETHUSD"
     ],
     "kind": "crypto",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "Zcash remains stuck in a range as macro headwinds continue to limit the upside. What's next?",
@@ -796,7 +903,7 @@
       "ETHUSD"
     ],
     "kind": "crypto",
-    "collected_at": "2026-11-11T03:01:57+00:00"
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "Bitcoin lags stock rebound in advance of U.S. inflation report",
@@ -1214,6 +1321,90 @@
     ],
     "kind": "crypto",
     "collected_at": "2026-11-10T13:22:50+00:00"
+  },
+  {
+    "headline": "Airgain® Reports Third Quarter 2026 Financial Results",
+    "snippet": "SAN DIEGO--(BUSINESS WIRE)--Airgain, Inc. (NASDAQ: AIRG), a leading provider of advanced wireless connectivity solutions, today reported financial results for the third quarter ended September 30, 2026. “Airgain delivered another strong quarter of progress, with revenue increasing 12% quarter-over-quarter and 9% year-over-year, driven by continued momentum in our enterprise IoT business,” said Jacob Suen, President and CEO of Airgain. “Our results reflect growing demand across established indus",
+    "url": "",
+    "source": "global",
+    "published": "2026-11-10 21:05:00",
+    "tags": [
+      "US500",
+      "US100"
+    ],
+    "collected_at": "2026-11-11T09:05:41+00:00"
+  },
+  {
+    "headline": "Spire Global Announces Third Quarter 2026 Results, Achieving 42% Year-Over-Year Revenue Growth",
+    "snippet": "VIENNA, Va.--(BUSINESS WIRE)--Spire Global, Inc. (NYSE: SPIR) (“Spire” or the “Company”), a global provider of satellite data, analytics and intelligence, announced results for its quarter ended September 30, 2026. The Company will hold a webcast at 5:00 p.m. ET today to discuss the results. “Spire is entering a new phase of execution, and this quarter’s core business growth and major contract wins demonstrate our strong momentum,” said Theresa Condor, Spire CEO. “These multi-year awards give u",
+    "url": "",
+    "source": "global",
+    "published": "2026-11-10 21:05:00",
+    "tags": [
+      "GLOBAL"
+    ],
+    "collected_at": "2026-11-11T09:05:41+00:00"
+  },
+  {
+    "headline": "CAR REVIEW: 2026 Chevrolet Silverado 1500 High Country",
+    "snippet": "",
+    "url": "",
+    "source": "global",
+    "published": "2026-11-10 21:05:00",
+    "tags": [
+      "XAGUSD"
+    ],
+    "collected_at": "2026-11-11T09:05:41+00:00"
+  },
+  {
+    "headline": "Dell Technologies to Hold Conference Call Nov. 24 to Discuss Third Quarter Fiscal 2027 Financial Results",
+    "snippet": "ROUND ROCK, Texas--(BUSINESS WIRE)--Dell Technologies (NYSE: DELL) will conduct a conference call Tuesday, Nov. 24, 2026, at 3:30 p.m. CST to discuss its fiscal 2027 third quarter financial results. The conference will be available to the public as a live, audio-only webcast on Dell Technologies’ website at investors.delltechnologies.com; an archived version will be available at the same location. The company will issue the results before the conference call broadcast via a press release with acc",
+    "url": "",
+    "source": "global",
+    "published": "2026-11-10 21:05:00",
+    "tags": [],
+    "collected_at": "2026-11-11T09:05:41+00:00"
+  },
+  {
+    "headline": "QumulusAI Reports Third Quarter 2026 Results",
+    "snippet": "ATLANTA--(BUSINESS WIRE)---- $QMLS #NASDAQ--QumulusAI (Nasdaq: QMLS), a neocloud infrastructure provider purpose-built for the AI computing era, today reported financial results for the third quarter ended September 30, 2026. “Revenue doubled again this quarter, and remaining performance obligations grew to $515.0 million from $173.1 million at the end of the second quarter. That’s the model doing its job: we sell the capacity before we energize it, we deploy into pockets of existing power, and we bring it onlin",
+    "url": "",
+    "source": "global",
+    "published": "2026-11-10 21:05:00",
+    "tags": [
+      "US500",
+      "US100"
+    ],
+    "collected_at": "2026-11-11T09:05:41+00:00"
+  },
+  {
+    "headline": "Silent pandemic: How diabetes is overwhelming Türkiye",
+    "snippet": "",
+    "url": "",
+    "source": "global",
+    "published": "2026-11-10 21:05:00",
+    "tags": [],
+    "collected_at": "2026-11-11T09:05:41+00:00"
+  },
+  {
+    "headline": "Western Michigan vs Akron Prediction, Odds & College Football Picks",
+    "snippet": "The Western Michigan Broncos hit the road to face the Akron Zips at InfoCision Stadium-Summa Field, with kickoff set for 7:00 PM ET on Tuesday, November 10, on CBS Sports Network. Western Michigan carries momentum after a decisive 23-10 win over Bowling Green, while Akron aims to bounce back from a competitive 28-20 loss to … Continued The post Western Michigan vs Akron Prediction, Odds & College Football Picks appeared first on Sports Betting Dime.",
+    "url": "",
+    "source": "global",
+    "published": "2026-11-10 21:05:00",
+    "tags": [],
+    "collected_at": "2026-11-11T09:05:41+00:00"
+  },
+  {
+    "headline": "Celsius Holdings to Participate in Upcoming Investor Conferences",
+    "snippet": "BOCA RATON, Fla.--(BUSINESS WIRE)---- $CELH #LiveFit--Celsius Holdings announces participation in upcoming investor conferences.",
+    "url": "",
+    "source": "global",
+    "published": "2026-11-10 21:05:00",
+    "tags": [
+      "CAD"
+    ],
+    "collected_at": "2026-11-11T09:05:41+00:00"
   },
   {
     "headline": "Ally Financial to present at the J.P. Morgan Financials Conference",
@@ -4023,177 +4214,5 @@
     "published": "2026-11-08 06:20:00",
     "tags": [],
     "collected_at": "2026-11-08T18:20:44+00:00"
-  },
-  {
-    "headline": "Astellas employee to be released from China prison in December",
-    "snippet": "Beijing had accused the Japanese citizen of espionage by providing China-related information to an intelligence agency but had not provided further details.",
-    "url": "",
-    "source": "global",
-    "published": "2026-11-08 03:01:00",
-    "tags": [
-      "JPY",
-      "AUD",
-      "CNY"
-    ],
-    "collected_at": "2026-11-08T15:01:11+00:00"
-  },
-  {
-    "headline": "USC Trojans Seek First College Football Playoff Berth Under Lincoln Riley",
-    "snippet": "The No. 20 USC Trojans have an opportunity to earn an at-large bid to the College Football Playoff for the first time under head coach Lincoln Riley, but must navigate difficult road games and overcome questions about their toughness away from the Coliseum.",
-    "url": "",
-    "source": "global",
-    "published": "2026-11-08 03:01:00",
-    "tags": [],
-    "collected_at": "2026-11-08T15:01:11+00:00"
-  },
-  {
-    "headline": "Top Nigerian Newspaper Headlines For Today, Sunday, 8th November, 2026",
-    "snippet": "Good morning Nigeria. Welcome to the Naija News roundup of top newspaper headlines in Nigeria for today, Sunday, 8th November, 2026. 1. Adeboye Ordered Refund... The post Top Nigerian Newspaper Headlines For Today, Sunday, 8th November, 2026 appeared first on Naija News.",
-    "url": "",
-    "source": "global",
-    "published": "2026-11-08 03:00:59",
-    "tags": [],
-    "collected_at": "2026-11-08T15:01:11+00:00"
-  },
-  {
-    "headline": "To-Ricos is among the main creditors of Encanto Restaurants",
-    "snippet": "The company that operated the KFC and Taco Bell franchises owes half a million dollars to the agricultural supplier",
-    "url": "",
-    "source": "global",
-    "published": "2026-11-08 03:00:58",
-    "tags": [
-      "USD"
-    ],
-    "collected_at": "2026-11-08T15:01:11+00:00"
-  },
-  {
-    "headline": "Perspective with Heather du Plessis-Allan: I'm not surprised about Russell Brand",
-    "snippet": "I'm sure, like many people of my generation who grew up through their 20s and 30s with Russell Brand as a big part of pop culture, the news that he is behind bars will have come as a shock.",
-    "url": "",
-    "source": "global",
-    "published": "2026-11-08 03:00:57",
-    "tags": [],
-    "collected_at": "2026-11-08T15:01:11+00:00"
-  },
-  {
-    "headline": "Horoscopes November 8, 2026: Parker Posey, be patient and concentrate on self-esteem",
-    "snippet": "Astrological advice for everyone born on this date.",
-    "url": "",
-    "source": "global",
-    "published": "2026-11-08 03:00:55",
-    "tags": [],
-    "collected_at": "2026-11-08T15:01:11+00:00"
-  },
-  {
-    "headline": "Dominant wins for Corning, Horseheads, TAE, Waverly in football semis",
-    "snippet": "Corning, Horseheads, Waverly, and Thomas A. Edison secured spots in Section 4 football title games with decisive semifinal victories.",
-    "url": "",
-    "source": "global",
-    "published": "2026-11-08 01:03:00",
-    "tags": [],
-    "collected_at": "2026-11-08T13:03:58+00:00"
-  },
-  {
-    "headline": "Gary Larson's Far Side Caveman Strips Reveal Universal Human Flaws",
-    "snippet": "An analysis of Gary Larson's The Far Side strips from the 1980s featuring cavemen highlights timeless human behaviors like nostalgia and competition.",
-    "url": "",
-    "source": "global",
-    "published": "2026-11-08 01:03:00",
-    "tags": [],
-    "collected_at": "2026-11-08T13:03:58+00:00"
-  },
-  {
-    "headline": "Thai Excise Department plans two clean-energy vehicle subsidies",
-    "snippet": "Proposed subsidies would help motorists replace old vehicles with electric or B20-compatible pickups and buy electric motorcycles manufactured in Thailand.",
-    "url": "",
-    "source": "global",
-    "published": "2026-11-08 01:03:00",
-    "tags": [],
-    "collected_at": "2026-11-08T13:03:58+00:00"
-  },
-  {
-    "headline": "Deepavali goes mute as Tamil Nadu villagers bat for deities",
-    "snippet": "“We cannot give an exact count of the bats nesting on the tree, but their number could run into a thousand,” he told TNIE.",
-    "url": "",
-    "source": "global",
-    "published": "2026-11-08 01:02:50",
-    "tags": [],
-    "collected_at": "2026-11-08T13:03:58+00:00"
-  },
-  {
-    "headline": "BeeHive AI: the future of Life Sciences Supply Chain — DataDrivenInvestor",
-    "snippet": "Explore how Conversational AI is revolutionizing the Life Sciences supply chain, drawing unique parallels with a thriving beehive’s collective…",
-    "url": "",
-    "source": "global",
-    "published": "2026-11-08 01:02:50",
-    "tags": [],
-    "collected_at": "2026-11-08T13:03:58+00:00"
-  },
-  {
-    "headline": "Better Than ChatGPT: The AI Breakthrough That Could Change Everything Why DeepMind's pursuit of simulating a virtual human cell is a game-changer — DataDrivenInvestor",
-    "snippet": "If you like this content subscribe to my stories here For centuries, humanity has sought ways to extend life, from the mythical elixir of immortality to…",
-    "url": "",
-    "source": "global",
-    "published": "2026-11-08 01:02:41",
-    "tags": [],
-    "collected_at": "2026-11-08T13:03:58+00:00"
-  },
-  {
-    "headline": "North Sound school official charged with rape, molestation of former student",
-    "snippet": "",
-    "url": "",
-    "source": "global",
-    "published": "2026-11-08 01:02:34",
-    "tags": [],
-    "collected_at": "2026-11-08T13:03:58+00:00"
-  },
-  {
-    "headline": "‘A celebration of life’: Oldham County celebrates Day of the Dead with parade, festival",
-    "snippet": "The Oldham County History Center hosted a Day of the Dead celebration Saturday.",
-    "url": "",
-    "source": "global",
-    "published": "2026-11-08 01:02:26",
-    "tags": [],
-    "collected_at": "2026-11-08T13:03:58+00:00"
-  },
-  {
-    "headline": "Explosions heard in areas in southern Iran, Iranian media report - Reuters",
-    "snippet": "Explosions heard in areas in southern Iran, Iranian media report Reuters",
-    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxObzVlZDVLRWxGVlQ1a2V1cTY5NXBjcjlJVzVqbjBKRGpRLUpnWndzNlM5bFpUYjJaUU5UeG1OS2E3c205RVVNMDJaUWxoWFN2ODc1bVhnc096VFlpOFo1N1YwR2JGS2JQYURyQ3NHZEVZaFhvQU5IaWZ1VFZHRjZNTkstbVhiOTUyTDJKTjAySmE0N3FiUzZLUGJKdDdrcGllOTNmMEdHUC1DanlqZ3V5MA?oc=5",
-    "source": "markets",
-    "published": "2026-11-07T21:57",
-    "tags": [],
-    "kind": "general",
-    "collected_at": "2026-11-09T11:11:42+00:00"
-  },
-  {
-    "headline": "US military says it disabled cargo vessel in Gulf of Oman - Reuters",
-    "snippet": "US military says it disabled cargo vessel in Gulf of Oman Reuters",
-    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNT3Z5Um5vZGVEQndERDNUZDljektyalQxMjB1SVk0SkNJOWRSSWJRLVBUc0czRzIxMWtFSEs0WnFoVk81XzN6V0xKOGZkNkUzYXFiM2wwdGE2cks3Uk05RlRpQk92SWp3REllTGF4cUVFV0IyelBXbFJNRzVJem5DRkVCLWRKQ0tPQTNVWi04NU5yRlJEeE1MUmVreHVHQ2RrYTZrUHpuLUs?oc=5",
-    "source": "markets",
-    "published": "2026-11-07T21:22",
-    "tags": [],
-    "kind": "general",
-    "collected_at": "2026-11-09T11:11:42+00:00"
-  },
-  {
-    "headline": "Trump targets Slotkin in call for DOJ probe of alleged Democratic threats to Republicans",
-    "snippet": "Trump ordered DOJ to examine alleged threats against Republicans while singling out Slotkin.",
-    "url": "https://www.cnbc.com/2026/11/07/trump-doj-democrats-alleged-threats-slotkin.html",
-    "source": "markets",
-    "published": "2026-11-07T20:28",
-    "tags": [],
-    "kind": "general",
-    "collected_at": "2026-11-09T11:11:42+00:00"
-  },
-  {
-    "headline": "Israeli president picks Gadi Eisenkot, Netanyahu rival, to try to form government - Reuters",
-    "snippet": "Israeli president picks Gadi Eisenkot, Netanyahu rival, to try to form government Reuters",
-    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVHIwVVZqTlgycHFJTEhPM3g1WU5oWWtKelZsNW5aUEphdmpDRC1STjMxQmYyYjR5dkNZUVFiVFBfZ3J1Nm9HN0RmM25pOUlTMWJkWGZuVktLV3h5QkNmdEtrbUt5X2NBYXFuZC04TzhPZUJWLWVJeWJMM256ZWIxRENRczhNdEtIa2I2aF85VzJUejZMa1ZvVEFSZXZCQWJtZU1nTnBvaVl4cmNJTEhfcWpCNTFjMmotS090TzE1eXc?oc=5",
-    "source": "markets",
-    "published": "2026-11-07T19:32",
-    "tags": [],
-    "kind": "general",
-    "collected_at": "2026-11-09T11:11:42+00:00"
   }
 ]
