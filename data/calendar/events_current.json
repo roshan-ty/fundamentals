@@ -35677,7 +35677,7 @@
     "impact": "",
     "forecast": "",
     "previous": "-5.267M",
-    "actual": "",
+    "actual": "9.0M",
     "source": "te"
   },
   {
@@ -35687,7 +35687,7 @@
     "impact": "",
     "forecast": "2.8%",
     "previous": "2.6%",
-    "actual": "",
+    "actual": "2.5%",
     "source": "te"
   },
   {
@@ -35737,7 +35737,7 @@
     "impact": "",
     "forecast": "-3.2%",
     "previous": "-1.9%",
-    "actual": "",
+    "actual": "-5.3%",
     "source": "te"
   },
   {
@@ -35747,7 +35747,7 @@
     "impact": "",
     "forecast": "-7.0%",
     "previous": "-10.2%",
-    "actual": "",
+    "actual": "-32.3%",
     "source": "te"
   },
   {
@@ -37165,7 +37165,7 @@
     "impact": "",
     "forecast": "23",
     "previous": "22",
-    "actual": "",
+    "actual": "27",
     "source": "te"
   },
   {
@@ -38843,7 +38843,7 @@
     "date_utc": "2026-11-18T02:30+00:00",
     "impact": "",
     "forecast": "",
-    "previous": "",
+    "previous": "9.0M",
     "actual": "",
     "source": "te"
   },
@@ -44163,7 +44163,7 @@
     "date_utc": "2026-12-05T04:00+00:00",
     "impact": "",
     "forecast": "15",
-    "previous": "",
+    "previous": "27",
     "actual": "",
     "source": "te"
   },
@@ -44174,6 +44174,26 @@
     "impact": "",
     "forecast": "",
     "previous": "-1.2%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "ANZ-Indeed Job Ads MoM OCT",
+    "country": "AUD",
+    "date_utc": "2026-12-07T05:30+00:00",
+    "impact": "",
+    "forecast": "-1.4%",
+    "previous": "2.2%",
+    "actual": "",
+    "source": "te"
+  },
+  {
+    "title": "ANZ-Indeed Job Ads MoM NOV",
+    "country": "AUD",
+    "date_utc": "2026-12-07T05:30+00:00",
+    "impact": "",
+    "forecast": "-0.7%",
+    "previous": "",
     "actual": "",
     "source": "te"
   }

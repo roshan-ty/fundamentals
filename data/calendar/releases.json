@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T20:33:09+00:00",
+  "updated": "2026-11-11T02:36:18+00:00",
   "releases": [
     {
       "country": "USD",
@@ -715,10 +715,10 @@
       "dataPoint": "Tankan Large Manufacturers Index",
       "weight": 0.5,
       "direction": "higher_is_bullish",
-      "period": "2026-10-09T03:00+00:00",
-      "title": "Reuters Tankan Index OCT",
-      "actual": "22",
-      "previous": "21",
+      "period": "2026-11-13T04:00+00:00",
+      "title": "Reuters Tankan Index NOV",
+      "actual": "27",
+      "previous": "22",
       "forecast": "23"
     },
     {
@@ -907,10 +907,10 @@
       "dataPoint": "2-Year Treasury Yield (21-day trend)",
       "weight": 1.0,
       "direction": "higher_is_bullish",
-      "period": "2026-11-06T00:00:00+00:00",
+      "period": "2026-11-09T00:00:00+00:00",
       "title": "2-Year Treasury Yield",
-      "actual": "4.51",
-      "previous": "4.68",
+      "actual": "4.56",
+      "previous": "4.67",
       "forecast": ""
     }
   ]
