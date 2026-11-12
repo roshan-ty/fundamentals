@@ -34285,6 +34285,16 @@
     "source": "te"
   },
   {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2026-11-07T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "200000.0",
+    "previous": "191000.0",
+    "source_series": "ICSA",
+    "period": "2026-11-07"
+  },
+  {
     "title": "Consumer Credit Change SEP",
     "country": "USD",
     "date_utc": "2026-11-07T01:00+00:00",
@@ -36310,28 +36320,6 @@
     "source": "ff-feed"
   },
   {
-    "title": "M2 Money Supply y/y",
-    "country": "CNY",
-    "date_utc": "2026-11-12T09:03+00:00",
-    "impact": "Low",
-    "forecast": "7.3%",
-    "previous": "7.2%",
-    "actual": "",
-    "revision": "",
-    "source": "ff-feed"
-  },
-  {
-    "title": "New Loans",
-    "country": "CNY",
-    "date_utc": "2026-11-12T09:03+00:00",
-    "impact": "Low",
-    "forecast": "80B",
-    "previous": "1080B",
-    "actual": "",
-    "revision": "",
-    "source": "ff-feed"
-  },
-  {
     "title": "EU Economic Forecasts",
     "country": "EUR",
     "date_utc": "2026-11-12T10:00+00:00",
@@ -36643,17 +36631,6 @@
     "impact": "Low",
     "forecast": "",
     "previous": "",
-    "actual": "",
-    "revision": "",
-    "source": "ff-feed"
-  },
-  {
-    "title": "Mortgage Delinquencies",
-    "country": "USD",
-    "date_utc": "2026-11-12T15:00+00:00",
-    "impact": "Low",
-    "forecast": "",
-    "previous": "4.37%",
     "actual": "",
     "revision": "",
     "source": "ff-feed"
@@ -37275,6 +37252,28 @@
     "source": "ff-feed"
   },
   {
+    "title": "M2 Money Supply y/y",
+    "country": "CNY",
+    "date_utc": "2026-11-13T10:03+00:00",
+    "impact": "Low",
+    "forecast": "7.3%",
+    "previous": "7.2%",
+    "actual": "",
+    "revision": "",
+    "source": "ff-feed"
+  },
+  {
+    "title": "New Loans",
+    "country": "CNY",
+    "date_utc": "2026-11-13T10:03+00:00",
+    "impact": "Low",
+    "forecast": "80B",
+    "previous": "1080B",
+    "actual": "",
+    "revision": "",
+    "source": "ff-feed"
+  },
+  {
     "title": "Unemployment Rate Q3",
     "country": "EUR",
     "date_utc": "2026-11-13T11:30+00:00",
@@ -37520,6 +37519,17 @@
     "previous": "1.2%",
     "actual": "",
     "source": "te"
+  },
+  {
+    "title": "Mortgage Delinquencies",
+    "country": "USD",
+    "date_utc": "2026-11-13T15:15+00:00",
+    "impact": "Low",
+    "forecast": "",
+    "previous": "4.37%",
+    "actual": "",
+    "revision": "",
+    "source": "ff-feed"
   },
   {
     "title": "Natural Gas Storage",
