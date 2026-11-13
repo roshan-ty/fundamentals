@@ -1594,7 +1594,7 @@
     "country": "USD",
     "date_utc": "2026-06-01T00:00:00+00:00",
     "impact": "Medium",
-    "actual": "-1.46",
+    "actual": "-1.55",
     "previous": "",
     "source_series": "PPIACO",
     "period": "2026-06-01"
@@ -1604,7 +1604,7 @@
     "country": "USD",
     "date_utc": "2026-06-01T00:00:00+00:00",
     "impact": "Medium",
-    "actual": "0.4",
+    "actual": "0.43",
     "previous": "",
     "source_series": "PPIFES",
     "period": "2026-06-01"
@@ -1804,7 +1804,7 @@
     "country": "USD",
     "date_utc": "2026-07-01T00:00:00+00:00",
     "impact": "Medium",
-    "actual": "-0.37",
+    "actual": "-0.34",
     "previous": "",
     "source_series": "PPIACO",
     "period": "2026-07-01"
@@ -1814,7 +1814,7 @@
     "country": "USD",
     "date_utc": "2026-07-01T00:00:00+00:00",
     "impact": "Medium",
-    "actual": "0.35",
+    "actual": "0.28",
     "previous": "",
     "source_series": "PPIFES",
     "period": "2026-07-01"
@@ -2014,7 +2014,7 @@
     "country": "USD",
     "date_utc": "2026-08-01T00:00:00+00:00",
     "impact": "Medium",
-    "actual": "0.97",
+    "actual": "0.94",
     "previous": "",
     "source_series": "PPIACO",
     "period": "2026-08-01"
@@ -2024,7 +2024,7 @@
     "country": "USD",
     "date_utc": "2026-08-01T00:00:00+00:00",
     "impact": "Medium",
-    "actual": "0.25",
+    "actual": "0.19",
     "previous": "",
     "source_series": "PPIFES",
     "period": "2026-08-01"
@@ -2224,7 +2224,7 @@
     "country": "USD",
     "date_utc": "2026-09-01T00:00:00+00:00",
     "impact": "Medium",
-    "actual": "2.77",
+    "actual": "2.42",
     "previous": "",
     "source_series": "PPIACO",
     "period": "2026-09-01"
@@ -2234,7 +2234,7 @@
     "country": "USD",
     "date_utc": "2026-09-01T00:00:00+00:00",
     "impact": "Medium",
-    "actual": "0.68",
+    "actual": "0.82",
     "previous": "",
     "source_series": "PPIFES",
     "period": "2026-09-01"
@@ -2377,6 +2377,26 @@
     "actual": "0.3",
     "previous": "",
     "source_series": "CPILFESL",
+    "period": "2026-10-01"
+  },
+  {
+    "title": "PPI m/m",
+    "country": "USD",
+    "date_utc": "2026-10-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "-0.19",
+    "previous": "",
+    "source_series": "PPIACO",
+    "period": "2026-10-01"
+  },
+  {
+    "title": "Core PPI m/m",
+    "country": "USD",
+    "date_utc": "2026-10-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "0.33",
+    "previous": "",
+    "source_series": "PPIFES",
     "period": "2026-10-01"
   },
   {
