@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-11-13T20:36:15+00:00",
+    "updated": "2026-11-14T03:01:25+00:00",
     "method": "verdict v3 (forecast-first, released-only)"
   },
   "currencies": {
@@ -14,6 +14,18 @@
       "released_points": 17,
       "drivers": [
         {
+          "dataPoint": "2-Year Treasury Yield (21-day trend)",
+          "title": "2-Year Treasury Yield",
+          "period": "2026-11-12T00:00:00+00:00",
+          "actual": "4.86",
+          "previous": "4.67",
+          "forecast": "",
+          "direction": "higher_is_bullish",
+          "verdict": "bullish",
+          "weight": 1.0,
+          "note": ""
+        },
+        {
           "dataPoint": "CPI & Core CPI (m/m, y/y)",
           "title": "Core Inflation Rate MoM OCT",
           "period": "2026-11-10T18:30+00:00",
@@ -23,18 +35,6 @@
           "direction": "higher_is_bullish",
           "verdict": "bullish",
           "weight": 2.0,
-          "note": ""
-        },
-        {
-          "dataPoint": "2-Year Treasury Yield (21-day trend)",
-          "title": "2-Year Treasury Yield",
-          "period": "2026-11-10T00:00:00+00:00",
-          "actual": "4.73",
-          "previous": "4.67",
-          "forecast": "",
-          "direction": "higher_is_bullish",
-          "verdict": "bullish",
-          "weight": 1.0,
           "note": ""
         },
         {
@@ -1194,8 +1194,8 @@
     "yield2y_sig": 1,
     "oil_direction": "flat",
     "risk_mode": "flat",
-    "yield2y_level": 4.73,
-    "yield2y_sma": 4.671,
+    "yield2y_level": 4.86,
+    "yield2y_sma": 4.674,
     "dxy_level": 102.47,
     "gold_level": 4390.39382
   }
