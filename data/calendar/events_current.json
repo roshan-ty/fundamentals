@@ -1940,6 +1940,16 @@
     "period": "2026-07-01"
   },
   {
+    "title": "GDP y/y",
+    "country": "JPY",
+    "date_utc": "2026-07-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "2.92",
+    "previous": "",
+    "source_series": "JPNRGDPEXP",
+    "period": "2026-07-01"
+  },
+  {
     "title": "Initial Jobless Claims",
     "country": "USD",
     "date_utc": "2026-07-04T00:00:00+00:00",

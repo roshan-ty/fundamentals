@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-11-15T19:30:31+00:00",
+    "updated": "2026-11-16T02:41:20+00:00",
     "method": "verdict v3 (forecast-first, released-only)"
   },
   "currencies": {
@@ -734,8 +734,8 @@
         {
           "dataPoint": "GDP (q/q, annualized)",
           "title": "GDP y/y",
-          "period": "2026-04-01T00:00:00+00:00",
-          "actual": "1.6",
+          "period": "2026-07-01T00:00:00+00:00",
+          "actual": "2.92",
           "previous": "",
           "forecast": "",
           "direction": "higher_is_bullish",
