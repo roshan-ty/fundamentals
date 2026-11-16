@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-11-16T02:41:20+00:00",
+    "updated": "2026-11-16T23:00:37+00:00",
     "total": 82,
     "scored": 82
   },
@@ -819,16 +819,16 @@
     {
       "symbol": "OIL",
       "class": "energy",
-      "verdict": "Very Bearish",
-      "base_verdict": "Very Bearish",
+      "verdict": "Bearish",
+      "base_verdict": "Bearish",
       "quote_verdict": null,
       "drivers": []
     },
     {
       "symbol": "BRENT",
       "class": "energy",
-      "verdict": "Very Bearish",
-      "base_verdict": "Very Bearish",
+      "verdict": "Bearish",
+      "base_verdict": "Bearish",
       "quote_verdict": null,
       "drivers": []
     },

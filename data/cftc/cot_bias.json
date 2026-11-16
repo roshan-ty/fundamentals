@@ -1,343 +1,343 @@
 {
   "meta": {
-    "updated": "2026-11-16T02:41:20+00:00",
+    "updated": "2026-11-16T23:00:37+00:00",
     "note": "COT positioning tilt (secondary bias input)"
   },
   "instruments": {
     "JP225": {
       "sym": "JP225",
       "market": "NIKKEI STOCK AVERAGE YEN DENOM",
-      "latest_week": "2026-11-03",
+      "latest_week": "2026-11-10",
       "tilt": {
-        "tilt": 1,
-        "net": 2519.0,
-        "delta": 242.0,
-        "noncomm_long": 7048.0,
-        "noncomm_short": 4529.0,
-        "change_long": 1800.0,
-        "change_short": 1558.0,
-        "week": "2026-11-03",
-        "note": "non-commercial net exposure expanded"
+        "tilt": -1,
+        "net": 1685.0,
+        "delta": -834.0,
+        "noncomm_long": 5791.0,
+        "noncomm_short": 4106.0,
+        "change_long": -1257.0,
+        "change_short": -423.0,
+        "week": "2026-11-10",
+        "note": "non-commercial net exposure shrank"
       },
       "positions": {
-        "report_date": "2026-11-03",
-        "long": 7048.0,
-        "short": 4529.0
+        "report_date": "2026-11-10",
+        "long": 5791.0,
+        "short": 4106.0
       }
     },
     "AUD": {
       "sym": "AUD",
       "market": "AUSTRALIAN DOLLAR",
-      "latest_week": "2026-11-03",
+      "latest_week": "2026-11-10",
       "tilt": {
         "tilt": -1,
-        "net": -133889.0,
-        "delta": -5574.0,
-        "noncomm_long": 97828.0,
-        "noncomm_short": 231717.0,
-        "change_long": -679.0,
-        "change_short": 1209.0,
-        "week": "2026-11-03",
+        "net": -157087.0,
+        "delta": -27630.0,
+        "noncomm_long": 95112.0,
+        "noncomm_short": 252199.0,
+        "change_long": -2716.0,
+        "change_short": 20482.0,
+        "week": "2026-11-10",
         "note": "non-commercial net exposure shrank"
       },
       "positions": {
-        "report_date": "2026-11-03",
-        "long": 97828.0,
-        "short": 231717.0
+        "report_date": "2026-11-10",
+        "long": 95112.0,
+        "short": 252199.0
       }
     },
     "BRL": {
       "sym": "BRL",
       "market": "BRAZILIAN REAL",
-      "latest_week": "2026-11-03",
+      "latest_week": "2026-11-10",
       "tilt": {
         "tilt": 1,
-        "net": 46033.0,
-        "delta": 13147.0,
-        "noncomm_long": 95388.0,
-        "noncomm_short": 49355.0,
-        "change_long": -211.0,
-        "change_short": -13358.0,
-        "week": "2026-11-03",
+        "net": 59214.0,
+        "delta": 13181.0,
+        "noncomm_long": 87502.0,
+        "noncomm_short": 28288.0,
+        "change_long": -7886.0,
+        "change_short": -21067.0,
+        "week": "2026-11-10",
         "note": "non-commercial net exposure expanded"
       },
       "positions": {
-        "report_date": "2026-11-03",
-        "long": 95388.0,
-        "short": 49355.0
+        "report_date": "2026-11-10",
+        "long": 87502.0,
+        "short": 28288.0
       }
     },
     "EUR": {
       "sym": "EUR",
-      "market": "EURO FX/BRITISH POUND XRATE",
-      "latest_week": "2026-11-03",
+      "market": "EURO FX/JAPANESE YEN XRATE",
+      "latest_week": "2026-11-10",
       "tilt": {
         "tilt": 1,
-        "net": -157791.0,
-        "delta": 16354.0,
-        "noncomm_long": 229383.0,
-        "noncomm_short": 387174.0,
-        "change_long": -1263.0,
-        "change_short": 12634.0,
-        "week": "2026-11-03",
+        "net": -136396.0,
+        "delta": 47415.0,
+        "noncomm_long": 227478.0,
+        "noncomm_short": 363874.0,
+        "change_long": -1905.0,
+        "change_short": -23300.0,
+        "week": "2026-11-10",
         "note": "non-commercial net exposure expanded"
       },
       "positions": {
-        "report_date": "2026-11-03",
-        "long": 229383.0,
-        "short": 387174.0
-      }
-    },
-    "GBP": {
-      "sym": "GBP",
-      "market": "EURO FX/BRITISH POUND XRATE",
-      "latest_week": "2026-11-03",
-      "tilt": {
-        "tilt": 1,
-        "net": -59821.0,
-        "delta": 19593.0,
-        "noncomm_long": 63780.0,
-        "noncomm_short": 123601.0,
-        "change_long": 7135.0,
-        "change_short": -12458.0,
-        "week": "2026-11-03",
-        "note": "non-commercial net exposure expanded"
-      },
-      "positions": {
-        "report_date": "2026-11-03",
-        "long": 63780.0,
-        "short": 123601.0
+        "report_date": "2026-11-10",
+        "long": 227478.0,
+        "short": 363874.0
       }
     },
     "JPY": {
       "sym": "JPY",
       "market": "EURO FX/JAPANESE YEN XRATE",
-      "latest_week": "2026-11-03",
+      "latest_week": "2026-11-10",
       "tilt": {
         "tilt": 1,
-        "net": 102321.0,
-        "delta": 803.0,
-        "noncomm_long": 227198.0,
-        "noncomm_short": 124877.0,
-        "change_long": 1682.0,
-        "change_short": 952.0,
-        "week": "2026-11-03",
+        "net": 124495.0,
+        "delta": 25892.0,
+        "noncomm_long": 252990.0,
+        "noncomm_short": 128495.0,
+        "change_long": 22708.0,
+        "change_short": -3184.0,
+        "week": "2026-11-10",
         "note": "non-commercial net exposure expanded"
       },
       "positions": {
-        "report_date": "2026-11-03",
-        "long": 227198.0,
-        "short": 124877.0
+        "report_date": "2026-11-10",
+        "long": 252990.0,
+        "short": 128495.0
       }
     },
-    "CHF": {
-      "sym": "CHF",
-      "market": "EURO FX/SWISS FRANC XRATE",
-      "latest_week": "2026-11-03",
+    "GBP": {
+      "sym": "GBP",
+      "market": "EURO FX/BRITISH POUND XRATE",
+      "latest_week": "2026-11-10",
       "tilt": {
         "tilt": 1,
-        "net": -16589.0,
-        "delta": 3460.0,
-        "noncomm_long": 29482.0,
-        "noncomm_short": 46071.0,
-        "change_long": 3228.0,
-        "change_short": -232.0,
-        "week": "2026-11-03",
+        "net": -44366.0,
+        "delta": 15835.0,
+        "noncomm_long": 62688.0,
+        "noncomm_short": 107054.0,
+        "change_long": -1897.0,
+        "change_short": -17732.0,
+        "week": "2026-11-10",
         "note": "non-commercial net exposure expanded"
       },
       "positions": {
-        "report_date": "2026-11-03",
-        "long": 29482.0,
-        "short": 46071.0
+        "report_date": "2026-11-10",
+        "long": 62688.0,
+        "short": 107054.0
       }
     },
     "MXN": {
       "sym": "MXN",
       "market": "MEXICAN PESO",
-      "latest_week": "2026-11-03",
+      "latest_week": "2026-11-10",
       "tilt": {
-        "tilt": -1,
-        "net": 18017.0,
-        "delta": -2826.0,
-        "noncomm_long": 98323.0,
-        "noncomm_short": 80306.0,
-        "change_long": 2458.0,
-        "change_short": 5284.0,
-        "week": "2026-11-03",
-        "note": "non-commercial net exposure shrank"
+        "tilt": 1,
+        "net": 21883.0,
+        "delta": 3808.0,
+        "noncomm_long": 98750.0,
+        "noncomm_short": 76867.0,
+        "change_long": 90.0,
+        "change_short": -3718.0,
+        "week": "2026-11-10",
+        "note": "non-commercial net exposure expanded"
       },
       "positions": {
-        "report_date": "2026-11-03",
-        "long": 98323.0,
-        "short": 80306.0
+        "report_date": "2026-11-10",
+        "long": 98750.0,
+        "short": 76867.0
+      }
+    },
+    "CHF": {
+      "sym": "CHF",
+      "market": "SWISS FRANC",
+      "latest_week": "2026-11-10",
+      "tilt": {
+        "tilt": 1,
+        "net": -10711.0,
+        "delta": 8688.0,
+        "noncomm_long": 32537.0,
+        "noncomm_short": 43248.0,
+        "change_long": 3174.0,
+        "change_short": -5514.0,
+        "week": "2026-11-10",
+        "note": "non-commercial net exposure expanded"
+      },
+      "positions": {
+        "report_date": "2026-11-10",
+        "long": 32537.0,
+        "short": 43248.0
       }
     },
     "CAD": {
       "sym": "CAD",
       "market": "CANADIAN DOLLAR",
-      "latest_week": "2026-11-03",
+      "latest_week": "2026-11-10",
       "tilt": {
         "tilt": 1,
-        "net": -40567.0,
-        "delta": 25857.0,
-        "noncomm_long": 99201.0,
-        "noncomm_short": 139768.0,
-        "change_long": 8901.0,
-        "change_short": -15141.0,
-        "week": "2026-11-03",
+        "net": -32204.0,
+        "delta": 9571.0,
+        "noncomm_long": 108171.0,
+        "noncomm_short": 140375.0,
+        "change_long": 8970.0,
+        "change_short": 606.0,
+        "week": "2026-11-10",
         "note": "non-commercial net exposure expanded"
       },
       "positions": {
-        "report_date": "2026-11-03",
-        "long": 99201.0,
-        "short": 139768.0
-      }
-    },
-    "XAUUSD": {
-      "sym": "XAUUSD",
-      "market": "GOLD",
-      "latest_week": "2026-11-03",
-      "tilt": {
-        "tilt": -1,
-        "net": 179548.0,
-        "delta": -6903.0,
-        "noncomm_long": 220530.0,
-        "noncomm_short": 40982.0,
-        "change_long": -3194.0,
-        "change_short": 3709.0,
-        "week": "2026-11-03",
-        "note": "non-commercial net exposure shrank"
-      },
-      "positions": {
-        "report_date": "2026-11-03",
-        "long": 220530.0,
-        "short": 40982.0
-      }
-    },
-    "COPPER": {
-      "sym": "COPPER",
-      "market": "COPPER- #1",
-      "latest_week": "2026-11-03",
-      "tilt": {
-        "tilt": -1,
-        "net": 37710.0,
-        "delta": -10607.0,
-        "noncomm_long": 85660.0,
-        "noncomm_short": 47950.0,
-        "change_long": -5983.0,
-        "change_short": 4624.0,
-        "week": "2026-11-03",
-        "note": "non-commercial net exposure shrank"
-      },
-      "positions": {
-        "report_date": "2026-11-03",
-        "long": 85660.0,
-        "short": 47950.0
-      }
-    },
-    "XAGUSD": {
-      "sym": "XAGUSD",
-      "market": "SILVER",
-      "latest_week": "2026-11-03",
-      "tilt": {
-        "tilt": -1,
-        "net": 18185.0,
-        "delta": -1518.0,
-        "noncomm_long": 33838.0,
-        "noncomm_short": 15653.0,
-        "change_long": 909.0,
-        "change_short": 109.0,
-        "week": "2026-11-03",
-        "note": "non-commercial net exposure shrank"
-      },
-      "positions": {
-        "report_date": "2026-11-03",
-        "long": 33838.0,
-        "short": 15653.0
-      }
-    },
-    "XPTUSD": {
-      "sym": "XPTUSD",
-      "market": "PLATINUM",
-      "latest_week": "2026-11-03",
-      "tilt": {
-        "tilt": -1,
-        "net": 6516.0,
-        "delta": -2609.0,
-        "noncomm_long": 28151.0,
-        "noncomm_short": 21635.0,
-        "change_long": 914.0,
-        "change_short": 3524.0,
-        "week": "2026-11-03",
-        "note": "non-commercial net exposure shrank"
-      },
-      "positions": {
-        "report_date": "2026-11-03",
-        "long": 28151.0,
-        "short": 21635.0
-      }
-    },
-    "XPDUSD": {
-      "sym": "XPDUSD",
-      "market": "PALLADIUM",
-      "latest_week": "2026-11-03",
-      "tilt": {
-        "tilt": -1,
-        "net": -12571.0,
-        "delta": -2730.0,
-        "noncomm_long": 10890.0,
-        "noncomm_short": 23461.0,
-        "change_long": 554.0,
-        "change_short": 2957.0,
-        "week": "2026-11-03",
-        "note": "non-commercial net exposure shrank"
-      },
-      "positions": {
-        "report_date": "2026-11-03",
-        "long": 10890.0,
-        "short": 23461.0
-      }
-    },
-    "BRENT": {
-      "sym": "BRENT",
-      "market": "BRENT LAST DAY",
-      "latest_week": "2026-11-03",
-      "tilt": {
-        "tilt": -1,
-        "net": -31538.0,
-        "delta": -2978.0,
-        "noncomm_long": 30658.0,
-        "noncomm_short": 62196.0,
-        "change_long": -7058.0,
-        "change_short": -4080.0,
-        "week": "2026-11-03",
-        "note": "non-commercial net exposure shrank"
-      },
-      "positions": {
-        "report_date": "2026-11-03",
-        "long": 30658.0,
-        "short": 62196.0
+        "report_date": "2026-11-10",
+        "long": 108171.0,
+        "short": 140375.0
       }
     },
     "OIL": {
       "sym": "OIL",
       "market": "CRUDE OIL, LIGHT SWEET-WTI",
-      "latest_week": "2026-11-03",
+      "latest_week": "2026-11-10",
+      "tilt": {
+        "tilt": 1,
+        "net": -6927.0,
+        "delta": 18224.0,
+        "noncomm_long": 64285.0,
+        "noncomm_short": 71212.0,
+        "change_long": -373.0,
+        "change_short": -378.0,
+        "week": "2026-11-10",
+        "note": "non-commercial net exposure expanded"
+      },
+      "positions": {
+        "report_date": "2026-11-10",
+        "long": 64285.0,
+        "short": 71212.0
+      }
+    },
+    "BRENT": {
+      "sym": "BRENT",
+      "market": "BRENT LAST DAY",
+      "latest_week": "2026-11-10",
+      "tilt": {
+        "tilt": 1,
+        "net": -29953.0,
+        "delta": 1585.0,
+        "noncomm_long": 32187.0,
+        "noncomm_short": 62140.0,
+        "change_long": 285.0,
+        "change_short": 1834.0,
+        "week": "2026-11-10",
+        "note": "non-commercial net exposure expanded"
+      },
+      "positions": {
+        "report_date": "2026-11-10",
+        "long": 32187.0,
+        "short": 62140.0
+      }
+    },
+    "XPDUSD": {
+      "sym": "XPDUSD",
+      "market": "PALLADIUM",
+      "latest_week": "2026-11-10",
       "tilt": {
         "tilt": -1,
-        "net": -25151.0,
-        "delta": -22075.0,
-        "noncomm_long": 56797.0,
-        "noncomm_short": 81948.0,
-        "change_long": -4281.0,
-        "change_short": -6325.0,
-        "week": "2026-11-03",
+        "net": -12680.0,
+        "delta": -377.0,
+        "noncomm_long": 9535.0,
+        "noncomm_short": 22215.0,
+        "change_long": -1585.0,
+        "change_short": -1208.0,
+        "week": "2026-11-10",
         "note": "non-commercial net exposure shrank"
       },
       "positions": {
-        "report_date": "2026-11-03",
-        "long": 56797.0,
-        "short": 81948.0
+        "report_date": "2026-11-10",
+        "long": 9535.0,
+        "short": 22215.0
+      }
+    },
+    "XPTUSD": {
+      "sym": "XPTUSD",
+      "market": "PLATINUM",
+      "latest_week": "2026-11-10",
+      "tilt": {
+        "tilt": 1,
+        "net": 7627.0,
+        "delta": 962.0,
+        "noncomm_long": 27955.0,
+        "noncomm_short": 20328.0,
+        "change_long": -284.0,
+        "change_short": -1246.0,
+        "week": "2026-11-10",
+        "note": "non-commercial net exposure expanded"
+      },
+      "positions": {
+        "report_date": "2026-11-10",
+        "long": 27955.0,
+        "short": 20328.0
+      }
+    },
+    "XAGUSD": {
+      "sym": "XAGUSD",
+      "market": "SILVER",
+      "latest_week": "2026-11-10",
+      "tilt": {
+        "tilt": -1,
+        "net": 19364.0,
+        "delta": -1887.0,
+        "noncomm_long": 36151.0,
+        "noncomm_short": 16787.0,
+        "change_long": -851.0,
+        "change_short": 1036.0,
+        "week": "2026-11-10",
+        "note": "non-commercial net exposure shrank"
+      },
+      "positions": {
+        "report_date": "2026-11-10",
+        "long": 36151.0,
+        "short": 16787.0
+      }
+    },
+    "COPPER": {
+      "sym": "COPPER",
+      "market": "COPPER- #1",
+      "latest_week": "2026-11-10",
+      "tilt": {
+        "tilt": -1,
+        "net": 28904.0,
+        "delta": -8948.0,
+        "noncomm_long": 83735.0,
+        "noncomm_short": 54831.0,
+        "change_long": -1925.0,
+        "change_short": 6881.0,
+        "week": "2026-11-10",
+        "note": "non-commercial net exposure shrank"
+      },
+      "positions": {
+        "report_date": "2026-11-10",
+        "long": 83735.0,
+        "short": 54831.0
+      }
+    },
+    "XAUUSD": {
+      "sym": "XAUUSD",
+      "market": "GOLD",
+      "latest_week": "2026-11-10",
+      "tilt": {
+        "tilt": 1,
+        "net": 190107.0,
+        "delta": 18706.0,
+        "noncomm_long": 226234.0,
+        "noncomm_short": 36127.0,
+        "change_long": 5704.0,
+        "change_short": -4855.0,
+        "week": "2026-11-10",
+        "note": "non-commercial net exposure expanded"
+      },
+      "positions": {
+        "report_date": "2026-11-10",
+        "long": 226234.0,
+        "short": 36127.0
       }
     },
     "CNY": {
