@@ -1950,6 +1950,16 @@
     "period": "2026-07-01"
   },
   {
+    "title": "Unemployment Rate",
+    "country": "GBP",
+    "date_utc": "2026-07-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "4.7",
+    "previous": "4.9",
+    "source_series": "LRHUTTTTGBM156S",
+    "period": "2026-07-01"
+  },
+  {
     "title": "Initial Jobless Claims",
     "country": "USD",
     "date_utc": "2026-07-04T00:00:00+00:00",
@@ -2237,6 +2247,36 @@
     "actual": "-105047.0",
     "previous": "-105737.0",
     "source_series": "BOPGSTB",
+    "period": "2026-09-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "EUR",
+    "date_utc": "2026-09-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "4.1",
+    "previous": "4.1",
+    "source_series": "LRHUTTTTDEM156S",
+    "period": "2026-09-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "JPY",
+    "date_utc": "2026-09-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "2.4",
+    "previous": "2.5",
+    "source_series": "LRHUTTTTJPM156S",
+    "period": "2026-09-01"
+  },
+  {
+    "title": "Unemployment Rate",
+    "country": "CAD",
+    "date_utc": "2026-09-01T00:00:00+00:00",
+    "impact": "High",
+    "actual": "6.5",
+    "previous": "6.4",
+    "source_series": "LRHUTTTTCAM156S",
     "period": "2026-09-01"
   },
   {
