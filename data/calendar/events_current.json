@@ -23136,7 +23136,7 @@
     "impact": "Low",
     "forecast": "1.39M",
     "previous": "1.39M",
-    "actual": "",
+    "actual": "1295.0",
     "revision": "",
     "source": "ff-feed"
   },
@@ -39363,17 +39363,6 @@
     "source": "ff-feed"
   },
   {
-    "title": "Foreign Direct Investment ytd/y",
-    "country": "CNY",
-    "date_utc": "2026-11-18T07:02+00:00",
-    "impact": "Low",
-    "forecast": "",
-    "previous": "-4.3%",
-    "actual": "",
-    "revision": "",
-    "source": "ff-feed"
-  },
-  {
     "title": "20-Year JGB Auction",
     "country": "JPY",
     "date_utc": "2026-11-18T08:35+00:00",
@@ -41085,6 +41074,17 @@
     "impact": "Low",
     "forecast": "18.0B",
     "previous": "24.5B",
+    "actual": "",
+    "revision": "",
+    "source": "ff-feed"
+  },
+  {
+    "title": "Foreign Direct Investment ytd/y",
+    "country": "CNY",
+    "date_utc": "2026-11-20T07:02+00:00",
+    "impact": "Low",
+    "forecast": "",
+    "previous": "-4.3%",
     "actual": "",
     "revision": "",
     "source": "ff-feed"
