@@ -37668,6 +37668,16 @@
     "source": "te"
   },
   {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2026-11-14T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "203000.0",
+    "previous": "202000.0",
+    "source_series": "ICSA",
+    "period": "2026-11-14"
+  },
+  {
     "title": "Fed Jefferson Speech",
     "country": "USD",
     "date_utc": "2026-11-14T05:00+00:00",
@@ -40545,23 +40555,23 @@
     "source": "ff-feed"
   },
   {
-    "title": "Mortgage Delinquencies",
-    "country": "USD",
-    "date_utc": "2026-11-19T15:15+00:00",
-    "impact": "Low",
-    "forecast": "",
-    "previous": "4.37%",
-    "actual": "",
-    "revision": "",
-    "source": "ff-feed"
-  },
-  {
     "title": "Natural Gas Storage",
     "country": "USD",
     "date_utc": "2026-11-19T15:30+00:00",
     "impact": "Low",
     "forecast": "81B",
     "previous": "80B",
+    "actual": "",
+    "revision": "",
+    "source": "ff-feed"
+  },
+  {
+    "title": "Mortgage Delinquencies",
+    "country": "USD",
+    "date_utc": "2026-11-19T15:46+00:00",
+    "impact": "Low",
+    "forecast": "",
+    "previous": "4.37%",
     "actual": "",
     "revision": "",
     "source": "ff-feed"

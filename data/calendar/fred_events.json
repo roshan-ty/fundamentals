@@ -2564,9 +2564,19 @@
     "country": "USD",
     "date_utc": "2026-11-07T00:00:00+00:00",
     "impact": "Medium",
-    "actual": "200000.0",
+    "actual": "202000.0",
     "previous": "191000.0",
     "source_series": "ICSA",
     "period": "2026-11-07"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2026-11-14T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "203000.0",
+    "previous": "202000.0",
+    "source_series": "ICSA",
+    "period": "2026-11-14"
   }
 ]
