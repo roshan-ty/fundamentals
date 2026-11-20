@@ -1,19 +1,19 @@
 {
   "meta": {
-    "updated": "2026-11-20T03:59:26+00:00",
+    "updated": "2026-11-20T21:10:05+00:00",
     "method": "verdict v3"
   },
   "instruments": {
     "XAUUSD": {
       "verdict": "Very Bearish",
-      "halo": "signal -2",
+      "halo": "signal -4",
       "notes": [
-        "institutional flow leans supportive",
+        "institutional flow leans adverse",
         "real-yield rising (headwind)",
         "2Y yield rising (headwind)",
         "USD strong — inverse headwind"
       ],
-      "cot_tilt": 1.0
+      "cot_tilt": -1.0
     },
     "XAGUSD": {
       "verdict": "Very Bearish",
@@ -28,17 +28,6 @@
     },
     "XPTUSD": {
       "verdict": "Very Bearish",
-      "halo": "signal -2",
-      "notes": [
-        "institutional flow leans supportive",
-        "real-yield rising (headwind)",
-        "2Y yield rising (headwind)",
-        "USD strong — inverse headwind"
-      ],
-      "cot_tilt": 1.0
-    },
-    "XPDUSD": {
-      "verdict": "Very Bearish",
       "halo": "signal -4",
       "notes": [
         "institutional flow leans adverse",
@@ -48,25 +37,36 @@
       ],
       "cot_tilt": -1.0
     },
-    "OIL": {
-      "verdict": "Bearish",
-      "halo": "signal -1",
+    "XPDUSD": {
+      "verdict": "Very Bearish",
+      "halo": "signal -2",
       "notes": [
-        "2Y yield rising (headwind)",
         "institutional flow leans supportive",
+        "real-yield rising (headwind)",
+        "2Y yield rising (headwind)",
         "USD strong — inverse headwind"
       ],
       "cot_tilt": 1.0
     },
-    "BRENT": {
-      "verdict": "Bearish",
-      "halo": "signal -1",
+    "OIL": {
+      "verdict": "Very Bearish",
+      "halo": "signal -3",
       "notes": [
         "2Y yield rising (headwind)",
-        "institutional flow leans supportive",
+        "institutional flow leans adverse",
         "USD strong — inverse headwind"
       ],
-      "cot_tilt": 1.0
+      "cot_tilt": -1.0
+    },
+    "BRENT": {
+      "verdict": "Very Bearish",
+      "halo": "signal -3",
+      "notes": [
+        "2Y yield rising (headwind)",
+        "institutional flow leans adverse",
+        "USD strong — inverse headwind"
+      ],
+      "cot_tilt": -1.0
     },
     "COPPER": {
       "verdict": "Very Bearish",
@@ -140,7 +140,7 @@
       "notes": [
         "real-yield rising (headwind)"
       ],
-      "cot_tilt": -1.0
+      "cot_tilt": 1.0
     },
     "HK50": {
       "verdict": "Bearish",
