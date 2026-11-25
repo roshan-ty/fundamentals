@@ -1,13 +1,430 @@
 [
   {
+    "headline": "Switzerland clears 57 jurisdictions for crypto tax data sharing",
+    "snippet": "The move paves the way for Switzerland to exchange crypto tax data with foreign authorities starting in 2028 as part of a global effort to combat tax evasion.",
+    "url": "https://cointelegraph.com/news/switzerland-clears-57-jurisdictions-crypto-tax-data-sharing?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "source": "markets",
+    "published": "2026-11-25T21:53",
+    "tags": [
+      "CHF",
+      "GLOBAL"
+    ],
+    "kind": "crypto",
+    "collected_at": "2026-11-25T22:17:55+00:00"
+  },
+  {
+    "headline": "Macy's postpones Thanksgiving Day Parade due to severe weather",
+    "snippet": "Macy's announced on Wednesday that the annual Thanksgiving Day Parade is being postponed to Saturday due to severe weather.",
+    "url": "https://www.cnbc.com/2026/11/25/macys-thanksgiving-day-parade-postponed.html",
+    "source": "markets",
+    "published": "2026-11-25T21:26",
+    "tags": [],
+    "kind": "general",
+    "collected_at": "2026-11-25T22:17:55+00:00"
+  },
+  {
+    "headline": "Braiins warns of Bitcoin mining attacks affecting over 1,000 sites",
+    "snippet": "Bitcoin mining pool operator Braiins warned that attackers are exploiting unsecured connections to hijack miners’ computing power and potentially steal rewards.",
+    "url": "https://cointelegraph.com/news/braiins-warns-bitcoin-mining-attacks-affecting-1000-sites?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "source": "markets",
+    "published": "2026-11-25T21:22",
+    "tags": [
+      "BTCUSD"
+    ],
+    "kind": "crypto",
+    "collected_at": "2026-11-25T22:17:55+00:00"
+  },
+  {
+    "headline": "Why ECB collateral eligibility could boost demand for tokenized bonds",
+    "snippet": "Past ECB decisions offer clues to the value of using bonds as collateral, while US derivatives exchanges face a different calculation over their Bitcoin holdings.",
+    "url": "https://cointelegraph.com/news/why-ecb-collateral-eligibility-could-boost-demand-tokenized-bonds?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "source": "markets",
+    "published": "2026-11-25T21:11",
+    "tags": [
+      "EUR",
+      "BTCUSD"
+    ],
+    "kind": "crypto",
+    "collected_at": "2026-11-25T22:17:55+00:00"
+  },
+  {
+    "headline": "Vance says he was assured Jensen Huang was not under DOJ investigation",
+    "snippet": "Whether the Trump administration has investigated Jensen Huang for potential national security risks has been the subject of questions.",
+    "url": "https://www.cnbc.com/2026/11/25/vance-jensen-huang-nvidia-doj-investigation.html",
+    "source": "markets",
+    "published": "2026-11-25T20:28",
+    "tags": [
+      "ETHUSD"
+    ],
+    "kind": "general",
+    "collected_at": "2026-11-25T22:17:55+00:00"
+  },
+  {
+    "headline": "SpaceX, Musk pledge to donate a share each to active Trump Accounts",
+    "snippet": "SpaceX said it will donate one share of the company's class A stock to every active Trump Account, and CEO Elon Musk would match it.",
+    "url": "https://www.cnbc.com/2026/11/25/spacex-musk-trump-account-stock.html",
+    "source": "markets",
+    "published": "2026-11-25T20:07",
+    "tags": [],
+    "kind": "general",
+    "collected_at": "2026-11-25T22:17:55+00:00"
+  },
+  {
+    "headline": "We're buying more of a stock down big from its July highs",
+    "snippet": "We're dipping into our large cash position as the market remains oversold.",
+    "url": "https://www.cnbc.com/investingclub/2026/11/25/were-buying-more-of-a-stock-down-big-from-its-july-highs.html",
+    "source": "markets",
+    "published": "2026-11-25T19:55",
+    "tags": [
+      "US500",
+      "US30"
+    ],
+    "kind": "general",
+    "collected_at": "2026-11-25T22:17:55+00:00"
+  },
+  {
+    "headline": "MEXC Ranks No.1 in Silver Futures Liquidity, Saving Users $240M Through 0-Fee Trading in May",
+    "snippet": "VICTORIA, Seychelles, June 16, 2026 /PRNewswire/ — MEXC, a pioneer in 0-fee digital asset trading, announced key highlights for May 2026. According to TokenInsight’s Crypto Exchange Liquidity Report, MEXC ranked first globally in silver futures liquidity, and also ranked among the top performers acr",
+    "url": "https://cryptocurrencynews.com/crypto/mexc-ranks-no-1-in-silver-futures-liquidity-saving-users-240m-through-0-fee-trading-in-may/",
+    "source": "markets",
+    "published": "2026-11-25T19:14",
+    "tags": [
+      "XAGUSD",
+      "GLOBAL"
+    ],
+    "kind": "crypto",
+    "collected_at": "2026-11-25T22:17:55+00:00"
+  },
+  {
+    "headline": "Bullish hopes spring as traders bet against a higher VIX: Options Action Live",
+    "snippet": "With stocks mounting a comeback Wednesday, options trading across a few key volatility products suggests big swings in stocks may dampen in the near term.",
+    "url": "https://www.cnbc.com/2026/11/25/bullish-hopes-spring-as-traders-bet-against-a-higher-vix-options-action-live.html",
+    "source": "markets",
+    "published": "2026-11-25T19:12",
+    "tags": [],
+    "kind": "general",
+    "collected_at": "2026-11-25T22:17:55+00:00"
+  },
+  {
     "headline": "Iraq's top court says Baghdad can deploy troops to secure borders in Kurdistan region - Reuters",
     "snippet": "Iraq's top court says Baghdad can deploy troops to secure borders in Kurdistan region Reuters",
     "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPeGlKWlRMLUx5SDRZY3FLU3VLM19RX2JqVko0T3dBakVEVHVldFVtQ21MbGo2WEEzUXU1clEteTVvWWh3bkdkQzZPX3RSemt5eWlBVjJQZy1RdjNjNnlpT19ZZUd0ekFDc3JuVHZKVWJfX2VtTlBzU3ZTTHlBX3dkV1NNVXA4NmJMVlRGX3FidmJsa0VacW5fQ2E1ZHBZTnJrN2pVc1BkUk1aZVliX2lMdHJBcUFaYlh5WmY3a05aSVZYN1hKemFtTGFUMG0?oc=5",
     "source": "markets",
-    "published": "2026-11-25T13:25",
+    "published": "2026-11-25T18:58",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-11-25T13:38:08+00:00"
+    "collected_at": "2026-11-25T22:17:55+00:00"
+  },
+  {
+    "headline": "Ethereum Foundation backs Keccak-256 to counter quantum, AI threats",
+    "snippet": "Ethlabs co-founder Julian Ma told Cointelegraph that AI poses a more immediate threat as Ethereum prepares for one of its biggest security overhauls since the Merge.",
+    "url": "https://cointelegraph.com/news/ethereum-foundation-keccak-256-counter-quantum-ai-threats?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "source": "markets",
+    "published": "2026-11-25T18:54",
+    "tags": [
+      "ETHUSD"
+    ],
+    "kind": "crypto",
+    "collected_at": "2026-11-25T22:17:55+00:00"
+  },
+  {
+    "headline": "French Senate blocks new crypto tax and wallet list critics called a kidnapping risk",
+    "snippet": "",
+    "url": "https://www.coindesk.com/business/2026/11/25/french-senate-blocks-new-crypto-tax-and-wallet-list-critics-called-a-kidnapping-risk",
+    "source": "markets",
+    "published": "2026-11-25T18:24",
+    "tags": [],
+    "kind": "crypto",
+    "collected_at": "2026-11-25T22:17:55+00:00"
+  },
+  {
+    "headline": "SpaceX wins FCC approval to deploy 1 million orbital data center satellites",
+    "snippet": "SpaceX won approval from the FCC to put 1 million orbital data center satellites into space, a proposal that was opposed by Amazon and other groups.",
+    "url": "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html",
+    "source": "markets",
+    "published": "2026-11-25T18:22",
+    "tags": [],
+    "kind": "general",
+    "collected_at": "2026-11-25T22:17:55+00:00"
+  },
+  {
+    "headline": "EXCLUSIVE: Boehly signs US-backed share swap deal to buy Lukoil global assets - Reuters",
+    "snippet": "EXCLUSIVE: Boehly signs US-backed share swap deal to buy Lukoil global assets Reuters",
+    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQM05VWXNudnhTWW1BY2VFUHpZRzdNSjU4TG1Ob3NYZTRKM0tNUWNGQmxyNEp6NW0yTEJWaTZabF9UNW9CUUZTclBhaGpnQmZ6WVRZTVhqS3dpOTBsZEtaOGZnMzFPQlR5MDRpZThJNmU0cXc5Q0trMDNhdWtxVjV4V1lMYzYyR1RHU0lBNDdWZDlzOWxBN1J1Wm0xWlJkNEVMaVNXUXdQcTRuUHlvczlnMTd1VGRWQQ?oc=5",
+    "source": "markets",
+    "published": "2026-11-25T18:02",
+    "tags": [
+      "GBP",
+      "GLOBAL"
+    ],
+    "kind": "general",
+    "collected_at": "2026-11-25T22:17:55+00:00"
+  },
+  {
+    "headline": "US inflation rises to 3.8% ahead of December Fed meeting, clouding crypto outlook",
+    "snippet": "US core inflation rose more than expected in October as markets anticipate a December interest rate hike, which could slow a crypto market recovery.",
+    "url": "https://cointelegraph.com/news/us-inflation-rises-december-fed-meeting-clouding-crypto-outlook?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "source": "markets",
+    "published": "2026-11-25T17:53",
+    "tags": [
+      "USD"
+    ],
+    "kind": "crypto",
+    "collected_at": "2026-11-25T22:17:55+00:00"
+  },
+  {
+    "headline": "Trump blames the election for the selloff. Here’s what I’m watching.",
+    "snippet": "<p>President Trump blamed the November 3 election results for the drop in stocks in a Wednesday post on Truth Social.</p><p></p><p>The first place I’d look is the chip stocks. The Nasdaq was down about 4% in morning trading versus roughly 2.5% for the S&P 500. Nvidia was down nearly 9% and the Phila",
+    "url": "https://investinglive.com/news/trump-blames-the-election-for-the-selloff-here-s-what-i-m-watching/",
+    "source": "markets",
+    "published": "2026-11-25T17:46",
+    "tags": [
+      "US500",
+      "US100",
+      "US30"
+    ],
+    "kind": "forex",
+    "collected_at": "2026-11-25T22:17:55+00:00"
+  },
+  {
+    "headline": "'This time actually seems different': Crypto veterans brace for more pain as bitcoin tumbles",
+    "snippet": "",
+    "url": "https://www.coindesk.com/markets/2026/11/25/this-time-actually-seems-different-crypto-veterans-brace-for-more-pain-as-bitcoin-tumbles",
+    "source": "markets",
+    "published": "2026-11-25T17:38",
+    "tags": [
+      "BTCUSD"
+    ],
+    "kind": "crypto",
+    "collected_at": "2026-11-25T22:17:55+00:00"
+  },
+  {
+    "headline": "Bitcoin falls toward $57K amid US tariff fears, hot PCE data as Nasdaq drops 4%",
+    "snippet": "The prospect of higher US tariffs and hotter-than-expected PCE inflation weighed on Bitcoin, crypto and stocks on Wednesday.",
+    "url": "https://cointelegraph.com/markets/bitcoin-falls-57k-us-tariff-pce-data-nasdaq-drops?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "source": "markets",
+    "published": "2026-11-25T17:33",
+    "tags": [
+      "BTCUSD",
+      "US500",
+      "US100"
+    ],
+    "kind": "crypto",
+    "collected_at": "2026-11-25T22:17:55+00:00"
+  },
+  {
+    "headline": "Nvidia agrees to $290M settlement over crypto mining revenue disclosures",
+    "snippet": "The proposed settlement would resolve a shareholder lawsuit dating back to 2018 that alleged Nvidia misled investors about its exposure to the cryptocurrency industry.",
+    "url": "https://cointelegraph.com/news/nvidia-agrees-290m-settlement-crypto-mining-revenue-disclosures?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "source": "markets",
+    "published": "2026-11-25T17:19",
+    "tags": [],
+    "kind": "crypto",
+    "collected_at": "2026-11-25T22:17:55+00:00"
+  },
+  {
+    "headline": "Nvidia leads tech sell-off as Huang comeback rally fizzles and AI concerns return",
+    "snippet": "Nvidia and other AI-linked stocks fell as investors weighed AI spending, inflation and higher-rate risks.",
+    "url": "https://www.cnbc.com/2026/11/25/nvidia-ai-stock-tech-selloff.html",
+    "source": "markets",
+    "published": "2026-11-25T17:10",
+    "tags": [],
+    "kind": "general",
+    "collected_at": "2026-11-25T22:17:55+00:00"
+  },
+  {
+    "headline": "FCC authorizes SpaceX to deploy 1M satellites for orbital AI data centers",
+    "snippet": "The planned Starmind constellation will process data in orbit for use on Earth, as demand for artificial intelligence computing power continues to grow.",
+    "url": "https://cointelegraph.com/news/fcc-authorizes-spacex-1m-satellites-orbital-ai-data-centers?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "source": "markets",
+    "published": "2026-11-25T17:10",
+    "tags": [],
+    "kind": "crypto",
+    "collected_at": "2026-11-25T22:17:55+00:00"
+  },
+  {
+    "headline": "UK is moving military aircraft to hangars at night over possible drone threats, media reports say - Reuters",
+    "snippet": "UK is moving military aircraft to hangars at night over possible drone threats, media reports say Reuters",
+    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNNXk4cTJiN1hVeGlydEtUN2JpRTVCMF9CRFVBUkh3cUs2c0NJRHNnendsV1ZjWkxicDhPZUhESnlTNy1paWtzQlNHaHlSMkpLTVRvYXVGdFVDVEFGeVFGN2tQWElwRDZwREoyaXU2QUtNSm5oaGsyZ2VoSVNtT2c0aVlhbXlabU02Mm1menJtMGpNQXdzal9lM2dYeUtxZ0xFZ3lnc0FoODhBaklCa0M3eTQzbFF4dXVyNmc?oc=5",
+    "source": "markets",
+    "published": "2026-11-25T16:34",
+    "tags": [],
+    "kind": "general",
+    "collected_at": "2026-11-25T22:17:55+00:00"
+  },
+  {
+    "headline": "There are 5,100 newly minted Anthropic millionaires—here’s all the stuff they don’t tell you about when you suddenly get rich",
+    "snippet": "Anthropic’s IPO made about 5,100 employees paper millionaires. Experts explain the risks of sudden wealth.",
+    "url": "https://www.cnbc.com/2026/11/25/anthropic-ipo-employee-millionaires-sudden-wealth.html",
+    "source": "markets",
+    "published": "2026-11-25T16:32",
+    "tags": [],
+    "kind": "general",
+    "collected_at": "2026-11-25T22:17:55+00:00"
+  },
+  {
+    "headline": "US third-quarter economic growth revised sharply higher; inflation broadening out - Reuters",
+    "snippet": "US third-quarter economic growth revised sharply higher; inflation broadening out Reuters",
+    "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNalBrRjhRWHdhRDduMzduLU1kN1lGVFpzNFllX0RzdjJXMjdtajRZS1l1dms2MFJFbkhJQmx3Qzgydi1nTTJnQ1JPLUtoa1R5LWZjWjItUXJhXzhoZG51NU9ENzVBQjVSZWFpdHlqbV9PSkVncWtjUlptdXhjd0ZKRXZ6d2Y1dw?oc=5",
+    "source": "markets",
+    "published": "2026-11-25T16:15",
+    "tags": [],
+    "kind": "general",
+    "collected_at": "2026-11-25T22:17:55+00:00"
+  },
+  {
+    "headline": "Anthropic's stock has been a clunker post-IPO. Why that matters for the AI trade",
+    "snippet": "Shares of Anthropic are trading below their IPO price, creating an overhang on other artificial intelligence names.",
+    "url": "https://www.cnbc.com/investingclub/2026/11/25/anthropics-stock-has-been-a-clunker-post-ipo-why-that-matters-for-the-ai-trade.html",
+    "source": "markets",
+    "published": "2026-11-25T16:05",
+    "tags": [],
+    "kind": "general",
+    "collected_at": "2026-11-25T22:17:55+00:00"
+  },
+  {
+    "headline": "EU bank watchdog seeks European Commission rules for crypto firms offering DeFi lending",
+    "snippet": "",
+    "url": "https://www.coindesk.com/policy/2026/11/25/eu-bank-watchdog-seeks-european-commission-rules-for-crypto-firms-offering-defi-lending",
+    "source": "markets",
+    "published": "2026-11-25T16:02",
+    "tags": [
+      "EUR"
+    ],
+    "kind": "crypto",
+    "collected_at": "2026-11-25T22:17:55+00:00"
+  },
+  {
+    "headline": "Ukrainian lawmakers pass crypto tax and regulation bill expected to bring in $330 million",
+    "snippet": "",
+    "url": "https://www.coindesk.com/business/2026/11/25/ukrainian-lawmakers-pass-crypto-tax-and-regulation-bill-expected-to-bring-in-usd330-million",
+    "source": "markets",
+    "published": "2026-11-25T16:02",
+    "tags": [],
+    "kind": "crypto",
+    "collected_at": "2026-11-25T22:17:55+00:00"
+  },
+  {
+    "headline": "Investors led by U.S. billionaire Todd Boehly to buy Lukoil's oil and gas assets outside Russia, sources say",
+    "snippet": "The U.S. International Development Finance Corporation and Catena Investments, based in the United Arab Emirates, are also parties to the deal, the sources said.",
+    "url": "https://www.cnbc.com/2026/11/25/investors-led-by-todd-boehly-to-buy-lukoil-oil-and-gas-assets-outside-russia.html",
+    "source": "markets",
+    "published": "2026-11-25T16:00",
+    "tags": [
+      "GBP"
+    ],
+    "kind": "general",
+    "collected_at": "2026-11-25T22:17:55+00:00"
+  },
+  {
+    "headline": "Crypto Long & Short: Bitcoin investors can’t keep ignoring Japan",
+    "snippet": "",
+    "url": "https://www.coindesk.com/coindesk-indices/2026/11/25/crypto-long-and-short-bitcoin-investors-can-t-keep-ignoring-japan",
+    "source": "markets",
+    "published": "2026-11-25T15:59",
+    "tags": [
+      "JPY",
+      "BTCUSD"
+    ],
+    "kind": "crypto",
+    "collected_at": "2026-11-25T22:17:55+00:00"
+  },
+  {
+    "headline": "Russian government official warns of Ukrainian drone attacks on utility infrastructure this winter - Reuters",
+    "snippet": "Russian government official warns of Ukrainian drone attacks on utility infrastructure this winter Reuters",
+    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNWjNMRXE5WTZCS3ZELXItUXNCbjVVTU5NeVFxNHNZdG1kYnRNSGs1dzRYVlY1TWE0UTBYem8yRTBoNEtoS21uQ1NTSjhJejNDYW5PUHQ3RDVaV2tRZTM0Q2FmY3JZZkhpYXRzUXdqUTc0WHZJNGhncUltbGpPcEFoOUdxNk1LeEtOV0xqT0ZvTnJGLUQzVURmekZneEdkcG1DLXlIWEh6ZGF3blpGVmlvNkN1LUI2QzB1X2xQeXdNaw?oc=5",
+    "source": "markets",
+    "published": "2026-11-25T15:21",
+    "tags": [],
+    "kind": "general",
+    "collected_at": "2026-11-25T22:17:55+00:00"
+  },
+  {
+    "headline": "Kalshi traders say the odds of states imposing data center moratoriums is more likely than not",
+    "snippet": "After Democrats swept Congress and key governor races, Kalshi traders lowered the odds that at least four states would pause data center build-out this year.",
+    "url": "https://www.cnbc.com/2026/11/25/kalshi-traders-say-the-odds-of-states-imposing-data-center-moratoriums-is-more-likely-than-not.html",
+    "source": "markets",
+    "published": "2026-11-25T15:18",
+    "tags": [],
+    "kind": "general",
+    "collected_at": "2026-11-25T22:17:55+00:00"
+  },
+  {
+    "headline": "Wealthy investors seek tax savings from municipal bonds as yields remain elevated",
+    "snippet": "Done right, bonds can be used to reduce taxes rather than defer them.",
+    "url": "https://www.cnbc.com/2026/11/25/wealthy-investors-seek-tax-savings-from-municipal-bonds.html",
+    "source": "markets",
+    "published": "2026-11-25T15:00",
+    "tags": [],
+    "kind": "general",
+    "collected_at": "2026-11-25T22:17:55+00:00"
+  },
+  {
+    "headline": "South Korean crypto exchange Bithumb warns of phishing after deeper October breach probe",
+    "snippet": "",
+    "url": "https://www.coindesk.com/tech/2026/11/25/south-korean-crypto-exchange-bithumb-warns-of-phishing-after-deeper-october-breach-probe",
+    "source": "markets",
+    "published": "2026-11-25T14:47",
+    "tags": [],
+    "kind": "crypto",
+    "collected_at": "2026-11-25T22:17:55+00:00"
+  },
+  {
+    "headline": "Migrant arrivals in Spain's Canary Islands break single-day record - Reuters",
+    "snippet": "Migrant arrivals in Spain's Canary Islands break single-day record Reuters",
+    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNSzRDQUNzZ05jRTh0OEM3cm9ubjVRZWE3Nm90dVl0XzVjT242V2xoTXdXRG1Ddzhac1pwVFhBd0tHSGxQTUJ0amlGZXYtbkE0MEFmTGE3OWx3TkhoSGVUYnRvWTJtdmw3aEt4a2dfODVUVkdmY1Q1OVIxTWpBVVY0TjdUVzEwTmNLVzh0WHVMbC0ycHhpM2MtNy1tcm9YM1RKMi1UWWdZVQ?oc=5",
+    "source": "markets",
+    "published": "2026-11-25T14:39",
+    "tags": [
+      "EUR"
+    ],
+    "kind": "general",
+    "collected_at": "2026-11-25T22:17:55+00:00"
+  },
+  {
+    "headline": "Ex-FTX COO calls out Netflix over CZ’s ‘Asian mafia’ portrayal",
+    "snippet": "Constance Waing said Netflix used racist stereotypes in its portrayal of CZ and misrepresented life at FTX before the exchange’s collapse.",
+    "url": "https://cointelegraph.com/news/ftx-coo-netflix-portrayal-binance-founder-racist?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "source": "markets",
+    "published": "2026-11-25T14:21",
+    "tags": [],
+    "kind": "crypto",
+    "collected_at": "2026-11-25T22:17:55+00:00"
+  },
+  {
+    "headline": "Israeli strike kills Hamas official, his wife and children - Reuters",
+    "snippet": "Israeli strike kills Hamas official, his wife and children Reuters",
+    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOYjNlV0dRZTd0cDZJZVBnNFl6VUpTMDFlQlFIY0tJQzR5ZmNrYm9lNS1kMTRYbEpyM2FNMWp6Qms1NGh4VTU0YkxQN0NaY1FRV1diOENoQmdIQjJ0eU12VGZfamhNWHpsZUQ0MXczanBWZW1uWUZsVXpwcElhR2RXdG80RTBIcjZ1WjVHYW94MUhfUDI5dTA0ODZWRlBiVkFYNlhwR1RSaW1OZ2M?oc=5",
+    "source": "markets",
+    "published": "2026-11-25T14:19",
+    "tags": [],
+    "kind": "general",
+    "collected_at": "2026-11-25T22:17:55+00:00"
+  },
+  {
+    "headline": "Kazakhstan also seeks higher oil output capacity estimate ahead of 2027 OPEC+ quota debate, sources say - Reuters",
+    "snippet": "Kazakhstan also seeks higher oil output capacity estimate ahead of 2027 OPEC+ quota debate, sources say Reuters",
+    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQUmZkWG52MVRvamtENGF3YmViWno3ckhhV1JIeFBzcnVTeG5ueG55S0M1amhYa1c3U1NVUldNV3c3UTRzTG9lcnVsUmJoYzV2ckJsY2c2cmtFdFlLckpLRk91NTdnSEtJQ3lDSVlYNzEwdklnUkFvb1R6dUpZLWV2TnM5d0dldC00NnBCWkZ1RVRjQ0NqMFA2OEp2SThlVlQ5OXZNbDVHN2tLVjFjbmJhSHlPUGZCSXR0aUxLZGQ3RjZIdWlwOElBWmZPUQ?oc=5",
+    "source": "markets",
+    "published": "2026-11-25T14:18",
+    "tags": [
+      "OIL",
+      "BRENT"
+    ],
+    "kind": "general",
+    "collected_at": "2026-11-25T22:17:55+00:00"
+  },
+  {
+    "headline": "Our top 10 things to watch in the stock market Wednesday",
+    "snippet": "We're headed for a sharply lower open on Wall Street.",
+    "url": "https://www.cnbc.com/investingclub/2026/11/25/our-top-10-things-to-watch-in-the-stock-market-wednesday.html",
+    "source": "markets",
+    "published": "2026-11-25T14:15",
+    "tags": [
+      "US500"
+    ],
+    "kind": "general",
+    "collected_at": "2026-11-25T22:17:55+00:00"
   },
   {
     "headline": "Ukraine passes bill to legalize crypto and tax profits at 23%",
@@ -17,7 +434,7 @@
     "published": "2026-11-25T13:02",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-11-25T13:38:08+00:00"
+    "collected_at": "2026-11-25T22:17:55+00:00"
   },
   {
     "headline": "Nasdaq futures slide over 2% as AI losses deepen; inflation data in focus - Reuters",
@@ -30,7 +447,7 @@
       "US100"
     ],
     "kind": "general",
-    "collected_at": "2026-11-25T13:38:08+00:00"
+    "collected_at": "2026-11-25T22:17:55+00:00"
   },
   {
     "headline": "investingLive European session wrap: Equities and tech selloff deepens, gold threatens $3,500",
@@ -57,7 +474,7 @@
       "USD"
     ],
     "kind": "general",
-    "collected_at": "2026-11-25T13:38:08+00:00"
+    "collected_at": "2026-11-25T22:17:55+00:00"
   },
   {
     "headline": "Fed’s preferred inflation gauge lands with a December rate increase already priced in",
@@ -69,7 +486,19 @@
       "USD"
     ],
     "kind": "crypto",
-    "collected_at": "2026-11-25T13:38:08+00:00"
+    "collected_at": "2026-11-25T22:17:55+00:00"
+  },
+  {
+    "headline": "Catalan separatist Puigdemont to return to Spain after election - Reuters",
+    "snippet": "Catalan separatist Puigdemont to return to Spain after election Reuters",
+    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPMllTYTRRSkU3SjVsVWFMdVZFWjB1OHVQTHo4eGFRSndDY2RiNDNZS2ZLN3JZLW1Oem5lX1FRR3dsdGp1MkwzLU1jdHZTcFlyaHFWTlhKUWVBZGhzOG1TLVV1RllnLWpOdTRFRjU4YTMxMjMtMHU4ZG95RXlrcUI1U0gzeF9Ha1BFbHVNel9EWkpIcTZuRjJDV0o4Ung?oc=5",
+    "source": "markets",
+    "published": "2026-11-25T12:15",
+    "tags": [
+      "EUR"
+    ],
+    "kind": "general",
+    "collected_at": "2026-11-25T22:17:55+00:00"
   },
   {
     "headline": "Secondhand shopping is going mainstream this holiday season as consumers seek value",
@@ -79,7 +508,7 @@
     "published": "2026-11-25T12:00",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-11-25T13:38:08+00:00"
+    "collected_at": "2026-11-25T22:17:55+00:00"
   },
   {
     "headline": "Ether, DeFi fall twice as hard as bitcoin as equities selloff resumes",
@@ -92,7 +521,7 @@
       "ETHUSD"
     ],
     "kind": "crypto",
-    "collected_at": "2026-11-25T13:38:08+00:00"
+    "collected_at": "2026-11-25T22:17:55+00:00"
   },
   {
     "headline": "Italy’s UniCredit launches six-year bitcoin certificate with gains capped at 65%",
@@ -105,7 +534,7 @@
       "BTCUSD"
     ],
     "kind": "crypto",
-    "collected_at": "2026-11-25T13:38:08+00:00"
+    "collected_at": "2026-11-25T22:17:55+00:00"
   },
   {
     "headline": "Japan’s SBI, SMFG launch Solana venture for stablecoins, tokenization",
@@ -119,7 +548,7 @@
       "GLOBAL"
     ],
     "kind": "crypto",
-    "collected_at": "2026-11-25T13:38:08+00:00"
+    "collected_at": "2026-11-25T22:17:55+00:00"
   },
   {
     "headline": "'I'm going to drive': FAA outage and high fares reshape Thanksgiving travel plans - Reuters",
@@ -129,19 +558,7 @@
     "published": "2026-11-25T11:35",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-11-25T13:38:08+00:00"
-  },
-  {
-    "headline": "Migrant arrivals in Spain's Canary Islands break single-day record - Reuters",
-    "snippet": "Migrant arrivals in Spain's Canary Islands break single-day record Reuters",
-    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNSzRDQUNzZ05jRTh0OEM3cm9ubjVRZWE3Nm90dVl0XzVjT242V2xoTXdXRG1Ddzhac1pwVFhBd0tHSGxQTUJ0amlGZXYtbkE0MEFmTGE3OWx3TkhoSGVUYnRvWTJtdmw3aEt4a2dfODVUVkdmY1Q1OVIxTWpBVVY0TjdUVzEwTmNLVzh0WHVMbC0ycHhpM2MtNy1tcm9YM1RKMi1UWWdZVQ?oc=5",
-    "source": "markets",
-    "published": "2026-11-25T11:31",
-    "tags": [
-      "EUR"
-    ],
-    "kind": "general",
-    "collected_at": "2026-11-25T13:38:08+00:00"
+    "collected_at": "2026-11-25T22:17:55+00:00"
   },
   {
     "headline": "Hong Kong launches tokenized debt platform with 24-hour settlement",
@@ -151,7 +568,7 @@
     "published": "2026-11-25T11:31",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-11-25T13:38:08+00:00"
+    "collected_at": "2026-11-25T22:17:55+00:00"
   },
   {
     "headline": "Gold's haven status has lost its edge over bitcoin, and the Fed's to blame",
@@ -165,7 +582,7 @@
       "BTCUSD"
     ],
     "kind": "crypto",
-    "collected_at": "2026-11-25T13:38:08+00:00"
+    "collected_at": "2026-11-25T22:17:55+00:00"
   },
   {
     "headline": "Bitcoin ETFs near $5B in record monthly outflows amid AI stock rout",
@@ -177,7 +594,7 @@
       "BTCUSD"
     ],
     "kind": "crypto",
-    "collected_at": "2026-11-25T13:38:08+00:00"
+    "collected_at": "2026-11-25T22:17:55+00:00"
   },
   {
     "headline": "Bitcoin price may fall below $53K if bear-market history repeats",
@@ -192,7 +609,17 @@
       "US30"
     ],
     "kind": "crypto",
-    "collected_at": "2026-11-25T13:38:08+00:00"
+    "collected_at": "2026-11-25T22:17:55+00:00"
+  },
+  {
+    "headline": "Bulgaria intercepts first irregular migrant boat in months - Reuters",
+    "snippet": "Bulgaria intercepts first irregular migrant boat in months Reuters",
+    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNb3FjbEpVX1FWQ3VCRXNpX2pFdWxPUE15ZlJycTNVRzcwQ1FVYmNrN1Z1bEVlaWttSHkxUHFCMy1WcmY0TkpuVzdaVXk5WlNnMjliTWREYlp0LXNwbURDczA3VXNDQlJ4a2RScTJXVTVwd2ZhWjRleF9KcnZMZ2JZS3RWMFBEMUl6amIyREVSWmZwU2ZPV0RPMUcwR3hLdw?oc=5",
+    "source": "markets",
+    "published": "2026-11-25T11:08",
+    "tags": [],
+    "kind": "general",
+    "collected_at": "2026-11-25T22:17:55+00:00"
   },
   {
     "headline": "EU proposes $54.7 billion fund for AI, quantum startups alongside post-quantum security push",
@@ -202,7 +629,7 @@
     "published": "2026-11-25T11:00",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-11-25T13:38:08+00:00"
+    "collected_at": "2026-11-25T22:17:55+00:00"
   },
   {
     "headline": "HYPE drops 8% as Trump bump gives way to 40% slide from peak",
@@ -212,7 +639,17 @@
     "published": "2026-11-25T10:57",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-11-25T13:38:08+00:00"
+    "collected_at": "2026-11-25T22:17:55+00:00"
+  },
+  {
+    "headline": "Rupee scales 8-month high after holiday as foreign flows to Indian equities persist - Reuters",
+    "snippet": "Rupee scales 8-month high after holiday as foreign flows to Indian equities persist Reuters",
+    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPbk5XM1NwbDc5V0dCUUc2b2VldDJpMk13dWhKRnZiQlRtbWNZbXNSUzUzMFN6c0Nia0VFOUNmSy1hTlJZSGM2YzFYS0hJS2FUQzJVX3FjWHZuSFhJV1I0WFNzeVI3UkRESXN5dllkZjdrN0ZKX29pWkdOamFZWnI5Y29DOFVlaW1PemZtRkt3MUtGcGkxWThKVzBQd3NnQm9QN0VDRVNWNS1HZlB2elhiNU1YUERmY3k4Zk5Hai1DRFR0cjA?oc=5",
+    "source": "markets",
+    "published": "2026-11-25T10:35",
+    "tags": [],
+    "kind": "general",
+    "collected_at": "2026-11-25T22:17:55+00:00"
   },
   {
     "headline": "Ethereum remains under pressure as macro headwinds outweigh Nvidia-driven optimism",
@@ -227,6 +664,18 @@
     "collected_at": "2026-11-25T13:38:08+00:00"
   },
   {
+    "headline": "Italy rebukes Ukraine over attacks on Russian ships in Libya - Reuters",
+    "snippet": "Italy rebukes Ukraine over attacks on Russian ships in Libya Reuters",
+    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQRGl5eGplZXIyMktvQUNpVzZ6LV84eU50Qnp6dzZiWEhScWZzaXZuVzVjdTNVZWlHQXVINHQ1SzRRZnRvZHRQWDZyLXJZRXlUQ3JZbkZZR0lTQWJ2RGE4S1pySVFSekZ3QnZWOFJOd1hwUkJKNkxMSF9oM2ZxM2s4VV9UMG5TRGkyRlIyRFFWcUd5a3RwSzZyZzR3NmQ?oc=5",
+    "source": "markets",
+    "published": "2026-11-25T10:29",
+    "tags": [
+      "EUR"
+    ],
+    "kind": "general",
+    "collected_at": "2026-11-25T22:17:55+00:00"
+  },
+  {
     "headline": "Iran says ships hit mines in Hormuz, warns vessels to coordinate passage - Reuters",
     "snippet": "Iran says ships hit mines in Hormuz, warns vessels to coordinate passage Reuters",
     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSmFmdlRJUnlMaVRFNERwb2YxLVVObG9leTlORFRtOTAyd2pvMTNuOGM5d0diMzNUb1NHaDVWOGlTeWg3bmcwU21BdHRHZlB6a0VDeXlNcUtYMDBiZUpyVFRyMkhIQjlpemZIeGVQNEdXb2hCOHZwYW5VZUt4V3MySnpZWUViYTA5MEp2eDlBbGNoVjB5dk5CcHdZR3NyUjZIVlV3d0s2Z3BUMTQ?oc=5",
@@ -234,7 +683,7 @@
     "published": "2026-11-25T10:11",
     "tags": [],
     "kind": "general",
-    "collected_at": "2026-11-25T13:38:08+00:00"
+    "collected_at": "2026-11-25T22:17:55+00:00"
   },
   {
     "headline": "French Senate rejects 100K euro crypto wallet disclosure requirement",
@@ -246,7 +695,7 @@
       "EUR"
     ],
     "kind": "crypto",
-    "collected_at": "2026-11-25T13:38:08+00:00"
+    "collected_at": "2026-11-25T22:17:55+00:00"
   },
   {
     "headline": "Stablecoin redemptions hit $12B in 30 days, echoing 2022 bear market",
@@ -259,17 +708,7 @@
       "US30"
     ],
     "kind": "crypto",
-    "collected_at": "2026-11-25T13:38:08+00:00"
-  },
-  {
-    "headline": "Israeli strike kills Hamas official, his wife and children - Reuters",
-    "snippet": "Israeli strike kills Hamas official, his wife and children Reuters",
-    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOYjNlV0dRZTd0cDZJZVBnNFl6VUpTMDFlQlFIY0tJQzR5ZmNrYm9lNS1kMTRYbEpyM2FNMWp6Qms1NGh4VTU0YkxQN0NaY1FRV1diOENoQmdIQjJ0eU12VGZfamhNWHpsZUQ0MXczanBWZW1uWUZsVXpwcElhR2RXdG80RTBIcjZ1WjVHYW94MUhfUDI5dTA0ODZWRlBiVkFYNlhwR1RSaW1OZ2M?oc=5",
-    "source": "markets",
-    "published": "2026-11-25T09:09",
-    "tags": [],
-    "kind": "general",
-    "collected_at": "2026-11-25T13:38:08+00:00"
+    "collected_at": "2026-11-25T22:17:55+00:00"
   },
   {
     "headline": "EU seeks up to $55B for AI and quantum computing fund: Report",
@@ -279,7 +718,7 @@
     "published": "2026-11-25T08:40",
     "tags": [],
     "kind": "crypto",
-    "collected_at": "2026-11-25T13:38:08+00:00"
+    "collected_at": "2026-11-25T22:17:55+00:00"
   },
   {
     "headline": "Live updates: Bitcoin slips back under $60,000 as HYPE leads altcoins lower",
@@ -580,6 +1019,37 @@
     ],
     "kind": "general",
     "collected_at": "2026-11-25T13:38:08+00:00"
+  },
+  {
+    "headline": "Western Australia tops Australia’s parcel theft risk",
+    "snippet": "Residents in the state face the highest parcel theft risk nationally, according to an index that also found New South Wales the safest.",
+    "url": "",
+    "source": "global",
+    "published": "2026-11-25 10:17:00",
+    "tags": [],
+    "collected_at": "2026-11-25T22:17:55+00:00"
+  },
+  {
+    "headline": "He sold Angel’s Envy for a reported $150 million. Now Bacardi is suing his new whiskey company",
+    "snippet": "A photo included in the federal trademark infringement complaint against True Story and Wes Henderson’s TKC Distilling shows a box of True Story bourbon and rye with a tag that says “From the Founder of Angel’s Envy.” Bacardi, which owns Angel’s Envy, is demanding that TKC Distilling cease all use of the Angel’s Envy trademarked name and even be barred from mentioning it.",
+    "url": "",
+    "source": "global",
+    "published": "2026-11-25 10:17:00",
+    "tags": [
+      "USD"
+    ],
+    "collected_at": "2026-11-25T22:17:55+00:00"
+  },
+  {
+    "headline": "The 6 Best Latte Machines for Automatic Espresso Drinks (2026)",
+    "snippet": "Whether you want a cappuccino at the push of a button or an iced latte with cold foam, we found a machine that makes it easy.",
+    "url": "",
+    "source": "global",
+    "published": "2026-11-25 10:17:00",
+    "tags": [
+      "ETHUSD"
+    ],
+    "collected_at": "2026-11-25T22:17:55+00:00"
   },
   {
     "headline": "Alabama shooting leaves one dead, one critically injured in suspected murder-suicide attempt",
@@ -3884,423 +4354,5 @@
     "published": "2026-11-23 17:15:00",
     "tags": [],
     "collected_at": "2026-11-24T05:15:53+00:00"
-  },
-  {
-    "headline": "Wholesale electricity prices have more than doubled in the last year",
-    "snippet": "",
-    "url": "",
-    "source": "global",
-    "published": "2026-11-23 12:48:00",
-    "tags": [],
-    "collected_at": "2026-11-24T00:48:39+00:00"
-  },
-  {
-    "headline": "Battlestar Galactica Movie Director Francis Lawrence Departs Project",
-    "snippet": "Director Francis Lawrence has officially left the Battlestar Galactica movie project, citing creative conflicts with a competing television reboot. This development leaves the future of the sci-fi franchise in limbo.",
-    "url": "",
-    "source": "global",
-    "published": "2026-11-23 12:48:00",
-    "tags": [],
-    "collected_at": "2026-11-24T00:48:39+00:00"
-  },
-  {
-    "headline": "Douglas County Past: Thief admits to butter theft, robber wore underwear as mask",
-    "snippet": "",
-    "url": "",
-    "source": "global",
-    "published": "2026-11-23 12:48:00",
-    "tags": [],
-    "collected_at": "2026-11-24T00:48:39+00:00"
-  },
-  {
-    "headline": "Winter Fragrance Architecture: Dark Fruits & Texture",
-    "snippet": "The gourmand category, long defined by the sugary transparency of confectionery scents, is undergoing a structural shift for the 2026-2027 winter season. The prevailing trend is not a departure from sweetness, but a reconfiguration of it-moving away from linear dessert profiles toward compositions where edible notes act as a foil for denser, more abrasive materials. This evolution represents a transition toward what is being termed \"adult gourmandics.\" The primary distinction lies in the tension between sweetness and dryness. Nadezhda Drozdova, an expert at Equivalent, notes that contemporary gourmand compositions have become denser and more astringent. She cites Tom Ford Tobacco Chocolat as a benchmark of this approach, where cocoa is not used to create a confection, but is instead integrated with tobacco, orange, and Peruvian balsam. The result is a shift from a \"tasty\" scent to a balsamic, liqueur-like structure. The Architecture of Winter Accords The current season's olfactory landscape is built on specific contrasts that prevent sweetness from becoming monolithic. Dark fruits-specifically cherry, plum, blackberry, and blackcurrant-have replaced the brightness of summer citruses. To move these fruits beyond a simple jam-like quality, they are frequently paired with oud, saffron, or leather, introducing a characteristic bitterness that anchors the composition.",
-    "url": "",
-    "source": "global",
-    "published": "2026-11-23 12:48:00",
-    "tags": [],
-    "collected_at": "2026-11-24T00:48:39+00:00"
-  },
-  {
-    "headline": "Anthropic Engineer Explains How to Verify Claude Code Builds",
-    "snippet": "For two weeks, Anthropic let Claude run continuously in a staging environment, load testing infrastructure and fixing what it found broken. Anthropic also uses verification loops to check software written with Claude Code, helping catch problems before changes are merged. As Ray Amjad reports, these loops can pass a builder’s work to review and verification […] The post Anthropic Engineer Explains How to Verify Claude Code Builds appeared first on Geeky Gadgets.",
-    "url": "",
-    "source": "global",
-    "published": "2026-11-23 12:48:00",
-    "tags": [],
-    "collected_at": "2026-11-24T00:48:39+00:00"
-  },
-  {
-    "headline": "Yellowjackets report: UWS men's hockey gets the better of Blugolds",
-    "snippet": "Daniel Roszival scored twice in the first WIAC win of the season for the Yellowjackets.",
-    "url": "",
-    "source": "global",
-    "published": "2026-11-23 12:48:00",
-    "tags": [
-      "XAUUSD"
-    ],
-    "collected_at": "2026-11-24T00:48:39+00:00"
-  },
-  {
-    "headline": "Lai Jui-lung reports alleged deepfake materials targeting Kaohsiung mayoral race",
-    "snippet": "Fabricated recordings reportedly depict DPP candidate criticizing party officials | Nov. 23, 2026 19:50",
-    "url": "",
-    "source": "global",
-    "published": "2026-11-23 12:48:00",
-    "tags": [],
-    "collected_at": "2026-11-24T00:48:39+00:00"
-  },
-  {
-    "headline": "AAP Alleges Rs 441-Cr NCERT Paper Tender Irregularities, Questions Price Hike And Blacklisted Firms",
-    "snippet": "AAP leaders Sanjay Singh and Saurabh Bharadwaj have accused NCERT of tender irregularities, questioning paper prices and the eligibility of companies allegedly blacklisted by Assam over cartelisation allegations.",
-    "url": "",
-    "source": "global",
-    "published": "2026-11-23 12:47:59",
-    "tags": [],
-    "collected_at": "2026-11-24T00:48:39+00:00"
-  },
-  {
-    "headline": "South Korea Democrats face risky impeachment push against Chief Justice Jo Hee-de",
-    "snippet": "South Korea's Democratic Party faces criticism over its proposed impeachment of Chief Justice Jo Hee-de, raising concerns about judicial independence and the separation of powers.",
-    "url": "",
-    "source": "global",
-    "published": "2026-11-23 09:03:00",
-    "tags": [],
-    "collected_at": "2026-11-23T21:03:49+00:00"
-  },
-  {
-    "headline": "Harbour Investments Inc. Makes New Investment in Invesco CEF Income Composite ETF $PCEF",
-    "snippet": "Harbour Investments Inc. purchased a new position in shares of Invesco CEF Income Composite ETF (NYSEARCA:PCEF – Free Report) during the 3rd quarter, according to its most recent disclosure with the Securities and Exchange Commission (SEC). The institutional investor purchased 39,635 shares of the company’s stock, valued at approximately $767,000. Harbour Investments Inc. owned approximately […]",
-    "url": "",
-    "source": "global",
-    "published": "2026-11-23 09:03:00",
-    "tags": [],
-    "collected_at": "2026-11-23T21:03:49+00:00"
-  },
-  {
-    "headline": "Vodacom, Huawei trial ‘golden’ spectrum band",
-    "snippet": "The companies used the Africa Tech Festival to showcase the technical and use-case foundation for commercial U6GHz spectrum.",
-    "url": "",
-    "source": "global",
-    "published": "2026-11-23 09:03:00",
-    "tags": [
-      "XAUUSD"
-    ],
-    "collected_at": "2026-11-23T21:03:49+00:00"
-  },
-  {
-    "headline": "Andrew Mountbatten-Windsor to give evidence in High Court trial of Turkish businessman Selman Turk - The Independent",
-    "snippet": "Andrew Mountbatten-Windsor to give evidence in High Court trial of Turkish businessman Selman Turk The Independent Andrew, the Turkish ‘fraudster’ and the £1.4m mystery payments The Telegraph High Court trial set to see Andrew Mountbatten-Windsor give evidence begins The Independent Andrew received £750,000 ‘bribe’ to help Turkish woman, High Court told Belfast Telegraph Andrew accepted £750k ‘bribe’ from Turkish heiress, court hears The Telegraph",
-    "url": "",
-    "source": "global",
-    "published": "2026-11-23 09:03:00",
-    "tags": [],
-    "collected_at": "2026-11-23T21:03:49+00:00"
-  },
-  {
-    "headline": "Jimmy Odukoya Enjoys Warm Welcome From Worshippers at Fountain of Life Church on Sunday Amid Leadership Dispute",
-    "snippet": "Worshippers at The Fountain of Life Church in Lagos gave Pastor Jimmy Odukoya a warm welcome on Sunday, despite an ongoing court dispute over the church’s leadership and an order barring him from presenting himself as its Senior Pastor. A video circulating on social media on Sunday, 22 November 2026, showed congregants cheering Odukoya during […] The post Jimmy Odukoya Enjoys Warm Welcome From Worshippers at Fountain of Life Church on Sunday Amid Leadership Dispute appeared first on SummitPost News.",
-    "url": "",
-    "source": "global",
-    "published": "2026-11-23 09:02:59",
-    "tags": [],
-    "collected_at": "2026-11-23T21:03:49+00:00"
-  },
-  {
-    "headline": "Harbour Investments Inc. Makes New $778,000 Investment in Franklin Dynamic Municipal Bond ETF $FLMI",
-    "snippet": "Harbour Investments Inc. purchased a new position in Franklin Dynamic Municipal Bond ETF (NYSEARCA:FLMI – Free Report) during the 3rd quarter, according to its most recent 13F filing with the SEC. The firm purchased 33,368 shares of the company’s stock, valued at approximately $778,000. A number of other institutional investors have also made changes to […]",
-    "url": "",
-    "source": "global",
-    "published": "2026-11-23 09:02:59",
-    "tags": [],
-    "collected_at": "2026-11-23T21:03:49+00:00"
-  },
-  {
-    "headline": "Fifth Third Bancorp Acquires 29,192 Shares of iShares U.S. Medical Devices ETF $IHI",
-    "snippet": "Fifth Third Bancorp grew its holdings in iShares U.S. Medical Devices ETF (NYSEARCA:IHI – Free Report) by 819.3% in the third quarter, according to its most recent disclosure with the SEC. The fund owned 32,755 shares of the company’s stock after buying an additional 29,192 shares during the period. Fifth Third Bancorp’s holdings in iShares […]",
-    "url": "",
-    "source": "global",
-    "published": "2026-11-23 09:02:59",
-    "tags": [],
-    "collected_at": "2026-11-23T21:03:49+00:00"
-  },
-  {
-    "headline": "Harbour Investments Inc. Makes New $743,000 Investment in Pacer Developed Markets International Cash Cows 100 ETF $ICOW",
-    "snippet": "Harbour Investments Inc. acquired a new position in Pacer Developed Markets International Cash Cows 100 ETF (BATS:ICOW – Free Report) in the third quarter, according to the company in its most recent filing with the Securities & Exchange Commission. The institutional investor acquired 17,661 shares of the company’s stock, valued at approximately $743,000. Harbour Investments […]",
-    "url": "",
-    "source": "global",
-    "published": "2026-11-23 09:02:59",
-    "tags": [],
-    "collected_at": "2026-11-23T21:03:49+00:00"
-  },
-  {
-    "headline": "Hilton Home2 Suites hotel planned for Mintbrook advances",
-    "snippet": "Hilton Home2 suites is one step closer to building a hotel in Bealeton, but not before residents of the Mintbrook community tried to put up a “no vacancy” sign.",
-    "url": "",
-    "source": "global",
-    "published": "2026-11-23 01:09:00",
-    "tags": [],
-    "collected_at": "2026-11-23T13:09:17+00:00"
-  },
-  {
-    "headline": "Take Off “Gloom-Tinted Glasses” To Unlock New Era Of Business Confidence And Investment",
-    "snippet": "CBI announces new scheme to give mayoral authorities the commercial expertise they need to drive investment and bolster major projects.",
-    "url": "",
-    "source": "global",
-    "published": "2026-11-23 01:09:00",
-    "tags": [],
-    "collected_at": "2026-11-23T13:09:17+00:00"
-  },
-  {
-    "headline": "Australians brace for Christmas spending amid cost pressure",
-    "snippet": "Most Australians are planning earlier, tighter festive budgets as 60% say they feel anxious about Christmas spending amid cost-of-living pressure.",
-    "url": "",
-    "source": "global",
-    "published": "2026-11-23 01:09:00",
-    "tags": [],
-    "collected_at": "2026-11-23T13:09:17+00:00"
-  },
-  {
-    "headline": "Vorssaint Launches as a Comprehensive Menu Bar Utility for macOS Productivity",
-    "snippet": "Vorssaint is a new menu bar application for macOS that consolidates over 25 productivity and customization tools into a single suite. The app addresses native OS limitations by offering advanced window tiling, independent volume control, scrolling screenshots, and media conversion utilities. It also features quick toggles for clamshell mode and sleep prevention, aiming to streamline daily workflows for Mac users who seek granular control over their desktop environment.",
-    "url": "",
-    "source": "global",
-    "published": "2026-11-23 01:09:00",
-    "tags": [
-      "US500",
-      "US30"
-    ],
-    "collected_at": "2026-11-23T13:09:17+00:00"
-  },
-  {
-    "headline": "How to Clear Cache on Google TV to Fix Performance Issues",
-    "snippet": "Learn how to clear the cache on your Google TV device to resolve slow performance and app crashes. The guide explains the benefits of clearing both system-wide and per-app caches and provides step-by-step instructions for troubleshooting common glitches.",
-    "url": "",
-    "source": "global",
-    "published": "2026-11-23 01:09:00",
-    "tags": [],
-    "collected_at": "2026-11-23T13:09:17+00:00"
-  },
-  {
-    "headline": "Marvel Comics News: Madelyne Pryor, Magik, and Juggernaut Battle Selene",
-    "snippet": "New Marvel comic issue reveals a team-up between Magik, Madelyne Pryor, and Juggernaut to stop Selene from possessing mutants in West Texas.",
-    "url": "",
-    "source": "global",
-    "published": "2026-11-23 01:09:00",
-    "tags": [],
-    "collected_at": "2026-11-23T13:09:17+00:00"
-  },
-  {
-    "headline": "Misery Streaming on Tubi: Stephen King Adaptation Thrills New Audiences",
-    "snippet": "Rob Reiner's Misery tops Tubi charts, proving timeless terror. Kathy Bates and James Caan deliver a gripping survival story that redefined Stephen King adaptations.",
-    "url": "",
-    "source": "global",
-    "published": "2026-11-23 01:09:00",
-    "tags": [],
-    "collected_at": "2026-11-23T13:09:17+00:00"
-  },
-  {
-    "headline": "Bundaberg tourism unveils radical 20-year blueprint",
-    "snippet": "",
-    "url": "",
-    "source": "global",
-    "published": "2026-11-23 01:09:00",
-    "tags": [],
-    "collected_at": "2026-11-23T13:09:17+00:00"
-  },
-  {
-    "headline": "Let's weigh the cons — and pros — of this brutal market to find a way forward",
-    "snippet": "My dad always said a list can help you make an informed decision — not always the right one, but the most informed at that moment.",
-    "url": "https://www.cnbc.com/investingclub/2026/11/22/lets-weigh-the-cons-and-pros-of-this-market-to-find-a-way-forward.html",
-    "source": "markets",
-    "published": "2026-11-22T23:49",
-    "tags": [],
-    "kind": "general",
-    "collected_at": "2026-11-23T13:09:17+00:00"
-  },
-  {
-    "headline": "US futures bounce as Asia scrambles to slow AI stocks rout - Reuters",
-    "snippet": "US futures bounce as Asia scrambles to slow AI stocks rout Reuters",
-    "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNR2c4ZVNmcHBzVFctOTBkRUd2d0VHTklseUhCcEtZT2VHbU1WbWprMUk2aDZSQ2tkZHNYVE9EWUgyaEkxeWtyN0M2V2NzR2ZCTHFmMEhvbHFDeExTNUdTeDF3WkxJZ2RSdmZ2cHBxWlFjTXdoa1hXdlZQRWtyTFFKVlJjMA?oc=5",
-    "source": "markets",
-    "published": "2026-11-22T23:44",
-    "tags": [],
-    "kind": "general",
-    "collected_at": "2026-11-23T13:09:17+00:00"
-  },
-  {
-    "headline": "Dollar steadies as traders take breather from AI wobbles - Reuters",
-    "snippet": "Dollar steadies as traders take breather from AI wobbles Reuters",
-    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMVA0aUFSMnFob3ZJdVFvbmlpN0JDRWFRNUJwZ1BIY19KU3RXZjJTRGdLaU00NGJ6dDRvX3VBUDdtcG9XQWRiRFhuUzhMZTNsN2lDSWVKMmI2Vi1EQ3dFUE5mM3dwZGNQWC1zZXhnZTJfVEVuYzVETlV1enJTN0dPZlQ3SlozeklDTzkwck16LW42eWt5aDJEY0w4M0Ytd0ZlRnBSZmZpN0Z5bkxTLXNXcWdtSW0?oc=5",
-    "source": "markets",
-    "published": "2026-11-22T23:43",
-    "tags": [
-      "USD"
-    ],
-    "kind": "general",
-    "collected_at": "2026-11-23T13:09:17+00:00"
-  },
-  {
-    "headline": "Dollar edges off 19-month high after market rout; yen softens - Reuters",
-    "snippet": "Dollar edges off 19-month high after market rout; yen softens Reuters",
-    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMVA0aUFSMnFob3ZJdVFvbmlpN0JDRWFRNUJwZ1BIY19KU3RXZjJTRGdLaU00NGJ6dDRvX3VBUDdtcG9XQWRiRFhuUzhMZTNsN2lDSWVKMmI2Vi1EQ3dFUE5mM3dwZGNQWC1zZXhnZTJfVEVuYzVETlV1enJTN0dPZlQ3SlozeklDTzkwck16LW42eWt5aDJEY0w4M0Ytd0ZlRnBSZmZpN0Z5bkxTLXNXcWdtSW0?oc=5",
-    "source": "markets",
-    "published": "2026-11-22T23:43",
-    "tags": [
-      "USD",
-      "JPY"
-    ],
-    "kind": "general",
-    "collected_at": "2026-11-23T08:48:15+00:00"
-  },
-  {
-    "headline": "OpenAI scientist proposes industry AI limits tied to model intelligence metric - Reuters",
-    "snippet": "OpenAI scientist proposes industry AI limits tied to model intelligence metric Reuters",
-    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPa0ZQb0xtalJ5djRmZmkwQnhmdDBlMEtncDUtUEJsUFBtWmptbkdVQ3c5QjY2TzhKN0NFT2ZzYnZmenQxY1lrUWFFYjJsdS1KazdRUkJINEJRemQ1alh6TGtnNW1nRE92bTF3RW9FMTIyODB3UmpBaW5oSzFDWDFVT3FXdjZDVzQ0TVNVd29nQzZvY3ByWVpBLUlhRVg0bFZiRHUxVjhqclptLUMycDJlYVBsQXQ4a28tRnFnbQ?oc=5",
-    "source": "markets",
-    "published": "2026-11-22T23:09",
-    "tags": [],
-    "kind": "general",
-    "collected_at": "2026-11-23T13:09:17+00:00"
-  },
-  {
-    "headline": "Will Bitcoin’s big rebound hold? More tampered Ledgers found: Hodler’s Digest",
-    "snippet": "Bitcoin rebounded sharply from its new cycle low, but is $55,110 really the bottom? Ledger investigates new reports of tampered devices in Berlin and the UAE.",
-    "url": "https://cointelegraph.com/magazine/will-bitcoins-big-rebound-hold-more-tampered-ledgers-found-hodlers-digest?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "source": "markets",
-    "published": "2026-11-22T22:47",
-    "tags": [
-      "BTCUSD"
-    ],
-    "kind": "crypto",
-    "collected_at": "2026-11-23T13:09:17+00:00"
-  },
-  {
-    "headline": "Australia flash PMI sinks to 46.1 as private sector shrinks at fastest pace in 5 years",
-    "snippet": "<p dir=\"ltr\">A drop this deep, alongside the first easing in input cost inflation for months, weakens the case for further Australian monetary tightening. That leaves the Australian dollar exposed if rate markets start pricing a gentler path. The sharp fall in new export orders also points to soften",
-    "url": "https://investinglive.com/news/australia-flash-pmi-sinks-to-46-1-as-private-sector-shrinks-at-fastest-pace-in-5-years/",
-    "source": "markets",
-    "published": "2026-11-22T22:09",
-    "tags": [
-      "USD",
-      "AUD"
-    ],
-    "kind": "forex",
-    "collected_at": "2026-11-23T03:35:10+00:00"
-  },
-  {
-    "headline": "North Carolina win gives Democrats biggest US House majority since early 1990s - Reuters",
-    "snippet": "North Carolina win gives Democrats biggest US House majority since early 1990s Reuters",
-    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOZzZjY0pNZnpnUmtsZ3RudXpZeDh4TnlWZDFIZHBvUk0tbVlxREhydk5zRTJhX0lYcjFXQTNNTzBtOFM4NlNhTE9DZnl3SUZiM3RpTzRzZTJ4aURMSUJCdDRGb0l2MWh5MFJmTWgwS1k4Ql9vTGh1eWVGbEw3WGVCS1UtTkNGVVoxS0EyZVl3Vmw0UThpTlVUWWN2WlNyaWR6a1FYYlJZaWl1MlAyQ01OSEcyY3hMai0zUWdfUUc3MkQ?oc=5",
-    "source": "markets",
-    "published": "2026-11-22T22:04",
-    "tags": [],
-    "kind": "general",
-    "collected_at": "2026-11-23T13:09:17+00:00"
-  },
-  {
-    "headline": "Israel's Eisenkot condemns arson attacks by Jewish settlers in West Bank - Reuters",
-    "snippet": "Israel's Eisenkot condemns arson attacks by Jewish settlers in West Bank Reuters",
-    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPV0NtOW83bnNaeXNoY0g0REh2Ym8yMU52U0FCaGVTRy1oeTRrM1dPclNpZTF4QWVtVE95eG9TUXJkT3JBZldRWDNjejBRcFpiWTVPV1ZqeEVZdS1qMVZ6QzVvNUtSRXY0RUxLX05pdlB3V0tvLXA1Nk0wQXhxT1dQYVNyMm1YYTZtX0pRZFI4VWNDTHctYVk2NnJMdDlWSmhxbWlzbVg5OWFacVhQUzdHSU5lNDdJTlBRZVhlVXZaUQ?oc=5",
-    "source": "markets",
-    "published": "2026-11-22T21:54",
-    "tags": [],
-    "kind": "general",
-    "collected_at": "2026-11-23T13:09:17+00:00"
-  },
-  {
-    "headline": "New Zealand retail volumes jump 2.2% in Q3, more than four times the expected pace",
-    "snippet": "<p dir=\"ltr\">A beat of this size is supportive for the New Zealand dollar and should firm rate expectations at the margin, since it weakens the case that NZ consumers need more help. Any boost may be short-lived, though, with global risk appetite under heavy pressure after last week's Wall Street ro",
-    "url": "https://investinglive.com/news/new-zealand-retail-volumes-jump-2-2-in-q3-more-than-four-times-the-expected-pace/",
-    "source": "markets",
-    "published": "2026-11-22T21:54",
-    "tags": [
-      "USD",
-      "NZD",
-      "US500",
-      "GLOBAL"
-    ],
-    "kind": "forex",
-    "collected_at": "2026-11-22T22:50:10+00:00"
-  },
-  {
-    "headline": "WHO chief says fighting near Congo Ebola outbreak area disrupts response efforts - Reuters",
-    "snippet": "WHO chief says fighting near Congo Ebola outbreak area disrupts response efforts Reuters",
-    "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOVnZjcE50YXJiLWxXZE5OQldXSndtUVlUbnNJckNPY1lQM1ZpdlExMlNJX08zNFJQbnFYd3FKT3ZZbzBqY2s4a3c0RVg0M2dELVZrLUx5R0tobENIQWk2QUdNZG9YRl95STZFUlVOVTlVcThuRG90VndEZEZhaE5jbTRVYkN1SUxoYmlteUhlempZSVNGRjJNWjhZdXlSNzMtM1Q3VExpZmFqZHJKbVdjT3lpekdsb0dXQXg0NHdsUkZwdlNzQW9CaGVhblM2b0VHSWRZTGlFVUJBSnd3LXA2SXJoUlVmV1E?oc=5",
-    "source": "markets",
-    "published": "2026-11-22T20:17",
-    "tags": [],
-    "kind": "general",
-    "collected_at": "2026-11-23T13:09:17+00:00"
-  },
-  {
-    "headline": "Delta flights faced brief delays at Atlanta airport over automated system issue - Reuters",
-    "snippet": "Delta flights faced brief delays at Atlanta airport over automated system issue Reuters",
-    "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNUi1YSXI0MDNzWFFveF90TU5ObVc1eVBONWJnaGdLaGMyV0lrYjJwbkFUM0lUVXJkUGpPRXNkbEw3c29yTDdNaGJWeEV3ZUw0UzhKbjdzYXBkQ2ZwY3JaRkxjM1hIazJXdmlnN3dCNkNMOW5lcEVIcE1BN3NMSWNCem5JSHpRSzRkOUdKUzFjbnJWZUhnWG5CWkR6dDB1LWFsdFp0TS0xU2h0QWZZdVprUVRnVXk4MkpRY1lDX2U5S1g3OWIzd3dqa080eU5xOFk0ekE4UlBsakxQUQ?oc=5",
-    "source": "markets",
-    "published": "2026-11-22T19:16",
-    "tags": [],
-    "kind": "general",
-    "collected_at": "2026-11-23T13:09:17+00:00"
-  },
-  {
-    "headline": "Employees at Eric Trump-backed robot startup lose health benefits as company's cash crunch deepens",
-    "snippet": "Foundation is pursuing an emergency bridge loan and has been in talks with VC firms as it waits for a $150 million investment from South Korea's Base Group.",
-    "url": "https://www.cnbc.com/2026/11/22/foundation-future-industries-health-benefits-payroll-base-group.html",
-    "source": "markets",
-    "published": "2026-11-22T18:55",
-    "tags": [],
-    "kind": "general",
-    "collected_at": "2026-11-23T13:09:17+00:00"
-  },
-  {
-    "headline": "Tata Steel to sell tubes business, Tata Steel Colors stake to APL Apollo for up to $3 billion - Reuters",
-    "snippet": "Tata Steel to sell tubes business, Tata Steel Colors stake to APL Apollo for up to $3 billion Reuters",
-    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOcVpWcGJLY3JCOXlyRUZaR3p4MmNSU3V3Qm12b0N1aG5IcC00dDVJSnVsUFZ6dnU3VE5CWVZFVUc0ajhjZEgtRHFXRWVjUDQwTkwzTnJPVFlsZzJ3MVFOVXRPM3Rmc3o5ekZJci1QQ21jQWR4Z2dLQjdsSTZsRU8xNS1JMThzZTJ5SnZ3alpINjhUT05Hb0ZWNUdBUXNCc3l0OUZSZDlveW5pV0s4dTE0ZC1NeG9nS21zUGw2ZE94MA?oc=5",
-    "source": "markets",
-    "published": "2026-11-22T18:35",
-    "tags": [],
-    "kind": "general",
-    "collected_at": "2026-11-23T13:09:17+00:00"
-  },
-  {
-    "headline": "US intelligence chief predicts more tech outages as systems undergo upgrades - Reuters",
-    "snippet": "US intelligence chief predicts more tech outages as systems undergo upgrades Reuters",
-    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQX1ZQQTFqN0xpOERieUhlT0puQ0pnQnNnRnQtaW8yb3VGWkFvM3hGeTA3QlBrR1VCNUhjS21TQ1JISlNWMG5mdlc3NVVmOUZ0LWZrMTB4R3h4YlpIVnJObWVQcmhLUDFiRnhCY1c1RTE5NzhwQzIwTXQ3MkxfN1hQSU9ZbkVidFZCWE1PWWxHMWgtem5ZSzBoOU1oYUVuZ0NEOW00V0Jlb1pEUVdrNUF3blEtSEw4dkpsYU9ya0w0N3UxTmRE?oc=5",
-    "source": "markets",
-    "published": "2026-11-22T18:14",
-    "tags": [],
-    "kind": "general",
-    "collected_at": "2026-11-23T13:09:17+00:00"
-  },
-  {
-    "headline": "Yemen's Houthis say they attacked Saudi Rabigh oil refinery - Reuters",
-    "snippet": "Yemen's Houthis say they attacked Saudi Rabigh oil refinery Reuters",
-    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQSjZLZW5ua05hQkRTLVhvZnNHZnpUM05mT3ZxNl9FUUoyMEhMN0gtTUVfT0Zhb0g2eUxaeHlvZWlIWXNTVGlSMlczMHdBUERvRjVsQVZVSW92MlFESWlmTGxVaWM2aXYwZ0NtUTlna3k4ZkV2S0k4YkhVOFRjaWRrcmhZeWg5NHpQaW9pRGIybUFpalV3U2lzdlZ5QzYteENUSWpWdm90SXNFWVU4OWxBaGx3?oc=5",
-    "source": "markets",
-    "published": "2026-11-22T17:52",
-    "tags": [],
-    "kind": "general",
-    "collected_at": "2026-11-23T13:09:17+00:00"
-  },
-  {
-    "headline": "Three Russian missiles flew into Poland Friday, prosecutors say - Reuters",
-    "snippet": "Three Russian missiles flew into Poland Friday, prosecutors say Reuters",
-    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNM1VMUS1oUkxlYzRWaDg5WjNPbGJoV2t1LTlRNkVMWnF6a3Q3aUljXzlCal9hWmdhWnlkYzdKNjdFVGdwVk1WUFFucGdfbUlnY3RtUjBsdFBxVTdmTGNjcnJ1a0VDNnk5eFh5NDdWaGNWcjNWcFI2WkoxZnFUbkI5UHZ6YTdYZUVMa19Ldk5YTERtX3ZialpvbjI4eFVoQ0Eyd2l0NGxoVQ?oc=5",
-    "source": "markets",
-    "published": "2026-11-22T17:19",
-    "tags": [],
-    "kind": "general",
-    "collected_at": "2026-11-23T13:09:17+00:00"
-  },
-  {
-    "headline": "Director of National Intelligence Jay Clayton warns Americans of 'bumps in the road' after tech outages",
-    "snippet": "Clayton’s warning comes ahead of Thanksgiving travel, after separate outages disrupted air travel, Microsoft 365 and some bank transactions.",
-    "url": "https://www.cnbc.com/2026/11/22/jay-clayton-tech-outages-faa-microsoft-thanksgiving.html",
-    "source": "markets",
-    "published": "2026-11-22T16:18",
-    "tags": [],
-    "kind": "general",
-    "collected_at": "2026-11-23T13:09:17+00:00"
   }
 ]
