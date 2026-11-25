@@ -37342,17 +37342,6 @@
     "source": "te"
   },
   {
-    "title": "FOMC Member Bowman Speaks",
-    "country": "USD",
-    "date_utc": "2026-11-13T15:50+00:00",
-    "impact": "Low",
-    "forecast": "",
-    "previous": "",
-    "actual": "",
-    "revision": "",
-    "source": "ff-feed"
-  },
-  {
     "title": "Bank Loan Growth YoY OCT/30",
     "country": "IN",
     "date_utc": "2026-11-13T16:30+00:00",
@@ -42450,6 +42439,17 @@
     "source": "ff-feed"
   },
   {
+    "title": "FOMC Member Bowman Speaks",
+    "country": "USD",
+    "date_utc": "2026-11-25T12:25+00:00",
+    "impact": "Low",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "revision": "",
+    "source": "ff-feed"
+  },
+  {
     "title": "Consumer Confidence NOV",
     "country": "EUR",
     "date_utc": "2026-11-25T12:45+00:00",
@@ -43583,7 +43583,7 @@
     "date_utc": "2026-11-27T10:33+00:00",
     "impact": "Low",
     "forecast": "",
-    "previous": "",
+    "previous": "4.49|1.6",
     "actual": "",
     "revision": "",
     "source": "ff-feed"
