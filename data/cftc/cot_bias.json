@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-11-25T05:20:59+00:00",
+    "updated": "2026-11-26T04:47:54+00:00",
     "note": "COT positioning tilt (secondary bias input)"
   },
   "instruments": {
@@ -193,27 +193,6 @@
         "short": 157023.0
       }
     },
-    "XAUUSD": {
-      "sym": "XAUUSD",
-      "market": "GOLD",
-      "latest_week": "2026-11-17",
-      "tilt": {
-        "tilt": -1,
-        "net": 157208.0,
-        "delta": -32899.0,
-        "noncomm_long": 203308.0,
-        "noncomm_short": 46100.0,
-        "change_long": -16270.0,
-        "change_short": 8200.0,
-        "week": "2026-11-17",
-        "note": "non-commercial net exposure shrank"
-      },
-      "positions": {
-        "report_date": "2026-11-17",
-        "long": 203308.0,
-        "short": 46100.0
-      }
-    },
     "BRENT": {
       "sym": "BRENT",
       "market": "BRENT LAST DAY",
@@ -338,6 +317,27 @@
         "report_date": "2026-11-17",
         "long": 76467.0,
         "short": 58690.0
+      }
+    },
+    "XAUUSD": {
+      "sym": "XAUUSD",
+      "market": "GOLD",
+      "latest_week": "2026-11-17",
+      "tilt": {
+        "tilt": -1,
+        "net": 166132.0,
+        "delta": -23975.0,
+        "noncomm_long": 210051.0,
+        "noncomm_short": 43919.0,
+        "change_long": -16183.0,
+        "change_short": 7792.0,
+        "week": "2026-11-17",
+        "note": "non-commercial net exposure shrank"
+      },
+      "positions": {
+        "report_date": "2026-11-17",
+        "long": 210051.0,
+        "short": 43919.0
       }
     },
     "CNY": {

@@ -41418,6 +41418,16 @@
     "source": "te"
   },
   {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2026-11-21T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "189000.0",
+    "previous": "202000.0",
+    "source_series": "ICSA",
+    "period": "2026-11-21"
+  },
+  {
     "title": "Inflation Rate YoY OCT",
     "country": "JPY",
     "date_utc": "2026-11-21T04:30+00:00",
@@ -42558,6 +42568,17 @@
     "source": "te"
   },
   {
+    "title": "Monetary Policy Report Hearings",
+    "country": "GBP",
+    "date_utc": "2026-11-25T14:15+00:00",
+    "impact": "Medium",
+    "forecast": "",
+    "previous": "",
+    "actual": "",
+    "revision": "",
+    "source": "ff-feed"
+  },
+  {
     "title": "New Home Sales",
     "country": "USD",
     "date_utc": "2026-11-25T15:00+00:00",
@@ -43211,6 +43232,17 @@
     "impact": "Low",
     "forecast": "3.2%",
     "previous": "3.1%",
+    "actual": "",
+    "revision": "",
+    "source": "ff-feed"
+  },
+  {
+    "title": "Euro Summit",
+    "country": "EUR",
+    "date_utc": "2026-11-26T09:15+00:00",
+    "impact": "Low",
+    "forecast": "",
+    "previous": "",
     "actual": "",
     "revision": "",
     "source": "ff-feed"

@@ -1844,7 +1844,7 @@
     "country": "USD",
     "date_utc": "2026-07-01T00:00:00+00:00",
     "impact": "High",
-    "actual": "2.07",
+    "actual": "2.29",
     "previous": "",
     "source_series": "GDPC1",
     "period": "2026-07-01"
@@ -2034,7 +2034,7 @@
     "country": "USD",
     "date_utc": "2026-08-01T00:00:00+00:00",
     "impact": "Medium",
-    "actual": "0.26",
+    "actual": "0.27",
     "previous": "",
     "source_series": "PCEPILFE",
     "period": "2026-08-01"
@@ -2440,6 +2440,16 @@
     "period": "2026-10-01"
   },
   {
+    "title": "Core PCE Price Index m/m",
+    "country": "USD",
+    "date_utc": "2026-10-01T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "0.29",
+    "previous": "",
+    "source_series": "PCEPILFE",
+    "period": "2026-10-01"
+  },
+  {
     "title": "Non-Farm Employment Change",
     "country": "USD",
     "date_utc": "2026-10-01T00:00:00+00:00",
@@ -2484,7 +2494,7 @@
     "country": "USD",
     "date_utc": "2026-10-01T00:00:00+00:00",
     "impact": "Medium",
-    "actual": "1295.0",
+    "actual": "1297.0",
     "previous": "1398.0",
     "source_series": "PERMIT",
     "period": "2026-10-01"
@@ -2574,9 +2584,19 @@
     "country": "USD",
     "date_utc": "2026-11-14T00:00:00+00:00",
     "impact": "Medium",
-    "actual": "203000.0",
+    "actual": "202000.0",
     "previous": "202000.0",
     "source_series": "ICSA",
     "period": "2026-11-14"
+  },
+  {
+    "title": "Initial Jobless Claims",
+    "country": "USD",
+    "date_utc": "2026-11-21T00:00:00+00:00",
+    "impact": "Medium",
+    "actual": "189000.0",
+    "previous": "202000.0",
+    "source_series": "ICSA",
+    "period": "2026-11-21"
   }
 ]
